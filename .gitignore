@@ -1,0 +1,73 @@
+# ---------------------------------------------------------------------------------------------------- All Project
+
+public_html/*
+
+# -------------------------------------------------- bitrix
+
+public_html/bitrix/*
+
+public_html/bitrix/admin/*
+
+public_html/bitrix/php_interface/*
+public_html/bitrix/php_interface/include/*
+
+!public_html/bitrix/
+
+!public_html/bitrix/admin/
+!public_html/bitrix/admin/reports/
+
+!public_html/bitrix/php_interface/
+!public_html/bitrix/php_interface/include/
+!public_html/bitrix/php_interface/include/sale_payment/
+!public_html/bitrix/php_interface/include/site_closed.php
+
+# -------------------------------------------------- other
+
+#!public_html/import/
+#!public_html/qiwi/
+
+# -------------------------------------------------- local
+
+!public_html/local/
+!public_html/institut/
+!public_html/issledovanie/
+!public_html/izdaniya/
+!public_html/kontakty/
+!public_html/novosti/
+!public_html/rukovodstvo/
+!public_html/sotrudniki/
+!public_html/uchreditel/
+!public_html/search/
+# -------------------------------------------------- ilabshop
+
+public_html/local/templates/ilab/del/*
+public_html/local/templates/ilab/comp/*
+public_html/local/templates/ilab/inc/*
+
+public_html/local/templates/ilab/tmpl/body_after.php
+public_html/local/templates/ilab/tmpl/body_before.php
+public_html/local/templates/ilab/tmpl/redirect.php
+public_html/local/templates/ilab/tmpl/head.php
+public_html/local/templates/ilab/tmpl/browser_old.php
+
+public_html/local/templates/tmpl/inc/*
+
+# -------------------------------------------------- ihs.kz
+public_html/local/templates/ilab/comp/*
+public_html/local/templates/ilab/inc/*
+
+# ---------------------------------------------------------------------------------------------------- Gitignore
+
+!.gitignore
+
+# ---------------------------------------------------------------------------------------------------- IntelliJ project files
+
+.idea
+*.iml
+out
+gen
+.vscode
+
+# ---------------------------------------------------------------------------------------------------- Sublime text
+
+sftp-config.json
