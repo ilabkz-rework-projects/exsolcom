@@ -150,3 +150,135 @@ body{
 //!HEADER
 
 
+
+
+
+
+
+
+//MAIN
+.i_main .i_container {
+  display: flex;
+  justify-content: space-between;
+  height: 680px;
+  background-image: url("../img/main/main-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  //MAIN LEFT
+  .i_main-left {
+    display: flex;
+    flex-direction: column;
+
+    //MAIN HEADLINE
+    img{
+      width: 420px;
+      height: 80px;
+      margin-bottom: 85px;
+    }
+    //MAIN HEADLINE
+
+    //MAIN HEADLINE
+    .i_main-headline {
+      display: flex;
+      margin-bottom: 35px;
+      span {
+        font-size: 42px;
+        font-weight: bold;
+        color: #FF161F;
+      }
+      p {
+        font-size: 42px;
+        font-weight: bold;
+        color: black;
+      }
+    }
+    //!MAIN HEADLINE
+
+    //MAIN ПРОДАЖА И ВНЕДРЕНИЕ
+    span {
+      font-size: 24px;
+      font-weight: bold;
+      color: black;
+    }
+    //!MAIN ПРОДАЖА И ВНЕДРЕНИЕ
+
+    //MAIN BTN APPLY
+    .i_main-btn-apply {
+      width: 330px;
+      height: 60px;
+      border-radius: 50px;
+      border: none;
+      background-color: #FF161F;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 80px;
+    }
+    //!MAIN BTN APPLY
+
+  }
+  //!MAIN LEFT
+
+  //!MAIN RIGHT
+  .i_main-right {
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+    //MAIN GROUP SOCIAL
+    .i_main-group_social {
+      display: flex;
+      gap: 60px;
+
+      //MAIN SOCIAL
+      .i_main-social {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        color: #FF161F;
+        &:hover {
+
+        }
+
+        &:active {
+
+        }
+
+        &:focus {
+
+        }
+
+        li {
+          list-style-type: none;
+        }
+      }
+      //!MAIN SOCIAL
+    }
+    //!MAIN GROUP SOCIAL
+
+    //MAIN SKILLS
+    .i_main-skills {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .i_main-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        p{
+          font-size: 17px;
+          font-weight: 600;
+          color: black;
+        }
+      }
+
+    }
+    //!MAIN SKILLS
+  }
+  //!MAIN RIGHT
+
+}
+//!MAIN
+
+
