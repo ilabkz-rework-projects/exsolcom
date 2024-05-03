@@ -28,171 +28,178 @@ body{
   height: 100%;
   margin: 0 auto;
   width: 1520px;
+  @media screen and (max-width: 1520px){
+    width: 100%;
+    margin: 0 30px;
+  }
 }
 
 //HEADER/
-.i_header .i_container{
+.i_header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 74px;
-  height: 115px;
-
-  //HEADER LEFT
-  .i_header-left {
+  .i_container {
     display: flex;
-    gap: 20px;
-
-    //HEADER BURGER
-    .i_header-burger {
-      width: 50px;
-      height: 50px;
-      background-color: #000000;
-      border-radius: 50%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 74px;
+    height: 114px;
+    //HEADER LEFT
+    .i_header-left {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      svg {
-        color: white;
-      }
+      gap: 20px;
 
-      :hover{
-
-      }
-    }
-    //!HEADER BURGER
-
-    //HEADER MENU
-    .i_header-menu {
-      background-color: white;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 26px;
-
-      li {
-        list-style-type: none;
-      }
-      .i_header-menu-item a{
-        color: black;
-        font-size: 15px;
-        font-weight: bold;
-        font-style: normal;
-        font-optical-sizing: auto;
-        text-decoration: none;
-        transition: all .3s ease;
-        &:hover{
-          color: #FF161F;
-        }
-        &:focus {
-          color: #FF161F;
-          background-color: #f5f5f5;
-          border-radius: 25px;
-          padding: 2vh 4vh;
+      //HEADER BURGER
+      .i_header-burger {
+        width: 50px;
+        height: 50px;
+        background-color: #000000;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+          color: white;
         }
       }
+      //!HEADER BURGER
 
+      //HEADER MENU
+      .i_header-menu {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 26px;
+        li {
+          list-style-type: none;
+        }
+        .i_header-menu-item a {
+          color: black;
+          font-size: 15px;
+          font-weight: bold;
+          font-style: normal;
+          font-optical-sizing: auto;
+          text-decoration: none;
+          transition: all .3s ease;
+          &:hover {
+            color: #FF161F;
+          }
+          &:focus {
+            color: #FF161F;
+            background-color: #f5f5f5;
+            border-radius: 25px;
+            padding: 2vh 4vh;
+          }
+        }
+      }
+      //!HEADER MENU
     }
-    //!HEADER MENU
-  }
-  //!HEADER LEFT
+    //!HEADER LEFT
 
-  //HEADER RIGHT
-  .i_header-right {
-  display: flex;
-  gap: 50px;
-
-  //HEADER BLOG
-  .i_header-blog{
-    width: 120px;
-    height: 50px;
-    background-color: #FF161F;
-    border-radius: 25px;
-    border: none;
-    color: white;
-    font-size: 16px;
-    font-weight: normal;
-    font-style: normal;
-    font-optical-sizing: auto;
-    cursor: pointer;
-  }
-  //!HEADER BLOG
-
-  //HEADER MORE
-  .i_header-more {
-    display: flex;
-    gap: 10px;
-    .i_header-circles {
-      width: 50px;
-      height: 50px;
-      background-color: #000000;
-      border-radius: 25px;
+    //HEADER RIGHT
+    .i_header-right {
       display: flex;
-      align-items: center;
-      justify-content: center;
+      gap: 50px;
 
-      //RU
-      span {
+      //HEADER BLOG
+      .i_header-blog {
+        width: 120px;
+        height: 50px;
+        background-color: #FF161F;
+        border-radius: 25px;
+        border: none;
         color: white;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: normal;
         font-style: normal;
         font-optical-sizing: auto;
-      }
-      &:hover {
-        color: black;
-        background: #f5f5f5;
-        transition: 0.3s ease;
         cursor: pointer;
-        span{
-          color: #FF161F;
-          font-weight: bold;
+      }
+
+      //!HEADER BLOG
+
+      //HEADER MORE
+      .i_header-more {
+        display: flex;
+        gap: 10px;
+
+        .i_header-circles {
+          width: 50px;
+          height: 50px;
+          background-color: #000000;
+          border-radius: 25px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          //RU
+          span {
+            color: white;
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            font-optical-sizing: auto;
+          }
+
+          &:hover {
+            color: black;
+            background: #f5f5f5;
+            transition: 0.3s ease;
+            cursor: pointer;
+
+            span {
+              color: #FF161F;
+              font-weight: bold;
+            }
+          }
+
+          //!RU
+
+          //SEARCH ICON
+          .search-icon {
+            color: #ffffff;
+          }
+
+          &:hover {
+            background: #f5f5f5;
+            transition: 0.3s ease;
+            cursor: pointer;
+
+            .search-icon {
+              color: #FF161F;
+            }
+          }
+
+          //!SEARCH ICON
+
+          //WHATSAPP EMAIL
+          svg {
+            color: white;
+          }
+
+          &:hover {
+            background: #f5f5f5;
+            transition: 0.3s ease;
+            cursor: pointer;
+
+            svg {
+              color: #FF161F;
+            }
+          }
+
+          //!WHATSAPP EMAIL
+
+
         }
-      }
-      //!RU
 
-      //SEARCH ICON
-      .search-icon {
-        color: #ffffff;
       }
-      &:hover  {
-        background: #f5f5f5;
-        transition: 0.3s ease;
-        cursor: pointer;
-        .search-icon {
-          color: #FF161F;
-        }
-      }
-      //!SEARCH ICON
 
-      //WHATSAPP EMAIL
-      svg {
-        color: white;
-      }
-      &:hover {
-        background: #f5f5f5;
-        transition: 0.3s ease;
-        cursor: pointer;
-        svg {
-          color: #FF161F;
-        }
-      }
-      //!WHATSAPP EMAIL
-
-
+      //!HEADER MORE
     }
-
+    //!HEADER RIGHT
   }
-  //!HEADER MORE
-}
-  //!HEADER RIGHT
-
-
-
 }
 //!HEADER
-
-
 
 //MAIN
 .i_main {
@@ -201,15 +208,25 @@ body{
   .i_banner  {
     display: flex;
     justify-content: space-between;
-    height: 680px;
-    padding-top: 2%;
-    background-image: url("../img/main/main-1.png");
-    background-repeat: no-repeat;
-    background-position-x: 52%;
-    background-position-y: 35% ;
+    padding-bottom: 150px;
+    position: relative;
+    .i_banner-bg{
+      position: absolute;
+      top: 9%;
+      left: 32%;
+      z-index: 1;
+      width: 40%;
+      height: auto;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
     .i_container {
       display: flex;
       justify-content: space-between;
+      position: relative;
+      z-index: 2;
       //BANNER LEFT
       .i_banner-left {
         display: flex;
@@ -218,6 +235,7 @@ body{
         //BANNER HEADLINE
         svg{
           color: black;
+          margin-top: 82px;
           margin-bottom: 85px;
         }
         //!BANNER HEADLINE
@@ -225,15 +243,17 @@ body{
         //BANNER HEADLINE
         .i_banner-headline {
           display: flex;
-          margin-bottom: 35px;
+          margin-bottom: 30px;
           span {
             font-size: 42px;
             font-weight: bold;
+            text-transform: uppercase;
             color: #FF161F;
           }
           p {
             font-size: 42px;
             font-weight: bold;
+            text-transform: uppercase;
             color: black;
           }
         }
@@ -269,12 +289,13 @@ body{
       .i_banner-right {
         display: flex;
         flex-direction: column;
-        gap: 80px;
+        gap: 110px;
         //MAIN GROUP SOCIAL
         .i_banner-group_social {
           display: flex;
+          justify-content: space-between;
           gap: 60px;
-
+          margin-top: 30px;
           //MAIN SOCIAL
           .i_banner-social {
             display: flex;
@@ -391,6 +412,9 @@ body{
 
         }
         //!MAIN SKILLS
+        .i_banner-btn-apply{
+          display: none;
+        }
       }
       //!BANNER RIGHT
     }
@@ -402,22 +426,36 @@ body{
   //MAIN OUR SERVICES
   .i_our-services {
     width: 100%;
-    height: 920px;
+    margin-bottom: 150px;
     background-color: #f5f5f5;
-    background-image: url("../img/svg/background-element.svg");
-    background-size: 800px 800px;
-    background-repeat: no-repeat;
-    background-position-x: 106%;
-    background-position-y: 62%;
 
     .i_container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+      img{
+        width: 800px;
+        height: 800px;
+        position: absolute;
+        z-index: 1;
+        top: 6%;
+        left: 14%;
+        opacity: 0.6;
+      }
       //Группа наши услуги
       .i_our-services-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+        position: relative;
+        z-index: 2;
         //Группа заголовок
         .i_our-services-headline {
           display: flex;
           align-items: center;
-          justify-content: center;
           gap: 20px;
           //Группа иконка
           .i_our-services-circles {
@@ -444,21 +482,23 @@ body{
 
         //Группа анонсы
         .i_our-services-preview {
-          display: grid;
-          grid-template-columns: repeat(3, 470px);
-          grid-auto-rows: 240px;
-          gap: 50px;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 30px;
           .i_our-services-block{
-            width: 470px;
+            width: 32%;
             height: 240px;
             border-radius: 30px;
             background-color: white;
-            background-image: url("../img/main/Notice_Our-services.png");
+            background-image: url("../img/main/notice_Our-services.png");
             background-repeat: no-repeat;
             background-position-x: 100%;
             background-position-y: 100%;
-            display: grid;
-            align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding: 30px 30px;
+            gap: 30px;
             span{
               font-size: 20px;
               font-weight: bold;
@@ -466,14 +506,26 @@ body{
             p{
               font-family: 'Open Sans';
               font-size: 14px;
-              font-weight: normal;
+              font-weight: 600;
+              line-height: 1.5;
             }
           }
         }
         //!Группа анонсы
 
         //Кнопка Запросить коммерческое предложение
-        .i_our-services-btn-request{}
+        .i_our-services-btn-request{
+          width: 440px;
+          height: 60px;
+          background-color: #FF161F;
+          border-radius: 50px;
+          border: 0;
+          outline-style: none;
+          color: white;
+          font-family: "Comfortaa", sans-serif;
+          font-size: 16px;
+          font-weight: bold;
+        }
         //!Кнопка Запросить коммерческое предложение
       }
       //!Группа наши услуги
@@ -483,7 +535,701 @@ body{
   //!MAIN OUR SERVICES
 
 }
-
 //!MAIN
 
+//HEADER MEDIA ADAPTIVE 1330
+@media screen and (max-width: 1330px) {
+  //Header
+  .i_header {
+    .i_container {
+      margin: 0 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      height: 100px;
+      //Header Left
+      .i_header-left{
+        //Header Burger
+        .i_header-burger{
+          width: 40px;
+          height: 40px;
+          svg{
+            width: 12px;
+            height: 12px;
+          }
+        }
+        //!Header Burger
+        //Header Menu
+        .i_header-menu{
+          gap: 24px;
+          .i_header-menu-item a {
+            color: black;
+            font-size: 13px;
+            font-weight: bold;
+          }
+        }
+        //!Header Menu
+      }
+      //!Header Left
+      //Header Right
+      .i_header-right{
+        gap: 30px;
+        //Header Blog
+        .i_header-blog{
+          width: 95px;
+          height: 40px;
+          font-size: 12px;
+        }
+        //!Header Blog
+        //Header More
+        .i_header-more{
+          //Header Circles
+          .i_header-circles{
+            width: 40px;
+            height: 40px;
+            span{
+              font-size: 12px;
+            }
+            .lupa-icon{
+              width: 14px;
+              height: 16px;
+            }
+            .whatsapp-icon{
+              width: 14px;
+              height: 14px;
+            }
+            .email-icon{
+              width: 14px;
+              height: 12px;
+            }
+          }
+          //!Header Circles
+        }
+        //!Header More
+      }
+      //!Header Right
+    }
+  }
+  //!Header
+
+  //Main
+  .i_main {
+    //Banner
+    .i_banner{
+      margin-bottom: 150px;
+      .i_container{
+        margin: 0 30px;
+        //Фоновая картинка
+        img{
+          width: 460px;
+          height: 400px;
+        }
+        //!Фоновая картинка
+        //Левая часть баннера
+        .i_banner-left{
+          //Логотип ExSol.com
+          svg{
+            width: 336px;
+            height: 63px;
+            margin-top: 88px;
+            margin-bottom: 60px;
+          }
+          //!Логотип ExSol.com
+          //Заголовок
+          .i_banner-headline{
+            margin-bottom: 25px;
+            span{
+              font-size: 34px;
+              text-transform: uppercase;
+            }
+            p{
+              font-size: 34px;
+              text-transform: uppercase;
+            }
+          }
+          //!Заголовок
+          //Подзаголовок
+          span{
+            font-size: 20px;
+          }
+          //!Подзаголовок
+          //Кнопка Оставить Заявку
+          .i_banner-btn-apply{
+            width: 272px;
+            height: 50px;
+            margin-top: 70px;
+            font-size: 14px;
+          }
+          //!Кнопка Оставить Заявку
+        }
+        //!Левая часть баннера
+        //Правая часть баннера
+        .i_banner-right{
+          gap: 112px;
+          //Группа Соц-сетей и ДеньНочь
+          .i_banner-group_social{
+            gap: 30px;
+            //Группа Соц-сети
+            .i_banner-social{
+              .i_banner-social_item{
+                  width: 40px;
+                  height: 40px;
+                .instagram-icon{
+                    width: 16px;
+                    height: 16px;
+                  }
+                .facebook-icon{
+                  width: 9px;
+                  height: 16px;
+                }
+                .youtube-icon{
+                  width: 16px;
+                  height: 16px;
+                }
+                .telegram-icon{
+                  width: 18px;
+                  height: 16px;
+                }
+                .linkedin-icon{
+                  width: 18px;
+                  height: 16px;
+                }
+                }
+            }
+            //!Группа Соц-сети
+            //Группа ДеньНочь
+            .i_banner-night_sun{
+              .i_banner-night_sun_item{
+                width: 40px;
+                height: 40px;
+                svg{
+                  width: 22px;
+                  height: 22px;
+                }
+              }
+            }
+            //Группа ДеньНочь
+          }
+          //!Группа Соц-сетей и ДеньНочь
+          //Группа Навыки
+          .i_banner-skills{
+            .i_banner-item{
+              gap: 10px;
+              &:hover{
+                .i_banner-circles {
+                  width: 40px;
+                  height: 40px;
+                  background-color: #f5f5f5;
+                }
+              }
+              .i_banner-circles{
+                width: 40px;
+                height: 40px;
+                .banner-icon_1{
+                  width: 22px;
+                  height: 22px;
+                }
+                .banner-icon_2{
+                  width: 18px;
+                  height: 16px;
+                }
+                .banner-icon_3{
+                  width: 22px;
+                  height: 22px;
+                }
+                .banner-icon_4{
+                  width: 18px;
+                  height: 12px;
+                }
+              }
+              p{
+                font-size: 14px;
+              }
+            }
+          }
+          //!Группа Навыки
+
+        }
+        //!Правая часть баннера
+      }
+    }
+    //!Banner
+  }
+  //!Main
+}
+//!HEADER MEDIA APAPTIVE 1330
+
+//HEADER MEDIA APAPTIVE 1000
+@media screen and (max-width: 1000px) {
+  //Header
+  .i_header {
+    .i_container {
+      margin: 0 30px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: 10px;
+      height: 100px;
+      //Header Left
+      .i_header-left{
+        //Header Burger
+        .i_header-burger{
+          width: 40px;
+          height: 40px;
+          svg{
+            width: 12px;
+            height: 12px;
+          }
+        }
+        //!Header Burger
+        //Header Menu
+        .i_header-menu{
+          display: none;
+        }
+        //!Header Menu
+      }
+      //!Header Left
+      //Header Right
+      .i_header-right{
+        gap: 10px;
+        //Header Blog
+        .i_header-blog{
+          width: 95px;
+          height: 40px;
+          font-size: 12px;
+        }
+        //!Header Blog
+        //Header More
+        .i_header-more{
+          //Header Circles
+          .i_header-circles{
+            width: 40px;
+            height: 40px;
+            span{
+              font-size: 12px;
+            }
+            .lupa-icon{
+              width: 14px;
+              height: 16px;
+            }
+            .whatsapp-icon{
+              width: 14px;
+              height: 14px;
+            }
+            .email-icon{
+              width: 14px;
+              height: 12px;
+            }
+          }
+          //!Header Circles
+        }
+        //!Header More
+      }
+      //!Header Right
+    }
+  }
+  //!Header
+
+  //Main
+  .i_main {
+    //Banner
+    .i_banner{
+      margin-bottom: 411px;
+      .i_container{
+        //Фоновая картинка
+        .i_banner-bg{
+          width: 435px;
+          height: 380px;
+          img{
+            position: absolute;
+            top: 33%;
+            left: -58%;
+          }
+        }
+        //!Фоновая картинка
+        //Левая часть баннера
+        .i_banner-left{
+          position: absolute;
+          top: -100px;
+          //Логотип ExSol.com
+          svg{
+            width: 215px;
+            height: 40px;
+            margin-top: 30px;
+            margin-bottom: 60px;
+          }
+          //!Логотип ExSol.com
+          //Заголовок
+          .i_banner-headline{
+            margin-bottom: 30px;
+            span{
+              font-size: 28px;
+              text-transform: uppercase;
+            }
+            p{
+              font-size: 28px;
+              text-transform: uppercase;
+            }
+          }
+          //!Заголовок
+          //Подзаголовок
+          span{
+            font-size: 16px;
+          }
+          //!Подзаголовок
+          //Кнопка Оставить Заявку
+          .i_banner-btn-apply{
+           display: none;
+          }
+          //!Кнопка Оставить Заявку
+        }
+        //!Левая часть баннера
+        //Правая часть баннера
+        .i_banner-right{
+          position: absolute;
+          top: -5%;
+          left: 63%;
+          gap: 70px;
+          //Группа Соц-сетей и ДеньНочь
+          .i_banner-group_social{
+            gap: 68px;
+            //Группа Соц-сети
+            .i_banner-social{
+              .i_banner-social_item{
+                width: 40px;
+                height: 40px;
+                .instagram-icon{
+                  width: 16px;
+                  height: 16px;
+                }
+                .facebook-icon{
+                  width: 9px;
+                  height: 16px;
+                }
+                .youtube-icon{
+                  width: 16px;
+                  height: 16px;
+                }
+                .telegram-icon{
+                  width: 18px;
+                  height: 16px;
+                }
+                .linkedin-icon{
+                  width: 18px;
+                  height: 16px;
+                }
+              }
+            }
+            //!Группа Соц-сети
+            //Группа ДеньНочь
+            .i_banner-night_sun{
+              .i_banner-night_sun_item{
+                width: 40px;
+                height: 40px;
+                svg{
+                  width: 22px;
+                  height: 22px;
+                }
+              }
+            }
+            //Группа ДеньНочь
+          }
+          //!Группа Соц-сетей и ДеньНочь
+          //Группа Навыки
+          .i_banner-skills{
+            .i_banner-item{
+              gap: 10px;
+              &:hover{
+                .i_banner-circles {
+                  width: 40px;
+                  height: 40px;
+                  background-color: #f5f5f5;
+                }
+              }
+              .i_banner-circles{
+                width: 40px;
+                height: 40px;
+                .banner-icon_1{
+                  width: 22px;
+                  height: 22px;
+                }
+                .banner-icon_2{
+                  width: 18px;
+                  height: 16px;
+                }
+                .banner-icon_3{
+                  width: 22px;
+                  height: 22px;
+                }
+                .banner-icon_4{
+                  width: 18px;
+                  height: 12px;
+                }
+              }
+              p{
+                font-size: 14px;
+              }
+            }
+          }
+          //!Группа Навыки
+
+          .i_banner-btn-apply{
+            display: block;
+            width: 330px;
+            height: 60px;
+            border-radius: 50px;
+            border: none;
+            background-color: #FF161F;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+          }
+
+        }
+        //!Правая часть баннера
+      }
+    }
+    //!Banner
+  }
+  //!Main
+}
+//!HEADER MEDIA APAPTIVE 1000
+
+//HEADER MEDIA APAPTIVE 480
+@media screen and (max-width: 480px) {
+  //Header
+  .i_header {
+    .i_container {
+      margin: 0 30px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+      height: 100px;
+      //Header Left
+      .i_header-left{
+        //Header Burger
+        .i_header-burger{
+          width: 40px;
+          height: 40px;
+          svg{
+            width: 12px;
+            height: 12px;
+          }
+        }
+        //!Header Burger
+        //Header Menu
+        .i_header-menu{
+          display: none;
+        }
+        //!Header Menu
+      }
+      //!Header Left
+      //Header Right
+      .i_header-right{
+        gap: 10px;
+        //Header Blog
+        .i_header-blog{
+          width: 95px;
+          height: 40px;
+          font-size: 12px;
+        }
+        //!Header Blog
+        //Header More
+        .i_header-more{
+          //Header Circles
+          .i_header-circles{
+            width: 40px;
+            height: 40px;
+            span{
+              font-size: 12px;
+            }
+            .lupa-icon{
+              width: 14px;
+              height: 16px;
+            }
+            .whatsapp-icon{
+              width: 14px;
+              height: 14px;
+            }
+            .email-icon{
+              width: 14px;
+              height: 12px;
+            }
+          }
+          //!Header Circles
+        }
+        //!Header More
+      }
+      //!Header Right
+    }
+  }
+  //!Header
+
+  //Main
+  .i_main {
+    //Banner
+    .i_banner{
+      margin-bottom: 411px;
+      .i_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        //Фоновая картинка
+        .i_banner-bg{
+          width: 435px;
+          height: 380px;
+          img{
+            position: absolute;
+            top: 33%;
+            left: -58%;
+          }
+        }
+        //!Фоновая картинка
+        //Левая часть баннера
+        .i_banner-left{
+          //Логотип ExSol.com
+          svg{
+            width: 215px;
+            height: 40px;
+            margin-top: 30px;
+            margin-bottom: 60px;
+          }
+          //!Логотип ExSol.com
+          //Заголовок
+          .i_banner-headline{
+            margin-bottom: 30px;
+            span{
+              font-size: 28px;
+              text-transform: uppercase;
+            }
+            p{
+              font-size: 28px;
+              text-transform: uppercase;
+            }
+          }
+          //!Заголовок
+          //Подзаголовок
+          span{
+            font-size: 16px;
+          }
+          //!Подзаголовок
+          //Кнопка Оставить Заявку
+          .i_banner-btn-apply{
+            display: none;
+          }
+          //!Кнопка Оставить Заявку
+        }
+        //!Левая часть баннера
+        //Правая часть баннера
+        .i_banner-right{
+          display: flex;
+          gap: 70px;
+          //Группа Соц-сетей и ДеньНочь
+          .i_banner-group_social{
+            gap: 68px;
+            //Группа Соц-сети
+            .i_banner-social{
+              .i_banner-social_item{
+                width: 40px;
+                height: 40px;
+                .instagram-icon{
+                  width: 16px;
+                  height: 16px;
+                }
+                .facebook-icon{
+                  width: 9px;
+                  height: 16px;
+                }
+                .youtube-icon{
+                  width: 16px;
+                  height: 16px;
+                }
+                .telegram-icon{
+                  width: 18px;
+                  height: 16px;
+                }
+                .linkedin-icon{
+                  width: 18px;
+                  height: 16px;
+                }
+              }
+            }
+            //!Группа Соц-сети
+            //Группа ДеньНочь
+            .i_banner-night_sun{
+              .i_banner-night_sun_item{
+                width: 40px;
+                height: 40px;
+                svg{
+                  width: 22px;
+                  height: 22px;
+                }
+              }
+            }
+            //Группа ДеньНочь
+          }
+          //!Группа Соц-сетей и ДеньНочь
+          //Группа Навыки
+          .i_banner-skills{
+            .i_banner-item{
+              gap: 10px;
+              &:hover{
+                .i_banner-circles {
+                  width: 40px;
+                  height: 40px;
+                  background-color: #f5f5f5;
+                }
+              }
+              .i_banner-circles{
+                width: 40px;
+                height: 40px;
+                .banner-icon_1{
+                  width: 22px;
+                  height: 22px;
+                }
+                .banner-icon_2{
+                  width: 18px;
+                  height: 16px;
+                }
+                .banner-icon_3{
+                  width: 22px;
+                  height: 22px;
+                }
+                .banner-icon_4{
+                  width: 18px;
+                  height: 12px;
+                }
+              }
+              p{
+                font-size: 14px;
+              }
+            }
+          }
+          //!Группа Навыки
+
+          .i_banner-btn-apply{
+            display: block;
+            width: 330px;
+            height: 60px;
+            border-radius: 50px;
+            border: none;
+            background-color: #FF161F;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+          }
+
+        }
+        //!Правая часть баннера
+      }
+    }
+    //!Banner
+  }
+  //!Main
+}
+//!HEADER MEDIA APAPTIVE 480
 

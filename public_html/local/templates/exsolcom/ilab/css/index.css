@@ -28,13 +28,22 @@ body {
   margin: 0 auto;
   width: 1520px;
 }
+@media screen and (max-width: 1520px) {
+  .i_container {
+    width: 100%;
+    margin: 0 30px;
+  }
+}
 
+.i_header {
+  display: flex;
+}
 .i_header .i_container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 74px;
-  height: 115px;
+  height: 114px;
 }
 .i_header .i_container .i_header-left {
   display: flex;
@@ -153,16 +162,26 @@ body {
 .i_main .i_banner {
   display: flex;
   justify-content: space-between;
-  height: 680px;
-  padding-top: 2%;
-  background-image: url("../img/main/main-1.png");
-  background-repeat: no-repeat;
-  background-position-x: 52%;
-  background-position-y: 35%;
+  padding-bottom: 150px;
+  position: relative;
+}
+.i_main .i_banner .i_banner-bg {
+  position: absolute;
+  top: 9%;
+  left: 32%;
+  z-index: 1;
+  width: 40%;
+  height: auto;
+}
+.i_main .i_banner .i_banner-bg img {
+  width: 100%;
+  height: 100%;
 }
 .i_main .i_banner .i_container {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 2;
 }
 .i_main .i_banner .i_container .i_banner-left {
   display: flex;
@@ -170,20 +189,23 @@ body {
 }
 .i_main .i_banner .i_container .i_banner-left svg {
   color: black;
+  margin-top: 82px;
   margin-bottom: 85px;
 }
 .i_main .i_banner .i_container .i_banner-left .i_banner-headline {
   display: flex;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 .i_main .i_banner .i_container .i_banner-left .i_banner-headline span {
   font-size: 42px;
   font-weight: bold;
+  text-transform: uppercase;
   color: #FF161F;
 }
 .i_main .i_banner .i_container .i_banner-left .i_banner-headline p {
   font-size: 42px;
   font-weight: bold;
+  text-transform: uppercase;
   color: black;
 }
 .i_main .i_banner .i_container .i_banner-left span {
@@ -206,11 +228,13 @@ body {
 .i_main .i_banner .i_container .i_banner-right {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 110px;
 }
 .i_main .i_banner .i_container .i_banner-right .i_banner-group_social {
   display: flex;
+  justify-content: space-between;
   gap: 60px;
+  margin-top: 30px;
 }
 .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social {
   display: flex;
@@ -310,20 +334,41 @@ body {
   font-weight: 600;
   color: black;
 }
+.i_main .i_banner .i_container .i_banner-right .i_banner-btn-apply {
+  display: none;
+}
 .i_main .i_our-services {
   width: 100%;
-  height: 920px;
+  margin-bottom: 150px;
   background-color: #f5f5f5;
-  background-image: url("../img/svg/background-element.svg");
-  background-size: 800px 800px;
-  background-repeat: no-repeat;
-  background-position-x: 106%;
-  background-position-y: 62%;
+}
+.i_main .i_our-services .i_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+.i_main .i_our-services .i_container img {
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  z-index: 1;
+  top: 6%;
+  left: 14%;
+  opacity: 0.6;
+}
+.i_main .i_our-services .i_container .i_our-services-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+  position: relative;
+  z-index: 2;
 }
 .i_main .i_our-services .i_container .i_our-services-group .i_our-services-headline {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 20px;
 }
 .i_main .i_our-services .i_container .i_our-services-group .i_our-services-headline .i_our-services-circles {
@@ -345,22 +390,24 @@ body {
   text-transform: uppercase;
 }
 .i_main .i_our-services .i_container .i_our-services-group .i_our-services-preview {
-  display: grid;
-  grid-template-columns: repeat(3, 470px);
-  grid-auto-rows: 240px;
-  gap: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .i_main .i_our-services .i_container .i_our-services-group .i_our-services-preview .i_our-services-block {
-  width: 470px;
+  width: 32%;
   height: 240px;
   border-radius: 30px;
   background-color: white;
-  background-image: url("../img/main/Notice_Our-services.png");
+  background-image: url("../img/main/notice_Our-services.png");
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 100%;
-  display: grid;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px;
+  gap: 30px;
 }
 .i_main .i_our-services .i_container .i_our-services-group .i_our-services-preview .i_our-services-block span {
   font-size: 20px;
@@ -369,7 +416,520 @@ body {
 .i_main .i_our-services .i_container .i_our-services-group .i_our-services-preview .i_our-services-block p {
   font-family: "Open Sans";
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.i_main .i_our-services .i_container .i_our-services-group .i_our-services-btn-request {
+  width: 440px;
+  height: 60px;
+  background-color: #FF161F;
+  border-radius: 50px;
+  border: 0;
+  outline-style: none;
+  color: white;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1330px) {
+  .i_header .i_container {
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    height: 100px;
+  }
+  .i_header .i_container .i_header-left .i_header-burger {
+    width: 40px;
+    height: 40px;
+  }
+  .i_header .i_container .i_header-left .i_header-burger svg {
+    width: 12px;
+    height: 12px;
+  }
+  .i_header .i_container .i_header-left .i_header-menu {
+    gap: 24px;
+  }
+  .i_header .i_container .i_header-left .i_header-menu .i_header-menu-item a {
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .i_header .i_container .i_header-right {
+    gap: 30px;
+  }
+  .i_header .i_container .i_header-right .i_header-blog {
+    width: 95px;
+    height: 40px;
+    font-size: 12px;
+  }
+  .i_header .i_container .i_header-right .i_header-more .i_header-circles {
+    width: 40px;
+    height: 40px;
+  }
+  .i_header .i_container .i_header-right .i_header-more .i_header-circles span {
+    font-size: 12px;
+  }
+  .i_header .i_container .i_header-right .i_header-more .i_header-circles .lupa-icon {
+    width: 14px;
+    height: 16px;
+  }
+  .i_header .i_container .i_header-right .i_header-more .i_header-circles .whatsapp-icon {
+    width: 14px;
+    height: 14px;
+  }
+  .i_header .i_container .i_header-right .i_header-more .i_header-circles .email-icon {
+    width: 14px;
+    height: 12px;
+  }
+  .i_main .i_banner {
+    margin-bottom: 150px;
+  }
+  .i_main .i_banner .i_container {
+    margin: 0 30px;
+  }
+  .i_main .i_banner .i_container img {
+    width: 460px;
+    height: 400px;
+  }
+  .i_main .i_banner .i_container .i_banner-left svg {
+    width: 336px;
+    height: 63px;
+    margin-top: 88px;
+    margin-bottom: 60px;
+  }
+  .i_main .i_banner .i_container .i_banner-left .i_banner-headline {
+    margin-bottom: 25px;
+  }
+  .i_main .i_banner .i_container .i_banner-left .i_banner-headline span {
+    font-size: 34px;
+    text-transform: uppercase;
+  }
+  .i_main .i_banner .i_container .i_banner-left .i_banner-headline p {
+    font-size: 34px;
+    text-transform: uppercase;
+  }
+  .i_main .i_banner .i_container .i_banner-left span {
+    font-size: 20px;
+  }
+  .i_main .i_banner .i_container .i_banner-left .i_banner-btn-apply {
+    width: 272px;
+    height: 50px;
+    margin-top: 70px;
+    font-size: 14px;
+  }
+  .i_main .i_banner .i_container .i_banner-right {
+    gap: 112px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social {
+    gap: 30px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item {
+    width: 40px;
+    height: 40px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .instagram-icon {
+    width: 16px;
+    height: 16px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .facebook-icon {
+    width: 9px;
+    height: 16px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .youtube-icon {
+    width: 16px;
+    height: 16px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .telegram-icon {
+    width: 18px;
+    height: 16px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .linkedin-icon {
+    width: 18px;
+    height: 16px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-night_sun .i_banner-night_sun_item {
+    width: 40px;
+    height: 40px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-night_sun .i_banner-night_sun_item svg {
+    width: 22px;
+    height: 22px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item {
+    gap: 10px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles {
+    width: 40px;
+    height: 40px;
+    background-color: #f5f5f5;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles {
+    width: 40px;
+    height: 40px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles .banner-icon_1 {
+    width: 22px;
+    height: 22px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles .banner-icon_2 {
+    width: 18px;
+    height: 16px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles .banner-icon_3 {
+    width: 22px;
+    height: 22px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles .banner-icon_4 {
+    width: 18px;
+    height: 12px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .i_header .i_container {
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    height: 100px;
+  }
+  .i_header .i_container .i_header-left .i_header-burger {
+    width: 40px;
+    height: 40px;
+  }
+  .i_header .i_container .i_header-left .i_header-burger svg {
+    width: 12px;
+    height: 12px;
+  }
+  .i_header .i_container .i_header-left .i_header-menu {
+    display: none;
+  }
+  .i_header .i_container .i_header-right {
+    gap: 10px;
+  }
+  .i_header .i_container .i_header-right .i_header-blog {
+    width: 95px;
+    height: 40px;
+    font-size: 12px;
+  }
+  .i_header .i_container .i_header-right .i_header-more .i_header-circles {
+    width: 40px;
+    height: 40px;
+  }
+  .i_header .i_container .i_header-right .i_header-more .i_header-circles span {
+    font-size: 12px;
+  }
+  .i_header .i_container .i_header-right .i_header-more .i_header-circles .lupa-icon {
+    width: 14px;
+    height: 16px;
+  }
+  .i_header .i_container .i_header-right .i_header-more .i_header-circles .whatsapp-icon {
+    width: 14px;
+    height: 14px;
+  }
+  .i_header .i_container .i_header-right .i_header-more .i_header-circles .email-icon {
+    width: 14px;
+    height: 12px;
+  }
+  .i_main .i_banner {
+    margin-bottom: 411px;
+  }
+  .i_main .i_banner .i_container .i_banner-bg {
+    width: 435px;
+    height: 380px;
+  }
+  .i_main .i_banner .i_container .i_banner-bg img {
+    position: absolute;
+    top: 33%;
+    left: -58%;
+  }
+  .i_main .i_banner .i_container .i_banner-left {
+    position: absolute;
+    top: -100px;
+  }
+  .i_main .i_banner .i_container .i_banner-left svg {
+    width: 215px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+  .i_main .i_banner .i_container .i_banner-left .i_banner-headline {
+    margin-bottom: 30px;
+  }
+  .i_main .i_banner .i_container .i_banner-left .i_banner-headline span {
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+  .i_main .i_banner .i_container .i_banner-left .i_banner-headline p {
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+  .i_main .i_banner .i_container .i_banner-left span {
+    font-size: 16px;
+  }
+  .i_main .i_banner .i_container .i_banner-left .i_banner-btn-apply {
+    display: none;
+  }
+  .i_main .i_banner .i_container .i_banner-right {
+    position: absolute;
+    top: -5%;
+    left: 63%;
+    gap: 70px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social {
+    gap: 68px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item {
+    width: 40px;
+    height: 40px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .instagram-icon {
+    width: 16px;
+    height: 16px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .facebook-icon {
+    width: 9px;
+    height: 16px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .youtube-icon {
+    width: 16px;
+    height: 16px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .telegram-icon {
+    width: 18px;
+    height: 16px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .linkedin-icon {
+    width: 18px;
+    height: 16px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-night_sun .i_banner-night_sun_item {
+    width: 40px;
+    height: 40px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-night_sun .i_banner-night_sun_item svg {
+    width: 22px;
+    height: 22px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item {
+    gap: 10px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles {
+    width: 40px;
+    height: 40px;
+    background-color: #f5f5f5;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles {
+    width: 40px;
+    height: 40px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles .banner-icon_1 {
+    width: 22px;
+    height: 22px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles .banner-icon_2 {
+    width: 18px;
+    height: 16px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles .banner-icon_3 {
+    width: 22px;
+    height: 22px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles .banner-icon_4 {
+    width: 18px;
+    height: 12px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item p {
+    font-size: 14px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-btn-apply {
+    display: block;
+    width: 330px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: #FF161F;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_header .i_container {
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    height: 100px;
+  }
+  .i_header .i_container .i_header-left .i_header-burger {
+    width: 40px;
+    height: 40px;
+  }
+  .i_header .i_container .i_header-left .i_header-burger svg {
+    width: 12px;
+    height: 12px;
+  }
+  .i_header .i_container .i_header-left .i_header-menu {
+    display: none;
+  }
+  .i_header .i_container .i_header-right {
+    gap: 10px;
+  }
+  .i_header .i_container .i_header-right .i_header-blog {
+    width: 95px;
+    height: 40px;
+    font-size: 12px;
+  }
+  .i_header .i_container .i_header-right .i_header-more .i_header-circles {
+    width: 40px;
+    height: 40px;
+  }
+  .i_header .i_container .i_header-right .i_header-more .i_header-circles span {
+    font-size: 12px;
+  }
+  .i_header .i_container .i_header-right .i_header-more .i_header-circles .lupa-icon {
+    width: 14px;
+    height: 16px;
+  }
+  .i_header .i_container .i_header-right .i_header-more .i_header-circles .whatsapp-icon {
+    width: 14px;
+    height: 14px;
+  }
+  .i_header .i_container .i_header-right .i_header-more .i_header-circles .email-icon {
+    width: 14px;
+    height: 12px;
+  }
+  .i_main .i_banner {
+    margin-bottom: 411px;
+  }
+  .i_main .i_banner .i_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .i_main .i_banner .i_container .i_banner-bg {
+    width: 435px;
+    height: 380px;
+  }
+  .i_main .i_banner .i_container .i_banner-bg img {
+    position: absolute;
+    top: 33%;
+    left: -58%;
+  }
+  .i_main .i_banner .i_container .i_banner-left svg {
+    width: 215px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+  .i_main .i_banner .i_container .i_banner-left .i_banner-headline {
+    margin-bottom: 30px;
+  }
+  .i_main .i_banner .i_container .i_banner-left .i_banner-headline span {
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+  .i_main .i_banner .i_container .i_banner-left .i_banner-headline p {
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+  .i_main .i_banner .i_container .i_banner-left span {
+    font-size: 16px;
+  }
+  .i_main .i_banner .i_container .i_banner-left .i_banner-btn-apply {
+    display: none;
+  }
+  .i_main .i_banner .i_container .i_banner-right {
+    display: flex;
+    gap: 70px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social {
+    gap: 68px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item {
+    width: 40px;
+    height: 40px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .instagram-icon {
+    width: 16px;
+    height: 16px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .facebook-icon {
+    width: 9px;
+    height: 16px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .youtube-icon {
+    width: 16px;
+    height: 16px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .telegram-icon {
+    width: 18px;
+    height: 16px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .linkedin-icon {
+    width: 18px;
+    height: 16px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-night_sun .i_banner-night_sun_item {
+    width: 40px;
+    height: 40px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-night_sun .i_banner-night_sun_item svg {
+    width: 22px;
+    height: 22px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item {
+    gap: 10px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles {
+    width: 40px;
+    height: 40px;
+    background-color: #f5f5f5;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles {
+    width: 40px;
+    height: 40px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles .banner-icon_1 {
+    width: 22px;
+    height: 22px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles .banner-icon_2 {
+    width: 18px;
+    height: 16px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles .banner-icon_3 {
+    width: 22px;
+    height: 22px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles .banner-icon_4 {
+    width: 18px;
+    height: 12px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item p {
+    font-size: 14px;
+  }
+  .i_main .i_banner .i_container .i_banner-right .i_banner-btn-apply {
+    display: block;
+    width: 330px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: #FF161F;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
