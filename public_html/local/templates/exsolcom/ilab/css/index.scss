@@ -28,6 +28,8 @@ body{
   height: 100%;
   margin: 0 auto;
   width: 1520px;
+  padding-bottom: 235px;
+  overflow-x: hidden;
   @media screen and (max-width: 1520px){
     width: 100%;
     margin: 0 30px;
@@ -38,6 +40,7 @@ body{
 .i_header {
   display: flex;
   .i_container {
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -134,6 +137,7 @@ body{
 
           //RU
           span {
+            margin-top: 2px;
             color: white;
             font-size: 14px;
             font-weight: normal;
@@ -208,11 +212,11 @@ body{
   .i_banner  {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 150px;
     position: relative;
     .i_banner-bg{
       position: absolute;
-      top: 9%;
+      top: 50%;
+      transform: translateY(calc(-50%));
       left: 32%;
       z-index: 1;
       width: 40%;
@@ -231,9 +235,12 @@ body{
       .i_banner-left {
         display: flex;
         flex-direction: column;
+        .i_banner-group_social{
+          display: none;
+        }
 
         //BANNER HEADLINE
-        svg{
+        .i_banner-logo svg{
           color: black;
           margin-top: 82px;
           margin-bottom: 85px;
@@ -311,14 +318,18 @@ body{
               display: flex;
               align-items: center;
               justify-content: center;
-              svg {
-                color: black;
+              .i_banner-social_link {
+                svg{
+                  color: black;
+                }
               }
               &:hover {
                 transition: 0.3s ease;
                 cursor: pointer;
-                svg {
-                  color: #FF161F;
+                .i_banner-social_link {
+                  svg{
+                    color: #FF161F;
+                  }
                 }
               }
             }
@@ -342,17 +353,22 @@ body{
             border: 0;
             justify-content: center;
             //HOVER NIGHT SUN
-            svg {
-              color: white;
+            .i_banner-icon-nightSun {
               margin-bottom: 5px;
               margin-right: 5px;
+              color: white;
+              svg{
+
+              }
             }
             &:focus {
               background-color: #f5f5f5;
               transition: 0.3s ease;
               cursor: pointer;
               border: none;
-              svg {
+              .i_banner-icon-nightSun {
+                margin-bottom: 5px;
+                margin-right: 5px;
                 color: black;
               }
             }
@@ -389,7 +405,6 @@ body{
                 color: #FF161F;
               }
             }
-
             .i_banner-circles {
               width: 50px;
               height: 50px;
@@ -398,7 +413,6 @@ body{
               display: flex;
               align-items: center;
               justify-content: center;
-
               svg {
                 color: white;
               }
@@ -617,11 +631,10 @@ body{
   .i_main {
     //Banner
     .i_banner{
-      margin-bottom: 150px;
       .i_container{
-        margin: 0 30px;
+        margin: 0 20px;
         //Фоновая картинка
-        img{
+        .i_banner-bg{
           width: 460px;
           height: 400px;
         }
@@ -629,7 +642,7 @@ body{
         //Левая часть баннера
         .i_banner-left{
           //Логотип ExSol.com
-          svg{
+          .i_banner-logo svg{
             width: 336px;
             height: 63px;
             margin-top: 88px;
@@ -835,17 +848,15 @@ body{
   .i_main {
     //Banner
     .i_banner{
-      margin-bottom: 411px;
       .i_container{
         //Фоновая картинка
         .i_banner-bg{
+          position: absolute;
+          top: 55%;
+          left: 5%;
+          z-index: 1;
           width: 435px;
           height: 380px;
-          img{
-            position: absolute;
-            top: 33%;
-            left: -58%;
-          }
         }
         //!Фоновая картинка
         //Левая часть баннера
@@ -853,7 +864,7 @@ body{
           position: absolute;
           top: -100px;
           //Логотип ExSol.com
-          svg{
+          .i_banner-logo svg{
             width: 215px;
             height: 40px;
             margin-top: 30px;
@@ -887,9 +898,9 @@ body{
         //!Левая часть баннера
         //Правая часть баннера
         .i_banner-right{
-          position: absolute;
+          position: relative;
           top: -5%;
-          left: 63%;
+          left: 64%;
           gap: 70px;
           //Группа Соц-сетей и ДеньНочь
           .i_banner-group_social{
@@ -997,17 +1008,17 @@ body{
 }
 //!HEADER MEDIA APAPTIVE 1000
 
-//HEADER MEDIA APAPTIVE 480
-@media screen and (max-width: 480px) {
+//HEADER MEDIA APAPTIVE 760
+@media screen and (max-width: 760px) {
   //Header
   .i_header {
     .i_container {
-      margin: 0 30px;
+      margin: 0 20px;
       display: flex;
       align-items: center;
-      justify-content: flex-start;
+      justify-content: end;
       gap: 10px;
-      height: 100px;
+      height: 80px;
       //Header Left
       .i_header-left{
         //Header Burger
@@ -1072,48 +1083,45 @@ body{
   .i_main {
     //Banner
     .i_banner{
-      margin-bottom: 411px;
       .i_container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         //Фоновая картинка
         .i_banner-bg{
-          width: 435px;
-          height: 380px;
-          img{
-            position: absolute;
-            top: 33%;
-            left: -58%;
-          }
+          position: absolute;
+          top: 44%;
+          left: unset;
+          z-index: 1;
+          width: 330px;
+          height: 285px;
         }
         //!Фоновая картинка
         //Левая часть баннера
         .i_banner-left{
+          position: absolute;
+          top: -100px;
           //Логотип ExSol.com
-          svg{
+          .i_banner-logo svg{
             width: 215px;
             height: 40px;
             margin-top: 30px;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
           }
           //!Логотип ExSol.com
           //Заголовок
           .i_banner-headline{
             margin-bottom: 30px;
             span{
-              font-size: 28px;
+              font-size: 26px;
               text-transform: uppercase;
             }
             p{
-              font-size: 28px;
+              font-size: 26px;
               text-transform: uppercase;
             }
           }
           //!Заголовок
           //Подзаголовок
           span{
-            font-size: 16px;
+            font-size: 14px;
           }
           //!Подзаголовок
           //Кнопка Оставить Заявку
@@ -1125,11 +1133,14 @@ body{
         //!Левая часть баннера
         //Правая часть баннера
         .i_banner-right{
-          display: flex;
+          position: relative;
+          top: -5%;
+          left: 50%;
           gap: 70px;
           //Группа Соц-сетей и ДеньНочь
           .i_banner-group_social{
-            gap: 68px;
+            margin-top: 20px;
+            gap: 60px;
             //Группа Соц-сети
             .i_banner-social{
               .i_banner-social_item{
@@ -1223,6 +1234,367 @@ body{
             cursor: pointer;
           }
 
+        }
+        //!Правая часть баннера
+      }
+    }
+    //!Banner
+  }
+  //!Main
+}
+//!HEADER MEDIA APAPTIVE 760
+
+//HEADER MEDIA APAPTIVE 480
+@media screen and (max-width: 480px) {
+  //Header
+  .i_header {
+    .i_container {
+      margin: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+      height: 100px;
+      //Header Left
+      .i_header-left{
+        //Header Burger
+        .i_header-burger{
+          width: 40px;
+          height: 40px;
+          svg{
+            width: 12px;
+            height: 12px;
+          }
+        }
+        //!Header Burger
+        //Header Menu
+        .i_header-menu{
+          display: none;
+        }
+        //!Header Menu
+      }
+      //!Header Left
+      //Header Right
+      .i_header-right{
+        gap: 10px;
+        //Header Blog
+        .i_header-blog{
+          width: 186px;
+          height: 40px;
+          font-size: 12px;
+        }
+        //!Header Blog
+        //Header More
+        .i_header-more{
+          position: relative;
+          //Header Circles
+          .i_header-circles{
+            width: 40px;
+            height: 40px;
+            span{
+              font-size: 12px;
+            }
+            .lupa-icon{
+              width: 14px;
+              height: 16px;
+            }
+            .whatsapp-icon{
+              width: 14px;
+              height: 14px;
+            }
+            .email-icon{
+              width: 14px;
+              height: 12px;
+            }
+          }
+          //!Header Circles
+        }
+        //!Header More
+      }
+      //!Header Right
+    }
+  }
+  //!Header
+
+  //Main
+  .i_main {
+    //Banner
+    .i_banner{
+      .i_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+        //Фоновая картинка
+        .i_banner-bg{
+          position: relative;
+          width: 385px;
+          height: 332px;
+          left: unset;
+          top: 50%;
+          right: 50%;
+          transform: translateX(50%);
+        }
+        //!Фоновая картинка
+        //Левая часть баннера
+        .i_banner-left{
+          position: relative;
+          top: 10px ;
+          left: unset;
+          display: flex;
+          align-items: center;
+          //Группа Соц-сетей и ДеньНочь
+          .i_banner-group_social{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 155px;
+            .i_banner-social{
+              display: flex;
+              gap: 10px;
+              .i_banner-social_item{
+                width: 40px;
+                height: 40px;
+                background-color: #f5f5f5;
+                border-radius: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .i_banner-social_link {
+                  svg{
+                    color: black;
+                  }
+                }
+                &:hover {
+                  transition: 0.3s ease;
+                  cursor: pointer;
+                  .i_banner-social_link {
+                    svg{
+                      color: #FF161F;
+                    }
+                  }
+                }
+                .instagram-icon{
+                  width: 16px;
+                  height: 16px;
+                  margin: 0;
+                }
+                .facebook-icon{
+                  width: 9px;
+                  height: 16px;
+                  margin: 0;
+                }
+                .youtube-icon{
+                  width: 16px;
+                  height: 16px;
+                  margin: 0;
+                }
+                .telegram-icon{
+                  width: 18px;
+                  height: 16px;
+                  margin: 0;
+                }
+                .linkedin-icon{
+                  width: 18px;
+                  height: 16px;
+                  margin: 0;
+                }
+                li {
+                  list-style: none;
+                }
+              }
+            }
+            //Группа ДеньНочь
+            .i_banner-night_sun{
+              .i_banner-night_sun_item{
+                width: 40px;
+                height: 40px;
+                background-color: black;
+                border-radius: 25px;
+                display: flex;
+                outline: none;
+                align-items: center;
+                border: 0;
+                justify-content: center;
+                //HOVER NIGHT SUN
+                &:focus {
+                  background-color: #f5f5f5;
+                  transition: 0.3s ease;
+                  cursor: pointer;
+                  border: none;
+                  .i_banner-icon-nightSun {
+                    color: black;
+                    margin-bottom: 5px;
+                    margin-right: 5px;
+                  }
+                }
+                .i_banner-icon-nightSun{
+                  color: white;
+                  width: 22px;
+                  height: 22px;
+                  margin-bottom: 3px;
+                  margin-right: 3px;
+                }
+              }
+            }
+            //Группа ДеньНочь
+          }
+          //Группа Соц-сетей и ДеньНочь
+          //Логотип ExSol.com
+          .i_banner-logo{
+            .i_banner-logo svg{
+              width: 216px;
+              height: 40px;
+              margin-top: 40px;
+              margin-bottom: 40px;
+            }
+          }
+          //!Логотип ExSol.com
+          //Заголовок
+          .i_banner-headline{
+            margin-bottom: 30px;
+            span{
+              font-size: 24px;
+              text-transform: uppercase;
+            }
+            p{
+              font-size: 24px;
+              text-transform: uppercase;
+            }
+          }
+          //!Заголовок
+          //Подзаголовок
+          span{
+            font-size: 14px;
+          }
+          //!Подзаголовок
+          //Кнопка Оставить Заявку
+          .i_banner-btn-apply{
+            display: none;
+          }
+          //!Кнопка Оставить Заявку
+        }
+        //!Левая часть баннера
+        //Правая часть баннера
+        .i_banner-right{
+          position: relative;
+          gap: 70px;
+          left: unset;
+          //Группа Соц-сетей и ДеньНочь NONE
+          .i_banner-group_social{
+            display: none;
+            gap: 68px;
+            //Группа Соц-сети
+            .i_banner-social{
+              .i_banner-social_item{
+                width: 40px;
+                height: 40px;
+                .i_banner-social_link {
+                  svg{
+                    fill: black;
+                    width: 16px;
+                    height: auto;
+                  }
+                }
+                &:hover {
+                  transition: 0.3s ease;
+                  cursor: pointer;
+                  .i_banner-social_link {
+                    svg{
+                      fill: #FF161F;
+                    }
+                  }
+                }
+              }
+            }
+            //!Группа Соц-сети
+            //Группа ДеньНочь
+            .i_banner-night_sun{
+              .i_banner-night_sun_item{
+                width: 40px;
+                height: 40px;
+                background-color: black;
+                border-radius: 25px;
+                display: flex;
+                outline: none;
+                align-items: center;
+                border: 0;
+                justify-content: center;
+                //HOVER NIGHT SUN
+                &:focus {
+                  background-color: #f5f5f5;
+                  transition: 0.3s ease;
+                  cursor: pointer;
+                  border: none;
+                  svg {
+                    color: black;
+                    margin-bottom: 5px;
+                    margin-right: 5px;
+                  }
+                }
+                svg{
+                  color: white;
+                  margin-bottom: 5px;
+                  margin-right: 5px;
+                  width: 22px;
+                  height: 22px;
+                }
+              }
+            }
+            //Группа ДеньНочь
+          }
+          //!Группа Соц-сетей и ДеньНочь NONE
+          //Группа Навыки
+          .i_banner-skills{
+            .i_banner-item{
+              gap: 10px;
+              &:hover{
+                .i_banner-circles {
+                  width: 40px;
+                  height: 40px;
+                  background-color: #f5f5f5;
+                }
+              }
+              .i_banner-circles{
+                width: 40px;
+                height: 40px;
+                .banner-icon_1{
+                  width: 22px;
+                  height: 22px;
+                }
+                .banner-icon_2{
+                  width: 18px;
+                  height: 16px;
+                }
+                .banner-icon_3{
+                  width: 22px;
+                  height: 22px;
+                }
+                .banner-icon_4{
+                  width: 18px;
+                  height: 12px;
+                }
+              }
+              p{
+                font-size: 14px;
+              }
+            }
+          }
+          //!Группа Навыки
+          //Кнопка Оставить заявку
+          .i_banner-btn-apply{
+            display: block;
+            width: 330px;
+            height: 60px;
+            border-radius: 50px;
+            border: none;
+            background-color: #FF161F;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+          }
+          //!Кнопка Оставить заявку
         }
         //!Правая часть баннера
       }
