@@ -1695,5 +1695,107 @@ body {
     font-size: 13px;
   }
 }
+.i_infoblock .i_container {
+  display: flex;
+}
+.i_infoblock .i_container .i_news .i_news-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.i_infoblock .i_container .i_news .i_news-title .i_news-title-icon {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.i_infoblock .i_container .i_news .i_news-title .i_news-title-icon svg {
+  color: white;
+}
+.i_infoblock .i_container .i_news .i_news-title .i_news-title-name span {
+  font-size: 32px;
+  font-weight: bold;
+}
+.i_infoblock .i_container .i_news .news-list {
+  display: flex;
+  gap: 40px;
+}
+.i_infoblock .i_container .i_news .news-list .news-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 344px;
+  height: 613px;
+  background-color: #f9f9f9;
+  border-radius: 30px;
+}
+.i_infoblock .i_container .i_news .news-list .news-item .news-item-img img {
+  width: 285px;
+  height: auto;
+}
+.i_infoblock .i_container .i_news .news-list .news-item .news-date-time span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #7c7c7c;
+}
+.i_infoblock .i_container .i_news .news-list .news-item a {
+  text-decoration: none;
+}
+.i_infoblock .i_container .i_news .news-list .news-item a b {
+  color: black;
+  font-size: 21px;
+}
+.i_infoblock .i_container .i_news .news-list .news-item .i_news-preview span {
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: black;
+}
+.i_infoblock .i_container .i_blog .i_blog-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.i_infoblock .i_container .i_blog .i_blog-title .i_blog-title-icon {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.i_infoblock .i_container .i_blog .i_blog-title .i_blog-title-icon svg {
+  color: white;
+  margin-left: 6px;
+}
+.i_infoblock .i_container .i_blog .i_blog-title .i_blog-title-name span {
+  font-size: 32px;
+  font-weight: bold;
+}
+.i_infoblock .i_container .i_blog .blog-list .blog-item .blog-item-img img {
+  width: 130px;
+  height: auto;
+}
+.i_infoblock .i_container .i_blog .blog-list .blog-item .blog-date-time span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #7c7c7c;
+}
+.i_infoblock .i_container .i_blog .blog-list .blog-item a {
+  text-decoration: none;
+}
+.i_infoblock .i_container .i_blog .blog-list .blog-item a b {
+  color: black;
+  font-size: 21px;
+}
+.i_infoblock .i_container .i_blog .blog-list .blog-item .i_blog-preview span {
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: black;
+}
 
 /*# sourceMappingURL=index.css.map */

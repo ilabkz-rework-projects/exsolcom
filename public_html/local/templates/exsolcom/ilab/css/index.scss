@@ -659,7 +659,6 @@ body{
 }
 //!MAIN
 
-
 //HEADER MEDIA ADAPTIVE 1330
 @media screen and (max-width: 1330px) {
   //Header
@@ -1482,9 +1481,9 @@ body{
   }
   //!Main
 }
-//!HEADER MEDIA APAPTIVE 760
+//!HEADER MEDIA ADAPTIVE 760
 
-//HEADER MEDIA APAPTIVE 480
+//HEADER MEDIA ADAPTIVE 480
 @media screen and (max-width: 480px) {
   //Header
   .i_header {
@@ -1865,9 +1864,9 @@ body{
 
   }
   //!Main
-//!HEADER MEDIA APAPTIVE 480
+//!HEADER MEDIA ADAPTIVE 480
 
-//HEADER MEDIA APAPTIVE 360
+//HEADER MEDIA ADAPTIVE 360
 @media screen and (max-width: 360px) {
   //Header
   .i_header {
@@ -2250,4 +2249,179 @@ body{
   }
   //!Main
 //!HEADER MEDIA ADAPTIVE 360
+
+
+//INFO BLOCK
+.i_infoblock{
+  .i_container{
+    display: flex;
+    //News
+    .i_news{
+      //News Headline
+      .i_news-title{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        //News Headline Иконка
+        .i_news-title-icon{
+          width: 50px;
+          height: 50px;
+          background-color: black;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg{
+            color: white;
+          }
+        }
+        //!News Headline Иконка
+        //News Headline Название
+        .i_news-title-name{
+          span{
+            font-size: 32px;
+            font-weight: bold;
+          }
+        }
+        //!News Headline Название
+      }
+      //!News Headline
+      //News Лист
+      .news-list{
+        display: flex;
+        gap: 40px;
+        //News Лист
+        .news-item{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+          width: 344px;
+          height: 613px;
+          background-color: #f9f9f9;
+          border-radius: 30px;
+
+          //News изображение
+          .news-item-img{
+            img{
+              width: 285px;
+              height: auto;
+            }
+          }
+          //!News изображение
+          //News Date
+          .news-date-time{
+            span{
+              font-size: 14px;
+              font-weight: 600;
+              color: #7c7c7c;
+            }
+          }
+          //!News Date
+          //News Headline
+          a{
+            text-decoration: none;
+            b{
+              color: black;
+              font-size: 21px;
+            }
+          }
+          //!News Headline
+          //News Preview
+          .i_news-preview{
+            span{
+              font-family: "Open Sans";
+              font-size: 14px;
+              color: black;
+            }
+          }
+          //!News Preview
+        }
+        //News Лист
+      }
+      //!News Лист
+    }
+    //!News
+    //Blog
+    .i_blog{
+      //Blog Headline
+      .i_blog-title{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        //Blog Headline Иконка
+        .i_blog-title-icon{
+          width: 50px;
+          height: 50px;
+          background-color: black;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg{
+            color: white;
+            margin-left: 6px;
+          }
+        }
+        //!Blog Headline Иконка
+        //Blog Headline Название
+        .i_blog-title-name{
+          span{
+            font-size: 32px;
+            font-weight: bold;
+          }
+        }
+        //!Blog Headline Название
+      }
+      //!Blog Headline
+      //Blog Лист
+      .blog-list{
+        //Blog Лист
+        .blog-item{
+          //Blog изображение
+          .blog-item-img{
+            img{
+              width: 130px;
+              height: auto;
+            }
+          }
+          //!Blog изображение
+          //Blog Date
+          .blog-date-time{
+            span{
+              font-size: 14px;
+              font-weight: 600;
+              color: #7c7c7c;
+            }
+          }
+          //!Blog Date
+          //Blog Headline
+          a{
+            text-decoration: none;
+            b{
+              color: black;
+              font-size: 21px;
+            }
+          }
+          //!Blog Headline
+          //Blog Preview
+          .i_blog-preview{
+            span{
+              font-family: "Open Sans";
+              font-size: 14px;
+              color: black;
+            }
+          }
+          //!Blog Preview
+        }
+        //Blog Лист
+      }
+      //!Blog Лист
+    }
+    //!Blog
+  }
+}
+//!INFO BLOCK
+
+
 
