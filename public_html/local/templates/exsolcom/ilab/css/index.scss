@@ -440,7 +440,6 @@ body{
   //MAIN OUR SERVICES
   .i_our-services {
     width: 100%;
-    margin-bottom: 150px;
     background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
@@ -450,8 +449,8 @@ body{
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 50px;
-      padding-bottom: 50px;
+      padding-top: 70px;
+      padding-bottom: 70px;
       img{
         width: 800px;
         height: 800px;
@@ -520,7 +519,7 @@ body{
             display: flex;
             flex-direction: column;
             padding: 30px 30px;
-            gap: 30px;
+            gap: 25px;
             span{
               font-size: 20px;
               font-weight: bold;
@@ -571,8 +570,95 @@ body{
   }
   //!MAIN OUR SERVICES
 
+  //MAIN SOFTWARE
+  .i_software{
+    background-color: #f5f5f5;
+    .i_container{
+    padding-top: 25px;
+      padding-bottom: 35px;
+      //Software Иконка с 1С
+      .i_software-corporate{
+        display: flex;
+        gap: 40px;
+        align-items: center;
+
+        //Software Icon Img
+        .i_software-iconAnnounce{
+          display: flex;
+          position: relative;
+          svg{
+          }
+          //Изображение 1С
+          .i_software-im{
+            width: 205px;
+            height: 205px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            img{
+              width: 160px;
+              height: auto;
+            }
+          }
+          //Изображение 1С
+        }
+        //Software Icon Img
+        //Software Текст с кнопкой
+        .i_software-group-textBtn{
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          //Software text
+          .i_software-group-text{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            //Software Headline
+            .i_software-headline{
+              font-size: 30px;
+              font-weight: bold;
+            }
+            //Software Headline
+            //Software Description
+            .i_software-desc{
+              font-size: 16px;
+              font-family: "Open Sans";
+              font-weight: 600;
+              width: 99%;
+            }
+            //Software Description
+          }
+          //Software text
+          //Software Button
+          .i_software-btn {
+            width: 334px;
+            height: 60px;
+            background-color: #FF161F;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            border: 0;
+          }
+          //Software Button
+        }
+        //Software Текст с кнопкой
+      }
+      //Software Иконка с 1С
+
+    }
+  }
+  //!MAIN SOFTWARE
+
 }
 //!MAIN
+
 
 //HEADER MEDIA ADAPTIVE 1330
 @media screen and (max-width: 1330px) {
@@ -655,7 +741,6 @@ body{
     //Banner
     .i_banner{
       .i_container{
-        margin: 0 20px;
         //Фоновая картинка
         .i_banner-bg{
           width: 460px;
@@ -794,10 +879,24 @@ body{
     //Our Services
     .i_our-services{
       .i_container{
+
+      }
         //Группа наши услуги
         .i_our-services-group{
           //Группа Headline
-          .i_our-services-headline{}
+          .i_our-services-headline{
+            .i_our-services-circles{
+              width: 40px;
+              height: 40px;
+              svg{
+                width: 30px;
+                height: 33px;
+              }
+            }
+            span{
+              font-size: 28px;
+            }
+          }
           //!Группа Headline
           //Группа Preview
           .i_our-services-preview{
@@ -830,10 +929,10 @@ body{
 
   }
   //!Main
-}
-//!HEADER MEDIA APAPTIVE 1330
 
-//HEADER MEDIA APAPTIVE 1000
+//!HEADER MEDIA ADAPTIVE 1330
+
+//HEADER MEDIA ADAPTIVE 1000
 @media screen and (max-width: 1000px) {
   //Header
   .i_header {
@@ -1102,9 +1201,9 @@ body{
   }
   //!Main
 }
-//!HEADER MEDIA APAPTIVE 1000
+//!HEADER MEDIA ADAPTIVE 1000
 
-//HEADER MEDIA APAPTIVE 760
+//HEADER MEDIA ADAPTIVE 760
 @media screen and (max-width: 760px) {
   //Header
   .i_header {
@@ -1177,6 +1276,7 @@ body{
     //Banner
     .i_banner{
       .i_container{
+        margin: 0 20px;
         padding-bottom: 60px;
         //Фоновая картинка
         .i_banner-bg{
@@ -1333,6 +1433,52 @@ body{
       }
     }
     //!Banner
+    //Our Services
+    .i_our-services{
+      .i_container{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        //Группа наши услуги
+        .i_our-services-group{
+          gap: 60px;
+          //Группа Headline
+          .i_our-services-headline{
+            span{
+              font-size: 26px;
+            }
+          }
+          //!Группа Headline
+          //Группа Preview
+          .i_our-services-preview{
+            gap: 20px;
+            .i_our-services-block{
+              width: 340px;
+              height: 220px;
+              gap: 20px;
+              background-size: 143px auto;
+              padding: 30px 20px;
+              span{
+                font-size: 18px;
+              }
+              p{
+                font-size: 13px;
+                width: 172px;
+              }
+            }
+          }
+          //!Группа Preview
+          //Группа Btn request
+          .i_our-services-btn-request{
+            width: 350px;
+            height: 48px;
+            font-size: 14px;
+          }
+          //!Группа Btn request
+        }
+        //!Группа наши услуги
+      }
+    }
+    //!Our Services
   }
   //!Main
 }
@@ -1667,8 +1813,56 @@ body{
         }
         //!Правая часть баннера
       }
-    }
     //!Banner
+    //Our Services
+    .i_our-services{
+      .i_container{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        //Группа наши услуги
+        .i_our-services-group{
+          gap: 60px;
+          //Группа Headline
+          .i_our-services-headline{
+            span{
+              font-size: 21px;
+            }
+          }
+          //!Группа Headline
+          //Группа Preview
+          .i_our-services-preview{
+            gap: 20px;
+            .i_our-services-block{
+              width: 198px;
+              height: 333px;
+              gap: 20px;
+              background-size: 143px auto;
+              padding: 30px 20px;
+              background-position-x: center;
+              span{
+                font-size: 18px;
+              }
+              p{
+                font-size: 13px;
+                width: 172px;
+              }
+            }
+          }
+          //!Группа Preview
+          //Группа Btn request
+          .i_our-services-btn-request{
+            width: 350px;
+            height: 48px;
+            font-size: 14px;
+          }
+          //!Группа Btn request
+        }
+        //!Группа наши услуги
+      }
+    }
+    //!Our Services
+    }
+
   }
   //!Main
 //!HEADER MEDIA APAPTIVE 480
@@ -2000,8 +2194,59 @@ body{
         }
         //!Правая часть баннера
       }
-    }
     //!Banner
+
+    //Our Services
+    .i_our-services{
+      .i_container{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        //Группа наши услуги
+        .i_our-services-group{
+          gap: 60px;
+          //Группа Headline
+          .i_our-services-headline{
+            display: flex;
+            justify-content: center;
+            span{
+              width: 50%;
+              font-size: 21px;
+            }
+          }
+          //!Группа Headline
+          //Группа Preview
+          .i_our-services-preview{
+            gap: 20px;
+            .i_our-services-block{
+              width: 149px;
+              height: 333px;
+              gap: 20px;
+              background-size: 143px auto;
+              padding: 22px 8px;
+              background-position-x: center;
+              span{
+                font-size: 15px;
+              }
+              p{
+                font-size: 12px;
+                width: 130px;
+              }
+            }
+          }
+          //!Группа Preview
+          //Группа Btn request
+          .i_our-services-btn-request{
+            width: 316px;
+            height: 40px;
+            font-size: 13px;
+          }
+          //!Группа Btn request
+        }
+        //!Группа наши услуги
+      }
+    }
+    //!Our Services
+  }
   }
   //!Main
 //!HEADER MEDIA ADAPTIVE 360

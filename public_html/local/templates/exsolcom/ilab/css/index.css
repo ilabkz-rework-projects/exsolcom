@@ -353,7 +353,6 @@ body {
 }
 .i_main .i_our-services {
   width: 100%;
-  margin-bottom: 150px;
   background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
@@ -364,8 +363,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 50px;
-  padding-bottom: 50px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 .i_main .i_our-services .i_container img {
   width: 800px;
@@ -430,7 +429,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 30px 30px;
-  gap: 30px;
+  gap: 25px;
 }
 .i_main .i_our-services .i_container .i_our-services-group .i_our-services-preview .i_our-services-block span {
   font-size: 20px;
@@ -468,6 +467,69 @@ body {
   color: #FF161F;
   background-color: white;
   cursor: pointer;
+}
+.i_main .i_software {
+  background-color: #f5f5f5;
+}
+.i_main .i_software .i_container {
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+.i_main .i_software .i_container .i_software-corporate {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.i_main .i_software .i_container .i_software-corporate .i_software-iconAnnounce {
+  display: flex;
+  position: relative;
+}
+.i_main .i_software .i_container .i_software-corporate .i_software-iconAnnounce .i_software-im {
+  width: 205px;
+  height: 205px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.i_main .i_software .i_container .i_software-corporate .i_software-iconAnnounce .i_software-im img {
+  width: 160px;
+  height: auto;
+}
+.i_main .i_software .i_container .i_software-corporate .i_software-group-textBtn {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.i_main .i_software .i_container .i_software-corporate .i_software-group-textBtn .i_software-group-text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.i_main .i_software .i_container .i_software-corporate .i_software-group-textBtn .i_software-group-text .i_software-headline {
+  font-size: 30px;
+  font-weight: bold;
+}
+.i_main .i_software .i_container .i_software-corporate .i_software-group-textBtn .i_software-group-text .i_software-desc {
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  width: 99%;
+}
+.i_main .i_software .i_container .i_software-corporate .i_software-group-textBtn .i_software-btn {
+  width: 334px;
+  height: 60px;
+  background-color: #FF161F;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border: 0;
 }
 
 @media screen and (max-width: 1330px) {
@@ -521,9 +583,6 @@ body {
   .i_header .i_container .i_header-right .i_header-more .i_header-circles .email-icon {
     width: 14px;
     height: 12px;
-  }
-  .i_main .i_banner .i_container {
-    margin: 0 20px;
   }
   .i_main .i_banner .i_container .i_banner-bg {
     width: 460px;
@@ -624,21 +683,32 @@ body {
   .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item p {
     font-size: 14px;
   }
-  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-preview {
+  .i_main .i_our-services .i_our-services-group .i_our-services-headline .i_our-services-circles {
+    width: 40px;
+    height: 40px;
+  }
+  .i_main .i_our-services .i_our-services-group .i_our-services-headline .i_our-services-circles svg {
+    width: 30px;
+    height: 33px;
+  }
+  .i_main .i_our-services .i_our-services-group .i_our-services-headline span {
+    font-size: 28px;
+  }
+  .i_main .i_our-services .i_our-services-group .i_our-services-preview {
     justify-content: center;
   }
-  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-preview .i_our-services-block {
+  .i_main .i_our-services .i_our-services-group .i_our-services-preview .i_our-services-block {
     width: 394px;
     height: 235px;
     gap: 20px;
     background-size: 200px 150px;
     padding: 30px 20px;
   }
-  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-preview .i_our-services-block p {
+  .i_main .i_our-services .i_our-services-group .i_our-services-preview .i_our-services-block p {
     font-size: 12px;
     width: 177px;
   }
-  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-btn-request {
+  .i_main .i_our-services .i_our-services-group .i_our-services-btn-request {
     width: 350px;
     height: 48px;
     font-size: 14px;
@@ -877,6 +947,7 @@ body {
     height: 12px;
   }
   .i_main .i_banner .i_container {
+    margin: 0 20px;
     padding-bottom: 60px;
   }
   .i_main .i_banner .i_container .i_banner-bg {
@@ -998,6 +1069,38 @@ body {
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
+  }
+  .i_main .i_our-services .i_container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .i_main .i_our-services .i_container .i_our-services-group {
+    gap: 60px;
+  }
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-headline span {
+    font-size: 26px;
+  }
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-preview {
+    gap: 20px;
+  }
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-preview .i_our-services-block {
+    width: 340px;
+    height: 220px;
+    gap: 20px;
+    background-size: 143px auto;
+    padding: 30px 20px;
+  }
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-preview .i_our-services-block span {
+    font-size: 18px;
+  }
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-preview .i_our-services-block p {
+    font-size: 13px;
+    width: 172px;
+  }
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-btn-request {
+    width: 350px;
+    height: 48px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1261,6 +1364,39 @@ body {
     font-weight: bold;
     cursor: pointer;
   }
+  .i_main .i_our-services .i_container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .i_main .i_our-services .i_container .i_our-services-group {
+    gap: 60px;
+  }
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-headline span {
+    font-size: 21px;
+  }
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-preview {
+    gap: 20px;
+  }
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-preview .i_our-services-block {
+    width: 198px;
+    height: 333px;
+    gap: 20px;
+    background-size: 143px auto;
+    padding: 30px 20px;
+    background-position-x: center;
+  }
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-preview .i_our-services-block span {
+    font-size: 18px;
+  }
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-preview .i_our-services-block p {
+    font-size: 13px;
+    width: 172px;
+  }
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-btn-request {
+    width: 350px;
+    height: 48px;
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 360px) {
   .i_header .i_container {
@@ -1519,6 +1655,44 @@ body {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+  }
+  .i_main .i_our-services .i_container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .i_main .i_our-services .i_container .i_our-services-group {
+    gap: 60px;
+  }
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-headline {
+    display: flex;
+    justify-content: center;
+  }
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-headline span {
+    width: 50%;
+    font-size: 21px;
+  }
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-preview {
+    gap: 20px;
+  }
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-preview .i_our-services-block {
+    width: 149px;
+    height: 333px;
+    gap: 20px;
+    background-size: 143px auto;
+    padding: 22px 8px;
+    background-position-x: center;
+  }
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-preview .i_our-services-block span {
+    font-size: 15px;
+  }
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-preview .i_our-services-block p {
+    font-size: 12px;
+    width: 130px;
+  }
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-btn-request {
+    width: 316px;
+    height: 40px;
+    font-size: 13px;
   }
 }
 
