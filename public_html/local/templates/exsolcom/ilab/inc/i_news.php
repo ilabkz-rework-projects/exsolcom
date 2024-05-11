@@ -76,4 +76,5 @@
 	),
 	false
 );?>
+    <button class="i_news-btn">Все новости</button>
 </div>

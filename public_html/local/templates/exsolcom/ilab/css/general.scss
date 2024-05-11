@@ -1,4 +1,60 @@
 button{
+  border-radius: 50px;
+  background-color: #FF161F;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0;
   cursor: pointer;
+  transition: all .4s ease;
+  &:hover{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
+    color: #FF161F;
+    background-color: #f5f5f5;
+  }
 }
 
+span{
+  transition: all .4s ease;
+  &:hover{
+    cursor: pointer;
+    color: #FF161F;
+  }
+}
+
+.news-item{
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+  transition: all .4s ease;
+  &:hover{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+    a{
+      b{
+        color: #FF161F;
+      }
+    }
+  }
+  a{
+    b{
+      color: black;
+    }
+  }
+}
+.blog-item{
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+  transition: all .4s ease;
+  &:hover{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+    a{
+      b{
+        color: #FF161F;
+      }
+    }
+  }
+  a{
+    b{
+      color: black;
+    }
+  }
+}

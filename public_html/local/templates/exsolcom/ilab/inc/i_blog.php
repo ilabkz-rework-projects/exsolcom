@@ -76,4 +76,7 @@
 	),
 	false
 );?>
+    <button class="i_blog-btn">Все статьи</button>
 </div>
+
+

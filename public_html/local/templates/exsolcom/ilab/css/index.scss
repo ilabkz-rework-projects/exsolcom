@@ -21,7 +21,6 @@ body{
   height: 100%;
   margin: 0 auto;
   width: 1520px;
-  padding-bottom: 235px;
   @media screen and (max-width: 1520px){
     width: 100%;
     margin: 0 30px;
@@ -75,7 +74,7 @@ body{
           font-style: normal;
           font-optical-sizing: auto;
           text-decoration: none;
-          transition: all .3s ease;
+          transition: all .4s ease;
           &:hover {
             color: #FF161F;
           }
@@ -97,23 +96,9 @@ body{
       gap: 50px;
 
       //HEADER BLOG
-      .i_header-blog {
+      button {
         width: 120px;
         height: 50px;
-        background-color: #FF161F;
-        border-radius: 25px;
-        border: none;
-        color: white;
-        font-size: 16px;
-        font-weight: normal;
-        font-style: normal;
-        font-optical-sizing: auto;
-        cursor: pointer;
-        &:hover {
-          color: #FF161F;
-          font-weight: bold;
-          background-color: #f5f5f5;
-        }
       }
 
       //!HEADER BLOG
@@ -131,6 +116,7 @@ body{
           display: flex;
           align-items: center;
           justify-content: center;
+          transition: all .4s ease;
 
           //RU
           span {
@@ -271,22 +257,10 @@ body{
         //!BANNER ПРОДАЖА И ВНЕДРЕНИЕ
 
         //BANNER BTN APPLY
-        .i_banner-btn-apply {
-          width: 330px;
-          height: 60px;
-          border-radius: 50px;
-          border: none;
-          background-color: #FF161F;
-          color: white;
-          font-size: 16px;
-          font-weight: bold;
-          margin-top: 80px;
-          cursor: pointer;
-          &:hover {
-            transition: 0.3s ease;
-            color: #FF161F;
-            background-color: #f5f5f5;
-          }
+         button {
+           width: 330px;
+           height: 60px;
+           margin-top: 80px;
         }
         //!BANNER BTN APPLY
 
@@ -319,13 +293,13 @@ body{
               display: flex;
               align-items: center;
               justify-content: center;
+              transition: all .4s ease;
               .i_banner-social_link {
                 svg{
                   color: black;
                 }
               }
               &:hover {
-                transition: 0.3s ease;
                 cursor: pointer;
                 .i_banner-social_link {
                   svg{
@@ -388,10 +362,10 @@ body{
             display: flex;
             align-items: center;
             gap: 20px;
+            transition: all .4s ease;
             &:hover {
               background-color: #f5f5f5;
               border-radius: 50px;
-              transition: 0.3s ease;
               cursor: pointer;
               .i_banner-circles {
                 width: 50px;
@@ -525,7 +499,7 @@ body{
               font-weight: bold;
             }
             p{
-              font-family: 'Open Sans';
+              font-family: "Open Sans", sans-serif;
               font-size: 14px;
               font-weight: 600;
               line-height: 1.5;
@@ -544,22 +518,11 @@ body{
         //!Группа анонсы
 
         //Кнопка Запросить коммерческое предложение
-        .i_our-services-btn-request{
+        button{
           width: 440px;
           height: 60px;
-          background-color: #FF161F;
-          border-radius: 50px;
-          border: 0;
-          outline-style: none;
-          color: white;
-          font-family: "Comfortaa", sans-serif;
-          font-size: 16px;
-          font-weight: bold;
-          &:hover {
-            transition: 0.3s ease;
-            color: #FF161F;
+          &:hover{
             background-color: white;
-            cursor: pointer;
           }
         }
         //!Кнопка Запросить коммерческое предложение
@@ -628,7 +591,7 @@ body{
             //Software Description
             .i_software-desc{
               font-size: 16px;
-              font-family: "Open Sans";
+              font-family: "Open Sans", sans-serif;
               font-weight: 600;
               width: 99%;
             }
@@ -636,15 +599,12 @@ body{
           }
           //Software text
           //Software Button
-          .i_software-btn {
+          button {
             width: 334px;
             height: 60px;
-            background-color: #FF161F;
-            border-radius: 50px;
-            font-size: 16px;
-            font-weight: bold;
-            color: white;
-            border: 0;
+            &:hover{
+              background-color: white;
+            }
           }
           //Software Button
         }
@@ -2253,14 +2213,23 @@ body{
 
 //INFO BLOCK
 .i_infoblock{
+  padding-top: 70px;
+  padding-bottom: 70px;
   .i_container{
     display: flex;
+    gap: 80px;
     //News
     .i_news{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 70px;
       //News Headline
       .i_news-title{
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 20px;
         //News Headline Иконка
         .i_news-title-icon{
@@ -2289,6 +2258,8 @@ body{
       //News Лист
       .news-list{
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         gap: 40px;
         //News Лист
         .news-item{
@@ -2296,13 +2267,13 @@ body{
           flex-direction: column;
           align-items: center;
           gap: 20px;
-          width: 344px;
-          height: 613px;
+          width: 48%;
+          height: 615px;
           background-color: #f9f9f9;
           border-radius: 30px;
-
           //News изображение
           .news-item-img{
+            padding: 48px 0 28px;
             img{
               width: 285px;
               height: auto;
@@ -2313,26 +2284,33 @@ body{
           .news-date-time{
             span{
               font-size: 14px;
-              font-weight: 600;
+              font-weight: bold;
               color: #7c7c7c;
             }
           }
           //!News Date
           //News Headline
           a{
+            display: flex;
+            justify-items: center;
             text-decoration: none;
+            padding: 0 30px;
             b{
-              color: black;
+              height: 42px;
               font-size: 21px;
+              text-align: center;
             }
           }
           //!News Headline
           //News Preview
           .i_news-preview{
+            padding: 0 30px 70px;
+            text-align: center;
             span{
-              font-family: "Open Sans";
+              font-family: "Open Sans", sans-serif;
               font-size: 14px;
               color: black;
+              font-weight: 600;
             }
           }
           //!News Preview
@@ -2340,14 +2318,26 @@ body{
         //News Лист
       }
       //!News Лист
+      //News Btn
+      button{
+        width: 208px;
+        height: 60px;
+      }
+      //!News Btn
     }
     //!News
     //Blog
     .i_blog{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 70px;
+      width: 50%;
       //Blog Headline
       .i_blog-title{
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 20px;
         //Blog Headline Иконка
         .i_blog-title-icon{
@@ -2376,18 +2366,35 @@ body{
       //!Blog Headline
       //Blog Лист
       .blog-list{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
         //Blog Лист
         .blog-item{
+          width: 101%;
+          height: 178px;
+          background-color: #f9f9f9;
+          border-radius: 30px;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          padding-top: 20px;
+          padding-left: 20px;
+          padding-right: 50px;
+          padding-bottom: 20px;
+          gap: 20px;
           //Blog изображение
           .blog-item-img{
+            padding-top: 12px;
             img{
               width: 130px;
-              height: auto;
+              height: 112px;
             }
           }
           //!Blog изображение
           //Blog Date
           .blog-date-time{
+            width: max-content;
             span{
               font-size: 14px;
               font-weight: 600;
@@ -2397,19 +2404,23 @@ body{
           //!Blog Date
           //Blog Headline
           a{
+            width: 62%;
             text-decoration: none;
             b{
-              color: black;
               font-size: 21px;
+              text-align: center;
             }
           }
           //!Blog Headline
           //Blog Preview
           .i_blog-preview{
+            width: 77%;
             span{
-              font-family: "Open Sans";
+              font-family: "Open Sans", sans-serif;
               font-size: 14px;
+              font-weight: 600;
               color: black;
+              text-align: center;
             }
           }
           //!Blog Preview
@@ -2417,11 +2428,132 @@ body{
         //Blog Лист
       }
       //!Blog Лист
+
+      //Blog Btn
+      button{
+        width: 208px;
+        height: 60px;
+      }
+      //!Blog Btn
     }
     //!Blog
   }
 }
 //!INFO BLOCK
+
+//OUR STATUS
+.i_our-status{
+  padding-top: 70px;
+  padding-bottom: 70px;
+  .i_container{
+    //OUR STATUS GROUP
+    .i_our-status-group{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 70px;
+      //OUR STATUS GROUP TITLE
+      .i_our-status-group-title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        //OUR STATUS GROUP TITLE ICON
+        .i_our-status-group-title-icon{
+          width: 50px;
+          height: 50px;
+          background-color: black;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg{
+            color: white;
+          }
+        }
+        // !OUR STATUS GROUP TITLE ICON
+        //OUR STATUS GROUP TITLE NAME
+        .i_our-status-group-title-name{
+          span{
+            font-size: 32px;
+            font-weight: bold;
+          }
+        }
+        //OUR STATUS GROUP TITLE NAME
+      }
+      //!OUR STATUS GROUP TITLE
+      //OUR STATUS GROUP BLOCKS GEM
+      .i_our-status-group-blocks-gem{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 59px;
+        //OUR STATUS GROUP BLOCKS FIRST
+        .i_our-status-group-blocks{
+          display: flex;
+          gap: 40px;
+          width: 730px;
+          //width: 1116px;
+          //OUR STATUS GROUP BLOCKS ITEM
+          .i_our-status-group-blocks-item {
+            width: 345px;
+            height: 190px;
+            background-color: #f5f5f5;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            padding: 30px 32px;
+            //OUR STATUS GROUP BLOCKS ITEM BG ICON
+            .i_our-status-group-blocks-item-bgIcon{
+              position: absolute;
+              z-index: -1;
+              top: 0;
+              left: 0;
+              width: 100px;
+              height: 100px;
+              svg{
+                color: white;
+              }
+            }
+            //OUR STATUS GROUP BLOCKS ITEM BG ICON
+            //OUR STATUS GROUP BLOCKS ITEM ICON
+            .i_our-status-group-blocks-item-icon{
+              img{
+                background-blend-mode: darken;
+              }
+            }
+            //!OUR STATUS GROUP BLOCKS ITEM ICON
+            //OUR STATUS GROUP BLOCKS ITEM NAME
+            .i_our-status-group-blocks-item-name{
+              text-align: center;
+              span{
+                font-size: 16px;
+                font-weight: 600;
+                font-family: "Open Sans", sans-serif;
+              }
+            }
+            //!OUR STATUS GROUP BLOCKS ITEM NAME
+          }
+          //!OUR STATUS GROUP BLOCKS ITEM
+        }
+        //!OUR STATUS GROUP BLOCKS FIRST
+      }
+      //!OUR STATUS GROUP BLOCKS GEM
+      //OUR STATUS GROUP BTN
+      button{
+        width: 585px;
+        height: 60px;
+      }
+      //!OUR STATUS GROUP BTN
+    }
+    //!OUR STATUS GROUP
+  }
+}
+//!OUR STATUS
 
 
 
