@@ -151,12 +151,13 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative;
+  margin-bottom: 235px;
 }
 .i_main .i_banner .i_banner-bg {
   position: absolute;
-  top: 50%;
+  top: 68%;
   transform: translateY(-50%);
-  left: 32%;
+  left: 31%;
   z-index: 1;
   width: 40%;
   height: auto;
@@ -433,8 +434,6 @@ body {
 }
 .i_main .i_software {
   background-color: #f5f5f5;
-}
-.i_main .i_software .i_container {
   padding-top: 25px;
   padding-bottom: 35px;
 }
@@ -584,24 +583,11 @@ body {
     width: 40px;
     height: 40px;
   }
-  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .instagram-icon {
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .i_banner-social_link .youtube-icon {
     width: 16px;
-    height: 16px;
   }
-  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .facebook-icon {
-    width: 9px;
-    height: 16px;
-  }
-  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .youtube-icon {
-    width: 16px;
-    height: 16px;
-  }
-  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .telegram-icon {
-    width: 18px;
-    height: 16px;
-  }
-  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .linkedin-icon {
-    width: 18px;
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .i_banner-social_link svg {
+    width: max-content;
     height: 16px;
   }
   .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-night_sun .i_banner-night_sun_item {
@@ -643,32 +629,32 @@ body {
   .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item p {
     font-size: 14px;
   }
-  .i_main .i_our-services .i_our-services-group .i_our-services-headline .i_our-services-circles {
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-headline .i_our-services-circles {
     width: 40px;
     height: 40px;
   }
-  .i_main .i_our-services .i_our-services-group .i_our-services-headline .i_our-services-circles svg {
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-headline .i_our-services-circles svg {
     width: 30px;
     height: 33px;
   }
-  .i_main .i_our-services .i_our-services-group .i_our-services-headline span {
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-headline span {
     font-size: 28px;
   }
-  .i_main .i_our-services .i_our-services-group .i_our-services-preview {
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-preview {
     justify-content: center;
   }
-  .i_main .i_our-services .i_our-services-group .i_our-services-preview .i_our-services-block {
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-preview .i_our-services-block {
     width: 394px;
     height: 235px;
     gap: 20px;
     background-size: 200px 150px;
     padding: 30px 20px;
   }
-  .i_main .i_our-services .i_our-services-group .i_our-services-preview .i_our-services-block p {
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-preview .i_our-services-block p {
     font-size: 12px;
     width: 177px;
   }
-  .i_main .i_our-services .i_our-services-group .i_our-services-btn-request {
+  .i_main .i_our-services .i_container .i_our-services-group .i_our-services-btn-request {
     width: 350px;
     height: 48px;
     font-size: 14px;
@@ -772,24 +758,11 @@ body {
     width: 40px;
     height: 40px;
   }
-  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .instagram-icon {
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .i_banner-social_link .youtube-icon {
     width: 16px;
-    height: 16px;
   }
-  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .facebook-icon {
-    width: 9px;
-    height: 16px;
-  }
-  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .youtube-icon {
-    width: 16px;
-    height: 16px;
-  }
-  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .telegram-icon {
-    width: 18px;
-    height: 16px;
-  }
-  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .linkedin-icon {
-    width: 18px;
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .i_banner-social_link svg {
+    width: max-content;
     height: 16px;
   }
   .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-night_sun .i_banner-night_sun_item {
@@ -959,24 +932,11 @@ body {
     width: 40px;
     height: 40px;
   }
-  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .instagram-icon {
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .i_banner-social_link .youtube-icon {
     width: 16px;
-    height: 16px;
   }
-  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .facebook-icon {
-    width: 9px;
-    height: 16px;
-  }
-  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .youtube-icon {
-    width: 16px;
-    height: 16px;
-  }
-  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .telegram-icon {
-    width: 18px;
-    height: 16px;
-  }
-  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .linkedin-icon {
-    width: 18px;
+  .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-social .i_banner-social_item .i_banner-social_link svg {
+    width: max-content;
     height: 16px;
   }
   .i_main .i_banner .i_container .i_banner-right .i_banner-group_social .i_banner-night_sun .i_banner-night_sun_item {
@@ -1162,30 +1122,12 @@ body {
   .i_main .i_banner .i_container .i_banner-left .i_banner-group_social .i_banner-social .i_banner-social_item:hover .i_banner-social_link svg {
     color: #FF161F;
   }
-  .i_main .i_banner .i_container .i_banner-left .i_banner-group_social .i_banner-social .i_banner-social_item .instagram-icon {
+  .i_main .i_banner .i_container .i_banner-left .i_banner-group_social .i_banner-social .i_banner-social_item .i_banner-social_link .youtube-icon {
     width: 16px;
-    height: 16px;
-    margin: 0;
   }
-  .i_main .i_banner .i_container .i_banner-left .i_banner-group_social .i_banner-social .i_banner-social_item .facebook-icon {
-    width: 9px;
+  .i_main .i_banner .i_container .i_banner-left .i_banner-group_social .i_banner-social .i_banner-social_item .i_banner-social_link svg {
+    width: max-content;
     height: 16px;
-    margin: 0;
-  }
-  .i_main .i_banner .i_container .i_banner-left .i_banner-group_social .i_banner-social .i_banner-social_item .youtube-icon {
-    width: 16px;
-    height: 16px;
-    margin: 0;
-  }
-  .i_main .i_banner .i_container .i_banner-left .i_banner-group_social .i_banner-social .i_banner-social_item .telegram-icon {
-    width: 18px;
-    height: 16px;
-    margin: 0;
-  }
-  .i_main .i_banner .i_container .i_banner-left .i_banner-group_social .i_banner-social .i_banner-social_item .linkedin-icon {
-    width: 18px;
-    height: 16px;
-    margin: 0;
   }
   .i_main .i_banner .i_container .i_banner-left .i_banner-group_social .i_banner-social .i_banner-social_item li {
     list-style: none;
@@ -1456,30 +1398,12 @@ body {
   .i_main .i_banner .i_container .i_banner-left .i_banner-group_social .i_banner-social .i_banner-social_item:hover .i_banner-social_link svg {
     color: #FF161F;
   }
-  .i_main .i_banner .i_container .i_banner-left .i_banner-group_social .i_banner-social .i_banner-social_item .instagram-icon {
+  .i_main .i_banner .i_container .i_banner-left .i_banner-group_social .i_banner-social .i_banner-social_item .i_banner-social_link .youtube-icon {
     width: 16px;
-    height: 16px;
-    margin: 0;
   }
-  .i_main .i_banner .i_container .i_banner-left .i_banner-group_social .i_banner-social .i_banner-social_item .facebook-icon {
-    width: 9px;
+  .i_main .i_banner .i_container .i_banner-left .i_banner-group_social .i_banner-social .i_banner-social_item .i_banner-social_link svg {
+    width: max-content;
     height: 16px;
-    margin: 0;
-  }
-  .i_main .i_banner .i_container .i_banner-left .i_banner-group_social .i_banner-social .i_banner-social_item .youtube-icon {
-    width: 16px;
-    height: 16px;
-    margin: 0;
-  }
-  .i_main .i_banner .i_container .i_banner-left .i_banner-group_social .i_banner-social .i_banner-social_item .telegram-icon {
-    width: 18px;
-    height: 16px;
-    margin: 0;
-  }
-  .i_main .i_banner .i_container .i_banner-left .i_banner-group_social .i_banner-social .i_banner-social_item .linkedin-icon {
-    width: 18px;
-    height: 16px;
-    margin: 0;
   }
   .i_main .i_banner .i_container .i_banner-left .i_banner-group_social .i_banner-social .i_banner-social_item li {
     list-style: none;
@@ -1864,20 +1788,16 @@ body {
   font-size: 32px;
   font-weight: bold;
 }
-.i_our-status .i_container .i_our-status-group .i_our-status-group-blocks-gem {
+.i_our-status .i_container .i_our-status-group .i_our-status-group-blocks {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  gap: 59px;
-}
-.i_our-status .i_container .i_our-status-group .i_our-status-group-blocks-gem .i_our-status-group-blocks {
-  display: flex;
   gap: 40px;
-  width: 730px;
 }
-.i_our-status .i_container .i_our-status-group .i_our-status-group-blocks-gem .i_our-status-group-blocks .i_our-status-group-blocks-item {
-  width: 345px;
+.i_our-status .i_container .i_our-status-group .i_our-status-group-blocks .i_our-status-group-blocks-item {
+  width: 23%;
   height: 190px;
   background-color: #f5f5f5;
   border-radius: 30px;
@@ -1886,9 +1806,16 @@ body {
   align-items: center;
   position: relative;
   z-index: 1;
-  padding: 30px 32px;
+  padding: 10px 30px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+  transition: all 0.4s ease;
+  gap: 20px;
 }
-.i_our-status .i_container .i_our-status-group .i_our-status-group-blocks-gem .i_our-status-group-blocks .i_our-status-group-blocks-item .i_our-status-group-blocks-item-bgIcon {
+.i_our-status .i_container .i_our-status-group .i_our-status-group-blocks .i_our-status-group-blocks-item:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+}
+.i_our-status .i_container .i_our-status-group .i_our-status-group-blocks .i_our-status-group-blocks-item .i_our-status-group-blocks-item-bgIcon {
   position: absolute;
   z-index: -1;
   top: 0;
@@ -1896,17 +1823,14 @@ body {
   width: 100px;
   height: 100px;
 }
-.i_our-status .i_container .i_our-status-group .i_our-status-group-blocks-gem .i_our-status-group-blocks .i_our-status-group-blocks-item .i_our-status-group-blocks-item-bgIcon svg {
+.i_our-status .i_container .i_our-status-group .i_our-status-group-blocks .i_our-status-group-blocks-item .i_our-status-group-blocks-item-bgIcon svg {
   color: white;
 }
-.i_our-status .i_container .i_our-status-group .i_our-status-group-blocks-gem .i_our-status-group-blocks .i_our-status-group-blocks-item .i_our-status-group-blocks-item-icon img {
-  background-blend-mode: darken;
-}
-.i_our-status .i_container .i_our-status-group .i_our-status-group-blocks-gem .i_our-status-group-blocks .i_our-status-group-blocks-item .i_our-status-group-blocks-item-name {
+.i_our-status .i_container .i_our-status-group .i_our-status-group-blocks .i_our-status-group-blocks-item .i_our-status-group-blocks-item-name {
   text-align: center;
 }
-.i_our-status .i_container .i_our-status-group .i_our-status-group-blocks-gem .i_our-status-group-blocks .i_our-status-group-blocks-item .i_our-status-group-blocks-item-name span {
-  font-size: 16px;
+.i_our-status .i_container .i_our-status-group .i_our-status-group-blocks .i_our-status-group-blocks-item .i_our-status-group-blocks-item-name span {
+  font-size: 14px;
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
 }
