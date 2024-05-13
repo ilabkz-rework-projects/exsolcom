@@ -148,6 +148,12 @@ body {
 .i_header-burger svg {
   color: white;
 }
+.i_header-burger:hover {
+  background-color: #f5f5f5;
+}
+.i_header-burger:hover svg {
+  color: black;
+}
 
 .i_main .i_banner {
   display: flex;
@@ -1840,6 +1846,46 @@ body {
 .i_our-status .i_container .i_our-status-group button {
   width: 585px;
   height: 60px;
+}
+
+.i_footer .i_container .i_footer-left .i_footer-left-icons .i_footer-left-icons-item .i_footer-left-icons-item-circles {
+  width: 50px;
+  height: 50px;
+  background-color: #000000;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+.i_footer .i_container .i_footer-left .i_footer-left-icons .i_footer-left-icons-item .i_footer-left-icons-item-circles:hover {
+  background-color: #f5f5f5;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
+}
+.i_footer .i_container .i_footer-left .i_footer-left-icons .i_footer-left-icons-item .i_footer-left-icons-item-circles .i_footer-left-icons-number {
+  text-decoration: none;
+}
+.i_footer .i_container .i_footer-left .i_footer-left-icons .i_footer-left-icons-item .i_footer-left-icons-item-circles .i_footer-left-icons-number span {
+  color: black;
+}
+.i_footer .i_container .i_footer-right .i_footer-right-more .i_footer-right-more-blog {
+  width: 170px;
+  height: 50px;
+  font-size: 16px;
+}
+.i_footer .i_container .i_footer-right .i_footer-right-more .i_footer-right-more-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #000000;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+.i_footer .i_container .i_footer-right .i_footer-right-more .i_footer-right-more-icon:hover {
+  background-color: #f5f5f5;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
 }
 
 /*# sourceMappingURL=index.css.map */
