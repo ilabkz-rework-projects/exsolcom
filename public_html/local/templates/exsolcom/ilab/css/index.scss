@@ -41,52 +41,6 @@ body{
     .i_header-left {
       display: flex;
       gap: 20px;
-
-      //HEADER BURGER
-      .i_header-burger {
-        width: 50px;
-        height: 50px;
-        background-color: #000000;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        svg {
-          color: white;
-        }
-      }
-      //!HEADER BURGER
-
-      //HEADER MENU
-      .i_header-menu {
-        background-color: white;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 26px;
-        li {
-          list-style-type: none;
-        }
-        .i_header-menu-item a {
-          color: black;
-          font-size: 15px;
-          font-weight: bold;
-          font-style: normal;
-          font-optical-sizing: auto;
-          text-decoration: none;
-          transition: all .4s ease;
-          &:hover {
-            color: #FF161F;
-          }
-          &:focus {
-            color: #FF161F;
-            background-color: #f5f5f5;
-            border-radius: 25px;
-            padding: 2vh 4vh;
-          }
-        }
-      }
-      //!HEADER MENU
     }
     //!HEADER LEFT
 
@@ -173,20 +127,61 @@ body{
               color: #FF161F;
             }
           }
-
           //!WHATSAPP EMAIL
-
-
         }
-
       }
-
       //!HEADER MORE
     }
     //!HEADER RIGHT
   }
 }
 //!HEADER
+
+//HEADER MENU
+.i_header-menu {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 26px;
+  li {
+    list-style-type: none;
+  }
+  .i_header-menu-item a {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    font-optical-sizing: auto;
+    text-decoration: none;
+    transition: all .4s ease;
+    &:hover {
+      color: #FF161F;
+    }
+    &:focus {
+      color: #FF161F;
+      background-color: #f5f5f5;
+      border-radius: 25px;
+      padding: 2vh 4vh;
+    }
+  }
+}
+//!HEADER MENU
+
+//HEADER BURGER
+.i_header-burger {
+  width: 50px;
+  height: 50px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    color: white;
+  }
+}
+//!HEADER BURGER
 
 //MAIN
 .i_main {
@@ -273,86 +268,6 @@ body{
         display: flex;
         flex-direction: column;
         gap: 110px;
-        //MAIN GROUP SOCIAL
-        .i_banner-group_social {
-          display: flex;
-          justify-content: space-between;
-          gap: 60px;
-          margin-top: 30px;
-          //MAIN SOCIAL
-          .i_banner-social {
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-            color: #FF161F;
-            //HOVER MAIN SOCIAL ITEM
-            .i_banner-social_item {
-              width: 50px;
-              height: 50px;
-              background-color: #f5f5f5;
-              border-radius: 25px;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              transition: all .4s ease;
-              .i_banner-social_link {
-                svg{
-                  color: black;
-                }
-              }
-              &:hover {
-                cursor: pointer;
-                .i_banner-social_link {
-                  svg{
-                    color: #FF161F;
-                  }
-                }
-              }
-            }
-            //!HOVER MAIN SOCIAL ITEM
-
-            li {
-              list-style-type: none;
-            }  /* Удаляет точки-декорацию */
-          }
-          //!MAIN SOCIAL
-
-          //MAIN NIGHT SUN
-          .i_banner-night_sun_item {
-            width: 50px;
-            height: 50px;
-            background-color: black;
-            border-radius: 25px;
-            display: flex;
-            outline: none;
-            align-items: center;
-            border: 0;
-            justify-content: center;
-            //HOVER NIGHT SUN
-            .i_banner-icon-nightSun {
-              margin-bottom: 5px;
-              margin-right: 5px;
-              color: white;
-              svg{
-                color: white;
-              }
-            }
-            &:focus {
-              background-color: #f5f5f5;
-              transition: 0.3s ease;
-              cursor: pointer;
-              border: none;
-              .i_banner-icon-nightSun {
-                margin-bottom: 5px;
-                margin-right: 5px;
-                color: black;
-              }
-            }
-            //!HOVER NIGHT SUN
-          }
-          //!MAIN NIGHT SUN
-        }
-        //!MAIN GROUP SOCIAL
 
         //MAIN SKILLS
         .i_banner-skills {
@@ -619,6 +534,87 @@ body{
 
 }
 //!MAIN
+
+//MAIN GROUP SOCIAL
+.i_banner-group_social {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-top: 30px;
+  //MAIN SOCIAL
+  .i_banner-social {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: #FF161F;
+    //HOVER MAIN SOCIAL ITEM
+    .i_banner-social_item {
+      width: 50px;
+      height: 50px;
+      background-color: #f5f5f5;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .4s ease;
+      .i_banner-social_link {
+        svg{
+          color: black;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        .i_banner-social_link {
+          svg{
+            color: #FF161F;
+          }
+        }
+      }
+    }
+    //!HOVER MAIN SOCIAL ITEM
+
+    li {
+      list-style-type: none;
+    }  /* Удаляет точки-декорацию */
+  }
+  //!MAIN SOCIAL
+
+  //MAIN NIGHT SUN
+  .i_banner-night_sun_item {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 25px;
+    display: flex;
+    outline: none;
+    align-items: center;
+    border: 0;
+    justify-content: center;
+    //HOVER NIGHT SUN
+    .i_banner-icon-nightSun {
+      margin-bottom: 5px;
+      margin-right: 5px;
+      color: white;
+      svg{
+        color: white;
+      }
+    }
+    &:focus {
+      background-color: #f5f5f5;
+      transition: 0.3s ease;
+      cursor: pointer;
+      border: none;
+      .i_banner-icon-nightSun {
+        margin-bottom: 5px;
+        margin-right: 5px;
+        color: black;
+      }
+    }
+    //!HOVER NIGHT SUN
+  }
+  //!MAIN NIGHT SUN
+}
+//!MAIN GROUP SOCIAL
 
 //HEADER MEDIA ADAPTIVE 1330
 @media screen and (max-width: 1330px) {
@@ -2313,20 +2309,28 @@ body{
           display: flex;
           flex-direction: column;
           flex-wrap: wrap;
-          padding-top: 20px;
-          padding-left: 20px;
-          padding-right: 50px;
-          padding-bottom: 20px;
+          padding: 20px 50px;
           gap: 20px;
           //Blog изображение
           .blog-item-img{
             padding-top: 12px;
             img{
               width: 130px;
-              height: 112px;
+              height: 110px;
             }
           }
           //!Blog изображение
+
+          //Blog Информация
+          .blog-item-info{
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            height: 100%;
+            flex-direction: column;
+          }
+          //!Blog Информация
+
           //Blog Date
           .blog-date-time{
             width: max-content;
@@ -2339,7 +2343,6 @@ body{
           //!Blog Date
           //Blog Headline
           a{
-            width: 62%;
             text-decoration: none;
             b{
               font-size: 21px;
@@ -2349,7 +2352,6 @@ body{
           //!Blog Headline
           //Blog Preview
           .i_blog-preview{
-            width: 77%;
             span{
               font-family: "Open Sans", sans-serif;
               font-size: 14px;

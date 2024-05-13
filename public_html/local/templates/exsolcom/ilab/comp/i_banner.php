@@ -66,7 +66,7 @@
 					</ul>
 				</div>
 				<div class="i_banner-night_sun">
- <button class="i_banner-night_sun_item"> </button>
+                    <button class="i_banner-night_sun_item"> </button>
 				</div>
 			</div>
 			 <!--!Группа Соц-сети и ДеньНочь--> <!--Группа Навыки-->
