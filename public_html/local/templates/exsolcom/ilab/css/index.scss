@@ -138,7 +138,7 @@ body{
 //!HEADER
 
 //HEADER MENU
-.i_header-menu {
+.i_header-menu{
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -155,6 +155,7 @@ body{
     font-optical-sizing: auto;
     text-decoration: none;
     transition: all .4s ease;
+    text-wrap: nowrap;
     &:hover {
       color: #FF161F;
     }
@@ -347,14 +348,16 @@ body{
       justify-content: center;
       padding-top: 70px;
       padding-bottom: 70px;
-      img{
-        width: 800px;
-        height: 800px;
-        position: absolute;
-        z-index: 1;
-        top: 6%;
-        left: 14%;
-        opacity: 0.6;
+      .i_our-services-bg{
+        img{
+          width: 800px;
+          height: 800px;
+          position: absolute;
+          z-index: 1;
+          top: 6%;
+          left: 65%;
+          opacity: 0.5;
+        }
       }
       //Группа наши услуги
       .i_our-services-group {
@@ -622,6 +625,523 @@ body{
 }
 //!MAIN GROUP SOCIAL
 
+//INFO BLOCK
+.i_infoblock{
+  padding-top: 70px;
+  padding-bottom: 70px;
+  .i_container{
+    display: flex;
+    gap: 80px;
+    //News
+    .i_news{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 70px;
+      position: relative;
+      z-index: 2;
+      .i_news-bg{
+        position: absolute;
+        z-index: -1;
+        top: 20.5%;
+        left: 169%;
+        transform: translateY(-50%);
+        img{
+          opacity: 0.5;
+          width: 490px;
+          height: 495px;
+        }
+      }
+      //News Headline
+      .i_news-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        //News Headline Иконка
+        .i_news-title-icon{
+          width: 50px;
+          height: 50px;
+          background-color: black;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg{
+            color: white;
+          }
+        }
+        //!News Headline Иконка
+        //News Headline Название
+        .i_news-title-name{
+          span{
+            font-size: 32px;
+            font-weight: bold;
+          }
+        }
+        //!News Headline Название
+      }
+      //!News Headline
+      //News Лист
+      .news-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 40px;
+        //News Лист
+        .news-item{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+          width: 48%;
+          height: 615px;
+          background-color: #f9f9f9;
+          border-radius: 30px;
+          //News изображение
+          .news-item-img{
+            padding: 48px 0 28px;
+            img{
+              width: 285px;
+              height: auto;
+            }
+          }
+          //!News изображение
+          //News Date
+          .news-date-time{
+            span{
+              font-size: 14px;
+              font-weight: bold;
+              color: #7c7c7c;
+            }
+          }
+          //!News Date
+          //News Headline
+          a{
+            display: flex;
+            justify-items: center;
+            text-decoration: none;
+            padding: 0 30px;
+            b{
+              height: 42px;
+              font-size: 21px;
+              text-align: center;
+            }
+          }
+          //!News Headline
+          //News Preview
+          .i_news-preview{
+            padding: 0 30px 70px;
+            text-align: center;
+            span{
+              font-family: "Open Sans", sans-serif;
+              font-size: 14px;
+              color: black;
+              font-weight: 600;
+            }
+          }
+          //!News Preview
+        }
+        //News Лист
+      }
+      //!News Лист
+      //News Btn
+      button{
+        width: 208px;
+        height: 60px;
+      }
+      //!News Btn
+    }
+    //!News
+    //Blog
+    .i_blog{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 70px;
+      width: 50%;
+      position: relative;
+      z-index: 2;
+      //Blog Headline
+      .i_blog-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        //Blog Headline Иконка
+        .i_blog-title-icon{
+          width: 50px;
+          height: 50px;
+          background-color: black;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg{
+            color: white;
+            margin-left: 6px;
+          }
+        }
+        //!Blog Headline Иконка
+        //Blog Headline Название
+        .i_blog-title-name{
+          span{
+            font-size: 32px;
+            font-weight: bold;
+          }
+        }
+        //!Blog Headline Название
+      }
+      //!Blog Headline
+      //Blog Лист
+      .blog-list{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        //Blog Лист
+        .blog-item{
+          width: 101%;
+          height: 178px;
+          background-color: #f9f9f9;
+          border-radius: 30px;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          padding: 20px 50px;
+          gap: 20px;
+          //Blog изображение
+          .blog-item-img{
+            padding-top: 12px;
+            img{
+              width: 130px;
+              height: 110px;
+            }
+          }
+          //!Blog изображение
+
+          //Blog Информация
+          .blog-item-info{
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            height: 100%;
+            flex-direction: column;
+          }
+          //!Blog Информация
+
+          //Blog Date
+          .blog-date-time{
+            width: max-content;
+            span{
+              font-size: 14px;
+              font-weight: 600;
+              color: #7c7c7c;
+            }
+          }
+          //!Blog Date
+          //Blog Headline
+          a{
+            text-decoration: none;
+            b{
+              font-size: 21px;
+              text-align: center;
+            }
+          }
+          //!Blog Headline
+          //Blog Preview
+          .i_blog-preview{
+            span{
+              font-family: "Open Sans", sans-serif;
+              font-size: 14px;
+              font-weight: 600;
+              color: black;
+              text-align: center;
+            }
+          }
+          //!Blog Preview
+        }
+        //Blog Лист
+      }
+      //!Blog Лист
+
+      //Blog Btn
+      button{
+        width: 208px;
+        height: 60px;
+      }
+      //!Blog Btn
+    }
+    //!Blog
+  }
+}
+//!INFO BLOCK
+
+//OUR STATUS
+.i_our-status{
+  padding-top: 70px;
+  padding-bottom: 70px;
+  .i_container{
+    //OUR STATUS GROUP
+    .i_our-status-group{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 70px;
+      //OUR STATUS GROUP TITLE
+      .i_our-status-group-title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        //OUR STATUS GROUP TITLE ICON
+        .i_our-status-group-title-icon{
+          width: 50px;
+          height: 50px;
+          background-color: black;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg{
+            color: white;
+          }
+        }
+        // !OUR STATUS GROUP TITLE ICON
+        //OUR STATUS GROUP TITLE NAME
+        .i_our-status-group-title-name{
+          span{
+            font-size: 32px;
+            font-weight: bold;
+          }
+        }
+        //OUR STATUS GROUP TITLE NAME
+      }
+      //!OUR STATUS GROUP TITLE
+      //OUR STATUS GROUP BLOCKS FIRST
+      .i_our-status-group-blocks{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        //width: 1116px;
+        //OUR STATUS GROUP BLOCKS ITEM
+        .i_our-status-group-blocks-item {
+          width: 23%;
+          height: 190px;
+          background-color: #f5f5f5;
+          border-radius: 30px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          z-index: 1;
+          padding: 10px 30px;
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
+          cursor: pointer;
+          transition: all .4s ease;
+          gap: 20px;
+          &:hover{
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+          }
+          //OUR STATUS GROUP BLOCKS ITEM BG ICON
+          .i_our-status-group-blocks-item-bgIcon{
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            svg{
+              color: white;
+            }
+          }
+          //OUR STATUS GROUP BLOCKS ITEM BG ICON
+          //OUR STATUS GROUP BLOCKS ITEM ICON
+          .i_our-status-group-blocks-item-icon{
+            img{
+            }
+          }
+          //!OUR STATUS GROUP BLOCKS ITEM ICON
+          //OUR STATUS GROUP BLOCKS ITEM NAME
+          .i_our-status-group-blocks-item-name{
+            text-align: center;
+            span{
+              font-size: 14px;
+              font-weight: 600;
+              font-family: "Open Sans", sans-serif;
+            }
+          }
+          //!OUR STATUS GROUP BLOCKS ITEM NAME
+        }
+        //!OUR STATUS GROUP BLOCKS ITEM
+      }
+      //!OUR STATUS GROUP BLOCKS FIRST
+      //OUR STATUS GROUP BTN
+      button{
+        width: 585px;
+        height: 60px;
+      }
+      //!OUR STATUS GROUP BTN
+    }
+    //!OUR STATUS GROUP
+  }
+}
+//!OUR STATUS
+
+//FOOTER
+.i_footer{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  .i_container{
+    display: flex;
+    gap: 90px;
+    //FOOTER LEFT
+    .i_footer-left{
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 90px;
+      .i_footer-left-groupLogCopy{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        //FOOTER LEFT LOGO ExSol.com
+        .i_footer-left-logo{
+          svg{
+          }
+        }
+        //!FOOTER LEFT LOGO ExSol.com
+        //FOOTER LEFT COPYRIGHT
+        .i_footer-left-copyright{
+
+        }
+        //!FOOTER LEFT COPYRIGHT
+      }
+      //FOOTER LEFT ICONS
+      .i_footer-left-icons{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        .i_footer-left-icons-item{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-items: center;
+          gap: 12px;
+          .i_footer-left-icons-item-circles{
+            width: 50px;
+            height: 50px;
+            background-color: #000000;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s ease;
+            &:hover{
+              background-color: #f5f5f5;
+              box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
+            }
+          }
+          .i_footer-left-icons-number{
+            text-decoration: none;
+            color: black;
+          }
+          .i_footer-left-icons-email{
+            text-decoration: none;
+            font-size: 14px;
+            color: black;
+          }
+        }
+        button{
+          svg{
+
+          }
+        }
+      }
+      //!FOOTER LEFT ICONS
+    }
+    //!FOOTER LEFT
+    //FOOTER RIGHT
+    .i_footer-right{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .i_footer-right-menu{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 20px;
+        .i_header-menu{
+          gap: 18px;
+          .i_header-menu-item{
+            a{
+              font-size: 14px;
+              text-wrap: nowrap;
+            }
+          }
+        }
+      }
+      .i_footer-right-groupMore{
+        .i_footer-burgerLogoCop{
+          .i_header-burger{
+            display: none;
+          }
+          .i_footer-right-groupLogCopy{
+            display: none;
+          }
+        }
+        .i_footer-right-moreGroup{
+          display: flex;
+          justify-content: space-between;
+          .i_banner-group_social{
+            margin-top: 0;
+          }
+          //FOOTER RIGHT BLOG ICON SOCIAL
+          .i_footer-right-more{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 30px;
+            .i_footer-right-icons{
+              display: none;
+            }
+            //FOOTER RIGHT BLOG
+            .i_footer-right-more-blog{
+              width: 170px;
+              height: 50px;
+              font-size: 16px;
+            }
+            //!FOOTER RIGHT BLOG
+            //FOOTER RIGHT ICON
+            .i_footer-right-more-icon{
+              width: 50px;
+              height: 50px;
+              background-color: #000000;
+              border-radius: 25px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: all 0.4s ease;
+              &:hover{
+                background-color: #f5f5f5;
+                box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
+              }
+            }
+            //!FOOTER RIGHT ICON
+          }
+          //!FOOTER RIGHT BLOG ICON SOCIAL
+        }
+      }
+    }
+    //!FOOTER RIGHT
+  }
+}
+//!FOOTER
+
 //HEADER MEDIA ADAPTIVE 1330
 @media screen and (max-width: 1330px) {
   //Header
@@ -873,12 +1393,114 @@ body{
         }
         //!Группа наши услуги
       }
-      }
     }
     //!Our Services
-
   }
   //!Main
+  //Footer
+  .i_footer{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .i_container{
+      .i_footer-right{
+        gap: 30px;
+        .i_footer-right-menu{
+          .i_header-burger{
+            width: 40px;
+            height: 40px;
+            svg{
+              width: 12px;
+              height: 12px;;
+            }
+          }
+          .i_header-menu{
+            gap: 15px;
+            .i_header-menu-item{
+              a{
+                font-size: 13px;
+              }
+            }
+          }
+        }
+        .i_footer-right-groupMore{
+          .i_footer-right-moreGroup{
+            .i_footer-right-more{
+              .i_footer-right-more-blog{
+                width: 136px;
+                height: 40px;
+                font-size: 13px;
+              }
+              .i_footer-right-more-icon{
+                width: 40px;
+                height: 40px;
+                svg{
+                  width: 14px;
+                  height: 16px;
+                }
+              }
+            }
+            .i_footer-right-group{
+              .i_banner-group_social{
+                .i_banner-social{
+                  .i_banner-social_item{
+                    width: 40px;
+                    height: 40px;
+                    .youtube-icon{
+                      width: 16px;
+                    }
+                    svg{
+                      width: max-content;
+                      height: 16px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .i_footer-left{
+        .i_footer-left-groupLogCopy{
+          gap: 44px;
+          .i_footer-left-logo{
+            svg{
+              width: 198px;
+              height: 37px;
+            }
+          }
+          .i_footer-left-copyright{
+            font-size: 13px;
+
+          }
+        }
+        .i_footer-left-icons{
+          gap: 30px;
+          .i_footer-left-icons-item{
+            .i_footer-left-icons-item-circles{
+              width: 40px;
+              height: 40px;
+              .email-icon{
+                height: 12px;
+              }
+              svg{
+                width: 14px;
+                height: auto;
+              }
+            }
+            .i_footer-left-icons-number,
+            .i_footer-left-icons-email{
+              display: none;
+            }
+          }
+        }
+      }
+      .i_footer-leftRight{
+        display: none;
+      }
+    }
+  }
+  //!Footer
+}
 
 //!HEADER MEDIA ADAPTIVE 1330
 
@@ -1139,6 +1761,99 @@ body{
     //!Our Services
   }
   //!Main
+
+  //Footer
+  .i_footer{
+    .i_container{
+      .i_footer-left{
+        display: none;
+      }
+      .i_footer-right{
+        .i_footer-right-menu{
+          .i_header-menu{
+            gap: 28px;
+          }
+        }
+        .i_footer-right-groupMore{
+          display: flex;
+          justify-content: space-between;
+          .i_footer-burgerLogoCop{
+            .i_footer-right-groupLogCopy{
+              display: flex;
+              align-items: center;
+              gap: 15px;
+              .i_footer-left-copyright{
+                text-wrap: nowrap;
+                font-size: 13px;
+              }
+            }
+          }
+          .i_footer-right-moreGroup{
+            display: flex;
+            gap: 30px;
+            .i_footer-right-more{
+              display: flex;
+              flex-direction: row;
+              flex-wrap: nowrap;
+              gap: 10px;
+              .i_footer-right-icons{
+                display: flex;
+                gap: 10px;
+              }
+              .i_footer-right-more-blog{
+                width: 136px;
+                height: 40px;
+                font-size: 13px;
+              }
+              .i_footer-right-more-icon{
+                width: 40px;
+                height: 40px;
+                svg{
+                  width: 14px;
+                  height: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .i_footer-leftRight{
+        .i_footer-left-groupLogCopy{
+          gap: 44px;
+          .i_footer-left-logo{
+            display: none;
+          }
+          .i_footer-left-copyright{
+
+          }
+          .i_footer-left-logoLittle{
+
+          }
+        }
+        .i_footer-left-icons{
+          gap: 30px;
+          .i_footer-left-icons-item{
+            .i_footer-left-icons-item-circles{
+              width: 40px;
+              height: 40px;
+              .email-icon{
+                height: 12px;
+              }
+              svg{
+                width: 14px;
+                height: auto;
+              }
+            }
+            .i_footer-left-icons-number,
+            .i_footer-left-icons-email{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  //!Footer
 }
 //!HEADER MEDIA ADAPTIVE 1000
 
@@ -1409,6 +2124,121 @@ body{
     //!Our Services
   }
   //!Main
+
+  //Footer
+  .i_footer{
+    .i_container{
+      .i_footer-left{
+        display: none;
+      }
+      .i_footer-right{
+        .i_footer-right-menu{
+          display: none;
+        }
+        .i_footer-right-groupMore{
+          display: flex;
+          justify-content: space-between;
+          gap: 231px;
+          align-items: flex-end;
+          .i_footer-burgerLogoCop{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .i_header-burger{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 40px;
+              height: 40px;
+              svg{
+                width: 12px;
+                height: 12px;
+              }
+              &:hover{
+                background-color: #f5f5f5;
+                svg{
+                  color: black;
+                }
+              }
+            }
+            .i_footer-right-groupLogCopy{
+              display: flex;
+              align-items: center;
+              gap: 15px;
+              .i_footer-left-copyright{
+                text-wrap: nowrap;
+                font-size: 13px;
+              }
+            }
+          }
+          .i_footer-right-moreGroup{
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+            align-items: flex-end;
+            .i_footer-right-more{
+              display: flex;
+              flex-direction: row;
+              flex-wrap: nowrap;
+              gap: 10px;
+              .i_footer-right-icons{
+                display: flex;
+                gap: 10px;
+              }
+              .i_footer-right-more-blog{
+                width: 136px;
+                height: 40px;
+                font-size: 13px;
+              }
+              .i_footer-right-more-icon{
+                width: 40px;
+                height: 40px;
+                svg{
+                  width: 14px;
+                  height: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .i_footer-leftRight{
+        .i_footer-left-groupLogCopy{
+          gap: 44px;
+          .i_footer-left-logo{
+            display: none;
+          }
+          .i_footer-left-copyright{
+
+          }
+          .i_footer-left-logoLittle{
+
+          }
+        }
+        .i_footer-left-icons{
+          gap: 30px;
+          .i_footer-left-icons-item{
+            .i_footer-left-icons-item-circles{
+              width: 40px;
+              height: 40px;
+              .email-icon{
+                height: 12px;
+              }
+              svg{
+                width: 14px;
+                height: auto;
+              }
+            }
+            .i_footer-left-icons-number,
+            .i_footer-left-icons-email{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  //!Footer
 }
 //!HEADER MEDIA ADAPTIVE 760
 
@@ -2148,445 +2978,7 @@ body{
 //!HEADER MEDIA ADAPTIVE 360
 
 
-//INFO BLOCK
-.i_infoblock{
-  padding-top: 70px;
-  padding-bottom: 70px;
-  .i_container{
-    display: flex;
-    gap: 80px;
-    //News
-    .i_news{
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 70px;
-      //News Headline
-      .i_news-title{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        //News Headline Иконка
-        .i_news-title-icon{
-          width: 50px;
-          height: 50px;
-          background-color: black;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          svg{
-            color: white;
-          }
-        }
-        //!News Headline Иконка
-        //News Headline Название
-        .i_news-title-name{
-          span{
-            font-size: 32px;
-            font-weight: bold;
-          }
-        }
-        //!News Headline Название
-      }
-      //!News Headline
-      //News Лист
-      .news-list{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 40px;
-        //News Лист
-        .news-item{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 20px;
-          width: 48%;
-          height: 615px;
-          background-color: #f9f9f9;
-          border-radius: 30px;
-          //News изображение
-          .news-item-img{
-            padding: 48px 0 28px;
-            img{
-              width: 285px;
-              height: auto;
-            }
-          }
-          //!News изображение
-          //News Date
-          .news-date-time{
-            span{
-              font-size: 14px;
-              font-weight: bold;
-              color: #7c7c7c;
-            }
-          }
-          //!News Date
-          //News Headline
-          a{
-            display: flex;
-            justify-items: center;
-            text-decoration: none;
-            padding: 0 30px;
-            b{
-              height: 42px;
-              font-size: 21px;
-              text-align: center;
-            }
-          }
-          //!News Headline
-          //News Preview
-          .i_news-preview{
-            padding: 0 30px 70px;
-            text-align: center;
-            span{
-              font-family: "Open Sans", sans-serif;
-              font-size: 14px;
-              color: black;
-              font-weight: 600;
-            }
-          }
-          //!News Preview
-        }
-        //News Лист
-      }
-      //!News Лист
-      //News Btn
-      button{
-        width: 208px;
-        height: 60px;
-      }
-      //!News Btn
-    }
-    //!News
-    //Blog
-    .i_blog{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 70px;
-      width: 50%;
-      //Blog Headline
-      .i_blog-title{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        //Blog Headline Иконка
-        .i_blog-title-icon{
-          width: 50px;
-          height: 50px;
-          background-color: black;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          svg{
-            color: white;
-            margin-left: 6px;
-          }
-        }
-        //!Blog Headline Иконка
-        //Blog Headline Название
-        .i_blog-title-name{
-          span{
-            font-size: 32px;
-            font-weight: bold;
-          }
-        }
-        //!Blog Headline Название
-      }
-      //!Blog Headline
-      //Blog Лист
-      .blog-list{
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        //Blog Лист
-        .blog-item{
-          width: 101%;
-          height: 178px;
-          background-color: #f9f9f9;
-          border-radius: 30px;
-          display: flex;
-          flex-direction: column;
-          flex-wrap: wrap;
-          padding: 20px 50px;
-          gap: 20px;
-          //Blog изображение
-          .blog-item-img{
-            padding-top: 12px;
-            img{
-              width: 130px;
-              height: 110px;
-            }
-          }
-          //!Blog изображение
 
-          //Blog Информация
-          .blog-item-info{
-            display: flex;
-            justify-content: space-between;
-            width: 80%;
-            height: 100%;
-            flex-direction: column;
-          }
-          //!Blog Информация
-
-          //Blog Date
-          .blog-date-time{
-            width: max-content;
-            span{
-              font-size: 14px;
-              font-weight: 600;
-              color: #7c7c7c;
-            }
-          }
-          //!Blog Date
-          //Blog Headline
-          a{
-            text-decoration: none;
-            b{
-              font-size: 21px;
-              text-align: center;
-            }
-          }
-          //!Blog Headline
-          //Blog Preview
-          .i_blog-preview{
-            span{
-              font-family: "Open Sans", sans-serif;
-              font-size: 14px;
-              font-weight: 600;
-              color: black;
-              text-align: center;
-            }
-          }
-          //!Blog Preview
-        }
-        //Blog Лист
-      }
-      //!Blog Лист
-
-      //Blog Btn
-      button{
-        width: 208px;
-        height: 60px;
-      }
-      //!Blog Btn
-    }
-    //!Blog
-  }
-}
-//!INFO BLOCK
-
-//OUR STATUS
-.i_our-status{
-  padding-top: 70px;
-  padding-bottom: 70px;
-  .i_container{
-    //OUR STATUS GROUP
-    .i_our-status-group{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 70px;
-      //OUR STATUS GROUP TITLE
-      .i_our-status-group-title{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 20px;
-        //OUR STATUS GROUP TITLE ICON
-        .i_our-status-group-title-icon{
-          width: 50px;
-          height: 50px;
-          background-color: black;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          svg{
-            color: white;
-          }
-        }
-        // !OUR STATUS GROUP TITLE ICON
-        //OUR STATUS GROUP TITLE NAME
-        .i_our-status-group-title-name{
-          span{
-            font-size: 32px;
-            font-weight: bold;
-          }
-        }
-        //OUR STATUS GROUP TITLE NAME
-      }
-      //!OUR STATUS GROUP TITLE
-      //OUR STATUS GROUP BLOCKS FIRST
-      .i_our-status-group-blocks{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 40px;
-          //width: 1116px;
-          //OUR STATUS GROUP BLOCKS ITEM
-          .i_our-status-group-blocks-item {
-            width: 23%;
-            height: 190px;
-            background-color: #f5f5f5;
-            border-radius: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-            z-index: 1;
-            padding: 10px 30px;
-            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
-            cursor: pointer;
-            transition: all .4s ease;
-            gap: 20px;
-            &:hover{
-              box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
-            }
-            //OUR STATUS GROUP BLOCKS ITEM BG ICON
-            .i_our-status-group-blocks-item-bgIcon{
-              position: absolute;
-              z-index: -1;
-              top: 0;
-              left: 0;
-              width: 100px;
-              height: 100px;
-              svg{
-                color: white;
-              }
-            }
-            //OUR STATUS GROUP BLOCKS ITEM BG ICON
-            //OUR STATUS GROUP BLOCKS ITEM ICON
-            .i_our-status-group-blocks-item-icon{
-              img{
-              }
-            }
-            //!OUR STATUS GROUP BLOCKS ITEM ICON
-            //OUR STATUS GROUP BLOCKS ITEM NAME
-            .i_our-status-group-blocks-item-name{
-              text-align: center;
-              span{
-                font-size: 14px;
-                font-weight: 600;
-                font-family: "Open Sans", sans-serif;
-              }
-            }
-            //!OUR STATUS GROUP BLOCKS ITEM NAME
-          }
-          //!OUR STATUS GROUP BLOCKS ITEM
-        }
-      //!OUR STATUS GROUP BLOCKS FIRST
-      //OUR STATUS GROUP BTN
-      button{
-        width: 585px;
-        height: 60px;
-      }
-      //!OUR STATUS GROUP BTN
-    }
-    //!OUR STATUS GROUP
-  }
-}
-//!OUR STATUS
-
-//FOOTER
-.i_footer{
-  .i_container{
-    //FOOTER LEFT
-    .i_footer-left{
-      //FOOTER LEFT LOGO ExSol.com
-      .i_footer-left-logo{
-        svg{
-
-        }
-      }
-      //!FOOTER LEFT LOGO ExSol.com
-      //FOOTER LEFT COPYRIGHT
-      .i_footer-left-copyright{
-
-      }
-      //!FOOTER LEFT COPYRIGHT
-      //FOOTER LEFT ICONS
-      .i_footer-left-icons{
-        .i_footer-left-icons-item{
-          .i_footer-left-icons-item-circles{
-            width: 50px;
-            height: 50px;
-            background-color: #000000;
-            border-radius: 25px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.4s ease;
-            &:hover{
-              background-color: #f5f5f5;
-              box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
-            }
-          }
-          .i_footer-left-icons-number{
-            text-decoration: none;
-            span{
-              color: black;
-            }
-          }
-          .i_footer-left-icons-email{
-            text-decoration: none;
-            font-size: 14px;
-            color: black;
-          }
-        }
-        button{
-          svg{
-
-          }
-        }
-      }
-      //!FOOTER LEFT ICONS
-    }
-    //!FOOTER LEFT
-    //FOOTER RIGHT
-    .i_footer-right{
-      //FOOTER RIGHT BLOG ICON SOCIAL
-      .i_footer-right-more{
-        //FOOTER RIGHT BLOG
-        .i_footer-right-more-blog{
-          width: 170px;
-          height: 50px;
-          font-size: 16px;
-        }
-        //!FOOTER RIGHT BLOG
-        //FOOTER RIGHT ICON
-        .i_footer-right-more-icon{
-          width: 50px;
-          height: 50px;
-          background-color: #000000;
-          border-radius: 25px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          transition: all 0.4s ease;
-          &:hover{
-            background-color: #f5f5f5;
-            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
-          }
-        }
-        //!FOOTER RIGHT ICON
-      }
-      //!FOOTER RIGHT BLOG ICON SOCIAL
-    }
-    //!FOOTER RIGHT
-  }
-}
-//!FOOTER
 
 
 

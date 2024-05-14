@@ -263,7 +263,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
         <div class="i_container">
             <!--Фоновая картинка-->
             <div class="i_our-services-bg">
-                <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/svg/background-element.svg'?>" alt="Notice-our-services">
+                <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/svg/background-element.svg'?>" alt="background-element">
             </div>
             <!--Фоновая картинка-->
             <!--Группа наши услуги-->
