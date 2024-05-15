@@ -12,6 +12,8 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
     $APPLICATION->ShowHead();
     $APPLICATION->ShowPanel();
     ?>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <header class="i_header">
     <div class="i_container">
@@ -317,6 +319,22 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
     </div>
     <!-- MAIN OUR SERVICES -->
 
+	<!--PERSONAL-->
+	<div class="i_personal">
+		<div class="i_container">
+			<div class="swiper-container personal">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+
+					</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</div>
+	<!--!PERSONAL-->
+
     <!-- MAIN SOFTWARE -->
     <div class="i_software">
         <div class="i_container">
@@ -356,6 +374,5 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
     </div>
     <!-- MAIN SOFTWARE -->
 
-</main>
 
 

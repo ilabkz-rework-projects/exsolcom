@@ -465,6 +465,17 @@ body{
   }
   //!MAIN OUR SERVICES
 
+  //PERSONAL
+  .i_personal{
+    .i_container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+  }
+  //!PERSONAL
+
   //MAIN SOFTWARE
   .i_software{
     background-color: #f5f5f5;
