@@ -55,12 +55,10 @@
   align-items: center;
   flex-direction: column;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
-  background-image: url("../img/svg/bg-manage-slide.svg");
-  background-repeat: no-repeat;
-  background-position-y: bottom;
   border-radius: 100% 100% 35px 35px;
   cursor: pointer;
   gap: 40px;
+  transition: all 0.4s ease;
 }
 .i_personal .i_personal-group .swiper-container.personal .swiper-slide .swiper-slide-picture {
   width: 406px;
@@ -97,6 +95,9 @@
 }
 .i_personal .i_personal-group .swiper-container.personal .swiper-slide:hover {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+  background-image: url("../img/svg/bg-manage-slide.svg");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
 }
 .i_personal .i_personal-group .i_personal-btn {
   width: 390px;
