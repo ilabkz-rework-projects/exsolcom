@@ -303,7 +303,6 @@ body {
   z-index: 1;
   top: 6%;
   left: 65%;
-  opacity: 0.5;
 }
 .i_main .i_our-services .i_container .i_our-services-group {
   display: flex;
@@ -542,7 +541,6 @@ body {
   transform: translateY(-50%);
 }
 .i_infoblock .i_container .i_news .i_news-bg img {
-  opacity: 0.5;
   width: 490px;
   height: 495px;
 }

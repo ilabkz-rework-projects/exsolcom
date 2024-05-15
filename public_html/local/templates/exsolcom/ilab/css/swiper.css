@@ -11,9 +11,6 @@
   left: -0.5%;
   transform: translateY(50%);
 }
-.i_personal .i_personal-bg img {
-  opacity: 0.5;
-}
 .i_personal .i_personal-group {
   display: flex;
   align-items: center;

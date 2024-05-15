@@ -1,7 +1,7 @@
 <div class="i_news">
     
     <div class="i_news-bg">
-        <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/svg/background-icon_2.svg.svg'?>" alt="background-icon_2">
+        <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/svg/background-icon_22.svg'?>" alt="background-icon_2">
     </div>
 
 	<div class="i_news-title">

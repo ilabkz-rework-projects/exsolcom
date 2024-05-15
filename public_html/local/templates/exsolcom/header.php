@@ -265,7 +265,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
         <div class="i_container">
             <!--Фоновая картинка-->
             <div class="i_our-services-bg">
-                <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/svg/background-element.svg'?>" alt="background-element">
+                <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/svg/background-element-part_1.svg'?>" alt="background-element">
             </div>
             <!--Фоновая картинка-->
             <!--Группа наши услуги-->
@@ -323,7 +323,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
 	<div class="i_personal">
 		<div class="i_container">
             <div class="i_personal-bg">
-                <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/svg/background-icon_3.svg.svg'?>" alt="background-icon_3">
+                <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/svg/background-icon_33.svg'?>" alt="background-icon_3">
             </div>
             <div class="i_personal-group">
                 <div class="i_personal-title">
