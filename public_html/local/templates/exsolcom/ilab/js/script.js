@@ -4,17 +4,14 @@ window.addEventListener('DOMContentLoaded', function() {
 		grabCursor: true,
 		centeredSlides: true,
 		slidesPerView: "auto",
-		centeredSlides: true,
-		loop: true,
-		initialSlide: 1,
+		initialSlide: 2,
 		coverflowEffect: {
 			rotate: 0,
-			stretch: -30,
-			depth: 100,
+			stretch: -14 ,
+			depth: 30,
 			modifier: 10,
-			initialSlide: 5,
 			slideShadows: false
-		}
+		},
 	});
 
 });

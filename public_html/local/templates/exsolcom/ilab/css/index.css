@@ -391,7 +391,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 .i_main .i_software {
   background-color: #f5f5f5;
