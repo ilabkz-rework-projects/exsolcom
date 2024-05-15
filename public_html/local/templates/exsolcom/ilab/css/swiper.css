@@ -74,8 +74,8 @@
   font-size: 28px;
 }
 .i_personal .i_personal-group .swiper-container.personal .swiper-slide .swiper-slide-group .swiper-slide-tittle {
-  font-family: "Open Sans", sans-serif;
   font-size: 15px;
+  color: #818181;
   text-align: center;
 }
 .i_personal .i_personal-group .swiper-container.personal .swiper-slide .swiper-slide-group .swiper-slide-desc {
