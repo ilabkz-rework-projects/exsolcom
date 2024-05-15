@@ -1,3 +1,6 @@
+
+</main>
+
 <footer class="i_footer">
     <div class="i_container">
         <!--FOOTER LEFT-->
