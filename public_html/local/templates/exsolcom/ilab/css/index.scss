@@ -260,7 +260,7 @@ body{
         //!BANNER ПРОДАЖА И ВНЕДРЕНИЕ
 
         //BANNER BTN APPLY
-         button {
+         .i_banner-btn-apply{
            width: 330px;
            height: 60px;
            margin-top: 80px;
@@ -1017,7 +1017,6 @@ body{
         //!FOOTER LEFT LOGO ExSol.com
         //FOOTER LEFT COPYRIGHT
         .i_footer-left-copyright{
-
         }
         //!FOOTER LEFT COPYRIGHT
       }
@@ -1076,7 +1075,9 @@ body{
         flex-direction: row;
         gap: 20px;
         .i_header-menu{
+          width: 105%;
           gap: 18px;
+          flex-wrap: wrap;
           .i_header-menu-item{
             a{
               font-size: 14px;
@@ -1106,8 +1107,18 @@ body{
             flex-direction: row;
             flex-wrap: nowrap;
             gap: 30px;
-            .i_footer-right-icons{
+            .i_footer-right-more-icon_2{
               display: none;
+            }
+            .i_footer-right-hope{
+              display: flex;
+              gap: 30px;
+              @media screen and (max-width: 1000px){
+                gap: 10px;
+                .i_footer-right-more-blog{
+                  width: 136px;
+                }
+              }
             }
             //FOOTER RIGHT BLOG
             .i_footer-right-more-blog{
@@ -1132,8 +1143,23 @@ body{
               }
             }
             //!FOOTER RIGHT ICON
+            .i_footer-right-icons{
+              display: none;
+            }
+
           }
           //!FOOTER RIGHT BLOG ICON SOCIAL
+          .i_footer-right-group{
+            .i_footer-left-logoLittle{
+              display: none;
+            }
+          }
+          .i_footer-right-groupLogCopy{
+            display: none;
+            @media screen and (max-width: 471px){
+              display: block;
+            }
+          }
         }
       }
     }
@@ -1403,6 +1429,7 @@ body{
     margin-bottom: 50px;
     .i_container{
       .i_footer-right{
+        width: 100%;
         gap: 30px;
         .i_footer-right-menu{
           .i_header-burger{
@@ -1440,6 +1467,14 @@ body{
               }
             }
             .i_footer-right-group{
+              @media screen and (max-width: 471px){
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .i_footer-left-logoLittle{
+                  display: block;
+                }
+              }
               .i_banner-group_social{
                 .i_banner-social{
                   .i_banner-social_item{
@@ -1503,6 +1538,13 @@ body{
 }
 
 //!HEADER MEDIA ADAPTIVE 1330
+
+.i_footer {
+  @media screen and (max-width: 481px) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
 
 //HEADER MEDIA ADAPTIVE 1000
 @media screen and (max-width: 1000px) {
@@ -1796,6 +1838,23 @@ body{
               flex-direction: row;
               flex-wrap: nowrap;
               gap: 10px;
+              .i_footer-right-more-icon_2{
+                display: none;
+                @media screen and (max-width: 471px){
+                  display: flex;
+                  width: 40px;
+                  align-items: center;
+                  justify-content: center;
+                  background-color: black;
+                  .menu-burger{
+                    width: 12px;
+                    height: 12px;
+                  }
+                  &:hover{
+                    background-color: #f5f5f5;
+                  }
+                }
+              }
               .i_footer-right-icons{
                 display: flex;
                 gap: 10px;
@@ -1804,6 +1863,9 @@ body{
                 width: 136px;
                 height: 40px;
                 font-size: 13px;
+                @media screen and (max-width: 471px){
+                  width: 126px;
+                }
               }
               .i_footer-right-more-icon{
                 width: 40px;
@@ -2128,6 +2190,9 @@ body{
   //Footer
   .i_footer{
     .i_container{
+      @media screen and (max-width: 471px){
+        margin: 0 16px;
+      }
       .i_footer-left{
         display: none;
       }
@@ -2138,12 +2203,14 @@ body{
         .i_footer-right-groupMore{
           display: flex;
           justify-content: space-between;
-          gap: 231px;
           align-items: flex-end;
           .i_footer-burgerLogoCop{
             display: flex;
             flex-direction: column;
             gap: 30px;
+            @media screen and (max-width: 471px){
+              display: none;
+            }
             .i_header-burger{
               display: flex;
               align-items: center;
@@ -2168,6 +2235,9 @@ body{
               .i_footer-left-copyright{
                 text-wrap: nowrap;
                 font-size: 13px;
+                @media screen and (max-width: 529px){
+                  text-wrap: wrap;
+                }
               }
             }
           }
@@ -2176,11 +2246,26 @@ body{
             gap: 30px;
             flex-direction: column;
             align-items: flex-end;
+            @media screen and (max-width: 471px){
+              align-items: flex-start;
+              width: 100%;
+            }
+            .i_footer-right-groupLogCopy{
+              .i_footer-left-copyright{
+                @media screen and (max-width: 471px){
+                  font-size: 12px;
+                }
+              }
+            }
             .i_footer-right-more{
               display: flex;
               flex-direction: row;
               flex-wrap: nowrap;
               gap: 10px;
+              @media screen and (max-width: 471px){
+                width: 100%;
+                justify-content: space-between;
+              }
               .i_footer-right-icons{
                 display: flex;
                 gap: 10px;
@@ -2193,6 +2278,10 @@ body{
               .i_footer-right-more-icon{
                 width: 40px;
                 height: 40px;
+                .menu-burger{
+                  width: 12px;
+                  height: 12px;
+                }
                 svg{
                   width: 14px;
                   height: 16px;
@@ -2975,6 +3064,24 @@ body{
   }
   }
   //!Main
+
+//Footer
+.i_footer{
+  .i_container{
+    .i_footer-right{
+      .i_footer-right-groupMore{
+        .i_footer-right-moreGroup{
+          .i_footer-right-more{
+            .i_footer-right-more-blog{
+              width: 126px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//!Footer
 //!HEADER MEDIA ADAPTIVE 360
 
 
