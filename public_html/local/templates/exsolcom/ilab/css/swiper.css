@@ -1,5 +1,57 @@
 .swiper-container.personal {
   width: 100%;
 }
+.swiper-container.personal .swiper-slide {
+  padding: 0 20px;
+  width: 330px;
+  height: 715px;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
+  background-image: url("../img/svg/bg-manage-slide.svg");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  border-radius: 100% 100% 30px 30px;
+  cursor: pointer;
+  gap: 40px;
+}
+.swiper-container.personal .swiper-slide .swiper-slide-picture {
+  width: 406px;
+  height: 406px;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.swiper-container.personal .swiper-slide .swiper-slide-picture img {
+  border-radius: 50%;
+}
+.swiper-container.personal .swiper-slide .swiper-slide-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.swiper-container.personal .swiper-slide .swiper-slide-group .swiper-slide-name {
+  text-align: center;
+}
+.swiper-container.personal .swiper-slide .swiper-slide-group .swiper-slide-name span {
+  font-size: 28px;
+}
+.swiper-container.personal .swiper-slide .swiper-slide-group .swiper-slide-tittle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+.swiper-container.personal .swiper-slide .swiper-slide-group .swiper-slide-desc {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+.swiper-container.personal .swiper-slide:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+}
 
 /*# sourceMappingURL=swiper.css.map */

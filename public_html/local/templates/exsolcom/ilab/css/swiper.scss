@@ -1,6 +1,55 @@
 .swiper-container.personal{
   width: 100%;
   .swiper-slide {
-
+    padding: 0 20px;
+    width: 330px;
+    height: 715px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
+    background-image: url("../img/svg/bg-manage-slide.svg");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    border-radius: 100% 100% 30px 30px;
+    cursor: pointer;
+    gap: 40px;
+    .swiper-slide-picture{
+      width: 406px;
+      height: 406px;
+      background-color: #f9f9f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      img{
+        border-radius: 50%;
+      }
+    }
+    .swiper-slide-group{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .swiper-slide-name{
+        text-align: center;
+        span{
+          font-size: 28px;
+        }
+      }
+      .swiper-slide-tittle{
+        font-family: "Open Sans", sans-serif;
+        font-size: 15px;
+        text-align: center;
+      }
+      .swiper-slide-desc{
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+    &:hover{
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+    }
   }
 }

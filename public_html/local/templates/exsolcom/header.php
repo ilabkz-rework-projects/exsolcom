@@ -325,7 +325,20 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
 			<div class="swiper-container personal">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-
+                        <div class="swiper-slide-picture">
+                            <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/manager_5.jpg'?>" alt="">
+                        </div>
+                        <div class="swiper-slide-group">
+                            <div class="swiper-slide-name">
+                                <span>Иван<br>Иванов</span>
+                            </div>
+                            <div class="swiper-slide-tittle">
+                                <p>Старший менеджер</p>
+                            </div>
+                            <div class="swiper-slide-desc">
+                                <p>Менеджер в турагентстве продает туры конкретным клиентам, обрабатывая заявки, подбирая подходящие варианты, оформляя документы, визы....</p>
+                            </div>
+                        </div>
 					</div>
 				</div>
 				<!-- Add Pagination -->
