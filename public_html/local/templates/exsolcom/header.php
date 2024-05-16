@@ -420,12 +420,18 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
                             </div>
                         </div>
                     </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
                 </div>
                 <button class="i_personal-btn">
                     Скачать презентацию компании
                 </button>
+	            <div class="pagination">
+		            <div class="swiper-personal-button-prev">
+			            <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/svg/swiper-prev.svg'?>" alt="<">
+		            </div>
+		            <div class="swiper-personal-button-next">
+			            <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/svg/swiper-next.svg'?>" alt=">">
+		            </div>
+	            </div>
             </div>
 		</div>
 	</div>
@@ -550,6 +556,14 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
                 <div class="i_products-btn">
                     <button>Перейти в каталог</button>
                 </div>
+	            <div class="pagination">
+		            <div class="swiper-products-button-prev">
+			            <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/svg/swiper-prev.svg'?>" alt="<">
+		            </div>
+		            <div class="swiper-products-button-next">
+			            <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/svg/swiper-next.svg'?>" alt=">">
+		            </div>
+	            </div>
             </div>
 		</div>
 	</div>
