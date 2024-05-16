@@ -35,6 +35,10 @@ window.addEventListener('DOMContentLoaded', function() {
 			fill: "row",
 		},
 		spaceBetween: 30,
+		navigation:{
+			nextEl: ".swiper-projects-button-next",
+			prevEl: ".swiper-projects-button-prev",
+		},
 	});
 
 });

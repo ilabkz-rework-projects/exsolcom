@@ -296,7 +296,9 @@
 .pagination .swiper-products-button-next,
 .pagination .swiper-products-button-prev,
 .pagination .swiper-personal-button-next,
-.pagination .swiper-personal-button-prev {
+.pagination .swiper-personal-button-prev,
+.pagination .swiper-projects-button-next,
+.pagination .swiper-projects-button-prev {
   width: 50px;
   height: 50px;
   border-radius: 100%;
