@@ -294,6 +294,12 @@ body{
           @media screen and (max-width: 480px){
             width: 120%;
           }
+          @media screen and (max-width: 470px){
+            width: 132%;
+          }
+          @media screen and (max-width: 430px){
+            width: 156%;
+          }
           .i_banner-item {
             display: flex;
             align-items: center;
@@ -1752,11 +1758,13 @@ body{
             left: 63%;
             gap: 70px;
             @media screen and (max-width: 480px){
-              left: unset;
+              left: 50%;
+              transform: translateX(-50%);
               gap: 60px;
+              width: 100%;
             }
             @media screen and (max-width: 360px){
-              left: 88%;
+              left: 50%;
               transform: translateX(-50%);
             }
             //Группа Соц-сетей и ДеньНочь
@@ -1842,6 +1850,12 @@ body{
               font-size: 14px;
               font-weight: bold;
               cursor: pointer;
+              @media screen and (max-width: 760px){
+                width: 248px;
+              }
+              @media screen and (max-width: 360px){
+                width: 208px;
+              }
             }
             //!Кнопка Оставить заявку
           }
