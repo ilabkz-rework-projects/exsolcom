@@ -155,7 +155,7 @@ body {
 .i_header-burger {
   width: 50px;
   height: 50px;
-  max-width: 100%;
+  min-width: 50px;
   background-color: #000000;
   border-radius: 50%;
   display: flex;
@@ -894,7 +894,7 @@ body {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  gap: 20px;
+  gap: 14px;
 }
 .i_footer .i_container .i_footer-right .i_footer-right-menu .i_header-menu {
   width: 105%;
@@ -998,7 +998,7 @@ body {
   .i_header .i_container .i_header-left .i_header-burger {
     width: 40px;
     height: 40px;
-    max-width: 100%;
+    min-width: 40px;
   }
   .i_header .i_container .i_header-left .i_header-burger svg {
     width: 12px;
@@ -1188,6 +1188,7 @@ body {
   .i_footer .i_container .i_footer-right .i_footer-right-menu .i_header-burger {
     width: 40px;
     height: 40px;
+    min-width: 40px;
   }
   .i_footer .i_container .i_footer-right .i_footer-right-menu .i_header-burger svg {
     width: 12px;
@@ -1312,6 +1313,7 @@ body {
     display: flex;
     width: 40px;
     height: 40px;
+    min-width: 40px;
   }
   .i_header .i_container .i_header-right .i_header-burger .menu-burger {
     width: 12px;
@@ -1608,6 +1610,7 @@ body {
   .i_header .i_container .i_header-left .i_header-burger {
     width: 40px;
     height: 40px;
+    min-width: 40px;
   }
   .i_header .i_container .i_header-left .i_header-burger svg {
     width: 12px;
@@ -1822,6 +1825,7 @@ body {
     justify-content: center;
     width: 40px;
     height: 40px;
+    min-width: 40px;
   }
   .i_footer .i_container .i_footer-right .i_footer-right-groupMore .i_footer-burgerLogoCop .i_header-burger svg {
     width: 12px;

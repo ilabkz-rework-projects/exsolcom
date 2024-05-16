@@ -184,7 +184,7 @@ body{
 .i_header-burger {
   width: 50px;
   height: 50px;
-  max-width: 100%;
+  min-width: 50px;
   background-color: #000000;
   border-radius: 50%;
   display: flex;
@@ -1116,7 +1116,7 @@ body{
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
-        gap: 20px;
+        gap: 14px;
         .i_header-menu{
           width: 105%;
           gap: 18px;
@@ -1236,7 +1236,7 @@ body{
         .i_header-burger{
           width: 40px;
           height: 40px;
-          max-width: 100%;
+          min-width: 40px;
           svg{
             width: 12px;
             height: 12px;
@@ -1499,6 +1499,7 @@ body{
           .i_header-burger{
             width: 40px;
             height: 40px;
+            min-width: 40px;
             svg{
               width: 12px;
               height: 12px;;
@@ -1652,6 +1653,7 @@ body{
           display: flex;
           width: 40px;
           height: 40px;
+          min-width: 40px;
           .menu-burger{
             width: 12px;
             height: 12px;
@@ -2031,6 +2033,7 @@ body{
         .i_header-burger{
           width: 40px;
           height: 40px;
+          min-width: 40px;
           svg{
             width: 12px;
             height: 12px;
@@ -2313,6 +2316,7 @@ body{
               justify-content: center;
               width: 40px;
               height: 40px;
+              min-width: 40px;
               svg{
                 width: 12px;
                 height: 12px;
