@@ -212,6 +212,7 @@
 .i_projects {
   padding: 60px 0;
   background-color: #f5f5f5;
+  position: relative;
 }
 .i_projects .i_projects-title {
   display: flex;
