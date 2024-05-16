@@ -431,6 +431,113 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
 	</div>
 	<!--!PERSONAL-->
 
+	<!--PRODUCTS-->
+	<div class="i_products">
+		<div class="i_container">
+			<div class="swiper products-swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="swiper-img">
+							<img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/products-swiper.png'?>" alt="products-swiper">
+						</div>
+						<div class="swiper-title">
+							<span>КА</span>
+						</div>
+						<div class="swiper-detail">
+							<div class="swiper-detail-title">
+								<span>Текст рыбы</span>
+							</div>
+							<div class="swiper-detail-btn">
+								<button>Запросить КП</button>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-img">
+							<img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/products-swiper.png'?>" alt="products-swiper">
+						</div>
+						<div class="swiper-title">
+							<span>КА</span>
+						</div>
+						<div class="swiper-detail">
+							<div class="swiper-detail-title">
+								<span>Текст рыбы</span>
+							</div>
+							<div class="swiper-detail-btn">
+								<button>Запросить КП</button>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-img">
+							<img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/products-swiper.png'?>" alt="products-swiper">
+						</div>
+						<div class="swiper-title">
+							<span>КА</span>
+						</div>
+						<div class="swiper-detail">
+							<div class="swiper-detail-title">
+								<span>Текст рыбы</span>
+							</div>
+							<div class="swiper-detail-btn">
+								<button>Запросить КП</button>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-img">
+							<img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/products-swiper.png'?>" alt="products-swiper">
+						</div>
+						<div class="swiper-title">
+							<span>КА</span>
+						</div>
+						<div class="swiper-detail">
+							<div class="swiper-detail-title">
+								<span>Текст рыбы</span>
+							</div>
+							<div class="swiper-detail-btn">
+								<button>Запросить КП</button>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-img">
+							<img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/products-swiper.png'?>" alt="products-swiper">
+						</div>
+						<div class="swiper-title">
+							<span>КА</span>
+						</div>
+						<div class="swiper-detail">
+							<div class="swiper-detail-title">
+								<span>Текст рыбы</span>
+							</div>
+							<div class="swiper-detail-btn">
+								<button>Запросить КП</button>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-img">
+							<img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/products-swiper.png'?>" alt="products-swiper">
+						</div>
+						<div class="swiper-title">
+							<span>КА</span>
+						</div>
+						<div class="swiper-detail">
+							<div class="swiper-detail-title">
+								<span>Текст рыбы</span>
+							</div>
+							<div class="swiper-detail-btn">
+								<button>Запросить КП</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--!PRODUCTS-->
+
     <!-- MAIN SOFTWARE -->
     <div class="i_software">
         <div class="i_container">

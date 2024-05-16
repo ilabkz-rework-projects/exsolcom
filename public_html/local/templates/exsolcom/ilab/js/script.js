@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', function() {
-	const swiper = new Swiper(".swiper-container.personal", {
+	const swiperPersonal = new Swiper(".swiper-container.personal", {
 		effect: "coverflow",
 		grabCursor: true,
 		centeredSlides: true,
@@ -12,6 +12,11 @@ window.addEventListener('DOMContentLoaded', function() {
 			modifier: 10,
 			slideShadows: false
 		},
+	});
+
+	const swiperProducts = new Swiper(".swiper.products-swiper", {
+		slidesPerView: 4,
+		spaceBetween: 40,
 	});
 
 });
