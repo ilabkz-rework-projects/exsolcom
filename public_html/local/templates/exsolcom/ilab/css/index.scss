@@ -48,6 +48,9 @@ body{
     .i_header-right {
       display: flex;
       gap: 50px;
+      .i_header-burger{
+        display: none;
+      }
 
       //HEADER BLOG
       button {
@@ -180,6 +183,7 @@ body{
 .i_header-burger {
   width: 50px;
   height: 50px;
+  max-width: 100%;
   background-color: #000000;
   border-radius: 50%;
   display: flex;
@@ -282,12 +286,14 @@ body{
         display: flex;
         flex-direction: column;
         gap: 110px;
-
         //MAIN SKILLS
         .i_banner-skills {
           display: flex;
           flex-direction: column;
           gap: 20px;
+          @media screen and (max-width: 480px){
+            width: 120%;
+          }
           .i_banner-item {
             display: flex;
             align-items: center;
@@ -348,6 +354,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url("../img/svg/background-element-part_1.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
     .i_container {
       position: relative;
       display: flex;
@@ -466,6 +476,10 @@ body{
 
   //PERSONAL
   .i_personal{
+    background-image: url("../img/svg/background-icon_33.svg");
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: bottom;
     .i_container{
       display: flex;
       align-items: center;
@@ -566,6 +580,9 @@ body{
   justify-content: space-between;
   gap: 60px;
   margin-top: 30px;
+  @media screen and (max-width: 480px){
+    gap: 0;
+  }
   //MAIN SOCIAL
   .i_banner-social {
     display: flex;
@@ -645,6 +662,10 @@ body{
 .i_infoblock{
   padding-top: 70px;
   padding-bottom: 70px;
+  background-image: url("../img/svg/background-icon_22.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: top;
   .i_container{
     display: flex;
     gap: 80px;
@@ -1092,6 +1113,7 @@ body{
         .i_header-menu{
           width: 105%;
           gap: 18px;
+          justify-content: flex-start;
           flex-wrap: wrap;
           .i_header-menu-item{
             a{
@@ -1207,6 +1229,7 @@ body{
         .i_header-burger{
           width: 40px;
           height: 40px;
+          max-width: 100%;
           svg{
             width: 12px;
             height: 12px;
@@ -1217,7 +1240,6 @@ body{
         .i_header-menu{
           @media screen and (max-width: 1300px){
             display: flex;
-            justify-content: space-between;
             width: 100%;
           }
           @media screen and (max-width: 1150px){
@@ -1282,6 +1304,7 @@ body{
   .i_main {
     //Banner
     .i_banner{
+      margin-bottom: 145px;
       .i_container{
         //Фоновая картинка
         .i_banner-bg{
@@ -1478,7 +1501,7 @@ body{
             gap: 15px;
             @media screen and (max-width: 1300px){
               display: flex;
-              justify-content: space-between;
+              justify-content: flex-start;
               width: 100%;
             }
             .i_header-menu-item{
@@ -1597,6 +1620,7 @@ body{
       height: 100px;
       //Header Left
       .i_header-left{
+        display: none;
         //Header Burger
         .i_header-burger{
           width: 40px;
@@ -1617,6 +1641,15 @@ body{
       //Header Right
       .i_header-right{
         gap: 10px;
+        .i_header-burger{
+          display: flex;
+          width: 40px;
+          height: 40px;
+          .menu-burger{
+            width: 12px;
+            height: 12px;
+          }
+        }
         //Header Blog
         .i_header-blog{
           width: 95px;
@@ -1659,8 +1692,8 @@ body{
   .i_main {
     //Banner
     .i_banner{
+      margin-bottom: 70px;
       .i_container{
-        padding-bottom: 80px;
         //Фоновая картинка
         .i_banner-bg{
           position: absolute;
@@ -1709,99 +1742,111 @@ body{
           //!Кнопка Оставить Заявку
         }
         //!Левая часть баннера
-        //Правая часть баннера
-        .i_banner-right{
-          position: relative;
-          top: -5%;
-          left: 63%;
-          gap: 70px;
-          //Группа Соц-сетей и ДеньНочь
-          .i_banner-group_social{
-            gap: 60px;
-            //Группа Соц-сети
-            .i_banner-social{
-              .i_banner-social_item{
-                width: 40px;
-                height: 40px;
-                .i_banner-social_link{
-                  .youtube-icon{
-                    width: 16px;
-                  }
-                  svg{
-                    width: max-content;
-                    height: 16px;
-                  }
-                }
-              }
+        .i_banner-container{
+          display: flex;
+          width: 61.3%;
+          justify-content: flex-end;
+          //Правая часть баннера
+          .i_banner-right{
+            position: relative;
+            left: 63%;
+            gap: 70px;
+            @media screen and (max-width: 480px){
+              left: unset;
+              gap: 60px;
             }
-            //!Группа Соц-сети
-            //Группа ДеньНочь
-            .i_banner-night_sun{
-              .i_banner-night_sun_item{
-                width: 40px;
-                height: 40px;
-                svg{
-                  width: 22px;
-                  height: 22px;
-                }
-              }
+            @media screen and (max-width: 360px){
+              left: 88%;
+              transform: translateX(-50%);
             }
-            //Группа ДеньНочь
-          }
-          //!Группа Соц-сетей и ДеньНочь
-          //Группа Навыки
-          .i_banner-skills{
-            .i_banner-item{
-              gap: 10px;
-              &:hover{
-                .i_banner-circles {
+            //Группа Соц-сетей и ДеньНочь
+            .i_banner-group_social{
+              gap: 60px;
+              //Группа Соц-сети
+              .i_banner-social{
+                .i_banner-social_item{
                   width: 40px;
                   height: 40px;
-                  background-color: #f5f5f5;
+                  .i_banner-social_link{
+                    .youtube-icon{
+                      width: 16px;
+                    }
+                    svg{
+                      width: max-content;
+                      height: 16px;
+                    }
+                  }
                 }
               }
-              .i_banner-circles{
-                width: 40px;
-                height: 40px;
-                .banner-icon_1{
-                  width: 22px;
-                  height: 22px;
-                }
-                .banner-icon_2{
-                  width: 18px;
-                  height: 16px;
-                }
-                .banner-icon_3{
-                  width: 22px;
-                  height: 22px;
-                }
-                .banner-icon_4{
-                  width: 18px;
-                  height: 12px;
+              //!Группа Соц-сети
+              //Группа ДеньНочь
+              .i_banner-night_sun{
+                .i_banner-night_sun_item{
+                  width: 40px;
+                  height: 40px;
+                  svg{
+                    width: 22px;
+                    height: 22px;
+                  }
                 }
               }
-              p{
-                font-size: 14px;
+              //Группа ДеньНочь
+            }
+            //!Группа Соц-сетей и ДеньНочь
+            //Группа Навыки
+            .i_banner-skills{
+              .i_banner-item{
+                gap: 10px;
+                &:hover{
+                  .i_banner-circles {
+                    width: 40px;
+                    height: 40px;
+                    background-color: #f5f5f5;
+                  }
+                }
+                .i_banner-circles{
+                  width: 40px;
+                  height: 40px;
+                  .banner-icon_1{
+                    width: 22px;
+                    height: 22px;
+                  }
+                  .banner-icon_2{
+                    width: 18px;
+                    height: 16px;
+                  }
+                  .banner-icon_3{
+                    width: 22px;
+                    height: 22px;
+                  }
+                  .banner-icon_4{
+                    width: 18px;
+                    height: 12px;
+                  }
+                }
+                p{
+                  font-size: 14px;
+                }
               }
             }
+            //!Группа Навыки
+            //Кнопка Оставить заявку
+            .i_banner-btn-apply{
+              display: block;
+              width: 268px;
+              height: 50px;
+              border-radius: 50px;
+              border: none;
+              background-color: #FF161F;
+              color: white;
+              font-size: 14px;
+              font-weight: bold;
+              cursor: pointer;
+            }
+            //!Кнопка Оставить заявку
           }
-          //!Группа Навыки
-          //Кнопка Оставить заявку
-          .i_banner-btn-apply{
-            display: block;
-            width: 268px;
-            height: 50px;
-            border-radius: 50px;
-            border: none;
-            background-color: #FF161F;
-            color: white;
-            font-size: 14px;
-            font-weight: bold;
-            cursor: pointer;
-          }
-          //!Кнопка Оставить заявку
+          //!Правая часть баннера
         }
-        //!Правая часть баннера
       }
     }
     //!Banner
@@ -2030,9 +2075,9 @@ body{
   .i_main {
     //Banner
     .i_banner{
+      margin-bottom: 60px;
       .i_container{
         margin: 0 20px;
-        padding-bottom: 60px;
         //Фоновая картинка
         .i_banner-bg{
           position: absolute;
@@ -2083,7 +2128,6 @@ body{
         //Правая часть баннера 760
         .i_banner-right{
           position: relative;
-          top: -5%;
           left: 50%;
           gap: 60px;
           //Группа Соц-сетей и ДеньНочь
@@ -2400,11 +2444,24 @@ body{
       //Header Right
       .i_header-right{
         gap: 10px;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
         //Header Blog
         .i_header-blog{
           width: 186px;
           height: 40px;
           font-size: 12px;
+          @media screen and (max-width: 476px){
+            width: 140px;
+          }
+          @media screen and (max-width: 430px){
+            width: 110px;
+          }
+          @media screen and (max-width: 400px){
+            width: 75px;
+          }
         }
         //!Header Blog
         //Header More
@@ -2448,11 +2505,9 @@ body{
         flex-direction: column;
         align-items: center;
         gap: 60px;
-        padding-bottom: 60px;
         //Фоновая картинка
         .i_banner-bg{
           position: relative;
-          width: 385px;
           height: 332px;
           left: unset;
           top: 50%;
@@ -2465,14 +2520,19 @@ body{
           position: relative;
           top: 10px ;
           left: unset;
+          width: 100%;
           display: flex;
           align-items: center;
+          @media screen and (max-width: 425px){
+            width: 100%;
+          }
           //Группа Соц-сетей и ДеньНочь
           .i_banner-group_social{
             display: flex;
             flex-direction: row;
             align-items: center;
-            gap: 155px;
+            width: 100%;
+            justify-content: space-between;
             .i_banner-social{
               display: flex;
               gap: 10px;
