@@ -390,6 +390,7 @@ body{
         gap: 70px;
         position: relative;
         z-index: 2;
+        margin: 0 30px;
         //Группа заголовок
         .i_our-services-headline {
           display: flex;
@@ -429,8 +430,9 @@ body{
           flex-direction: row;
           flex-wrap: wrap;
           gap: 30px;
+          justify-content: center;
           .i_our-services-block{
-            width: 32%;
+            width: 31%;
             height: 240px;
             border-radius: 30px;
             background-color: white;
@@ -1461,7 +1463,7 @@ body{
           .i_our-services-preview{
             justify-content: center;
             .i_our-services-block{
-              width: 394px;
+              width: 31%;
               height: 235px;
               gap: 20px;
               background-size: 200px 150px;
@@ -1878,8 +1880,7 @@ body{
           .i_our-services-preview{
             justify-content: center;
             .i_our-services-block{
-              width: 440px;
-              height: 196px;
+              width: 47%;
               gap: 20px;
               background-size: 200px 150px;
               padding: 30px 20px;
@@ -2245,6 +2246,7 @@ body{
         //Группа наши услуги
         .i_our-services-group{
           gap: 60px;
+          margin: 0 20px;
           //Группа Headline
           .i_our-services-headline{
             span{
@@ -2256,8 +2258,7 @@ body{
           .i_our-services-preview{
             gap: 20px;
             .i_our-services-block{
-              width: 340px;
-              height: 220px;
+              width: 47%;
               gap: 20px;
               background-size: 143px auto;
               padding: 30px 20px;
@@ -2779,7 +2780,7 @@ body{
           .i_our-services-preview{
             gap: 20px;
             .i_our-services-block{
-              width: 198px;
+              width: 46%;
               height: 333px;
               gap: 20px;
               background-size: 143px auto;
@@ -3133,6 +3134,7 @@ body{
         //Группа наши услуги
         .i_our-services-group{
           gap: 60px;
+          margin: 0 16px;
           //Группа Headline
           .i_our-services-headline{
             display: flex;
@@ -3147,7 +3149,7 @@ body{
           .i_our-services-preview{
             gap: 20px;
             .i_our-services-block{
-              width: 149px;
+              width: 46%;
               height: 333px;
               gap: 20px;
               background-size: 143px auto;
