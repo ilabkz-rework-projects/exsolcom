@@ -819,6 +819,12 @@ body{
           background-color: #f9f9f9;
           border-radius: 30px;
           padding: 40px 20px;
+          @media screen and (max-width: 1000px){
+            width: 81%;
+            &:nth-child(2){
+              display: none;
+            }
+          }
           //News изображение
           .news-item-img{
             img{
@@ -997,10 +1003,8 @@ body{
 //OUR STATUS
 .i_our-status{
   padding-top: 70px;
-  padding-bottom: 70px;
   @media screen and (max-width: 1000px){
     padding-top: 60px;
-    padding-bottom: 60px;
   }
   .i_container{
     display: flex;
@@ -1010,12 +1014,18 @@ body{
     @media screen and (max-width: 1000px){
       gap: 60px;
     }
+    @media screen and (max-width: 360px){
+      gap: 30px;
+    }
     //OUR STATUS GROUP TITLE
     .i_our-status-group-title{
       display: flex;
       flex-direction: row;
       align-items: center;
       gap: 20px;
+      @media screen and (max-width: 360px){
+        padding-bottom: 30px;
+      }
       //OUR STATUS GROUP TITLE ICON
       .i_our-status-group-title-icon{
         width: 50px;
@@ -1188,13 +1198,26 @@ body{
           height: 50px;
         }
         @media screen and (max-width: 360px){
+          display: none;
+        }
+      }
+    }
+    //!OUR STATUS GROUP BTN
+    .i_our-status-group-btn_1{
+      button{
+        @media screen and (max-width: 1920px){
+          display: none;
+        }
+        @media screen and (max-width: 360px){
+          display: flex;
+          align-items: center;
+          justify-content: center;
           font-size: 14px;
           width: 332px;
           height: 40px;
         }
       }
     }
-    //!OUR STATUS GROUP BTN
   }
 }
 //!OUR STATUS
