@@ -23,8 +23,18 @@ body{
   margin: 0 auto;
   width: 1520px;
   @media screen and (max-width: 1520px){
-    width: 100%;
+    width: 96%;
     margin: 0 30px;
+  }
+  @media screen and (max-width: 760px){
+    width: 95%;
+    margin: 0 20px;
+  }
+  @media screen and (max-width: 480px){
+    margin: 0 20px;
+  }
+  @media screen and (max-width: 360px){
+    margin: 0 16px;
   }
 }
 
@@ -372,6 +382,9 @@ body{
       justify-content: center;
       padding-top: 70px;
       padding-bottom: 70px;
+      gap: 70px;
+      position: relative;
+      z-index: 2;
       .i_our-services-bg{
         img{
           width: 800px;
@@ -382,92 +395,87 @@ body{
           left: 65%;
         }
       }
-      //Группа наши услуги
-      .i_our-services-group {
+      //Группа заголовок
+      .i_our-services-headline {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        gap: 70px;
-        position: relative;
-        z-index: 2;
-        margin: 0 30px;
-        //Группа заголовок
-        .i_our-services-headline {
+        justify-content: center;
+        gap: 20px;
+        //Группа иконка
+        .i_our-services-circles {
+          width: 50px;
+          height: 50px;
+          background-color: black;
+          border-radius: 50px;
           display: flex;
           align-items: center;
-          gap: 20px;
-          //Группа иконка
-          .i_our-services-circles {
-            width: 50px;
-            height: 50px;
-            background-color: black;
-            border-radius: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            svg{
-              color: white;
-            }
+          justify-content: center;
+          svg{
+            color: white;
           }
-          //!Группа иконка
+        }
+        //!Группа иконка
+        span{
+          font-size: 32px;
+          font-weight: bold;
+          color: black;
+          text-transform: uppercase;
+          &:hover{
+            transition: 0.3s ease;
+            cursor: pointer;
+            color: #FF161F;
+          }
+        }
+      }
+      //!Группа заголовок
+
+      //Группа анонсы
+      .i_our-services-preview {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        .i_our-services-block{
+          width: 31%;
+          height: 240px;
+          border-radius: 30px;
+          background-color: white;
+          background-image: url("../img/main/notice_Our-services.png");
+          background-repeat: no-repeat;
+          background-position-x: 100%;
+          background-position-y: 100%;
+          display: flex;
+          flex-direction: column;
+          padding: 30px 30px;
+          gap: 25px;
           span{
-            font-size: 32px;
+            font-size: 20px;
             font-weight: bold;
-            color: black;
-            text-transform: uppercase;
-            &:hover{
-              transition: 0.3s ease;
-              cursor: pointer;
+          }
+          p{
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.5;
+            width: 222px;
+          }
+          &:hover{
+            cursor: pointer;
+            background-color: #f9f9f9;
+            transition: 0.3s ease;
+            span{
               color: #FF161F;
             }
           }
         }
-        //!Группа заголовок
+      }
+      //!Группа анонсы
 
-        //Группа анонсы
-        .i_our-services-preview {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          gap: 30px;
-          justify-content: center;
-          .i_our-services-block{
-            width: 31%;
-            height: 240px;
-            border-radius: 30px;
-            background-color: white;
-            background-image: url("../img/main/notice_Our-services.png");
-            background-repeat: no-repeat;
-            background-position-x: 100%;
-            background-position-y: 100%;
-            display: flex;
-            flex-direction: column;
-            padding: 30px 30px;
-            gap: 25px;
-            span{
-              font-size: 20px;
-              font-weight: bold;
-            }
-            p{
-              font-family: "Open Sans", sans-serif;
-              font-size: 14px;
-              font-weight: 600;
-              line-height: 1.5;
-              width: 222px;
-            }
-            &:hover{
-              cursor: pointer;
-              background-color: #f9f9f9;
-              transition: 0.3s ease;
-              span{
-                color: #FF161F;
-              }
-            }
-          }
-        }
-        //!Группа анонсы
-
-        //Кнопка Запросить коммерческое предложение
+      //Кнопка Запросить коммерческое предложение
+      .i_our-services-btn-request{
+        display: flex;
+        justify-content: center;
         button{
           width: 440px;
           height: 60px;
@@ -475,9 +483,8 @@ body{
             background-color: white;
           }
         }
-        //!Кнопка Запросить коммерческое предложение
       }
-      //!Группа наши услуги
+      //!Кнопка Запросить коммерческое предложение
     }
 
   }
@@ -502,21 +509,35 @@ body{
     background-color: #f5f5f5;
     padding-top: 25px;
     padding-bottom: 35px;
+    @media screen and (max-width: 480px){
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
     .i_container{
       //Software Иконка с 1С
       .i_software-corporate{
         display: flex;
         gap: 40px;
         align-items: center;
+        @media screen and (max-width: 480px){
+          flex-direction: column;
+          gap: 10px;
+        }
 
         //Software Icon Img
         .i_software-iconAnnounce{
           display: flex;
           position: relative;
+          @media screen and (max-width: 760px){
+            width: 318px;
+          }
+          @media screen and (max-width: 360px){
+            width: 332px;
+          }
           svg{
           }
           //Изображение 1С
-          .i_software-im{
+          .i_software-block{
             width: 205px;
             height: 205px;
             background-color: white;
@@ -527,10 +548,22 @@ body{
             position: absolute;
             top: 50%;
             left: 50%;
+            @media screen and (max-width: 760px){
+              width: 170px;
+              height: 170px;
+            }
+            @media screen and (max-width: 360px){
+              width: 178px;
+              height: 178px;
+            }
             transform: translate(-50%, -50%);
-            img{
-              width: 160px;
-              height: auto;
+            .i_software-im{
+              width: 100%;
+              height: 100%;
+              img{
+                width: 100%;
+                height: 100%;
+              }
             }
           }
           //Изображение 1С
@@ -541,15 +574,33 @@ body{
           display: flex;
           flex-direction: column;
           gap: 40px;
+          @media screen and (max-width: 480px){
+            align-items: center;
+          }
           //Software text
           .i_software-group-text{
             display: flex;
             flex-direction: column;
             gap: 40px;
+            @media screen and (max-width: 480px){
+              text-align: center;
+            }
             //Software Headline
             .i_software-headline{
               font-size: 30px;
               font-weight: bold;
+              @media screen and (max-width: 1330px){
+                font-size: 1.75rem;
+              }
+              @media screen and (max-width: 1000px){
+                font-size: 1.5rem;
+              }
+              @media screen and (max-width: 760px){
+                font-size: 1.25rem;
+              }
+              @media screen and (max-width: 360px){
+                font-size: 1.125rem;
+              }
             }
             //Software Headline
             //Software Description
@@ -558,6 +609,15 @@ body{
               font-family: "Open Sans", sans-serif;
               font-weight: 600;
               width: 99%;
+              @media screen and (max-width: 1330px){
+                font-size: 1rem;
+              }
+              @media screen and (max-width: 760px){
+                font-size: 0.875rem;
+              }
+              @media screen and (max-width: 360px){
+                font-size: 0.8125rem;
+              }
             }
             //Software Description
           }
@@ -566,6 +626,16 @@ body{
           button {
             width: 334px;
             height: 60px;
+            @media screen and (max-width: 1330px){
+              width: 264px;
+              height: 48px;
+              font-size: 0.875rem;
+            }
+            @media screen and (max-width: 360px){
+              width: 250px;
+              height: 40px;
+              font-size: 0.8125rem;
+            }
             &:hover{
               background-color: white;
             }
@@ -1442,48 +1512,48 @@ body{
     //Our Services
     .i_our-services{
       .i_container{
-        //Группа наши услуги
-        .i_our-services-group{
-          //Группа Headline
-          .i_our-services-headline{
-            .i_our-services-circles{
-              width: 40px;
-              height: 40px;
-              svg{
-                width: 30px;
-                height: 33px;
-              }
-            }
-            span{
-              font-size: 28px;
+        //Группа Headline
+        .i_our-services-headline{
+          .i_our-services-circles{
+            width: 40px;
+            height: 40px;
+            svg{
+              width: 30px;
+              height: 33px;
             }
           }
-          //!Группа Headline
-          //Группа Preview
-          .i_our-services-preview{
-            justify-content: center;
-            .i_our-services-block{
-              width: 31%;
-              height: 235px;
-              gap: 20px;
-              background-size: 200px 150px;
-              padding: 30px 20px;
-              p{
-                font-size: 12px;
-                width: 177px;
-              }
+          span{
+            font-size: 28px;
+          }
+        }
+        //!Группа Headline
+        //Группа Preview
+        .i_our-services-preview{
+          justify-content: center;
+          .i_our-services-block{
+            width: 31%;
+            height: 235px;
+            gap: 20px;
+            background-size: 200px 150px;
+            padding: 30px 20px;
+            p{
+              font-size: 12px;
+              width: 177px;
             }
           }
-          //!Группа Preview
-          //Группа Btn request
-          .i_our-services-btn-request{
+        }
+        //!Группа Preview
+        //Группа Btn request
+        .i_our-services-btn-request{
+          display: flex;
+          justify-content: center;
+          button{
             width: 350px;
             height: 48px;
             font-size: 14px;
           }
-          //!Группа Btn request
         }
-        //!Группа наши услуги
+        //!Группа Btn request
       }
     }
     //!Our Services
@@ -1871,34 +1941,34 @@ body{
     //Our Services
     .i_our-services{
       .i_container{
-        //Группа наши услуги
-        .i_our-services-group{
-          //Группа Headline
-          .i_our-services-headline{}
-          //!Группа Headline
-          //Группа Preview
-          .i_our-services-preview{
-            justify-content: center;
-            .i_our-services-block{
-              width: 47%;
-              gap: 20px;
-              background-size: 200px 150px;
-              padding: 30px 20px;
-              p{
-                width: 226px;
-              }
+        //Группа Headline
+        .i_our-services-headline{}
+        //!Группа Headline
+        //Группа Preview
+        .i_our-services-preview{
+          justify-content: center;
+          .i_our-services-block{
+            width: 47%;
+            gap: 20px;
+            background-size: 200px 150px;
+            padding: 30px 20px;
+            p{
+              width: 226px;
             }
           }
-          //!Группа Preview
-          //Группа Btn request
-          .i_our-services-btn-request{
+        }
+        //!Группа Preview
+        //Группа Btn request
+        .i_our-services-btn-request{
+          display: flex;
+          justify-content: center;
+          button{
             width: 350px;
             height: 48px;
             font-size: 14px;
           }
-          //!Группа Btn request
         }
-        //!Группа наши услуги
+        //!Группа Btn request
       }
     }
     //!Our Services
@@ -1926,7 +1996,6 @@ body{
               align-items: center;
               gap: 15px;
               .i_footer-left-copyright{
-                text-wrap: nowrap;
                 font-size: 13px;
               }
             }
@@ -2025,9 +2094,9 @@ body{
   //Header
   .i_header {
     .i_container {
-      margin: 0 20px;
       gap: 10px;
       height: 80px;
+      margin: 0 20px;
       //Header Left
       .i_header-left{
         //Header Burger
@@ -2095,7 +2164,6 @@ body{
     .i_banner{
       margin-bottom: 60px;
       .i_container{
-        margin: 0 20px;
         //Фоновая картинка
         .i_banner-bg{
           position: absolute;
@@ -2243,44 +2311,38 @@ body{
       .i_container{
         padding-top: 60px;
         padding-bottom: 60px;
-        //Группа наши услуги
-        .i_our-services-group{
-          gap: 60px;
-          margin: 0 20px;
-          //Группа Headline
-          .i_our-services-headline{
-            span{
-              font-size: 26px;
-            }
+        gap: 60px;
+        //Группа Headline
+        .i_our-services-headline{
+          span{
+            font-size: 26px;
           }
-          //!Группа Headline
-          //Группа Preview
-          .i_our-services-preview{
-            gap: 20px;
-            .i_our-services-block{
-              width: 47%;
-              gap: 20px;
-              background-size: 143px auto;
-              padding: 30px 20px;
-              span{
-                font-size: 18px;
-              }
-              p{
-                font-size: 13px;
-                width: 172px;
-              }
-            }
-          }
-          //!Группа Preview
-          //Группа Btn request
-          .i_our-services-btn-request{
-            width: 350px;
-            height: 48px;
-            font-size: 14px;
-          }
-          //!Группа Btn request
         }
-        //!Группа наши услуги
+        //!Группа Headline
+        //Группа Preview
+        .i_our-services-preview{
+          gap: 20px;
+          .i_our-services-block{
+            width: 47%;
+            gap: 20px;
+            background-size: 143px auto;
+            padding: 30px 20px;
+            span{
+              font-size: 18px;
+            }
+            p{
+              font-size: 13px;
+              width: 172px;
+            }
+          }
+        }
+        //!Группа Preview
+        //Группа Btn request
+        .i_our-services-btn-request{
+          display: flex;
+          justify-content: center;
+        }
+        //!Группа Btn request
       }
     }
     //!Our Services
@@ -2290,9 +2352,6 @@ body{
   //Footer
   .i_footer{
     .i_container{
-      @media screen and (max-width: 471px){
-        margin: 0 16px;
-      }
       .i_footer-left{
         display: none;
       }
@@ -2437,7 +2496,6 @@ body{
   //Header
   .i_header {
     .i_container {
-      margin: 0 20px;
       gap: 10px;
       height: 100px;
       //Header Left
@@ -2766,45 +2824,36 @@ body{
       .i_container{
         padding-top: 60px;
         padding-bottom: 60px;
-        //Группа наши услуги
-        .i_our-services-group{
-          gap: 60px;
-          //Группа Headline
-          .i_our-services-headline{
-            span{
-              font-size: 21px;
-            }
+        //Группа Headline
+        .i_our-services-headline{
+          span{
+            font-size: 21px;
           }
-          //!Группа Headline
-          //Группа Preview
-          .i_our-services-preview{
-            gap: 20px;
-            .i_our-services-block{
-              width: 46%;
-              height: 333px;
-              gap: 20px;
-              background-size: 143px auto;
-              padding: 30px 20px;
-              background-position-x: center;
-              span{
-                font-size: 18px;
-              }
-              p{
-                font-size: 13px;
-                width: 172px;
-              }
-            }
-          }
-          //!Группа Preview
-          //Группа Btn request
-          .i_our-services-btn-request{
-            width: 350px;
-            height: 48px;
-            font-size: 14px;
-          }
-          //!Группа Btn request
         }
-        //!Группа наши услуги
+        //!Группа Headline
+        //Группа Preview
+        .i_our-services-preview{
+          gap: 20px;
+          .i_our-services-block{
+            width: 46%;
+            height: 333px;
+            gap: 20px;
+            background-size: 143px auto;
+            padding: 30px 20px;
+            background-position-x: center;
+            span{
+              font-size: 18px;
+            }
+            p{
+              font-size: 13px;
+              width: 172px;
+            }
+          }
+        }
+        //!Группа Preview
+        //Группа Btn request
+
+        //!Группа Btn request
       }
     }
     //!Our Services
@@ -2819,7 +2868,6 @@ body{
   //Header
   .i_header {
     .i_container {
-      margin: 0 16px;
       gap: 10px;
       height: 100px;
       //Header Left
@@ -3131,49 +3179,47 @@ body{
       .i_container{
         padding-top: 60px;
         padding-bottom: 60px;
-        //Группа наши услуги
-        .i_our-services-group{
-          gap: 60px;
-          margin: 0 16px;
-          //Группа Headline
-          .i_our-services-headline{
-            display: flex;
-            justify-content: center;
-            span{
-              width: 50%;
-              font-size: 21px;
-            }
+        //Группа Headline
+        .i_our-services-headline{
+          display: flex;
+          justify-content: center;
+          span{
+            width: 50%;
+            font-size: 21px;
           }
-          //!Группа Headline
-          //Группа Preview
-          .i_our-services-preview{
+        }
+        //!Группа Headline
+        //Группа Preview
+        .i_our-services-preview{
+          gap: 20px;
+          .i_our-services-block{
+            width: 46%;
+            height: 333px;
             gap: 20px;
-            .i_our-services-block{
-              width: 46%;
-              height: 333px;
-              gap: 20px;
-              background-size: 143px auto;
-              padding: 22px 8px;
-              background-position-x: center;
-              span{
-                font-size: 15px;
-              }
-              p{
-                font-size: 12px;
-                width: 130px;
-              }
+            background-size: 143px auto;
+            padding: 22px 8px;
+            background-position-x: center;
+            span{
+              font-size: 15px;
+            }
+            p{
+              font-size: 12px;
+              width: 130px;
             }
           }
-          //!Группа Preview
-          //Группа Btn request
-          .i_our-services-btn-request{
+        }
+        //!Группа Preview
+        //Группа Btn request
+        .i_our-services-btn-request{
+          display: flex;
+          justify-content: center;
+          button{
             width: 316px;
             height: 40px;
             font-size: 13px;
           }
-          //!Группа Btn request
         }
-        //!Группа наши услуги
+        //!Группа Btn request
       }
     }
     //!Our Services
