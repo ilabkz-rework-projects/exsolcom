@@ -879,6 +879,11 @@ body {
     padding-top: 60px;
   }
 }
+@media screen and (max-width: 478px) {
+  .i_our-status {
+    padding-bottom: 60px;
+  }
+}
 .i_our-status .i_container {
   display: flex;
   flex-direction: column;
@@ -890,7 +895,7 @@ body {
     gap: 60px;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 478px) {
   .i_our-status .i_container {
     gap: 30px;
   }
@@ -901,7 +906,7 @@ body {
   align-items: center;
   gap: 20px;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 478px) {
   .i_our-status .i_container .i_our-status-group-title {
     padding-bottom: 30px;
   }
@@ -1005,7 +1010,13 @@ body {
 }
 @media screen and (max-width: 480px) {
   .i_our-status .i_container .i_our-status-group-blocks .i_our-status-group-blocks-item {
-    gap: 30px;
+    gap: 25px;
+    width: 45%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .i_our-status .i_container .i_our-status-group-blocks .i_our-status-group-blocks-item {
+    gap: 10px;
     width: 45%;
   }
 }
@@ -1033,6 +1044,17 @@ body {
 @media screen and (max-width: 1000px) {
   .i_our-status .i_container .i_our-status-group-blocks .i_our-status-group-blocks-item .i_our-status-group-blocks-item-icon {
     width: 160px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  .i_our-status .i_container .i_our-status-group-blocks .i_our-status-group-blocks-item .i_our-status-group-blocks-item-icon img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .i_our-status .i_container .i_our-status-group-blocks .i_our-status-group-blocks-item .i_our-status-group-blocks-item-icon {
+    width: 130px;
     height: 80px;
     display: flex;
     align-items: center;
@@ -1086,14 +1108,14 @@ body {
     height: 50px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 518px) {
   .i_our-status .i_container .i_our-status-group-btn button {
     font-size: 13px;
     width: 440px;
     height: 50px;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 478px) {
   .i_our-status .i_container .i_our-status-group-btn button {
     display: none;
   }
@@ -1103,7 +1125,7 @@ body {
     display: none;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 478px) {
   .i_our-status .i_container .i_our-status-group-btn_1 button {
     display: flex;
     align-items: center;
@@ -1461,7 +1483,7 @@ body {
     padding: 30px 20px;
   }
   .i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block p {
-    font-size: 12px;
+    font-size: 13px;
     width: 177px;
   }
   .i_main .i_our-services .i_container .i_our-services-btn-request {
@@ -2066,10 +2088,17 @@ body {
   }
   .i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block {
     width: 47%;
-    gap: 20px;
+    gap: 8px;
     background-size: 143px auto;
     padding: 30px 20px;
   }
+}
+@media screen and (max-width: 760px) and (max-width: 516px) {
+  .i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block {
+    height: 260px;
+  }
+}
+@media screen and (max-width: 760px) {
   .i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block span {
     font-size: 18px;
   }
@@ -2498,18 +2527,30 @@ body {
   }
   .i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block {
     width: 46%;
-    height: 333px;
+    height: 360px;
     gap: 20px;
     background-size: 143px auto;
-    padding: 30px 20px;
+    padding: 20px 15px;
     background-position-x: center;
   }
+}
+@media screen and (max-width: 480px) and (max-width: 408px) {
+  .i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 480px) {
   .i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block span {
     font-size: 18px;
   }
   .i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block p {
     font-size: 13px;
-    width: 172px;
+    width: 145px;
+  }
+}
+@media screen and (max-width: 480px) and (max-width: 408px) {
+  .i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block p {
+    width: 120px;
   }
 }
 @media screen and (max-width: 360px) {
