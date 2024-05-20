@@ -76,7 +76,9 @@
 	),
 	false
 );?>
-    <button class="i_blog-btn">Все статьи</button>
+    <div class="i_blog-btn">
+        <button>Все статьи</button>
+    </div>
 </div>
 
 

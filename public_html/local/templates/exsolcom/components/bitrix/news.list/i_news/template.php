@@ -14,7 +14,7 @@ $this->setFrameMode(true);
 ?>
 <div class="news-list">
 <?if($arParams["DISPLAY_TOP_PAGER"]):?>
-	<?=$arResult["NAV_STRING"]?><br />
+	<?=$arResult["NAV_STRING"]?>
 <?endif;?>
 <?foreach($arResult["ITEMS"] as $arItem):?>
 	<?
@@ -54,9 +54,9 @@ $this->setFrameMode(true);
 		<?endif?>
 		<?if($arParams["DISPLAY_NAME"]!="N" && $arItem["NAME"]):?>
 			<?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
-				<a href="<?echo $arItem["DETAIL_PAGE_URL"]?>"><b><?echo $arItem["NAME"]?></b></a><br />
+				<a href="<?echo $arItem["DETAIL_PAGE_URL"]?>"><b><?echo $arItem["NAME"]?></b></a>
 			<?else:?>
-				<b><?echo $arItem["NAME"]?></b><br />
+				<b><?echo $arItem["NAME"]?></b>
 			<?endif;?>
 		<?endif;?>
 		<?if($arParams["DISPLAY_PREVIEW_TEXT"]!="N" && $arItem["PREVIEW_TEXT"]):?>
@@ -70,7 +70,7 @@ $this->setFrameMode(true);
 		<?foreach($arItem["FIELDS"] as $code=>$value):?>
 			<small>
 			<?=GetMessage("IBLOCK_FIELD_".$code)?>:&nbsp;<?=$value;?>
-			</small><br />
+			</small>
 		<?endforeach;?>
 		<?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
 			<small>
@@ -80,7 +80,7 @@ $this->setFrameMode(true);
 			<?else:?>
 				<?=$arProperty["DISPLAY_VALUE"];?>
 			<?endif?>
-			</small><br />
+			</small>
 		<?endforeach;?>
 	</div>
 <?endforeach;?>

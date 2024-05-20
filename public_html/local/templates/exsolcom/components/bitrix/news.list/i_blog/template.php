@@ -84,6 +84,9 @@ $this->setFrameMode(true);
 				</small>
 			<?endforeach;?>
 		</div>
+        <div class="i_blog-preview_1">
+            <span><?echo $arItem["PREVIEW_TEXT"];?></span>
+        </div>
 	</div>
 <?endforeach;?>
 <?if($arParams["DISPLAY_BOTTOM_PAGER"]):?>
