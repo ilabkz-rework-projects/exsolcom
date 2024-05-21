@@ -88,6 +88,7 @@
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   text-align: center;
+  line-height: 21px;
 }
 .i_personal .i_personal-group .swiper-container.personal .swiper-slide:hover {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
@@ -234,7 +235,7 @@
   color: white;
 }
 .i_projects .i_projects-title .i_projects-title-name span {
-  font-size: 38px;
+  font-size: 32px;
   font-weight: 600;
 }
 .i_projects .projects-swiper {

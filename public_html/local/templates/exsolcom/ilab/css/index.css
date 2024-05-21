@@ -784,7 +784,7 @@ body {
 }
 @media screen and (max-width: 480px) {
   .i_infoblock .i_container .i_news .i_news-title .i_news-title-name span {
-    font-size: 24px;
+    font-size: 21px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -1058,7 +1058,7 @@ body {
 }
 @media screen and (max-width: 480px) {
   .i_infoblock .i_blog .i_blog-title .i_blog-title-name span {
-    font-size: 24px;
+    font-size: 21px;
   }
 }
 .i_infoblock .i_blog .blog-list {
@@ -1335,6 +1335,11 @@ body {
   }
 }
 @media screen and (max-width: 1000px) {
+  .i_our-status .i_container .i_our-status-group-title .i_our-status-group-title-name span {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 760px) {
   .i_our-status .i_container .i_our-status-group-title .i_our-status-group-title-name span {
     font-size: 26px;
   }
