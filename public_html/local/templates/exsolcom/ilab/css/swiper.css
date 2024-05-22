@@ -304,24 +304,21 @@
 }
 .i_projects .swiper.projects-swiper .swiper-slide:hover .swiper-slide-title {
   color: #FF161F;
-  position: relative;
-  transform: translateY(-60%);
-}
-.i_projects .swiper.projects-swiper .swiper-slide:hover .swiper-slide-icon {
-  width: 50%;
-  height: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .i_projects .swiper.projects-swiper .swiper-slide:hover .swiper-slide-icon svg {
-  width: 50%;
   color: #000;
 }
 .i_projects .swiper.projects-swiper .swiper-slide .swiper-slide-title {
   position: relative;
   transform: translateY(-35%);
   width: 80%;
+}
+.i_projects .swiper.projects-swiper .swiper-slide .swiper-slide-icon {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .i_projects .swiper.projects-swiper .swiper-slide .swiper-slide-icon svg {
   color: #FF161F;

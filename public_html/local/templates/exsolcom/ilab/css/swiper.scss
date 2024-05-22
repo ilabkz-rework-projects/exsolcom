@@ -321,17 +321,9 @@
       &:hover{
         .swiper-slide-title{
           color: #FF161F;
-          position: relative;
-          transform: translateY(-60%);
         }
         .swiper-slide-icon{
-          width: 50%;
-          height: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
           svg{
-            width: 50%;
             color: #000;
           }
         }
@@ -342,6 +334,11 @@
         width: 80%;
       }
       .swiper-slide-icon{
+        width: 50%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         svg{
           color: #FF161F;
         }
