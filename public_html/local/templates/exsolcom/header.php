@@ -341,15 +341,17 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
                             <div class="swiper-slide-picture">
                                 <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/manager_5.jpg'?>" alt="">
                             </div>
-                            <div class="swiper-slide-group">
-                                <div class="swiper-slide-name">
-                                    <span>Иван<br>Иванов</span>
-                                </div>
-                                <div class="swiper-slide-title">
-                                    <p>Старший менеджер</p>
-                                </div>
-                                <div class="swiper-slide-desc">
-                                    <p>Менеджер в турагентстве продает туры конкретным клиентам, обрабатывая заявки, подбирая подходящие варианты, оформляя документы, визы....</p>
+                            <div class="swiper-slide-block">
+                                <div class="swiper-slide-group">
+                                    <div class="swiper-slide-name">
+                                        <span>Иван<br>Иванов</span>
+                                    </div>
+                                    <div class="swiper-slide-title">
+                                        <p>Старший менеджер</p>
+                                    </div>
+                                    <div class="swiper-slide-desc">
+                                        <p>Менеджер в турагентстве продает туры конкретным клиентам, обрабатывая заявки, подбирая подходящие варианты, оформляя документы, визы....</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -357,15 +359,17 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
                             <div class="swiper-slide-picture">
                                 <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/manager_4.jpg'?>" alt="">
                             </div>
-                            <div class="swiper-slide-group">
-                                <div class="swiper-slide-name">
-                                    <span>Мария<br>Мариевич</span>
-                                </div>
-                                <div class="swiper-slide-title">
-                                    <p>Старший менеджер</p>
-                                </div>
-                                <div class="swiper-slide-desc">
-                                    <p>Менеджер в турагентстве продает туры конкретным клиентам, обрабатывая заявки, подбирая подходящие варианты, оформляя документы, визы....</p>
+                            <div class="swiper-slide-block">
+                                <div class="swiper-slide-group">
+                                    <div class="swiper-slide-name">
+                                        <span>Мария<br>Мариевич</span>
+                                    </div>
+                                    <div class="swiper-slide-title">
+                                        <p>Старший менеджер</p>
+                                    </div>
+                                    <div class="swiper-slide-desc">
+                                        <p>Менеджер в турагентстве продает туры конкретным клиентам, обрабатывая заявки, подбирая подходящие варианты, оформляя документы, визы....</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -373,15 +377,17 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
                             <div class="swiper-slide-picture">
                                 <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/manager_3.jpg'?>" alt="">
                             </div>
-                            <div class="swiper-slide-group">
-                                <div class="swiper-slide-name">
-                                    <span>Канат<br>Есенгалиев</span>
-                                </div>
-                                <div class="swiper-slide-title">
-                                    <p>Старший менеджер</p>
-                                </div>
-                                <div class="swiper-slide-desc">
-                                    <p>Менеджер в турагентстве продает туры конкретным клиентам, обрабатывая заявки, подбирая подходящие варианты, оформляя документы, визы....</p>
+                            <div class="swiper-slide-block">
+                                <div class="swiper-slide-group">
+                                    <div class="swiper-slide-name">
+                                        <span>Канат<br>Есенгалиев</span>
+                                    </div>
+                                    <div class="swiper-slide-title">
+                                        <p>Старший менеджер</p>
+                                    </div>
+                                    <div class="swiper-slide-desc">
+                                        <p>Менеджер в турагентстве продает туры конкретным клиентам, обрабатывая заявки, подбирая подходящие варианты, оформляя документы, визы....</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -389,15 +395,17 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
                             <div class="swiper-slide-picture">
                                 <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/manager_2.jpg'?>" alt="">
                             </div>
-                            <div class="swiper-slide-group">
-                                <div class="swiper-slide-name">
-                                    <span>Василий<br>Васильевич</span>
-                                </div>
-                                <div class="swiper-slide-title">
-                                    <p>Старший менеджер</p>
-                                </div>
-                                <div class="swiper-slide-desc">
-                                    <p>Менеджер в турагентстве продает туры конкретным клиентам, обрабатывая заявки, подбирая подходящие варианты, оформляя документы, визы....</p>
+                            <div class="swiper-slide-block">
+                                <div class="swiper-slide-group">
+                                    <div class="swiper-slide-name">
+                                        <span>Василий<br>Васильевич</span>
+                                    </div>
+                                    <div class="swiper-slide-title">
+                                        <p>Старший менеджер</p>
+                                    </div>
+                                    <div class="swiper-slide-desc">
+                                        <p>Менеджер в турагентстве продает туры конкретным клиентам, обрабатывая заявки, подбирая подходящие варианты, оформляя документы, визы....</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -405,15 +413,17 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
                             <div class="swiper-slide-picture">
                                 <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/manager_1.jpg'?>" alt="">
                             </div>
-                            <div class="swiper-slide-group">
-                                <div class="swiper-slide-name">
-                                    <span>Алия<br>Акимова</span>
-                                </div>
-                                <div class="swiper-slide-title">
-                                    <p>Старший менеджер</p>
-                                </div>
-                                <div class="swiper-slide-desc">
-                                    <p>Менеджер в турагентстве продает туры конкретным клиентам, обрабатывая заявки, подбирая подходящие варианты, оформляя документы, визы....</p>
+                            <div class="swiper-slide-block">
+                                <div class="swiper-slide-group">
+                                    <div class="swiper-slide-name">
+                                        <span>Алия<br>Акимова</span>
+                                    </div>
+                                    <div class="swiper-slide-title">
+                                        <p>Старший менеджер</p>
+                                    </div>
+                                    <div class="swiper-slide-desc">
+                                        <p>Менеджер в турагентстве продает туры конкретным клиентам, обрабатывая заявки, подбирая подходящие варианты, оформляя документы, визы....</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
