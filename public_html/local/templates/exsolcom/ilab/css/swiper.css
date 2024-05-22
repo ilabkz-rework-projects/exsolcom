@@ -67,6 +67,11 @@
 .i_personal .i_personal-group .swiper-container.personal .swiper-slide:hover {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
 }
+.i_personal .i_personal-group .swiper-container.personal .swiper-slide.swiper-slide-active .swiper-slide-block {
+  background-image: url("../img/svg/bg-manage-slide.svg");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
 .i_personal .i_personal-group .swiper-container.personal .swiper-slide .swiper-slide-block {
   padding: 64px 20px;
   width: 330px;
@@ -85,11 +90,6 @@
   transform: translate(-50%);
   z-index: 1;
   justify-content: flex-end;
-}
-.i_personal .i_personal-group .swiper-container.personal .swiper-slide .swiper-slide-block:hover {
-  background-image: url("../img/svg/bg-manage-slide.svg");
-  background-repeat: no-repeat;
-  background-position-y: bottom;
 }
 .i_personal .i_personal-group .swiper-container.personal .swiper-slide .swiper-slide-block .swiper-slide-group {
   display: flex;

@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', function() {
 		initialSlide: 2,
 		coverflowEffect: {
 			rotate: 0,
-			stretch: -14 ,
+			stretch: -14,
 			depth: 30,
 			modifier: 10,
 			slideShadows: false
@@ -16,7 +16,14 @@ window.addEventListener('DOMContentLoaded', function() {
 			nextEl: ".swiper-personal-button-next",
 			prevEl: ".swiper-personal-button-prev",
 		},
+		on: {
+			slideChange: function () {
+				const activeSlide = this.slides[this.activeIndex];
+				activeSlide.classList.add("swiper-slide-active");
+			}
+		}
 	});
+
 
 	const swiperProducts = new Swiper(".swiper.products-swiper", {
 		slidesPerView: 4,
