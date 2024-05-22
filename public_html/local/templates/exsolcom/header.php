@@ -287,28 +287,70 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
             <!--Группа анонсы-->
             <div class="i_our-services-preview">
                 <div class="i_our-services-block">
-                    <span>Бизнес консалтинг</span>
+                    <div class="i_our-services-imbg">
+                        <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/services-icon_1.png'?>" alt="">
+                    </div>
+                    <div class="i_our-services-name">
+                        <span>Бизнес консалтинг</span>
+                    </div>
+                    <div class="i_our-services-desc">
                     <p>Услуги по консультированию в области управленческого учета, бухгалтерского учета и налогообложения</p>
+                    </div>
                 </div>
                 <div class="i_our-services-block">
-                    <span>IT AUDIT и экспресс - обследование</span>
+                    <div class="i_our-services-imbg">
+                        <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/services-icon_2.png'?>" alt="">
+                    </div>
+                    <div class="i_our-services-name">
+                        <span>IT    AUDIT и экспресс - обследование</span>
+                    </div>
+                    <div class="i_our-services-desc">
                     <p>Услуги по оценке и диагностике состояния информационных технологий в Вашей компании, насколько они отвечают требованиям Вашего бизнеса</p>
+                    </div>
                 </div>
                 <div class="i_our-services-block">
-                    <span>Управление проектами</span>
+                    <div class="i_our-services-imbg">
+                        <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/services-icon_3.png'?>" alt="">
+                    </div>
+                    <div class="i_our-services-name">
+                        <span>Управление проектами</span>
+                    </div>
+                    <div class="i_our-services-desc">
                     <p>Услуги по профессиональному управлению IT проектами</p>
+                    </div>
                 </div>
                 <div class="i_our-services-block">
-                    <span>Сервисное обслуживание</span>
+                    <div class="i_our-services-imbg">
+                        <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/services-icon_4.png'?>" alt="">
+                    </div>
+                    <div class="i_our-services-name">
+                        <span>Сервисное обслуживание</span>
+                    </div>
+                    <div class="i_our-services-desc">
                     <p>Услуги по комплексному сервисному обслуживанию программных продуктов и сопровождение работы пользователя</p>
+                    </div>
                 </div>
                 <div class="i_our-services-block">
-                    <span>Настройка, разработка, внедрение</span>
+                    <div class="i_our-services-imbg">
+                        <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/services-icon_5.png'?>" alt="">
+                    </div>
+                    <div class="i_our-services-name">
+                        <span>  Настройка, разработка,<br>внедрение</span>
+                    </div>
+                    <div class="i_our-services-desc">
                     <p>Услуги по разработке, настройке и доработке програмных продуктов по требованию Заказчика</p>
+                    </div>
                 </div>
                 <div class="i_our-services-block">
-                    <span>Обучение пользователей</span>
+                    <div class="i_our-services-imbg">
+                        <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/services-icon_6.png'?>" alt="">
+                    </div>
+                    <div class="i_our-services-name">
+                        <span>Обучение пользователей</span>
+                    </div>
+                    <div class="i_our-services-desc">
                     <p>Услуги по комплексному корпоративному обучению пользователей работе с программными продуктами и их администрированием</p>
+                    </div>
                 </div>
             </div>
             <!--!Группа анонсы-->

@@ -317,22 +317,33 @@
       cursor: pointer;
       padding: 10px;
       text-align: center;
+      gap: 40px;
       &:hover{
         .swiper-slide-title{
           color: #FF161F;
+          position: relative;
+          transform: translateY(-60%);
+        }
+        .swiper-slide-icon{
+          width: 50%;
+          height: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg{
+            width: 50%;
+            color: #000;
+          }
         }
       }
       .swiper-slide-title{
         position: relative;
-        transform: translateY(-60%);
+        transform: translateY(-35%);
         width: 80%;
       }
-      .swiper-slide-img{
-        width: 80%;
-        height: 80%;
-        img{
-          width: 100%;
-          height: 100%;
+      .swiper-slide-icon{
+        svg{
+          color: #FF161F;
         }
       }
     }
