@@ -7,8 +7,12 @@
 
 html{
   --bg: #ffffff;
-  --color-textIconHover: #000000;
-  --color-blockHover: #F5F5F5;
+  --color-black: #000000;
+  --color-red: #FF161F;
+  --color-Grey: #f5f5f5;
+  --color-White: #ffffff;
+  --color-blockHv: #f9f9f9;
+  --color-title: #818181;
 }
 
 html[data-theme='dark']{
@@ -100,7 +104,7 @@ body{
         .i_header-circles {
           width: 50px;
           height: 50px;
-          background-color: #000000;
+          background-color: var(--color-black);
           border-radius: 25px;
           display: flex;
           align-items: center;
@@ -110,7 +114,7 @@ body{
           //RU
           span {
             margin-top: 2px;
-            color: white;
+            color: var(--color-White);
             font-size: 14px;
             font-weight: normal;
             font-style: normal;
@@ -118,13 +122,13 @@ body{
           }
 
           &:hover {
-            color: black;
-            background: #f5f5f5;
+            color: var(--color-black);
+            background: var(--color-Grey);
             transition: 0.3s ease;
             cursor: pointer;
 
             span {
-              color: #FF161F;
+              color: var(--color-red);
               font-weight: bold;
             }
           }
@@ -133,16 +137,16 @@ body{
 
           //SEARCH ICON
           .search-icon {
-            color: #ffffff;
+            color: var(--color-White);
           }
 
           &:hover {
-            background: #f5f5f5;
+            background: var(--color-Grey);
             transition: 0.3s ease;
             cursor: pointer;
 
             .search-icon {
-              color: #FF161F;
+              color: var(--color-red);
             }
           }
 
@@ -150,16 +154,16 @@ body{
 
           //WHATSAPP EMAIL
           svg {
-            color: white;
+            color: var(--color-White);
           }
 
           &:hover {
-            background: #f5f5f5;
+            background: var(--color-Grey);
             transition: 0.3s ease;
             cursor: pointer;
 
             svg {
-              color: #FF161F;
+              color: var(--color-red);
             }
           }
           //!WHATSAPP EMAIL
@@ -174,7 +178,7 @@ body{
 
 //HEADER MENU
 .i_header-menu{
-  background-color: white;
+  background-color: var(--color-White);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -184,7 +188,7 @@ body{
     list-style-type: none;
   }
   .i_header-menu-item a {
-    color: black;
+    color: var(--color-black);
     font-size: 15px;
     font-weight: bold;
     font-style: normal;
@@ -199,11 +203,11 @@ body{
       font-size: 13px;
     }
     &:hover {
-      color: #FF161F;
+      color: var(--color-red);
     }
     &:focus {
-      color: #FF161F;
-      background-color: #f5f5f5;
+      color: var(--color-red);
+      background-color: var(--color-White);
       border-radius: 25px;
       padding: 2vh 4vh;
     }
@@ -216,18 +220,18 @@ body{
   width: 50px;
   height: 50px;
   min-width: 50px;
-  background-color: #000000;
+  background-color: var(--color-black);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   svg {
-    color: white;
+    color: var(--color-White);
   }
   &:hover{
-    background-color: #f5f5f5;
+    background-color: var(--color-Grey);
     svg{
-      color: black;
+      color: var(--color-black);
     }
   }
 }
@@ -269,7 +273,7 @@ body{
 
         //BANNER HEADLINE
         .i_banner-logo svg{
-          color: black;
+          color: var(--color-black);
           margin-top: 82px;
           margin-bottom: 85px;
         }
@@ -283,13 +287,13 @@ body{
             font-size: 42px;
             font-weight: bold;
             text-transform: uppercase;
-            color: #FF161F;
+            color: var(--color-red);
           }
           p {
             font-size: 42px;
             font-weight: bold;
             text-transform: uppercase;
-            color: black;
+            color: var(--color-black);
           }
         }
         //!BANNERHEADLINE
@@ -298,7 +302,7 @@ body{
         span {
           font-size: 24px;
           font-weight: bold;
-          color: black;
+          color: var(--color-black);
         }
         //!BANNER ПРОДАЖА И ВНЕДРЕНИЕ
 
@@ -338,37 +342,37 @@ body{
             gap: 20px;
             transition: all .4s ease;
             &:hover {
-              background-color: #f5f5f5;
+              background-color: var(--color-Grey);
               border-radius: 50px;
               cursor: pointer;
               .i_banner-circles {
                 width: 50px;
                 height: 50px;
-                background-color: #f5f5f5;
+                background-color: var(--color-Grey);
                 svg {
-                  color: black;
+                  color: var(--color-black);
                 }
               }
               p {
-                color: #FF161F;
+                color: var(--color-red);
               }
             }
             .i_banner-circles {
               width: 50px;
               height: 50px;
-              background-color: #FF161F;
+              background-color: var(--color-red);
               border-radius: 25px;
               display: flex;
               align-items: center;
               justify-content: center;
               svg {
-                color: white;
+                color: var(--color-White);
               }
             }
             p{
               font-size: 17px;
               font-weight: 600;
-              color: black;
+              color: var(--color-black);
             }
           }
 
@@ -388,7 +392,7 @@ body{
   //MAIN OUR SERVICES
   .i_our-services {
     width: 100%;
-    background-color: #f5f5f5;
+    background-color: var(--color-Grey);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -426,25 +430,25 @@ body{
         .i_our-services-circles {
           width: 50px;
           height: 50px;
-          background-color: black;
+          background-color: var(--color-black);
           border-radius: 50px;
           display: flex;
           align-items: center;
           justify-content: center;
           svg{
-            color: white;
+            color: var(--color-White);
           }
         }
         //!Группа иконка
         span{
           font-size: 32px;
           font-weight: bold;
-          color: black;
+          color: var(--color-black);
           text-transform: uppercase;
           &:hover{
             transition: 0.3s ease;
             cursor: pointer;
-            color: #FF161F;
+            color: var(--color-red);
           }
         }
       }
@@ -461,7 +465,7 @@ body{
           width: 31%;
           height: 240px;
           border-radius: 30px;
-          background-color: white;
+          background-color: var(--color-White);
           display: flex;
           flex-direction: column;
           padding: 30px 30px;
@@ -602,10 +606,10 @@ body{
           }
           &:hover{
             cursor: pointer;
-            background-color: #f9f9f9;
+            background-color: var(--color-blockHv);
             transition: 0.3s ease;
             span{
-              color: #FF161F;
+              color: var(--color-red);
             }
           }
         }
@@ -620,7 +624,7 @@ body{
           width: 440px;
           height: 60px;
           &:hover{
-            background-color: white;
+            background-color:var(--color-White);
           }
         }
       }
@@ -646,7 +650,7 @@ body{
 
   //MAIN SOFTWARE
   .i_software{
-    background-color: #f5f5f5;
+    background-color: var(--color-Grey);
     padding-top: 25px;
     padding-bottom: 35px;
     @media screen and (max-width: 480px){
@@ -680,7 +684,7 @@ body{
           .i_software-block{
             width: 205px;
             height: 205px;
-            background-color: white;
+            background-color:var(--color-White);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -777,7 +781,7 @@ body{
               font-size: 0.8125rem;
             }
             &:hover{
-              background-color: white;
+              background-color:var(--color-White);
             }
           }
           //Software Button
@@ -807,12 +811,12 @@ body{
     display: flex;
     flex-direction: row;
     gap: 10px;
-    color: #FF161F;
+    color: var(--color-red);
     //HOVER MAIN SOCIAL ITEM
     .i_banner-social_item {
       width: 50px;
       height: 50px;
-      background-color: #f5f5f5;
+      background-color: var(--color-Grey);
       border-radius: 25px;
       display: flex;
       align-items: center;
@@ -820,14 +824,14 @@ body{
       transition: all .4s ease;
       .i_banner-social_link {
         svg{
-          color: black;
+          color: var(--color-black);
         }
       }
       &:hover {
         cursor: pointer;
         .i_banner-social_link {
           svg{
-            color: #FF161F;
+            color: var(--color-red);
           }
         }
       }
@@ -844,7 +848,7 @@ body{
   .i_banner-night_sun_item {
     width: 50px;
     height: 50px;
-    background-color: black;
+    background-color: var(--color-black);
     border-radius: 25px;
     display: flex;
     outline: none;
@@ -855,20 +859,20 @@ body{
     .i_banner-icon-nightSun {
       margin-bottom: 5px;
       margin-right: 5px;
-      color: white;
+      color: var(--color-White);
       svg{
-        color: white;
+        color:var(--color-White);
       }
     }
     &:focus {
-      background-color: #f5f5f5;
+      background-color: var(--color-Grey);
       transition: 0.3s ease;
       cursor: pointer;
       border: none;
       .i_banner-icon-nightSun {
         margin-bottom: 5px;
         margin-right: 5px;
-        color: black;
+        color: var(--color-black);
       }
     }
     //!HOVER NIGHT SUN
@@ -943,7 +947,7 @@ body{
         .i_news-title-icon{
           width: 50px;
           height: 50px;
-          background-color: black;
+          background-color: var(--color-black);
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -953,7 +957,7 @@ body{
             height: 40px;
           }
           svg{
-            color: white;
+            color: var(--color-White);
             @media screen and (max-width: 760px){
               width: 20px;
               height: 20px;
@@ -1017,7 +1021,7 @@ body{
           gap: 20px;
           width: 45%;
           height: 615px;
-          background-color: #f9f9f9;
+          background-color: var(--color-blockHv);
           border-radius: 30px;
           padding: 40px 36px;
           @media screen and (max-width: 1920px){
@@ -1119,7 +1123,7 @@ body{
             span{
               font-family: "Open Sans", sans-serif;
               font-size: 14px;
-              color: black;
+              color: var(--color-black);
               font-weight: 400;
               @media screen and (max-width: 480px){
                 font-size: 13px;
@@ -1182,7 +1186,7 @@ body{
         .i_blog-title-icon{
           width: 50px;
           height: 50px;
-          background-color: black;
+          background-color: var(--color-black);
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -1192,7 +1196,7 @@ body{
             height: 40px;
           }
           svg{
-            color: white;
+            color: var(--color-White);
             margin-left: 6px;
             @media screen and (max-width: 760px){
               width: 25px;
@@ -1233,7 +1237,7 @@ body{
         .blog-item{
           width: 100%;
           height: 170px;
-          background-color: #f9f9f9;
+          background-color: var(--color-blockHv);
           border-radius: 30px;
           display: flex;
           padding: 20px 20px;
@@ -1340,7 +1344,7 @@ body{
               font-family: "Open Sans", sans-serif;
               font-size: 14px;
               font-weight: 400;
-              color: black;
+              color: var(--color-black);
               text-align: center;
               @media screen and (max-width: 480px){
                 font-size: 13px;
@@ -1357,7 +1361,7 @@ body{
               font-family: "Open Sans", sans-serif;
               font-size: 14px;
               font-weight: 400;
-              color: black;
+              color: var(--color-black);
               text-align: center;
               @media screen and (max-width: 360px){
                 font-size: 13px;
@@ -1437,13 +1441,13 @@ body{
       .i_our-status-group-title-icon{
         width: 50px;
         height: 50px;
-        background-color: black;
+        background-color: var(--color-black);
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         svg{
-          color: white;
+          color: var(--color-White);
         }
         @media screen and (max-width: 760px){
           width: 40px;
@@ -1496,7 +1500,7 @@ body{
       .i_our-status-group-blocks-item {
         width: 23%;
         height: 190px;
-        background-color: #f5f5f5;
+        background-color: var(--color-Grey);
         border-radius: 30px;
         display: flex;
         flex-direction: column;
@@ -1547,7 +1551,7 @@ body{
           width: 100px;
           height: 100px;
           svg{
-            color: white;
+            color:var(--color-White);
           }
         }
         //OUR STATUS GROUP BLOCKS ITEM BG ICON
@@ -1688,25 +1692,25 @@ body{
           .i_footer-left-icons-item-circles{
             width: 50px;
             height: 50px;
-            background-color: #000000;
+            background-color: var(--color-black);
             border-radius: 25px;
             display: flex;
             align-items: center;
             justify-content: center;
             transition: all 0.4s ease;
             &:hover{
-              background-color: #f5f5f5;
+              background-color: var(--color-Grey);
               box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
             }
           }
           .i_footer-left-icons-number{
             text-decoration: none;
-            color: black;
+            color: var(--color-black);
           }
           .i_footer-left-icons-email{
             text-decoration: none;
             font-size: 14px;
-            color: black;
+            color: var(--color-black);
           }
         }
         button{
@@ -1792,14 +1796,14 @@ body{
             .i_footer-right-more-icon{
               width: 50px;
               height: 50px;
-              background-color: #000000;
+              background-color: var(--color-black);
               border-radius: 25px;
               display: flex;
               align-items: center;
               justify-content: center;
               transition: all 0.4s ease;
               &:hover{
-                background-color: #f5f5f5;
+                background-color: var(--color-Grey);
                 box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
               }
             }
@@ -1872,7 +1876,7 @@ body{
             flex-wrap: wrap;
           }
           .i_header-menu-item a {
-            color: black;
+            color: var(--color-black);
             font-size: 13px;
             font-weight: bold;
             @media screen and (max-width: 1200px){
@@ -2019,7 +2023,7 @@ body{
                 .i_banner-circles {
                   width: 40px;
                   height: 40px;
-                  background-color: #f5f5f5;
+                  background-color: var(--color-Grey);
                 }
               }
               .i_banner-circles{
@@ -2423,7 +2427,7 @@ body{
                   .i_banner-circles {
                     width: 40px;
                     height: 40px;
-                    background-color: #f5f5f5;
+                    background-color: var(--color-Grey);
                   }
                 }
                 .i_banner-circles{
@@ -2459,8 +2463,8 @@ body{
               height: 50px;
               border-radius: 50px;
               border: none;
-              background-color: #FF161F;
-              color: white;
+              background-color: var(--color-red);
+              color: var(--color-White);
               font-size: 14px;
               cursor: pointer;
               @media screen and (max-width: 760px){
@@ -2554,13 +2558,13 @@ body{
                   min-width: 40px;
                   align-items: center;
                   justify-content: center;
-                  background-color: black;
+                  background-color: var(--color-black);
                   .menu-burger{
                     width: 12px;
                     height: 12px;
                   }
                   &:hover{
-                    background-color: #f5f5f5;
+                    background-color: var(--color-Grey);
                   }
                 }
               }
@@ -2827,7 +2831,7 @@ body{
                 .i_banner-circles {
                   width: 40px;
                   height: 40px;
-                  background-color: #f5f5f5;
+                  background-color: var(--color-Grey);
                 }
               }
               .i_banner-circles{
@@ -2863,8 +2867,8 @@ body{
             height: 50px;
             border-radius: 50px;
             border: none;
-            background-color: #FF161F;
-            color: white;
+            background-color: var(--color-red);
+            color: var(--color-White);
             font-size: 14px;
             cursor: pointer;
           }
@@ -2956,9 +2960,9 @@ body{
                 height: 12px;
               }
               &:hover{
-                background-color: #f5f5f5;
+                background-color: var(--color-Grey);
                 svg{
-                  color: black;
+                  color: var(--color-black);
                 }
               }
             }
@@ -3189,14 +3193,14 @@ body{
               .i_banner-social_item{
                 width: 40px;
                 height: 40px;
-                background-color: #f5f5f5;
+                background-color: var(--color-Grey);
                 border-radius: 25px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 .i_banner-social_link {
                   svg{
-                    color: black;
+                    color: var(--color-black);
                   }
                 }
                 &:hover {
@@ -3204,7 +3208,7 @@ body{
                   cursor: pointer;
                   .i_banner-social_link {
                     svg{
-                      color: #FF161F;
+                      color: var(--color-red);
                     }
                   }
                 }
@@ -3227,7 +3231,7 @@ body{
               .i_banner-night_sun_item{
                 width: 40px;
                 height: 40px;
-                background-color: black;
+                background-color: var(--color-black);
                 border-radius: 25px;
                 display: flex;
                 outline: none;
@@ -3236,18 +3240,18 @@ body{
                 justify-content: center;
                 //HOVER NIGHT SUN
                 &:focus {
-                  background-color: #f5f5f5;
+                  background-color: var(--color-Grey);
                   transition: 0.3s ease;
                   cursor: pointer;
                   border: none;
                   .i_banner-icon-nightSun {
-                    color: black;
+                    color: var(--color-black);
                     margin-bottom: 3px;
                     margin-right: 3px;
                   }
                 }
                 .i_banner-icon-nightSun{
-                  color: white;
+                  color: var(--color-White);
                   width: 22px;
                   height: 22px;
                   margin-bottom: 3px;
@@ -3311,7 +3315,7 @@ body{
               .i_banner-night_sun_item{
                 width: 40px;
                 height: 40px;
-                background-color: black;
+                background-color: var(--color-black);
                 border-radius: 25px;
                 display: flex;
                 outline: none;
@@ -3320,18 +3324,18 @@ body{
                 justify-content: center;
                 //HOVER NIGHT SUN
                 &:focus {
-                  background-color: #f5f5f5;
+                  background-color: var(--color-Grey);
                   transition: 0.3s ease;
                   cursor: pointer;
                   border: none;
                   svg {
-                    color: black;
+                    color: var(--color-black);
                     margin-bottom: 5px;
                     margin-right: 5px;
                   }
                 }
                 svg{
-                  color: white;
+                  color: var(--color-White);
                   margin-bottom: 5px;
                   margin-right: 5px;
                   width: 22px;
@@ -3350,7 +3354,7 @@ body{
                 .i_banner-circles {
                   width: 40px;
                   height: 40px;
-                  background-color: #f5f5f5;
+                  background-color: var(--color-Grey);
                 }
               }
               .i_banner-circles{
@@ -3386,8 +3390,8 @@ body{
             height: 40px;
             border-radius: 50px;
             border: none;
-            background-color: #FF161F;
-            color: white;
+            background-color: var(--color-red);
+            color: var(--color-White);
             font-size: 16px;
             cursor: pointer;
           }
@@ -3551,14 +3555,14 @@ body{
               .i_banner-social_item{
                 width: 40px;
                 height: 40px;
-                background-color: #f5f5f5;
+                background-color: var(--color-Grey);
                 border-radius: 25px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 .i_banner-social_link {
                   svg{
-                    color: black;
+                    color: var(--color-black);
                   }
                 }
                 &:hover {
@@ -3566,7 +3570,7 @@ body{
                   cursor: pointer;
                   .i_banner-social_link {
                     svg{
-                      color: #FF161F;
+                      color: var(--color-red);
                     }
                   }
                 }
@@ -3589,7 +3593,7 @@ body{
               .i_banner-night_sun_item{
                 width: 40px;
                 height: 40px;
-                background-color: black;
+                background-color: var(--color-black);
                 border-radius: 25px;
                 display: flex;
                 outline: none;
@@ -3598,18 +3602,18 @@ body{
                 justify-content: center;
                 //HOVER NIGHT SUN
                 &:focus {
-                  background-color: #f5f5f5;
+                  background-color: var(--color-Grey);
                   transition: 0.3s ease;
                   cursor: pointer;
                   border: none;
                   .i_banner-icon-nightSun {
-                    color: black;
+                    color: var(--color-black);
                     margin-bottom: 3px;
                     margin-right: 3px;
                   }
                 }
                 .i_banner-icon-nightSun{
-                  color: white;
+                  color: var(--color-White);
                   width: 22px;
                   height: 22px;
                   margin-bottom: 3px;
@@ -3669,7 +3673,7 @@ body{
               .i_banner-night_sun_item{
                 width: 40px;
                 height: 40px;
-                background-color: black;
+                background-color: var(--color-black);
                 border-radius: 25px;
                 display: flex;
                 outline: none;
@@ -3678,18 +3682,18 @@ body{
                 justify-content: center;
                 //HOVER NIGHT SUN
                 &:focus {
-                  background-color: #f5f5f5;
+                  background-color: var(--color-Grey);
                   transition: 0.3s ease;
                   cursor: pointer;
                   border: none;
                   svg {
-                    color: black;
+                    color: var(--color-black);
                     margin-bottom: 5px;
                     margin-right: 5px;
                   }
                 }
                 svg{
-                  color: white;
+                  color: var(--color-White);
                   margin-bottom: 5px;
                   margin-right: 5px;
                   width: 22px;
@@ -3708,7 +3712,7 @@ body{
                 .i_banner-circles {
                   width: 40px;
                   height: 40px;
-                  background-color: #f5f5f5;
+                  background-color: var(--color-Grey);
                 }
               }
               .i_banner-circles{
@@ -3744,8 +3748,8 @@ body{
             height: 60px;
             border-radius: 50px;
             border: none;
-            background-color: #FF161F;
-            color: white;
+            background-color: var(--color-red);
+            color: var(--color-White);
             font-size: 16px;
             cursor: pointer;
           }

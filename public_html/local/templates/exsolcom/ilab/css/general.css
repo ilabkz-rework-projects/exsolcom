@@ -1,7 +1,7 @@
 button {
   border-radius: 50px;
   background-color: #FF161F;
-  color: white;
+  color: var(--color-White);
   font-size: 16px;
   font-weight: 500;
   border: 0;
@@ -10,8 +10,8 @@ button {
 }
 button:hover {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
-  color: #FF161F;
-  background-color: #f5f5f5;
+  color: var(--color-red);
+  background-color: var(--color-blockHv);
 }
 
 span {
@@ -19,7 +19,7 @@ span {
 }
 span:hover {
   cursor: pointer;
-  color: #FF161F;
+  color: var(--color-red);
 }
 
 .news-item {
@@ -34,7 +34,7 @@ span:hover {
   color: #FF161F;
 }
 .news-item a b {
-  color: black;
+  color: var(--color-black);
 }
 
 .blog-item {
@@ -46,10 +46,10 @@ span:hover {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
 }
 .blog-item:hover a b {
-  color: #FF161F;
+  color: var(--color-red);
 }
 .blog-item a b {
-  color: black;
+  color: var(--color-black);
 }
 
 /*# sourceMappingURL=general.css.map */
