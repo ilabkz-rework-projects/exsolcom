@@ -7,7 +7,21 @@
 
 html{
   --bg: #ffffff;
+  --bg-second: #f5f5f5;
   --color-black: #000000;
+  --color-circles: #000000;
+  --color-circlesHover: #f5f5f5;
+  --color-circleIcon: #ffffff;
+  --color-circlesSecond: #f5f5f5;
+  --color-circlesSecondIcon: #000000;
+  --color-nochangeSecondIcon: #ffffff;
+  --color-nochangeThirdIcon: #000000;
+  --bg-buttonHover: #f5f5f5;
+  --bg-buttonHoverSecond: #ffffff;
+  --color-buttonText: #ffffff;
+  --bg-block: #ffffff;
+  --color-textInfoblock: #000000;
+  --bg-blockSliderProjectHover: #f9f9f9;
   --color-red: #FF161F;
   --color-Grey: #f5f5f5;
   --color-White: #ffffff;
@@ -17,8 +31,26 @@ html{
 
 html[data-theme='dark']{
   --bg: #000000;
-  --color-textIconHover: #E1E1E1;
-  --color-blockHover: #1E1E1E;
+  --bg-second: #111111;
+  --color-black: #ffffff;
+  --color-circles: #E1E1E1;
+  --color-circlesHover: #1E1E1E;
+  --color-circleIcon: #000000;
+  --color-circlesSecond: #1E1E1E;
+  --color-circlesSecondIcon: #ffffff;
+  --color-nochangeSecondIcon: #ffffff;
+  --color-nochangeThirdIcon: #000000;
+  --bg-buttonHover: #E1E1E1;
+  --bg-buttonHoverSecond: #E1E1E1;
+  --color-buttonText: #ffffff;
+  --bg-block: #E1E1E1;
+  --color-textInfoblock: #000000;
+  --bg-blockSliderProjectHover: #ffffff;
+  --color-red: #FF161F;
+  --color-Grey: #f5f5f5;
+  --color-White: #000000;
+  --color-blockHv: #f9f9f9;
+  --color-title: #818181;
 }
 
 body{
@@ -26,7 +58,6 @@ body{
   line-height: 1;
   overflow-x: hidden;
   background-color: var(--bg);
-  color: var(--color-textIconHover); /* Добавьте цвет текста для видимости */
   transition: background-color 0.5s, color 0.5s; /* Плавный переход между темами */
 }
 
@@ -104,7 +135,7 @@ body{
         .i_header-circles {
           width: 50px;
           height: 50px;
-          background-color: var(--color-black);
+          background-color: var(--color-circles);
           border-radius: 25px;
           display: flex;
           align-items: center;
@@ -114,7 +145,7 @@ body{
           //RU
           span {
             margin-top: 2px;
-            color: var(--color-White);
+            color: var(--color-circleIcon);
             font-size: 14px;
             font-weight: normal;
             font-style: normal;
@@ -123,29 +154,29 @@ body{
 
           &:hover {
             color: var(--color-black);
-            background: var(--color-Grey);
+            background: var(--color-circlesHover);
             transition: 0.3s ease;
             cursor: pointer;
 
             span {
               color: var(--color-red);
-              font-weight: bold;
+              font-weight: normal;
             }
           }
 
           //!RU
 
           //SEARCH ICON
-          .search-icon {
-            color: var(--color-White);
+          .lupa-icon {
+            color: var(--color-circleIcon);
           }
 
           &:hover {
-            background: var(--color-Grey);
+            background: var(--color-circlesHover);
             transition: 0.3s ease;
             cursor: pointer;
 
-            .search-icon {
+            .lupa-icon {
               color: var(--color-red);
             }
           }
@@ -153,15 +184,23 @@ body{
           //!SEARCH ICON
 
           //WHATSAPP EMAIL
-          svg {
-            color: var(--color-White);
+
+          .whatsapp-icon{
+            color: var(--color-circleIcon);
+          }
+          .email-icon{
+            margin-left: 1px;
+            color: var(--color-circleIcon);
           }
 
+
           &:hover {
-            background: var(--color-Grey);
+            background: var(--color-circlesHover);
             transition: 0.3s ease;
             cursor: pointer;
-
+            .email-icon{
+              margin-left: 1px;
+            }
             svg {
               color: var(--color-red);
             }
@@ -190,7 +229,7 @@ body{
   .i_header-menu-item a {
     color: var(--color-black);
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 400;
     font-style: normal;
     font-optical-sizing: auto;
     text-decoration: none;
@@ -220,15 +259,15 @@ body{
   width: 50px;
   height: 50px;
   min-width: 50px;
-  background-color: var(--color-black);
+  background-color: var(--color-circles);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   svg {
-    color: var(--color-White);
+    color: var(--color-circleIcon);
   }
-  &:hover{
+  &:active{
     background-color: var(--color-Grey);
     svg{
       color: var(--color-black);
@@ -285,13 +324,13 @@ body{
           margin-bottom: 30px;
           span {
             font-size: 42px;
-            font-weight: bold;
+            font-weight: 400;
             text-transform: uppercase;
             color: var(--color-red);
           }
           p {
             font-size: 42px;
-            font-weight: bold;
+            font-weight: 400;
             text-transform: uppercase;
             color: var(--color-black);
           }
@@ -301,7 +340,7 @@ body{
         //BANNER ПРОДАЖА И ВНЕДРЕНИЕ
         span {
           font-size: 24px;
-          font-weight: bold;
+          font-weight: 400;
           color: var(--color-black);
         }
         //!BANNER ПРОДАЖА И ВНЕДРЕНИЕ
@@ -342,13 +381,13 @@ body{
             gap: 20px;
             transition: all .4s ease;
             &:hover {
-              background-color: var(--color-Grey);
+              background-color: var(--color-circlesSecond);
               border-radius: 50px;
               cursor: pointer;
               .i_banner-circles {
                 width: 50px;
                 height: 50px;
-                background-color: var(--color-Grey);
+                background-color: var(--color-circlesSecond);
                 svg {
                   color: var(--color-black);
                 }
@@ -366,12 +405,12 @@ body{
               align-items: center;
               justify-content: center;
               svg {
-                color: var(--color-White);
+                color: var(--color-nochangeSecondIcon);
               }
             }
             p{
               font-size: 17px;
-              font-weight: 600;
+              font-weight: 400;
               color: var(--color-black);
             }
           }
@@ -392,7 +431,7 @@ body{
   //MAIN OUR SERVICES
   .i_our-services {
     width: 100%;
-    background-color: var(--color-Grey);
+    background-color: var(--bg-second);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -430,19 +469,19 @@ body{
         .i_our-services-circles {
           width: 50px;
           height: 50px;
-          background-color: var(--color-black);
+          background-color: var(--color-circles);
           border-radius: 50px;
           display: flex;
           align-items: center;
           justify-content: center;
           svg{
-            color: var(--color-White);
+            color: var(--color-circleIcon);
           }
         }
         //!Группа иконка
         span{
           font-size: 32px;
-          font-weight: bold;
+          font-weight: 400;
           color: var(--color-black);
           text-transform: uppercase;
           &:hover{
@@ -465,7 +504,7 @@ body{
           width: 31%;
           height: 240px;
           border-radius: 30px;
-          background-color: var(--color-White);
+          background-color: var(--bg-block);
           display: flex;
           flex-direction: column;
           padding: 30px 30px;
@@ -624,7 +663,7 @@ body{
           width: 440px;
           height: 60px;
           &:hover{
-            background-color:var(--color-White);
+            background-color:var(--bg-buttonHoverSecond);
           }
         }
       }
@@ -650,7 +689,7 @@ body{
 
   //MAIN SOFTWARE
   .i_software{
-    background-color: var(--color-Grey);
+    background-color: var(--bg-second);
     padding-top: 25px;
     padding-bottom: 35px;
     @media screen and (max-width: 480px){
@@ -684,7 +723,7 @@ body{
           .i_software-block{
             width: 205px;
             height: 205px;
-            background-color:var(--color-White);
+            background-color:var(--bg-block);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -732,7 +771,8 @@ body{
             //Software Headline
             .i_software-headline{
               font-size: 30px;
-              font-weight: bold;
+              font-weight: 400;
+              color: var(--color-black);
               @media screen and (max-width: 1330px){
                 font-size: 1.75rem;
               }
@@ -751,8 +791,10 @@ body{
             .i_software-desc{
               font-size: 16px;
               font-family: "Open Sans", sans-serif;
-              font-weight: 600;
+              font-weight: 400;
+              line-height: 18px;
               width: 99%;
+              color: var(--color-black);
               @media screen and (max-width: 1330px){
                 font-size: 1rem;
               }
@@ -781,7 +823,7 @@ body{
               font-size: 0.8125rem;
             }
             &:hover{
-              background-color:var(--color-White);
+              background-color:var(--bg-buttonHoverSecond);
             }
           }
           //Software Button
@@ -816,7 +858,7 @@ body{
     .i_banner-social_item {
       width: 50px;
       height: 50px;
-      background-color: var(--color-Grey);
+      background-color: var(--color-circlesSecond);
       border-radius: 25px;
       display: flex;
       align-items: center;
@@ -824,7 +866,7 @@ body{
       transition: all .4s ease;
       .i_banner-social_link {
         svg{
-          color: var(--color-black);
+          color: var(--color-circlesSecondIcon);
         }
       }
       &:hover {
@@ -848,7 +890,7 @@ body{
   .i_banner-night_sun_item {
     width: 50px;
     height: 50px;
-    background-color: var(--color-black);
+    background-color: var(--color-circles);
     border-radius: 25px;
     display: flex;
     outline: none;
@@ -859,10 +901,7 @@ body{
     .i_banner-icon-nightSun {
       margin-bottom: 5px;
       margin-right: 5px;
-      color: var(--color-White);
-      svg{
-        color:var(--color-White);
-      }
+      color: var(--color-circleIcon);
     }
     &:focus {
       background-color: var(--color-Grey);
@@ -947,7 +986,7 @@ body{
         .i_news-title-icon{
           width: 50px;
           height: 50px;
-          background-color: var(--color-black);
+          background-color: var(--color-circles);
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -957,7 +996,7 @@ body{
             height: 40px;
           }
           svg{
-            color: var(--color-White);
+            color: var(--color-circleIcon);
             @media screen and (max-width: 760px){
               width: 20px;
               height: 20px;
@@ -969,7 +1008,8 @@ body{
         .i_news-title-name{
           span{
             font-size: 32px;
-            font-weight: bold;
+            font-weight: 400;
+            color: var(--color-black);
             @media screen and (max-width: 1330px){
               font-size: 28px;
             }
@@ -994,6 +1034,7 @@ body{
       .news-list{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         gap: 40px;
         @media screen and (max-width: 1330px){
           gap: 30px;
@@ -1123,7 +1164,7 @@ body{
             span{
               font-family: "Open Sans", sans-serif;
               font-size: 14px;
-              color: var(--color-black);
+              color: var(--color-textInfoblock);
               font-weight: 400;
               @media screen and (max-width: 480px){
                 font-size: 13px;
@@ -1186,7 +1227,7 @@ body{
         .i_blog-title-icon{
           width: 50px;
           height: 50px;
-          background-color: var(--color-black);
+          background-color: var(--color-circles);
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -1196,7 +1237,7 @@ body{
             height: 40px;
           }
           svg{
-            color: var(--color-White);
+            color: var(--color-circleIcon);
             margin-left: 6px;
             @media screen and (max-width: 760px){
               width: 25px;
@@ -1209,7 +1250,8 @@ body{
         .i_blog-title-name{
           span{
             font-size: 32px;
-            font-weight: bold;
+            font-weight: 400;
+            color: var(--color-black);
             @media screen and (max-width: 1330px){
               font-size: 28px;
             }
@@ -1344,7 +1386,7 @@ body{
               font-family: "Open Sans", sans-serif;
               font-size: 14px;
               font-weight: 400;
-              color: var(--color-black);
+              color: var(--color-textInfoblock);
               text-align: center;
               @media screen and (max-width: 480px){
                 font-size: 13px;
@@ -1361,7 +1403,7 @@ body{
               font-family: "Open Sans", sans-serif;
               font-size: 14px;
               font-weight: 400;
-              color: var(--color-black);
+              color: var(--color-textInfoblock);
               text-align: center;
               @media screen and (max-width: 360px){
                 font-size: 13px;
@@ -1441,13 +1483,13 @@ body{
       .i_our-status-group-title-icon{
         width: 50px;
         height: 50px;
-        background-color: var(--color-black);
+        background-color: var(--color-circles);
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         svg{
-          color: var(--color-White);
+          color: var(--color-circleIcon);
         }
         @media screen and (max-width: 760px){
           width: 40px;
@@ -1463,7 +1505,8 @@ body{
       .i_our-status-group-title-name{
         span{
           font-size: 32px;
-          font-weight: bold;
+          font-weight: 400;
+          color: var(--color-black);
           @media screen and (max-width: 1330px){
             font-size: 28px;
           }
@@ -1500,7 +1543,7 @@ body{
       .i_our-status-group-blocks-item {
         width: 23%;
         height: 190px;
-        background-color: var(--color-Grey);
+        background-color: var(--bg-block);
         border-radius: 30px;
         display: flex;
         flex-direction: column;
@@ -1670,6 +1713,7 @@ body{
         //FOOTER LEFT LOGO ExSol.com
         .i_footer-left-logo{
           svg{
+            color: var(--color-black);
           }
         }
         //!FOOTER LEFT LOGO ExSol.com
@@ -1692,12 +1736,15 @@ body{
           .i_footer-left-icons-item-circles{
             width: 50px;
             height: 50px;
-            background-color: var(--color-black);
+            background-color: var(--color-circles);
             border-radius: 25px;
             display: flex;
             align-items: center;
             justify-content: center;
             transition: all 0.4s ease;
+            svg{
+              color: var(--color-circleIcon);
+            }
             &:hover{
               background-color: var(--color-Grey);
               box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
@@ -1796,12 +1843,15 @@ body{
             .i_footer-right-more-icon{
               width: 50px;
               height: 50px;
-              background-color: var(--color-black);
+              background-color: var(--color-circles);
               border-radius: 25px;
               display: flex;
               align-items: center;
               justify-content: center;
               transition: all 0.4s ease;
+              svg{
+                color: var(--color-circleIcon);
+              }
               &:hover{
                 background-color: var(--color-Grey);
                 box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
@@ -2023,7 +2073,7 @@ body{
                 .i_banner-circles {
                   width: 40px;
                   height: 40px;
-                  background-color: var(--color-Grey);
+                  background-color: var(--color-circlesSecond);
                 }
               }
               .i_banner-circles{
@@ -2427,7 +2477,7 @@ body{
                   .i_banner-circles {
                     width: 40px;
                     height: 40px;
-                    background-color: var(--color-Grey);
+                    background-color: var(--color-circlesSecond);
                   }
                 }
                 .i_banner-circles{
@@ -2558,7 +2608,7 @@ body{
                   min-width: 40px;
                   align-items: center;
                   justify-content: center;
-                  background-color: var(--color-black);
+                  background-color: var(--color-circles);
                   .menu-burger{
                     width: 12px;
                     height: 12px;
@@ -2831,7 +2881,7 @@ body{
                 .i_banner-circles {
                   width: 40px;
                   height: 40px;
-                  background-color: var(--color-Grey);
+                  background-color: var(--color-circlesSecond);
                 }
               }
               .i_banner-circles{
@@ -3231,7 +3281,7 @@ body{
               .i_banner-night_sun_item{
                 width: 40px;
                 height: 40px;
-                background-color: var(--color-black);
+                background-color: var(--color-circles);
                 border-radius: 25px;
                 display: flex;
                 outline: none;
@@ -3315,7 +3365,7 @@ body{
               .i_banner-night_sun_item{
                 width: 40px;
                 height: 40px;
-                background-color: var(--color-black);
+                background-color: var(--color-circles);
                 border-radius: 25px;
                 display: flex;
                 outline: none;
@@ -3354,7 +3404,7 @@ body{
                 .i_banner-circles {
                   width: 40px;
                   height: 40px;
-                  background-color: var(--color-Grey);
+                  background-color: var(--color-circlesSecond);
                 }
               }
               .i_banner-circles{
@@ -3593,7 +3643,7 @@ body{
               .i_banner-night_sun_item{
                 width: 40px;
                 height: 40px;
-                background-color: var(--color-black);
+                background-color: var(--color-circles);
                 border-radius: 25px;
                 display: flex;
                 outline: none;
@@ -3673,7 +3723,7 @@ body{
               .i_banner-night_sun_item{
                 width: 40px;
                 height: 40px;
-                background-color: var(--color-black);
+                background-color: var(--color-circles);
                 border-radius: 25px;
                 display: flex;
                 outline: none;
@@ -3712,7 +3762,7 @@ body{
                 .i_banner-circles {
                   width: 40px;
                   height: 40px;
-                  background-color: var(--color-Grey);
+                  background-color: var(--color-circlesSecond);
                 }
               }
               .i_banner-circles{

@@ -27,19 +27,20 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: var(--color-black);
+        background-color: var(--color-circles);
         width: 50px;
         height: 50px;
         max-width: 100%;
         border-radius: 50%;
         svg{
-          color: var(--color-White);
+          color: var(--color-circleIcon);
         }
       }
       .i_personal-title-name{
         span{
           font-size: 32px;
-          font-weight: bold;
+          font-weight: 400;
+          color: var(--color-black);
         }
       }
     }
@@ -50,7 +51,7 @@
         content: "";
         width: 406px;
         height: 406px;
-        background-color: var(--color-blockHv);
+        background-color: var(--bg-block);
         border-radius: 100%;
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
         position: absolute;
@@ -87,7 +88,7 @@
           padding: 64px 20px;
           width: 330px;
           height: 715px;
-          background-color: var(--color-blockHv);
+          background-color: var(--bg-block);
           display: flex;
           align-items: center;
           flex-direction: column;
@@ -155,7 +156,7 @@
 
 .i_products{
   padding-top: 60px;
-  background-color: var(--color-Grey);
+  background-color: var(--bg-second);
   position: relative;
   .i_container{
     .i_products-group{
@@ -169,19 +170,20 @@
         .i_products-title-bg{
           width: 50px;
           height: 50px;
-          background-color: var(--color-black);
+          background-color: var(--color-circles);
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
           svg{
-            color: var(--color-White);
+            color: var(--color-circleIcon);
           }
         }
         .i_products-title-name{
           span{
             font-size: 32px;
-            font-weight: bold;
+            font-weight: 400;
+            color: var(--color-black);
           }
         }
       }
@@ -198,7 +200,7 @@
         border-radius: 100%;
         max-height: 350px;
         max-width: 350px;
-        background-color: var(--color-White);
+        background-color: var(--bg-block);
         text-align: center;
         overflow: hidden;
         &:hover{
@@ -261,7 +263,7 @@
         button{
           padding: 20px 44px;
           &:hover{
-            background-color: var(--color-White);
+            background-color: var(--bg-buttonHoverSecond);
           }
         }
       }
@@ -271,7 +273,7 @@
 
 .i_projects{
   padding: 60px 0;
-  background-color: var(--color-Grey);
+  background-color: var(--bg-second);
   position: relative;
   .i_projects-title{
     display: flex;
@@ -285,16 +287,17 @@
       justify-content: center;
       width: 50px;
       height: 50px;
-      background-color: var(--color-black);
+      background-color: var(--color-circles);
       border-radius: 50%;
       svg{
-        color: var(--color-White);
+        color: var(--color-circleIcon);
       }
     }
     .i_projects-title-name{
       span{
         font-size: 32px;
-        font-weight: 600;
+        font-weight: 400;
+        color: var(--color-black);
       }
     }
   }
@@ -312,26 +315,32 @@
       align-items: center;
       border-radius: 100%;
       height: auto !important;
-      background-color: var(--color-White);
+      background-color: var(--bg-block);
       min-height: 280px !important;
       cursor: pointer;
       padding: 10px;
       text-align: center;
       gap: 40px;
       &:hover{
+        background-color: var(--bg-blockSliderProjectHover);
         .swiper-slide-title{
           color: var(--color-red);
         }
         .swiper-slide-icon{
           svg{
-            color: var(--color-black);
+            color: var(--color-nochangeThirdIcon);
           }
         }
       }
       .swiper-slide-title{
         position: relative;
-        transform: translateY(-35%);
+        transform: translateY(-42%);
+        line-height: 20px;
         width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30%;
       }
       .swiper-slide-icon{
         width: 50%;
@@ -351,7 +360,7 @@
     button{
       padding: 20px 44px;
       &:hover{
-        background-color: var(--color-White);
+        background-color: var(--bg-buttonHoverSecond);
       }
     }
   }

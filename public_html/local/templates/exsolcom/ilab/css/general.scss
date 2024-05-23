@@ -1,7 +1,7 @@
 button{
   border-radius: 50px;
-  background-color: #FF161F;
-  color: var(--color-White);
+  background-color: var(--color-red);
+  color: var(--color-buttonText);
   font-size: 16px;
   font-weight: 500;
   border: 0;
@@ -10,7 +10,7 @@ button{
   &:hover{
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
     color: var(--color-red);
-    background-color: var(--color-blockHv);
+    background-color: var(--bg-buttonHover);
   }
 }
 
@@ -30,13 +30,13 @@ span{
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
     a{
       b{
-        color: #FF161F;
+        color: var(--color-red);
       }
     }
   }
   a{
     b{
-      color: var(--color-black);
+      color: var(--color-textInfoblock);
     }
   }
 }
@@ -54,7 +54,7 @@ span{
   }
   a{
     b{
-      color: var(--color-black);
+      color: var(--color-textInfoblock);
     }
   }
 }
