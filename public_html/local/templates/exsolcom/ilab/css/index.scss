@@ -5,10 +5,29 @@
   font-style: normal; /* Стиль шрифта, например, normal или italic */
 }
 
+html{
+  --bg: #ffffff;
+  --color-textIconHover: #000000;
+  --color-blockHover: #F5F5F5;
+}
+
+html[data-theme='dark']{
+  --bg: #000000;
+  --color-textIconHover: #E1E1E1;
+  --color-blockHover: #1E1E1E;
+}
+
 body{
   font-family: 'Comfortaa', sans-serif; /* Укажите имя шрифта */
   line-height: 1;
   overflow-x: hidden;
+  background-color: var(--bg);
+  color: var(--color-textIconHover); /* Добавьте цвет текста для видимости */
+  transition: background-color 0.5s, color 0.5s; /* Плавный переход между темами */
+}
+
+.transition {
+  transition: background-color 1s ease, color 1s ease;
 }
 
 * {

@@ -48,4 +48,26 @@ window.addEventListener('DOMContentLoaded', function() {
 		},
 	});
 
+
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+	const button = document.getElementById('theme-toggle');
+	const currentTheme = localStorage.getItem('theme') || 'light';
+	document.documentElement.setAttribute('data-theme', currentTheme);
+
+	button.addEventListener('click', () => {
+		let theme = document.documentElement.getAttribute('data-theme');
+		theme = (theme === 'light') ? 'dark' : 'light';
+		trans();
+		document.documentElement.setAttribute('data-theme', theme);
+		localStorage.setItem('theme', theme);
+	});
+
+	const trans = () => {
+		document.documentElement.classList.add('transition');
+		window.setTimeout(() => {
+			document.documentElement.classList.remove('transition');
+		}, 1000);
+	};
 });
