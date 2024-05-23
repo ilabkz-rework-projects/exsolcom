@@ -584,6 +584,7 @@ body{
             }
           }
           .i_our-services-name{
+            height: 18%;
             span{
               font-size: 20px;
               font-weight: bold;
@@ -3826,13 +3827,14 @@ body{
         //!Группа Headline
         //Группа Preview
         .i_our-services-preview{
-          gap: 20px;
+          gap: 15px;
           .i_our-services-block{
             width: 46%;
             height: 333px;
             background-size: 143px auto;
-            padding: 22px 8px;
+            padding: 22px 10px;
             background-position-x: center;
+            gap: 25px;
             span{
               font-size: 15px;
             }
