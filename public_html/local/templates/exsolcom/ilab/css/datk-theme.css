@@ -1,3 +1,11 @@
-
+html[data-theme=dark] .i_our-services {
+  background-image: url("../img/svg/bg-element-dark_1.svg");
+}
+html[data-theme=dark] .i_personal {
+  background-image: url("../img/svg/bg-element-dark_2.svg");
+}
+html[data-theme=dark] .i_infoblock {
+  background-image: url("../img/svg/bg-element-dark_2.svg");
+}
 
 /*# sourceMappingURL=datk-theme.css.map */

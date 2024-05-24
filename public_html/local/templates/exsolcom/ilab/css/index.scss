@@ -13,6 +13,7 @@ html{
   --color-circlesHover: #f5f5f5;
   --color-circleIcon: #ffffff;
   --color-circlesSecond: #f5f5f5;
+  --color-circlesThird: #ffffff;
   --color-circlesSecondIcon: #000000;
   --color-nochangeSecondIcon: #ffffff;
   --color-nochangeThirdIcon: #000000;
@@ -37,6 +38,7 @@ html[data-theme='dark']{
   --color-circlesHover: #1E1E1E;
   --color-circleIcon: #000000;
   --color-circlesSecond: #1E1E1E;
+  --color-circlesThird: #1E1E1E;
   --color-circlesSecondIcon: #ffffff;
   --color-nochangeSecondIcon: #ffffff;
   --color-nochangeThirdIcon: #000000;
@@ -268,7 +270,7 @@ body{
     color: var(--color-circleIcon);
   }
   &:active{
-    background-color: var(--color-Grey);
+    background-color: var(--color-circlesHover);
     svg{
       color: var(--color-black);
     }
@@ -435,9 +437,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("../img/svg/background-element-part_1.svg");
+    background-image: url("../img/svg/bg-element-light_1.svg");
     background-repeat: no-repeat;
-    background-position-x: right;
+    background-position-x: 108%;
     background-position-y: center;
     .i_container {
       position: relative;
@@ -586,6 +588,7 @@ body{
           .i_our-services-name{
             height: 18%;
             span{
+              color: var(--color-textInfoblock);
               font-size: 20px;
               font-weight: bold;
               @media screen and (max-width: 1520px){
@@ -676,10 +679,10 @@ body{
 
   //PERSONAL
   .i_personal{
-    background-image: url("../img/svg/background-icon_33.svg");
+    background-image: url("../img/svg/bg-element-light_2.svg");
     background-repeat: no-repeat;
-    background-position-x: left;
-    background-position-y: bottom;
+    background-position-x: -35%;
+    background-position-y: 180%;
     .i_container{
       display: flex;
       align-items: center;
@@ -719,6 +722,7 @@ body{
             width: 332px;
           }
           svg{
+            color: var(--color-black);
           }
           //Изображение 1С
           .i_software-block{
@@ -766,6 +770,10 @@ body{
             display: flex;
             flex-direction: column;
             gap: 40px;
+            line-height: 21px;
+            span{
+              cursor: default;
+            }
             @media screen and (max-width: 480px){
               text-align: center;
             }
@@ -774,11 +782,14 @@ body{
               font-size: 30px;
               font-weight: 400;
               color: var(--color-black);
+              line-height: 32px;
+
               @media screen and (max-width: 1330px){
                 font-size: 1.75rem;
               }
               @media screen and (max-width: 1000px){
                 font-size: 1.5rem;
+                line-height: 32px;
               }
               @media screen and (max-width: 760px){
                 font-size: 1.25rem;
@@ -793,7 +804,7 @@ body{
               font-size: 16px;
               font-family: "Open Sans", sans-serif;
               font-weight: 400;
-              line-height: 18px;
+              line-height: 20px;
               width: 99%;
               color: var(--color-black);
               @media screen and (max-width: 1330px){
@@ -898,6 +909,11 @@ body{
     align-items: center;
     border: 0;
     justify-content: center;
+    @media (hover: hover) {
+      &:hover {
+        filter: brightness(90%);
+      }
+    }
     //HOVER NIGHT SUN
     .i_banner-icon-nightSun {
       margin-bottom: 5px;
@@ -925,10 +941,10 @@ body{
 .i_infoblock{
   padding-top: 70px;
   padding-bottom: 70px;
-  background-image: url("../img/svg/background-icon_22.svg");
+  background-image: url("../img/svg/bg-element-light_2.svg");
   background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: top;
+  background-position-x: 140%;
+  background-position-y: -150%;
   @media screen and (max-width: 760px){
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1010,7 +1026,6 @@ body{
           span{
             font-size: 32px;
             font-weight: 400;
-            color: var(--color-black);
             @media screen and (max-width: 1330px){
               font-size: 28px;
             }
@@ -1076,10 +1091,11 @@ body{
           }
           @media screen and (max-width: 1330px){
             padding: 40px 20px;
-            height: 580px;
+            height: 590px;
           }
           @media screen and (max-width: 1000px){
             width: 85%;
+            height: 580px;
             &:nth-child(2){
               display: none;
             }
@@ -1097,6 +1113,7 @@ body{
           @media screen and (max-width: 480px){
             padding: 30px 8px;
             height: 440px;
+            gap: 5px;
             &:nth-child(1){
               display: none;
             }
@@ -1252,7 +1269,6 @@ body{
           span{
             font-size: 32px;
             font-weight: 400;
-            color: var(--color-black);
             @media screen and (max-width: 1330px){
               font-size: 28px;
             }
@@ -1273,13 +1289,13 @@ body{
         flex-direction: column;
         gap: 40px;
         @media screen and (max-width: 1330px){
-          gap: 38px;
+          gap: 30px;
         }
 
         //Blog Лист
         .blog-item{
           width: 100%;
-          height: 170px;
+          height: 178px;
           background-color: var(--color-blockHv);
           border-radius: 30px;
           display: flex;
@@ -1287,6 +1303,11 @@ body{
           gap: 20px;
           @media screen and (max-width: 1330px){
             width: 97%;
+            height: 176px;
+          }
+          @media screen and (max-width: 1330px){
+            width: 97%;
+            height: 175px;
           }
           @media screen and (max-width: 480px){
             width: 100%;
@@ -1507,7 +1528,6 @@ body{
         span{
           font-size: 32px;
           font-weight: 400;
-          color: var(--color-black);
           @media screen and (max-width: 1330px){
             font-size: 28px;
           }
@@ -1544,7 +1564,7 @@ body{
       .i_our-status-group-blocks-item {
         width: 23%;
         height: 190px;
-        background-color: var(--bg-block);
+        background-color: var(--color-blockHv);
         border-radius: 30px;
         display: flex;
         flex-direction: column;
@@ -1553,9 +1573,13 @@ body{
         z-index: 1;
         padding: 10px 30px;
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
-        cursor: pointer;
         transition: all .4s ease;
         gap: 20px;
+        overflow: hidden;
+        span{
+          color: var(--color-nochangeThirdIcon);
+          cursor: default;
+        }
         @media screen and (max-width: 1520px){
           width: 22%;
         }
@@ -1583,19 +1607,15 @@ body{
           padding: 15px 10px;
           height: 160px;
         }
-        &:hover{
-          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
-        }
+
         //OUR STATUS GROUP BLOCKS ITEM BG ICON
         .i_our-status-group-blocks-item-bgIcon{
           position: absolute;
           z-index: -1;
-          top: 0;
-          left: 0;
-          width: 100px;
-          height: 100px;
+          top: -28%;
+          left: -125px;
+          transform: translate(50%);
           svg{
-            color:var(--color-White);
           }
         }
         //OUR STATUS GROUP BLOCKS ITEM BG ICON
@@ -1720,6 +1740,7 @@ body{
         //!FOOTER LEFT LOGO ExSol.com
         //FOOTER LEFT COPYRIGHT
         .i_footer-left-copyright{
+          color: var(--color-black);
         }
         //!FOOTER LEFT COPYRIGHT
       }
@@ -1747,8 +1768,11 @@ body{
               color: var(--color-circleIcon);
             }
             &:hover{
-              background-color: var(--color-Grey);
+              background-color: var(--color-circlesHover);
               box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
+              svg{
+                color: var(--color-red);
+              }
             }
           }
           .i_footer-left-icons-number{
@@ -1854,8 +1878,11 @@ body{
                 color: var(--color-circleIcon);
               }
               &:hover{
-                background-color: var(--color-Grey);
+                background-color: var(--color-circlesHover);
                 box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
+                svg{
+                  color: var(--color-red);
+                }
               }
             }
             //!FOOTER RIGHT ICON
@@ -2210,6 +2237,7 @@ body{
                 justify-content: space-between;
                 .i_footer-left-logoLittle{
                   display: block;
+                  color:var(--color-black);
                 }
               }
               .i_banner-group_social{
@@ -2242,7 +2270,7 @@ body{
           }
           .i_footer-left-copyright{
             font-size: 13px;
-
+            color: var(--color-black);
           }
         }
         .i_footer-left-icons{
@@ -2515,7 +2543,7 @@ body{
               border-radius: 50px;
               border: none;
               background-color: var(--color-red);
-              color: var(--color-White);
+              color: var(--color-buttonText);
               font-size: 14px;
               cursor: pointer;
               @media screen and (max-width: 760px){
@@ -2523,6 +2551,10 @@ body{
               }
               @media screen and (max-width: 360px){
                 width: 208px;
+              }
+              &:hover{
+                background-color: var(--bg-buttonHover);
+                color: var(--color-red);
               }
             }
             //!Кнопка Оставить заявку
@@ -2588,8 +2620,12 @@ body{
               display: flex;
               align-items: center;
               gap: 15px;
+              .i_footer-left-logoLittle{
+                color: var(--color-black);
+              }
               .i_footer-left-copyright{
                 font-size: 13px;
+                color: var(--color-black);
               }
             }
           }
@@ -2613,9 +2649,13 @@ body{
                   .menu-burger{
                     width: 12px;
                     height: 12px;
+                    color: var(--color-circleIcon);
                   }
                   &:hover{
-                    background-color: var(--color-Grey);
+                    background-color: var(--color-circlesHover);
+                    .menu-burger{
+                      color: var(--color-black);
+                    }
                   }
                 }
               }
@@ -2653,7 +2693,7 @@ body{
 
           }
           .i_footer-left-logoLittle{
-
+            color: var(--color-black);
           }
         }
         .i_footer-left-icons{
@@ -3043,6 +3083,7 @@ body{
               .i_footer-left-copyright{
                 @media screen and (max-width: 471px){
                   font-size: 12px;
+                  color: var(--color-black);
                 }
               }
             }
@@ -3090,7 +3131,7 @@ body{
 
           }
           .i_footer-left-logoLittle{
-
+            color: var(--color-black);
           }
         }
         .i_footer-left-icons{
@@ -3244,14 +3285,14 @@ body{
               .i_banner-social_item{
                 width: 40px;
                 height: 40px;
-                background-color: var(--color-Grey);
+                background-color: var(--color-circlesSecond);
                 border-radius: 25px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 .i_banner-social_link {
                   svg{
-                    color: var(--color-black);
+                    color: var(--color-circlesSecondIcon);
                   }
                 }
                 &:hover {
@@ -3606,14 +3647,14 @@ body{
               .i_banner-social_item{
                 width: 40px;
                 height: 40px;
-                background-color: var(--color-Grey);
+                background-color: var(--color-circlesSecond);
                 border-radius: 25px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 .i_banner-social_link {
                   svg{
-                    color: var(--color-black);
+                    color: var(--color-circlesSecondIcon);
                   }
                 }
                 &:hover {

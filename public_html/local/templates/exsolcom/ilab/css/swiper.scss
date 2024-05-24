@@ -40,7 +40,6 @@
         span{
           font-size: 32px;
           font-weight: 400;
-          color: var(--color-black);
         }
       }
     }
@@ -77,7 +76,7 @@
           }
           .swiper-slide-name{
             span{
-              color: var(--color-red);
+              color: var(--color-red) !important;
               &:hover {
                 color: var(--color-red) !important;
               }
@@ -109,9 +108,10 @@
             .swiper-slide-name{
               text-align: center;
               span{
+                color: var(--color-textInfoblock);
                 font-size: 28px;
                 &:hover{
-                  color: unset;
+                  color: unset !important;
                 }
               }
             }
@@ -131,7 +131,7 @@
         .swiper-slide-picture{
           width: 406px;
           height: 406px;
-          background-color: var(--color-blockHv);
+          background-color: var(--bg-block);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -183,7 +183,6 @@
           span{
             font-size: 32px;
             font-weight: 400;
-            color: var(--color-black);
           }
         }
       }
@@ -212,7 +211,9 @@
             transform: translateY(-20%);
           }
           .swiper-title{
-            color: var(--color-red);
+            span{
+              color: var(--color-red) !important;
+            }
             transform: translateY(-200%);
           }
           .swiper-img{
@@ -237,6 +238,9 @@
           font-size: 22px;
           position: relative;
           transition: all .4s ease;
+          span{
+            color: var(--color-textInfoblock);
+          }
         }
         .swiper-detail{
           opacity: 0;
@@ -248,6 +252,9 @@
           position: relative;
           .swiper-detail-title{
             font-size: 0.875rem;
+            span{
+              color: var(--color-textInfoblock);
+            }
           }
           .swiper-detail-btn{
             button{
@@ -297,7 +304,6 @@
       span{
         font-size: 32px;
         font-weight: 400;
-        color: var(--color-black);
       }
     }
   }
@@ -324,7 +330,9 @@
       &:hover{
         background-color: var(--bg-blockSliderProjectHover);
         .swiper-slide-title{
-          color: var(--color-red);
+          span{
+            color: var(--color-red);
+          }
         }
         .swiper-slide-icon{
           svg{
@@ -341,6 +349,9 @@
         align-items: center;
         justify-content: center;
         height: 30%;
+        span{
+          color: var(--color-textInfoblock);
+        }
       }
       .swiper-slide-icon{
         width: 50%;
@@ -376,20 +387,38 @@
   position: absolute;
   right: 200px;
   top: 60px;
-  .swiper-products-button-next,
-  .swiper-products-button-prev,
   .swiper-personal-button-next,
   .swiper-personal-button-prev,
+  .swiper-products-button-next,
+  .swiper-products-button-prev,
   .swiper-projects-button-next,
   .swiper-projects-button-prev{
     width: 50px;
     height: 50px;
     border-radius: 100%;
-    background-color: var(--color-White);
+    background-color: var(--color-circlesSecond);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.05);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    color: var(--color-black);
+    transition: all .4s ease;
+    &:hover{
+      color: var(--color-red);
+    }
+    .prev-icon{
+      margin-right: 5px;
+    }
+    .next-icon{
+      margin-left: 5px;
+    }
+  }
+
+  .swiper-products-button-next,
+  .swiper-products-button-prev,
+  .swiper-projects-button-next,
+  .swiper-projects-button-prev{
+    background-color: var(--color-circlesThird);
   }
 }

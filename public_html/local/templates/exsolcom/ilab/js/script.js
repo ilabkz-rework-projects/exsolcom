@@ -52,22 +52,25 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-	const button = document.getElementById('theme-toggle');
 	const currentTheme = localStorage.getItem('theme') || 'light';
 	document.documentElement.setAttribute('data-theme', currentTheme);
 
-	button.addEventListener('click', () => {
+	function toggleTheme() {
 		let theme = document.documentElement.getAttribute('data-theme');
 		theme = (theme === 'light') ? 'dark' : 'light';
 		trans();
 		document.documentElement.setAttribute('data-theme', theme);
 		localStorage.setItem('theme', theme);
-	});
+	}
+
+	const themeToggle = document.getElementById("theme-toggle");
+	if (themeToggle) themeToggle.addEventListener("click", toggleTheme);
+
+	const themeToggle2 = document.getElementById("theme-toggle-2");
+	if (themeToggle2) themeToggle2.addEventListener("click", toggleTheme);
 
 	const trans = () => {
 		document.documentElement.classList.add('transition');
-		window.setTimeout(() => {
-			document.documentElement.classList.remove('transition');
-		}, 1000);
+		setTimeout(() => document.documentElement.classList.remove('transition'), 1000);
 	};
 });

@@ -16,6 +16,7 @@ button{
 
 span{
   transition: all .4s ease;
+  color: var(--color-black);
   &:hover{
     cursor: pointer;
     color: var(--color-red);
