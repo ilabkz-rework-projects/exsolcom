@@ -479,6 +479,14 @@ body{
           display: flex;
           align-items: center;
           justify-content: center;
+          @media screen and (max-width: 760px){
+            width: 40px;
+            height: 40px;
+            svg{
+              width: 25px;
+              height: 25px;
+            }
+          }
           svg{
             color: var(--color-circleIcon);
           }
@@ -680,19 +688,7 @@ body{
   }
   //!MAIN OUR SERVICES
 
-  //PERSONAL
-  .i_personal{
-    background-image: url("../img/svg/bg-element-light_2.svg");
-    background-repeat: no-repeat;
-    background-position-x: -35%;
-    background-position-y: 180%;
-    .i_container{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-  //!PERSONAL
+
 
   //MAIN SOFTWARE
   .i_software{
@@ -829,7 +825,7 @@ body{
             height: 60px;
             @media screen and (max-width: 1330px){
               width: 264px;
-              height: 48px;
+              height: 50px;
               font-size: 0.875rem;
             }
             @media screen and (max-width: 360px){
@@ -1206,7 +1202,7 @@ body{
           height: 60px;
           @media screen and (max-width: 1330px){
             width: 160px;
-            height: 48px;
+            height: 50px;
           }
           @media screen and (max-width: 760px){
             font-size: 14px;
@@ -1314,7 +1310,7 @@ body{
           }
           @media screen and (max-width: 480px){
             width: 100%;
-            height: 200px;
+            height: 220px;
           }
           @media screen and (max-width: 360px){
             display: grid;
@@ -1458,7 +1454,7 @@ body{
           height: 60px;
           @media screen and (max-width: 1330px){
             width: 160px;
-            height: 48px;
+            height: 50px;
           }
           @media screen and (max-width: 760px){
             font-size: 14px;
@@ -2052,7 +2048,7 @@ body{
           //Кнопка Оставить Заявку
           .i_banner-btn-apply{
             width: 272px;
-            height: 48px;
+            height: 50px;
             margin-top: 70px;
             font-size: 14px;
           }
@@ -2145,12 +2141,7 @@ body{
         //Группа Headline
         .i_our-services-headline{
           .i_our-services-circles{
-            width: 40px;
-            height: 40px;
-            svg{
-              width: 25px;
-              height: 25px;
-            }
+
           }
           span{
             font-size: 28px;
@@ -2174,7 +2165,7 @@ body{
           justify-content: center;
           button{
             width: 350px;
-            height: 48px;
+            height: 50px;
             font-size: 14px;
           }
         }

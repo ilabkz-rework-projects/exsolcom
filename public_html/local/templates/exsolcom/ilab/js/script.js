@@ -32,20 +32,24 @@ window.addEventListener('DOMContentLoaded', function() {
 		},
 		breakpoints : {
 			360:{
-				slidesPerView: 1,
-				spaceBetween: 20,
+				slidesPerView: 2,
+				spaceBetween: 30,
 			},
 			480:{
 				slidesPerView: 2,
-				spaceBetween: 20,
+				spaceBetween: 40,
 			},
-			780:{
+			760:{
 				slidesPerView: 3,
 				spaceBetween: 20,
 			},
-			1150:{
+			1000:{
+				slidesPerView: 3,
+				spaceBetween: 30,
+			},
+			1330:{
 				slidesPerView: 4,
-				spaceBetween: 40,
+				spaceBetween: 30,
 			}
 		},
 		on: {
@@ -60,6 +64,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 	const swiperProjects = new Swiper(".swiper.projects-swiper", {
 		slidesPerView: 5,
+		columnCount: 2,
 		grid: {
 			rows: 2,
 			fill: "row",
@@ -78,12 +83,16 @@ window.addEventListener('DOMContentLoaded', function() {
 				slidesPerView: 2,
 				spaceBetween: 20,
 			},
-			780:{
+			760:{
 				slidesPerView: 3,
 				spaceBetween: 20,
 			},
-			1150:{
+			1000:{
 				slidesPerView: 4,
+				spaceBetween: 40,
+			},
+			1330:{
+				slidesPerView: 5,
 				spaceBetween: 40,
 			}
 		},
