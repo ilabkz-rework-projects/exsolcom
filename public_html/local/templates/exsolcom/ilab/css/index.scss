@@ -300,6 +300,9 @@ body{
         height: 100%;
       }
     }
+    .i_banner-bg_2{
+      display: none;
+    }
     .i_container {
       display: flex;
       justify-content: space-between;
@@ -564,7 +567,7 @@ body{
               transform: translate(-50%);
             }
             @media screen and (max-width: 480px){
-              top: 60%;
+              top: 64%;
               left: 50%;
               height: 40%;
               min-width: 268px;
@@ -3621,7 +3624,7 @@ body{
         .i_banner-bg{
           position: relative;
           width: 318px;
-          height: 276px;
+          height: 318px;
           left: unset;
           top: 50%;
           right: 50%;

@@ -161,7 +161,10 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
             <!--!Левая часть баннера-->
             <!--Фоновая картинка-->
             <div class="i_banner-bg">
-                <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/main-1.png'?>" alt="Notice-our-services">
+                <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/banner-light-bg.png'?>" alt="Notice-our-services">
+            </div>
+            <div class="i_banner-bg_2">
+                <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/banner-night-bg.png'?>" alt="Notice-our-services">
             </div>
             <!--Фоновая картинка-->
             <div class="i_banner-container">

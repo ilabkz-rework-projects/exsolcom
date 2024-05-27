@@ -272,6 +272,9 @@ body {
   width: 100%;
   height: 100%;
 }
+.i_main .i_banner .i_banner-bg_2 {
+  display: none;
+}
 .i_main .i_banner .i_container {
   display: flex;
   justify-content: space-between;
@@ -522,7 +525,7 @@ body {
 }
 @media screen and (max-width: 480px) {
   .i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block .i_our-services-imbg {
-    top: 60%;
+    top: 64%;
     left: 50%;
     height: 40%;
     min-width: 268px;
@@ -3317,7 +3320,7 @@ body {
   .i_main .i_banner .i_container .i_banner-bg {
     position: relative;
     width: 318px;
-    height: 276px;
+    height: 318px;
     left: unset;
     top: 50%;
     right: 50%;

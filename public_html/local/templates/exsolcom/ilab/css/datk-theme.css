@@ -7,5 +7,85 @@ html[data-theme=dark] .i_personal {
 html[data-theme=dark] .i_infoblock {
   background-image: url("../img/svg/bg-element-dark_2.svg");
 }
+html[data-theme=dark] .i_banner .i_banner-bg {
+  display: none;
+}
+html[data-theme=dark] .i_banner .i_banner-bg_2 {
+  display: block;
+  position: absolute;
+  top: 68%;
+  transform: translateY(-50%);
+  left: 32%;
+  z-index: 1;
+  width: 36%;
+  height: auto;
+}
+html[data-theme=dark] .i_banner .i_banner-bg_2 img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 1330px) {
+  html[data-theme=dark] .i_banner .i_banner-bg_2 {
+    width: 33%;
+    left: 34%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  html[data-theme=dark] .i_banner .i_banner-bg_2 {
+    position: absolute;
+    top: 69%;
+    left: 0%;
+    z-index: 1;
+    width: 48%;
+  }
+}
+@media screen and (max-width: 760px) {
+  html[data-theme=dark] .i_banner .i_banner-bg_2 {
+    position: absolute;
+    top: 69%;
+    left: unset;
+    z-index: 1;
+    width: 46%;
+  }
+}
+@media screen and (max-width: 760px) and (max-width: 700px) {
+  html[data-theme=dark] .i_banner .i_banner-bg_2 {
+    position: absolute;
+    top: 57%;
+    left: unset;
+    z-index: 1;
+    width: 40%;
+  }
+}
+@media screen and (max-width: 760px) and (max-width: 620px) {
+  html[data-theme=dark] .i_banner .i_banner-bg_2 {
+    position: absolute;
+    top: 54%;
+    left: unset;
+    z-index: 1;
+    width: 34%;
+  }
+}
+@media screen and (max-width: 480px) {
+  html[data-theme=dark] .i_banner .i_banner-bg_2 {
+    position: relative;
+    width: 88%;
+    left: unset;
+    top: 50%;
+    right: 45%;
+    transform: translateX(50%);
+  }
+}
+@media screen and (max-width: 360px) {
+  html[data-theme=dark] .i_banner .i_banner-bg_2 {
+    position: relative;
+    width: 318px;
+    height: 318px;
+    left: unset;
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
 
 /*# sourceMappingURL=datk-theme.css.map */
