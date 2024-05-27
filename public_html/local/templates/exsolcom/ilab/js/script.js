@@ -32,24 +32,20 @@ window.addEventListener('DOMContentLoaded', function() {
 		},
 		breakpoints : {
 			360:{
-				slidesPerView: 2,
+				slidesPerView: 1,
 				spaceBetween: 30,
 			},
 			480:{
 				slidesPerView: 2,
-				spaceBetween: 40,
+				spaceBetween: 20,
 			},
-			760:{
+			780:{
 				slidesPerView: 3,
 				spaceBetween: 20,
 			},
-			1000:{
-				slidesPerView: 3,
-				spaceBetween: 30,
-			},
-			1330:{
+			1150:{
 				slidesPerView: 4,
-				spaceBetween: 30,
+				spaceBetween: 40,
 			}
 		},
 		on: {
