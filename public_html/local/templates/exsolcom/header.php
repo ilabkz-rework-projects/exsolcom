@@ -380,7 +380,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
                         <span>BAM БУДУТ ПОМОГАТЬ</span>
                     </div>
                 </div>
-                <div class="swiper-container personal">
+                <div class="swiper personal">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="swiper-slide-picture">

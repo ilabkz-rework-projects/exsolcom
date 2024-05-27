@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', function() {
-	const swiperPersonal = new Swiper(".swiper-container.personal", {
+	const swiperPersonal = new Swiper(".swiper.personal", {
 		effect: "coverflow",
 		grabCursor: true,
 		centeredSlides: true,
@@ -20,19 +20,42 @@ window.addEventListener('DOMContentLoaded', function() {
 			slideChange: function () {
 				const activeSlide = this.slides[this.activeIndex];
 				activeSlide.classList.add("swiper-slide-active");
-			}
+			},
 		}
 	});
 
 
 	const swiperProducts = new Swiper(".swiper.products-swiper", {
-		slidesPerView: 4,
-		spaceBetween: 40,
-		slidesPerColumn: 2,
 		navigation: {
 			nextEl: ".swiper-products-button-next",
 			prevEl: ".swiper-products-button-prev",
 		},
+		breakpoints : {
+			360:{
+				slidesPerView: 1,
+				spaceBetween: 20,
+			},
+			480:{
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			780:{
+				slidesPerView: 3,
+				spaceBetween: 20,
+			},
+			1150:{
+				slidesPerView: 4,
+				spaceBetween: 40,
+			}
+		},
+		on: {
+			resize: function () {
+				this.slides.forEach((slide) => {
+					const width = slide.getBoundingClientRect().width
+					slide.style.height = `${width}px`
+				})
+			}
+		}
 	});
 
 	const swiperProjects = new Swiper(".swiper.projects-swiper", {
@@ -46,6 +69,32 @@ window.addEventListener('DOMContentLoaded', function() {
 			nextEl: ".swiper-projects-button-next",
 			prevEl: ".swiper-projects-button-prev",
 		},
+		breakpoints : {
+			360:{
+				slidesPerView: 2,
+				spaceBetween: 10,
+			},
+			480:{
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			780:{
+				slidesPerView: 3,
+				spaceBetween: 20,
+			},
+			1150:{
+				slidesPerView: 4,
+				spaceBetween: 40,
+			}
+		},
+		on: {
+			resize: function () {
+				this.slides.forEach((slide) => {
+					const width = slide.getBoundingClientRect().width
+					slide.style.height = `${width}px`
+				})
+			}
+		}
 	});
 
 

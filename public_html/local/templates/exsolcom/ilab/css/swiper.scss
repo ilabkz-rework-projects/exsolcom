@@ -44,7 +44,7 @@
       }
     }
 
-    .swiper-container.personal{
+    .swiper.personal{
       width: 100%;
       .swiper-slide:before{
         content: "";
@@ -199,9 +199,11 @@
         border-radius: 100%;
         max-height: 350px;
         max-width: 350px;
+        width: 100%;
         background-color: var(--bg-block);
         text-align: center;
         overflow: hidden;
+
         &:hover{
           cursor: pointer;
           box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.05);
@@ -320,9 +322,7 @@
       justify-content: center;
       align-items: center;
       border-radius: 100%;
-      height: auto !important;
       background-color: var(--bg-block);
-      min-height: 280px !important;
       cursor: pointer;
       padding: 10px;
       text-align: center;
