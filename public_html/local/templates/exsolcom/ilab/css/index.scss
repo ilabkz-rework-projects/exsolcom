@@ -482,6 +482,7 @@ body{
           @media screen and (max-width: 760px){
             width: 40px;
             height: 40px;
+            min-width: 40px;
             svg{
               width: 25px;
               height: 25px;
@@ -3855,7 +3856,6 @@ body{
           display: flex;
           justify-content: center;
           span{
-            width: 50%;
             font-size: 21px;
           }
         }

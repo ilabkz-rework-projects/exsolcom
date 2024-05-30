@@ -434,6 +434,7 @@ body {
   .i_main .i_our-services .i_container .i_our-services-headline .i_our-services-circles {
     width: 40px;
     height: 40px;
+    min-width: 40px;
   }
   .i_main .i_our-services .i_container .i_our-services-headline .i_our-services-circles svg {
     width: 25px;
@@ -3503,7 +3504,6 @@ body {
     justify-content: center;
   }
   .i_main .i_our-services .i_container .i_our-services-headline span {
-    width: 50%;
     font-size: 21px;
   }
   .i_main .i_our-services .i_container .i_our-services-preview {

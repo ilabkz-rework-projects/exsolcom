@@ -514,11 +514,27 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
                             <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/products-swiper.png'?>" alt="products-swiper">
                         </div>
                         <div class="swiper-title">
-                            <span>КА</span>
+                            <span>Бухгалтерия 8</span>
                         </div>
                         <div class="swiper-detail">
                             <div class="swiper-detail-title">
-                                <span>Текст рыбы</span>
+                                <span>ERP ERP Управление предприятием 2 для Казахстана</span>
+                            </div>
+                            <div class="swiper-detail-btn">
+                                <button>Запросить КП</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-img">
+                            <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/products-swiper.png'?>" alt="products-swiper">
+                        </div>
+                        <div class="swiper-title">
+                            <span>ERP</span>
+                        </div>
+                        <div class="swiper-detail">
+                            <div class="swiper-detail-title">
+                                <span>ERP ERP Управление предприятием 2 для Казахстана</span>
                             </div>
                             <div class="swiper-detail-btn">
                                 <button>Запросить КП</button>
@@ -534,7 +550,23 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
                         </div>
                         <div class="swiper-detail">
                             <div class="swiper-detail-title">
-                                <span>Текст рыбы</span>
+                                <span>ERP ERP Управление предприятием 2 для Казахстана</span>
+                            </div>
+                            <div class="swiper-detail-btn">
+                                <button>Запросить КП</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-img">
+                            <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/products-swiper.png'?>" alt="products-swiper">
+                        </div>
+                        <div class="swiper-title">
+                            <span>ЗУП</span>
+                        </div>
+                        <div class="swiper-detail">
+                            <div class="swiper-detail-title">
+                                <span>ERP ERP Управление предприятием 2 для Казахстана</span>
                             </div>
                             <div class="swiper-detail-btn">
                                 <button>Запросить КП</button>
@@ -550,39 +582,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
                         </div>
                         <div class="swiper-detail">
                             <div class="swiper-detail-title">
-                                <span>Текст рыбы</span>
-                            </div>
-                            <div class="swiper-detail-btn">
-                                <button>Запросить КП</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-img">
-                            <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/products-swiper.png'?>" alt="products-swiper">
-                        </div>
-                        <div class="swiper-title">
-                            <span>КА</span>
-                        </div>
-                        <div class="swiper-detail">
-                            <div class="swiper-detail-title">
-                                <span>Текст рыбы</span>
-                            </div>
-                            <div class="swiper-detail-btn">
-                                <button>Запросить КП</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-img">
-                            <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/products-swiper.png'?>" alt="products-swiper">
-                        </div>
-                        <div class="swiper-title">
-                            <span>КА</span>
-                        </div>
-                        <div class="swiper-detail">
-                            <div class="swiper-detail-title">
-                                <span>Текст рыбы</span>
+                                <span>ERP ERP Управление предприятием</span>
                             </div>
                             <div class="swiper-detail-btn">
                                 <button>Запросить КП</button>
