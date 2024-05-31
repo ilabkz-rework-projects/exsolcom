@@ -712,28 +712,42 @@ body{
         display: flex;
         gap: 40px;
         align-items: center;
-        @media screen and (max-width: 480px){
+        @media screen and (max-width: 680px){
           flex-direction: column;
-          gap: 10px;
+          gap: 20px;
         }
 
         //Software Icon Img
         .i_software-iconAnnounce{
           display: flex;
+          width: 40%;
           position: relative;
-          @media screen and (max-width: 760px){
-            width: 318px;
+          @media screen and (max-width: 1330px){
+            width: 55%;
           }
-          @media screen and (max-width: 360px){
-            width: 332px;
+          @media screen and (max-width: 1180px){
+            width: 85%;
+          }
+          @media screen and (max-width: 1000px){
+            width: 165%;
+          }
+          @media screen and (max-width: 770px){
+            width: 205%;
+          }
+          @media screen and (max-width: 680px){
+            width: 70%;
+          }
+          @media screen and (max-width: 480px){
+            width: 100%;
           }
           svg{
+            width: 100%;
             color: var(--color-black);
           }
           //Изображение 1С
           .i_software-block{
-            width: 205px;
-            height: 205px;
+            min-width: 175px;
+            height: auto;
             background-color:var(--bg-block);
             border-radius: 50%;
             display: flex;
@@ -742,14 +756,18 @@ body{
             position: absolute;
             top: 50%;
             left: 50%;
-            @media screen and (max-width: 760px){
-              width: 170px;
-              height: 170px;
-            }
-            @media screen and (max-width: 360px){
-              width: 178px;
-              height: 178px;
-            }
+            //@media screen and (max-width: 1330px){
+            //  min-width: 200px;
+            //}
+            //@media screen and (max-width: 760px){
+            //  min-width: 170px;
+            //  //width: 170px;
+            //  //height: 170px;
+            //}
+            //@media screen and (max-width: 480px){
+            //  min-width: 175px;
+            //  //height: 178px;
+            //}
             transform: translate(-50%, -50%);
             .i_software-im{
               width: 100%;
@@ -768,7 +786,7 @@ body{
           display: flex;
           flex-direction: column;
           gap: 40px;
-          @media screen and (max-width: 480px){
+          @media screen and (max-width: 680px){
             align-items: center;
           }
           //Software text
@@ -780,7 +798,7 @@ body{
             span{
               cursor: default;
             }
-            @media screen and (max-width: 480px){
+            @media screen and (max-width: 680px){
               text-align: center;
             }
             //Software Headline
@@ -973,9 +991,27 @@ body{
   background-repeat: no-repeat;
   background-position-x: 140%;
   background-position-y: -150%;
+  @media screen and (max-width: 1330px){
+    background-position-x: 205%;
+    background-position-y: -180%;
+  }
+  @media screen and (max-width: 1000px){
+    background-position-x: 360%;
+    background-position-y: -185%;
+  }
   @media screen and (max-width: 760px){
     padding-top: 60px;
     padding-bottom: 60px;
+    background-position-x: -1065%;
+    background-position-y: -36%;
+  }
+  @media screen and (max-width: 480px){
+    background-position-x: -35%;
+    background-position-y: -33%;
+  }
+  @media screen and (max-width: 360px){
+    background-position-x: -20%;
+    background-position-y: -34%;
   }
   .i_container{
     display: flex;
