@@ -414,6 +414,9 @@
     font-size: 14px;
   }
 }
+.i_products .i_container .swiper-slide .swiper-detail .swiper-detail-btn button:hover {
+  background-color: var(--bg-buttonHoverFirst);
+}
 .i_products .i_container .i_products-btn {
   display: flex;
   justify-content: center;
