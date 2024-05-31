@@ -29,7 +29,7 @@ html[data-theme='dark']{
         width: 33%;
         left: 34%;
       }
-      @media screen and (max-width: 1000px){
+      @media screen and (max-width: 1100px){
         position: absolute;
         top: 69%;
         left: 0%;
@@ -57,7 +57,7 @@ html[data-theme='dark']{
           width: 34%;
         }
       }
-      @media screen and (max-width: 480px){
+      @media screen and (max-width: 680px){
         position: relative;
         width: 88%;
         left: unset;
@@ -73,6 +73,19 @@ html[data-theme='dark']{
         top: 50%;
         right: 50%;
         transform: translateX(50%);
+      }
+    }
+    .i_banner-container .i_banner-right .i_banner-group_social .i_banner-night_sun{
+      .i_banner-sun_item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg{
+
+        }
+      }
+      .i_banner-night_item{
+
       }
     }
   }

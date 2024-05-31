@@ -18,6 +18,7 @@ html{
   --color-nochangeSecondIcon: #ffffff;
   --color-nochangeThirdIcon: #000000;
   --bg-buttonHover: #f5f5f5;
+  --bg-buttonHoverFirst: #f5f5f5;
   --bg-buttonHoverSecond: #ffffff;
   --color-buttonText: #ffffff;
   --bg-block: #ffffff;
@@ -43,6 +44,7 @@ html[data-theme='dark']{
   --color-nochangeSecondIcon: #ffffff;
   --color-nochangeThirdIcon: #000000;
   --bg-buttonHover: #E1E1E1;
+  --bg-buttonHoverFirst: #ffffff;
   --bg-buttonHoverSecond: #E1E1E1;
   --color-buttonText: #ffffff;
   --bg-block: #E1E1E1;
@@ -219,7 +221,7 @@ body{
 
 //HEADER MENU
 .i_header-menu{
-  background-color: var(--color-White);
+  background-color: transparent;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -316,10 +318,14 @@ body{
         }
 
         //BANNER HEADLINE
-        .i_banner-logo svg{
-          color: var(--color-black);
-          margin-top: 82px;
-          margin-bottom: 85px;
+        .i_banner-logo{
+          width: 100%;
+          svg{
+            width: 100%;
+            color: var(--color-black);
+            margin-top: 82px;
+            margin-bottom: 85px;
+          }
         }
         //!BANNER HEADLINE
 
@@ -371,14 +377,14 @@ body{
           display: flex;
           flex-direction: column;
           gap: 20px;
-          @media screen and (max-width: 480px){
-            width: 120%;
+          @media screen and (max-width: 680px){
+            //width: 120%;
           }
           @media screen and (max-width: 470px){
-            width: 132%;
+            //width: 132%;
           }
           @media screen and (max-width: 430px){
-            width: 156%;
+            //i_header
           }
           .i_banner-item {
             display: flex;
@@ -909,17 +915,36 @@ body{
     align-items: center;
     border: 0;
     justify-content: center;
-    @media (hover: hover) {
-      &:hover {
-        filter: brightness(90%);
+    svg{
+      margin: 0 5px 5px 0;
+    }
+    @media screen and (max-width: 1330px){
+      width: 40px;
+      height: 40px;
+      svg{
+        width: 27px;
+        height: 27px;
       }
     }
-    //HOVER NIGHT SUN
-    .i_banner-icon-nightSun {
-      margin-bottom: 5px;
-      margin-right: 5px;
-      color: var(--color-circleIcon);
+    @media screen and (max-width: 1000px){
+      svg{
+      }
     }
+    @media screen and (max-width: 760px){
+      svg{
+      }
+    }
+    //@media (hover: hover) {
+    //  &:hover {
+    //    filter: brightness(90%);
+    //  }
+    //}
+    //HOVER NIGHT SUN
+    //.i_banner-icon-nightSun {
+    //  margin-bottom: 5px;
+    //  margin-right: 5px;
+    //  color: var(--color-circleIcon);
+    //}
     &:focus {
       background-color: var(--color-Grey);
       transition: 0.3s ease;
@@ -934,6 +959,9 @@ body{
     //!HOVER NIGHT SUN
   }
   //!MAIN NIGHT SUN
+  .i_banner-sun_item{
+
+  }
 }
 //!MAIN GROUP SOCIAL
 
@@ -1064,11 +1092,14 @@ body{
         @media screen and (max-width: 760px){
           gap: 18px;
         }
-        @media screen and (max-width: 480px){
+        @media screen and (max-width: 680px){
           gap: 40px;
         }
-        @media screen and (max-width: 480px){
+        @media screen and (max-width: 580px){
           gap: 30px;
+        }
+        @media screen and (max-width: 400px){
+          gap: 20px;
         }
         //News Лист
         .news-item{
@@ -1103,6 +1134,7 @@ body{
           @media screen and (max-width: 760px){
             width: 50%;
             height: 500px;
+            gap: 15px;
             &:nth-child(2){
               display: flex;
             }
@@ -1110,13 +1142,23 @@ body{
               display: flex;
             }
           }
-          @media screen and (max-width: 480px){
-            padding: 30px 8px;
-            height: 440px;
-            gap: 5px;
+          @media screen and (max-width: 680px){
+            padding: 30px 10px;
+            height: 550px;
+            width: 49%;
+            gap: 28px;
             &:nth-child(1){
               display: none;
             }
+          }
+          @media screen and (max-width: 480px){
+            padding: 30px 8px;
+            height: 440px;
+            width: 47%;
+            gap: 25px;
+          }
+          @media screen and (max-width: 430px){
+            gap: 10px;
           }
           //News изображение
           .news-item-img{
@@ -1165,6 +1207,7 @@ body{
               text-align: center;
               @media screen and (max-width: 1330px){
                 font-size: 18px;
+                height: max-content;
               }
               @media screen and (max-width: 480px){
                 font-size: 16px;
@@ -1920,7 +1963,7 @@ body{
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 40px;
+      gap: 15px;
       height: 100px;
       @media screen and (max-width: 1200px){
         gap: 20px;
@@ -1956,7 +1999,7 @@ body{
           .i_header-menu-item a {
             color: var(--color-black);
             font-size: 13px;
-            font-weight: bold;
+            font-weight: normal;
             @media screen and (max-width: 1200px){
               font-size: 12px;
             }
@@ -2014,18 +2057,32 @@ body{
       .i_container{
         //Фоновая картинка
         .i_banner-bg{
-          width: 33%;
-          left: 34%;
+          width: 35%;
+          left: 33%;
+          @media screen and (max-width: 1200px){
+            width: 40%;
+            left: 28%;
+          }
         }
         //!Фоновая картинка
         //Левая часть баннера
         .i_banner-left{
           //Логотип ExSol.com
-          .i_banner-logo svg{
-            width: 336px;
-            height: 63px;
-            margin-top: 88px;
-            margin-bottom: 60px;
+          .i_banner-logo{
+            width: 85%;
+            svg{
+              width: 100%;
+              //height: 63px;
+              margin-top: 65px;
+              margin-bottom: 65px;
+            }
+            @media screen and (max-width: 1200px){
+              width: 75%;
+              svg{
+                margin-top: 60px;
+                margin-bottom: 40px;
+              }
+            }
           }
           //!Логотип ExSol.com
           //Заголовок
@@ -2038,6 +2095,14 @@ body{
             p{
               font-size: 34px;
               text-transform: uppercase;
+            }
+            @media screen and (max-width: 1200px){
+              span{
+                font-size: 30px;
+              }
+              p{
+                font-size: 30px;
+              }
             }
           }
           //!Заголовок
@@ -2052,6 +2117,10 @@ body{
             height: 50px;
             margin-top: 70px;
             font-size: 14px;
+            @media screen and (max-width: 1200px){
+              width: 240px;
+              margin-top: 50px;
+            }
           }
           //!Кнопка Оставить Заявку
         }
@@ -2059,6 +2128,9 @@ body{
         //Правая часть баннера
         .i_banner-right{
           gap: 112px;
+          @media screen and (max-width: 1200px){
+            gap: 80px;
+          }
           //Группа Соц-сетей и ДеньНочь
           .i_banner-group_social{
             gap: 30px;
@@ -2079,18 +2151,6 @@ body{
                 }
             }
             //!Группа Соц-сети
-            //Группа ДеньНочь
-            .i_banner-night_sun{
-              .i_banner-night_sun_item{
-                width: 40px;
-                height: 40px;
-                svg{
-                  width: 22px;
-                  height: 22px;
-                }
-              }
-            }
-            //Группа ДеньНочь
           }
           //!Группа Соц-сетей и ДеньНочь
           //Группа Навыки
@@ -2307,7 +2367,7 @@ body{
 }
 
 //HEADER MEDIA ADAPTIVE 1000
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   //Header
   .i_header {
     .i_container {
@@ -2318,7 +2378,10 @@ body{
       height: 100px;
       //Header Left
       .i_header-left{
-        display: none;
+        display: flex;
+        @media screen and (max-width: 480px){
+          display: none;
+        }
         //Header Burger
         .i_header-burger{
           width: 40px;
@@ -2340,7 +2403,10 @@ body{
       .i_header-right{
         gap: 10px;
         .i_header-burger{
-          display: flex;
+          display: none;
+          @media screen and (max-width: 480px){
+            display: flex;
+          }
           width: 40px;
           height: 40px;
           min-width: 40px;
@@ -2351,7 +2417,7 @@ body{
         }
         //Header Blog
         .i_header-blog{
-          width: 95px;
+          width: 140px;
           height: 40px;
           font-size: 12px;
         }
@@ -2408,11 +2474,21 @@ body{
           top: -100px;
           z-index: 2;
           //Логотип ExSol.com
-          .i_banner-logo svg{
-            width: 215px;
-            height: 40px;
-            margin-top: 30px;
-            margin-bottom: 60px;
+          .i_banner-logo{
+            position: relative;
+            right: -20%;
+            @media screen and (max-width: 680px){
+              right: 0;
+            }
+            @media screen and (max-width: 480px){
+              right: 0;
+            }
+            svg{
+              width: 215px;
+              height: 40px;
+              margin-top: 30px;
+              margin-bottom: 60px;
+            }
           }
           //!Логотип ExSol.com
           //Заголовок
@@ -2444,10 +2520,17 @@ body{
           display: flex;
           width: 61.3%;
           justify-content: flex-end;
+          @media screen and (max-width: 680px){
+            width: max-content;
+          }
           //Правая часть баннера
           .i_banner-right{
             position: relative;
             left: 63%;
+            @media screen and (max-width: 680px){
+              left: 50%;
+              transform: translateX(-50%);
+            }
             gap: 70px;
             @media screen and (max-width: 480px){
               left: 50%;
@@ -2479,18 +2562,7 @@ body{
                 }
               }
               //!Группа Соц-сети
-              //Группа ДеньНочь
-              .i_banner-night_sun{
-                .i_banner-night_sun_item{
-                  width: 40px;
-                  height: 40px;
-                  svg{
-                    width: 22px;
-                    height: 22px;
-                  }
-                }
-              }
-              //Группа ДеньНочь
+
             }
             //!Группа Соц-сетей и ДеньНочь
             //Группа Навыки
@@ -2751,7 +2823,6 @@ body{
         gap: 10px;
         //Header Blog
         .i_header-blog{
-          width: 95px;
           height: 40px;
           font-size: 12px;
         }
@@ -2895,18 +2966,7 @@ body{
               }
             }
             //!Группа Соц-сети
-            //Группа ДеньНочь
-            .i_banner-night_sun{
-              .i_banner-night_sun_item{
-                width: 40px;
-                height: 40px;
-                svg{
-                  width: 22px;
-                  height: 22px;
-                }
-              }
-            }
-            //Группа ДеньНочь
+
           }
           //!Группа Соц-сетей и ДеньНочь
           //Группа Навыки
@@ -3157,7 +3217,7 @@ body{
 //!HEADER MEDIA ADAPTIVE 760
 
 //HEADER MEDIA ADAPTIVE 480
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
   //Header
   .i_header {
     .i_container {
