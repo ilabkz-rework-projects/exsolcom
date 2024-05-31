@@ -8,6 +8,22 @@
   padding-bottom: 80px;
   position: relative;
   z-index: 2;
+  @media screen and (max-width: 1330px){
+    background-position-x: -90%;
+  }
+  @media screen and (max-width: 1000px){
+    background-position-x: -260%;
+  }
+  @media screen and (max-width: 900px){
+    background-position-x: -120%;
+  }
+  @media screen and (max-width: 760px){
+    background-position-x: 1300%;
+  }
+  @media screen and (max-width: 480px){
+    background-position-x: 160%;
+    background-position-y: 165%;
+  }
   .i_container{
     position: relative;
     .i_personal-title{
@@ -67,7 +83,7 @@
         height: 406px;
         background-color: var(--bg-block);
         border-radius: 100%;
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
         position: absolute;
         z-index: -1;
         left: 50%;
@@ -106,7 +122,7 @@
           display: flex;
           align-items: center;
           flex-direction: column;
-          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
           border-radius: 100% 100% 35px 35px;
           cursor: pointer;
           gap: 40px;

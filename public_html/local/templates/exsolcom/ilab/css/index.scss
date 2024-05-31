@@ -450,6 +450,22 @@ body{
     background-repeat: no-repeat;
     background-position-x: 108%;
     background-position-y: center;
+    @media screen and (max-width: 1330px){
+      background-position-x: 135%;
+    }
+    @media screen and (max-width: 1000px){
+      background-position-x: 330%;
+      background-size: 90%;
+    }
+    @media screen and (max-width: 760px){
+      background-position-x: -145%;
+      background-size: 115%;
+    }
+    @media screen and (max-width: 480px){
+      background-position-x: 15%;
+      background-size: 170%;
+      background-position-y: 19%;
+    }
     .i_container {
       position: relative;
       display: flex;
@@ -532,6 +548,7 @@ body{
           position: relative;
           z-index: 2;
           overflow: hidden;
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
           @media screen and (max-width: 1520px){
             gap: 15px;
             padding: 30px 20px;
@@ -1651,7 +1668,7 @@ body{
         position: relative;
         z-index: 1;
         padding: 10px 30px;
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
         transition: all .4s ease;
         gap: 20px;
         overflow: hidden;
@@ -1848,7 +1865,7 @@ body{
             }
             &:hover{
               background-color: var(--color-circlesHover);
-              box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
+              box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
               svg{
                 color: var(--color-red);
               }
@@ -1958,7 +1975,7 @@ body{
               }
               &:hover{
                 background-color: var(--color-circlesHover);
-                box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
+                box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
                 svg{
                   color: var(--color-red);
                 }

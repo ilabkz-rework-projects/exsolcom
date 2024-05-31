@@ -9,7 +9,7 @@ button {
   transition: all 0.4s ease;
 }
 button:hover {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
   color: var(--color-red);
   background-color: var(--bg-buttonHover);
 }
@@ -24,7 +24,7 @@ span:hover {
 }
 
 .news-item {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.4s ease;
 }
@@ -39,7 +39,7 @@ span:hover {
 }
 
 .blog-item {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.4s ease;
 }
