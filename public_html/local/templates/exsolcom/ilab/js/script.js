@@ -128,3 +128,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		setTimeout(() => document.documentElement.classList.remove('transition'), 1000);
 	};
 });
+
+document.addEventListener('DOMContentLoaded', (event) =>{
+	const circle = document.getElementById('myCircles');
+
+	circle.addEventListener('click', () =>{
+		circle.classList.toggle('wide');
+	});
+});
