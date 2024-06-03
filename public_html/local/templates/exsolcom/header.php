@@ -48,8 +48,13 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
 
             <!--HEADER MORE-->
             <div class="i_header-more">
-                <button class="i_header-circles">
-                    <span>RU</span>
+                <button id="language" class="i_language-selector">
+                    <div class="text-container">
+                        <div class="text-option" data-value="RU">RU</div>
+                        <div class="text-option" data-value="KZ">KZ</div>
+                        <div class="text-option" data-value="EN">EN</div>
+                    </div>
+                    <span id="selectedText">RU</span>
                 </button>
                 <button class="i_header-circles">
                     <svg class="lupa-icon" width="18" height="18" viewBox="0 0 173 173" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

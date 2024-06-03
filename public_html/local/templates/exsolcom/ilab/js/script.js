@@ -131,8 +131,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', (event) =>{
 	const circle = document.getElementById('myCircles');
+	const closeButton = document.querySelector('.close_hide_menu');
 
 	circle.addEventListener('click', () =>{
-		circle.classList.toggle('wide');
+		if(!circle.classList.contains('wide')){
+			circle.classList.add('wide');
+		}
+	});
+
+	closeButton.addEventListener('click', (event) => {
+		event.stopPropagation();
+		circle.classList.remove('wide');
+	});
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+	const language = document.getElementById('language');
+	const textOptions = document.querySelector('.text-option');
+	const selectedText = document.getElementById('selectedText');
+
+	language.addEventListener('click', () => {
+		language.classList.toggle('expanded');
+	});
+
+	textOptions.forEach(option => {
+		option.addEventListener('click', (event) => {
+			event.stopPropagation();
+			selectedText.textContent = option.textContent;
+			language.classList.remove('expanded');
+		});
 	});
 });

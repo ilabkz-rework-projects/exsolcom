@@ -119,6 +119,7 @@ body{
     .i_header-right {
       display: flex;
       gap: 50px;
+      position: relative;
       .i_header-burger{
         display: none;
       }
@@ -135,7 +136,92 @@ body{
       .i_header-more {
         display: flex;
         gap: 10px;
+        .i_language-selector{
+          width: 50px;
+          height: 50px;
+          background-color: var(--color-circles);
+          border-radius: 25px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all .4s ease;
+          position: relative;
+          @media screen and (max-width: 1330px){
+            width: 40px;
+            height: 40px;
+          }
+          //RU
+          span {
+            margin-top: 2px;
+            color: var(--color-circleIcon);
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            font-optical-sizing: auto;
+          }
 
+          &:hover {
+            color: var(--color-black);
+            background: var(--color-circlesHover);
+            transition: 0.3s ease;
+            cursor: pointer;
+
+            span {
+              color: var(--color-red);
+              font-weight: normal;
+            }
+          }
+          //!RU
+          &.expanded {
+            position: absolute;
+            left: 110px;
+            z-index: 3;
+            height: 150px;
+            border-radius: 25px;
+            border: 0;
+            &:active {
+              color: var(--color-black);
+              background: var(--color-circlesHover);
+              transition: 0.3s ease;
+              cursor: pointer;
+
+              span {
+                color: var(--color-red);
+                font-weight: normal;
+              }
+            }
+          }
+          .text-container {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 100%;
+          }
+
+          &.expanded .text-container {
+            display: flex;
+          }
+
+          .text-option {
+            font-size: 14px;
+            padding: 10px 0;
+            cursor: pointer;
+            color: var(--color-black);
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: var(--color-red);
+            }
+          }
+          #selectedText {
+            display: none;
+          }
+
+          &:not(.expanded) #selectedText {
+            display: block;
+          }
+        }
         #myCircles {
           width: 50px;
           height: 50px;
@@ -147,20 +233,35 @@ body{
           transition: all .8s ease;
           position: relative;
           box-shadow: none;
+          &:hover {
+            color: var(--color-black);
+            background: var(--color-circlesHover);
+            transition: 0.3s ease;
+            cursor: pointer;
+
+            span {
+              color: var(--color-red);
+              font-weight: normal;
+            }
+          }
+          .whatsapp-icon{
+            margin: 3px 0 0 1px;
+          }
           @media screen and (max-width: 1330px){
             width: 40px;
             height: 40px;
           }
           .i_drop{
             display: none;
+            opacity: 0;
+            visibility: hidden;
           }
           &.wide{
             position: absolute;
             width: 240px;
-            transition: all .8s ease;
-            background-color: var(--color-Grey);
-            width: 240px;
-            right: 160px;
+            transition: all .4s ease;
+            background-color: var(--color-circlesHover);
+            right: -70px;
             .i_phone_wpp{
               svg{
                 position: relative;
@@ -172,21 +273,27 @@ body{
           }
           &.wide{
             .close_hide_menu{
-              background-image: url("../img/svg/close-icon_new.svg");
+              background-image: url("../img/svg/close-iconLight.svg");
               background-repeat: no-repeat;
+              background-position: center;
+              background-size: 24px auto;
               position: absolute;
-              top: 14px;
+              margin: 0;
               right: 15px;
               width: 23px;
-              height: 40%;
+              height: 100%;
             }
             .j_drop{
               display: block;
+              margin: 0;
+              opacity: 1;
+              visibility: visible;
+              transition: all .4s ease;
               a{
                 position: relative;
                 left: -12px;
                 background-color: transparent;
-                color: #000;
+                color: var(--color-black);
                 font-weight: 600;
                 font-size: 16px;
                 text-decoration: none;
@@ -197,8 +304,7 @@ body{
             }
           }
         }
-        .i_header-circles,
-        .i_language-selector {
+        .i_header-circles {
           width: 50px;
           height: 50px;
           background-color: var(--color-circles);
@@ -312,7 +418,7 @@ body{
     }
     &:focus {
       color: var(--color-red);
-      background-color: var(--color-White);
+      background-color: var(--color-circlesHover);
       border-radius: 25px;
       padding: 2vh 4vh;
     }

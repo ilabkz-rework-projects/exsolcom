@@ -1,4 +1,16 @@
 html[data-theme='dark']{
+  .i_header{
+    .i_header-more{
+      #myCircles{
+        &.wide {
+          .close_hide_menu {
+            background-image: url("../img/svg/close-iconNight.svg") !important;
+          }
+        }
+      }
+    }
+  }
+
   .i_our-services{
     background-image: url("../img/svg/bg-element-dark_1.svg") ;
   }
