@@ -259,17 +259,22 @@ body {
   display: none;
   opacity: 0;
   visibility: hidden;
+  position: absolute;
+}
+.i_header .i_container .i_header-right .i_header-more #myCircles .i_drop a {
+  color: var(--color-black);
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  background-color: transparent;
+  text-wrap: nowrap;
 }
 .i_header .i_container .i_header-right .i_header-more #myCircles.wide {
   transition: all 0.4s ease;
   background-color: var(--color-circlesHover);
   right: 26px;
-}
-.i_header .i_container .i_header-right .i_header-more #myCircles.wide .i_phone_wpp svg {
-  position: relative;
-  left: -96px;
-  z-index: 3;
-  color: var(--color-circlesSecondIcon);
 }
 .i_header .i_container .i_header-right .i_header-more #myCircles.wide .close_hide_menu {
   background-image: url("../img/svg/close-iconLight.svg");
@@ -284,23 +289,22 @@ body {
   z-index: 1;
 }
 .i_header .i_container .i_header-right .i_header-more #myCircles.wide .j_drop {
-  position: absolute;
   width: 240px;
   opacity: 1;
   visibility: visible;
   z-index: 1;
+  height: 105%;
 }
 .i_header .i_container .i_header-right .i_header-more #myCircles.wide .j_drop a {
-  position: relative;
-  left: -12px;
-  background-color: transparent;
-  color: var(--color-black);
-  font-weight: 600;
-  font-size: 16px;
-  text-decoration: none;
-  outline: none;
-  transition: all 0.8s ease;
   opacity: 1;
+}
+.i_header .i_container .i_header-right .i_header-more #myCircles.wide .j_drop svg {
+  margin: 0;
+  fill: black;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .i_header .i_container .i_header-right .i_header-more #myCircles .j_drop {
   z-index: -1;
