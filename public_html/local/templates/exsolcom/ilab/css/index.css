@@ -261,16 +261,14 @@ body {
   visibility: hidden;
 }
 .i_header .i_container .i_header-right .i_header-more #myCircles.wide {
-  position: absolute;
-  width: 240px;
   transition: all 0.4s ease;
   background-color: var(--color-circlesHover);
-  right: -70px;
+  right: 26px;
 }
 .i_header .i_container .i_header-right .i_header-more #myCircles.wide .i_phone_wpp svg {
   position: relative;
-  top: 1px;
-  left: -31px;
+  left: -96px;
+  z-index: 3;
   color: var(--color-circlesSecondIcon);
 }
 .i_header .i_container .i_header-right .i_header-more #myCircles.wide .close_hide_menu {
@@ -280,12 +278,19 @@ body {
   background-size: 24px auto;
   position: absolute;
   margin: 0;
-  right: 15px;
+  right: -80px;
   width: 23px;
   height: 100%;
 }
 .i_header .i_container .i_header-right .i_header-more #myCircles.wide .j_drop {
-  display: block;
+  position: absolute;
+  width: 240px;
+  height: 100%;
+  border-radius: 50px;
+  background-color: var(--color-circlesHover);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   opacity: 1;
   visibility: visible;
