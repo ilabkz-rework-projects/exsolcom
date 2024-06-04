@@ -190,7 +190,7 @@ body {
 }
 @media screen and (max-width: 1330px) {
   .i_header .i_container .i_header-right .i_header-more .i_language-selector.expanded .text-container {
-    height: 132px;
+    height: 120px;
   }
 }
 .i_header .i_container .i_header-right .i_header-more .i_language-selector.expanded:active {
@@ -230,7 +230,7 @@ body {
 @media screen and (max-width: 1330px) {
   .i_header .i_container .i_header-right .i_header-more .i_language-selector .text-option {
     font-size: 12px;
-    padding: 15px 0;
+    padding: 13px 0;
   }
 }
 .i_header .i_container .i_header-right .i_header-more .i_language-selector .text-option:hover {
