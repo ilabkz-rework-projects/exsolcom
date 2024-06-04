@@ -147,6 +147,7 @@ body {
   justify-content: center;
   transition: all 0.4s ease;
   position: relative;
+  overflow: hidden;
 }
 @media screen and (max-width: 1330px) {
   .i_header .i_container .i_header-right .i_header-more .i_language-selector {
@@ -173,12 +174,14 @@ body {
   font-weight: normal;
 }
 .i_header .i_container .i_header-right .i_header-more .i_language-selector.expanded {
-  position: absolute;
-  left: 110px;
   z-index: 3;
-  height: 150px;
   border-radius: 25px;
+  background-color: transparent;
   border: 0;
+  overflow: unset;
+}
+.i_header .i_container .i_header-right .i_header-more .i_language-selector.expanded .text-container {
+  height: 150px;
 }
 .i_header .i_container .i_header-right .i_header-more .i_language-selector.expanded:active {
   color: var(--color-black);
@@ -191,14 +194,19 @@ body {
   font-weight: normal;
 }
 .i_header .i_container .i_header-right .i_header-more .i_language-selector .text-container {
-  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 100%;
-}
-.i_header .i_container .i_header-right .i_header-more .i_language-selector.expanded .text-container {
   display: flex;
+  top: 0;
+  position: absolute;
+  height: 50px;
+  z-index: -1;
+  background-color: var(--color-circlesHover);
+  overflow: hidden;
+  width: 100%;
+  border-radius: 25px;
+  transition: all 0.4s ease;
 }
 .i_header .i_container .i_header-right .i_header-more .i_language-selector .text-option {
   font-size: 14px;

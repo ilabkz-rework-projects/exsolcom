@@ -146,6 +146,7 @@ body{
           justify-content: center;
           transition: all .4s ease;
           position: relative;
+          overflow: hidden;
           @media screen and (max-width: 1330px){
             width: 40px;
             height: 40px;
@@ -173,12 +174,16 @@ body{
           }
           //!RU
           &.expanded {
-            position: absolute;
-            left: 110px;
+            //position: absolute;
+            //left: 110px;
             z-index: 3;
-            height: 150px;
             border-radius: 25px;
+            background-color: transparent;
             border: 0;
+            overflow: unset;
+            .text-container{
+              height: 150px;
+            }
             &:active {
               color: var(--color-black);
               background: var(--color-circlesHover);
@@ -192,15 +197,19 @@ body{
             }
           }
           .text-container {
-            display: none;
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
-            height: 100%;
-          }
-
-          &.expanded .text-container {
-            display: flex;
+            display:flex;
+            top:0;
+            position: absolute;
+            height: 50px;
+            z-index: -1;
+            background-color: var(--color-circlesHover);
+            overflow: hidden;
+            width: 100%;
+            border-radius: 25px;
+            transition: all .4s ease;
           }
 
           .text-option {
