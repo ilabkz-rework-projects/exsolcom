@@ -281,20 +281,14 @@ body {
   right: -80px;
   width: 23px;
   height: 100%;
+  z-index: 1;
 }
 .i_header .i_container .i_header-right .i_header-more #myCircles.wide .j_drop {
   position: absolute;
   width: 240px;
-  height: 100%;
-  border-radius: 50px;
-  background-color: var(--color-circlesHover);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
   opacity: 1;
   visibility: visible;
-  transition: all 0.4s ease;
+  z-index: 1;
 }
 .i_header .i_container .i_header-right .i_header-more #myCircles.wide .j_drop a {
   position: relative;
@@ -307,6 +301,22 @@ body {
   outline: none;
   transition: all 0.8s ease;
   opacity: 1;
+}
+.i_header .i_container .i_header-right .i_header-more #myCircles .j_drop {
+  z-index: -1;
+  overflow: hidden;
+  width: 50px;
+  transition: all 0.4s ease;
+  height: 100%;
+  border-radius: 50px;
+  background-color: var(--color-circlesHover);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
 }
 .i_header .i_container .i_header-right .i_header-more .i_header-circles {
   width: 50px;

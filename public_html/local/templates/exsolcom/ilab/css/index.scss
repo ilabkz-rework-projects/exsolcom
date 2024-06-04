@@ -291,20 +291,15 @@ body{
               right: -80px;
               width: 23px;
               height: 100%;
+              z-index: 1;
             }
             .j_drop{
               position: absolute;
               width: 240px;
-              height: 100%;
-              border-radius: 50px;
-              background-color: var(--color-circlesHover);
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              margin: 0;
               opacity: 1;
               visibility: visible;
-              transition: all .4s ease;
+              z-index: 1;
+
               a{
                 position: relative;
                 left: -12px;
@@ -319,6 +314,22 @@ body{
               }
             }
           }
+          .j_drop{
+            z-index: -1;
+            overflow: hidden;
+            width: 50px;
+            transition: all .4s ease;
+            height: 100%;
+            border-radius: 50px;
+            background-color: var(--color-circlesHover);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .4s ease;
+          }
         }
         .i_header-circles {
           width: 50px;
@@ -329,6 +340,7 @@ body{
           align-items: center;
           justify-content: center;
           transition: all .4s ease;
+
 
           //RU
           span {
