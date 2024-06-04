@@ -217,6 +217,7 @@ body {
   width: 100%;
   border-radius: 25px;
   transition: all 0.4s ease;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
 }
 .i_header .i_container .i_header-right .i_header-more .i_language-selector .text-option {
   font-size: 14px;
@@ -225,7 +226,7 @@ body {
   color: var(--color-black);
   transition: color 0.3s ease;
   width: 48px;
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid #ffffff;
 }
 @media screen and (max-width: 1330px) {
   .i_header .i_container .i_header-right .i_header-more .i_language-selector .text-option {
@@ -302,6 +303,11 @@ body {
 @media screen and (max-width: 1330px) {
   .i_header .i_container .i_header-right .i_header-more #myCircles .i_drop a {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_header .i_container .i_header-right .i_header-more #myCircles .i_drop a {
+    font-size: 13px;
   }
 }
 .i_header .i_container .i_header-right .i_header-more #myCircles.wide {
@@ -2107,6 +2113,14 @@ body {
 .i_footer .i_container .i_footer-left .i_footer-left-icons .i_footer-left-icons-item #myCircles2 .whatsapp-icon {
   margin: 2px 0 0 0;
 }
+.i_footer .i_container .i_footer-left .i_footer-left-icons .i_footer-left-icons-item #myCircles2:hover {
+  background-color: var(--color-circlesHover);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+.i_footer .i_container .i_footer-left .i_footer-left-icons .i_footer-left-icons-item #myCircles2:hover svg {
+  margin: 2px 0 0 0;
+  color: var(--color-red);
+}
 .i_footer .i_container .i_footer-left .i_footer-left-icons .i_footer-left-icons-item #myCircles2 .i_drop {
   display: none;
 }
@@ -3095,6 +3109,11 @@ body {
 @media screen and (max-width: 1100px) and (max-width: 1000px) {
   .i_footer .i_container .i_footer-right .i_footer-right-groupMore .i_footer-right-moreGroup .i_footer-right-more #myCircles3 .i_drop a {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 1100px) and (max-width: 760px) {
+  .i_footer .i_container .i_footer-right .i_footer-right-groupMore .i_footer-right-moreGroup .i_footer-right-more #myCircles3 .i_drop a {
+    font-size: 13px;
   }
 }
 @media screen and (max-width: 1100px) {

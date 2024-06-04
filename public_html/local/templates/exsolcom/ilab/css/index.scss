@@ -216,6 +216,7 @@ body{
             width: 100%;
             border-radius: 25px;
             transition: all .4s ease;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
           }
 
           .text-option {
@@ -225,7 +226,7 @@ body{
             color: var(--color-black);
             transition: color 0.3s ease;
             width: 48px;
-            border-bottom: 1px solid #e1e1e1;
+            border-bottom: 1px solid #ffffff;
             @media screen and (max-width: 1330px){
               font-size: 12px;
               padding: 13px 0;
@@ -298,6 +299,9 @@ body{
               text-wrap: nowrap;
               @media screen and (max-width: 1330px){
                 font-size: 14px;
+              }
+              @media screen and (max-width: 760px){
+                font-size: 13px;
               }
             }
           }
@@ -2078,6 +2082,15 @@ body{
             .whatsapp-icon{
               margin: 2px 0 0 0;
             }
+            &:hover{
+               background-color: var(--color-circlesHover);
+               box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+               svg{
+                 margin: 2px 0 0 0;
+                 color: var(--color-red);
+               }
+             }
+
             .i_drop{
               display: none;
             }
@@ -3198,6 +3211,9 @@ body{
                     text-wrap: nowrap;
                     @media screen and (max-width: 1000px){
                       font-size: 14px;
+                    }
+                    @media screen and (max-width: 760px){
+                      font-size: 13px;
                     }
                   }
                 }
