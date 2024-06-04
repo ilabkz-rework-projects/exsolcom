@@ -159,6 +159,9 @@ body{
             font-weight: normal;
             font-style: normal;
             font-optical-sizing: auto;
+            @media screen and (max-width: 1330px){
+              font-size: 12px;
+            }
           }
 
           &:hover {
@@ -183,6 +186,9 @@ body{
             overflow: unset;
             .text-container{
               height: 150px;
+              @media screen and (max-width: 1330px){
+                height: 132px;
+              }
             }
             &:active {
               color: var(--color-black);
@@ -214,11 +220,16 @@ body{
 
           .text-option {
             font-size: 14px;
-            padding: 10px 0;
+            padding: 17px 0;
             cursor: pointer;
             color: var(--color-black);
             transition: color 0.3s ease;
-
+            width: 48px;
+            border-bottom: 1px solid #e1e1e1;
+            @media screen and (max-width: 1330px){
+              font-size: 12px;
+              padding: 15px 0;
+            }
             &:hover {
               color: var(--color-red);
             }
@@ -254,17 +265,27 @@ body{
             }
           }
           .whatsapp-icon{
-            margin: 3px 0 0 1px;
+            margin: 3px 0 0 0;
           }
           @media screen and (max-width: 1330px){
             width: 40px;
             height: 40px;
           }
           .i_drop{
-            display: none;
+            position: absolute;
+            z-index: -1;
+            overflow: hidden;
+            width: 50px;
+            transition: all .4s ease;
+            height: 100%;
+            border-radius: 50px;
+            background-color: var(--color-circlesHover);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
             opacity: 0;
             visibility: hidden;
-            position: absolute;
 
             a{
               color: var(--color-black);
@@ -275,6 +296,9 @@ body{
               position: relative;
               background-color: transparent;
               text-wrap: nowrap;
+              @media screen and (max-width: 1330px){
+                font-size: 14px;
+              }
             }
           }
           &.wide{
@@ -296,6 +320,11 @@ body{
               width: 23px;
               height: 100%;
               z-index: 1;
+              @media screen and (max-width: 1330px){
+                right: -145%;
+                transform: translateX(50%);
+                background-size: 22px auto;
+              }
             }
             .j_drop{
               width: 240px;
@@ -303,6 +332,9 @@ body{
               visibility: visible;
               z-index: 1;
               height: 105%;
+              @media screen and (max-width: 1330px){
+                width: 195px;
+              }
 
               a{
                 opacity: 1;
@@ -310,29 +342,13 @@ body{
 
               svg{
                 margin: 0;
-                fill: black;
+                fill: var(--color-black);
                 position: absolute;
                 left: 15px;
                 top: 50%;
                 transform: translateY(-50%);
               }
             }
-          }
-          .j_drop{
-            z-index: -1;
-            overflow: hidden;
-            width: 50px;
-            transition: all .4s ease;
-            height: 100%;
-            border-radius: 50px;
-            background-color: var(--color-circlesHover);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0;
-            opacity: 0;
-            visibility: hidden;
-            transition: all .4s ease;
           }
         }
         .i_header-circles {
@@ -2051,6 +2067,131 @@ body{
           flex-wrap: nowrap;
           align-items: center;
           gap: 12px;
+          #myCircles2{
+            width: 50px;
+            height: 50px;
+            background-color: var(--color-circles);
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .whatsapp-icon{
+              margin: 2px 0 0 0;
+            }
+            .i_drop{
+              display: none;
+            }
+          }
+          @media screen and (max-width: 1330px){
+            #myCircles2{
+              width: 50px;
+              height: 50px;
+              background-color: var(--color-circles);
+              border-radius: 25px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: all .8s ease;
+              position: relative;
+              box-shadow: none;
+              &:hover {
+                color: var(--color-black);
+                background: var(--color-circlesHover);
+                transition: 0.3s ease;
+                cursor: pointer;
+
+                span {
+                  color: var(--color-red);
+                  font-weight: normal;
+                }
+              }
+              .whatsapp-icon{
+                margin: 3px 0 0 0;
+              }
+              @media screen and (max-width: 1330px){
+                width: 40px;
+                height: 40px;
+              }
+              .i_drop{
+                position: absolute;
+                z-index: -1;
+                overflow: hidden;
+                width: 50px;
+                transition: all .4s ease;
+                height: 100%;
+                border-radius: 50px;
+                background-color: var(--color-circlesHover);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                opacity: 0;
+                visibility: hidden;
+
+                a{
+                  color: var(--color-black);
+                  font-weight: 600;
+                  font-size: 16px;
+                  text-decoration: none;
+                  outline: none;
+                  position: relative;
+                  background-color: transparent;
+                  text-wrap: nowrap;
+                  @media screen and (max-width: 1330px){
+                    font-size: 14px;
+                  }
+                }
+              }
+              &.wide{
+                //position: absolute;
+                //width: 240px;
+                transition: all .4s ease;
+                background-color: var(--color-circlesHover);
+              }
+              &.wide{
+                .close_hide_menu2{
+                  background-image: url("../img/svg/close-iconLight.svg");
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  background-size: 24px auto;
+                  position: absolute;
+                  margin: 0;
+                  right: -80px;
+                  width: 23px;
+                  height: 100%;
+                  z-index: 1;
+                  @media screen and (max-width: 1330px){
+                    right: -145%;
+                    transform: translateX(50%);
+                    background-size: 22px auto;
+                  }
+                }
+                .j_drop{
+                  width: 240px;
+                  opacity: 1;
+                  visibility: visible;
+                  z-index: 1;
+                  height: 105%;
+                  @media screen and (max-width: 1330px){
+                    width: 195px;
+                  }
+
+                  a{
+                    opacity: 1;
+                  }
+
+                  svg{
+                    margin: 0;
+                    fill: var(--color-black);
+                    position: absolute;
+                    left: 15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                  }
+                }
+              }
+            }
+          }
           .i_footer-left-icons-item-circles{
             width: 50px;
             height: 50px;
@@ -2989,6 +3130,115 @@ body{
                 font-size: 13px;
                 @media screen and (max-width: 471px){
                   width: 126px;
+                }
+              }
+              #myCircles3{
+                width: 40px;
+                height: 40px;
+                background-color: var(--color-circles);
+                border-radius: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all .8s ease;
+                position: relative;
+                box-shadow: none;
+                &:hover {
+                  color: var(--color-black);
+                  background: var(--color-circlesHover);
+                  transition: 0.3s ease;
+                  cursor: pointer;
+
+                  span {
+                    color: var(--color-red);
+                    font-weight: normal;
+                  }
+                }
+                .whatsapp-icon{
+                  margin: 3px 0 0 0;
+                }
+                @media screen and (max-width: 1330px){
+                  width: 40px;
+                  height: 40px;
+                }
+                .i_drop{
+                  position: absolute;
+                  z-index: -1;
+                  overflow: hidden;
+                  width: 50px;
+                  transition: all .4s ease;
+                  height: 100%;
+                  border-radius: 50px;
+                  background-color: var(--color-circlesHover);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0;
+                  opacity: 0;
+                  visibility: hidden;
+
+                  a{
+                    color: var(--color-black);
+                    font-weight: 600;
+                    font-size: 16px;
+                    text-decoration: none;
+                    outline: none;
+                    position: relative;
+                    background-color: transparent;
+                    text-wrap: nowrap;
+                    @media screen and (max-width: 1330px){
+                      font-size: 14px;
+                    }
+                  }
+                }
+                &.wide{
+                  //position: absolute;
+                  //width: 240px;
+                  transition: all .4s ease;
+                  background-color: var(--color-circlesHover);
+                  right: 26px;
+                }
+                &.wide{
+                  .close_hide_menu3{
+                    background-image: url("../img/svg/close-iconLight.svg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 24px auto;
+                    position: absolute;
+                    margin: 0;
+                    right: -80px;
+                    width: 23px;
+                    height: 100%;
+                    z-index: 1;
+                    @media screen and (max-width: 1330px){
+                      right: -145%;
+                      transform: translateX(50%);
+                      background-size: 22px auto;
+                    }
+                  }
+                  .j_drop{
+                    width: 240px;
+                    opacity: 1;
+                    visibility: visible;
+                    z-index: 1;
+                    height: 105%;
+                    @media screen and (max-width: 1330px){
+                      width: 195px;
+                    }
+
+                    a{
+                      opacity: 1;
+                    }
+
+                    svg{
+                      margin: 0;
+                      fill: var(--color-black);
+                      position: absolute;
+                      left: 15px;
+                      top: 50%;
+                      transform: translateY(-50%);
+                    }
+                  }
                 }
               }
               .i_footer-right-more-icon{

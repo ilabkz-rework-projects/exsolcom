@@ -162,3 +162,35 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	});
 });
+
+document.addEventListener('DOMContentLoaded', (event) =>{
+	const circle2 = document.getElementById('myCircles2');
+	const closeButton2 = document.querySelector('.close_hide_menu2');
+
+	circle2.addEventListener('click', () =>{
+		if(!circle2.classList.contains('wide')){
+			circle2.classList.add('wide');
+		}
+	});
+
+	closeButton2.addEventListener('click', (event) => {
+		event.stopPropagation();
+		circle2.classList.remove('wide');
+	});
+});
+
+document.addEventListener('DOMContentLoaded', (event) =>{
+	const circle3 = document.getElementById('myCircles3');
+	const closeButton3 = document.querySelector('.close_hide_menu3');
+
+	circle3.addEventListener('click', () =>{
+		if(!circle3.classList.contains('wide')){
+			circle3.classList.add('wide');
+		}
+	});
+
+	closeButton3.addEventListener('click', (event) => {
+		event.stopPropagation();
+		circle3.classList.remove('wide');
+	});
+});
