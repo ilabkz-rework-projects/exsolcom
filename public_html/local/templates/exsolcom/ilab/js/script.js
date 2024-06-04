@@ -105,7 +105,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 });
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', (event) =>{
 	const currentTheme = localStorage.getItem('theme') || 'light';
 	document.documentElement.setAttribute('data-theme', currentTheme);
 
@@ -127,27 +127,10 @@ document.addEventListener('DOMContentLoaded', () => {
 		document.documentElement.classList.add('transition');
 		setTimeout(() => document.documentElement.classList.remove('transition'), 1000);
 	};
-});
 
-document.addEventListener('DOMContentLoaded', (event) =>{
-	const circle = document.getElementById('myCircles');
-	const closeButton = document.querySelector('.close_hide_menu');
-
-	circle.addEventListener('click', () =>{
-		if(!circle.classList.contains('wide')){
-			circle.classList.add('wide');
-		}
-	});
-
-	closeButton.addEventListener('click', (event) => {
-		event.stopPropagation();
-		circle.classList.remove('wide');
-	});
-});
-
-document.addEventListener('DOMContentLoaded', () => {
+	// Отвечает за расскрытие блока выбора языка
 	const language = document.getElementById('language');
-	const textOptions = document.querySelector('.text-option');
+	const textOptions = document.querySelectorAll('.text-option');
 	const selectedText = document.getElementById('selectedText');
 
 	language.addEventListener('click', () => {
@@ -161,9 +144,23 @@ document.addEventListener('DOMContentLoaded', () => {
 			language.classList.remove('expanded');
 		});
 	});
-});
 
-document.addEventListener('DOMContentLoaded', (event) =>{
+	// Здесь коммит сделаешь с описанием что это за блок и что он делает
+	const circle = document.getElementById('myCircles');
+	const closeButton = document.querySelector('.close_hide_menu');
+
+	circle.addEventListener('click', () =>{
+		if(!circle.classList.contains('wide')){
+			circle.classList.add('wide');
+		}
+		language.classList.remove('expanded');
+	});
+
+	closeButton.addEventListener('click', (event) => {
+		event.stopPropagation();
+		circle.classList.remove('wide');
+	});
+
 	const circle2 = document.getElementById('myCircles2');
 	const closeButton2 = document.querySelector('.close_hide_menu2');
 
@@ -177,9 +174,7 @@ document.addEventListener('DOMContentLoaded', (event) =>{
 		event.stopPropagation();
 		circle2.classList.remove('wide');
 	});
-});
 
-document.addEventListener('DOMContentLoaded', (event) =>{
 	const circle3 = document.getElementById('myCircles3');
 	const closeButton3 = document.querySelector('.close_hide_menu3');
 
