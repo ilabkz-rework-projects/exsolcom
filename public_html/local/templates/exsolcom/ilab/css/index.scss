@@ -2285,12 +2285,21 @@ body{
                 gap: 10px;
                 .i_footer-right-more-blog{
                   width: 136px;
+                  height: 40px;
+                  font-size: 13px;
+                  @media screen and (max-width: 471px){
+                    width: 126px;
+                  }
+                  @media screen and (max-width: 385px){
+                    width: 110px;
+                  }
+
                 }
               }
               @media screen and (max-width: 360px){
                 gap: 10px;
                 .i_footer-right-more-blog{
-                  width: 128px;
+                  width: 110px;
                 }
               }
             }
@@ -3125,12 +3134,12 @@ body{
                 gap: 10px;
               }
               .i_footer-right-more-blog{
-                width: 136px;
-                height: 40px;
-                font-size: 13px;
-                @media screen and (max-width: 471px){
-                  width: 126px;
-                }
+                //width: 136px;
+                //height: 40px;
+                //font-size: 13px;
+                //@media screen and (max-width: 471px){
+                //  width: 126px;
+                //}
               }
               #myCircles3{
                 width: 40px;
@@ -3164,6 +3173,7 @@ body{
                 .i_drop{
                   position: absolute;
                   z-index: -1;
+                  left: -6%;
                   overflow: hidden;
                   width: 50px;
                   transition: all .4s ease;
@@ -3186,7 +3196,7 @@ body{
                     position: relative;
                     background-color: transparent;
                     text-wrap: nowrap;
-                    @media screen and (max-width: 1330px){
+                    @media screen and (max-width: 1000px){
                       font-size: 14px;
                     }
                   }
@@ -3196,7 +3206,10 @@ body{
                   //width: 240px;
                   transition: all .4s ease;
                   background-color: var(--color-circlesHover);
-                  right: 26px;
+                  right: 0;
+                  @media screen and (max-width: 471px){
+
+                  }
                 }
                 &.wide{
                   .close_hide_menu3{
@@ -3210,10 +3223,21 @@ body{
                     width: 23px;
                     height: 100%;
                     z-index: 1;
-                    @media screen and (max-width: 1330px){
-                      right: -145%;
+                    @media screen and (max-width: 1100px){
+                      right: -480%;
                       transform: translateX(50%);
                       background-size: 22px auto;
+                    }
+                    @media screen and (max-width: 1000px){
+                      right: -440%;
+                      transform: translateX(50%);
+                      background-size: 22px auto;
+                    }
+                    @media screen and (max-width: 471px){
+                      right: -420%;
+                    }
+                    @media screen and (max-width: 385px){
+                      right: -380%;
                     }
                   }
                   .j_drop{
@@ -3222,8 +3246,17 @@ body{
                     visibility: visible;
                     z-index: 1;
                     height: 105%;
-                    @media screen and (max-width: 1330px){
-                      width: 195px;
+                    @media screen and (max-width: 1100px){
+                      width: 260px;
+                    }
+                    @media screen and (max-width: 1000px){
+                      width: 240px;
+                    }
+                    @media screen and (max-width: 471px){
+                      width: 230px;
+                    }
+                    @media screen and (max-width: 385px){
+                      width: 214px;
                     }
 
                     a{
@@ -4461,23 +4494,6 @@ body{
   }
   //!Main
 
-//Footer
-.i_footer{
-  .i_container{
-    .i_footer-right{
-      .i_footer-right-groupMore{
-        .i_footer-right-moreGroup{
-          .i_footer-right-more{
-            .i_footer-right-more-blog{
-              width: 126px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-//!Footer
 //!HEADER MEDIA ADAPTIVE 360
 
 
