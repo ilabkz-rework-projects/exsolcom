@@ -106,6 +106,7 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', (event) =>{
+	// Отвечает за переключение с светлой темы на темную и наоборот
 	const currentTheme = localStorage.getItem('theme') || 'light';
 	document.documentElement.setAttribute('data-theme', currentTheme);
 
@@ -145,7 +146,7 @@ document.addEventListener('DOMContentLoaded', (event) =>{
 		});
 	});
 
-	// Здесь коммит сделаешь с описанием что это за блок и что он делает
+	// Отвечает за раскрытие блока контакт ватсап в Header
 	const circle = document.getElementById('myCircles');
 	const closeButton = document.querySelector('.close_hide_menu');
 
@@ -161,6 +162,7 @@ document.addEventListener('DOMContentLoaded', (event) =>{
 		circle.classList.remove('wide');
 	});
 
+	// Отвечает за раскрытие блока контакт ватсап в Footer c 1330px до 1100px
 	const circle2 = document.getElementById('myCircles2');
 	const closeButton2 = document.querySelector('.close_hide_menu2');
 
@@ -175,6 +177,7 @@ document.addEventListener('DOMContentLoaded', (event) =>{
 		circle2.classList.remove('wide');
 	});
 
+	// Отвечает за раскрытие блока контакт ватсап в Footer c 1100px до 360px
 	const circle3 = document.getElementById('myCircles3');
 	const closeButton3 = document.querySelector('.close_hide_menu3');
 
