@@ -191,4 +191,25 @@ document.addEventListener('DOMContentLoaded', (event) =>{
 		event.stopPropagation();
 		circle3.classList.remove('wide');
 	});
+
+	// Отвечает за раскрытие блока поиска в header
+	const searchWrapper = document.querySelector('.i_search-wrapper');
+	const titleSearch = document.getElementById('title-search');
+	const closeSearch = document.querySelector('.i_search-close');
+
+	searchWrapper.addEventListener('click', () => {
+		if (!searchWrapper.classList.contains('widely')){
+			searchWrapper.classList.add('widely');
+		}
+
+		closeSearch.addEventListener('click', (event) => {
+			event.stopPropagation();
+			searchWrapper.classList.remove('widely');
+		});
+
+	});
+
+
+
+
 });

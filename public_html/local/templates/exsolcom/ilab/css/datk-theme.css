@@ -1,6 +1,9 @@
 html[data-theme=dark] .i_header .i_header-more #myCircles.wide .close_hide_menu {
   background-image: url("../img/svg/close-iconNight.svg") !important;
 }
+html[data-theme=dark] .i_header .i_header-more #title-search .i_search-close {
+  background-image: url("../img/svg/close-iconNight.svg") !important;
+}
 html[data-theme=dark] .i_footer .i_footer-left .i_footer-left-icons-item #myCircles2.wide .close_hide_menu2 {
   background-image: url("../img/svg/close-iconNight.svg") !important;
 }

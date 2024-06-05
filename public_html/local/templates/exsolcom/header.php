@@ -56,10 +56,22 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
 		                <div class="text-option" data-value="EN">EN</div>
 	                </div>
                 </button>
-                <button class="i_header-circles">
+                <button class="i_search-wrapper">
                     <svg class="lupa-icon" width="18" height="18" viewBox="0 0 173 173" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M169.9 170C166.8 173.1 161.7 173.1 158.6 170L110.2 121.6C80.6997 144.8 37.9997 139.8 14.6997 110.3C-8.50034 80.8 -3.50034 38.1 25.9997 14.8C55.4997 -8.4 98.1997 -3.4 121.5 26.1C140.9 50.8 140.9 85.6 121.5 110.3L169.9 158.7C173.1 161.8 173.1 166.8 169.9 170C170 169.9 170 169.9 169.9 170ZM105.6 30.7C84.8997 9.99999 51.2997 9.99999 30.5997 30.7C9.89967 51.4 9.89967 85 30.5997 105.7C51.2997 126.4 84.8997 126.4 105.6 105.7C126.3 84.9 126.3 51.4 105.6 30.7Z" />
                     </svg>
+                    <div id="title-search" class="i_search">
+                        <form action="/search/index.php">
+                            <span class="i_search-close"></span>
+                            <input id="title-search-input" type="text" placeholder="Искать на сайте" maxlength="50" autocomplete="off" size="10">
+                            <div class="search_button">
+                                <svg class="lupa-icon2" width="18" height="18" viewBox="0 0 173 173" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M169.9 170C166.8 173.1 161.7 173.1 158.6 170L110.2 121.6C80.6997 144.8 37.9997 139.8 14.6997 110.3C-8.50034 80.8 -3.50034 38.1 25.9997 14.8C55.4997 -8.4 98.1997 -3.4 121.5 26.1C140.9 50.8 140.9 85.6 121.5 110.3L169.9 158.7C173.1 161.8 173.1 166.8 169.9 170C170 169.9 170 169.9 169.9 170ZM105.6 30.7C84.8997 9.99999 51.2997 9.99999 30.5997 30.7C9.89967 51.4 9.89967 85 30.5997 105.7C51.2997 126.4 84.8997 126.4 105.6 105.7C126.3 84.9 126.3 51.4 105.6 30.7Z" />
+                                </svg>
+                                <input name="s" type="submit" value="Найти">
+                            </div>
+                        </form>
+                    </div>
                 </button>
                 <button id="myCircles" class="i_header-circles i_header_select">
                     <a href="tel:+77005010039" class="i_phone_wpp">
