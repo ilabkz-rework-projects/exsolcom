@@ -22,12 +22,13 @@ html{
   --bg-buttonHoverSecond: #ffffff;
   --color-buttonText: #ffffff;
   --bg-block: #ffffff;
+  --bg-block-personal: #f5f5f5;
   --color-textInfoblock: #000000;
   --bg-blockSliderProjectHover: #f9f9f9;
   --color-red: #FF161F;
   --color-Grey: #f5f5f5;
   --color-White: #ffffff;
-  --color-blockHv: #f9f9f9;
+  --color-blockHv: #f5f5f5;
   --color-title: #818181;
   --color-text-input: #919191;
 }
@@ -49,12 +50,13 @@ html[data-theme='dark']{
   --bg-buttonHoverSecond: #E1E1E1;
   --color-buttonText: #ffffff;
   --bg-block: #E1E1E1;
+  --bg-block-personal: #E1E1E1;
   --color-textInfoblock: #000000;
   --bg-blockSliderProjectHover: #ffffff;
   --color-red: #FF161F;
   --color-Grey: #f5f5f5;
   --color-White: #000000;
-  --color-blockHv: #f9f9f9;
+  --color-blockHv: #E1E1E1;
   --color-title: #818181;
   --color-text-input: #ffffff;
 }

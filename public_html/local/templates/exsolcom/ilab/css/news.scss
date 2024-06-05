@@ -1,0 +1,99 @@
+
+
+.i_main{
+  .i_container{
+    @media screen and (max-width: 1520px){
+      margin: 0 30px;
+    }
+    .i_news-page-title{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+      .i_news-page-title-icon{
+        width: 50px;
+        height: 50px;
+        background-color: var(--color-circles);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg{
+          color: var(--color-circleIcon);
+        }
+      }
+      .i_news-page-title-name{
+        display: flex;
+        justify-content: center;
+        span{
+          font-size: 32px;
+          font-weight: 400;
+        }
+      }
+    }
+    .news-page-list{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin: 70px 0;
+      .news-page-item{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-blockHv);
+        width: 20%;
+        min-width: 340px;
+        height: 600px;
+        border-radius: 30px;
+        padding: 50px 30px 60px;
+        gap: 20px;
+        .news-item-img{
+          width: 100%;
+          height: auto;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .news-date-time{
+          text-align: center;
+          span{
+            font-size: 14px;
+            font-weight: bold;
+            color: #7c7c7c;
+          }
+        }
+        a{
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          text-decoration: none;
+          b{
+            height: 42px;
+            font-size: 21px;
+            text-align: center;
+          }
+        }
+        .i_news-preview{
+          text-align: center;
+          word-break: break-word;
+          span{
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+            color: var(--color-textInfoblock);
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    .i_news-page-btn{
+      display: flex;
+      justify-content: center;
+      button{
+        padding: 16px 44px;
+      }
+      span{
+
+      }
+    }
+  }
+}
