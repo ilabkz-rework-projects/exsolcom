@@ -368,6 +368,7 @@ body{
           right: 0;
           align-items: center;
           justify-content: center;
+          transition: width 0.4s ease;
           @media screen and (max-width: 1330px){
             width: 40px;
             height: 40px;
@@ -382,6 +383,21 @@ body{
             height: 50px;
             border-radius: 25px;
             transition: all .4s ease;
+            .search_button{
+              input{
+                outline: none;
+                cursor: pointer;
+                position: absolute;
+                z-index: -1;
+                outline-style: none;
+                visibility: hidden;
+              }
+              .lupa-icon2{
+                position: absolute;
+                z-index: -1;
+                visibility: hidden;
+              }
+            }
           }
           //SEARCH ICON
           .lupa-icon {
@@ -404,22 +420,25 @@ body{
           }
           &.widely{
             .i_search{
-              width: 2784%;
+              width: auto;
+              right: -62px;
+              left: -2561.7%;
               position: absolute;
-              right: -122%;
               height: 105%;
               background: var(--color-circlesHover);
               z-index: 2;
               transition: all .4s ease;
               @media screen and (max-width: 1520px){
-                width: 2627%;
+                left: -2407.7%;
               }
               @media screen and (max-width: 1330px){
-                width: 1145px;
-                right: -127%;
-                input::placeholder {
-                  font-size: 16px;
-                }
+                right: -51px;
+                left: -2630.7%;
+                //width: 1145px;
+                //right: -127%;
+                //input::placeholder {
+                //  font-size: 16px;
+                //}
               }
               #title-search-input{
                 width: 97%;
@@ -473,6 +492,12 @@ body{
                   visibility: visible;
                   color: var(--color-White);
                 }
+                &:hover{
+                  .lupa-icon2{
+                    color: var(--color-red);
+                    transition: all .4s ease;
+                  }
+                }
               }
             }
             .i_search-close{
@@ -492,25 +517,6 @@ body{
                 right: 1142px;
                 width: 42px;
                 height: 42px;
-              }
-            }
-          }
-          .i_search{
-
-
-            .search_button{
-              input{
-                outline: none;
-                cursor: pointer;
-                position: absolute;
-                z-index: -1;
-                outline-style: none;
-                visibility: hidden;
-              }
-              .lupa-icon2{
-                position: absolute;
-                z-index: -1;
-                visibility: hidden;
               }
             }
           }
