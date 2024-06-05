@@ -404,13 +404,16 @@ body{
           }
           &.widely{
             .i_search{
-              width: 1392px;
+              width: 2784%;
               position: absolute;
               right: -122%;
               height: 105%;
               background: var(--color-circlesHover);
               z-index: 2;
               transition: all .4s ease;
+              @media screen and (max-width: 1520px){
+                width: 2627%;
+              }
               @media screen and (max-width: 1330px){
                 width: 1145px;
                 right: -127%;
@@ -421,12 +424,13 @@ body{
               #title-search-input{
                 width: 97%;
                 position: absolute;
-                top: 17px;
-                border: 0 transparent;
+                border: 0;
                 outline-style: none;
                 background-color: transparent;
                 z-index: 1;
-                transform: translateX(-50%);
+                height: 100%;
+                top: -50%;
+                transform: translate(-50%, 50%);
                 visibility: visible;
               }
               .color-text{
@@ -438,7 +442,7 @@ body{
               .search_button{
                 position: absolute;
                 transform: translateX(-50%);
-                left: 1426px;
+                left: 102.5%;
                 border-radius: 30px;
                 z-index: 3;
                 background-color: var(--color-black);
@@ -478,7 +482,7 @@ body{
               background-size: 28px auto;
               position: absolute;
               transform: translateX(-50%);
-              right: 1384px;
+              right: 99.4%;
               z-index: 1;
               width: 52px;
               height: 52px;
