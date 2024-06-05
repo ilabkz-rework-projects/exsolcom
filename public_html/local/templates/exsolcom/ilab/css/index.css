@@ -370,6 +370,16 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 1330px) {
+  .i_header .i_container .i_header-right .i_header-more .i_search-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+  .i_header .i_container .i_header-right .i_header-more .i_search-wrapper .lupa-icon {
+    width: 14px;
+    height: 16px;
+  }
+}
 .i_header .i_container .i_header-right .i_header-more .i_search-wrapper .i_search {
   position: absolute;
   width: 50px;
@@ -402,15 +412,28 @@ body {
   z-index: 2;
   transition: all 0.4s ease;
 }
+@media screen and (max-width: 1330px) {
+  .i_header .i_container .i_header-right .i_header-more .i_search-wrapper.widely .i_search {
+    width: 1145px;
+    right: -127%;
+  }
+  .i_header .i_container .i_header-right .i_header-more .i_search-wrapper.widely .i_search input::placeholder {
+    font-size: 16px;
+  }
+}
 .i_header .i_container .i_header-right .i_header-more .i_search-wrapper.widely .i_search #title-search-input {
   width: 97%;
   position: absolute;
   top: 17px;
   border: 0 transparent;
+  outline-style: none;
   background-color: transparent;
   z-index: 1;
   transform: translateX(-50%);
   visibility: visible;
+}
+.i_header .i_container .i_header-right .i_header-more .i_search-wrapper.widely .i_search .color-text {
+  color: var(--color-text-input);
 }
 .i_header .i_container .i_header-right .i_header-more .i_search-wrapper.widely .i_search input::placeholder {
   color: var(--color-text-input);
@@ -427,6 +450,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 1330px) {
+  .i_header .i_container .i_header-right .i_header-more .i_search-wrapper.widely .i_search .search_button {
+    width: 42px;
+    height: 42px;
+    left: 1173px;
+  }
+  .i_header .i_container .i_header-right .i_header-more .i_search-wrapper.widely .i_search .search_button .lupa-icon2 {
+    width: 14px;
+    height: 16px;
+  }
 }
 .i_header .i_container .i_header-right .i_header-more .i_search-wrapper.widely .i_search .search_button input {
   width: 100%;
@@ -445,7 +479,7 @@ body {
   background-image: url("../img/svg/close-iconLight.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 24px auto;
+  background-size: 28px auto;
   position: absolute;
   transform: translateX(-50%);
   right: 1384px;
@@ -454,6 +488,13 @@ body {
   height: 52px;
   background-color: var(--color-circlesHover);
   border-radius: 30px;
+}
+@media screen and (max-width: 1330px) {
+  .i_header .i_container .i_header-right .i_header-more .i_search-wrapper.widely .i_search-close {
+    right: 1142px;
+    width: 42px;
+    height: 42px;
+  }
 }
 .i_header .i_container .i_header-right .i_header-more .i_search-wrapper .i_search .search_button input {
   outline: none;
@@ -2568,10 +2609,6 @@ body {
   }
   .i_header .i_container .i_header-right .i_header-more .i_header-circles span {
     font-size: 12px;
-  }
-  .i_header .i_container .i_header-right .i_header-more .i_header-circles .lupa-icon {
-    width: 14px;
-    height: 16px;
   }
   .i_header .i_container .i_header-right .i_header-more .i_header-circles .whatsapp-icon {
     width: 14px;
