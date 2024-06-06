@@ -23,7 +23,8 @@ span{
   }
 }
 
-.news-item{
+.news-item,
+.news-page-item{
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all .4s ease;

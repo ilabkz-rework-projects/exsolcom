@@ -12,8 +12,8 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
     $APPLICATION->ShowHead();
     $APPLICATION->ShowPanel();
     ?>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <header class="i_header">
     <div class="i_container">
@@ -50,11 +50,11 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
             <div class="i_header-more">
                 <button id="language" class="i_language-selector">
                     <span id="selectedText">RU</span>
-	                <div class="text-container">
-		                <div class="text-option" data-value="RU">RU</div>
-		                <div class="text-option" data-value="KZ">KZ</div>
-		                <div class="text-option" data-value="EN">EN</div>
-	                </div>
+                    <div class="text-container">
+                        <div class="text-option" data-value="RU">RU</div>
+                        <div class="text-option" data-value="KZ">KZ</div>
+                        <div class="text-option" data-value="EN">EN</div>
+                    </div>
                 </button>
                 <button class="i_search-wrapper">
                     <svg class="lupa-icon" width="18" height="18" viewBox="0 0 173 173" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -98,9 +98,3 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
         <!--!HEADER RIGHT-->
     </div>
 </header>
-
-<main class="i_main">
-
-
-
-

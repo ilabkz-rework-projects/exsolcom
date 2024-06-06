@@ -22,12 +22,13 @@ html{
   --bg-buttonHoverSecond: #ffffff;
   --color-buttonText: #ffffff;
   --bg-block: #ffffff;
+  --bg-block-personal: #f5f5f5;
   --color-textInfoblock: #000000;
   --bg-blockSliderProjectHover: #f9f9f9;
   --color-red: #FF161F;
   --color-Grey: #f5f5f5;
   --color-White: #ffffff;
-  --color-blockHv: #f9f9f9;
+  --color-blockHv: #f5f5f5;
   --color-title: #818181;
   --color-text-input: #919191;
 }
@@ -49,12 +50,13 @@ html[data-theme='dark']{
   --bg-buttonHoverSecond: #E1E1E1;
   --color-buttonText: #ffffff;
   --bg-block: #E1E1E1;
+  --bg-block-personal: #E1E1E1;
   --color-textInfoblock: #000000;
   --bg-blockSliderProjectHover: #ffffff;
   --color-red: #FF161F;
   --color-Grey: #f5f5f5;
   --color-White: #000000;
-  --color-blockHv: #f9f9f9;
+  --color-blockHv: #E1E1E1;
   --color-title: #818181;
   --color-text-input: #ffffff;
 }
@@ -86,9 +88,18 @@ body{
     width: 96%;
     margin: 0 30px;
   }
+  @media screen and (max-width: 1330px){
+    width: 95.5%;
+  }
+  @media screen and (max-width: 1000px){
+    width: 94%;
+  }
   @media screen and (max-width: 760px){
-    width: 95%;
+    width: 94.8%;
     margin: 0 20px;
+  }
+  @media screen and (max-width: 680px){
+    width: 94.1%;
   }
   @media screen and (max-width: 480px){
     width: 91.5%;
@@ -368,6 +379,7 @@ body{
           right: 0;
           align-items: center;
           justify-content: center;
+          transition: width 0.4s ease;
           @media screen and (max-width: 1330px){
             width: 40px;
             height: 40px;
@@ -382,6 +394,21 @@ body{
             height: 50px;
             border-radius: 25px;
             transition: all .4s ease;
+            .search_button{
+              input{
+                outline: none;
+                cursor: pointer;
+                position: absolute;
+                z-index: -1;
+                outline-style: none;
+                visibility: hidden;
+              }
+              .lupa-icon2{
+                position: absolute;
+                z-index: -1;
+                visibility: hidden;
+              }
+            }
           }
           //SEARCH ICON
           .lupa-icon {
@@ -404,22 +431,25 @@ body{
           }
           &.widely{
             .i_search{
-              width: 2784%;
+              width: auto;
+              right: -62px;
+              left: -2561.7%;
               position: absolute;
-              right: -122%;
               height: 105%;
               background: var(--color-circlesHover);
               z-index: 2;
               transition: all .4s ease;
               @media screen and (max-width: 1520px){
-                width: 2627%;
+                left: -2407.7%;
               }
               @media screen and (max-width: 1330px){
-                width: 1145px;
-                right: -127%;
-                input::placeholder {
-                  font-size: 16px;
-                }
+                right: -51px;
+                left: -2630.7%;
+                //width: 1145px;
+                //right: -127%;
+                //input::placeholder {
+                //  font-size: 16px;
+                //}
               }
               #title-search-input{
                 width: 97%;
@@ -473,6 +503,12 @@ body{
                   visibility: visible;
                   color: var(--color-White);
                 }
+                &:hover{
+                  .lupa-icon2{
+                    color: var(--color-red);
+                    transition: all .4s ease;
+                  }
+                }
               }
             }
             .i_search-close{
@@ -492,25 +528,6 @@ body{
                 right: 1142px;
                 width: 42px;
                 height: 42px;
-              }
-            }
-          }
-          .i_search{
-
-
-            .search_button{
-              input{
-                outline: none;
-                cursor: pointer;
-                position: absolute;
-                z-index: -1;
-                outline-style: none;
-                visibility: hidden;
-              }
-              .lupa-icon2{
-                position: absolute;
-                z-index: -1;
-                visibility: hidden;
               }
             }
           }
@@ -1514,6 +1531,9 @@ body{
         flex-direction: row;
         justify-content: space-between;
         gap: 40px;
+        font{
+          display: none;
+        }
         @media screen and (max-width: 1330px){
           gap: 30px;
           display: flex;
@@ -1641,10 +1661,11 @@ body{
               text-align: center;
               @media screen and (max-width: 1330px){
                 font-size: 18px;
-                height: max-content;
+                height: 42px;
               }
               @media screen and (max-width: 480px){
                 font-size: 16px;
+                height: 32px;
               }
               @media screen and (max-width: 360px){
                 font-size: 15px;
@@ -3034,7 +3055,7 @@ body{
   .i_main {
     //Banner
     .i_banner{
-      margin-bottom: 70px;
+      margin-bottom: 140px;
       .i_container{
         //Фоновая картинка
         .i_banner-bg{
