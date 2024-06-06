@@ -1522,6 +1522,9 @@ body{
         flex-direction: row;
         justify-content: space-between;
         gap: 40px;
+        font{
+          display: none;
+        }
         @media screen and (max-width: 1330px){
           gap: 30px;
           display: flex;
@@ -1649,10 +1652,11 @@ body{
               text-align: center;
               @media screen and (max-width: 1330px){
                 font-size: 18px;
-                height: max-content;
+                height: 42px;
               }
               @media screen and (max-width: 480px){
                 font-size: 16px;
+                height: 32px;
               }
               @media screen and (max-width: 360px){
                 font-size: 15px;

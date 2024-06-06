@@ -1468,6 +1468,9 @@ body {
   justify-content: space-between;
   gap: 40px;
 }
+.i_infoblock .i_container .i_news .news-list font {
+  display: none;
+}
 @media screen and (max-width: 1330px) {
   .i_infoblock .i_container .i_news .news-list {
     gap: 30px;
@@ -1623,12 +1626,13 @@ body {
 @media screen and (max-width: 1330px) {
   .i_infoblock .i_container .i_news .news-list a b {
     font-size: 18px;
-    height: max-content;
+    height: 42px;
   }
 }
 @media screen and (max-width: 480px) {
   .i_infoblock .i_container .i_news .news-list a b {
     font-size: 16px;
+    height: 32px;
   }
 }
 @media screen and (max-width: 360px) {

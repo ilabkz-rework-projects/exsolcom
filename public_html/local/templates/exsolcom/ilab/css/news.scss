@@ -1,10 +1,17 @@
 
 
-.i_main{
+.i_news-page{
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-image: url("../img/svg/bg-element-light_2.svg");
+  background-repeat: no-repeat;
+  background-position-x: 125%;
+  background-position-y: 15%;
+  @media screen and (max-width: 760px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .i_container{
-    @media screen and (max-width: 1520px){
-      margin: 0 30px;
-    }
     .i_news-page-title{
       display: flex;
       align-items: center;
@@ -21,31 +28,95 @@
         svg{
           color: var(--color-circleIcon);
         }
+        @media screen and (max-width: 760px){
+          width: 40px;
+          height: 40px;
+        }
+        svg{
+          color: var(--color-circleIcon);
+          @media screen and (max-width: 760px){
+            width: 20px;
+            height: 20px;
+          }
+        }
       }
       .i_news-page-title-name{
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         span{
-          font-size: 32px;
-          font-weight: 400;
+           font-size: 32px;
+           font-weight: 400;
+           @media screen and (max-width: 1330px){
+             font-size: 28px;
+           }
+           @media screen and (max-width: 760px){
+             font-size: 26px;
+           }
+           @media screen and (max-width: 480px){
+             font-size: 21px;
+           }
+         }
+        @media screen and (max-width: 1000px){
+          width: 50%;
         }
+        @media screen and (max-width: 760px){
+          width: unset;
+        }
+
       }
     }
     .news-page-list{
       display: flex;
+      justify-content: flex-start;
       flex-wrap: wrap;
       gap: 40px;
       margin: 70px 0;
+      @media screen and (max-width: 1330px){
+        gap: 30px;
+      }
+      @media screen and (max-width: 760px){
+        margin: 60px 0;
+        gap: 20px;
+      }
+      @media screen and (max-width: 730px){
+        gap: 40px;
+      }
+      @media screen and (max-width: 480px){
+        gap: 30px;
+      }
+      @media screen and (max-width: 360px){
+        gap: 30px;
+      }
       .news-page-item{
         display: flex;
         flex-direction: column;
         background-color: var(--color-blockHv);
-        width: 20%;
-        min-width: 340px;
-        height: 600px;
+        width: 23%;
+        //min-width: 340px;
+        height: max-content;
         border-radius: 30px;
         padding: 50px 30px 60px;
         gap: 20px;
+        @media screen and (max-width: 1520px){
+          width: 22.5%;
+          //min-width: 280px;
+        }
+        @media screen and (max-width: 1000px){
+          width: 30.5%;
+        }
+        @media screen and (max-width: 760px){
+          width: 31.4%;
+        }
+        @media screen and (max-width: 730px){
+          width: 45.4%;
+        }
+        @media screen and (max-width: 480px){
+          padding: 30px 10px;
+          gap: 10px;
+        }
+        @media screen and (max-width: 375px){
+          width: 44.4%;
+        }
         .news-item-img{
           width: 100%;
           height: auto;
@@ -60,6 +131,9 @@
             font-size: 14px;
             font-weight: bold;
             color: #7c7c7c;
+            @media screen and (max-width: 480px){
+              font-size: 13px;
+            }
           }
         }
         a{
@@ -71,6 +145,15 @@
             height: 42px;
             font-size: 21px;
             text-align: center;
+            @media screen and (max-width: 1330px){
+              font-size: 18px;
+            }
+            @media screen and (max-width: 480px){
+              font-size: 16px;
+            }
+            @media screen and (max-width: 450px){
+              height: 50px;
+            }
           }
         }
         .i_news-preview{
@@ -81,6 +164,9 @@
             font-size: 14px;
             color: var(--color-textInfoblock);
             font-weight: 400;
+            @media screen and (max-width: 480px){
+              font-size: 13px;
+            }
           }
         }
       }
@@ -90,9 +176,12 @@
       justify-content: center;
       button{
         padding: 16px 44px;
-      }
-      span{
-
+        @media screen and (max-width: 760px){
+          font-size: 14px;
+        }
+        @media screen and (max-width: 360px){
+          padding: 12px 38px;
+        }
       }
     }
   }
