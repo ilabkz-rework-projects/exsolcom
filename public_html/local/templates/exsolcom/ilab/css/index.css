@@ -91,10 +91,25 @@ body {
     margin: 0 30px;
   }
 }
+@media screen and (max-width: 1330px) {
+  .i_container {
+    width: 95.5%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .i_container {
+    width: 94%;
+  }
+}
 @media screen and (max-width: 760px) {
   .i_container {
-    width: 95%;
+    width: 94.8%;
     margin: 0 20px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .i_container {
+    width: 94.1%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -2962,7 +2977,7 @@ body {
     height: 12px;
   }
   .i_main .i_banner {
-    margin-bottom: 70px;
+    margin-bottom: 140px;
   }
   .i_main .i_banner .i_container .i_banner-bg {
     position: absolute;

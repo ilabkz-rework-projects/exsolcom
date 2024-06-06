@@ -88,9 +88,18 @@ body{
     width: 96%;
     margin: 0 30px;
   }
+  @media screen and (max-width: 1330px){
+    width: 95.5%;
+  }
+  @media screen and (max-width: 1000px){
+    width: 94%;
+  }
   @media screen and (max-width: 760px){
-    width: 95%;
+    width: 94.8%;
     margin: 0 20px;
+  }
+  @media screen and (max-width: 680px){
+    width: 94.1%;
   }
   @media screen and (max-width: 480px){
     width: 91.5%;
@@ -3046,7 +3055,7 @@ body{
   .i_main {
     //Banner
     .i_banner{
-      margin-bottom: 70px;
+      margin-bottom: 140px;
       .i_container{
         //Фоновая картинка
         .i_banner-bg{
