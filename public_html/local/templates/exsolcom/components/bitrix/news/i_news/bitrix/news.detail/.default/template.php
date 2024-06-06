@@ -25,10 +25,14 @@ $this->setFrameMode(true);
 			/>
 	<?endif?>
 	<?if($arParams["DISPLAY_DATE"]!="N" && $arResult["DISPLAY_ACTIVE_FROM"]):?>
-		<span class="news-date-time"><?=$arResult["DISPLAY_ACTIVE_FROM"]?></span>
+		<div class="news-detail-date">
+			<span class="news-date-time"><?=$arResult["DISPLAY_ACTIVE_FROM"]?></span>
+		</div>
 	<?endif;?>
 	<?if($arParams["DISPLAY_NAME"]!="N" && $arResult["NAME"]):?>
-		<h3><?=$arResult["NAME"]?></h3>
+		<div class="news-detail-name">
+			<h3><?=$arResult["NAME"]?></h3>
+		</div>
 	<?endif;?>
 	<?if($arParams["DISPLAY_PREVIEW_TEXT"]!="N" && ($arResult["FIELDS"]["PREVIEW_TEXT"] ?? '')):?>
 		<p><?=$arResult["FIELDS"]["PREVIEW_TEXT"];unset($arResult["FIELDS"]["PREVIEW_TEXT"]);?></p>
@@ -38,9 +42,13 @@ $this->setFrameMode(true);
 		<?echo $arResult["NAV_TEXT"];?>
 		<?if($arParams["DISPLAY_BOTTOM_PAGER"]):?><br /><?=$arResult["NAV_STRING"]?><?endif;?>
 	<?elseif($arResult["DETAIL_TEXT"] <> ''):?>
-		<?echo $arResult["DETAIL_TEXT"];?>
+		<div class="news-detail-text">
+			<?echo $arResult["DETAIL_TEXT"];?>
+		</div>
 	<?else:?>
-		<?echo $arResult["PREVIEW_TEXT"];?>
+		<div class="news-detail-preview">
+			<?echo $arResult["PREVIEW_TEXT"];?>
+		</div>
 	<?endif?>
 	<div style="clear:both"></div>
 	<br />
