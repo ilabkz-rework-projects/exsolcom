@@ -1,0 +1,184 @@
+// ABOUT US
+.i_about-us{
+  //ABOUT COMPANY
+  .i_about-company{
+    padding: 0 0;
+    //ABOUT COMPANY FIRST
+    .i_about-company-first{
+      position: relative;
+      padding: 50px 0;
+      // ABOUT COMPANY TITLE
+      .i_about-company-title{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 20px;
+        .i_about-company-title-icon{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 50px;
+          width: 50px;
+          height: 50px;
+          background-color: var(--color-circles);
+          border-radius: 30px;
+          svg{
+            color: var(--color-circleIcon);
+          }
+        }
+        .i_about-company-title-name{
+          display: flex;
+          justify-content: flex-start;
+          span{
+            .color-title-name-red{
+              color: var(--color-red);
+            }
+            font-size: 32px;
+            font-weight: 400;
+            @media screen and (max-width: 1330px){
+              font-size: 28px;
+            }
+            @media screen and (max-width: 760px){
+              font-size: 26px;
+            }
+            @media screen and (max-width: 480px){
+              font-size: 21px;
+            }
+          }
+          @media screen and (max-width: 1000px){
+            width: 50%;
+          }
+          @media screen and (max-width: 760px){
+            width: unset;
+          }
+        }
+      }
+      // !ABOUT COMPANY TITLE
+    }
+    //!ABOUT COMPANY FIRST
+
+    //ABOUT COMPANY DESC
+    .i_about-company-desc{
+      display: flex;
+      flex-direction: column;
+      margin:50px 0 0 0;
+      gap: 30px;
+      span{
+        color: var(--color-black);
+        cursor: default;
+        font-size: 14px;
+        line-height: 21px;
+        .color-company-desc{
+          color: var(--color-red);
+        }
+        @media screen and (max-width: 1330px){
+        font-size: 13px;
+        }
+        @media screen and (max-width: 360px){
+        font-size: 12px;
+        }
+      }
+    }
+
+    .i_about-company-desc:before{
+      content: ' ';
+      position: absolute;
+      bottom: 0;
+      width: calc(100% - 1px);
+      background-image: url("../img/svg/doth-vertical_downGrey.svg");
+      height: 12px;
+      background-size: 10px;
+    }
+    //!ABOUT COMPANY DESC
+
+    //ABOUT COMPANY STRATEGY
+    .i_about-company-strategy{
+      padding: 70px 0;
+      @media screen and (max-width: 1330px){
+        padding: 60px 0;
+      }
+      //ABOUT COMPANY STRATEGY TITLE
+      .i_about-company-strategy-title{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        // ICON ABOUT COMPANY STRATEGY
+        .i_about-company-strategy-title-icon{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 50px;
+          width: 50px;
+          height: 50px;
+          background-color: var(--color-circles);
+          border-radius: 30px;
+          svg{
+            color: var(--color-circleIcon);
+          }
+        }
+        // !ICON ABOUT COMPANY STRATEGY
+        // NAME ABOUT COMPANY STRATEGY
+        .i_about-company-strategy-title-name{
+          display: flex;
+          justify-content: flex-start;
+          span{
+            font-size: 32px;
+            font-weight: 400;
+            @media screen and (max-width: 1330px){
+              font-size: 28px;
+            }
+            @media screen and (max-width: 760px){
+              font-size: 26px;
+            }
+            @media screen and (max-width: 480px){
+              font-size: 21px;
+            }
+          }
+        }
+        // !NAME ABOUT COMPANY STRATEGY
+      }
+      //!ABOUT COMPANY STRATEGY TITLE
+      //ABOUT COMPANY STRATEGY DESC
+      .i_about-company-strategy-desc{
+        padding: 50px 0 80px 0;
+        span{
+          color: var(--color-black);
+          cursor: default;
+          font-size: 14px;
+          line-height: 21px;
+          @media screen and (max-width: 1330px){
+            font-size: 13px;
+          }
+          @media screen and (max-width: 360px){
+            font-size: 12px;
+          }
+        }
+      }
+      //!ABOUT COMPANY STRATEGY DESC
+      //  ABOUT COMPANY STRATEGY BTN
+      .i_about-company-strategy-btn{
+        @media screen and (max-width: 395px){
+          display: flex;
+          justify-content: center;
+        }
+        button{
+          padding: 20px 48px;
+          @media screen and (max-width: 1330px){
+            padding: 16px 38px;
+            font-size: 14px;
+          }
+          @media screen and (max-width: 395px){
+            padding: 12px 22px;
+            font-size: 13px;
+          }
+        }
+      }
+      //  !ABOUT COMPANY STRATEGY BTN
+    }
+    //!ABOUT COMPANY STRATEGY
+  }
+  //!ABOUT COMPANY
+}
+//! ABOUT US
+

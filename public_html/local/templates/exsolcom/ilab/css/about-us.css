@@ -1,0 +1,188 @@
+.i_about-us .i_about-company {
+  padding: 0 0;
+}
+.i_about-us .i_about-company .i_about-company-first {
+  position: relative;
+  padding: 50px 0;
+}
+.i_about-us .i_about-company .i_about-company-first .i_about-company-title {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 20px;
+}
+.i_about-us .i_about-company .i_about-company-first .i_about-company-title .i_about-company-title-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-circles);
+  border-radius: 30px;
+}
+.i_about-us .i_about-company .i_about-company-first .i_about-company-title .i_about-company-title-icon svg {
+  color: var(--color-circleIcon);
+}
+.i_about-us .i_about-company .i_about-company-first .i_about-company-title .i_about-company-title-name {
+  display: flex;
+  justify-content: flex-start;
+}
+.i_about-us .i_about-company .i_about-company-first .i_about-company-title .i_about-company-title-name span {
+  font-size: 32px;
+  font-weight: 400;
+}
+.i_about-us .i_about-company .i_about-company-first .i_about-company-title .i_about-company-title-name span .color-title-name-red {
+  color: var(--color-red);
+}
+@media screen and (max-width: 1330px) {
+  .i_about-us .i_about-company .i_about-company-first .i_about-company-title .i_about-company-title-name span {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_about-us .i_about-company .i_about-company-first .i_about-company-title .i_about-company-title-name span {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_about-us .i_about-company .i_about-company-first .i_about-company-title .i_about-company-title-name span {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .i_about-us .i_about-company .i_about-company-first .i_about-company-title .i_about-company-title-name {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_about-us .i_about-company .i_about-company-first .i_about-company-title .i_about-company-title-name {
+    width: unset;
+  }
+}
+.i_about-us .i_about-company .i_about-company-desc {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 0 0;
+  gap: 30px;
+}
+.i_about-us .i_about-company .i_about-company-desc span {
+  color: var(--color-black);
+  cursor: default;
+  font-size: 14px;
+  line-height: 21px;
+}
+.i_about-us .i_about-company .i_about-company-desc span .color-company-desc {
+  color: var(--color-red);
+}
+@media screen and (max-width: 1330px) {
+  .i_about-us .i_about-company .i_about-company-desc span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .i_about-us .i_about-company .i_about-company-desc span {
+    font-size: 12px;
+  }
+}
+.i_about-us .i_about-company .i_about-company-desc:before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 1px);
+  background-image: url("../img/svg/doth-vertical_downGrey.svg");
+  height: 12px;
+  background-size: 10px;
+}
+.i_about-us .i_about-company .i_about-company-strategy {
+  padding: 70px 0;
+}
+@media screen and (max-width: 1330px) {
+  .i_about-us .i_about-company .i_about-company-strategy {
+    padding: 60px 0;
+  }
+}
+.i_about-us .i_about-company .i_about-company-strategy .i_about-company-strategy-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.i_about-us .i_about-company .i_about-company-strategy .i_about-company-strategy-title .i_about-company-strategy-title-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-circles);
+  border-radius: 30px;
+}
+.i_about-us .i_about-company .i_about-company-strategy .i_about-company-strategy-title .i_about-company-strategy-title-icon svg {
+  color: var(--color-circleIcon);
+}
+.i_about-us .i_about-company .i_about-company-strategy .i_about-company-strategy-title .i_about-company-strategy-title-name {
+  display: flex;
+  justify-content: flex-start;
+}
+.i_about-us .i_about-company .i_about-company-strategy .i_about-company-strategy-title .i_about-company-strategy-title-name span {
+  font-size: 32px;
+  font-weight: 400;
+}
+@media screen and (max-width: 1330px) {
+  .i_about-us .i_about-company .i_about-company-strategy .i_about-company-strategy-title .i_about-company-strategy-title-name span {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_about-us .i_about-company .i_about-company-strategy .i_about-company-strategy-title .i_about-company-strategy-title-name span {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_about-us .i_about-company .i_about-company-strategy .i_about-company-strategy-title .i_about-company-strategy-title-name span {
+    font-size: 21px;
+  }
+}
+.i_about-us .i_about-company .i_about-company-strategy .i_about-company-strategy-desc {
+  padding: 50px 0 80px 0;
+}
+.i_about-us .i_about-company .i_about-company-strategy .i_about-company-strategy-desc span {
+  color: var(--color-black);
+  cursor: default;
+  font-size: 14px;
+  line-height: 21px;
+}
+@media screen and (max-width: 1330px) {
+  .i_about-us .i_about-company .i_about-company-strategy .i_about-company-strategy-desc span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .i_about-us .i_about-company .i_about-company-strategy .i_about-company-strategy-desc span {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 395px) {
+  .i_about-us .i_about-company .i_about-company-strategy .i_about-company-strategy-btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+.i_about-us .i_about-company .i_about-company-strategy .i_about-company-strategy-btn button {
+  padding: 20px 48px;
+}
+@media screen and (max-width: 1330px) {
+  .i_about-us .i_about-company .i_about-company-strategy .i_about-company-strategy-btn button {
+    padding: 16px 38px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 395px) {
+  .i_about-us .i_about-company .i_about-company-strategy .i_about-company-strategy-btn button {
+    padding: 12px 22px;
+    font-size: 13px;
+  }
+}
+
+/*# sourceMappingURL=about-us.css.map */
