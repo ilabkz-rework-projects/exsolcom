@@ -25,6 +25,15 @@
           svg{
             color: var(--color-circleIcon);
           }
+          @media screen and (max-width: 760px){
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            svg{
+              width: 25px;
+              height: 25px;
+            }
+          }
         }
         .i_about-company-title-name{
           display: flex;
@@ -116,6 +125,15 @@
           svg{
             color: var(--color-circleIcon);
           }
+          @media screen and (max-width: 760px){
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            svg{
+              width: 25px;
+              height: 25px;
+            }
+          }
         }
         // !ICON ABOUT COMPANY STRATEGY
         // NAME ABOUT COMPANY STRATEGY
@@ -179,6 +197,349 @@
     //!ABOUT COMPANY STRATEGY
   }
   //!ABOUT COMPANY
+  //DIRECTORSHIP
+  .i_directorship{
+    background-color: var(--bg-second);
+    padding: 70px 0;
+    //DIRECTORSHIP TITLE
+    .i_directorship-title{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      //DIRECTORSHIP TITLE ICON
+      .i_directorship-title-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 50px;
+        width: 50px;
+        height: 50px;
+        background-color: var(--color-circles);
+        border-radius: 30px;
+        svg{
+          color: var(--color-circleIcon);
+        }
+        @media screen and (max-width: 760px){
+          width: 40px;
+          height: 40px;
+          min-width: 40px;
+          svg{
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+      //!DIRECTORSHIP TITLE ICON
+      //DIRECTORSHIP TITLE NAME
+      .i_directorship-title-name{
+        display: flex;
+        justify-content: center;
+        span{
+          font-size: 32px;
+          font-weight: 400;
+          @media screen and (max-width: 1330px){
+            font-size: 28px;
+          }
+          @media screen and (max-width: 760px){
+            font-size: 26px;
+          }
+          @media screen and (max-width: 480px){
+            font-size: 21px;
+          }
+        }
+        //!DIRECTORSHIP TITLE NAME
+      }
+    }
+    //!DIRECTORSHIP TITLE
+    //DIRECTORSHIP BASIC
+    .i_directorship-basic{
+      //DIRECTORSHIP BASIC BLOCK 1
+      .i_directorship-basic-block{
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        .i_directorship-basic-block-desc:before{
+          content: ' ';
+          min-width: 665px;
+          height: 665px;
+          width: 43%;
+          background-color: var(--bg-block);
+          position: absolute;
+          z-index: -1;
+          top: 50%;
+          left: -19%;
+          transform: translate(-50%, -50%);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+          border-radius: 50%;
+        }
+        //DIRECTORSHIP BASIC BLOCK WRAPPER
+        .i_directorship-basic-block-wrapper{
+          min-width: 665px;
+          height: 665px;
+          width: 43%;
+          background-color: var(--bg-block);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          z-index: 2;
+          .i_directorship-basic-block-portrait{
+            width: 97%;
+            height: 97%;
+            img{
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+            }
+          }
+        }
+        //!DIRECTORSHIP BASIC BLOCK WRAPPER
+        //DIRECTORSHIP BASIC BLOCK DESC
+        .i_directorship-basic-block-desc{
+          width: 975px;
+          height: 512px;
+          background-color: var(--bg-block);
+          border-radius: 30px;
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          z-index: 1;
+          right: 1.8%;
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+          //align-items: center;
+          //DIRECTORSHIP BASIC BLOCK DESC TOP
+          .i_directorship-basic-block-desc-top{
+            height: 268px;
+            display: flex;
+            border-radius: 30px 30px 0 0;
+            background-color: var(--bg-block);
+            flex-direction: column;
+            gap: 35px;
+            padding: 0 128px 0 170px;
+            //DIRECTORSHIP TOP NAME
+            .i_directorship-block-desc-top-name{
+              display: flex;
+              flex-direction: column;
+              gap: 15px;
+              padding: 40px 0 0 0 ;
+              .i_directorship-desc-top-name-name{
+                font-size: 24px;
+                font-weight: 600;
+                color: var(--color-textInfoblock);
+                .color-red-top-name{
+                  color: var(--color-red);
+                  cursor: default
+                }
+                cursor: default
+              }
+              .i_directorship-desc-top-name-specification{
+                color: var(--color-title);
+                font-size: 15px;
+                font-family: "Open Sans", sans-serif;
+                cursor: default;
+              }
+            }
+            //!DIRECTORSHIP TOP NAME
+            //DIRECTORSHIP TOP DEPICTION
+            .i_directorship-block-desc-top-depiction{
+              display: flex;
+              flex-direction: column;
+              gap: 35px;
+              .i_directorship-desc-top-depiction-name{
+                font-size: 16px;
+                color: var(----color-textInfoblock);
+                cursor: default;
+                font-weight: 600;
+              }
+              .i_directorship-desc-top-depiction-specification{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                span{
+                  color: var(----color-textInfoblock);
+                  font-size: 15px;
+                  cursor: default
+                }
+              }
+            }
+            //!DIRECTORSHIP TOP DEPICTION
+          }
+          //!DIRECTORSHIP BASIC BLOCK DESC TOP
+
+          //DIRECTORSHIP BASIC BLOCK DESC BOTTOM
+          .i_directorship-basic-block-desc-bottom{
+            height: 244px;
+            background-color: var(--color-red-block);
+            border-radius: 0 0 30px 30px;
+            display: flex;
+            justify-content: center;
+            padding: 0 128px 0 170px;
+            .i_directorship-basic-block-desc-bottom-container{
+              //min-width: 680px;
+              //width: 69%;
+              padding: 50px 0 60px 0;
+              span{
+                color: var(--color-WhiteWhite);
+                line-height: 21px;
+                font-size: 16px;
+                cursor: default;
+              }
+            }
+          }
+          //!DIRECTORSHIP BASIC BLOCK DESC BOTTOM
+        }
+        //!DIRECTORSHIP BASIC BLOCK DESC
+      }
+      //!DIRECTORSHIP BASIC BLOCK 1
+      //DIRECTORSHIP BASIC BLOCK 2
+      .i_directorship-basic-block_second{
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        .i_directorship-basic-block-desc_second:before{
+          content: ' ';
+          min-width: 665px;
+          height: 665px;
+          width: 43%;
+          background-color: var(--bg-block);
+          position: absolute;
+          z-index: -1;
+          top: 50%;
+          left: 118%;
+          transform: translate(-50%, -50%);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+          border-radius: 50%;
+        }
+        //DIRECTORSHIP BASIC BLOCK WRAPPER 2
+        .i_directorship-basic-block-wrapper_second{
+          min-width: 665px;
+          height: 665px;
+          width: 43%;
+          background-color: var(--bg-block);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          z-index: 2;
+          right: -54%;
+          .i_directorship-basic-block-portrait{
+            width: 97%;
+            height: 97%;
+            img{
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+            }
+          }
+        }
+        //!DIRECTORSHIP BASIC BLOCK WRAPPER 2
+
+        //DIRECTORSHIP BASIC BLOCK DESC 2
+        .i_directorship-basic-block-desc_second{
+          width: 975px;
+          height: 512px;
+          background-color: var(--bg-block);
+          border-radius: 30px;
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          z-index: 1;
+          right: 35.8%;
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+          //align-items: center;
+          //DIRECTORSHIP BASIC BLOCK DESC TOP 2
+          .i_directorship-basic-block-desc-top_second{
+            height: 268px;
+            display: flex;
+            border-radius: 30px 30px 0 0;
+            background-color: var(--bg-block);
+            flex-direction: column;
+            gap: 35px;
+            padding: 0 155px 0 50px;
+            //DIRECTORSHIP TOP NAME
+            .i_directorship-block-desc-top-name{
+              display: flex;
+              flex-direction: column;
+              gap: 15px;
+              padding: 40px 0 0 0 ;
+              .i_directorship-desc-top-name-name{
+                font-size: 24px;
+                font-weight: 600;
+                color: var(--color-textInfoblock);
+                .color-red-top-name{
+                  color: var(--color-red);
+                  cursor: default
+                }
+                cursor: default
+              }
+              .i_directorship-desc-top-name-specification{
+                color: var(--color-title);
+                font-size: 15px;
+                font-family: "Open Sans", sans-serif;
+                cursor: default;
+              }
+            }
+            //!DIRECTORSHIP TOP NAME
+            //DIRECTORSHIP TOP DEPICTION
+            .i_directorship-block-desc-top-depiction{
+              display: flex;
+              flex-direction: column;
+              gap: 35px;
+              .i_directorship-desc-top-depiction-name{
+                font-size: 16px;
+                color: var(----color-textInfoblock);
+                cursor: default;
+                font-weight: 600;
+              }
+              .i_directorship-desc-top-depiction-specification{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                span{
+                  color: var(----color-textInfoblock);
+                  font-size: 15px;
+                  cursor: default
+                }
+              }
+            }
+            //!DIRECTORSHIP TOP DEPICTION
+          }
+          //!DIRECTORSHIP BASIC BLOCK DESC TOP 2
+
+          //!DIRECTORSHIP BASIC BLOCK DESC BOTTOM 2
+          .i_directorship-basic-block-desc-bottom_second{
+            height: 244px;
+            background-color: var(--color-grey-block);
+            border-radius: 0 0 30px 30px;
+            display: flex;
+            justify-content: center;
+            padding: 0 155px 0 50px;
+            .i_directorship-basic-block-desc-bottom-container{
+              //min-width: 680px;
+              //width: 69%;
+              padding: 50px 0 60px 0;
+              span{
+                color: var(--color-WhiteWhite);
+                line-height: 21px;
+                font-size: 16px;
+                cursor: default;
+              }
+            }
+          }
+          //!DIRECTORSHIP BASIC BLOCK DESC BOTTOM 2
+        }
+        //!DIRECTORSHIP BASIC BLOCK DESC 2
+      }
+      //!DIRECTORSHIP BASIC BLOCK 2
+    }
+    //!DIRECTORSHIP BASIC
+  }
+  //!DIRECTORSHIP
 }
 //! ABOUT US
 
