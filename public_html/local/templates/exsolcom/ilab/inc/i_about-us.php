@@ -693,5 +693,45 @@
         </div>
     </div>
     <!--!CERTIFICATES-->
+    <!--CLOUD-->
+    <div class="i_cloud">
+        <div class="i_container">
+            <!--CLOUD GROUP-->
+            <div class="i_cloud-group">
+                <!--CLOUD GROUP PICTURE-->
+                <div class="i_cloud-group-picture">
+                    <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/1CFRESH-icon.png'?>" alt="1CFRESH-icon">
+                </div>
+                <!--!CLOUD GROUP PICTURE-->
+                <!--CLOUD GROUP DESC-->
+                <div class="i_cloud-group-desc">
+                    <!--CLOUD GROUP DESC NAME-->
+                    <div class="i_cloud-group-desc-name">
+                        <span><span class="i_cloud-desc-name-color">1C:</span>FRESH</span>
+                    </div>
+                    <!--!CLOUD GROUP DESC NAME-->
+                    <!--CLOUD GROUP DESC DEPICTION-->
+                    <div class="i_cloud-group-desc-depiction">
+                        <span class="i_cloud-depiction-weight">Облачный сервис для работы с программами «1С» из любой точки мира через интернет</span>
+                        <span>
+                            Позволяет работать с программами фирмы «1С» без установки на компьютер, из любого места, где есть доступ к интернету. Это привносит уникальную гибкость в управление бизнесом, позволяя работать с данными в режиме реального времени, где бы вы ни находились.
+                        </span>
+                        <span>
+                            Кроме того, сервис предлагает различные функции для администрирования баз данных, что облегчает управление информационными системами предприятия.
+                        </span>
+                    </div>
+                    <!--!CLOUD GROUP DESC DEPICTION-->
+                    <!--CLOUD GROUP DESC BTN-->
+                    <button class="i_cloud-group-desc-btn">
+                        Подробнее
+                    </button>
+                    <!--!CLOUD GROUP DESC BTN-->
+                </div>
+                <!--!CLOUD GROUP DESC-->
+            </div>
+            <!--!CLOUD GROUP-->
+        </div>
+    </div>
+    <!--!CLOUD-->
 </div>
 <!--!ABOUT US -->
