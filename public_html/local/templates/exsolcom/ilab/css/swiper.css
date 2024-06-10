@@ -162,9 +162,6 @@
   color: var(--color-textInfoblock);
   font-size: 28px;
 }
-.i_personal .i_container .swiper.personal .swiper-slide .swiper-slide-block .swiper-slide-group .swiper-slide-name span:hover {
-  color: unset !important;
-}
 .i_personal .i_container .swiper.personal .swiper-slide .swiper-slide-block .swiper-slide-group .swiper-slide-title {
   font-size: 15px;
   color: var(--color-title);
@@ -189,8 +186,14 @@
   left: 50%;
   transform: translate(-50%);
 }
-.i_personal .i_container .swiper.personal .swiper-slide .swiper-slide-picture img {
+.i_personal .i_container .swiper.personal .swiper-slide .swiper-slide-picture .i_swiper-slide-image {
+  width: 95%;
+  height: 95%;
+}
+.i_personal .i_container .swiper.personal .swiper-slide .swiper-slide-picture .i_swiper-slide-image img {
   border-radius: 50%;
+  width: 100%;
+  height: 100%;
 }
 .i_personal .i_container .i_personal-btn {
   display: flex;

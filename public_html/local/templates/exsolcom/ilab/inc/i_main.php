@@ -298,6 +298,7 @@
 <!--PERSONAL-->
 <div class="i_personal">
 	<div class="i_container">
+        <!--PERSONAL TITLE-->
 		<div class="i_personal-title">
 			<div class="i_personal-title-bg">
 				<svg class="arms-icon" width="38" height="25" viewBox="0 0 38 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -308,100 +309,233 @@
 				<span>BAM БУДУТ ПОМОГАТЬ</span>
 			</div>
 		</div>
+        <!--!PERSONAL TITLE-->
+        <!--PERSONAL SWIPER PERSONAL-->
 		<div class="swiper personal">
 			<div class="swiper-wrapper">
+                <!--PERSONAL SWIPER SLIDE-->
 				<div class="swiper-slide">
+                    <!--PERSONAL SWIPER SLIDE PICTURE-->
 					<div class="swiper-slide-picture">
-						<img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/manager_5.jpg'?>" alt="">
+                        <div class="i_swiper-slide-image">
+						    <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/picture-1-Head.png'?>" alt="picture-1-Head">
+                        </div>
 					</div>
+                    <!--!PERSONAL SWIPER SLIDE PICTURE-->
+                    <!--PERSONAL SWIPER SLIDE BLOCK-->
 					<div class="swiper-slide-block">
 						<div class="swiper-slide-group">
 							<div class="swiper-slide-name">
-								<span>Иван<br>Иванов</span>
+								<span>Юлия<br>Лозовецкая</span>
 							</div>
 							<div class="swiper-slide-title">
-								<p>Старший менеджер</p>
+								<p>Руководитель проектов</p>
 							</div>
 							<div class="swiper-slide-desc">
 								<p>Менеджер в турагентстве продает туры конкретным клиентам, обрабатывая заявки, подбирая подходящие варианты, оформляя документы, визы....</p>
 							</div>
 						</div>
 					</div>
+                    <!--!PERSONAL SWIPER SLIDE BLOCK-->
 				</div>
-				<div class="swiper-slide">
-					<div class="swiper-slide-picture">
-						<img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/manager_4.jpg'?>" alt="">
-					</div>
-					<div class="swiper-slide-block">
-						<div class="swiper-slide-group">
-							<div class="swiper-slide-name">
-								<span>Мария<br>Мариевич</span>
-							</div>
-							<div class="swiper-slide-title">
-								<p>Старший менеджер</p>
-							</div>
-							<div class="swiper-slide-desc">
-								<p>Менеджер в турагентстве продает туры конкретным клиентам, обрабатывая заявки, подбирая подходящие варианты, оформляя документы, визы....</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="swiper-slide-picture">
-						<img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/manager_3.jpg'?>" alt="">
-					</div>
-					<div class="swiper-slide-block">
-						<div class="swiper-slide-group">
-							<div class="swiper-slide-name">
-								<span>Канат<br>Есенгалиев</span>
-							</div>
-							<div class="swiper-slide-title">
-								<p>Старший менеджер</p>
-							</div>
-							<div class="swiper-slide-desc">
-								<p>Менеджер в турагентстве продает туры конкретным клиентам, обрабатывая заявки, подбирая подходящие варианты, оформляя документы, визы....</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="swiper-slide-picture">
-						<img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/manager_2.jpg'?>" alt="">
-					</div>
-					<div class="swiper-slide-block">
-						<div class="swiper-slide-group">
-							<div class="swiper-slide-name">
-								<span>Василий<br>Васильевич</span>
-							</div>
-							<div class="swiper-slide-title">
-								<p>Старший менеджер</p>
-							</div>
-							<div class="swiper-slide-desc">
-								<p>Менеджер в турагентстве продает туры конкретным клиентам, обрабатывая заявки, подбирая подходящие варианты, оформляя документы, визы....</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="swiper-slide-picture">
-						<img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/manager_1.jpg'?>" alt="">
-					</div>
-					<div class="swiper-slide-block">
-						<div class="swiper-slide-group">
-							<div class="swiper-slide-name">
-								<span>Алия<br>Акимова</span>
-							</div>
-							<div class="swiper-slide-title">
-								<p>Старший менеджер</p>
-							</div>
-							<div class="swiper-slide-desc">
-								<p>Менеджер в турагентстве продает туры конкретным клиентам, обрабатывая заявки, подбирая подходящие варианты, оформляя документы, визы....</p>
-							</div>
-						</div>
-					</div>
-				</div>
+                <!--!PERSONAL SWIPER SLIDE-->
+                <!--PLACE DIRECTOR-->
+                <div class="swiper-slide">
+                    <!--PERSONAL SWIPER SLIDE PICTURE-->
+                    <div class="swiper-slide-picture">
+                        <div class="i_swiper-slide-image">
+                            <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/picture-9-Technical-Director.png'?>" alt="picture-9-Technical-Director">
+                        </div>
+                    </div>
+                    <!--!PERSONAL SWIPER SLIDE PICTURE-->
+                    <!--PERSONAL SWIPER SLIDE BLOCK-->
+                    <div class="swiper-slide-block">
+                        <div class="swiper-slide-group">
+                            <div class="swiper-slide-name">
+                                <span>Алексей<br>Прокофьев</span>
+                            </div>
+                            <div class="swiper-slide-title">
+                                <p>Технический директор</p>
+                            </div>
+                            <div class="swiper-slide-desc">
+                                <p>Менеджер в турагентстве продает туры конкретным клиентам, обрабатывая заявки, подбирая подходящие варианты, оформляя документы, визы....</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--!PERSONAL SWIPER SLIDE BLOCK-->
+                </div>
+                <div class="swiper-slide">
+                    <!--PERSONAL SWIPER SLIDE PICTURE-->
+                    <div class="swiper-slide-picture">
+                        <div class="i_swiper-slide-image">
+                            <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/picture-8-Director.png'?>" alt="picture-8-Director">
+                        </div>
+                    </div>
+                    <!--!PERSONAL SWIPER SLIDE PICTURE-->
+                    <!--PERSONAL SWIPER SLIDE BLOCK-->
+                    <div class="swiper-slide-block">
+                        <div class="swiper-slide-group">
+                            <div class="swiper-slide-name">
+                                <span>Мастяев<br>Владимир</span>
+                            </div>
+                            <div class="swiper-slide-title">
+                                <p>Директор</p>
+                            </div>
+                            <div class="swiper-slide-desc">
+                                <p>Менеджер в турагентстве продает туры конкретным клиентам, обрабатывая заявки, подбирая подходящие варианты, оформляя документы, визы....</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--!PERSONAL SWIPER SLIDE BLOCK-->
+                </div>
+                <!--!PLACE DIRECTOR-->
+                <div class="swiper-slide">
+                    <!--PERSONAL SWIPER SLIDE PICTURE-->
+                    <div class="swiper-slide-picture">
+                        <div class="i_swiper-slide-image">
+                            <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/picture-2-Head.png'?>" alt="picture-2-Head">
+                        </div>
+                    </div>
+                    <!--!PERSONAL SWIPER SLIDE PICTURE-->
+                    <!--PERSONAL SWIPER SLIDE BLOCK-->
+                    <div class="swiper-slide-block">
+                        <div class="swiper-slide-group">
+                            <div class="swiper-slide-name">
+                                <span>Олег<br>Тихоновский</span>
+                            </div>
+                            <div class="swiper-slide-title">
+                                <p>Руководитель проектов</p>
+                            </div>
+                            <div class="swiper-slide-desc">
+                                <p>Менеджер в турагентстве продает туры конкретным клиентам, обрабатывая заявки, подбирая подходящие варианты, оформляя документы, визы....</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--!PERSONAL SWIPER SLIDE BLOCK-->
+                </div>
+                <div class="swiper-slide">
+                    <!--PERSONAL SWIPER SLIDE PICTURE-->
+                    <div class="swiper-slide-picture">
+                        <div class="i_swiper-slide-image">
+                            <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/picture-3-Head.png'?>" alt="picture-3-Head">
+                        </div>
+                    </div>
+                    <!--!PERSONAL SWIPER SLIDE PICTURE-->
+                    <!--PERSONAL SWIPER SLIDE BLOCK-->
+                    <div class="swiper-slide-block">
+                        <div class="swiper-slide-group">
+                            <div class="swiper-slide-name">
+                                <span>Владимир<br>Яровой</span>
+                            </div>
+                            <div class="swiper-slide-title">
+                                <p>Руководитель отдела продаж</p>
+                            </div>
+                            <div class="swiper-slide-desc">
+                                <p>Менеджер в турагентстве продает туры конкретным клиентам, обрабатывая заявки, подбирая подходящие варианты, оформляя документы, визы....</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--!PERSONAL SWIPER SLIDE BLOCK-->
+                </div>
+                <div class="swiper-slide">
+                    <!--PERSONAL SWIPER SLIDE PICTURE-->
+                    <div class="swiper-slide-picture">
+                        <div class="i_swiper-slide-image">
+                            <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/picture-4-Head.png'?>" alt="picture-4-Head">
+                        </div>
+                    </div>
+                    <!--!PERSONAL SWIPER SLIDE PICTURE-->
+                    <!--PERSONAL SWIPER SLIDE BLOCK-->
+                    <div class="swiper-slide-block">
+                        <div class="swiper-slide-group">
+                            <div class="swiper-slide-name">
+                                <span>Мария<br>Ломановская</span>
+                            </div>
+                            <div class="swiper-slide-title">
+                                <p>Руководитель проектов</p>
+                            </div>
+                            <div class="swiper-slide-desc">
+                                <p>Менеджер в турагентстве продает туры конкретным клиентам, обрабатывая заявки, подбирая подходящие варианты, оформляя документы, визы....</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--!PERSONAL SWIPER SLIDE BLOCK-->
+                </div>
+                <div class="swiper-slide">
+                    <!--PERSONAL SWIPER SLIDE PICTURE-->
+                    <div class="swiper-slide-picture">
+                        <div class="i_swiper-slide-image">
+                            <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/picture-5-Manager.png'?>" alt="picture-5-Manager">
+                        </div>
+                    </div>
+                    <!--!PERSONAL SWIPER SLIDE PICTURE-->
+                    <!--PERSONAL SWIPER SLIDE BLOCK-->
+                    <div class="swiper-slide-block">
+                        <div class="swiper-slide-group">
+                            <div class="swiper-slide-name">
+                                <span>Аида<br>Баимбетова</span>
+                            </div>
+                            <div class="swiper-slide-title">
+                                <p>Менеджер по продажам 1СFresh</p>
+                            </div>
+                            <div class="swiper-slide-desc">
+                                <p>Менеджер в турагентстве продает туры конкретным клиентам, обрабатывая заявки, подбирая подходящие варианты, оформляя документы, визы....</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--!PERSONAL SWIPER SLIDE BLOCK-->
+                </div>
+                <div class="swiper-slide">
+                    <!--PERSONAL SWIPER SLIDE PICTURE-->
+                    <div class="swiper-slide-picture">
+                        <div class="i_swiper-slide-image">
+                            <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/picture-6-Manager.png'?>" alt="picture-6-Manager">
+                        </div>
+                    </div>
+                    <!--!PERSONAL SWIPER SLIDE PICTURE-->
+                    <!--PERSONAL SWIPER SLIDE BLOCK-->
+                    <div class="swiper-slide-block">
+                        <div class="swiper-slide-group">
+                            <div class="swiper-slide-name">
+                                <span>Данияр<br>Утепов</span>
+                            </div>
+                            <div class="swiper-slide-title">
+                                <p>Менеджер по продажам 1СFresh</p>
+                            </div>
+                            <div class="swiper-slide-desc">
+                                <p>Менеджер в турагентстве продает туры конкретным клиентам, обрабатывая заявки, подбирая подходящие варианты, оформляя документы, визы....</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--!PERSONAL SWIPER SLIDE BLOCK-->
+                </div>
+                <div class="swiper-slide">
+                    <!--PERSONAL SWIPER SLIDE PICTURE-->
+                    <div class="swiper-slide-picture">
+                        <div class="i_swiper-slide-image">
+                            <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/picture-7-Manager.png'?>" alt="picture-7-Manager">
+                        </div>
+                    </div>
+                    <!--!PERSONAL SWIPER SLIDE PICTURE-->
+                    <!--PERSONAL SWIPER SLIDE BLOCK-->
+                    <div class="swiper-slide-block">
+                        <div class="swiper-slide-group">
+                            <div class="swiper-slide-name">
+                                <span>Артур<br>Якупов</span>
+                            </div>
+                            <div class="swiper-slide-title">
+                                <p>Менеджер по продажам</p>
+                            </div>
+                            <div class="swiper-slide-desc">
+                                <p>Менеджер в турагентстве продает туры конкретным клиентам, обрабатывая заявки, подбирая подходящие варианты, оформляя документы, визы....</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--!PERSONAL SWIPER SLIDE BLOCK-->
+                </div>
 			</div>
 		</div>
+        <!--!PERSONAL SWIPER PERSONAL-->
 		<div class="i_personal-btn">
 			<button>
 				Скачать презентацию компании

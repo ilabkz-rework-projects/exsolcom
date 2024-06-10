@@ -508,5 +508,146 @@
   font-size: 16px;
   cursor: default;
 }
+.i_about-us .i_team {
+  padding: 70px 0;
+}
+.i_about-us .i_team .i_team-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.i_about-us .i_team .i_team-title .i_team-title-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-circles);
+  border-radius: 30px;
+}
+.i_about-us .i_team .i_team-title .i_team-title-icon svg {
+  color: var(--color-circleIcon);
+}
+@media screen and (max-width: 760px) {
+  .i_about-us .i_team .i_team-title .i_team-title-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+  }
+  .i_about-us .i_team .i_team-title .i_team-title-icon svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+.i_about-us .i_team .i_team-title .i_team-title-name {
+  display: flex;
+  justify-content: flex-start;
+}
+.i_about-us .i_team .i_team-title .i_team-title-name span {
+  font-size: 32px;
+  font-weight: 400;
+}
+@media screen and (max-width: 1330px) {
+  .i_about-us .i_team .i_team-title .i_team-title-name span {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_about-us .i_team .i_team-title .i_team-title-name span {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_about-us .i_team .i_team-title .i_team-title-name span {
+    font-size: 21px;
+  }
+}
+.i_about-us .i_team .i_team-personal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px 100px;
+  padding: 70px 0 0 0;
+}
+.i_about-us .i_team .i_team-personal .i_team-personal-block:before {
+  content: " ";
+  width: 355px;
+  height: 355px;
+  background-color: var(--bg-block-personal);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+}
+.i_about-us .i_team .i_team-personal .i_team-personal-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.i_about-us .i_team .i_team-personal .i_team-personal-block .i_team-personal-block-picture {
+  background-color: var(--bg-block-personal);
+  border-radius: 50%;
+  min-width: 355px;
+  width: 355px;
+  height: 355px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+}
+.i_about-us .i_team .i_team-personal .i_team-personal-block .i_team-personal-block-picture .i_team-personal-block-picture-block {
+  width: 95%;
+  height: 95%;
+}
+.i_about-us .i_team .i_team-personal .i_team-personal-block .i_team-personal-block-picture .i_team-personal-block-picture-block img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.i_about-us .i_team .i_team-personal .i_team-personal-block .i_team-personal-block-depiction {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 1;
+  padding: 60px 20px;
+  width: 290px;
+  height: 665px;
+  background-color: var(--bg-block-personal);
+  border-radius: 100% 100% 35px 35px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+}
+.i_about-us .i_team .i_team-personal .i_team-personal-block .i_team-personal-block-depiction .i_team-personal-block-depiction-group {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.i_about-us .i_team .i_team-personal .i_team-personal-block .i_team-personal-block-depiction .i_team-personal-block-depiction-group .block-depiction-group-name {
+  text-align: center;
+}
+.i_about-us .i_team .i_team-personal .i_team-personal-block .i_team-personal-block-depiction .i_team-personal-block-depiction-group .block-depiction-group-name span {
+  color: var(--color-textInfoblock);
+  cursor: default;
+  font-size: 28px;
+}
+.i_about-us .i_team .i_team-personal .i_team-personal-block .i_team-personal-block-depiction .i_team-personal-block-depiction-group .block-depiction-group-title {
+  font-size: 15px;
+  color: var(--color-title);
+  text-align: center;
+  cursor: default;
+}
+.i_about-us .i_team .i_team-personal .i_team-personal-block .i_team-personal-block-depiction .i_team-personal-block-depiction-group .block-depiction-group-desc {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  line-height: 21px;
+  cursor: default;
+}
 
 /*# sourceMappingURL=about-us.css.map */
