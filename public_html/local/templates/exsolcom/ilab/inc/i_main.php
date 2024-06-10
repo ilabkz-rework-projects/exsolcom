@@ -376,7 +376,7 @@
                     <div class="swiper-slide-block">
                         <div class="swiper-slide-group">
                             <div class="swiper-slide-name">
-                                <span>Мастяев<br>Владимир</span>
+                                <span>Владимир<br>Мастяев</span>
                             </div>
                             <div class="swiper-slide-title">
                                 <p>Директор</p>
@@ -941,6 +941,7 @@
 </div>
 <!--!PRODUCTS-->
 
+<!--OUR STATUS-->
 <div class="i_our-status">
 	<div class="i_container">
 		<!--OUR STATUS GROUP TITLE-->
@@ -1191,3 +1192,4 @@
 		<!--!OUR STATUS GROUP BTN-->
 	</div>
 </div>
+<!--!OUR STATUS-->

@@ -675,6 +675,8 @@
             //TEAM PERSONAL BLOCK DEPICTION GROUP TITLE
             .block-depiction-group-title{
               font-size: 15px;
+              height: 20px;
+              line-height: 18px;
               color: var(--color-title);
               text-align: center;
               cursor: default;
@@ -699,6 +701,113 @@
     //!TEAM PERSONALS
   }
   //!TEAM
+  //CERTIFICATES
+  .i_certificates{
+    background-color: var(--bg-second);
+    padding: 70px 0;
+    //CERTIFICATES GROUP TITLE
+    .i_certificates-group-title{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      //CERTIFICATES GROUP TITLE ICON
+      .i_certificates-group-title-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 50px;
+        width: 50px;
+        height: 50px;
+        background-color: var(--color-circles);
+        border-radius: 30px;
+        svg{
+          color: var(--color-circleIcon);
+        }
+        @media screen and (max-width: 760px){
+          width: 40px;
+          height: 40px;
+          min-width: 40px;
+          svg{
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+      //!CERTIFICATES GROUP TITLE ICON
+      //CERTIFICATES GROUP TITLE NAME
+      .i_certificates-group-title-name{
+        display: flex;
+        justify-content: flex-start;
+        span{
+          font-size: 32px;
+          font-weight: 400;
+          @media screen and (max-width: 1330px){
+            font-size: 28px;
+          }
+          @media screen and (max-width: 760px){
+            font-size: 26px;
+          }
+          @media screen and (max-width: 480px){
+            font-size: 21px;
+          }
+        }
+      }
+      //!CERTIFICATES GROUP TITLE NAME
+    }
+    //!CERTIFICATES GROUP TITLE
+    //CERTIFICATES GROUP BLOCKS
+    .i_certificates-group-blocks{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      padding: 70px 0 0 0;
+      //CERTIFICATES GROUP BLOCKS ITEM
+      .i_certificates-group-blocks-item{
+        width: 48%;
+        height: 122px;
+        background-color: var(--bg-block);
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 40px;
+        padding: 20px 35px;
+        //CERTIFICATES GROUP BLOCKS ITEM BG ICON
+        .i_certificates-group-blocks-item-bg_Icon{
+          position: absolute;
+          z-index: -1;
+          top: -40%;
+          left: -125px;
+          transform: translate(50%);
+        }
+        //!CERTIFICATES GROUP BLOCKS ITEM BG ICON
+        //CERTIFICATES GROUP BLOCKS ITEM ICON
+        .i_certificates-group-blocks-item-icon{
+
+        }
+        //!CERTIFICATES GROUP BLOCKS ITEM ICON
+        //CERTIFICATES GROUP BLOCKS ITEM NAME
+        .i_certificates-group-blocks-item-name{
+          span{
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+            color: var(--color-nochangeThirdIcon);
+            cursor: default;
+          }
+        }
+        //!CERTIFICATES GROUP BLOCKS ITEM NAME
+      }
+      //!CERTIFICATES GROUP BLOCKS ITEM
+    }
+    //!CERTIFICATES GROUP BLOCKS
+  }
+  //!CERTIFICATES
 }
 //! ABOUT US
 

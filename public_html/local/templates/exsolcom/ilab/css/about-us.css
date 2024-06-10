@@ -638,6 +638,8 @@
 }
 .i_about-us .i_team .i_team-personal .i_team-personal-block .i_team-personal-block-depiction .i_team-personal-block-depiction-group .block-depiction-group-title {
   font-size: 15px;
+  height: 20px;
+  line-height: 18px;
   color: var(--color-title);
   text-align: center;
   cursor: default;
@@ -647,6 +649,98 @@
   font-size: 14px;
   text-align: center;
   line-height: 21px;
+  cursor: default;
+}
+.i_about-us .i_certificates {
+  background-color: var(--bg-second);
+  padding: 70px 0;
+}
+.i_about-us .i_certificates .i_certificates-group-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.i_about-us .i_certificates .i_certificates-group-title .i_certificates-group-title-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-circles);
+  border-radius: 30px;
+}
+.i_about-us .i_certificates .i_certificates-group-title .i_certificates-group-title-icon svg {
+  color: var(--color-circleIcon);
+}
+@media screen and (max-width: 760px) {
+  .i_about-us .i_certificates .i_certificates-group-title .i_certificates-group-title-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+  }
+  .i_about-us .i_certificates .i_certificates-group-title .i_certificates-group-title-icon svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+.i_about-us .i_certificates .i_certificates-group-title .i_certificates-group-title-name {
+  display: flex;
+  justify-content: flex-start;
+}
+.i_about-us .i_certificates .i_certificates-group-title .i_certificates-group-title-name span {
+  font-size: 32px;
+  font-weight: 400;
+}
+@media screen and (max-width: 1330px) {
+  .i_about-us .i_certificates .i_certificates-group-title .i_certificates-group-title-name span {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_about-us .i_certificates .i_certificates-group-title .i_certificates-group-title-name span {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_about-us .i_certificates .i_certificates-group-title .i_certificates-group-title-name span {
+    font-size: 21px;
+  }
+}
+.i_about-us .i_certificates .i_certificates-group-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 70px 0 0 0;
+}
+.i_about-us .i_certificates .i_certificates-group-blocks .i_certificates-group-blocks-item {
+  width: 48%;
+  height: 122px;
+  background-color: var(--bg-block);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  padding: 20px 35px;
+}
+.i_about-us .i_certificates .i_certificates-group-blocks .i_certificates-group-blocks-item .i_certificates-group-blocks-item-bg_Icon {
+  position: absolute;
+  z-index: -1;
+  top: -40%;
+  left: -125px;
+  transform: translate(50%);
+}
+.i_about-us .i_certificates .i_certificates-group-blocks .i_certificates-group-blocks-item .i_certificates-group-blocks-item-name span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: var(--color-nochangeThirdIcon);
   cursor: default;
 }
 

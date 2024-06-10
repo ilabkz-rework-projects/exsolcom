@@ -164,7 +164,7 @@
                                 <div class="i_directorship-desc-top-depiction-specification">
                                     <span>Высшее экономическое и техническое образование</span>
                                     <span>Опыт работы в качестве программиста-разработчика более 20 лет</span>
-                                    <span>Опыт работы кочестве 1С программиста более 17 лет</span>
+                                    <span>Опыт работы в качестве 1С программиста более 17 лет</span>
                                 </div>
                             </div>
                             <!--DIRECTORSHIP TOP DEPICTION 2-->
@@ -225,12 +225,12 @@
                         <div class="i_team-personal-block-depiction-group">
                         <!--TEAM PERSONAL BLOCK DEPICTION GROUP NAME-->
                             <div class="block-depiction-group-name">
-                                <span>Иван<br>Иванов</span>
+                                <span>Юлия<br>Лозовецкая</span>
                             </div>
                         <!--!TEAM PERSONAL BLOCK DEPICTION GROUP NAME-->
                         <!--TEAM PERSONAL BLOCK DEPICTION GROUP TITLE-->
                             <div class="block-depiction-group-title">
-                                <p>Старший менеджер</p>
+                                <p>Руководитель проектов</p>
                             </div>
                         <!--!TEAM PERSONAL BLOCK DEPICTION GROUP TITLE-->
                         <!--TEAM PERSONAL BLOCK DEPICTION GROUP DESC-->
@@ -257,12 +257,12 @@
                         <div class="i_team-personal-block-depiction-group">
                         <!--TEAM PERSONAL BLOCK DEPICTION GROUP NAME-->
                             <div class="block-depiction-group-name">
-                                <span>Иван<br>Иванов</span>
+                                <span>Олег<br>Тихоновский</span>
                             </div>
                         <!--!TEAM PERSONAL BLOCK DEPICTION GROUP NAME-->
                         <!--TEAM PERSONAL BLOCK DEPICTION GROUP TITLE-->
                             <div class="block-depiction-group-title">
-                                <p>Старший менеджер</p>
+                                <p>Руководитель проектов</p>
                             </div>
                         <!--!TEAM PERSONAL BLOCK DEPICTION GROUP TITLE-->
                         <!--TEAM PERSONAL BLOCK DEPICTION GROUP DESC-->
@@ -289,12 +289,12 @@
                         <div class="i_team-personal-block-depiction-group">
                             <!--TEAM PERSONAL BLOCK DEPICTION GROUP NAME-->
                             <div class="block-depiction-group-name">
-                                <span>Иван<br>Иванов</span>
+                                <span>Владимир<br>Яровой</span>
                             </div>
                             <!--!TEAM PERSONAL BLOCK DEPICTION GROUP NAME-->
                             <!--TEAM PERSONAL BLOCK DEPICTION GROUP TITLE-->
                             <div class="block-depiction-group-title">
-                                <p>Старший менеджер</p>
+                                <p>Руководитель отдела продаж</p>
                             </div>
                             <!--!TEAM PERSONAL BLOCK DEPICTION GROUP TITLE-->
                             <!--TEAM PERSONAL BLOCK DEPICTION GROUP DESC-->
@@ -321,12 +321,12 @@
                         <div class="i_team-personal-block-depiction-group">
                             <!--TEAM PERSONAL BLOCK DEPICTION GROUP NAME-->
                             <div class="block-depiction-group-name">
-                                <span>Иван<br>Иванов</span>
+                                <span>Мария<br>Ломановская</span>
                             </div>
                             <!--!TEAM PERSONAL BLOCK DEPICTION GROUP NAME-->
                             <!--TEAM PERSONAL BLOCK DEPICTION GROUP TITLE-->
                             <div class="block-depiction-group-title">
-                                <p>Старший менеджер</p>
+                                <p>Руководитель проектов</p>
                             </div>
                             <!--!TEAM PERSONAL BLOCK DEPICTION GROUP TITLE-->
                             <!--TEAM PERSONAL BLOCK DEPICTION GROUP DESC-->
@@ -353,12 +353,12 @@
                         <div class="i_team-personal-block-depiction-group">
                             <!--TEAM PERSONAL BLOCK DEPICTION GROUP NAME-->
                             <div class="block-depiction-group-name">
-                                <span>Иван<br>Иванов</span>
+                                <span>Аида<br>Баимбетова</span>
                             </div>
                             <!--!TEAM PERSONAL BLOCK DEPICTION GROUP NAME-->
                             <!--TEAM PERSONAL BLOCK DEPICTION GROUP TITLE-->
                             <div class="block-depiction-group-title">
-                                <p>Старший менеджер</p>
+                                <p>Менеджер по продажам 1СFresh</p>
                             </div>
                             <!--!TEAM PERSONAL BLOCK DEPICTION GROUP TITLE-->
                             <!--TEAM PERSONAL BLOCK DEPICTION GROUP DESC-->
@@ -385,12 +385,12 @@
                         <div class="i_team-personal-block-depiction-group">
                             <!--TEAM PERSONAL BLOCK DEPICTION GROUP NAME-->
                             <div class="block-depiction-group-name">
-                                <span>Иван<br>Иванов</span>
+                                <span>Данияр<br>Утепов</span>
                             </div>
                             <!--!TEAM PERSONAL BLOCK DEPICTION GROUP NAME-->
                             <!--TEAM PERSONAL BLOCK DEPICTION GROUP TITLE-->
                             <div class="block-depiction-group-title">
-                                <p>Старший менеджер</p>
+                                <p>Менеджер по продажам 1СFresh</p>
                             </div>
                             <!--!TEAM PERSONAL BLOCK DEPICTION GROUP TITLE-->
                             <!--TEAM PERSONAL BLOCK DEPICTION GROUP DESC-->
@@ -417,12 +417,12 @@
                         <div class="i_team-personal-block-depiction-group">
                             <!--TEAM PERSONAL BLOCK DEPICTION GROUP NAME-->
                             <div class="block-depiction-group-name">
-                                <span>Иван<br>Иванов</span>
+                                <span>Артур<br>Якупов</span>
                             </div>
                             <!--!TEAM PERSONAL BLOCK DEPICTION GROUP NAME-->
                             <!--TEAM PERSONAL BLOCK DEPICTION GROUP TITLE-->
                             <div class="block-depiction-group-title">
-                                <p>Старший менеджер</p>
+                                <p>Менеджер по продажам</p>
                             </div>
                             <!--!TEAM PERSONAL BLOCK DEPICTION GROUP TITLE-->
                             <!--TEAM PERSONAL BLOCK DEPICTION GROUP DESC-->
@@ -441,5 +441,257 @@
         </div>
     </div>
     <!--!TEAM-->
+    <!--CERTIFICATES-->
+    <div class="i_certificates">
+        <div class="i_container">
+            <!--CERTIFICATES GROUP TITLE-->
+            <div class="i_certificates-group-title">
+                <!--CERTIFICATES GROUP TITLE ICON-->
+                <div class="i_certificates-group-title-icon">
+                    <svg width="30" height="32" viewBox="0 0 288 294" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M287.9 281.4V294H236.5V239.4H55.6C50.3 239.4 50.3 239.4 50.3 244.8C50.3 259.5 50.3 274.2 50.3 288.9V294H0.0999756V281.8H37.7C37.8 279.8 37.9 278.3 37.9 276.7C37.9 263.4 37.9 250 37.9 236.7C37.9 229.5 40.5 226.9 47.8 226.9C58.1 226.9 68.5 226.7 78.8 227C82.9 227.1 84 225.7 83.7 221.9C83.5 217.8 83.5 213.7 83.7 209.7C83.9 204.4 86.6 201.7 91.9 201.6C99.7 201.5 107.4 201.5 115.2 201.6C117.6 201.6 118.5 200.7 119.7 198.6C122.1 194.2 125.3 190.1 128.1 185.9C128.9 184.6 130 183.2 130 181.8C130.2 176 130.2 170.1 130 164.2C130 163 129 161.1 128.1 160.8C110.7 155.5 98.2 144.6 89.8 128.1C84.5 140.4 75.7 146 62.7 143.1C53.2 141 47.4 133.3 46.7 122.7H57.5C60.1 125.5 61.9 128.7 64.6 130.4C69 133 74.5 130.8 76.6 126.3C78.9 121.4 77.2 116.1 72.4 113.9C65.5 110.7 58.5 107.7 51.6 104.4C37.8 97.8 31.1 84.7001 33.2 68.6001C34.8 55.8001 45.9 44.4 59.5 41.9C67.7 40.3 76.3 41.8 83.4 46.2C85.3 41 84.8 39.8001 80.2 38.1001C70.9 34.8001 70.7 34.5 70.7 24.8C70.7 19.9 70.7 15 70.7 10.1C70.8 3.20004 73.2 0.800049 80.1 0.800049C102.8 0.800049 125.6 0.800049 148.3 0.800049C168 0.800049 187.8 0.800049 207.5 0.800049C215.4 0.800049 217.6 3.10005 217.6 11C217.6 16.7 217.4 22.4 217.7 28.2C217.9 32.9 215.8 35.7001 211.6 37.1001C211 37.3001 210.3 37.6 209.7 37.8C203.3 40.1 203.3 40.1001 204.4 47.1001C208.7 45.5001 213 43.3 217.5 42.3C233.7 38.5 250.2 47.5 255.8 63.2C261.4 79.2 254.4 96.8 239.5 104.1C232.9 107.3 226.1 110.2 219.4 113.2C214.5 115.4 212 119.2 212.7 123.6C213.3 127.8 216.7 131 221 131.4C225.2 132 228.8 129.5 230.9 124.7C231.3 123.7 232.2 122.9 233.2 122.6C236.6 122.4 240 122.5 243.3 122.5C244.1 131.6 237.6 140.2 228.2 143.1C217.2 146.5 208.7 141.9 200.2 127.7C199.6 128.7 199.1 129.5 198.6 130.4C190.6 145.3 178.7 155.4 162.6 160.4C159.7 161.3 158.7 162.5 158.8 165.5C159 170.8 158.7 176.1 159 181.4C159.1 183 160.2 184.7 161.2 186.2C163.9 190.4 167 194.3 169.3 198.6C170.4 200.7 171.3 201.7 173.7 201.7C181.5 201.6 189.2 201.6 197 201.7C203.9 201.7 206.6 204.3 206.7 211.3C206.8 216.3 206.7 221.4 206.7 226.9C208.4 227 209.9 227.1 211.3 227.1C220.6 227.1 229.8 227.1 239.1 227.1C246.4 227.1 249.2 229.8 249.2 237.2C249.3 250.3 249.2 263.3 249.2 276.4V281.7H287.9V281.4ZM84.1 66.5C84 65 83.4 63.6 82.5 62.4C76 53.1 63.1 50.9 53.8 57.4C44.5 63.9 42.3 76.8 48.8 86.1001C50.9 89.1001 53.8 91.5 57.2 93C66 97.1 74.9 101.1 84.2 105.3C84.2 92.5 84.3 79.5 84.1 66.5ZM203.8 72.9C204.1 83.9 204.5 95.0001 204.9 106.6C208.2 104.7 210.7 103 213.4 101.8C219.7 98.9 226.1 96.2001 232.3 93.3C242.6 88.5 247.3 78.1001 243.9 67.6001C240.7 57.7001 230.9 52.3001 219.9 54.1001C212.6 55.3001 208.7 60.9 204.6 66C203.4 67.5 203.8 70.6 203.8 72.9ZM191.5 103.6C191.5 82.9001 191.5 62.2 191.5 41.5C191.5 30.6 191.5 30.6 201.8 26.8C202.2 26.7 202.6 26.6 202.9 26.4C203.7 25.5 205 24.5 205 23.4C205.3 20.2 205.1 16.9 205.1 13.4H83.4C82.4 25.9 80.8 27.3001 95.1 28.1001C95.5 28.1001 95.9 28.1001 96.3 28.1001H144.5C144.4 30.5001 144.4 33 144.5 35.4C144.9 39.2 143.7 40.6 139.6 40.5C126.8 40.2 114 40.5 101.2 40.3C97.4 40.2001 96.4 41.5 96.4 45.2C96.6 55 96.4 64.8 96.5 74.6001C96.6 86.0001 96.2 97.5 97.3 108.8C99.4 130.7 120.1 152.1 149.3 149.9C173 148.3 191.5 128.2 191.5 103.6ZM146.3 166.2C146.3 165 145.1 163.9 144.5 162.8C143.8 164 142.5 165.1 142.5 166.3C142.3 173.5 142.2 180.7 142.5 187.9C142.6 190.9 141.7 192.6 138.9 193.8C135.7 195 133.2 197.2 132.3 201.1H156.1C156.4 200.6 156.7 200.2 157 199.7C154.6 197.7 152.5 195.2 149.9 193.8C147.3 192.4 146.3 190.8 146.4 187.8C146.5 180.7 146.5 173.4 146.3 166.2ZM193.8 214.8C193.7 214.5 193.6 214.3 193.5 214C192 213.9 190.3 213.7 188.5 213.7C161.2 213.7 133.8 213.7 106.5 213.7C94.8 213.7 94.5 214 96.3 225.8C96.5 226.2 96.7 226.5 97 226.8H183.2C195.1 226.8 195.1 226.8 193.8 214.8ZM97.8 278.8H86.6V267H97.8V278.8ZM123.9 278.8H112.5V267H123.9V278.8ZM150.1 278.7H138.6V267.1H150.1V278.7ZM176.2 278.8H164.9V267.2H176.2V278.8ZM202.3 278.8H191V267.2H202.3V278.8Z" />
+                    </svg>
+                </div>
+                <!--!CERTIFICATES GROUP TITLE ICON-->
+                <!--CERTIFICATES GROUP TITLE NAME-->
+                <div class="i_certificates-group-title-name">
+                    <span>НАШИ СЕРТИФИКАТЫ</span>
+                </div>
+                <!--!CERTIFICATES GROUP TITLE NAME-->
+            </div>
+            <!--!CERTIFICATES GROUP TITLE-->
+            <!--CERTIFICATES GROUP BLOCKS-->
+            <div class="i_certificates-group-blocks">
+                <!--CERTIFICATES GROUP BLOCKS ITEM FIRST 1-->
+                <div class="i_certificates-group-blocks-item">
+                    <!--CERTIFICATES GROUP BLOCKS ITEM BG ICON-->
+                    <div class="i_certificates-group-blocks-item-bg_Icon">
+                        <svg width="147" height="147" viewBox="0 0 147 147" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_504_76)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M76.411 120.92C100.336 119.474 119.48 100.335 120.926 76.4103L146.944 76.4103C145.454 114.691 114.692 145.454 76.411 146.943L76.411 120.92ZM70.2042 26.111C46.5918 27.732 27.7217 46.5911 26.1008 70.2035L0.0720742 70.2035C1.75064 32.2328 32.2308 1.7472 70.2014 0.0741277L70.2042 26.111Z" fill="#F0F0F0"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.0753 76.4101C27.5152 100.203 46.4622 119.26 70.2034 120.889L70.2034 146.929C32.1039 145.248 1.54415 114.562 0.057588 76.4101L26.0753 76.4101ZM76.4102 26.0807L76.4102 0.0574822C114.562 1.54405 145.245 32.101 146.929 70.2033L120.9 70.2033C119.274 46.4593 100.204 27.5206 76.4102 26.0807Z" fill="#E4CCCD"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_504_76">
+                                    <rect width="147" height="147" fill="white" transform="translate(147) rotate(90)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <!--!CERTIFICATES GROUP BLOCKS ITEM BG ICON-->
+                    <!--CERTIFICATES GROUP BLOCKS ITEM ICON-->
+                    <div class="i_certificates-group-blocks-item-icon">
+                        <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/item_1.png'?>" alt="status-1">
+                    </div>
+                    <!--!CERTIFICATES GROUP BLOCKS ITEM ICON-->
+                    <!--CERTIFICATES GROUP BLOCKS ITEM NAME-->
+                    <div class="i_certificates-group-blocks-item-name">
+                        <span>Компания имеет статус «Кандидат в Центр компетенции 1С:КОРП»</span>
+                    </div>
+                    <!--!CERTIFICATES GROUP BLOCKS ITEM NAME-->
+                </div>
+                <div class="i_certificates-group-blocks-item">
+                    <div class="i_certificates-group-blocks-item-bg_Icon">
+                        <svg width="147" height="147" viewBox="0 0 147 147" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_504_76)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M76.411 120.92C100.336 119.474 119.48 100.335 120.926 76.4103L146.944 76.4103C145.454 114.691 114.692 145.454 76.411 146.943L76.411 120.92ZM70.2042 26.111C46.5918 27.732 27.7217 46.5911 26.1008 70.2035L0.0720742 70.2035C1.75064 32.2328 32.2308 1.7472 70.2014 0.0741277L70.2042 26.111Z" fill="#F0F0F0"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.0753 76.4101C27.5152 100.203 46.4622 119.26 70.2034 120.889L70.2034 146.929C32.1039 145.248 1.54415 114.562 0.057588 76.4101L26.0753 76.4101ZM76.4102 26.0807L76.4102 0.0574822C114.562 1.54405 145.245 32.101 146.929 70.2033L120.9 70.2033C119.274 46.4593 100.204 27.5206 76.4102 26.0807Z" fill="#E4CCCD"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_504_76">
+                                    <rect width="147" height="147" fill="white" transform="translate(147) rotate(90)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="i_certificates-group-blocks-item-icon">
+                        <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/item_2.png'?>" alt="status-2">
+                    </div>
+                    <div class="i_certificates-group-blocks-item-name">
+                        <span>Компания имеет статус 1С:Центр ERP</span>
+                    </div>
+                </div>
+                <!--!CERTIFICATES GROUP BLOCKS FIRST 1-->
+                <!--!CERTIFICATES GROUP BLOCKS THIRD 2-->
+                <div class="i_certificates-group-blocks-item">
+                    <div class="i_certificates-group-blocks-item-bg_Icon">
+                        <svg width="147" height="147" viewBox="0 0 147 147" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_504_76)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M76.411 120.92C100.336 119.474 119.48 100.335 120.926 76.4103L146.944 76.4103C145.454 114.691 114.692 145.454 76.411 146.943L76.411 120.92ZM70.2042 26.111C46.5918 27.732 27.7217 46.5911 26.1008 70.2035L0.0720742 70.2035C1.75064 32.2328 32.2308 1.7472 70.2014 0.0741277L70.2042 26.111Z" fill="#F0F0F0"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.0753 76.4101C27.5152 100.203 46.4622 119.26 70.2034 120.889L70.2034 146.929C32.1039 145.248 1.54415 114.562 0.057588 76.4101L26.0753 76.4101ZM76.4102 26.0807L76.4102 0.0574822C114.562 1.54405 145.245 32.101 146.929 70.2033L120.9 70.2033C119.274 46.4593 100.204 27.5206 76.4102 26.0807Z" fill="#E4CCCD"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_504_76">
+                                    <rect width="147" height="147" fill="white" transform="translate(147) rotate(90)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="i_certificates-group-blocks-item-icon">
+                        <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/item_5.png'?>" alt="status-5">
+                    </div>
+                    <div class="i_certificates-group-blocks-item-name">
+                        <span>Компания является официальным партнером фирмы 1С</span>
+                    </div>
+                </div>
+                <div class="i_certificates-group-blocks-item">
+                    <div class="i_certificates-group-blocks-item-bg_Icon">
+                        <svg width="147" height="147" viewBox="0 0 147 147" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_504_76)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M76.411 120.92C100.336 119.474 119.48 100.335 120.926 76.4103L146.944 76.4103C145.454 114.691 114.692 145.454 76.411 146.943L76.411 120.92ZM70.2042 26.111C46.5918 27.732 27.7217 46.5911 26.1008 70.2035L0.0720742 70.2035C1.75064 32.2328 32.2308 1.7472 70.2014 0.0741277L70.2042 26.111Z" fill="#F0F0F0"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.0753 76.4101C27.5152 100.203 46.4622 119.26 70.2034 120.889L70.2034 146.929C32.1039 145.248 1.54415 114.562 0.057588 76.4101L26.0753 76.4101ZM76.4102 26.0807L76.4102 0.0574822C114.562 1.54405 145.245 32.101 146.929 70.2033L120.9 70.2033C119.274 46.4593 100.204 27.5206 76.4102 26.0807Z" fill="#E4CCCD"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_504_76">
+                                    <rect width="147" height="147" fill="white" transform="translate(147) rotate(90)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="i_certificates-group-blocks-item-icon">
+                        <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/item_6.png'?>" alt="status-6">
+                    </div>
+                    <div class="i_certificates-group-blocks-item-name">
+                        <span>Компания имеет статус 1С:Центр ERP Торговля</span>
+                    </div>
+                </div>
+                <!--!CERTIFICATES GROUP BLOCKS THIRD 2-->
+                <!--!CERTIFICATES GROUP BLOCKS FOURTH 3-->
+                <div class="i_certificates-group-blocks-item">
+                    <div class="i_certificates-group-blocks-item-bg_Icon">
+                        <svg width="147" height="147" viewBox="0 0 147 147" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_504_76)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M76.411 120.92C100.336 119.474 119.48 100.335 120.926 76.4103L146.944 76.4103C145.454 114.691 114.692 145.454 76.411 146.943L76.411 120.92ZM70.2042 26.111C46.5918 27.732 27.7217 46.5911 26.1008 70.2035L0.0720742 70.2035C1.75064 32.2328 32.2308 1.7472 70.2014 0.0741277L70.2042 26.111Z" fill="#F0F0F0"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.0753 76.4101C27.5152 100.203 46.4622 119.26 70.2034 120.889L70.2034 146.929C32.1039 145.248 1.54415 114.562 0.057588 76.4101L26.0753 76.4101ZM76.4102 26.0807L76.4102 0.0574822C114.562 1.54405 145.245 32.101 146.929 70.2033L120.9 70.2033C119.274 46.4593 100.204 27.5206 76.4102 26.0807Z" fill="#E4CCCD"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_504_76">
+                                    <rect width="147" height="147" fill="white" transform="translate(147) rotate(90)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="i_certificates-group-blocks-item-icon">
+                        <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/item_9.png'?>" alt="status-9">
+                    </div>
+                    <div class="i_certificates-group-blocks-item-name">
+                        <span>Компания имеет статус Центр компетенции по документообороту</span>
+                    </div>
+                </div>
+                <div class="i_certificates-group-blocks-item">
+                    <div class="i_certificates-group-blocks-item-bg_Icon">
+                        <svg width="147" height="147" viewBox="0 0 147 147" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_504_76)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M76.411 120.92C100.336 119.474 119.48 100.335 120.926 76.4103L146.944 76.4103C145.454 114.691 114.692 145.454 76.411 146.943L76.411 120.92ZM70.2042 26.111C46.5918 27.732 27.7217 46.5911 26.1008 70.2035L0.0720742 70.2035C1.75064 32.2328 32.2308 1.7472 70.2014 0.0741277L70.2042 26.111Z" fill="#F0F0F0"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.0753 76.4101C27.5152 100.203 46.4622 119.26 70.2034 120.889L70.2034 146.929C32.1039 145.248 1.54415 114.562 0.057588 76.4101L26.0753 76.4101ZM76.4102 26.0807L76.4102 0.0574822C114.562 1.54405 145.245 32.101 146.929 70.2033L120.9 70.2033C119.274 46.4593 100.204 27.5206 76.4102 26.0807Z" fill="#E4CCCD"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_504_76">
+                                    <rect width="147" height="147" fill="white" transform="translate(147) rotate(90)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="i_certificates-group-blocks-item-icon">
+                        <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/item_10.png'?>" alt="status-10">
+                    </div>
+                    <div class="i_certificates-group-blocks-item-name">
+                        <span>Компания имеет статус 1С:Центр Сетевой компетенции</span>
+                    </div>
+                </div>
+                <!--!CERTIFICATES GROUP BLOCKS FOURTH 3-->
+                <!--!CERTIFICATES GROUP BLOCKS SECOND 4-->
+                <div class="i_certificates-group-blocks-item">
+                    <div class="i_certificates-group-blocks-item-bg_Icon">
+                        <svg width="147" height="147" viewBox="0 0 147 147" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_504_76)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M76.411 120.92C100.336 119.474 119.48 100.335 120.926 76.4103L146.944 76.4103C145.454 114.691 114.692 145.454 76.411 146.943L76.411 120.92ZM70.2042 26.111C46.5918 27.732 27.7217 46.5911 26.1008 70.2035L0.0720742 70.2035C1.75064 32.2328 32.2308 1.7472 70.2014 0.0741277L70.2042 26.111Z" fill="#F0F0F0"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.0753 76.4101C27.5152 100.203 46.4622 119.26 70.2034 120.889L70.2034 146.929C32.1039 145.248 1.54415 114.562 0.057588 76.4101L26.0753 76.4101ZM76.4102 26.0807L76.4102 0.0574822C114.562 1.54405 145.245 32.101 146.929 70.2033L120.9 70.2033C119.274 46.4593 100.204 27.5206 76.4102 26.0807Z" fill="#E4CCCD"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_504_76">
+                                    <rect width="147" height="147" fill="white" transform="translate(147) rotate(90)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="i_certificates-group-blocks-item-icon">
+                        <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/item_3.png'?>" alt="status-3">
+                    </div>
+                    <div class="i_certificates-group-blocks-item-name">
+                        <span>Компания занимает 1 место по РК в рейтинге 1С: Консалтинг</span>
+                    </div>
+                </div>
+                <div class="i_certificates-group-blocks-item">
+                    <div class="i_certificates-group-blocks-item-bg_Icon">
+                        <svg width="147" height="147" viewBox="0 0 147 147" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_504_76)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M76.411 120.92C100.336 119.474 119.48 100.335 120.926 76.4103L146.944 76.4103C145.454 114.691 114.692 145.454 76.411 146.943L76.411 120.92ZM70.2042 26.111C46.5918 27.732 27.7217 46.5911 26.1008 70.2035L0.0720742 70.2035C1.75064 32.2328 32.2308 1.7472 70.2014 0.0741277L70.2042 26.111Z" fill="#F0F0F0"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.0753 76.4101C27.5152 100.203 46.4622 119.26 70.2034 120.889L70.2034 146.929C32.1039 145.248 1.54415 114.562 0.057588 76.4101L26.0753 76.4101ZM76.4102 26.0807L76.4102 0.0574822C114.562 1.54405 145.245 32.101 146.929 70.2033L120.9 70.2033C119.274 46.4593 100.204 27.5206 76.4102 26.0807Z" fill="#E4CCCD"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_504_76">
+                                    <rect width="147" height="147" fill="white" transform="translate(147) rotate(90)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="i_certificates-group-blocks-item-icon">
+                        <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/item_4.png'?>" alt="status-4">
+                    </div>
+                    <div class="i_certificates-group-blocks-item-name">
+                        <span>Компания имеет статус «Кандидат в Центр компетенции 1С:КОРП»</span>
+                    </div>
+                </div>
+                <!--!CERTIFICATES GROUP BLOCKS SECOND 4-->
+                <!--!CERTIFICATES GROUP BLOCKS FOURTH 5-->
+                <div class="i_certificates-group-blocks-item">
+                    <div class="i_certificates-group-blocks-item-bg_Icon">
+                        <svg width="147" height="147" viewBox="0 0 147 147" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_504_76)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M76.411 120.92C100.336 119.474 119.48 100.335 120.926 76.4103L146.944 76.4103C145.454 114.691 114.692 145.454 76.411 146.943L76.411 120.92ZM70.2042 26.111C46.5918 27.732 27.7217 46.5911 26.1008 70.2035L0.0720742 70.2035C1.75064 32.2328 32.2308 1.7472 70.2014 0.0741277L70.2042 26.111Z" fill="#F0F0F0"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.0753 76.4101C27.5152 100.203 46.4622 119.26 70.2034 120.889L70.2034 146.929C32.1039 145.248 1.54415 114.562 0.057588 76.4101L26.0753 76.4101ZM76.4102 26.0807L76.4102 0.0574822C114.562 1.54405 145.245 32.101 146.929 70.2033L120.9 70.2033C119.274 46.4593 100.204 27.5206 76.4102 26.0807Z" fill="#E4CCCD"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_504_76">
+                                    <rect width="147" height="147" fill="white" transform="translate(147) rotate(90)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="i_certificates-group-blocks-item-icon">
+                        <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/item_7.png'?>" alt="status-7">
+                    </div>
+                    <div class="i_certificates-group-blocks-item-name">
+                        <span>Компания имеет статус 1С:Центр ERP Производство</span>
+                    </div>
+                </div>
+                <div class="i_certificates-group-blocks-item">
+                    <div class="i_certificates-group-blocks-item-bg_Icon">
+                        <svg width="147" height="147" viewBox="0 0 147 147" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_504_76)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M76.411 120.92C100.336 119.474 119.48 100.335 120.926 76.4103L146.944 76.4103C145.454 114.691 114.692 145.454 76.411 146.943L76.411 120.92ZM70.2042 26.111C46.5918 27.732 27.7217 46.5911 26.1008 70.2035L0.0720742 70.2035C1.75064 32.2328 32.2308 1.7472 70.2014 0.0741277L70.2042 26.111Z" fill="#F0F0F0"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.0753 76.4101C27.5152 100.203 46.4622 119.26 70.2034 120.889L70.2034 146.929C32.1039 145.248 1.54415 114.562 0.057588 76.4101L26.0753 76.4101ZM76.4102 26.0807L76.4102 0.0574822C114.562 1.54405 145.245 32.101 146.929 70.2033L120.9 70.2033C119.274 46.4593 100.204 27.5206 76.4102 26.0807Z" fill="#E4CCCD"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_504_76">
+                                    <rect width="147" height="147" fill="white" transform="translate(147) rotate(90)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="i_certificates-group-blocks-item-icon">
+                        <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/item_8.png'?>" alt="status-8">
+                    </div>
+                    <div class="i_certificates-group-blocks-item-name">
+                        <span>Компания имеет статус Центр реальной автоматизации </span>
+                    </div>
+                </div>
+                <!--!CERTIFICATES GROUP BLOCKS FOURTH 5-->
+            </div>
+            <!--!CERTIFICATES GROUP BLOCKS-->
+        </div>
+    </div>
+    <!--!CERTIFICATES-->
 </div>
 <!--!ABOUT US -->
