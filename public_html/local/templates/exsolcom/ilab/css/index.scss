@@ -27,12 +27,14 @@ html{
   --bg-blockSliderProjectHover: #f9f9f9;
   --color-red: #FF161F;
   --color-red-block: #FF363E;
+  --color-grey-block: #2F2F2F;
   --color-Grey: #f5f5f5;
   --color-White: #ffffff;
   --color-WhiteWhite: #ffffff;
   --color-blockHv: #f5f5f5;
   --color-title: #818181;
   --color-text-input: #919191;
+  --color-text-li: #919191;
 }
 
 html[data-theme='dark']{
@@ -57,12 +59,14 @@ html[data-theme='dark']{
   --bg-blockSliderProjectHover: #ffffff;
   --color-red: #FF161F;
   --color-red-block: #FF363E;
+  --color-grey-block: #2F2F2F;
   --color-Grey: #f5f5f5;
   --color-White: #000000;
   --color-WhiteWhite: #ffffff;
   --color-blockHv: #E1E1E1;
   --color-title: #818181;
   --color-text-input: #ffffff;
+  --color-text-li: #919191;
 }
 
 body{

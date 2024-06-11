@@ -74,7 +74,7 @@
       gap: 30px;
       span{
         color: var(--color-black);
-        cursor: default;
+        cursor: text;
         font-size: 14px;
         line-height: 21px;
         .color-company-desc{
@@ -162,7 +162,7 @@
         padding: 50px 0 80px 0;
         span{
           color: var(--color-black);
-          cursor: default;
+          cursor: text;
           font-size: 14px;
           line-height: 21px;
           @media screen and (max-width: 1330px){
@@ -219,6 +219,7 @@
         border-radius: 30px;
         svg{
           color: var(--color-circleIcon);
+          margin: 0 0 0 2px;
         }
         @media screen and (max-width: 760px){
           width: 40px;
@@ -331,15 +332,15 @@
                 color: var(--color-textInfoblock);
                 .color-red-top-name{
                   color: var(--color-red);
-                  cursor: default
+                  cursor: text;
                 }
-                cursor: default
+                cursor: text;
               }
               .i_directorship-desc-top-name-specification{
                 color: var(--color-title);
                 font-size: 15px;
                 font-family: "Open Sans", sans-serif;
-                cursor: default;
+                cursor: text;
               }
             }
             //!DIRECTORSHIP TOP NAME
@@ -351,7 +352,7 @@
               .i_directorship-desc-top-depiction-name{
                 font-size: 16px;
                 color: var(----color-textInfoblock);
-                cursor: default;
+                cursor: text;
                 font-weight: 600;
               }
               .i_directorship-desc-top-depiction-specification{
@@ -361,7 +362,7 @@
                 span{
                   color: var(----color-textInfoblock);
                   font-size: 15px;
-                  cursor: default
+                  cursor: text;
                 }
               }
             }
@@ -385,7 +386,7 @@
                 color: var(--color-WhiteWhite);
                 line-height: 21px;
                 font-size: 16px;
-                cursor: default;
+                cursor: text;
               }
             }
           }
@@ -473,15 +474,15 @@
                 color: var(--color-textInfoblock);
                 .color-red-top-name{
                   color: var(--color-red);
-                  cursor: default
+                  cursor: text;
                 }
-                cursor: default
+                cursor: text;
               }
               .i_directorship-desc-top-name-specification{
                 color: var(--color-title);
                 font-size: 15px;
                 font-family: "Open Sans", sans-serif;
-                cursor: default;
+                cursor: text;
               }
             }
             //!DIRECTORSHIP TOP NAME
@@ -493,7 +494,7 @@
               .i_directorship-desc-top-depiction-name{
                 font-size: 16px;
                 color: var(----color-textInfoblock);
-                cursor: default;
+                cursor: text;
                 font-weight: 600;
               }
               .i_directorship-desc-top-depiction-specification{
@@ -503,7 +504,7 @@
                 span{
                   color: var(----color-textInfoblock);
                   font-size: 15px;
-                  cursor: default
+                  cursor: text;
                 }
               }
             }
@@ -527,7 +528,7 @@
                 color: var(--color-WhiteWhite);
                 line-height: 21px;
                 font-size: 16px;
-                cursor: default;
+                cursor: text;
               }
             }
           }
@@ -667,7 +668,7 @@
               text-align: center;
               span{
                 color: var(--color-textInfoblock);
-                cursor: default;
+                cursor: text;
                 font-size: 28px;
               }
             }
@@ -679,7 +680,7 @@
               line-height: 18px;
               color: var(--color-title);
               text-align: center;
-              cursor: default;
+              cursor: text;
             }
             //!TEAM PERSONAL BLOCK DEPICTION GROUP TITLE
             //TEAM PERSONAL BLOCK DEPICTION GROUP DESC
@@ -688,7 +689,7 @@
               font-size: 14px;
               text-align: center;
               line-height: 21px;
-              cursor: default;
+              cursor: text;
             }
             //!TEAM PERSONAL BLOCK DEPICTION GROUP DESC
           }
@@ -798,7 +799,7 @@
             font-family: "Open Sans", sans-serif;
             font-size: 14px;
             color: var(--color-nochangeThirdIcon);
-            cursor: default;
+            cursor: text;
           }
         }
         //!CERTIFICATES GROUP BLOCKS ITEM NAME
@@ -835,7 +836,7 @@
             font-size: 30px;
             font-weight: 600;
             color: var(--color-black);
-            cursor: default;
+            cursor: text;
             .i_cloud-desc-name-color{
               color: var(--color-red);
             }
@@ -854,12 +855,14 @@
             font-size: 18px;
             font-family: "Comfortaa", sans-serif;
             line-height: 25px;
+            cursor: text;
           }
           span{
             color: var(--color-black);
             font-family: "Open Sans", sans-serif;
             font-size: 16px;
             line-height: 20px;
+            cursor: text;
           }
         }
         //!CLOUD GROUP DESC DEPICTION
@@ -1012,12 +1015,14 @@
               font-weight: 600;
               color: var(--color-textInfoblock);
               line-height: 27px;
+              cursor: text;
             }
             span{
               color: var(--color-textInfoblock);
               font-size: 14px;
               font-family: "Open Sans", sans-serif;
               line-height: 18px;
+              cursor: text;
             }
             //!WORK PROCESS BODY GROUP BLOCK SPAN WEIGHT
           }
@@ -1046,6 +1051,184 @@
     }
   }
   //!WORK PROCESS
+  //SEO
+  .i_seo{
+    background-color: var(--bg-second);
+    padding: 70px 0;
+    //SEO TITLE
+    .i_seo-title{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      //SEO TITLE ICON
+      .i_seo-title-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 50px;
+        width: 50px;
+        height: 50px;
+        background-color: var(--color-circles);
+        border-radius: 30px;
+        svg{
+          color: var(--color-circleIcon);
+          margin: 1px 0 0 3px;
+        }
+        @media screen and (max-width: 760px){
+          width: 40px;
+          height: 40px;
+          min-width: 40px;
+          svg{
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+      //!SEO TITLE ICON
+      //SEO TITLE NAME
+      .i_seo-title-name{
+        display: flex;
+        justify-content: flex-start;
+        span{
+          font-size: 32px;
+          font-weight: 400;
+          @media screen and (max-width: 1330px){
+            font-size: 28px;
+          }
+          @media screen and (max-width: 760px){
+            font-size: 26px;
+          }
+          @media screen and (max-width: 480px){
+            font-size: 21px;
+          }
+        }
+      }
+      //!SEO TITLE NAME
+    }
+    //!SEO TITLE
+    //SEO DATES
+    .i_seo-dates:before{
+      content: ' ';
+      position: absolute;
+      bottom: 0;
+      width: calc(100% - 1px);
+      background-image: url("../img/svg/doth-vertical_downGrey.svg");
+      height: 10px;
+      background-size: 10px;
+    }
+    .i_seo-dates{
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 70px 0 50px 0;
+      //SEO DATES SWITCH
+      .i_seo-dates-switch{
+        width: 96px;
+        height: 60px;
+        background-color: var(--bg-block);
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+          span{
+            color: var(--color-red);
+          }
+          cursor: pointer;
+        }
+        span{
+          font-weight: 600;
+          font-size: 18px;
+          color: var(--color-textInfoblock);
+        }
+      }
+      //!SEO DATES SWITCH
+    }
+    //!SEO DATES
+    //SEO EVENTS
+    .i_seo-events{
+      //SEO EVENTS 2022
+      .i_seo-events-2022{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 70px 0 0 0;
+        //SEO EVENTS 2022 TITLE
+        .i_seo-events-2022-title{
+          display: flex;
+          justify-content: center;
+          span{
+            font-size: 20px;
+            color: var(--color-black);
+            font-weight: 600;
+            .i_seo-events-2022-title-color{
+              color: var(--color-red);
+            }
+            cursor: text;
+          }
+        }
+        //!SEO EVENTS 2022 TITLE
+        //SEO EVENTS 2022 DESC
+        .i_seo-events-2022-desc{
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+          //SEO EVENTS 2022 DESC GROUP
+          .i_seo-events-2022-desc-group{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            //SEO EVENTS 2022 DESC HEADLINE LOST_WORDS
+            &:nth-child(3){
+              padding: 20px 0 0 0;
+              .i_seo-events-2022-desc-headline-lostWords{
+                padding: 20px 0 0 0;
+              }
+            }
+            //!SEO EVENTS 2022 DESC HEADLINE LOST_WORDS
+            //SEO EVENTS 2022 DESC HEADLINE
+            .i_seo-events-2022-desc-headline,
+            .i_seo-events-2022-desc-headline-lostWords{
+              span{
+                font-size: 18px;
+                font-weight: 600;
+                color: var(--color-black);
+                .i_seo-events-2022-desc-headline-color{
+                  color: var(--color-red);
+                }
+                cursor: text;
+              }
+            }
+            //!SEO EVENTS 2022 DESC HEADLINE
+            //SEO EVENTS 2022 DESC DEPICTION
+            .i_seo-events-2022-desc-depiction{
+              padding: 0 0 0 20px;
+              ul{
+                li{
+                  color: var(--color-text-li);
+                  line-height: 20px;
+                  span{
+                    font-size: 15px;
+                    color: var(--color-black);
+                    font-family: "Open Sans", sans-serif;
+                    cursor: text;
+                  }
+                }
+              }
+            }
+            //!SEO EVENTS 2022 DESC DEPICTION
+          }
+          //!SEO EVENTS 2022 DESC GROUP
+        }
+        //!SEO EVENTS 2022 DESC
+      }
+      //!SEO EVENTS 2022
+    }
+    //!SEO EVENTS
+  }
+  //!SEO
 }
 //! ABOUT US
 

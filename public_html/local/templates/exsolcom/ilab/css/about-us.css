@@ -79,7 +79,7 @@
 }
 .i_about-us .i_about-company .i_about-company-desc span {
   color: var(--color-black);
-  cursor: default;
+  cursor: text;
   font-size: 14px;
   line-height: 21px;
 }
@@ -171,7 +171,7 @@
 }
 .i_about-us .i_about-company .i_about-company-strategy .i_about-company-strategy-desc span {
   color: var(--color-black);
-  cursor: default;
+  cursor: text;
   font-size: 14px;
   line-height: 21px;
 }
@@ -228,6 +228,7 @@
 }
 .i_about-us .i_directorship .i_directorship-title .i_directorship-title-icon svg {
   color: var(--color-circleIcon);
+  margin: 0 0 0 2px;
 }
 @media screen and (max-width: 760px) {
   .i_about-us .i_directorship .i_directorship-title .i_directorship-title-icon {
@@ -335,17 +336,17 @@
   font-size: 24px;
   font-weight: 600;
   color: var(--color-textInfoblock);
-  cursor: default;
+  cursor: text;
 }
 .i_about-us .i_directorship .i_directorship-basic .i_directorship-basic-block .i_directorship-basic-block-desc .i_directorship-basic-block-desc-top .i_directorship-block-desc-top-name .i_directorship-desc-top-name-name .color-red-top-name {
   color: var(--color-red);
-  cursor: default;
+  cursor: text;
 }
 .i_about-us .i_directorship .i_directorship-basic .i_directorship-basic-block .i_directorship-basic-block-desc .i_directorship-basic-block-desc-top .i_directorship-block-desc-top-name .i_directorship-desc-top-name-specification {
   color: var(--color-title);
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
-  cursor: default;
+  cursor: text;
 }
 .i_about-us .i_directorship .i_directorship-basic .i_directorship-basic-block .i_directorship-basic-block-desc .i_directorship-basic-block-desc-top .i_directorship-block-desc-top-depiction {
   display: flex;
@@ -355,7 +356,7 @@
 .i_about-us .i_directorship .i_directorship-basic .i_directorship-basic-block .i_directorship-basic-block-desc .i_directorship-basic-block-desc-top .i_directorship-block-desc-top-depiction .i_directorship-desc-top-depiction-name {
   font-size: 16px;
   color: var(----color-textInfoblock);
-  cursor: default;
+  cursor: text;
   font-weight: 600;
 }
 .i_about-us .i_directorship .i_directorship-basic .i_directorship-basic-block .i_directorship-basic-block-desc .i_directorship-basic-block-desc-top .i_directorship-block-desc-top-depiction .i_directorship-desc-top-depiction-specification {
@@ -366,7 +367,7 @@
 .i_about-us .i_directorship .i_directorship-basic .i_directorship-basic-block .i_directorship-basic-block-desc .i_directorship-basic-block-desc-top .i_directorship-block-desc-top-depiction .i_directorship-desc-top-depiction-specification span {
   color: var(----color-textInfoblock);
   font-size: 15px;
-  cursor: default;
+  cursor: text;
 }
 .i_about-us .i_directorship .i_directorship-basic .i_directorship-basic-block .i_directorship-basic-block-desc .i_directorship-basic-block-desc-bottom {
   height: 244px;
@@ -383,7 +384,7 @@
   color: var(--color-WhiteWhite);
   line-height: 21px;
   font-size: 16px;
-  cursor: default;
+  cursor: text;
 }
 .i_about-us .i_directorship .i_directorship-basic .i_directorship-basic-block_second {
   display: flex;
@@ -458,17 +459,17 @@
   font-size: 24px;
   font-weight: 600;
   color: var(--color-textInfoblock);
-  cursor: default;
+  cursor: text;
 }
 .i_about-us .i_directorship .i_directorship-basic .i_directorship-basic-block_second .i_directorship-basic-block-desc_second .i_directorship-basic-block-desc-top_second .i_directorship-block-desc-top-name .i_directorship-desc-top-name-name .color-red-top-name {
   color: var(--color-red);
-  cursor: default;
+  cursor: text;
 }
 .i_about-us .i_directorship .i_directorship-basic .i_directorship-basic-block_second .i_directorship-basic-block-desc_second .i_directorship-basic-block-desc-top_second .i_directorship-block-desc-top-name .i_directorship-desc-top-name-specification {
   color: var(--color-title);
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
-  cursor: default;
+  cursor: text;
 }
 .i_about-us .i_directorship .i_directorship-basic .i_directorship-basic-block_second .i_directorship-basic-block-desc_second .i_directorship-basic-block-desc-top_second .i_directorship-block-desc-top-depiction {
   display: flex;
@@ -478,7 +479,7 @@
 .i_about-us .i_directorship .i_directorship-basic .i_directorship-basic-block_second .i_directorship-basic-block-desc_second .i_directorship-basic-block-desc-top_second .i_directorship-block-desc-top-depiction .i_directorship-desc-top-depiction-name {
   font-size: 16px;
   color: var(----color-textInfoblock);
-  cursor: default;
+  cursor: text;
   font-weight: 600;
 }
 .i_about-us .i_directorship .i_directorship-basic .i_directorship-basic-block_second .i_directorship-basic-block-desc_second .i_directorship-basic-block-desc-top_second .i_directorship-block-desc-top-depiction .i_directorship-desc-top-depiction-specification {
@@ -489,7 +490,7 @@
 .i_about-us .i_directorship .i_directorship-basic .i_directorship-basic-block_second .i_directorship-basic-block-desc_second .i_directorship-basic-block-desc-top_second .i_directorship-block-desc-top-depiction .i_directorship-desc-top-depiction-specification span {
   color: var(----color-textInfoblock);
   font-size: 15px;
-  cursor: default;
+  cursor: text;
 }
 .i_about-us .i_directorship .i_directorship-basic .i_directorship-basic-block_second .i_directorship-basic-block-desc_second .i_directorship-basic-block-desc-bottom_second {
   height: 244px;
@@ -506,7 +507,7 @@
   color: var(--color-WhiteWhite);
   line-height: 21px;
   font-size: 16px;
-  cursor: default;
+  cursor: text;
 }
 .i_about-us .i_team {
   padding: 70px 0;
@@ -633,7 +634,7 @@
 }
 .i_about-us .i_team .i_team-personal .i_team-personal-block .i_team-personal-block-depiction .i_team-personal-block-depiction-group .block-depiction-group-name span {
   color: var(--color-textInfoblock);
-  cursor: default;
+  cursor: text;
   font-size: 28px;
 }
 .i_about-us .i_team .i_team-personal .i_team-personal-block .i_team-personal-block-depiction .i_team-personal-block-depiction-group .block-depiction-group-title {
@@ -642,14 +643,14 @@
   line-height: 18px;
   color: var(--color-title);
   text-align: center;
-  cursor: default;
+  cursor: text;
 }
 .i_about-us .i_team .i_team-personal .i_team-personal-block .i_team-personal-block-depiction .i_team-personal-block-depiction-group .block-depiction-group-desc {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   text-align: center;
   line-height: 21px;
-  cursor: default;
+  cursor: text;
 }
 .i_about-us .i_certificates {
   background-color: var(--bg-second);
@@ -741,7 +742,7 @@
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   color: var(--color-nochangeThirdIcon);
-  cursor: default;
+  cursor: text;
 }
 .i_about-us .i_cloud {
   padding: 70px 0;
@@ -763,7 +764,7 @@
   font-size: 30px;
   font-weight: 600;
   color: var(--color-black);
-  cursor: default;
+  cursor: text;
 }
 .i_about-us .i_cloud .i_cloud-group .i_cloud-group-desc .i_cloud-group-desc-name span .i_cloud-desc-name-color {
   color: var(--color-red);
@@ -780,12 +781,14 @@
   font-size: 18px;
   font-family: "Comfortaa", sans-serif;
   line-height: 25px;
+  cursor: text;
 }
 .i_about-us .i_cloud .i_cloud-group .i_cloud-group-desc .i_cloud-group-desc-depiction span {
   color: var(--color-black);
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  cursor: text;
 }
 .i_about-us .i_cloud .i_cloud-group .i_cloud-group-desc .i_cloud-group-desc-btn button {
   padding: 20px 48px;
@@ -926,12 +929,14 @@
   font-weight: 600;
   color: var(--color-textInfoblock);
   line-height: 27px;
+  cursor: text;
 }
 .i_about-us .i_work-process .i_container .i_work-process-body .i_work-process-body-group .i_work-process-body-group-block span {
   color: var(--color-textInfoblock);
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   line-height: 18px;
+  cursor: text;
 }
 .i_about-us .i_work-process .i_container .i_work-process-btn {
   display: flex;
@@ -951,6 +956,159 @@
     padding: 12px 22px;
     font-size: 13px;
   }
+}
+.i_about-us .i_seo {
+  background-color: var(--bg-second);
+  padding: 70px 0;
+}
+.i_about-us .i_seo .i_seo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.i_about-us .i_seo .i_seo-title .i_seo-title-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-circles);
+  border-radius: 30px;
+}
+.i_about-us .i_seo .i_seo-title .i_seo-title-icon svg {
+  color: var(--color-circleIcon);
+  margin: 1px 0 0 3px;
+}
+@media screen and (max-width: 760px) {
+  .i_about-us .i_seo .i_seo-title .i_seo-title-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+  }
+  .i_about-us .i_seo .i_seo-title .i_seo-title-icon svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+.i_about-us .i_seo .i_seo-title .i_seo-title-name {
+  display: flex;
+  justify-content: flex-start;
+}
+.i_about-us .i_seo .i_seo-title .i_seo-title-name span {
+  font-size: 32px;
+  font-weight: 400;
+}
+@media screen and (max-width: 1330px) {
+  .i_about-us .i_seo .i_seo-title .i_seo-title-name span {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_about-us .i_seo .i_seo-title .i_seo-title-name span {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_about-us .i_seo .i_seo-title .i_seo-title-name span {
+    font-size: 21px;
+  }
+}
+.i_about-us .i_seo .i_seo-dates:before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 1px);
+  background-image: url("../img/svg/doth-vertical_downGrey.svg");
+  height: 10px;
+  background-size: 10px;
+}
+.i_about-us .i_seo .i_seo-dates {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 70px 0 50px 0;
+}
+.i_about-us .i_seo .i_seo-dates .i_seo-dates-switch {
+  width: 96px;
+  height: 60px;
+  background-color: var(--bg-block);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.i_about-us .i_seo .i_seo-dates .i_seo-dates-switch:hover {
+  cursor: pointer;
+}
+.i_about-us .i_seo .i_seo-dates .i_seo-dates-switch:hover span {
+  color: var(--color-red);
+}
+.i_about-us .i_seo .i_seo-dates .i_seo-dates-switch span {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-textInfoblock);
+}
+.i_about-us .i_seo .i_seo-events .i_seo-events-2022 {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 70px 0 0 0;
+}
+.i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-title {
+  display: flex;
+  justify-content: center;
+}
+.i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-title span {
+  font-size: 20px;
+  color: var(--color-black);
+  font-weight: 600;
+  cursor: text;
+}
+.i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-title span .i_seo-events-2022-title-color {
+  color: var(--color-red);
+}
+.i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-desc .i_seo-events-2022-desc-group {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-desc .i_seo-events-2022-desc-group:nth-child(3) {
+  padding: 20px 0 0 0;
+}
+.i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-desc .i_seo-events-2022-desc-group:nth-child(3) .i_seo-events-2022-desc-headline-lostWords {
+  padding: 20px 0 0 0;
+}
+.i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-desc .i_seo-events-2022-desc-group .i_seo-events-2022-desc-headline span,
+.i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-desc .i_seo-events-2022-desc-group .i_seo-events-2022-desc-headline-lostWords span {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-black);
+  cursor: text;
+}
+.i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-desc .i_seo-events-2022-desc-group .i_seo-events-2022-desc-headline span .i_seo-events-2022-desc-headline-color,
+.i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-desc .i_seo-events-2022-desc-group .i_seo-events-2022-desc-headline-lostWords span .i_seo-events-2022-desc-headline-color {
+  color: var(--color-red);
+}
+.i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-desc .i_seo-events-2022-desc-group .i_seo-events-2022-desc-depiction {
+  padding: 0 0 0 20px;
+}
+.i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-desc .i_seo-events-2022-desc-group .i_seo-events-2022-desc-depiction ul li {
+  color: var(--color-text-li);
+  line-height: 20px;
+}
+.i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-desc .i_seo-events-2022-desc-group .i_seo-events-2022-desc-depiction ul li span {
+  font-size: 15px;
+  color: var(--color-black);
+  font-family: "Open Sans", sans-serif;
+  cursor: text;
 }
 
 /*# sourceMappingURL=about-us.css.map */
