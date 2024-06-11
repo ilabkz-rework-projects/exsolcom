@@ -864,6 +864,172 @@
         }
         //!CLOUD GROUP DESC DEPICTION
         //CLOUD GROUP DESC BTN
+        .i_cloud-group-desc-btn{
+          button{
+            padding: 20px 48px;
+            @media screen and (max-width: 1330px){
+              padding: 16px 38px;
+              font-size: 14px;
+            }
+            @media screen and (max-width: 395px){
+              padding: 12px 22px;
+              font-size: 13px;
+            }
+          }
+        }
+        //!CLOUD GROUP DESC BTN
+      }
+      //!CLOUD GROUP DESC
+    }
+    //CLOUD GROUP
+  }
+  //!CLOUD
+  //WORK PROCESS
+  .i_work-process{
+    padding: 70px 0;
+    .i_container{
+      //WORK PROCESS TITLE
+      .i_work-process-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        //WORK PROCESS TITLE ICON
+        .i_work-process-title-icon{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 50px;
+          width: 50px;
+          height: 50px;
+          background-color: var(--color-circles);
+          border-radius: 30px;
+          svg{
+            color: var(--color-circleIcon);
+          }
+          @media screen and (max-width: 760px){
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            svg{
+              width: 25px;
+              height: 25px;
+            }
+          }
+        }
+        //!WORK PROCESS TITLE ICON
+        //WORK PROCESS TITLE NAME
+        .i_work-process-title-name{
+          display: flex;
+          justify-content: flex-start;
+          span{
+            font-size: 32px;
+            font-weight: 400;
+            @media screen and (max-width: 1330px){
+              font-size: 28px;
+            }
+            @media screen and (max-width: 760px){
+              font-size: 26px;
+            }
+            @media screen and (max-width: 480px){
+              font-size: 21px;
+            }
+          }
+        }
+        //!WORK PROCESS TITLE NAME
+      }
+      //!WORK PROCESS TITLE
+      //WORK PROCESS BODY
+      .i_work-process-body{
+        position: relative;
+        z-index: 1;
+        //WORK PROCESS BODY INFOGRAPHIC LIGHT
+        .i_work-process-body-infographic-light{
+          position: absolute;
+          z-index: 1;
+          top: -50%;
+          left: 50%;
+          transform: translate(-50%, 50%);
+          width: 40%;
+          height: 100%;
+          svg{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        //!WORK PROCESS BODY INFOGRAPHIC LIGHT
+        //WORK PROCESS BODY INFOGRAPHIC NIGHT
+        .i_work-process-body-infographic-night{
+          display: none;
+        }
+        //!WORK PROCESS BODY INFOGRAPHIC NIGHT
+        //WORK PROCESS BODY GROUP
+        .i_work-process-body-group{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 120px 240px;
+          padding: 70px 0;
+          //WORK PROCESS BODY GROUP BLOCK
+          .i_work-process-body-group-block{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            width: 34%;
+            height: 170px;
+            background-color: var(--color-blockHv);
+            padding: 20px 20px 20px 70px;
+            border-radius: 35px;
+            &:nth-child(3){
+              margin: 0 230px 0 0;
+              padding: 20px 70px 20px 20px;
+              align-items: flex-end;
+              span{
+                text-align: right;
+              }
+            }
+            &:nth-child(1){
+              padding: 20px 70px 20px 20px;
+              align-items: flex-end;
+              span{
+                text-align: right;
+              }
+            }
+            &:nth-child(5){
+              padding: 20px 70px 20px 20px;
+              align-items: flex-end;
+              span{
+                text-align: right;
+              }
+            }
+            //WORK PROCESS BODY GROUP BLOCK SPAN WEIGHT
+            .i_work-process-body-group-block-color{
+              font-family: "Comfortaa", sans-serif;
+              font-size: 18px;
+              font-weight: 600;
+              color: var(--color-textInfoblock);
+              line-height: 27px;
+            }
+            span{
+              color: var(--color-textInfoblock);
+              font-size: 14px;
+              font-family: "Open Sans", sans-serif;
+              line-height: 18px;
+            }
+            //!WORK PROCESS BODY GROUP BLOCK SPAN WEIGHT
+          }
+          //!WORK PROCESS BODY GROUP BLOCK
+        }
+        //!WORK PROCESS BODY GROUP
+      }
+      //!WORK PROCESS BODY
+      //WORK PROCESS BTN
+      .i_work-process-btn{
+        display: flex;
+        justify-content: center;
         button{
           padding: 20px 48px;
           @media screen and (max-width: 1330px){
@@ -875,13 +1041,11 @@
             font-size: 13px;
           }
         }
-        //!CLOUD GROUP DESC BTN
       }
-      //!CLOUD GROUP DESC
+      //!WORK PROCESS BTN
     }
-    //CLOUD GROUP
   }
-  //!CLOUD
+  //!WORK PROCESS
 }
 //! ABOUT US
 

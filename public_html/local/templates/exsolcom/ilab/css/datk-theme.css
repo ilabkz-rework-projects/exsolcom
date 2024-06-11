@@ -4,6 +4,23 @@ html[data-theme=dark] .i_header .i_header-more #myCircles.wide .close_hide_menu 
 html[data-theme=dark] .i_header .i_header-more #title-search .i_search-close {
   background-image: url("../img/svg/close-iconNight.svg") !important;
 }
+html[data-theme=dark] .i_main .i_about-us .i_work-process .i_work-process-body .i_work-process-body-infographic-light {
+  display: none;
+}
+html[data-theme=dark] .i_main .i_about-us .i_work-process .i_work-process-body .i_work-process-body-infographic-night {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 40%;
+  height: 100%;
+}
+html[data-theme=dark] .i_main .i_about-us .i_work-process .i_work-process-body .i_work-process-body-infographic-night svg {
+  width: 100%;
+  height: 100%;
+}
 html[data-theme=dark] .i_footer .i_footer-left .i_footer-left-icons-item #myCircles2.wide .close_hide_menu2 {
   background-image: url("../img/svg/close-iconNight.svg") !important;
 }
