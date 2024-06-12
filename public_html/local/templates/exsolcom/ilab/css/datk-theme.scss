@@ -18,6 +18,86 @@ html[data-theme='dark']{
   }
   .i_main{
     .i_about-us{
+      //ABOUT COMPANY
+      .i_about-company:before{
+        content: ' ';
+        background-image: url("../img/svg/bg-image-about-company-Grey-dark.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 100%;
+        right: 75%;
+        transform: translate(50%, -50%);
+        height: 2047.2px;
+        min-width: 2047.2px;
+        z-index: -1;
+      }
+      //!ABOUT COMPANY
+      //DIRECTORSHIP
+      .i_directorship:before{
+        content: ' ';
+        background-image: url("../img/svg/bg-image-about-company-White-dark.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 135%;
+        right: 25%;
+        transform: translate(50%, -50%);
+        height: 2047.2px;
+        min-width: 2047.2px;
+        z-index: -1;
+      }
+      .i_directorship:after{
+        content: ' ';
+        background-image: url("../img/svg/bg-image-about-company-White-dark.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0%;
+        right: 75%;
+        transform: translate(50%, -50%);
+        height: 2047.2px;
+        min-width: 2047.2px;
+        z-index: -1;
+      }
+      //!DIRECTORSHIP
+      //TEAM
+      .i_team:before{
+        content: ' ';
+        background-image: url("../img/svg/bg-image-about-company-Grey-dark.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 124%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        height: 2047.2px;
+        min-width: 2047.2px;
+        z-index: -1;
+      }
+      //!TEAM
+      //SEO
+      .i_seo:before{
+        content: ' ';
+        background-image: url("../img/svg/bg-element-dark_1-rotate.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 90%;
+        right: 5%;
+        transform: translate(50%, -50%);
+        height: 800px;
+        min-width: 800px;
+        z-index: -1;
+      }
+      .i_seo:after{
+        content: ' ';
+        background-image: url("../img/svg/bg-element-dark_1-rotate.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 10%;
+        right: 55%;
+        transform: translate(-50%, -50%);
+        height: 800px;
+        min-width: 800px;
+        z-index: -1;
+      }
+      //!SEO
       .i_work-process{
         .i_work-process-body{
           .i_work-process-body-infographic-light{

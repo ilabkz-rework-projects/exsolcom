@@ -1,5 +1,19 @@
+.i_about-us .i_about-company:before {
+  content: " ";
+  background-image: url("../img/svg/bg-image-about-company-Grey.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 100%;
+  right: 75%;
+  transform: translate(50%, -50%);
+  height: 2047.2px;
+  min-width: 2047.2px;
+  z-index: -1;
+}
 .i_about-us .i_about-company {
-  padding: 0 0;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 .i_about-us .i_about-company .i_about-company-first {
   position: relative;
@@ -206,9 +220,36 @@
     font-size: 13px;
   }
 }
+.i_about-us .i_directorship:before {
+  content: " ";
+  background-image: url("../img/svg/bg-image-about-company-White.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 135%;
+  right: 25%;
+  transform: translate(50%, -50%);
+  height: 2047.2px;
+  min-width: 2047.2px;
+  z-index: -1;
+}
+.i_about-us .i_directorship:after {
+  content: " ";
+  background-image: url("../img/svg/bg-image-about-company-White.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0%;
+  right: 75%;
+  transform: translate(50%, -50%);
+  height: 2047.2px;
+  min-width: 2047.2px;
+  z-index: -1;
+}
 .i_about-us .i_directorship {
+  position: relative;
+  z-index: 1;
   background-color: var(--bg-second);
   padding: 70px 0;
+  overflow: hidden;
 }
 .i_about-us .i_directorship .i_directorship-title {
   display: flex;
@@ -509,8 +550,24 @@
   font-size: 16px;
   cursor: text;
 }
+.i_about-us .i_team:before {
+  content: " ";
+  background-image: url("../img/svg/bg-image-about-company-Grey.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 124%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  height: 2047.2px;
+  min-width: 2047.2px;
+  z-index: -1;
+}
 .i_about-us .i_team {
   padding: 70px 0;
+  position: relative;
+  z-index: 1;
+  padding: 70px 0;
+  overflow: hidden;
 }
 .i_about-us .i_team .i_team-title {
   display: flex;
@@ -957,9 +1014,36 @@
     font-size: 13px;
   }
 }
+.i_about-us .i_seo:before {
+  content: " ";
+  background-image: url("../img/svg/bg-element-light_1-rotate.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 90%;
+  right: 5%;
+  transform: translate(50%, -50%);
+  height: 800px;
+  min-width: 800px;
+  z-index: -1;
+}
+.i_about-us .i_seo:after {
+  content: " ";
+  background-image: url("../img/svg/bg-element-light_1-rotate.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10%;
+  right: 55%;
+  transform: translate(-50%, -50%);
+  height: 800px;
+  min-width: 800px;
+  z-index: -1;
+}
 .i_about-us .i_seo {
   background-color: var(--bg-second);
   padding: 70px 0;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 .i_about-us .i_seo .i_seo-title {
   display: flex;
