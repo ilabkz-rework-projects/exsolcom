@@ -2486,7 +2486,7 @@ body {
 }
 .i_footer .i_container .i_footer-right .i_footer-right-menu .i_header-menu {
   width: 105%;
-  gap: 18px;
+  gap: 17px;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
