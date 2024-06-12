@@ -4,6 +4,20 @@ html[data-theme=dark] .i_header .i_header-more #myCircles.wide .close_hide_menu 
 html[data-theme=dark] .i_header .i_header-more #title-search .i_search-close {
   background-image: url("../img/svg/close-iconNight.svg") !important;
 }
+@media screen and (max-width: 480px) {
+  html[data-theme=dark] .i_main .i_infoblock:before {
+    content: " ";
+    background-image: url("../img/svg/bg-element-dark_2.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 54%;
+    right: 90%;
+    transform: translate(50%, 50%);
+    height: 800px;
+    min-width: 800px;
+    z-index: -1;
+  }
+}
 html[data-theme=dark] .i_main .i_about-us .i_about-company:before {
   content: " ";
   background-image: url("../img/svg/bg-image-about-company-Grey-dark.svg");

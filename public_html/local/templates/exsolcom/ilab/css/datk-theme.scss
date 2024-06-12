@@ -17,6 +17,22 @@ html[data-theme='dark']{
 
   }
   .i_main{
+      //INFOBLOCK (main page)
+    @media screen and (max-width: 480px){
+      .i_infoblock:before{
+        content: ' ';
+        background-image: url("../img/svg/bg-element-dark_2.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 54%;
+        right: 90%;
+        transform: translate(50%, 50%);
+        height: 800px;
+        min-width: 800px;
+        z-index: -1;
+      }
+    }
+      //!INFOBLOCK (main page)
     .i_about-us{
       //ABOUT COMPANY
       .i_about-company:before{

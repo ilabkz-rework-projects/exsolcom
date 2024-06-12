@@ -1324,13 +1324,30 @@ body {
   margin-right: 5px;
   color: var(--color-black);
 }
+@media screen and (max-width: 480px) {
+  .i_infoblock:before {
+    content: " ";
+    background-image: url("../img/svg/bg-element-light_2.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 54%;
+    right: 90%;
+    transform: translate(50%, 50%);
+    height: 800px;
+    min-width: 800px;
+    z-index: -1;
+  }
+}
 .i_infoblock {
+  position: relative;
+  z-index: 1;
   padding-top: 70px;
   padding-bottom: 70px;
   background-image: url("../img/svg/bg-element-light_2.svg");
   background-repeat: no-repeat;
   background-position-x: 140%;
   background-position-y: -150%;
+  overflow: hidden;
 }
 @media screen and (max-width: 1330px) {
   .i_infoblock {
@@ -2232,7 +2249,7 @@ body {
     display: none;
   }
 }
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 2000px) {
   .i_our-status .i_container .i_our-status-group-btn_1 button {
     display: none;
   }
