@@ -35,6 +35,7 @@ html {
   --color-title: #818181;
   --color-text-input: #919191;
   --color-text-li: #919191;
+  --color-bg-sticker: #FC4E55;
 }
 
 html[data-theme=dark] {
@@ -67,6 +68,7 @@ html[data-theme=dark] {
   --color-title: #818181;
   --color-text-input: #ffffff;
   --color-text-li: #919191;
+  --color-bg-sticker: #FC4E55;
 }
 
 body {
@@ -1884,22 +1886,51 @@ body {
     flex-direction: column;
   }
 }
-.i_infoblock .i_blog .blog-list .blog-item .blog-date-time {
+.i_infoblock .i_blog .blog-list .blog-item .blog-item-info .blog-item-info-top {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+@media screen and (max-width: 480px) {
+  .i_infoblock .i_blog .blog-list .blog-item .blog-item-info .blog-item-info-top {
+    gap: 10px;
+  }
+}
+.i_infoblock .i_blog .blog-list .blog-item .blog-item-info .blog-item-info-top .blog-date-time {
   width: max-content;
 }
-.i_infoblock .i_blog .blog-list .blog-item .blog-date-time span {
+.i_infoblock .i_blog .blog-list .blog-item .blog-item-info .blog-item-info-top .blog-date-time span {
   font-size: 14px;
   font-weight: 600;
   color: #7c7c7c;
 }
 @media screen and (max-width: 480px) {
-  .i_infoblock .i_blog .blog-list .blog-item .blog-date-time span {
+  .i_infoblock .i_blog .blog-list .blog-item .blog-item-info .blog-item-info-top .blog-date-time span {
     font-size: 13px;
   }
 }
 @media screen and (max-width: 360px) {
-  .i_infoblock .i_blog .blog-list .blog-item .blog-date-time span {
+  .i_infoblock .i_blog .blog-list .blog-item .blog-item-info .blog-item-info-top .blog-date-time span {
     font-size: 13px;
+  }
+}
+.i_infoblock .i_blog .blog-list .blog-item .blog-item-info .blog-item-info-top .i_sticker {
+  width: 126px;
+  min-width: 126px;
+  background-color: var(--color-bg-sticker);
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  font-size: 12px;
+  color: var(--color-WhiteWhite);
+}
+@media screen and (max-width: 480px) {
+  .i_infoblock .i_blog .blog-list .blog-item .blog-item-info .blog-item-info-top .i_sticker {
+    min-width: 116px;
+    width: 116px;
   }
 }
 .i_infoblock .i_blog .blog-list .blog-item a {
