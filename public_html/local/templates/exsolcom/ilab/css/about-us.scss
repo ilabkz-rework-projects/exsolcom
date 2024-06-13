@@ -256,6 +256,9 @@
       align-items: center;
       justify-content: center;
       gap: 20px;
+      @media screen and (max-width: 1000px){
+        padding: 0 0 165px 0;
+      }
       //DIRECTORSHIP TITLE ICON
       .i_directorship-title-icon{
         display: flex;
@@ -310,6 +313,9 @@
         align-items: center;
         position: relative;
         z-index: 1;
+        @media screen and (max-width: 1000px){
+          padding: 0 0 255px 0;
+        }
         .i_directorship-basic-block-desc:before{
           content: ' ';
           min-width: 665px;
@@ -328,6 +334,14 @@
             height: 600px;
             left: -18.5%;
           }
+          @media screen and (max-width: 1000px){
+            min-width: 290px;
+            height: 290px;
+            width: 30%;
+            left: 14.9%;
+            top: -43%;
+            transform: translate(-50%, 50%);
+          }
         }
         //DIRECTORSHIP BASIC BLOCK WRAPPER
         .i_directorship-basic-block-wrapper{
@@ -344,6 +358,14 @@
           @media screen and (max-width: 1330px){
             min-width: 600px;
             height: 600px;
+          }
+          @media screen and (max-width: 1000px){
+            min-width: 290px;
+            height: 290px;
+            width: 30%;
+            top: 50%;
+            left: 15%;
+            transform: translate(-50%, -38%);
           }
           .i_directorship-basic-block-portrait{
             width: 97%;
@@ -374,6 +396,11 @@
             height: 500px;
             right: 0%;
           }
+          @media screen and (max-width: 1000px){
+            width: 940px;
+            height: 430px;
+            border-radius: 100px 30px 30px 30px;
+          }
           //DIRECTORSHIP BASIC BLOCK DESC TOP
           .i_directorship-basic-block-desc-top{
             height: 268px;
@@ -385,6 +412,12 @@
             padding: 0 128px 0 170px;
             @media screen and (max-width: 1330px){
               padding: 0 30px 0 180px;
+            }
+            @media screen and (max-width: 1000px){
+              padding: 0 80px 0 330px;
+              height: 250px;
+              border-radius: 100px 30px 0 0;
+              gap: 25px;
             }
             //DIRECTORSHIP TOP NAME
             .i_directorship-block-desc-top-name{
@@ -415,6 +448,9 @@
               display: flex;
               flex-direction: column;
               gap: 35px;
+              @media screen and (max-width: 1000px){
+                gap: 25px;
+              }
               .i_directorship-desc-top-depiction-name{
                 font-size: 16px;
                 color: var(----color-textInfoblock);
@@ -429,6 +465,10 @@
                   color: var(----color-textInfoblock);
                   font-size: 15px;
                   cursor: text;
+                  font-family: "Open Sans", sans-serif;
+                  @media screen and (max-width: 1000px){
+                    font-size: 14px;
+                  }
                 }
               }
             }
@@ -436,6 +476,20 @@
           }
           //!DIRECTORSHIP BASIC BLOCK DESC TOP
 
+          //DIRECTORSHIP BASIC BLOCK DESC BOTTOM BEFORE
+          @media screen and (max-width: 1000px){
+            .i_directorship-basic-block-desc-bottom:before{
+              content: ' ';
+              background-image: url("../img/svg/Polygon-red.svg");
+              position: absolute;
+              z-index: 2;
+              width: 241px;
+              height: 164px;
+              top: -78%;
+              left: 0%;
+            }
+          }
+          //DIRECTORSHIP BASIC BLOCK DESC BOTTOM BEFORE
           //DIRECTORSHIP BASIC BLOCK DESC BOTTOM
           .i_directorship-basic-block-desc-bottom{
             height: 244px;
@@ -444,8 +498,14 @@
             display: flex;
             justify-content: center;
             padding: 0 128px 0 170px;
+            position: relative;
+            z-index: 1;
             @media screen and (max-width: 1330px){
               padding: 0 30px 0 180px;
+            }
+            @media screen and (max-width: 1000px){
+              padding: 0 30px 0 30px;
+              height: 180px;
             }
             .i_directorship-basic-block-desc-bottom-container{
               //min-width: 680px;
@@ -488,6 +548,14 @@
             height: 600px;
             left: 117.5%;
           }
+          @media screen and (max-width: 1000px){
+            min-width: 290px;
+            height: 290px;
+            width: 30%;
+            left: 84.5%;
+            top: -43%;
+            transform: translate(-50%, 50%);
+          }
         }
         //DIRECTORSHIP BASIC BLOCK WRAPPER 2
         .i_directorship-basic-block-wrapper_second{
@@ -506,6 +574,14 @@
             min-width: 600px;
             height: 600px;
             right: -52%;
+          }
+          @media screen and (max-width: 1000px){
+            min-width: 290px;
+            height: 290px;
+            width: 30%;
+            top: 50%;
+            right: -53.8%;
+            transform: translate(50%, -38%);
           }
           .i_directorship-basic-block-portrait{
             width: 97%;
@@ -537,6 +613,12 @@
             height: 500px;
             right: 35.5%;
           }
+          @media screen and (max-width: 1000px){
+            width: 940px;
+            height: 430px;
+            right: 0;
+            border-radius: 30px 100px 30px 30px;
+          }
           //DIRECTORSHIP BASIC BLOCK DESC TOP 2
           .i_directorship-basic-block-desc-top_second{
             height: 268px;
@@ -546,6 +628,15 @@
             flex-direction: column;
             gap: 35px;
             padding: 0 155px 0 50px;
+            @media screen and (max-width: 1330px){
+              padding: 0 155px 0 30px;
+            }
+            @media screen and (max-width: 1000px){
+              padding: 0 330px 0 30px;
+              height: 250px;
+              border-radius: 30px 100px 0 0;
+              gap: 25px;
+            }
             //DIRECTORSHIP TOP NAME
             .i_directorship-block-desc-top-name{
               display: flex;
@@ -575,6 +666,9 @@
               display: flex;
               flex-direction: column;
               gap: 35px;
+              @media screen and (max-width: 1000px){
+                gap: 25px;
+              }
               .i_directorship-desc-top-depiction-name{
                 font-size: 16px;
                 color: var(----color-textInfoblock);
@@ -589,12 +683,30 @@
                   color: var(----color-textInfoblock);
                   font-size: 15px;
                   cursor: text;
+                  font-family: "Open Sans", sans-serif;
+                  @media screen and (max-width: 1000px){
+                    font-size: 14px;
+                  }
                 }
               }
             }
             //!DIRECTORSHIP TOP DEPICTION
           }
           //!DIRECTORSHIP BASIC BLOCK DESC TOP 2
+          //DIRECTORSHIP BASIC BLOCK DESC BOTTOM BEFORE
+          @media screen and (max-width: 1000px){
+            .i_directorship-basic-block-desc-bottom_second:before{
+              content: ' ';
+              background-image: url("../img/svg/Polygon-grey.svg");
+              position: absolute;
+              z-index: 2;
+              width: 241px;
+              height: 164px;
+              top: -78%;
+              right: 0%;
+            }
+          }
+          //DIRECTORSHIP BASIC BLOCK DESC BOTTOM BEFORE
 
           //!DIRECTORSHIP BASIC BLOCK DESC BOTTOM 2
           .i_directorship-basic-block-desc-bottom_second{
@@ -604,6 +716,16 @@
             display: flex;
             justify-content: center;
             padding: 0 155px 0 50px;
+            position: relative;
+            z-index: 1;
+            @media screen and (max-width: 1330px){
+              padding: 0 155px 0 30px;
+            }
+            @media screen and (max-width: 1000px){
+              padding: 0 30px 0 30px;
+              height: 180px;
+            }
+
             .i_directorship-basic-block-desc-bottom-container{
               //min-width: 680px;
               //width: 69%;
