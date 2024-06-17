@@ -20,7 +20,7 @@ html[data-theme=dark] .i_header .i_header-more #title-search .i_search-close {
 }
 html[data-theme=dark] .i_main .i_about-us .i_about-company:before {
   content: " ";
-  background-image: url("../img/svg/bg-image-about-company-Grey-dark.svg");
+  background-image: url("../img/svg/bg-image-about-company-White-dark_second.svg");
   background-repeat: no-repeat;
   position: absolute;
   top: 100%;
@@ -32,7 +32,7 @@ html[data-theme=dark] .i_main .i_about-us .i_about-company:before {
 }
 html[data-theme=dark] .i_main .i_about-us .i_directorship:before {
   content: " ";
-  background-image: url("../img/svg/bg-image-about-company-White-dark.svg");
+  background-image: url("../img/svg/bg-image-about-company-Grey-dark_second.svg");
   background-repeat: no-repeat;
   position: absolute;
   top: 135%;
@@ -44,7 +44,7 @@ html[data-theme=dark] .i_main .i_about-us .i_directorship:before {
 }
 html[data-theme=dark] .i_main .i_about-us .i_directorship:after {
   content: " ";
-  background-image: url("../img/svg/bg-image-about-company-White-dark.svg");
+  background-image: url("../img/svg/bg-image-about-company-Grey-dark_second.svg");
   background-repeat: no-repeat;
   position: absolute;
   top: 0%;
@@ -56,7 +56,7 @@ html[data-theme=dark] .i_main .i_about-us .i_directorship:after {
 }
 html[data-theme=dark] .i_main .i_about-us .i_team:before {
   content: " ";
-  background-image: url("../img/svg/bg-image-about-company-Grey-dark.svg");
+  background-image: url("../img/svg/bg-image-about-company-White-dark_second.svg");
   background-repeat: no-repeat;
   position: absolute;
   top: 124%;
@@ -102,6 +102,11 @@ html[data-theme=dark] .i_main .i_about-us .i_work-process .i_work-process-body .
   transform: translate(-50%, 50%);
   width: 40%;
   height: 100%;
+}
+@media screen and (max-width: 1330px) {
+  html[data-theme=dark] .i_main .i_about-us .i_work-process .i_work-process-body .i_work-process-body-infographic-night {
+    width: 45%;
+  }
 }
 html[data-theme=dark] .i_main .i_about-us .i_work-process .i_work-process-body .i_work-process-body-infographic-night svg {
   width: 100%;
