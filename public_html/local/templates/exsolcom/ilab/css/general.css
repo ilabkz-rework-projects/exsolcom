@@ -1,3 +1,4 @@
+@charset "UTF-8";
 button {
   border-radius: 50px;
   background-color: var(--color-red);
@@ -20,6 +21,10 @@ span {
 }
 span:hover {
   cursor: pointer;
+  color: var(--color-red);
+}
+
+.color-red {
   color: var(--color-red);
 }
 
@@ -74,6 +79,16 @@ span:hover {
   visibility: visible;
 }
 
+*::-webkit-scrollbar {
+  background-color: #e7e7e7; /* Цвет бегунка */
+  border-radius: 30px; /* Округление бегунка */
+  width: 9px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-red);
+  border-radius: 30px;
+}
+
 .i_modal {
   background-color: #fff;
   position: fixed;
@@ -91,8 +106,11 @@ span:hover {
   border-radius: 35px;
 }
 .i_modal .i_container {
-  padding: 0 15%;
+  margin: 25px 5%;
+  padding: 0 10%;
   width: unset;
+  overflow-y: auto;
+  height: calc(100% - 45px);
 }
 .i_modal.active {
   opacity: 1;

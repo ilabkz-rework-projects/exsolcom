@@ -1365,6 +1365,13 @@
             background-color: var(--color-blockHv);
             padding: 20px 20px 20px 70px;
             border-radius: 35px;
+            @media screen and (max-width: 1330px){
+              padding: 20px 20px 20px 50px;
+              width: 29%;
+              height: 180px;
+              gap: 20px;
+            }
+
             &:nth-child(3){
               margin: 0 230px 0 0;
               padding: 20px 70px 20px 20px;
@@ -1372,10 +1379,16 @@
               span{
                 text-align: right;
               }
+              @media screen and (max-width: 1330px){
+                padding: 20px 20px 20px 50px;
+              }
             }
             &:nth-child(1){
               padding: 20px 70px 20px 20px;
               align-items: flex-end;
+              @media screen and (max-width: 1330px){
+                padding: 20px 20px 20px 50px;
+              }
               span{
                 text-align: right;
               }
@@ -1383,6 +1396,9 @@
             &:nth-child(5){
               padding: 20px 70px 20px 20px;
               align-items: flex-end;
+              @media screen and (max-width: 1330px){
+                padding: 20px 20px 20px 50px;
+              }
               span{
                 text-align: right;
               }
@@ -1395,6 +1411,9 @@
               color: var(--color-textInfoblock);
               line-height: 27px;
               cursor: text;
+              @media screen and (max-width: 1330px){
+                font-size: 16px;
+              }
             }
             span{
               color: var(--color-textInfoblock);
@@ -1537,7 +1556,7 @@
       .i_seo-dates-switch{
         width: 96px;
         height: 60px;
-        background-color: var(--bg-block);
+        background-color: var(--color-circlesThird);
         border-radius: 30px;
         display: flex;
         justify-content: center;
@@ -1551,7 +1570,7 @@
         span{
           font-weight: 600;
           font-size: 18px;
-          color: var(--color-textInfoblock);
+          color: var(--color-black);
         }
       }
       //!SEO DATES SWITCH

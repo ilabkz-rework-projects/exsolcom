@@ -25,6 +25,10 @@ span {
   }
 }
 
+.color-red{
+  color: var(--color-red);
+}
+
 .news-item,
 .news-page-item {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
@@ -88,6 +92,19 @@ span {
   }
 }
 
+*{
+  &::-webkit-scrollbar {
+    background-color: #e7e7e7; /* Цвет бегунка */
+    border-radius: 30px; /* Округление бегунка */
+    width: 9px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-red);
+    border-radius: 30px;
+  }
+}
+
 .i_modal {
   background-color: #fff;
   position: fixed;
@@ -105,8 +122,11 @@ span {
   border-radius: 35px;
 
   .i_container{
-    padding: 0 15%;
+    margin: 25px 5%;
+    padding: 0 10%;
     width: unset;
+    overflow-y: auto;
+    height: calc(100% - 45px);
   }
 
   &.active {

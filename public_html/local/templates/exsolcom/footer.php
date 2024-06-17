@@ -246,7 +246,7 @@
 		<div class="i_modal-header">
 			<div class="i_modal-img"></div>
 			<div class="i_modal-preview">
-				<span class="i_modal-preview-title">Lorem ipsum</span>
+				<span class="i_modal-preview-title">Lorem <span class="color-red">ipsum</span></span>
 				<span class="i_modal-preview-subtitle">Lorem ipsum dolor sit amet.</span>
 				<span class="i_modal-preview-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, nemo.</span>
 				<span class="i_modal-preview-ending">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
