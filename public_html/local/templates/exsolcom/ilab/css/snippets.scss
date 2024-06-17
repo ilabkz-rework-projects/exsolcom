@@ -10,6 +10,19 @@
   //  background-size: 10px;
   //}
   ////!SNIPPET TITLE BEFORE
+
+  //SNIPPET H3
+  .i_snippet{
+    .i_snippet-title{
+      display: flex;
+      justify-content: center;
+      h3{
+        font-size: 24px;
+      }
+    }
+  }
+  //!SNIPPET H3
+
   //SNIPPET TITLE
   .i_snippet.title{
     display: flex;
@@ -79,13 +92,13 @@
     position: relative;
     border-bottom: 5px dotted #666666 ;
     //SNIPPET SINGLE_TABLE TITLE
-    .i_snippet-title{
-      display: flex;
-      justify-content: center;
-      h3{
-        font-size: 24px;
-      }
-    }
+    //.i_snippet-title{
+    //  //display: flex;
+    //  //justify-content: center;
+    //  //h3{
+    //  //  font-size: 24px;
+    //  //}
+    //}
     //!SNIPPET SINGLE_TABLE TITLE
     //SNIPPET SINGLE_TABLE GROUP ITEM
     .i_snippet-table-group-item{
@@ -152,9 +165,9 @@
       padding: 40px 0;
       position: relative;
       border-bottom: 5px dotted #666666;
-      h3{
-        font-size: 24px;
-      }
+      //h3{
+      //  font-size: 24px;
+      //}
     }
     //!SNIPPET MULTI_TABLE TITLE
     //SNIPPET MULTI_TABLE ITEMS
@@ -300,4 +313,130 @@
     }
   }
   //!SNIPPET MULTI_TABLE ITEMS BTN
+
+  //SNIPPET TITLE SECOND
+  .i_snippet.title-second{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 0;
+    position: relative;
+    //SNIPPET TITLE NUMBER
+    .i_snippet-number{
+      min-width: 50px;
+      width: 50px;
+      height: 50px;
+      background-color: var(--color-black);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      span{
+        font-size: 28px;
+        color: var(--color-White);
+        padding: 2px 0 0 0;
+        cursor: text;
+      }
+    }
+    //!SNIPPET TITLE NUMBER
+    //SNIPPET TITLE TITLE
+    .i_snippet-title{
+      h2{
+        font-size: 32px;
+        color: var(--color-black);
+      }
+    }
+    //!SNIPPET TITLE TITLE
+    //SNIPPET TITLE SUBTITLE
+    .i_snippet-subtitle{
+      text-align: center;
+      span{
+        line-height: 35px;
+        font-weight: 600;
+        color: var(--color-black);
+        cursor: text;
+      }
+    }
+    //!SNIPPET TITLE SUBTITLE
+
+  }
+  //!SNIPPET TITLE SECOND
+
+  //SNIPPET DESC
+  .i_snippet.desc{
+    //SNIPPET TITLE_SECOND DESC
+    .i_snippet-desc{
+      padding: 0 0 30px 0;
+      span{
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        color: var(--color-textInfoblock);
+        cursor: text;
+      }
+    }
+    //!SNIPPET TITLE_SECOND DESC
+    //SNIPPET TITLE_SECOND DESC_LINK
+    .i_snippet-desc-link{
+      span{
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        color: var(--color-textInfoblock);
+        cursor: text;
+        .color-red{
+          color: var(--color-red);
+          font-family: "Comfortaa", sans-serif;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+    //!SNIPPET TITLE_SECOND DESC_LINK
+  }
+  //!SNIPPET DESC
+
+  //SNIPPET AGREEMENT_TABLE
+  .i_snippet.agreement-table{
+    background-color: var(--color-blockHv);
+    max-width: 1270px;
+    height: max-content;
+    border-radius: 30px;
+    //SNIPPET AGREEMENT_TABLE
+    .i_snippet-title{
+      padding: 50px 0;
+      border-bottom: 5px dotted #666666;
+    }
+    //!SNIPPET AGREEMENT_TABLE TITLE
+
+    //SNIPPET AGREEMENT_TABLE BINARY TABLE
+    .i_snippet-binary-table{
+      display: flex;
+      //SNIPPET AGREEMENT_TABLE BINARY TABLE POINTS
+      .i_snippet-table-points{
+        width: 49%;
+        //SNIPPET AGREEMENT_TABLE BINARY TABLE POINTS CONTAINER
+        .i_snippet-table-points-container{
+          width: 100%;
+          height: max-content;
+          padding: 50px;
+          ul{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            li{
+              color: var(--color-text-li);
+              span{
+                color: var(--color-textInfoblock);
+                font-family: "Open Sans", sans-serif;
+              }
+            }
+          }
+        }
+        //!SNIPPET AGREEMENT_TABLE BINARY TABLE POINTS CONTAINER
+      }
+      //!SNIPPET AGREEMENT_TABLE BINARY TABLE POINTS
+    }
+    //!SNIPPET AGREEMENT_TABLE BINARY TABLE
+  }
+  //!SNIPPET AGREEMENT_TABLE
 }
