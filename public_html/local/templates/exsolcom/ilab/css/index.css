@@ -618,6 +618,9 @@ body {
   text-decoration: none;
   transition: all 0.4s ease;
   text-wrap: nowrap;
+  position: relative;
+  z-index: 2;
+  padding: 0 10px;
 }
 @media screen and (max-width: 1500px) {
   .i_header-menu .i_header-menu-item a {
@@ -632,11 +635,20 @@ body {
 .i_header-menu .i_header-menu-item a:hover {
   color: var(--color-red);
 }
-.i_header-menu .i_header-menu-item a:focus {
+.i_header-menu .i_header-menu-item a.root-item-selected {
   color: var(--color-red);
+}
+.i_header-menu .i_header-menu-item a.root-item-selected::before {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: var(--color-circlesHover);
+  z-index: -1;
   border-radius: 25px;
-  padding: 2vh 4vh;
 }
 
 .i_header-burger {
