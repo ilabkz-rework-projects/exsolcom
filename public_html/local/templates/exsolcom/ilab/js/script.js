@@ -209,7 +209,50 @@ document.addEventListener('DOMContentLoaded', (event) =>{
 
 	});
 
+	// Получаем данные для модальных окон
+	const servicesItems = document.querySelectorAll('.i_services-item');
+	const overlay = document.querySelector('.i_overlay')
+	const modal = document.querySelector('.i_modal')
+	const modalClose = document.querySelector('.i_modal .i_modal-close')
 
+	servicesItems.forEach(item => {
+		item.addEventListener('click', ()=>{
+			fetch('/local/templates/exsolcom/ilab/ajax/getServicesModalContent.php', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({id : item.getAttribute('id')})
+			})
+				.then(response => response.json())
+				.then(data => {
+					console.log(data)
+					overlay.classList.add('active')
+					modal.classList.add('active')
+					modal.querySelector('.i_modal-content').innerHTML = data.CONTENT
+					modal.querySelector('.i_modal-img').innerHTML = `<img src="${data.IMAGE}" alt="${data.NAME}">`
+				})
+		})
+	})
 
+	//OVERLAY
+	document.addEventListener('keydown', (event) => {
+		if(event.key === 'Escape'){
+			overlay.classList.remove('active')
+			modal.classList.remove('active')
+		}
+	})
+
+	document.addEventListener('click', (event) => {
+		if(event.target.classList.contains('i_overlay')){
+			overlay.classList.remove('active')
+			modal.classList.remove('active')
+		}
+	})
+
+	modalClose.addEventListener('click', () => {
+		overlay.classList.remove('active')
+		modal.classList.remove('active')
+	})
 
 });

@@ -236,3 +236,24 @@
         <!--!FOOTER RIGHT-->
     </div>
 </footer>
+
+<div class="i_overlay"></div>
+<div class="i_modal">
+	<div class="i_container">
+		<div class="i_modal-close">
+			<img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/svg/closeModal-dark.svg'?>" alt="x">
+		</div>
+		<div class="i_modal-header">
+			<div class="i_modal-img"></div>
+			<div class="i_modal-preview">
+				<span class="i_modal-preview-title">Lorem ipsum</span>
+				<span class="i_modal-preview-subtitle">Lorem ipsum dolor sit amet.</span>
+				<span class="i_modal-preview-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, nemo.</span>
+				<span class="i_modal-preview-ending">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+			</div>
+		</div>
+		<div class="i_modal-content">
+
+		</div>
+	</div>
+</div>
