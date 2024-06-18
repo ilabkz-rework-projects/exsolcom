@@ -383,6 +383,9 @@
         font-size: 16px;
         color: var(--color-textInfoblock);
         cursor: text;
+        a{
+          text-decoration: unset;
+        }
         .color-red{
           color: var(--color-red);
           font-family: "Comfortaa", sans-serif;
@@ -399,11 +402,13 @@
   .i_snippet.agreement-table{
     background-color: var(--color-blockHv);
     max-width: 1270px;
-    height: max-content;
+    height: 100%;
     border-radius: 30px;
+    margin: 40px 0 0 0;
     //SNIPPET AGREEMENT_TABLE
     .i_snippet-title{
       padding: 50px 0;
+      text-align: center;
       border-bottom: 5px dotted #666666;
     }
     //!SNIPPET AGREEMENT_TABLE TITLE
@@ -411,9 +416,13 @@
     //SNIPPET AGREEMENT_TABLE BINARY TABLE
     .i_snippet-binary-table{
       display: flex;
+      gap: 5px;
       //SNIPPET AGREEMENT_TABLE BINARY TABLE POINTS
       .i_snippet-table-points{
         width: 49%;
+        &:nth-child(2){
+          border-left: 5px dotted #666666;
+        }
         //SNIPPET AGREEMENT_TABLE BINARY TABLE POINTS CONTAINER
         .i_snippet-table-points-container{
           width: 100%;
@@ -426,6 +435,7 @@
             li{
               color: var(--color-text-li);
               span{
+                line-height: 22px;
                 color: var(--color-textInfoblock);
                 font-family: "Open Sans", sans-serif;
               }
@@ -439,4 +449,181 @@
     //!SNIPPET AGREEMENT_TABLE BINARY TABLE
   }
   //!SNIPPET AGREEMENT_TABLE
+
+
+  //SNIPPET CONTAINER_COMPOSITION
+  .i_snippet.container-composition{
+    //SNIPPET TITLE
+    .i_snippet-title{
+      padding: 50px 0 40px 0;
+    }
+    //!SNIPPET TITLE
+    //SNIPPET COMPOSITION_BLOCK BEFORE
+    .i_snippet.composition-block:before{
+      content: ' ';
+      border: 20px solid transparent ;
+      border-bottom: 20px solid var(--bg-block-personal);
+      position: absolute;
+      top: -40px;
+      right: 50%;
+      transform: translateX(50%);
+    }
+    //!SNIPPET COMPOSITION_BLOCK BEFORE
+    //SNIPPET COMPOSITION_BLOCK
+    .i_snippet.composition-block,
+    .i_snippet.composition-block-second{
+      padding: 40px;
+      max-width: 1270px;
+      width: 100%;
+      background-color: var(--bg-block-personal);
+      border-radius: 30px;
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+      position: relative;
+      margin: 10px 0 0 0;
+      //SNIPPET COMPOSITION_BLOCK PICTURE
+      .i_snippet-picture{
+        max-width: 100px;
+        width: 100%;
+        height: 100%;
+        svg{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      //!SNIPPET COMPOSITION_BLOCK PICTURE
+      //SNIPPET COMPOSITION_BLOCK GROUP_TEXT
+      .i_snippet-group-text{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        //SNIPPET COMPOSITION_BLOCK GROUP_TEXT TITLE
+        .i_snippet-group-text-title{
+          span{
+            font-size: 18px;
+            color: var(--color-textInfoblock);
+            cursor: text;
+          }
+        }
+        //!SNIPPET COMPOSITION_BLOCK GROUP_TEXT TITLE
+        //SNIPPET COMPOSITION_BLOCK GROUP_TEXT DESC
+        .i_snippet-group-text-desc{
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          span{
+            font-family: "Open Sans", sans-serif;
+            line-height: 18px;
+            color: var(--color-textInfoblock);
+            cursor: text;
+          }
+        }
+        //SNIPPET COMPOSITION_BLOCK GROUP_TEXT DESC
+      }
+      //!SNIPPET COMPOSITION_BLOCK GROUP_TEXT
+    }
+    //!SNIPPET COMPOSITION_BLOCK
+
+    //!SNIPPET COMPOSITION_BLOCK THIRD
+    .i_snippet.composition-block-third{
+      max-width: 1270px;
+      width: 100%;
+      background-color: var(--bg-block-personal);
+      border-radius: 30px;
+      display: flex;
+      flex-direction: column;
+      margin: 10px 0 0 0;
+      //SNIPPET COMPOSITION_BLOCK TOP
+      .i_snippet-top{
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+        padding: 40px;
+        border-bottom: 5px dotted #666666;
+        //SNIPPET COMPOSITION_BLOCK PICTURE
+        .i_snippet-picture{
+          max-width: 100px;
+          width: 100%;
+          height: 100%;
+          svg{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        //!SNIPPET COMPOSITION_BLOCK PICTURE
+        //SNIPPET COMPOSITION_BLOCK GROUP_TEXT
+        .i_snippet-group-text{
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          //SNIPPET COMPOSITION_BLOCK GROUP_TEXT TITLE
+          .i_snippet-group-text-title{
+            span{
+              font-size: 18px;
+              color: var(--color-textInfoblock);
+              cursor: text;
+            }
+          }
+          //!SNIPPET COMPOSITION_BLOCK GROUP_TEXT TITLE
+          //SNIPPET COMPOSITION_BLOCK GROUP_TEXT DESC
+          .i_snippet-group-text-desc{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            span{
+              font-family: "Open Sans", sans-serif;
+              line-height: 18px;
+              color: var(--color-textInfoblock);
+              cursor: text;
+            }
+          }
+          //SNIPPET COMPOSITION_BLOCK GROUP_TEXT DESC
+        }
+        //!SNIPPET COMPOSITION_BLOCK GROUP_TEXT
+      }
+      //!SNIPPET COMPOSITION_BLOCK TOP
+
+      //SNIPPET AGREEMENT_TABLE BINARY TABLE
+      .i_snippet-binary-table-third{
+        display: flex;
+        gap: 5px;
+        //SNIPPET AGREEMENT_TABLE BINARY TABLE POINTS
+        .i_snippet-table-points{
+          width: 49%;
+          &:nth-child(2){
+            border-left: 5px dotted #666666;
+          }
+          //SNIPPET AGREEMENT_TABLE BINARY TABLE POINTS CONTAINER
+          .i_snippet-table-points-container{
+            width: 100%;
+            height: max-content;
+            padding: 50px;
+            ul{
+              display: flex;
+              flex-direction: column;
+              gap: 30px;
+              li{
+                color: var(--color-text-li);
+                span{
+                  line-height: 22px;
+                  color: var(--color-textInfoblock);
+                  font-family: "Open Sans", sans-serif;
+                }
+              }
+            }
+          }
+          //!SNIPPET AGREEMENT_TABLE BINARY TABLE POINTS CONTAINER
+        }
+        //!SNIPPET AGREEMENT_TABLE BINARY TABLE POINTS
+      }
+      //!SNIPPET AGREEMENT_TABLE BINARY TABLE
+    }
+    //!SNIPPET COMPOSITION_BLOCK THIRD
+  }
+  //!SNIPPET CONTAINER_COMPOSITION
+
+
+
+
 }

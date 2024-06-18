@@ -1583,7 +1583,7 @@
 .i_about-us .i_seo .i_seo-dates .i_seo-dates-switch {
   width: 96px;
   height: 60px;
-  background-color: var(--bg-block);
+  background-color: var(--color-circlesThird);
   border-radius: 30px;
   display: flex;
   justify-content: center;
@@ -1598,7 +1598,7 @@
 .i_about-us .i_seo .i_seo-dates .i_seo-dates-switch span {
   font-weight: 600;
   font-size: 18px;
-  color: var(--color-textInfoblock);
+  color: var(--color-black);
 }
 .i_about-us .i_seo .i_seo-events .i_seo-events-2022 {
   display: flex;
