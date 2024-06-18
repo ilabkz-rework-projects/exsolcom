@@ -26,7 +26,11 @@ span {
 }
 
 .color-red{
-  color: var(--color-red);
+  color: var(--color-red) !important;
+}
+
+.text-weight{
+  font-weight: 600 !important;
 }
 
 .news-item,

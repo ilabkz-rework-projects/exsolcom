@@ -407,5 +407,125 @@
   color: var(--color-textInfoblock);
   font-family: "Open Sans", sans-serif;
 }
+.i_modal-content .i_snippet.additional-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.i_modal-content .i_snippet.additional-services .i_snippet-title {
+  padding: 50px 0;
+}
+.i_modal-content .i_snippet.additional-services .i_snippet-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 80px;
+}
+.i_modal-content .i_snippet.additional-services .i_snippet-blocks .i_snippet-block.block-height {
+  max-width: 590px;
+  width: 100%;
+  min-height: 190px;
+  height: 100%;
+  background-color: var(--bg-block-personal);
+  padding: 20px 30px;
+  border-radius: 30px;
+}
+.i_modal-content .i_snippet.additional-services .i_snippet-blocks .i_snippet-block.block-height .i_snippet-block-top.border-bottom {
+  padding: 0 0 20px 0;
+  border-bottom: 5px dotted #666666;
+}
+.i_modal-content .i_snippet.additional-services .i_snippet-blocks .i_snippet-block.block-height .i_snippet-block-top span {
+  color: var(--color-textInfoblock);
+  cursor: text;
+  font-size: 17px;
+  font-family: "Comfortaa", sans-serif;
+  line-height: 22px;
+}
+.i_modal-content .i_snippet.additional-services .i_snippet-blocks .i_snippet-block.block-height .i_snippet-block-bottom {
+  padding: 20px 0 0 0;
+}
+.i_modal-content .i_snippet.additional-services .i_snippet-blocks .i_snippet-block.block-height .i_snippet-block-bottom span {
+  color: var(--color-textInfoblock);
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  cursor: text;
+}
+.i_modal-content .i_snippet.additional-services .i_snippet-blocks .i_snippet-block {
+  max-width: 590px;
+  width: 100%;
+  min-height: 96px;
+  height: 100%;
+  background-color: var(--bg-block-personal);
+  padding: 20px 30px;
+  border-radius: 30px;
+}
+.i_modal-content .i_snippet.additional-services .i_snippet-blocks .i_snippet-block .i_snippet-block-top.border-bottom {
+  padding: 0 0 20px 0;
+  border-bottom: 5px dotted #666666;
+}
+.i_modal-content .i_snippet.additional-services .i_snippet-blocks .i_snippet-block .i_snippet-block-top span {
+  color: var(--color-textInfoblock);
+  cursor: text;
+  font-size: 18px;
+  font-family: "Comfortaa", sans-serif;
+  line-height: 22px;
+}
+.i_modal-content .i_snippet.additional-services .i_snippet-blocks .i_snippet-block .i_snippet-block-bottom {
+  padding: 20px 0 0 0;
+}
+.i_modal-content .i_snippet.additional-services .i_snippet-blocks .i_snippet-block .i_snippet-block-bottom span {
+  color: var(--color-textInfoblock);
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  cursor: text;
+}
+.i_modal-content .i_snippet.additional-services .i_snippet-blockB {
+  max-width: 1270px;
+  width: 100%;
+  height: max-content;
+  background-color: var(--bg-block-personal);
+  padding: 20px 30px;
+  border-radius: 30px;
+  margin: 30px 0 0 0;
+}
+.i_modal-content .i_snippet.additional-services .i_snippet-blockB .i_snippet-block-top.border-bottom_second {
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 5px dotted #666666;
+}
+.i_modal-content .i_snippet.additional-services .i_snippet-blockB .i_snippet-block-top span {
+  color: var(--color-textInfoblock);
+  cursor: text;
+  font-size: 18px;
+  font-family: "Comfortaa", sans-serif;
+  line-height: 22px;
+}
+.i_modal-content .i_snippet.additional-services .i_snippet-blockB .i_snippet-block-bottom {
+  padding: 20px 0 0 0;
+}
+.i_modal-content .i_snippet.additional-services .i_snippet-blockB .i_snippet-block-bottom span {
+  color: var(--color-textInfoblock);
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  cursor: text;
+}
+.i_modal-content .i_snippet.additional-services .i_snippet-blockB .i_snippet-table-points-container {
+  width: 100%;
+  height: max-content;
+  padding: 20px;
+}
+.i_modal-content .i_snippet.additional-services .i_snippet-blockB .i_snippet-table-points-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.i_modal-content .i_snippet.additional-services .i_snippet-blockB .i_snippet-table-points-container ul li {
+  color: var(--color-text-li);
+}
+.i_modal-content .i_snippet.additional-services .i_snippet-blockB .i_snippet-table-points-container ul li span {
+  line-height: 22px;
+  color: var(--color-textInfoblock);
+  font-family: "Open Sans", sans-serif;
+}
 
 /*# sourceMappingURL=snippets.css.map */

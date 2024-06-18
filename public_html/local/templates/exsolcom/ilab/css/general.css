@@ -25,12 +25,13 @@ span:hover {
 }
 
 .color-red {
-  color: var(--color-red);
+  color: var(--color-red) !important;
 }
 
-.text-weight{
-  font-weight: 600;
+.text-weight {
+  font-weight: 600 !important;
 }
+
 .news-item,
 .news-page-item {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
