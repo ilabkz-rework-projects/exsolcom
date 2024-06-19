@@ -1,4 +1,19 @@
 window.addEventListener('DOMContentLoaded', function() {
+
+	BX.addCustomEvent('OnEditorInitedBefore', function(toolbar) {
+		var _this = this;
+
+		console.log(this)
+
+		// отучаю резать тэги
+		BX.addCustomEvent(this, 'OnGetParseRules', BX.proxy(function() {
+			_this.rules.tags.span   = {};
+			_this.rules.tags.svg    = {};
+			_this.rules.tags.use    = {};
+			_this.rules.tags.path    = {};
+		}, this));
+	})
+
 	const swiperPersonal = new Swiper(".swiper.personal", {
 		effect: "coverflow",
 		grabCursor: true,
