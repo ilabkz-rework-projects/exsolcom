@@ -249,7 +249,7 @@
 				<span class="i_modal-preview-title">СЕРВИСНОЕ  <span class="color-red">ОБСЛУЖИВАНИЕ</span></span>
 				<span class="i_modal-preview-subtitle">Послепродажное обслуживание (сопровождение) программных продуктов 1С</span>
 				<span class="i_modal-preview-content">В каждой компании, использующей автоматизированную систему учета на базе ПО 1С:Предприятие 8, часто возникает необходимость в доработках программного продукта, консультациях специалиста или установке новых регламентированных форм отчетности.</span>
-				<span class="i_modal-preview-ending">Компания ExSolCom оказывает 2 вида сопровождения:</span>
+				<span class="i_modal-preview-ending">Компания <span class="color-red">ExSolCom</span> оказывает 2 вида сопровождения:</span>
 			</div>
 		</div>
 		<div class="i_modal-content">

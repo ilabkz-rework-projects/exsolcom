@@ -156,23 +156,36 @@ span:hover {
 }
 .i_modal .i_modal-header .i_modal-preview .i_modal-preview-title {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 10px;
   text-transform: uppercase;
+  cursor: text;
+  color: var(--color-textInfoblock);
+}
+.i_modal .i_modal-header .i_modal-preview .i_modal-preview-title span {
+  cursor: text;
 }
 .i_modal .i_modal-header .i_modal-preview .i_modal-preview-subtitle {
   font-size: 1.25rem;
-  font-weight: 400;
-  color: var(--color-text);
+  font-weight: 600;
+  color: var(--color-textInfoblock);
+  cursor: text;
 }
 .i_modal .i_modal-header .i_modal-preview .i_modal-preview-content {
   font-size: 1rem;
   font-weight: 400;
+  color: var(--color-textInfoblock);
+  font-family: "Open Sans", sans-serif;
+  cursor: text;
 }
 .i_modal .i_modal-header .i_modal-preview .i_modal-preview-ending {
   font-size: 1.25rem;
-  font-weight: 400;
-  color: var(--color-text);
+  font-weight: 600;
+  color: var(--color-textInfoblock);
+  cursor: text;
+}
+.i_modal .i_modal-header .i_modal-preview .i_modal-preview-ending span {
+  cursor: text;
 }
 
 /*# sourceMappingURL=general.css.map */
