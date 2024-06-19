@@ -250,14 +250,21 @@
     //background-position-x: 360%;
     //background-position-y: 200%;
     overflow: hidden;
+    @media screen and (max-width: 540px){
+      padding: 50px 0;
+    }
     //DIRECTORSHIP TITLE
     .i_directorship-title{
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 20px;
+      padding: 0 0 80px 0;
       @media screen and (max-width: 1000px){
-        padding: 0 0 165px 0;
+        padding: 0 0 70px 0;
+      }
+      @media screen and (max-width: 540px){
+        padding: 0 0 50px 0;
       }
       //DIRECTORSHIP TITLE ICON
       .i_directorship-title-icon{
@@ -313,11 +320,12 @@
         align-items: center;
         position: relative;
         z-index: 1;
-        @media screen and (max-width: 1000px){
-          padding: 0 0 255px 0;
+        padding: 0 0 165px 0;
+        @media screen and (max-width: 1278px){
+          padding: 0 0 60px 0;
         }
         .i_directorship-basic-block-desc:before{
-          content: ' ';
+          content: " ";
           min-width: 665px;
           height: 665px;
           width: 43%;
@@ -325,22 +333,30 @@
           position: absolute;
           z-index: -1;
           top: 50%;
-          left: -19%;
-          transform: translate(-50%, -50%);
+          left: 0;
+          transform: translate(0, -50%);
           box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
           border-radius: 50%;
-          @media screen and (max-width: 1330px){
-            min-width: 600px;
-            height: 600px;
-            left: -18.5%;
-          }
-          @media screen and (max-width: 1000px){
+          //@media screen and (max-width: 1330px){
+          //  min-width: 600px;
+          //  height: 600px;
+          //  left: -18.5%;
+          //}
+          @media screen and (max-width: 1278px){
             min-width: 290px;
             height: 290px;
-            width: 30%;
-            left: 14.9%;
-            top: -43%;
-            transform: translate(-50%, 50%);
+            width: 20%;
+            left: 0;
+            top: 0;
+            transform: translate(0%, -14%);
+          }
+          @media screen and (max-width: 540px){
+            min-width: 300px;
+            height: 300px;
+            width: 50%;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, 2%);
           }
         }
         //DIRECTORSHIP BASIC BLOCK WRAPPER
@@ -353,19 +369,28 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          position: relative;
+          position: absolute;
           z-index: 2;
-          @media screen and (max-width: 1330px){
-            min-width: 600px;
-            height: 600px;
-          }
-          @media screen and (max-width: 1000px){
+          //@media screen and (max-width: 1330px){
+          //  min-width: 600px;
+          //  height: 600px;
+          //}
+          @media screen and (max-width: 1278px){
             min-width: 290px;
-            height: 290px;
-            width: 30%;
-            top: 50%;
-            left: 15%;
-            transform: translate(-50%, -38%);
+            max-height: 290px;
+            width: 20%;
+            top: 0;
+            left: 0;
+            transform: translate(0%, -14%);
+            position: absolute;
+          }
+          @media screen and (max-width: 540px){
+            min-width: 300px;
+            height: 300px;
+            width: 50%;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 2%);
           }
           .i_directorship-basic-block-portrait{
             width: 97%;
@@ -380,44 +405,67 @@
         //!DIRECTORSHIP BASIC BLOCK WRAPPER
         //DIRECTORSHIP BASIC BLOCK DESC
         .i_directorship-basic-block-desc{
-          width: 975px;
-          height: 512px;
+          max-width: 1525px;
+          width: 100%;
+          min-height: 512px;
+          height: 100%;
           background-color: var(--bg-block);
-          border-radius: 30px;
+          border-radius: 300px 30px 30px 300px;
           display: flex;
           flex-direction: column;
-          position: absolute;
+          position: relative;
           z-index: 1;
-          right: 1.8%;
           box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
           //align-items: center;
-          @media screen and (max-width: 1330px){
-            width: 820px;
-            height: 500px;
-            right: 0%;
-          }
-          @media screen and (max-width: 1000px){
-            width: 940px;
-            height: 430px;
+          //@media screen and (max-width: 1330px){
+          //  width: 820px;
+          //  height: 500px;
+          //  right: 0;
+          //}
+          @media screen and (max-width: 1278px){
+            max-width: 1212px;
+            min-height: 430px;
+            width: 100%;
+            height: 100%;
             border-radius: 100px 30px 30px 30px;
+            position: relative;
+          }
+          @media screen and (max-width: 540px){
+            max-width: 940px;
+            min-height: 430px;
+            width: 100%;
+            height: 100%;
+            border-radius: 190px 30px 30px 30px;
           }
           //DIRECTORSHIP BASIC BLOCK DESC TOP
           .i_directorship-basic-block-desc-top{
-            height: 268px;
+            min-height: 268px;
+            height: 100%;
             display: flex;
-            border-radius: 30px 30px 0 0;
+            border-radius: 300px 30px 0 0;
             background-color: var(--bg-block);
             flex-direction: column;
             gap: 35px;
-            padding: 0 128px 0 170px;
-            @media screen and (max-width: 1330px){
-              padding: 0 30px 0 180px;
-            }
-            @media screen and (max-width: 1000px){
-              padding: 0 80px 0 330px;
-              height: 250px;
+            padding: 0 128px 40px 700px;
+            //@media screen and (max-width: 1330px){
+            //  padding: 0 30px 0 180px;
+            //}
+            @media screen and (max-width: 1278px){
+              padding: 0 40px 30px 300px;
+              min-width: 250px;
+              width: 100%;
+              min-height: 268px;
+              height: 100%;
               border-radius: 100px 30px 0 0;
               gap: 25px;
+            }
+            @media screen and (max-width: 540px){
+              padding: 290px 40px 40px 50px;
+              min-height: 570px;
+              height: 100%;
+              gap: 25px;
+              text-align: center;
+              border-radius: 190px 90px 0 0;
             }
             //DIRECTORSHIP TOP NAME
             .i_directorship-block-desc-top-name{
@@ -448,7 +496,7 @@
               display: flex;
               flex-direction: column;
               gap: 35px;
-              @media screen and (max-width: 1000px){
+              @media screen and (max-width: 1278px){
                 gap: 25px;
               }
               .i_directorship-desc-top-depiction-name{
@@ -466,7 +514,7 @@
                   font-size: 15px;
                   cursor: text;
                   font-family: "Open Sans", sans-serif;
-                  @media screen and (max-width: 1000px){
+                  @media screen and (max-width: 1278px){
                     font-size: 14px;
                   }
                 }
@@ -477,7 +525,7 @@
           //!DIRECTORSHIP BASIC BLOCK DESC TOP
 
           //DIRECTORSHIP BASIC BLOCK DESC BOTTOM BEFORE
-          @media screen and (max-width: 1000px){
+          @media screen and (max-width: 1278px){
             .i_directorship-basic-block-desc-bottom:before{
               content: ' ';
               background-image: url("../img/svg/Polygon-red.svg");
@@ -485,32 +533,36 @@
               z-index: 2;
               width: 241px;
               height: 164px;
-              top: -78%;
+              top: 0;
               left: 0%;
+              transform: translateY(-86%);
             }
           }
           //DIRECTORSHIP BASIC BLOCK DESC BOTTOM BEFORE
           //DIRECTORSHIP BASIC BLOCK DESC BOTTOM
           .i_directorship-basic-block-desc-bottom{
-            height: 244px;
+            min-height: 244px;
+            height: 100%;
             background-color: var(--color-red-block);
-            border-radius: 0 0 30px 30px;
+            border-radius: 0 0 30px 300px;
             display: flex;
             justify-content: center;
-            padding: 0 128px 0 170px;
+            padding: 50px 128px 50px 700px;
             position: relative;
             z-index: 1;
-            @media screen and (max-width: 1330px){
-              padding: 0 30px 0 180px;
-            }
-            @media screen and (max-width: 1000px){
-              padding: 0 30px 0 30px;
-              height: 180px;
+            //@media screen and (max-width: 1330px){
+            //  padding: 0 30px 0 180px;
+            //}
+            @media screen and (max-width: 1278px){
+              padding: 50px 30px 50px 30px;
+              height: 100%;
+              min-height: 180px;
+              border-radius: 0 0 30px 30px;
             }
             .i_directorship-basic-block-desc-bottom-container{
               //min-width: 680px;
               //width: 69%;
-              padding: 50px 0 60px 0;
+              //padding: 50px 0 60px 0;
               span{
                 color: var(--color-WhiteWhite);
                 line-height: 21px;
@@ -531,7 +583,7 @@
         position: relative;
         z-index: 1;
         .i_directorship-basic-block-desc_second:before{
-          content: ' ';
+          content: " ";
           min-width: 665px;
           height: 665px;
           width: 43%;
@@ -539,22 +591,31 @@
           position: absolute;
           z-index: -1;
           top: 50%;
-          left: 118%;
-          transform: translate(-50%, -50%);
+          right: 0;
+          transform: translate(0, -50%);
           box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
           border-radius: 50%;
-          @media screen and (max-width: 1330px){
-            min-width: 600px;
-            height: 600px;
-            left: 117.5%;
-          }
-          @media screen and (max-width: 1000px){
+          //@media screen and (max-width: 1330px){
+          //  min-width: 600px;
+          //  height: 600px;
+          //  left: 117.5%;
+          //}
+          @media screen and (max-width: 1278px){
             min-width: 290px;
             height: 290px;
-            width: 30%;
-            left: 84.5%;
-            top: -43%;
-            transform: translate(-50%, 50%);
+            width: 20%;
+            right: 0 ;
+            left: unset;
+            top: 0;
+            transform: translate(0%, -14%);
+          }
+          @media screen and (max-width: 540px){
+            min-width: 300px;
+            height: 300px;
+            width: 50%;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, 2%);
           }
         }
         //DIRECTORSHIP BASIC BLOCK WRAPPER 2
@@ -567,21 +628,30 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          position: relative;
+          position: absolute;
           z-index: 2;
-          right: -54%;
-          @media screen and (max-width: 1330px){
-            min-width: 600px;
-            height: 600px;
-            right: -52%;
-          }
-          @media screen and (max-width: 1000px){
+          right: 0;
+          //@media screen and (max-width: 1330px){
+          //  min-width: 600px;
+          //  height: 600px;
+          //  right: -52%;
+          //}
+          @media screen and (max-width: 1278px){
             min-width: 290px;
-            height: 290px;
-            width: 30%;
-            top: 50%;
-            right: -53.8%;
-            transform: translate(50%, -38%);
+            max-height: 290px;
+            width: 20%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(0%, -14%);
+          }
+          @media screen and (max-width: 540px){
+            min-width: 300px;
+            height: 300px;
+            width: 50%;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 2%);
           }
           .i_directorship-basic-block-portrait{
             width: 97%;
@@ -597,45 +667,68 @@
 
         //DIRECTORSHIP BASIC BLOCK DESC 2
         .i_directorship-basic-block-desc_second{
-          width: 975px;
-          height: 512px;
+          max-width: 1525px;
+          width: 100%;
+          min-height: 512px;
+          height: 100%;
           background-color: var(--bg-block);
-          border-radius: 30px;
+          border-radius: 30px 300px 300px 30px;
           display: flex;
           flex-direction: column;
-          position: absolute;
+          position: relative;
           z-index: 1;
-          right: 35.8%;
           box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
           //align-items: center;
-          @media screen and (max-width: 1330px){
-            width: 820px;
-            height: 500px;
-            right: 35.5%;
-          }
-          @media screen and (max-width: 1000px){
-            width: 940px;
-            height: 430px;
+          //@media screen and (max-width: 1330px){
+          //  width: 820px;
+          //  height: 500px;
+          //  right: 35.5%;
+          //}
+          @media screen and (max-width: 1278px){
+            max-width: 1212px;
+            min-height: 430px;
+            width: 100%;
+            height: 100%;
             right: 0;
             border-radius: 30px 100px 30px 30px;
+            position: relative;
+          }
+          @media screen and (max-width: 540px){
+            max-width: 940px;
+            min-height: 430px;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px 190px 30px 30px;
           }
           //DIRECTORSHIP BASIC BLOCK DESC TOP 2
           .i_directorship-basic-block-desc-top_second{
-            height: 268px;
+            min-height: 268px;
+            height: 100%;
             display: flex;
-            border-radius: 30px 30px 0 0;
+            border-radius: 30px 300px 0 0;
             background-color: var(--bg-block);
             flex-direction: column;
             gap: 35px;
-            padding: 0 155px 0 50px;
-            @media screen and (max-width: 1330px){
-              padding: 0 155px 0 30px;
-            }
-            @media screen and (max-width: 1000px){
-              padding: 0 330px 0 30px;
-              height: 250px;
-              border-radius: 30px 100px 0 0;
+            padding: 0 700px 40px 40px;
+            //@media screen and (max-width: 1330px){
+            //  padding: 0 155px 0 30px;
+            //}
+            @media screen and (max-width: 1278px){
+              padding: 0 300px 30px 30px;
+              min-width: 250px;
+              width: 100%;
+              min-height: 268px;
+              height: 100%;
+              border-radius: 100px 90px 0 0;
               gap: 25px;
+            }
+            @media screen and (max-width: 540px){
+              padding: 290px 50px 40px 40px;
+              min-height: 570px;
+              height: 100%;
+              gap: 25px;
+              text-align: center;
+              border-radius: 30px 190px 0 0;
             }
             //DIRECTORSHIP TOP NAME
             .i_directorship-block-desc-top-name{
@@ -666,7 +759,7 @@
               display: flex;
               flex-direction: column;
               gap: 35px;
-              @media screen and (max-width: 1000px){
+              @media screen and (max-width: 1278px){
                 gap: 25px;
               }
               .i_directorship-desc-top-depiction-name{
@@ -684,7 +777,7 @@
                   font-size: 15px;
                   cursor: text;
                   font-family: "Open Sans", sans-serif;
-                  @media screen and (max-width: 1000px){
+                  @media screen and (max-width: 1278px){
                     font-size: 14px;
                   }
                 }
@@ -694,7 +787,7 @@
           }
           //!DIRECTORSHIP BASIC BLOCK DESC TOP 2
           //DIRECTORSHIP BASIC BLOCK DESC BOTTOM BEFORE
-          @media screen and (max-width: 1000px){
+          @media screen and (max-width: 1278px){
             .i_directorship-basic-block-desc-bottom_second:before{
               content: ' ';
               background-image: url("../img/svg/Polygon-grey.svg");
@@ -702,34 +795,38 @@
               z-index: 2;
               width: 241px;
               height: 164px;
-              top: -78%;
-              right: 0%;
+              top: 0;
+              right: 0;
+              transform: translateY(-86%);
             }
           }
           //DIRECTORSHIP BASIC BLOCK DESC BOTTOM BEFORE
 
           //!DIRECTORSHIP BASIC BLOCK DESC BOTTOM 2
           .i_directorship-basic-block-desc-bottom_second{
-            height: 244px;
+            min-height: 244px;
+            height: 100%;
             background-color: var(--color-grey-block);
-            border-radius: 0 0 30px 30px;
+            border-radius: 0 0 300px 30px;
             display: flex;
             justify-content: center;
-            padding: 0 155px 0 50px;
+            padding: 50px 700px 50px 40px;
             position: relative;
             z-index: 1;
-            @media screen and (max-width: 1330px){
-              padding: 0 155px 0 30px;
-            }
-            @media screen and (max-width: 1000px){
-              padding: 0 30px 0 30px;
-              height: 180px;
+            //@media screen and (max-width: 1330px){
+            //  padding: 0 155px 0 30px;
+            //}
+            @media screen and (max-width: 1278px){
+              padding: 50px 30px 50px 30px;
+              min-height: 180px;
+              height: 100%;
+              border-radius: 0 0 30px 30px;
             }
 
             .i_directorship-basic-block-desc-bottom-container{
               //min-width: 680px;
               //width: 69%;
-              padding: 50px 0 60px 0;
+              //padding: 50px 0 60px 0;
               span{
                 color: var(--color-WhiteWhite);
                 line-height: 21px;
