@@ -410,6 +410,9 @@
       padding: 50px 0;
       text-align: center;
       border-bottom: 5px dotted #666666;
+      span{
+        cursor: text;
+      }
     }
     //!SNIPPET AGREEMENT_TABLE TITLE
 
@@ -845,6 +848,7 @@
               span{
                 font-size: 24px;
                 cursor: text;
+                color: var(--color-textInfoblock);
               }
             }
             //!SNIPPET AGREEMENT_TABLE BINARY TABLE POINTS CONTAINER TITLE
@@ -877,6 +881,7 @@
       .i_snippet-top.border-bottom{
         border-bottom: 5px dotted #666666;
         border-radius: 30px 30px 0 0;
+        padding: 0 0 50px 0;
       }
       //SNIPPET AGREEMENT_TABLE BINARY_VERTICAL_TABLE TOP BORDER
       //SNIPPET AGREEMENT_TABLE BINARY_VERTICAL_TABLE TOP
@@ -900,7 +905,7 @@
         .i_snippet-table-points-container{
           width: 100%;
           height: max-content;
-          padding: 50px;
+          padding: 50px 50px 0 50px;
           ul{
             display: flex;
             flex-direction: column;
@@ -925,6 +930,259 @@
           }
         }
         //!SNIPPET AGREEMENT_TABLE BINARY TABLE POINTS CONTAINER
+
+        //SNIPPET COMPOSITION_BLOCK BEFORE
+        .i_snippet.composition-block:before{
+          content: ' ';
+          border: 20px solid transparent ;
+          border-bottom: 20px solid var(--color-circlesThird);
+          position: absolute;
+          top: -39px;
+          right: 85%;
+          transform: translateX(50%);
+        }
+        //!SNIPPET COMPOSITION_BLOCK BEFORE
+        //SNIPPET COMPOSITION_BLOCK
+        .i_snippet.composition-block{
+          padding: 40px;
+          margin: 40px;
+          max-width: 1185px;
+          width: 100%;
+          background-color: var(--color-circlesThird);
+          border-radius: 30px;
+          display: flex;
+          align-items: flex-start;
+          gap: 40px;
+          position: relative;
+          //SNIPPET COMPOSITION_BLOCK PICTURE
+          .i_snippet-picture{
+            max-width: 100px;
+            width: 100%;
+            height: 100%;
+            svg{
+              width: 100%;
+              height: 100%;
+            }
+          }
+          //!SNIPPET COMPOSITION_BLOCK PICTURE
+          //SNIPPET COMPOSITION_BLOCK GROUP_TEXT
+          .i_snippet-group-text{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            //SNIPPET COMPOSITION_BLOCK GROUP_TEXT TITLE
+            .i_snippet-group-text-title{
+              span{
+                font-size: 18px;
+                color: var(--color-textInfoblock);
+                cursor: text;
+              }
+            }
+            //!SNIPPET COMPOSITION_BLOCK GROUP_TEXT TITLE
+            //SNIPPET COMPOSITION_BLOCK GROUP_TEXT DESC
+            .i_snippet-group-text-desc{
+              display: flex;
+              flex-direction: column;
+              gap: 30px;
+              span{
+                font-family: "Open Sans", sans-serif;
+                line-height: 18px;
+                color: var(--color-textInfoblock);
+                cursor: text;
+              }
+            }
+            //SNIPPET COMPOSITION_BLOCK GROUP_TEXT DESC
+          }
+          //!SNIPPET COMPOSITION_BLOCK GROUP_TEXT
+        }
+        //!SNIPPET COMPOSITION_BLOCK
+        //SNIPPET MULTI_TABLE ITEMS BTN
+        .i_snippet-multi-table-btn{
+          padding: 0 0 50px 0;
+          button{
+            &:hover{
+              background-color: var(--bg-buttonHoverSecond);
+            }
+          }
+        }
+        //!SNIPPET MULTI_TABLE ITEMS BTN
+
+        //SNIPPET AGREEMENT_TABLE TITLE
+        .i_snippet-title.contact{
+          padding: 0 0 30px 0;
+        }
+        //!SNIPPET AGREEMENT_TABLE TITLE
+
+        //SNIPPET AGREEMENT_TABLE CONTACT
+        .i_footer-left-icons-item{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-items: center;
+          gap: 12px;
+          justify-content: center;
+          padding: 0 0 30px 0;
+          #myCircles2{
+            width: 50px;
+            height: 50px;
+            background-color: var(--color-circles);
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .whatsapp-icon{
+              margin: 4px 0 0 0;
+            }
+            &:hover{
+              background-color: var(--color-circlesHover);
+              box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+              svg{
+                margin: 4px 0 0 0;
+                color: var(--color-red);
+              }
+            }
+
+            .i_drop{
+              display: none;
+            }
+          }
+          @media screen and (max-width: 1330px){
+            #myCircles2{
+              width: 50px;
+              height: 50px;
+              background-color: var(--color-circles);
+              border-radius: 25px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: all .8s ease;
+              position: relative;
+              box-shadow: none;
+              &:hover {
+                color: var(--color-black);
+                background: var(--color-circlesHover);
+                transition: 0.3s ease;
+                cursor: pointer;
+
+                span {
+                  color: var(--color-red);
+                  font-weight: normal;
+                }
+              }
+              .whatsapp-icon{
+                margin: 3px 0 0 0;
+              }
+              @media screen and (max-width: 1330px){
+                width: 40px;
+                height: 40px;
+              }
+              .i_drop{
+                position: absolute;
+                z-index: -1;
+                overflow: hidden;
+                width: 50px;
+                transition: all .4s ease;
+                height: 100%;
+                border-radius: 50px;
+                background-color: var(--color-circlesHover);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                opacity: 0;
+                visibility: hidden;
+
+                a{
+                  color: var(--color-black);
+                  font-weight: 600;
+                  font-size: 16px;
+                  text-decoration: none;
+                  outline: none;
+                  position: relative;
+                  background-color: transparent;
+                  text-wrap: nowrap;
+                  @media screen and (max-width: 1330px){
+                    font-size: 14px;
+                  }
+                }
+              }
+              &.wide{
+                //position: absolute;
+                //width: 240px;
+                transition: all .4s ease;
+                background-color: var(--color-circlesHover);
+              }
+              &.wide{
+                .close_hide_menu2{
+                  background-image: url("../img/svg/close-iconLight.svg");
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  background-size: 24px auto;
+                  position: absolute;
+                  margin: 0;
+                  right: -80px;
+                  width: 23px;
+                  height: 100%;
+                  z-index: 1;
+                  @media screen and (max-width: 1330px){
+                    right: -145%;
+                    transform: translateX(50%);
+                    background-size: 22px auto;
+                  }
+                }
+                .j_drop{
+                  width: 240px;
+                  opacity: 1;
+                  visibility: visible;
+                  z-index: 1;
+                  height: 105%;
+                  @media screen and (max-width: 1330px){
+                    width: 195px;
+                  }
+
+                  a{
+                    opacity: 1;
+                  }
+
+                  svg{
+                    margin: 0;
+                    fill: var(--color-black);
+                    position: absolute;
+                    left: 15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                  }
+                }
+              }
+            }
+          }
+          .i_footer-left-icons-item-circles{
+            width: 50px;
+            height: 50px;
+            background-color: var(--color-circles);
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s ease;
+            svg{
+              color: var(--color-circleIcon);
+            }
+            &:hover{
+              background-color: var(--color-circlesHover);
+              box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+              svg{
+                color: var(--color-red);
+              }
+            }
+          }
+          .i_footer-left-icons-number{
+            text-decoration: none;
+            color: var(--color-black);
+            font-weight: 600;
+          }
+        }
+        //!SNIPPET AGREEMENT_TABLE CONTACT
       }
       //!SNIPPET AGREEMENT_TABLE BINARY_VERTICAL_TABLE TOP
     }

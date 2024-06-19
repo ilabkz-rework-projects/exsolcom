@@ -244,6 +244,9 @@
   text-align: center;
   border-bottom: 5px dotted #666666;
 }
+.i_modal-content .i_snippet.agreement-table .i_snippet-title span {
+  cursor: text;
+}
 .i_modal-content .i_snippet.agreement-table .i_snippet-binary-table {
   display: flex;
   gap: 5px;
@@ -567,6 +570,7 @@
 .i_modal-content .i_snippet.important-info .i_snippet.agreement-table .i_snippet-binary-table .i_snippet-table-points .i_snippet-table-points-container .i_snippet-table-points-container-title span {
   font-size: 24px;
   cursor: text;
+  color: var(--color-textInfoblock);
 }
 .i_modal-content .i_snippet.important-info .i_snippet.agreement-table .i_snippet-binary-table .i_snippet-table-points .i_snippet-table-points-container .i_snippet-table-points-container-desc span {
   font-family: "Open Sans", sans-serif;
@@ -583,6 +587,7 @@
 .i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top.border-bottom {
   border-bottom: 5px dotted #666666;
   border-radius: 30px 30px 0 0;
+  padding: 0 0 50px 0;
 }
 .i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top {
   background-color: var(--color-blockHv);
@@ -601,7 +606,7 @@
 .i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet-table-points-container {
   width: 100%;
   height: max-content;
-  padding: 50px;
+  padding: 50px 50px 0 50px;
 }
 .i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet-table-points-container ul {
   display: flex;
@@ -624,6 +629,241 @@
   font-family: "Comfortaa", sans-serif;
   font-weight: 600;
   cursor: text;
+}
+.i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block:before {
+  content: " ";
+  border: 20px solid transparent;
+  border-bottom: 20px solid var(--color-circlesThird);
+  position: absolute;
+  top: -39px;
+  right: 85%;
+  transform: translateX(50%);
+}
+.i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block {
+  padding: 40px;
+  margin: 40px;
+  max-width: 1185px;
+  width: 100%;
+  background-color: var(--color-circlesThird);
+  border-radius: 30px;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+}
+.i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block .i_snippet-picture {
+  max-width: 100px;
+  width: 100%;
+  height: 100%;
+}
+.i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block .i_snippet-picture svg {
+  width: 100%;
+  height: 100%;
+}
+.i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block .i_snippet-group-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block .i_snippet-group-text .i_snippet-group-text-title span {
+  font-size: 18px;
+  color: var(--color-textInfoblock);
+  cursor: text;
+}
+.i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block .i_snippet-group-text .i_snippet-group-text-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block .i_snippet-group-text .i_snippet-group-text-desc span {
+  font-family: "Open Sans", sans-serif;
+  line-height: 18px;
+  color: var(--color-textInfoblock);
+  cursor: text;
+}
+.i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet-multi-table-btn {
+  padding: 0 0 50px 0;
+}
+.i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet-multi-table-btn button:hover {
+  background-color: var(--bg-buttonHoverSecond);
+}
+.i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet-title.contact {
+  padding: 0 0 30px 0;
+}
+.i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  padding: 0 0 30px 0;
+}
+.i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2 {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-circles);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2 .whatsapp-icon {
+  margin: 4px 0 0 0;
+}
+.i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2:hover {
+  background-color: var(--color-circlesHover);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+.i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2:hover svg {
+  margin: 4px 0 0 0;
+  color: var(--color-red);
+}
+.i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2 .i_drop {
+  display: none;
+}
+@media screen and (max-width: 1330px) {
+  .i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2 {
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-circles);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s ease;
+    position: relative;
+    box-shadow: none;
+  }
+  .i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2:hover {
+    color: var(--color-black);
+    background: var(--color-circlesHover);
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  .i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2:hover span {
+    color: var(--color-red);
+    font-weight: normal;
+  }
+  .i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2 .whatsapp-icon {
+    margin: 3px 0 0 0;
+  }
+}
+@media screen and (max-width: 1330px) and (max-width: 1330px) {
+  .i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2 {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2 .i_drop {
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    width: 50px;
+    transition: all 0.4s ease;
+    height: 100%;
+    border-radius: 50px;
+    background-color: var(--color-circlesHover);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2 .i_drop a {
+    color: var(--color-black);
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    outline: none;
+    position: relative;
+    background-color: transparent;
+    text-wrap: nowrap;
+  }
+}
+@media screen and (max-width: 1330px) and (max-width: 1330px) {
+  .i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2 .i_drop a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2.wide {
+    transition: all 0.4s ease;
+    background-color: var(--color-circlesHover);
+  }
+  .i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2.wide .close_hide_menu2 {
+    background-image: url("../img/svg/close-iconLight.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px auto;
+    position: absolute;
+    margin: 0;
+    right: -80px;
+    width: 23px;
+    height: 100%;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 1330px) and (max-width: 1330px) {
+  .i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2.wide .close_hide_menu2 {
+    right: -145%;
+    transform: translateX(50%);
+    background-size: 22px auto;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2.wide .j_drop {
+    width: 240px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+    height: 105%;
+  }
+}
+@media screen and (max-width: 1330px) and (max-width: 1330px) {
+  .i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2.wide .j_drop {
+    width: 195px;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2.wide .j_drop a {
+    opacity: 1;
+  }
+  .i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2.wide .j_drop svg {
+    margin: 0;
+    fill: var(--color-black);
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item .i_footer-left-icons-item-circles {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-circles);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+.i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item .i_footer-left-icons-item-circles svg {
+  color: var(--color-circleIcon);
+}
+.i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item .i_footer-left-icons-item-circles:hover {
+  background-color: var(--color-circlesHover);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+.i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item .i_footer-left-icons-item-circles:hover svg {
+  color: var(--color-red);
+}
+.i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item .i_footer-left-icons-number {
+  text-decoration: none;
+  color: var(--color-black);
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=snippets.css.map */
