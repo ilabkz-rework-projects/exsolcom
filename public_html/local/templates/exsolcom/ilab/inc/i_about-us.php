@@ -212,15 +212,16 @@
             <div class="i_team-personal">
                 <!--TEAM PERSONAL BLOCK-->
                 <div class="i_team-personal-block">
-                    <!--TEAM PERSONAL BLOCK PICTURE-->
-                    <div class="i_team-personal-block-picture">
-                        <div class="i_team-personal-block-picture-block">
-                            <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/picture-1-Head.png'?>" alt="picture-1-Head">
-                        </div>
-                    </div>
-                    <!--!TEAM PERSONAL BLOCK PICTURE-->
+
                     <!--TEAM PERSONAL BLOCK DEPICTION-->
                     <div class="i_team-personal-block-depiction">
+                        <!--TEAM PERSONAL BLOCK PICTURE-->
+                        <div class="i_team-personal-block-picture">
+                            <div class="i_team-personal-block-picture-block">
+                                <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/picture-1-Head.png'?>" alt="picture-1-Head">
+                            </div>
+                        </div>
+                        <!--!TEAM PERSONAL BLOCK PICTURE-->
                         <!--TEAM PERSONAL BLOCK DEPICTION GROUP-->
                         <div class="i_team-personal-block-depiction-group">
                         <!--TEAM PERSONAL BLOCK DEPICTION GROUP NAME-->
@@ -244,15 +245,16 @@
                     <!--!TEAM PERSONAL BLOCK DEPICTION-->
                 </div>
                 <div class="i_team-personal-block">
-                    <!--TEAM PERSONAL BLOCK PICTURE-->
-                    <div class="i_team-personal-block-picture">
-                        <div class="i_team-personal-block-picture-block">
-                            <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/picture-2-Head.png'?>" alt="picture-2-Head">
-                        </div>
-                    </div>
-                    <!--!TEAM PERSONAL BLOCK PICTURE-->
+
                     <!--TEAM PERSONAL BLOCK DEPICTION-->
                     <div class="i_team-personal-block-depiction">
+                        <!--TEAM PERSONAL BLOCK PICTURE-->
+                        <div class="i_team-personal-block-picture">
+                            <div class="i_team-personal-block-picture-block">
+                                <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/picture-2-Head.png'?>" alt="picture-2-Head">
+                            </div>
+                        </div>
+                        <!--!TEAM PERSONAL BLOCK PICTURE-->
                         <!--TEAM PERSONAL BLOCK DEPICTION GROUP-->
                         <div class="i_team-personal-block-depiction-group">
                         <!--TEAM PERSONAL BLOCK DEPICTION GROUP NAME-->
@@ -276,15 +278,16 @@
                     <!--!TEAM PERSONAL BLOCK DEPICTION-->
                 </div>
                 <div class="i_team-personal-block">
-                    <!--TEAM PERSONAL BLOCK PICTURE-->
-                    <div class="i_team-personal-block-picture">
-                        <div class="i_team-personal-block-picture-block">
-                            <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/picture-3-Head.png'?>" alt="picture-3-Head">
-                        </div>
-                    </div>
-                    <!--!TEAM PERSONAL BLOCK PICTURE-->
+
                     <!--TEAM PERSONAL BLOCK DEPICTION-->
                     <div class="i_team-personal-block-depiction">
+                        <!--TEAM PERSONAL BLOCK PICTURE-->
+                        <div class="i_team-personal-block-picture">
+                            <div class="i_team-personal-block-picture-block">
+                                <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/picture-3-Head.png'?>" alt="picture-3-Head">
+                            </div>
+                        </div>
+                        <!--!TEAM PERSONAL BLOCK PICTURE-->
                         <!--TEAM PERSONAL BLOCK DEPICTION GROUP-->
                         <div class="i_team-personal-block-depiction-group">
                             <!--TEAM PERSONAL BLOCK DEPICTION GROUP NAME-->
@@ -308,15 +311,16 @@
                     <!--!TEAM PERSONAL BLOCK DEPICTION-->
                 </div>
                 <div class="i_team-personal-block">
-                    <!--TEAM PERSONAL BLOCK PICTURE-->
-                    <div class="i_team-personal-block-picture">
-                        <div class="i_team-personal-block-picture-block">
-                            <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/picture-4-Head.png'?>" alt="picture-4-Head">
-                        </div>
-                    </div>
-                    <!--!TEAM PERSONAL BLOCK PICTURE-->
+
                     <!--TEAM PERSONAL BLOCK DEPICTION-->
                     <div class="i_team-personal-block-depiction">
+                        <!--TEAM PERSONAL BLOCK PICTURE-->
+                        <div class="i_team-personal-block-picture">
+                            <div class="i_team-personal-block-picture-block">
+                                <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/picture-4-Head.png'?>" alt="picture-4-Head">
+                            </div>
+                        </div>
+                        <!--!TEAM PERSONAL BLOCK PICTURE-->
                         <!--TEAM PERSONAL BLOCK DEPICTION GROUP-->
                         <div class="i_team-personal-block-depiction-group">
                             <!--TEAM PERSONAL BLOCK DEPICTION GROUP NAME-->
@@ -340,15 +344,15 @@
                     <!--!TEAM PERSONAL BLOCK DEPICTION-->
                 </div>
                 <div class="i_team-personal-block">
-                    <!--TEAM PERSONAL BLOCK PICTURE-->
-                    <div class="i_team-personal-block-picture">
-                        <div class="i_team-personal-block-picture-block">
-                            <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/picture-5-Manager.png'?>" alt="picture-5-Manager">
-                        </div>
-                    </div>
-                    <!--!TEAM PERSONAL BLOCK PICTURE-->
                     <!--TEAM PERSONAL BLOCK DEPICTION-->
                     <div class="i_team-personal-block-depiction">
+                        <!--TEAM PERSONAL BLOCK PICTURE-->
+                        <div class="i_team-personal-block-picture">
+                            <div class="i_team-personal-block-picture-block">
+                                <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/picture-5-Manager.png'?>" alt="picture-5-Manager">
+                            </div>
+                        </div>
+                        <!--!TEAM PERSONAL BLOCK PICTURE-->
                         <!--TEAM PERSONAL BLOCK DEPICTION GROUP-->
                         <div class="i_team-personal-block-depiction-group">
                             <!--TEAM PERSONAL BLOCK DEPICTION GROUP NAME-->
@@ -372,15 +376,15 @@
                     <!--!TEAM PERSONAL BLOCK DEPICTION-->
                 </div>
                 <div class="i_team-personal-block">
-                    <!--TEAM PERSONAL BLOCK PICTURE-->
-                    <div class="i_team-personal-block-picture">
-                        <div class="i_team-personal-block-picture-block">
-                            <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/picture-6-Manager.png'?>" alt="picture-6-Manager">
-                        </div>
-                    </div>
-                    <!--!TEAM PERSONAL BLOCK PICTURE-->
                     <!--TEAM PERSONAL BLOCK DEPICTION-->
                     <div class="i_team-personal-block-depiction">
+                        <!--TEAM PERSONAL BLOCK PICTURE-->
+                        <div class="i_team-personal-block-picture">
+                            <div class="i_team-personal-block-picture-block">
+                                <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/picture-6-Manager.png'?>" alt="picture-6-Manager">
+                            </div>
+                        </div>
+                        <!--!TEAM PERSONAL BLOCK PICTURE-->
                         <!--TEAM PERSONAL BLOCK DEPICTION GROUP-->
                         <div class="i_team-personal-block-depiction-group">
                             <!--TEAM PERSONAL BLOCK DEPICTION GROUP NAME-->
@@ -404,15 +408,15 @@
                     <!--!TEAM PERSONAL BLOCK DEPICTION-->
                 </div>
                 <div class="i_team-personal-block">
-                    <!--TEAM PERSONAL BLOCK PICTURE-->
-                    <div class="i_team-personal-block-picture">
-                        <div class="i_team-personal-block-picture-block">
-                            <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/picture-7-Manager.png'?>" alt="picture-7-Manager">
-                        </div>
-                    </div>
-                    <!--!TEAM PERSONAL BLOCK PICTURE-->
                     <!--TEAM PERSONAL BLOCK DEPICTION-->
                     <div class="i_team-personal-block-depiction">
+                        <!--TEAM PERSONAL BLOCK PICTURE-->
+                        <div class="i_team-personal-block-picture">
+                            <div class="i_team-personal-block-picture-block">
+                                <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/picture-7-Manager.png'?>" alt="picture-7-Manager">
+                            </div>
+                        </div>
+                        <!--!TEAM PERSONAL BLOCK PICTURE-->
                         <!--TEAM PERSONAL BLOCK DEPICTION GROUP-->
                         <div class="i_team-personal-block-depiction-group">
                             <!--TEAM PERSONAL BLOCK DEPICTION GROUP NAME-->
