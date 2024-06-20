@@ -108,6 +108,11 @@ html[data-theme=dark] .i_main .i_about-us .i_work-process .i_work-process-body .
     width: 45%;
   }
 }
+@media screen and (max-width: 877px) {
+  html[data-theme=dark] .i_main .i_about-us .i_work-process .i_work-process-body .i_work-process-body-infographic-night {
+    display: none;
+  }
+}
 html[data-theme=dark] .i_main .i_about-us .i_work-process .i_work-process-body .i_work-process-body-infographic-night svg {
   width: 100%;
   height: 100%;

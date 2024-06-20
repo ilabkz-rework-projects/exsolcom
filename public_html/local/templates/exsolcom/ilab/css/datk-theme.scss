@@ -131,6 +131,11 @@ html[data-theme='dark']{
             @media screen and (max-width: 1330px){
               width: 45%;
             }
+            //WORK PROCESS MOBILE 789px
+            @media screen and (max-width: 877px){
+              display: none;
+            }
+            //!WORK PROCESS MOBILE 789px
             svg{
               width: 100%;
               height: 100%;
