@@ -229,6 +229,25 @@ document.addEventListener('DOMContentLoaded', (event) =>{
 	const overlay = document.querySelector('.i_overlay')
 	const modal = document.querySelector('.i_modal')
 	const modalClose = document.querySelector('.i_modal .i_modal-close')
+	//SIDE MENU
+
+	const sideMenu = document.querySelector('.i_side-menu')
+	const sideMenuButton = document.querySelector('.i_header-burger')
+	const sideMenuClose = document.querySelector('.i_side-menu-close')
+
+	sideMenuButton.forEach(item => {
+		item.addEventListener('click', () =>{
+			sideMenu.classList.add('show')
+		})
+	})
+
+	// sideMenuButton.addEventListener('click', () =>{
+	// 	sideMenu.classList.add('show')
+	// })
+
+	sideMenuClose.addEventListener('click', () =>{
+		sideMenu.classList.remove('show')
+	})
 
 	servicesItems.forEach(item => {
 		item.addEventListener('click', ()=>{
@@ -255,6 +274,7 @@ document.addEventListener('DOMContentLoaded', (event) =>{
 		if(event.key === 'Escape'){
 			overlay.classList.remove('active')
 			modal.classList.remove('active')
+			sideMenu.classList.remove('show')
 		}
 	})
 
@@ -270,18 +290,6 @@ document.addEventListener('DOMContentLoaded', (event) =>{
 		modal.classList.remove('active')
 	})
 
-	//SIDE MENU
 
-	const sideMenu = document.querySelector('.i_side-menu')
-	const sideMenuButton = document.querySelector('.i_header-burger')
-	const sideMenuClose = document.querySelector('.i_side-menu-close')
-
-	sideMenuButton.addEventListener('click', () =>{
-		sideMenu.classList.add('show')
-	})
-
-	sideMenuClose.addEventListener('click', () =>{
-		sideMenu.classList.remove('show')
-	})
 
 });
