@@ -270,4 +270,18 @@ document.addEventListener('DOMContentLoaded', (event) =>{
 		modal.classList.remove('active')
 	})
 
+	//SIDE MENU
+
+	const sideMenu = document.querySelector('.i_side-menu')
+	const sideMenuButton = document.querySelector('.i_header-burger')
+	const sideMenuClose = document.querySelector('.i_side-menu-close')
+
+	sideMenuButton.addEventListener('click', () =>{
+		sideMenu.classList.add('show')
+	})
+
+	sideMenuClose.addEventListener('click', () =>{
+		sideMenu.classList.remove('show')
+	})
+
 });
