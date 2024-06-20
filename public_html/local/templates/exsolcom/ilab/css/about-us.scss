@@ -1474,7 +1474,7 @@
           width: 40%;
           height: 100%;
           @media screen and (max-width: 1520px){
-            width: 45%;
+            width: 42%;
           }
           svg{
             width: 100%;
@@ -1495,35 +1495,83 @@
           flex-wrap: wrap;
           gap: 120px 240px;
           padding: 70px 0;
+
+          //WORK PROCESS BODY GROUP 1330px
+          @media screen and (max-width: 1478px){
+            gap: 80px 220px;
+          }
+          //!WORK PROCESS BODY GROUP 1330px
+          // WORK PROCESS 1190px
+          @media screen and (max-width: 1323px){
+            gap: 70px 190px;
+          }
+          // !WORK PROCESS 1190px
+
+          // WORK PROCESS 1000px
+          @media screen and (max-width: 1212px){
+            gap: 50px 150px;
+          }
+          // !WORK PROCESS 1000px
+
+          // WORK PROCESS 870px
+          @media screen and (max-width: 967px){
+            gap: 15px 100px;
+          }
+          // !WORK PROCESS 870px
+
           //WORK PROCESS BODY GROUP BLOCK
           .i_work-process-body-group-block{
             display: flex;
+            flex-basis: 30%;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
             gap: 20px;
-            min-width: 520px;
-            width: 34%;
-            height: 170px;
+            max-width: 520px;
+            width: 100%;
+            min-height: 170px;
+            max-height: 240px;
+            height: max-content;
             background-color: var(--color-blockHv);
             padding: 20px 20px 20px 70px;
             border-radius: 35px;
-            @media screen and (max-width: 1520px){
-              min-width: 400px;
-              width: 25%;
-              height: 180px;
-              padding: 20px 20px 20px 50px;
+            // WORK PROCESS 920px
+            @media screen and (max-width: 1030px){
+              padding: 20px 20px 30px 30px;
             }
+            // !WORK PROCESS 920px
+            //@media screen and (max-width: 1520px){
+            //  max-width: 400px;
+            //  width: 100%;
+            //  padding: 20px 20px 20px 50px;
+            //}
             &:nth-child(3){
               margin: 0 230px 0 0;
               padding: 20px 70px 20px 20px;
               align-items: flex-end;
-              span{
-                text-align: right;
-              }
               @media screen and (max-width: 1330px){
                 padding: 20px 50px 20px 20px;
               }
+              // WORK PROCESS 1000px
+              @media screen and (max-width: 1212px){
+                margin: 0 210px 0 0;
+              }
+              // !WORK PROCESS 1000px
+              // WORK PROCESS 920px
+              @media screen and (max-width: 1030px){
+                margin: 0 200px 0 0;
+                padding: 20px 30px 30px 20px;
+              }
+              // !WORK PROCESS 920px
+              // WORK PROCESS 800px
+              @media screen and (max-width: 889px){
+                //margin: 0 210px 0 0;
+              }
+              // !WORK PROCESS 800px
+              span{
+                text-align: right;
+              }
+
             }
             &:nth-child(1){
               padding: 20px 70px 20px 20px;
@@ -1534,6 +1582,11 @@
               @media screen and (max-width: 1330px){
                 padding: 20px 50px 20px 20px;
               }
+              // WORK PROCESS 920px
+              @media screen and (max-width: 1030px){
+                padding: 20px 30px 60px 20px;
+              }
+              // !WORK PROCESS 920px
             }
             &:nth-child(5){
               padding: 20px 70px 20px 20px;
@@ -1544,6 +1597,11 @@
               @media screen and (max-width: 1330px){
                 padding: 20px 50px 20px 20px;
               }
+              // WORK PROCESS 920px
+              @media screen and (max-width: 1030px){
+                padding: 30px 30px 60px 20px;
+              }
+              // !WORK PROCESS 920px
             }
             //WORK PROCESS BODY GROUP BLOCK SPAN WEIGHT
             .i_work-process-body-group-block-color{
@@ -1553,6 +1611,12 @@
               color: var(--color-textInfoblock);
               line-height: 27px;
               cursor: text;
+              // WORK PROCESS 1000px
+              @media screen and (max-width: 1212px){
+                font-size: 16px;
+                line-height: 22px;
+              }
+              // !WORK PROCESS 1000px
             }
             span{
               color: var(--color-textInfoblock);
@@ -1560,6 +1624,12 @@
               font-family: "Open Sans", sans-serif;
               line-height: 18px;
               cursor: text;
+              // WORK PROCESS 1000px
+              @media screen and (max-width: 1212px){
+                font-size: 13px;
+                line-height: 16px;
+              }
+              // !WORK PROCESS 1000px
             }
             //!WORK PROCESS BODY GROUP BLOCK SPAN WEIGHT
           }
@@ -1574,10 +1644,12 @@
         justify-content: center;
         button{
           padding: 20px 48px;
-          @media screen and (max-width: 1330px){
+          //1380
+          @media screen and (max-width: 1534px){
             padding: 16px 38px;
             font-size: 14px;
           }
+          //1380
           @media screen and (max-width: 395px){
             padding: 12px 22px;
             font-size: 13px;
