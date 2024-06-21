@@ -226,6 +226,7 @@ document.addEventListener('DOMContentLoaded', (event) =>{
 
 	// Получаем данные для модальных окон
 	const servicesItems = document.querySelectorAll('.i_services-item');
+	const projectsItems = document.querySelectorAll('.i_projects-element__item');
 	const overlay = document.querySelector('.i_overlay')
 	const modal = document.querySelector('.i_modal')
 	const modalClose = document.querySelector('.i_modal .i_modal-close')
@@ -245,6 +246,7 @@ document.addEventListener('DOMContentLoaded', (event) =>{
 		sideMenu.classList.remove('show')
 	})
 
+	// Модалка для услуг
 	servicesItems.forEach(item => {
 		item.addEventListener('click', ()=>{
 			fetch('/local/templates/exsolcom/ilab/ajax/getServicesModalContent.php', {
@@ -256,9 +258,58 @@ document.addEventListener('DOMContentLoaded', (event) =>{
 			})
 				.then(response => response.json())
 				.then(data => {
-					console.log(data)
+					modal.querySelector('.i_modal-header-content').innerHTML = '';
+					modal.querySelector('.i_modal-content').innerHTML = ''
+					modal.querySelector('.i_modal-img').innerHTML = ''
+
 					overlay.classList.add('active')
 					modal.classList.add('active')
+
+					const content = data.CONTENT;
+					// Регулярное выражение для поиска <div class="i_modal-preview">...</div>
+					const modalPreviewRegex = /<div class="i_modal-preview">[\s\S]*?<\/div>/;
+					// Найти совпадение
+					const match = content.match(modalPreviewRegex);
+
+					let modalPreviewContent = '';
+					let otherContent = '';
+
+					if (match) {
+						// Совпадение найдено
+						modalPreviewContent = match[0];
+
+						// Остальной контент
+						otherContent = content.replace(modalPreviewContent, '').trim();
+					} else {
+						// Совпадение не найдено, все содержимое остается в otherContent
+						otherContent = content;
+					}
+					modal.querySelector('.i_modal-header-content').innerHTML += modalPreviewContent;
+
+					modal.querySelector('.i_modal-content').innerHTML = otherContent
+					modal.querySelector('.i_modal-img').innerHTML = `<img src="${data.IMAGE}" alt="${data.NAME}">`
+				})
+		})
+	})
+
+	projectsItems.forEach(item => {
+		item.addEventListener('click', ()=>{
+			fetch('/local/templates/exsolcom/ilab/ajax/getProjectElementModalContent.php', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({id : item.getAttribute('id')})
+			})
+				.then(response => response.json())
+				.then(data => {
+					modal.querySelector('.i_modal-header-content').innerHTML = '';
+					modal.querySelector('.i_modal-content').innerHTML = ''
+					modal.querySelector('.i_modal-img').innerHTML = ''
+
+					overlay.classList.add('active')
+					modal.classList.add('active')
+
 					const content = data.CONTENT;
 					// Регулярное выражение для поиска <div class="i_modal-preview">...</div>
 					const modalPreviewRegex = /<div class="i_modal-preview">[\s\S]*?<\/div>/;
