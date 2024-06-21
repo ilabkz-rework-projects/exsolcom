@@ -5,7 +5,7 @@ use Ilab\Data\iGet;
 if($arResult):?>
 	<div class="i_projects-element">
 		<?foreach ($arResult['ELEMENT'] as $element){?>
-			<div class="i_projects-element__item">
+			<div class="i_projects-element__item" id="<?=$element['ID']?>">
 				<div class="i_projects-element__item__img">
 					<img src="<?=$element['IMAGES']?>" alt="<?=$element['NAME']?>">
 				</div>
