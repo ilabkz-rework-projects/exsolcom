@@ -477,6 +477,9 @@
                 font-size: 24px;
                 font-weight: 600;
                 color: var(--color-textInfoblock);
+                @media screen and (max-width: 480px){
+                  font-size: 22px;
+                }
                 .color-red-top-name{
                   color: var(--color-red);
                   cursor: text;
@@ -740,6 +743,9 @@
                 font-size: 24px;
                 font-weight: 600;
                 color: var(--color-textInfoblock);
+                @media screen and (max-width: 480px){
+                  font-size: 22px;
+                }
                 .color-red-top-name{
                   color: var(--color-red);
                   cursor: text;
@@ -1028,6 +1034,9 @@
           //}
           @media screen and (max-width: 760px){
             padding: 0 15px 20px 15px;
+          }
+          @media screen and (max-width: 760px){
+            padding: 0 5px 20px 5px;
           }
 
           //TEAM PERSONAL BLOCK PICTURE
@@ -1962,6 +1971,9 @@
     padding: 70px 0;
     position: relative;
     z-index: 1;
+    @media screen and (max-width: 480px){
+      padding: 50px 0;
+    }
     //background-image: url("../img/svg/bg-element-light_1-rotate.svg");
     //background-repeat: no-repeat;
     //background-position-x: -30%;
@@ -2035,15 +2047,50 @@
       flex-wrap: wrap;
       gap: 20px;
       padding: 70px 0 50px 0;
+      @media screen and (max-width: 480px){
+        gap: 10px;
+        padding: 60px 0 50px 0;
+      }
+      @media screen and (max-width: 360px){
+        gap: 10px;
+        padding: 50px 0 50px 0;
+      }
       //SEO DATES SWITCH
       .i_seo-dates-switch{
-        width: 96px;
-        height: 60px;
+        min-width: 96px;
+        width: 0%;
+        min-height: 60px;
+        height: 100%;
         background-color: var(--color-circlesThird);
         border-radius: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
+        @media screen and (max-width: 1330px){
+          min-width: 86px;
+          min-height: 44px;
+          width: 0%;
+        }
+        @media screen and (max-width: 1000px){
+          min-width: 85px;
+          min-height: 50px;
+          width: 0%;
+        }
+        @media screen and (max-width: 760px){
+          min-width: 68px;
+          min-height: 40px;
+          width: 0%;
+        }
+        @media screen and (max-width: 480px){
+          min-width: 63px;
+          min-height: 40px;
+          width: 0%;
+        }
+        @media screen and (max-width: 480px){
+          min-width: 55px;
+          min-height: 40px;
+          width: 0%;
+        }
         &:hover{
           span{
             color: var(--color-red);
@@ -2054,6 +2101,12 @@
           font-weight: 600;
           font-size: 18px;
           color: var(--color-black);
+          @media screen and (max-width: 1330px){
+            font-size: 16px;
+          }
+          @media screen and (max-width: 760px){
+            font-size: 14px;
+          }
         }
       }
       //!SEO DATES SWITCH
@@ -2067,14 +2120,24 @@
         flex-direction: column;
         gap: 50px;
         padding: 70px 0 0 0;
+        @media screen and (max-width: 480px){
+          padding: 60px 0 0 0;
+        }
+        @media screen and (max-width: 360px){
+          padding: 50px 0 0 0;
+        }
         //SEO EVENTS 2022 TITLE
         .i_seo-events-2022-title{
           display: flex;
           justify-content: center;
           span{
-            font-size: 20px;
+            font-size: 24px;
             color: var(--color-black);
             font-weight: 600;
+            text-align: center;
+            @media screen and (max-width: 480px){
+              font-size: 22px;
+            }
             .i_seo-events-2022-title-color{
               color: var(--color-red);
             }
