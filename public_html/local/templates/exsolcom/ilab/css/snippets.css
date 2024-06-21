@@ -30,6 +30,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  color: var(--color-White);
 }
 .i_modal-content .i_snippet.title .i_snippet-number span {
   font-size: 28px;
