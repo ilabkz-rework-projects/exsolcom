@@ -147,7 +147,16 @@ span:hover {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
-  gap: 30px;
+  gap: 60px;
+}
+.i_modal .i_modal-header .i_modal-img {
+  width: 35%;
+}
+.i_modal .i_modal-header .i_modal-img img {
+  width: 100%;
+}
+.i_modal .i_modal-header .i_modal-header-content {
+  width: 65%;
 }
 .i_modal .i_modal-header .i_modal-preview {
   display: flex;
