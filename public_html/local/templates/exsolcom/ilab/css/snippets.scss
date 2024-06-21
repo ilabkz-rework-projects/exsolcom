@@ -11,8 +11,21 @@
   //}
   ////!SNIPPET TITLE BEFORE
 
-  //SNIPPET H3
+  //SNIPPET TITLE
   .i_snippet{
+    //SNIPPET H2
+    .i_snippet-title{
+      h2{
+        font-size: 32px;
+        color: var(--color-black);
+        span{
+          cursor: text;
+        }
+      }
+    }
+    //!SNIPPET H2
+
+    //SNIPPET H3
     .i_snippet-title{
       display: flex;
       justify-content: center;
@@ -20,8 +33,9 @@
         font-size: 24px;
       }
     }
+    //!SNIPPET H3
   }
-  //!SNIPPET H3
+  //SNIPPET TITLE
 
   //SNIPPET TITLE
   .i_snippet.title{
@@ -363,6 +377,68 @@
   }
   //!SNIPPET TITLE SECOND
 
+  //SNIPPET DESC-DEPICTION
+  .i_snippet.desc-depiction{
+    //SNIPPET TITLE_SECOND DESC
+    .i_snippet-desc{
+      padding: 0 0 30px 0;
+      span{
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--color-textInfoblock);
+        cursor: text;
+      }
+    }
+    //!SNIPPET TITLE_SECOND DESC
+  }
+  //!SNIPPET DESC-DEPICTION
+
+  //SNIPPET DESC LINK
+  .i_snippet.desc-link{
+    padding: 0 0 30px 0;
+    //SNIPPET TITLE_SECOND DESC_LINK
+    .i_snippet-desc-link{
+      span{
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        color: var(--color-textInfoblock);
+        cursor: text;
+        line-height: 22px;
+        a{
+          color: var(--color-red);
+        }
+        .color-red{
+          color: var(--color-red);
+          cursor: pointer;
+        }
+      }
+    }
+    //!SNIPPET TITLE_SECOND DESC_LINK
+  }
+  //!SNIPPET DESC LINK
+
+  //SNIPPET DESC COLOR
+  .i_snippet.desc-color{
+    padding: 0 0 30px 0;
+    //SNIPPET TITLE_SECOND DESC_COLOR
+    .i_snippet-desc-color{
+      span{
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        color: var(--color-textInfoblock);
+        cursor: text;
+        line-height: 22px;
+        .color-red{
+          color: var(--color-red);
+          cursor: text;
+        }
+      }
+    }
+    //!SNIPPET TITLE_SECOND DESC_COLOR
+  }
+  //!SNIPPET DESC COLOR
+
   //SNIPPET DESC
   .i_snippet.desc{
     //SNIPPET TITLE_SECOND DESC
@@ -371,6 +447,7 @@
       span{
         font-family: "Open Sans", sans-serif;
         font-size: 16px;
+        line-height: 22px;
         color: var(--color-textInfoblock);
         cursor: text;
       }
@@ -642,7 +719,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px 80px;
+      gap: 20px 50px;
       //SNIPPET ADDITIONAL_SERVICES BLOCK HEIGHT
       .i_snippet-block.block-height{
         max-width: 590px;
@@ -687,6 +764,7 @@
       //SNIPPET ADDITIONAL_SERVICES BLOCK
       .i_snippet-block{
         max-width: 590px;
+        flex-basis: 45%;
         width: 100%;
         min-height: 96px;
         height: 100%;
@@ -1190,4 +1268,164 @@
   }
   //!SNIPPET IMPORTANT_INFO
 
+  //SNIPPET COMBINE_TABLE
+  .i_snippet.combine-table{
+    background-color: var(--color-blockHv);
+    border-radius: 30px;
+    margin: 30px 0;
+    padding: 30px;
+    //SNIPPET COMBINE_TABLE  TOP
+    .i_snippet-top{
+      //SNIPPET COMBINE_TABLE CONTAINER BORDER
+      .i_snippet-container.border-bottom{
+        border-bottom: 5px dotted #666666;
+        padding: 0 0 30px 0;
+      }
+      //!SNIPPET COMBINE_TABLE CONTAINER BORDER
+      //SNIPPET COMBINE_TABLE CONTAINER
+      .i_snippet-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        //SNIPPET BINARY_TABLE TITLE
+        .i_snippet-title{
+          padding: 0 0 30px 0;
+          text-align: left;
+          cursor: text;
+        }
+        //!SNIPPET BINARY_TABLE TITLE
+        // SNIPPET BINARY_TABLE TITLE
+        .i_snippet-title.subtitle{
+          cursor: text;
+          padding: 30px 0 30px 0;
+          h3{
+            font-size: 20px;
+          }
+        }
+        //!SNIPPET BINARY_TABLE TITLE
+        //SNIPPET COMBINE_TABLE TABLE POINTS
+        .i_snippet-table-points{
+          width: 100%;
+          height: max-content;
+          padding: 0 30px 0 70px;
+          ul{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            li{
+              color: var(--color-text-li);
+              span{
+                line-height: 22px;
+                color: var(--color-textInfoblock);
+                font-family: "Open Sans", sans-serif;
+                cursor: text;
+                a{
+                  cursor: text;
+                  text-decoration: transparent;
+                  font-family: "Comfortaa", sans-serif;
+                }
+              }
+              .text-weight.family{
+                font-family: "Comfortaa", sans-serif;
+                font-weight: 600;
+                cursor: text;
+              }
+            }
+          }
+        }
+        //!SNIPPET COMBINE_TABLE TABLE POINTS
+      }
+      //!SNIPPET COMBINE_TABLE CONTAINER
+    }
+    //!SNIPPET COMBINE_TABLE TOP
+    //SNIPPET COMBINE_TABLE BOTTOM
+    .i_snippet-bottom{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      //SNIPPET BINARY_TABLE TITLE
+      .i_snippet-title{
+        padding: 30px 0;
+      }
+      //!SNIPPET BINARY_TABLE TITLE
+      //SNIPPET COMBINE_TABLE PRICE
+      .i_snippet-price{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        //SNIPPET COMBINE_TABLE PRICE ITEM
+        span{
+          font-size: 18px;
+          cursor: text;
+          color: var(--color-textInfoblock);
+          span{
+            font-size: 20px;
+            cursor: text;
+          }
+        }
+        //!SNIPPET COMBINE_TABLE PRICE ITEM
+      }
+      //!SNIPPET COMBINE_TABLE PRICE
+    }
+    //!SNIPPET COMBINE_TABLE BOTTOM
+  }
+  //!SNIPPET COMBINE_TABLE
+
+  //SNIPPET BASE_TITLE
+  .i_snippet.base-title{
+    display: flex;
+    padding: 50px 0 30px 0;
+    //SNIPPET TITLE TITLE
+    .i_snippet-title{
+
+    }
+    //!SNIPPET TITLE TITLE
+  }
+  //!SNIPPET BASE_TITLE
+
+  //SNIPPET LIST
+  .i_snippet.list{
+    //SNIPPET LIST POINTS
+    .i_snippet-points{
+      width: 100%;
+      height: max-content;
+      padding: 0 30px 0 30px;
+      ul{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        li{
+          color: var(--color-text-li);
+          span{
+            line-height: 22px;
+            color: var(--color-textInfoblock);
+            font-family: "Open Sans", sans-serif;
+            cursor: text;
+            a{
+              cursor: text;
+              text-decoration: transparent;
+              font-family: "Comfortaa", sans-serif;
+            }
+          }
+          .text-weight.family{
+            font-family: "Comfortaa", sans-serif;
+            font-weight: 600;
+            cursor: text;
+          }
+        }
+      }
+    }
+    //!SNIPPET LIST POINTS
+  }
+  //!SNIPPET LIST
+
+  //SNIPPET PICTURE
+  .i_snippet.picture{
+    margin: 20px 0;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  //!SNIPPET PICTURE
 }
