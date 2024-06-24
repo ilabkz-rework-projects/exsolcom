@@ -18,6 +18,14 @@ html[data-theme=dark] .i_header .i_header-more #title-search .i_search-close {
     z-index: -1;
   }
 }
+html[data-theme=dark] .i_main .i_news-page {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-image: url(../img/svg/bg-element-dark_2.svg);
+  background-repeat: no-repeat;
+  background-position-x: 125%;
+  background-position-y: 15%;
+}
 html[data-theme=dark] .i_main .i_about-us .i_about-company:before {
   content: " ";
   background-image: url("../img/svg/bg-image-about-company-White-dark_second.svg");

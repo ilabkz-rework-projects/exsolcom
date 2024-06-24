@@ -33,6 +33,16 @@ html[data-theme='dark']{
       }
     }
       //!INFOBLOCK (main page)
+    //NEWS PAGE
+    .i_news-page{
+      padding-top: 70px;
+      padding-bottom: 70px;
+      background-image: url(../img/svg/bg-element-dark_2.svg);
+      background-repeat: no-repeat;
+      background-position-x: 125%;
+      background-position-y: 15%;
+    }
+    //!NEWS PAGE
     .i_about-us{
       //ABOUT COMPANY
       .i_about-company:before{
