@@ -693,8 +693,6 @@
 .i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block {
   padding: 40px;
   margin: 40px;
-  max-width: 1185px;
-  width: 100%;
   background-color: var(--color-circlesThird);
   border-radius: 30px;
   display: flex;
