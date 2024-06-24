@@ -199,11 +199,13 @@ $main = CSite::InDir(SITE_DIR.'index.php');
 			<!--    СЮДА ПУНКТЫ И ХЛЕБНЫЕ КРОШКИ, КРОШКИ Я САМ ДОБАВЛЮ!!"!!!!!"№!"№!"№!"№!"№!"№!"№№!"!"№!"№!"№	-->
 			<!--HEADER BOTTOM_BREADCRUMBS-->
 			<div class="i_breadcrumbs">
+			    <!--HEADER BOTTOM_BREADCRUMBS MAIN-->
 				<div class="i_breadcrumbs-main">
 					<div class="i_breadcrumbs-item">
 						<a href="/" class="i_breadcrumbs-link">Главная</a>
 					</div>
 				</div>
+			    <!--HEADER BOTTOM_BREADCRUMBS MAIN-->
 				<?$APPLICATION->IncludeComponent(
 					"bitrix:breadcrumb",
 					"i_breadcrumbs",

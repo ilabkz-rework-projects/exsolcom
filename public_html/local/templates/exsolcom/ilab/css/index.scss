@@ -777,10 +777,54 @@ body{
   position: relative;
   z-index: 10;
   .i_container{
-    //HEADER BOTTOM_POINTS
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    //HEADER BOTTOM_BREADCRUMBS
     .i_breadcrumbs{
-    //  ЗДЕСЬ ПИШИ
+      display: flex;
+      gap: 35px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      //HEADER BOTTOM_BREADCRUMBS MAIN
+      .i_breadcrumbs-main{
+        position: relative;
+        //HEADER BOTTOM_BREADCRUMBS ITEM AFTER
+        .i_breadcrumbs-item:after{
+          content: " ";
+          position: absolute;
+          width: 7px;
+          height: 7px;
+          transform: translate(600%, -50%);
+          top: 50%;
+          left: 50%;
+          border-radius: 50%;
+          background-color: #C6C6C8;
+        }
+        //!HEADER BOTTOM_BREADCRUMBS ITEM AFTER
+
+        //HEADER BOTTOM_BREADCRUMBS ITEM
+        .i_breadcrumbs-item{
+          a{
+            color: var(--color-black);
+            text-decoration: none;
+
+          }
+        }
+        //!HEADER BOTTOM_BREADCRUMBS ITEM
+      }
+      //HEADER BOTTOM_BREADCRUMBS MAIN
+      .bx-breadcrumb{
+        .bx-breadcrumb-item{
+          span{
+            color:var(--color-red);
+          }
+        }
+      }
     }
+    //!HEADER BOTTOM_BREADCRUMBS
+
+    //HEADER BOTTOM_POINTS
     .i_banner-group_social{
       gap: 30px;
       //Группа Соц-сети
