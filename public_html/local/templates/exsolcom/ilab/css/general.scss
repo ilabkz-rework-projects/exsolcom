@@ -12,6 +12,9 @@ button {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
     color: var(--color-red);
     background-color: var(--bg-buttonHover);
+    svg{
+      color: var(--color-red) !important;
+    }
   }
 }
 

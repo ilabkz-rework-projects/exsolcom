@@ -159,18 +159,17 @@
                     <div class="i_footer-right-group">
                         <!--FOOTER LEFT LOGO ExSol.com LITTLE-->
                         <div class="i_footer-left-logoLittle">
-                            <svg width="40" height="40" viewBox="0 0 41 41" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_277_108)">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.7569 41V33.5794C28.2688 33.5794 33.5735 28.2646 33.6519 21.6527L40.9948 21.7368C40.8746 32.4082 32.3035 41 21.7569 41ZM7.84984 19.2947L0.501721 19.2107C0.632377 8.56027 9.19821 0 19.7448 0V7.4154C13.2277 7.4154 7.92301 12.7091 7.84984 19.2947ZM19.1072 33.5794L19.0131 40.9947C8.47699 40.8687 0 32.1877 0 21.5162H7.34812C7.34812 28.1281 12.5848 33.5058 19.1072 33.5794Z" fill="#FF161F"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6416 7.4154L21.7252 0C32.2927 0.126041 40.7958 8.78084 40.7958 19.4313H33.4529C33.4529 12.8509 28.1901 7.49417 21.6416 7.4154Z" />
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1134_57)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.2263 40V32.7603C27.5794 32.7603 32.7546 27.5753 32.8311 21.1246L39.9949 21.2066C39.8776 31.6178 31.5156 40 21.2263 40ZM7.19949 18.8241L0.0305928 18.7422C0.158062 8.35148 8.51498 0 18.8043 0V7.23453C12.4461 7.23453 7.27087 12.3991 7.19949 18.8241ZM18.6412 32.7603L18.5494 39.9949C8.27024 39.8719 0 31.4026 0 20.9914H7.1689C7.1689 27.442 12.2779 32.6886 18.6412 32.7603Z" fill="#FF161F"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.1143 7.23453L21.1958 0C31.5056 0.122967 39.8013 8.56667 39.8013 18.9573H32.6375C32.6375 12.5375 27.503 7.31139 21.1143 7.23453Z" />
                                 </g>
                                 <defs>
-                                    <clipPath id="clip0_277_108">
-                                        <rect width="41" height="41" fill="white"/>
+                                    <clipPath id="clip0_1134_57">
+                                        <rect width="40" height="40" fill="white"/>
                                     </clipPath>
                                 </defs>
                             </svg>
-
                         </div>
                         <!--!FOOTER LEFT LOGO ExSol.com LITTLE-->
                         <div class="i_banner-group_social">
