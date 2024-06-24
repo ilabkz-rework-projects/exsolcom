@@ -887,10 +887,10 @@ body{
       font-size: 13px;
     }
     &:hover {
-      color: var(--color-red);
+      color: var(--color-red) ;
     }
     &.root-item-selected{
-      color: var(--color-red);
+      color: var(--color-red) !important;
       &::before{
         content: '';
         position: absolute;
