@@ -134,7 +134,7 @@ body{
     .i_header-left {
       width: 100%;
       display: flex;
-      gap: 20px;
+      gap: 10px;
 
       //HEADER LOGO
       .i_header-logo{
@@ -217,8 +217,14 @@ body{
       //HEADER BLOG
       .i_header-blog{
         margin: 0 10px 0 0;
-        min-width: 120px;
+        min-width: 155px;
         width: 100%;
+        @media screen and (max-width: 1450px){
+          display: none;
+        }
+        @media screen and (max-width: 1100px){
+          display: block;
+        }
         button {
           width: 120px;
           height: 50px;
@@ -229,14 +235,25 @@ body{
       //HEADER BLOG ICON
       .i_header-blog-icon{
         display: none;
+        @media screen and (max-width: 1450px){
+          display: flex;
+          margin: 0 5px 0 0;
+          max-width: 50px;
+          min-width: 50px;
+          width: 100%;
+          height: 50px;
+        }
+        @media screen and (max-width: 1100px){
+          display: none;
+        }
         @media screen and (max-width: 480px){
           display: flex;
+          margin: 0 5px 0 0;
+          max-width: 40px;
+          min-width: 40px;
+          width: 100%;
+          height: 40px;
         }
-        margin: 0 5px 0 0;
-        max-width: 40px;
-        min-width: 40px;
-        width: 100%;
-        height: 40px;
         align-items: center;
         justify-content: center;
         svg{
@@ -2879,6 +2896,7 @@ body{
           @media screen and (max-width: 1300px){
             display: flex;
             width: 100%;
+            flex-wrap: wrap;
           }
           @media screen and (max-width: 1150px){
             justify-content: flex-start;
@@ -2910,7 +2928,7 @@ body{
         //!Header Blog
         //HEADER BLOG ICON
         .i_header-blog-icon{
-          display: none;
+
           @media screen and (max-width: 480px){
             display: flex;
           }
@@ -2921,11 +2939,8 @@ body{
           align-items: center;
           justify-content: center;
           svg{
-            margin: 0 0 0 3px;
+            margin: 0 0 0 4px;
             color: var(--color-WhiteWhite);
-            &:hover{
-              color: var(--color-red);
-            }
           }
         }
         //!HEADER BLOG ICON
@@ -4328,6 +4343,7 @@ body{
         //!Header Blog
         //Header More
         .i_header-more{
+          gap: 8px;
           position: relative;
           //Header Circles
           .i_header-circles{
@@ -4690,22 +4706,6 @@ body{
           display: none;
         }
         //!Header Blog
-        //HEADER BLOG ICON
-        .i_header-blog-icon{
-          min-width: 40px;
-          width: 100%;
-          height: 40px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          svg{
-            margin: 0 0 0 3px;
-            color: var(--color-WhiteWhite);
-
-          }
-        }
-        //!HEADER BLOG ICON
         //Header More
         .i_header-more{
           gap: 8px;
