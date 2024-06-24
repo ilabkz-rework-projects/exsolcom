@@ -780,12 +780,17 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    flex-flow: row-reverse;
+    @media screen and (max-width: 680px){
+      display: block;
+    }
     //HEADER BOTTOM_BREADCRUMBS
     .i_breadcrumbs{
       display: flex;
       gap: 35px;
       font-family: "Open Sans", sans-serif;
       font-size: 14px;
+      margin: 50px 0 0 0;
       //HEADER BOTTOM_BREADCRUMBS MAIN
       .i_breadcrumbs-main{
         position: relative;

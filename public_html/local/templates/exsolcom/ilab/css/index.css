@@ -719,12 +719,19 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  flex-flow: row-reverse;
+}
+@media screen and (max-width: 680px) {
+  .i_header-bottom .i_container {
+    display: block;
+  }
 }
 .i_header-bottom .i_container .i_breadcrumbs {
   display: flex;
   gap: 35px;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
+  margin: 50px 0 0 0;
 }
 .i_header-bottom .i_container .i_breadcrumbs .i_breadcrumbs-main {
   position: relative;
