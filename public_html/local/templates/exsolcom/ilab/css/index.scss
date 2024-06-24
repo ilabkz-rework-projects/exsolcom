@@ -940,13 +940,17 @@ body{
       font-size: 1.25rem;
       text-transform: uppercase;
       text-align: center;
+      cursor: text;
+      span{
+        color: var(--color-textInfoblock);
+      }
     }
     .i_side-menu-close{
       position: absolute;
       top: 33px;
       width: 50px;
       height: 50px;
-      background: var(--bg-second);
+      background: var(--bg-buttonHover);
       border-radius: 100%;
       display: flex;
       align-items: center;
