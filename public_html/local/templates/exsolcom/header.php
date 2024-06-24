@@ -1,6 +1,8 @@
 <?php
 if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
 CJSCore::Init(array('ajax', 'window'));
+
+$main = CSite::InDir(SITE_DIR.'index.php');
 ?>
 
 <!DOCTYPE html>
@@ -20,17 +22,22 @@ CJSCore::Init(array('ajax', 'window'));
     <div class="i_container">
         <!--HEADER LEFT-->
         <div class="i_header-left">
-            <!--HEADER BURGER-->
-            <button class="i_header-burger">
-                <svg width="14" height="14" viewBox="0 0 125 124" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M117 70H8C3.6 70 0 66.4 0 62C0 57.6 3.6 54 8 54H117C121.4 54 125 57.6 125 62C125 66.4 121.4 70 117 70ZM117 16H8C3.6 16 0 12.4 0 8C0 3.6 3.6 0 8 0H117C121.4 0 125 3.6 125 8C125 12.4 121.4 16 117 16ZM8 108H117C121.4 108 125 111.6 125 116C125 120.4 121.4 124 117 124H8C3.6 124 0 120.4 0 116C0 111.6 3.6 108 8 108Z" />
-                </svg>
-            </button>
-            <!--!HEADER BURGER-->
+	        <!--HEADER BURGER-->
+	        <button class="i_header-burger">
+		        <svg width="14" height="14" viewBox="0 0 125 124" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			        <path fill-rule="evenodd" clip-rule="evenodd" d="M117 70H8C3.6 70 0 66.4 0 62C0 57.6 3.6 54 8 54H117C121.4 54 125 57.6 125 62C125 66.4 121.4 70 117 70ZM117 16H8C3.6 16 0 12.4 0 8C0 3.6 3.6 0 8 0H117C121.4 0 125 3.6 125 8C125 12.4 121.4 16 117 16ZM8 108H117C121.4 108 125 111.6 125 116C125 120.4 121.4 124 117 124H8C3.6 124 0 120.4 0 116C0 111.6 3.6 108 8 108Z" />
+		        </svg>
+	        </button>
+	        <!--!HEADER BURGER-->
 
-            <!--HEADER MENU-->
-            <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/header_menu.php',Array(),Array('MODE'=>'html', 'NAME'=>'Вверхнее меню', 'SHOW_BORDER'=>false))// Menu?>
-            <!--!HEADER MENU-->
+	        <?if(!$main){?>
+		        <!--	ЗДЕСЬ ДОБАВЛЯЕШЬ ИКОНКУ	       -->
+	        <?}?>
+
+	        <!--HEADER MENU-->
+	        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/header_menu.php',Array(),Array('MODE'=>'html', 'NAME'=>'Вверхнее меню', 'SHOW_BORDER'=>false))// Menu?>
+	        <!--!HEADER MENU-->
+
         </div>
         <!--!HEADER LEFT-->
 
@@ -119,6 +126,11 @@ CJSCore::Init(array('ajax', 'window'));
 	false
 );?>
 
+<?if(!$main){?>
+	<div class="i_header-bottom">
+		<!--    СЮДА ПУНКТЫ И ХЛЕБНЫЕ КРОШКИ, КРОШКИ Я САМ ДОБАВЛЮ!!"!!!!!"№!"№!"№!"№!"№!"№!"№№!"!"№!"№!"№	-->
+	</div>
+<?}?>
 
 <main class="i_main">
 
