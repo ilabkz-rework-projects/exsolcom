@@ -13,7 +13,6 @@
 .i_about-us .i_about-company {
   position: relative;
   z-index: 1;
-  overflow: hidden;
 }
 .i_about-us .i_about-company .i_about-company-first {
   position: relative;

@@ -123,6 +123,8 @@ body{
 
 //HEADER/
 .i_header {
+  position: relative;
+  z-index: 10;
   display: flex;
   .i_container {
     padding: 0;
@@ -769,6 +771,39 @@ body{
   }
 }
 //!HEADER
+
+//HEADER BOTTOM
+.i_header-bottom{
+  position: relative;
+  z-index: 10;
+  .i_container{
+    //HEADER BOTTOM_POINTS
+    .i_banner-group_social{
+      gap: 30px;
+      //Группа Соц-сети
+      .i_banner-social{
+        @media screen and (max-width: 1330px){
+          .i_banner-social_item{
+            width: 40px;
+            height: 40px;
+            .i_banner-social_link{
+              .youtube-icon{
+                width: 16px;
+              }
+              svg{
+                width: max-content;
+                height: 16px;
+              }
+            }
+          }
+        }
+      }
+      //!Группа Соц-сети
+    }
+    //!HEADER BOTTOM_POINTS
+  }
+}
+//!HEADER BOTTOM
 
 //HEADER MENU
 .i_header-menu{
@@ -1541,9 +1576,12 @@ body{
 //MAIN GROUP SOCIAL
 .i_banner-group_social {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 60px;
   margin-top: 30px;
+  @media screen and (max-width: 680px){
+    justify-content: space-between;
+  }
   @media screen and (max-width: 480px){
     gap: 0;
   }
@@ -2885,6 +2923,8 @@ body{
           width: 40px;
           height: 40px;
           min-width: 40px;
+          position: relative;
+          z-index: 99;
           svg{
             width: 12px;
             height: 12px;

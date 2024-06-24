@@ -136,6 +136,8 @@ body {
 }
 
 .i_header {
+  position: relative;
+  z-index: 10;
   display: flex;
 }
 .i_header .i_container {
@@ -707,6 +709,27 @@ body {
 }
 .i_header .i_container .i_header-right .i_header-more .i_header-circles:hover svg {
   color: var(--color-red);
+}
+
+.i_header-bottom {
+  position: relative;
+  z-index: 10;
+}
+.i_header-bottom .i_container .i_banner-group_social {
+  gap: 30px;
+}
+@media screen and (max-width: 1330px) {
+  .i_header-bottom .i_container .i_banner-group_social .i_banner-social .i_banner-social_item {
+    width: 40px;
+    height: 40px;
+  }
+  .i_header-bottom .i_container .i_banner-group_social .i_banner-social .i_banner-social_item .i_banner-social_link .youtube-icon {
+    width: 16px;
+  }
+  .i_header-bottom .i_container .i_banner-group_social .i_banner-social .i_banner-social_item .i_banner-social_link svg {
+    width: max-content;
+    height: 16px;
+  }
 }
 
 .i_header-menu {
@@ -1449,9 +1472,14 @@ body {
 
 .i_banner-group_social {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 60px;
   margin-top: 30px;
+}
+@media screen and (max-width: 680px) {
+  .i_banner-group_social {
+    justify-content: space-between;
+  }
 }
 @media screen and (max-width: 480px) {
   .i_banner-group_social {
@@ -2841,6 +2869,8 @@ body {
     width: 40px;
     height: 40px;
     min-width: 40px;
+    position: relative;
+    z-index: 99;
   }
   .i_header .i_container .i_header-left .i_header-burger svg {
     width: 12px;
