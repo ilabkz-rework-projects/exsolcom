@@ -43,9 +43,9 @@
 		"IBLOCK_ID" => "1",
 		"IBLOCK_TYPE" => "Content",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
-		"INCLUDE_SUBSECTIONS" => "Y",
+		"INCLUDE_SUBSECTIONS" => "N",
 		"MESSAGE_404" => "",
-		"NEWS_COUNT" => "20",
+		"NEWS_COUNT" => "3",
 		"PAGER_BASE_LINK_ENABLE" => "N",
 		"PAGER_DESC_NUMBERING" => "N",
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -63,12 +63,12 @@
 		"SET_BROWSER_TITLE" => "Y",
 		"SET_LAST_MODIFIED" => "N",
 		"SET_META_DESCRIPTION" => "Y",
-		"SET_META_KEYWORDS" => "Y",
+		"SET_META_KEYWORDS" => "N",
 		"SET_STATUS_404" => "N",
 		"SET_TITLE" => "Y",
 		"SHOW_404" => "N",
-		"SORT_BY1" => "ACTIVE_FROM",
-		"SORT_BY2" => "SORT",
+		"SORT_BY1" => "ID",
+		"SORT_BY2" => "ACTIVE_FROM",
 		"SORT_ORDER1" => "DESC",
 		"SORT_ORDER2" => "ASC",
 		"STRICT_SECTION_CHECK" => "N",
@@ -77,6 +77,8 @@
 	false
 );?>
     <div class="i_news-btn">
-    <button>Все новости</button>
+	    <a href="/news">
+		    <button>Все новости</button>
+	    </a>
     </div>
 </div>
