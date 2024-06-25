@@ -217,6 +217,7 @@ else
 
 				if ($arParams["USE_COMPARE"] === "Y")
 				{
+
 					$APPLICATION->IncludeComponent(
 						"bitrix:catalog.compare.list",
 						"",
