@@ -780,12 +780,17 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    flex-flow: row-reverse;
+    @media screen and (max-width: 680px){
+      display: block;
+    }
     //HEADER BOTTOM_BREADCRUMBS
     .i_breadcrumbs{
       display: flex;
       gap: 35px;
       font-family: "Open Sans", sans-serif;
       font-size: 14px;
+      margin: 50px 0 0 0;
       //HEADER BOTTOM_BREADCRUMBS MAIN
       .i_breadcrumbs-main{
         position: relative;
@@ -882,10 +887,10 @@ body{
       font-size: 13px;
     }
     &:hover {
-      color: var(--color-red);
+      color: var(--color-red) ;
     }
     &.root-item-selected{
-      color: var(--color-red);
+      color: var(--color-red) !important;
       &::before{
         content: '';
         position: absolute;
@@ -935,13 +940,17 @@ body{
       font-size: 1.25rem;
       text-transform: uppercase;
       text-align: center;
+      cursor: text;
+      span{
+        color: var(--color-textInfoblock);
+      }
     }
     .i_side-menu-close{
       position: absolute;
       top: 33px;
       width: 50px;
       height: 50px;
-      background: var(--bg-second);
+      background: var(--bg-buttonHover);
       border-radius: 100%;
       display: flex;
       align-items: center;

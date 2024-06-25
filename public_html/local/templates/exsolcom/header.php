@@ -197,28 +197,6 @@ $main = CSite::InDir(SITE_DIR.'index.php');
 	<div class="i_header-bottom">
 		<div class="i_container">
 			<!--    СЮДА ПУНКТЫ И ХЛЕБНЫЕ КРОШКИ, КРОШКИ Я САМ ДОБАВЛЮ!!"!!!!!"№!"№!"№!"№!"№!"№!"№№!"!"№!"№!"№	-->
-			<!--HEADER BOTTOM_BREADCRUMBS-->
-			<div class="i_breadcrumbs">
-			    <!--HEADER BOTTOM_BREADCRUMBS MAIN-->
-				<div class="i_breadcrumbs-main">
-					<div class="i_breadcrumbs-item">
-						<a href="/" class="i_breadcrumbs-link">Главная</a>
-					</div>
-				</div>
-			    <!--HEADER BOTTOM_BREADCRUMBS MAIN-->
-				<?$APPLICATION->IncludeComponent(
-					"bitrix:breadcrumb",
-					"i_breadcrumbs",
-					array(
-						"PATH" => "",
-						"SITE_ID" => "en",
-						"START_FROM" => "0",
-						"COMPONENT_TEMPLATE" => "i_breadcrumbs"
-					),
-					false
-				);?>
-			</div>
-			<!--!HEADER BOTTOM_BREADCRUMBS-->
 			<!--HEADER BOTTOM_POINTS-->
 			<!--Группа Соц-сети и ДеньНочь-->
 			<div class="i_banner-group_social">
@@ -279,6 +257,28 @@ $main = CSite::InDir(SITE_DIR.'index.php');
 			</div>
 			<!--!Группа Соц-сети и ДеньНочь-->
 			<!--!HEADER BOTTOM_POINTS-->
+            <!--HEADER BOTTOM_BREADCRUMBS-->
+            <div class="i_breadcrumbs">
+                <!--HEADER BOTTOM_BREADCRUMBS MAIN-->
+                <div class="i_breadcrumbs-main">
+                    <div class="i_breadcrumbs-item">
+                        <a href="/" class="i_breadcrumbs-link">Главная</a>
+                    </div>
+                </div>
+                <!--HEADER BOTTOM_BREADCRUMBS MAIN-->
+                <?$APPLICATION->IncludeComponent(
+                    "bitrix:breadcrumb",
+                    "i_breadcrumbs",
+                    array(
+                        "PATH" => "",
+                        "SITE_ID" => "en",
+                        "START_FROM" => "0",
+                        "COMPONENT_TEMPLATE" => "i_breadcrumbs"
+                    ),
+                    false
+                );?>
+            </div>
+            <!--!HEADER BOTTOM_BREADCRUMBS-->
 		</div>
 	</div>
 	<!--!HEADER BOTTOM-->
