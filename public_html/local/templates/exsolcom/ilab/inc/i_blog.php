@@ -13,7 +13,7 @@
 
 	<?$APPLICATION->IncludeComponent(
 	"bitrix:news.list", 
-	"i_blog", 
+	"main.blog",
 	array(
 		"ACTIVE_DATE_FORMAT" => "j F Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
