@@ -1,0 +1,327 @@
+.i_services {
+  margin: 50px 0;
+}
+.i_services .i_services-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.i_services .i_services-title .i_services-title-icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-circles);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.i_services .i_services-title .i_services-title-icon svg {
+  color: var(--color-circleIcon);
+}
+@media screen and (max-width: 760px) {
+  .i_services .i_services-title .i_services-title-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+.i_services .i_services-title .i_services-title-icon svg {
+  color: var(--color-circleIcon);
+}
+@media screen and (max-width: 760px) {
+  .i_services .i_services-title .i_services-title-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+.i_services .i_services-title .i_services-title-name {
+  display: flex;
+  justify-content: flex-start;
+}
+.i_services .i_services-title .i_services-title-name span {
+  font-size: 32px;
+  font-weight: 400;
+}
+@media screen and (max-width: 1330px) {
+  .i_services .i_services-title .i_services-title-name span {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_services .i_services-title .i_services-title-name span {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .i_services .i_services-title .i_services-title-name span {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .i_services .i_services-title .i_services-title-name {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_services .i_services-title .i_services-title-name {
+    width: unset;
+  }
+}
+.i_services .i_vacantion-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 70px 0;
+}
+.i_services .i_vacantion-list .i_vacantion-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 745px;
+  width: 48%;
+  height: max-content;
+  border-radius: 30px;
+  padding: 30px;
+  background-color: var(--color-blockHv);
+}
+@media screen and (max-width: 1080px) {
+  .i_services .i_vacantion-list .i_vacantion-item {
+    max-width: 1020px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 590px) {
+  .i_services .i_vacantion-list .i_vacantion-item {
+    display: none;
+  }
+}
+.i_services .i_vacantion-list .i_vacantion-item:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.4s ease;
+  background-color: #f9f9f9;
+}
+.i_services .i_vacantion-list .i_vacantion-item:hover .i_vacantion-item-right .i_vacantion-item-name span {
+  color: var(--color-red);
+}
+.i_services .i_vacantion-list .i_vacantion-item .i_vacantion-item-left {
+  width: 44%;
+}
+@media screen and (max-width: 1080px) {
+  .i_services .i_vacantion-list .i_vacantion-item .i_vacantion-item-left {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 890px) {
+  .i_services .i_vacantion-list .i_vacantion-item .i_vacantion-item-left {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_services .i_vacantion-list .i_vacantion-item .i_vacantion-item-left {
+    width: 51%;
+  }
+}
+@media screen and (max-width: 590px) {
+  .i_services .i_vacantion-list .i_vacantion-item .i_vacantion-item-left {
+    display: none;
+  }
+}
+.i_services .i_vacantion-list .i_vacantion-item .i_vacantion-item-left .i_vacantion-img {
+  max-width: 290px;
+  width: 100%;
+  height: auto;
+}
+.i_services .i_vacantion-list .i_vacantion-item .i_vacantion-item-left .i_vacantion-img img {
+  width: 100%;
+  height: 100%;
+}
+.i_services .i_vacantion-list .i_vacantion-item .i_vacantion-item-right {
+  padding: 0 0 0 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 57%;
+}
+@media screen and (max-width: 1080px) {
+  .i_services .i_vacantion-list .i_vacantion-item .i_vacantion-item-right {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 590px) {
+  .i_services .i_vacantion-list .i_vacantion-item .i_vacantion-item-right {
+    display: none;
+  }
+}
+.i_services .i_vacantion-list .i_vacantion-item .i_vacantion-item-right .i_vacantion-item-role span {
+  font-size: 14px;
+  color: #7c7c7c;
+  cursor: text;
+}
+.i_services .i_vacantion-list .i_vacantion-item .i_vacantion-item-right .i_vacantion-item-name span {
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color-textInfoblock);
+}
+@media screen and (max-width: 590px) {
+  .i_services .i_vacantion-list .i_vacantion-item .i_vacantion-item-right .i_vacantion-item-title {
+    display: none;
+  }
+}
+.i_services .i_vacantion-list .i_vacantion-item .i_vacantion-item-right .i_vacantion-item-title span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  cursor: text;
+  color: var(--color-textInfoblock);
+}
+.i_services .i_vacantion-list .i_vacantion-item.second {
+  display: none;
+}
+@media screen and (max-width: 590px) {
+  .i_services .i_vacantion-list .i_vacantion-item.second {
+    display: flex;
+    max-width: 530px;
+    width: 100%;
+    height: max-content;
+    border-radius: 30px;
+    padding: 30px;
+    background-color: var(--color-blockHv);
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 590px) and (max-width: 590px) {
+  .i_services .i_vacantion-list .i_vacantion-item.second {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .i_services .i_vacantion-list .i_vacantion-item.second:hover {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all 0.4s ease;
+    background-color: #f9f9f9;
+  }
+  .i_services .i_vacantion-list .i_vacantion-item.second:hover .i_vacation-item-top .i_vacantion-item-right .i_vacantion-item-name span {
+    color: var(--color-red);
+  }
+  .i_services .i_vacantion-list .i_vacantion-item.second .i_vacation-item-top {
+    display: none;
+  }
+}
+@media screen and (max-width: 590px) and (max-width: 590px) {
+  .i_services .i_vacantion-list .i_vacantion-item.second .i_vacation-item-top {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 590px) and (max-width: 590px) {
+  .i_services .i_vacantion-list .i_vacantion-item.second .i_vacation-item-top .i_vacantion-item-left {
+    display: block;
+    width: 36%;
+  }
+  .i_services .i_vacantion-list .i_vacantion-item.second .i_vacation-item-top .i_vacantion-item-left .i_vacantion-img {
+    max-width: 290px;
+    width: 100%;
+    height: auto;
+  }
+  .i_services .i_vacantion-list .i_vacantion-item.second .i_vacation-item-top .i_vacantion-item-left .i_vacantion-img img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 590px) and (max-width: 590px) and (max-width: 590px) {
+  .i_services .i_vacantion-list .i_vacantion-item.second .i_vacation-item-top .i_vacantion-item-right {
+    padding: 0 0 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 590px) and (max-width: 590px) and (max-width: 590px) and (max-width: 360px) {
+  .i_services .i_vacantion-list .i_vacantion-item.second .i_vacation-item-top .i_vacantion-item-right {
+    padding: 0 0 0 20px;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 590px) and (max-width: 590px) and (max-width: 590px) {
+  .i_services .i_vacantion-list .i_vacantion-item.second .i_vacation-item-top .i_vacantion-item-right .i_vacantion-item-role span {
+    font-size: 14px;
+    color: #7c7c7c;
+    cursor: text;
+  }
+}
+@media screen and (max-width: 590px) and (max-width: 590px) and (max-width: 590px) and (max-width: 360px) {
+  .i_services .i_vacantion-list .i_vacantion-item.second .i_vacation-item-top .i_vacantion-item-right .i_vacantion-item-role span {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 590px) and (max-width: 590px) and (max-width: 590px) {
+  .i_services .i_vacantion-list .i_vacantion-item.second .i_vacation-item-top .i_vacantion-item-right .i_vacantion-item-name span {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--color-textInfoblock);
+  }
+}
+@media screen and (max-width: 590px) and (max-width: 590px) and (max-width: 590px) and (max-width: 360px) {
+  .i_services .i_vacantion-list .i_vacantion-item.second .i_vacation-item-top .i_vacantion-item-right .i_vacantion-item-name span {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 590px) and (max-width: 590px) and (max-width: 590px) and (max-width: 590px) {
+  .i_services .i_vacantion-list .i_vacantion-item.second .i_vacation-item-top .i_vacantion-item-right .i_vacantion-item-title {
+    display: none;
+  }
+}
+@media screen and (max-width: 590px) and (max-width: 590px) and (max-width: 590px) {
+  .i_services .i_vacantion-list .i_vacantion-item.second .i_vacation-item-top .i_vacantion-item-right .i_vacantion-item-title span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    cursor: text;
+    color: var(--color-textInfoblock);
+  }
+}
+@media screen and (max-width: 590px) {
+  .i_services .i_vacantion-list .i_vacantion-item.second .i_vacantion-item-right.second {
+    display: none;
+  }
+}
+@media screen and (max-width: 590px) and (max-width: 590px) {
+  .i_services .i_vacantion-list .i_vacantion-item.second .i_vacantion-item-right.second {
+    display: flex;
+    padding: 30px 0 0 0;
+    width: 100%;
+  }
+  .i_services .i_vacantion-list .i_vacantion-item.second .i_vacantion-item-right.second .i_vacantion-item-title {
+    display: flex;
+  }
+}
+@media screen and (max-width: 590px) and (max-width: 590px) and (max-width: 590px) {
+  .i_services .i_vacantion-list .i_vacantion-item.second .i_vacantion-item-right.second .i_vacantion-item-title span {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 590px) and (max-width: 590px) and (max-width: 360px) {
+  .i_services .i_vacantion-list .i_vacantion-item.second .i_vacantion-item-right.second .i_vacantion-item-title span {
+    font-size: 12px;
+  }
+}
+.i_services .i_vacantion-btn {
+  display: flex;
+  justify-content: center;
+}
+.i_services .i_vacantion-btn button {
+  padding: 16px 44px;
+}
+@media screen and (max-width: 760px) {
+  .i_services .i_vacantion-btn button {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .i_services .i_vacantion-btn button {
+    padding: 12px 38px;
+  }
+}
+
+/*# sourceMappingURL=vacantion.css.map */

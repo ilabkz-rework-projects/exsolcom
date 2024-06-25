@@ -38,7 +38,33 @@ $this->setFrameMode(true);
 				<span><?=$arItem['PREVIEW_TEXT']?></span>
 			</div>
 		</div>
+
 	</div>
+    <div class="i_vacantion-item second" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
+        <div class="i_vacation-item-top">
+            <div class="i_vacantion-item-left">
+                <div class="i_vacantion-img">
+                    <img src="<?=$arItem['PREVIEW_PICTURE']['SRC']?>" alt="img">
+                </div>
+            </div>
+            <div class="i_vacantion-item-right">
+                <div class="i_vacantion-item-role">
+                    <span><?=$arItem['PROPERTIES']['I_ROLE']['VALUE']?></span>
+                </div>
+                <div class="i_vacantion-item-name">
+                    <span><?=$arItem['NAME']?></span>
+                </div>
+            </div>
+        </div>
+        <div class="i_vacantion-item-right second">
+            <div class="i_vacantion-item-title">
+                <span><?=$arItem['PREVIEW_TEXT']?></span>
+            </div>
+        </div>
+	</div>
+
+
+
 <?endforeach;?>
 
 </div>
