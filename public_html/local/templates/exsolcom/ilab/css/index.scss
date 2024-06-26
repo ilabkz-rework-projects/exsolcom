@@ -821,7 +821,23 @@ body{
       }
       //HEADER BOTTOM_BREADCRUMBS MAIN
       .bx-breadcrumb{
+        display: flex;
         .bx-breadcrumb-item{
+          padding: 0 30px 0 0;
+          i:before{
+            content: " ";
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            transform: translate(-260%, -120%);
+            top: 0;
+            left: 50%;
+            border-radius: 50%;
+            background-color: #C6C6C8;
+          }
+          i{
+            position: relative;
+          }
           span{
             color:var(--color-red);
           }
