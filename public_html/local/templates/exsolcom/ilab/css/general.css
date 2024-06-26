@@ -200,4 +200,80 @@ span:hover {
   cursor: text;
 }
 
+.i_blog .i_container .bx_sitemap {
+  margin: 0;
+  padding: 50px 0 70px 0;
+}
+.i_blog .i_container .bx_sitemap .bx_sitemap_ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.i_blog .i_container .bx_sitemap .bx_sitemap_ul .menu-all-articles:before {
+  content: " ";
+  background-image: url("../img/svg/menu-blog-icon_w.svg");
+  background-repeat: no-repeat;
+  left: 0%;
+  top: 50%;
+  transform: translate(150%, -50%);
+  position: absolute;
+  background-size: 14px;
+  width: 14px;
+  height: 14px;
+}
+.i_blog .i_container .bx_sitemap .bx_sitemap_ul .menu-all-articles {
+  background-color: var(--color-circles);
+  margin: 20px 20px 0 0;
+}
+.i_blog .i_container .bx_sitemap .bx_sitemap_ul .menu-all-articles .bx_sitemap_li_title {
+  font-size: 20px;
+  line-height: unset;
+  margin: 0;
+  padding: 20px 30px 20px 50px;
+}
+.i_blog .i_container .bx_sitemap .bx_sitemap_ul .menu-all-articles .bx_sitemap_li_title a {
+  font-size: 20px;
+  color: var(--color-White);
+}
+.i_blog .i_container .bx_sitemap .bx_sitemap_ul li:before {
+  content: " ";
+  background-image: url("../img/svg/menu-blog-icon_b.svg");
+  background-repeat: no-repeat;
+  left: 0%;
+  top: 50%;
+  transform: translate(150%, -50%);
+  position: absolute;
+  background-size: 14px;
+  width: 14px;
+  height: 14px;
+}
+.i_blog .i_container .bx_sitemap .bx_sitemap_ul li {
+  list-style-type: none;
+  background-color: var(--color-circlesSecond);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.02);
+  position: relative;
+  border-radius: 30px;
+  margin: 20px 20px 0 0;
+}
+.i_blog .i_container .bx_sitemap .bx_sitemap_ul li:hover {
+  cursor: pointer;
+}
+.i_blog .i_container .bx_sitemap .bx_sitemap_ul li:hover .bx_sitemap_li_title a {
+  transition: all 0.4s ease;
+  color: var(--color-red);
+}
+.i_blog .i_container .bx_sitemap .bx_sitemap_ul li .bx_sitemap_li_title {
+  font-size: 20px;
+  line-height: unset;
+  margin: 0;
+  padding: 20px 30px 20px 50px;
+}
+.i_blog .i_container .bx_sitemap .bx_sitemap_ul li .bx_sitemap_li_title a {
+  font-size: 20px;
+  color: var(--color-black);
+}
+
 /*# sourceMappingURL=general.css.map */

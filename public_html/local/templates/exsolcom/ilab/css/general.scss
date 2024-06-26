@@ -224,3 +224,105 @@ span {
 
   }
 }
+
+// BLOG
+.i_blog{
+  .i_container{
+    .bx_sitemap{
+      margin: 0;
+      padding: 50px 0 70px 0;
+
+      .bx_sitemap_ul{
+        display: flex;
+        flex-wrap: wrap;
+        //gap: 25px;
+        margin: 0;
+
+        //WRAPPER LI menu-all-articles BEFORE
+        .menu-all-articles:before{
+          content: ' ';
+          background-image: url("../img/svg/menu-blog-icon_w.svg");
+          background-repeat: no-repeat;
+          left: 0%;
+          top: 50%;
+          transform: translate(150%, -50%);
+          position: absolute;
+          background-size: 14px;
+          width: 14px;
+          height: 14px;
+        }
+        //!WRAPPER LI menu-all-articles BEFORE
+        //WRAPPER LI menu-all-articles
+        .menu-all-articles{
+          background-color: var(--color-circles);
+          margin: 20px 20px 0 0;
+          //PROPERTIES H2
+          .bx_sitemap_li_title{
+            font-size: 20px;
+            line-height: unset;
+            margin: 0;
+            padding: 20px 30px 20px 50px;
+            a{
+              font-size: 20px;
+              color: var(--color-White);
+            }
+          }
+          //!PROPERTIES H2
+        }
+        //!WRAPPER LI menu-all-articles
+        //WRAPPER LI BEFORE
+        li:before{
+          content: ' ';
+          background-image: url("../img/svg/menu-blog-icon_b.svg");
+          background-repeat: no-repeat;
+          left: 0%;
+          top: 50%;
+          transform: translate(150%, -50%);
+          position: absolute;
+          background-size: 14px;
+          width: 14px;
+          height: 14px;
+        }
+        //!WRAPPER LI BEFORE
+        //WRAPPER LI
+        li{
+          list-style-type: none;
+          background-color: var(--color-circlesSecond);
+          box-sizing: border-box;
+          display: flex;
+          justify-content: center;
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.02);
+          //border: solid 2px black;
+          position: relative;
+          border-radius: 30px;
+          margin: 20px 20px 0 0;
+          &:hover{
+            cursor: pointer;
+            //PROPERTIES H2
+            .bx_sitemap_li_title{
+              a{
+                transition: all .4s ease;
+                color: var(--color-red);
+              }
+            }
+            //!PROPERTIES H2
+          }
+          //PROPERTIES H2
+          .bx_sitemap_li_title{
+            font-size: 20px;
+            line-height: unset;
+            margin: 0;
+            padding: 20px 30px 20px 50px;
+            a{
+              font-size: 20px;
+              color: var(--color-black);
+            }
+          }
+          //!PROPERTIES H2
+        }
+        //!WRAPPER LI
+      }
+    }
+  }
+}
+// !BLOG

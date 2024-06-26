@@ -65,7 +65,7 @@ if (0 < $arResult["SECTIONS_COUNT"])
 {
 ?>
 <ul class="<? echo $arCurView['LIST']; ?>">
-	<li id="" title=""><h2 class="bx_sitemap_li_title"><a href="/blog/">Все статьи</h2></li>
+	<li id="" class="menu-all-articles" title=""><h2 class="bx_sitemap_li_title"><a href="/blog/">Все статьи</h2></li>
 <?
 	switch ($arParams['VIEW_MODE'])
 	{
