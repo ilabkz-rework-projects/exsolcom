@@ -230,8 +230,7 @@ body{
           display: block;
         }
         button {
-          width: 120px;
-          height: 50px;
+          padding: 16px 58px;
         }
       }
       //!HEADER BLOG
@@ -1134,19 +1133,52 @@ body{
               background-color: var(--color-circlesSecond);
               border-radius: 50px;
               cursor: pointer;
-              .i_banner-circles {
+              .i_banner-circles_1{
+                background-image: url("../img/svg/group-banner-icons/banner-icon_1_b.svg");
+              }
+              .i_banner-circles_2{
+                background-image: url("../img/svg/group-banner-icons/banner-icon_2_b.svg");
+              }
+              .i_banner-circles_3{
+                background-image: url("../img/svg/group-banner-icons/banner-icon_3_b.svg");
+              }
+              .i_banner-circles_4{
+                background-image: url("../img/svg/group-banner-icons/banner-icon_4_b.svg");
+              }
+
+              .i_banner-circles_1,
+              .i_banner-circles_2,
+              .i_banner-circles_3,
+              .i_banner-circles_4{
                 width: 50px;
                 height: 50px;
                 background-color: var(--color-circlesSecond);
-                svg {
-                  color: var(--color-black);
-                }
+                background-repeat: no-repeat;
+                background-size: 50px;
+                background-position-x: 65%;
+                background-position-y: 50%;
               }
               p {
                 color: var(--color-red);
               }
             }
-            .i_banner-circles {
+            .i_banner-circles_1{
+              background-image: url("../img/svg/group-banner-icons/banner-icon_1_w.svg");
+            }
+            .i_banner-circles_2{
+              background-image: url("../img/svg/group-banner-icons/banner-icon_2_w.svg");
+            }
+            .i_banner-circles_3{
+              background-image: url("../img/svg/group-banner-icons/banner-icon_3_w.svg");
+            }
+            .i_banner-circles_4{
+              background-image: url("../img/svg/group-banner-icons/banner-icon_4_w.svg");
+            }
+
+            .i_banner-circles_1,
+            .i_banner-circles_2,
+            .i_banner-circles_3,
+            .i_banner-circles_4{
               width: 50px;
               height: 50px;
               background-color: var(--color-red);
@@ -1154,6 +1186,10 @@ body{
               display: flex;
               align-items: center;
               justify-content: center;
+              background-repeat: no-repeat;
+              background-size: 50px;
+              background-position-x: 65%;
+              background-position-y: 50%;
               svg {
                 color: var(--color-nochangeSecondIcon);
               }
@@ -1875,24 +1911,27 @@ body{
         //!News Headline Иконка
         //News Headline Название
         .i_news-title-name{
-          span{
-            font-size: 32px;
-            font-weight: 400;
-            @media screen and (max-width: 1330px){
-              font-size: 28px;
+          a{
+            text-decoration: none;
+            span{
+              font-size: 32px;
+              font-weight: 400;
+              @media screen and (max-width: 1330px){
+                font-size: 28px;
+              }
+              @media screen and (max-width: 760px){
+                font-size: 26px;
+              }
+              @media screen and (max-width: 480px){
+                font-size: 21px;
+              }
+            }
+            @media screen and (max-width: 1000px){
+              width: 50%;
             }
             @media screen and (max-width: 760px){
-              font-size: 26px;
+              width: unset;
             }
-            @media screen and (max-width: 480px){
-              font-size: 21px;
-            }
-          }
-          @media screen and (max-width: 1000px){
-            width: 50%;
-          }
-          @media screen and (max-width: 760px){
-            width: unset;
           }
         }
         //!News Headline Название
@@ -2137,17 +2176,20 @@ body{
         //!Blog Headline Иконка
         //Blog Headline Название
         .i_blog-title-name{
-          span{
-            font-size: 32px;
-            font-weight: 400;
-            @media screen and (max-width: 1330px){
-              font-size: 28px;
-            }
-            @media screen and (max-width: 760px){
-              font-size: 26px;
-            }
-            @media screen and (max-width: 480px){
-              font-size: 21px;
+          a{
+            text-decoration: none;
+            span{
+              font-size: 32px;
+              font-weight: 400;
+              @media screen and (max-width: 1330px){
+                font-size: 28px;
+              }
+              @media screen and (max-width: 760px){
+                font-size: 26px;
+              }
+              @media screen and (max-width: 480px){
+                font-size: 21px;
+              }
             }
           }
         }
@@ -2261,8 +2303,8 @@ body{
               //!Blog Date
               //Blog Sticker
               .i_sticker{
-                width: 126px;
-                min-width: 126px;
+                width: 50%;
+                min-width: 186px;
                 background-color: var(--color-bg-sticker);
                 height: 20px;
                 display: flex;
@@ -2307,6 +2349,9 @@ body{
           //!Blog Headline
           //Blog Preview
           .i_blog-preview{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 10px;
             span{
               font-family: "Open Sans", sans-serif;
               font-size: 14px;
@@ -3198,15 +3243,23 @@ body{
             .i_banner-item{
               gap: 10px;
               &:hover{
-                .i_banner-circles {
+                .i_banner-circles_1,
+                .i_banner-circles_2,
+                .i_banner-circles_3,
+                .i_banner-circles_4{
                   width: 40px;
                   height: 40px;
                   background-color: var(--color-circlesSecond);
+                  background-size: 40px;
                 }
               }
-              .i_banner-circles{
+              .i_banner-circles_1,
+              .i_banner-circles_2,
+              .i_banner-circles_3,
+              .i_banner-circles_4{
                 width: 40px;
                 height: 40px;
+                background-size: 40px;
                 .banner-icon_1{
                   width: 22px;
                   height: 22px;
@@ -3456,9 +3509,11 @@ body{
         }
         //Header Blog
         .i_header-blog{
-          width: 140px;
           height: 40px;
           font-size: 12px;
+          button{
+            padding: 11px 50px;
+          }
         }
         //!Header Blog
         //Header More

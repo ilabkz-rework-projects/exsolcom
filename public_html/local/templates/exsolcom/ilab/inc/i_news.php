@@ -7,7 +7,7 @@
             </svg>
         </div>
 		<div class="i_news-title-name">
-			<span>НАШИ НОВОСТИ</span>
+			<a href="/news"><span>НАШИ НОВОСТИ</span></a>
 		</div>
 	</div>
 

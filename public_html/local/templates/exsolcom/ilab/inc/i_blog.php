@@ -7,13 +7,13 @@
             </svg>
         </div>
 		<div class="i_blog-title-name">
-			<span>НАШ БЛОГ</span>
+            <a href="/blog"><span>НАШ БЛОГ</span></a>
 		</div>
 	</div>
 
 	<?$APPLICATION->IncludeComponent(
 	"bitrix:news.list", 
-	"main.blog",
+	"main.blog", 
 	array(
 		"ACTIVE_DATE_FORMAT" => "j F Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
@@ -57,7 +57,7 @@
 		"PARENT_SECTION_CODE" => "",
 		"PREVIEW_TRUNCATE_LEN" => "",
 		"PROPERTY_CODE" => array(
-			0 => "",
+			0 => "I_TOPIC_NAME",
 			1 => "",
 		),
 		"SET_BROWSER_TITLE" => "Y",
@@ -72,12 +72,14 @@
 		"SORT_ORDER1" => "DESC",
 		"SORT_ORDER2" => "ASC",
 		"STRICT_SECTION_CHECK" => "N",
-		"COMPONENT_TEMPLATE" => "i_blog"
+		"COMPONENT_TEMPLATE" => "main.blog"
 	),
 	false
 );?>
     <div class="i_blog-btn">
-        <button>Все статьи</button>
+        <a href="/blog">
+            <button>Все статьи</button>
+        </a>
     </div>
 </div>
 
