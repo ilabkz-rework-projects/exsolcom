@@ -1397,20 +1397,22 @@ body{
           }
           .i_our-services-name{
             height: 18%;
-            span{
-              color: var(--color-textInfoblock);
-              font-size: 20px;
-              font-weight: bold;
-              @media screen and (max-width: 1520px){
-                font-size: 18px;
+            a{
+              text-decoration: none;
+              span{
+                color: var(--color-textInfoblock);
+                font-size: 20px;
+                font-weight: bold;
+                @media screen and (max-width: 1520px){
+                  font-size: 18px;
+                }
+                @media screen and (max-width: 680px){
+                  font-size: 16px;
+                }
+                @media screen and (max-width: 360px){
+                  font-size: 15px;
+                }
               }
-              @media screen and (max-width: 680px){
-                font-size: 16px;
-              }
-              @media screen and (max-width: 360px){
-                font-size: 15px;
-              }
-
             }
           }
           .i_our-services-desc{
@@ -1461,8 +1463,12 @@ body{
             cursor: pointer;
             background-color: var(--color-blockHv);
             transition: 0.3s ease;
-            span{
-              color: var(--color-red);
+            .i_our-services-name{
+              a{
+                span{
+                  color: var(--color-red);
+                }
+              }
             }
           }
         }
@@ -3510,8 +3516,8 @@ body{
         //Header Blog
         .i_header-blog{
           height: 40px;
-          font-size: 12px;
           button{
+            font-size: 12px;
             padding: 11px 50px;
           }
         }

@@ -1283,23 +1283,26 @@ body {
 .i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block .i_our-services-name {
   height: 18%;
 }
-.i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block .i_our-services-name span {
+.i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block .i_our-services-name a {
+  text-decoration: none;
+}
+.i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block .i_our-services-name a span {
   color: var(--color-textInfoblock);
   font-size: 20px;
   font-weight: bold;
 }
 @media screen and (max-width: 1520px) {
-  .i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block .i_our-services-name span {
+  .i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block .i_our-services-name a span {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 680px) {
-  .i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block .i_our-services-name span {
+  .i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block .i_our-services-name a span {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 360px) {
-  .i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block .i_our-services-name span {
+  .i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block .i_our-services-name a span {
     font-size: 15px;
   }
 }
@@ -1360,7 +1363,7 @@ body {
   background-color: var(--color-blockHv);
   transition: 0.3s ease;
 }
-.i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block:hover span {
+.i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block:hover .i_our-services-name a span {
   color: var(--color-red);
 }
 .i_main .i_our-services .i_container .i_our-services-btn-request {
@@ -3373,9 +3376,9 @@ body {
   }
   .i_header .i_container .i_header-right .i_header-blog {
     height: 40px;
-    font-size: 12px;
   }
   .i_header .i_container .i_header-right .i_header-blog button {
+    font-size: 12px;
     padding: 11px 50px;
   }
   .i_header .i_container .i_header-right .i_header-more .i_header-circles {
