@@ -181,9 +181,15 @@ span {
     align-items: center;
     margin-bottom: 20px;
     gap: 60px;
+    @media screen and (max-width: 480px){
+      flex-direction: column;
+    }
 
     .i_modal-img{
-      width: 35%;
+      width: 45%;
+      @media screen and (max-width: 480px){
+        width: 99%;
+      }
       img{
         width: 100%;
       }

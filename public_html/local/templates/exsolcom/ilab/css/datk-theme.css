@@ -1,3 +1,29 @@
+html[data-theme=dark] .i_modal .i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item .i_footer-left-icons-item-circles {
+  background-image: url(../img/svg/whatsapp-icon_b.svg);
+  background-repeat: no-repeat;
+  background-size: 55px;
+  background-position-x: 65%;
+  background-position-y: 50%;
+}
+html[data-theme=dark] .i_modal .i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item .i_footer-left-icons-item-circles:hover {
+  background-color: var(--color-circlesHover);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  background-image: url(../img/svg/whatsapp-icon_r.svg);
+  background-repeat: no-repeat;
+  background-size: 55px;
+  background-position-x: 65%;
+  background-position-y: 50%;
+}
+@media screen and (max-width: 1330px) {
+  html[data-theme=dark] .i_modal .i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item .i_footer-left-icons-item-circles:hover {
+    background-size: 48px;
+  }
+}
+@media screen and (max-width: 1330px) {
+  html[data-theme=dark] .i_modal .i_modal-content .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item .i_footer-left-icons-item-circles {
+    background-size: 48px;
+  }
+}
 html[data-theme=dark] .i_header .i_header-more #myCircles.wide .close_hide_menu {
   background-image: url("../img/svg/close-iconNight.svg") !important;
 }

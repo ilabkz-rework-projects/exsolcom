@@ -167,8 +167,18 @@ span:hover {
   margin-bottom: 20px;
   gap: 60px;
 }
+@media screen and (max-width: 480px) {
+  .i_modal .i_modal-header {
+    flex-direction: column;
+  }
+}
 .i_modal .i_modal-header .i_modal-img {
-  width: 35%;
+  width: 45%;
+}
+@media screen and (max-width: 480px) {
+  .i_modal .i_modal-header .i_modal-img {
+    width: 99%;
+  }
 }
 .i_modal .i_modal-header .i_modal-img img {
   width: 100%;
