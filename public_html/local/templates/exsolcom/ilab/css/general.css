@@ -9,6 +9,11 @@ button {
   cursor: pointer;
   transition: all 0.4s ease;
 }
+@media screen and (max-width: 1330px) {
+  button {
+    font-size: 14px;
+  }
+}
 button:hover {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
   color: var(--color-red);
@@ -118,6 +123,16 @@ span:hover {
   width: unset;
   overflow-y: auto;
   height: calc(100% - 45px);
+}
+@media screen and (max-width: 1630px) {
+  .i_modal .i_container {
+    padding: 0 5%;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .i_modal .i_container {
+    padding: 0 3%;
+  }
 }
 .i_modal.active {
   opacity: 1;

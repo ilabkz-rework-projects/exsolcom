@@ -251,3 +251,34 @@
 		</div>
 	</div>
 </div>
+
+<div class="i_submit">
+	<div class="i_container">
+		<div class="i_submit-close">
+			<img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/svg/closeModal-dark.svg'?>" alt="x">
+		</div>
+		<div class="i_submit-header">
+			<span>ОСТАВИТЬ ЗАЯВКУ</span>
+		</div>
+		<div class="i_submit-content">
+			<div class="i_submit-name">
+				<input type="text" name="name" placeholder="Имя">
+			</div>
+			<div class="i_submit-info">
+				<input type="text" name="phone" placeholder="Телефон">
+				<input type="text" name="email" placeholder="E-mail">
+			</div>
+			<div class="i_submit-company">
+				<input type="text" name="company" placeholder="Название компании">
+			</div>
+			<div class="i_submit-textarea">
+				<input type="text" name="message" placeholder="Сообщение"></input>
+			</div>
+		</div>
+		<div class="i_submit-errors">
+		</div>
+		<div class="i_submit-btn">
+			<span>Отправить</span>
+		</div>
+	</div>
+</div>
