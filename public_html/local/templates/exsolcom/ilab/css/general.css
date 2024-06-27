@@ -9,6 +9,11 @@ button {
   cursor: pointer;
   transition: all 0.4s ease;
 }
+@media screen and (max-width: 1330px) {
+  button {
+    font-size: 14px;
+  }
+}
 button:hover {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
   color: var(--color-red);
@@ -119,6 +124,16 @@ span:hover {
   overflow-y: auto;
   height: calc(100% - 45px);
 }
+@media screen and (max-width: 1630px) {
+  .i_modal .i_container {
+    padding: 0 5%;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .i_modal .i_container {
+    padding: 0 3%;
+  }
+}
 .i_modal.active {
   opacity: 1;
   visibility: visible;
@@ -152,8 +167,18 @@ span:hover {
   margin-bottom: 20px;
   gap: 60px;
 }
+@media screen and (max-width: 480px) {
+  .i_modal .i_modal-header {
+    flex-direction: column;
+  }
+}
 .i_modal .i_modal-header .i_modal-img {
-  width: 35%;
+  width: 45%;
+}
+@media screen and (max-width: 480px) {
+  .i_modal .i_modal-header .i_modal-img {
+    width: 99%;
+  }
 }
 .i_modal .i_modal-header .i_modal-img img {
   width: 100%;

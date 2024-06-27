@@ -139,7 +139,7 @@ body {
 
 .i_header {
   position: relative;
-  z-index: 10;
+  z-index: 11;
   display: flex;
 }
 .i_header .i_container {
@@ -799,6 +799,7 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 90%;
+  margin: 0;
 }
 .i_header-menu li {
   list-style-type: none;

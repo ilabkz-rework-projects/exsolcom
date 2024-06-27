@@ -7,6 +7,9 @@ button {
   border: 0;
   cursor: pointer;
   transition: all .4s ease;
+  @media screen and (max-width: 1330px){
+    font-size: 14px;
+  }
 
   &:hover {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
@@ -134,6 +137,12 @@ span {
     width: unset;
     overflow-y: auto;
     height: calc(100% - 45px);
+    @media screen and (max-width: 1630px){
+      padding: 0 5%;
+    }
+    @media screen and (max-width: 1330px){
+      padding: 0 3%;
+    }
   }
 
   &.active {
@@ -172,9 +181,15 @@ span {
     align-items: center;
     margin-bottom: 20px;
     gap: 60px;
+    @media screen and (max-width: 480px){
+      flex-direction: column;
+    }
 
     .i_modal-img{
-      width: 35%;
+      width: 45%;
+      @media screen and (max-width: 480px){
+        width: 99%;
+      }
       img{
         width: 100%;
       }
