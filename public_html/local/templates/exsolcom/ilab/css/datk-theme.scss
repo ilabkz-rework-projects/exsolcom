@@ -53,6 +53,32 @@ html[data-theme='dark']{
 
   }
   .i_main{
+    //PROGRAMMS
+    .i_programms {
+      //PROGRAMMS TITLE
+      .i_programms-title {
+        .i_programms-title-icon {
+          width: 50px;
+          height: 50px;
+          background-color: var(--color-circles);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-image: url("../img/svg/programm-products_b.svg");
+          background-repeat: no-repeat;
+          background-size: 50px;
+          background-position-x: 65%;
+          background-position-y: 50%;
+          @media screen and (max-width: 760px) {
+            width: 40px;
+            height: 40px;
+            background-size: 40px;
+          }
+        }
+      }
+    }
+    //!PROGRAMMS
     //SERVICES
     .i_services {
       .i_services-title {

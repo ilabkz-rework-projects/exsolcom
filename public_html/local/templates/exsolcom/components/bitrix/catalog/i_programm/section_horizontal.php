@@ -235,7 +235,9 @@ else
 						array("HIDE_ICONS" => "Y")
 					);
 				}
-
+                ?>
+                <div class="i_programm-catalog">
+                <?
 				$intSectionID = $APPLICATION->IncludeComponent(
 					"bitrix:catalog.section",
 					"i_programm",
@@ -366,6 +368,7 @@ else
 					$component
 				);
 				?>
+                </div>
 			</div>
 			<?
 			$GLOBALS['CATALOG_CURRENT_SECTION_ID'] = $intSectionID;
