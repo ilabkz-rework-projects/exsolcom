@@ -30,6 +30,26 @@ html[data-theme=dark] .i_header .i_header-more #myCircles.wide .close_hide_menu 
 html[data-theme=dark] .i_header .i_header-more #title-search .i_search-close {
   background-image: url("../img/svg/close-iconNight.svg") !important;
 }
+html[data-theme=dark] .i_main .i_services .i_services-title .i_services-title-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/svg/our-services-b.svg");
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position-x: 65%;
+  background-position-y: 50%;
+}
+@media screen and (max-width: 760px) {
+  html[data-theme=dark] .i_main .i_services .i_services-title .i_services-title-icon {
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+  }
+}
 html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_1 {
   background-image: url("../img/svg/group-banner-icons/banner-icon_1_w.svg");
 }

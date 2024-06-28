@@ -874,7 +874,7 @@
 .i_modal-content .i_snippet.additional-services .i_snippet-blocks .i_snippet-block.block-height {
   max-width: 590px;
   width: 100%;
-  min-height: 190px;
+  min-height: 210px;
   height: 100%;
   background-color: var(--bg-block-personal);
   padding: 20px 30px;
@@ -894,6 +894,11 @@
 @media screen and (max-width: 1330px) {
   .i_modal-content .i_snippet.additional-services .i_snippet-blocks .i_snippet-block.block-height .i_snippet-block-top span {
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_modal-content .i_snippet.additional-services .i_snippet-blocks .i_snippet-block.block-height .i_snippet-block-top span {
+    font-size: 14px;
   }
 }
 .i_modal-content .i_snippet.additional-services .i_snippet-blocks .i_snippet-block.block-height .i_snippet-block-bottom {
@@ -939,6 +944,11 @@
 @media screen and (max-width: 1330px) {
   .i_modal-content .i_snippet.additional-services .i_snippet-blocks .i_snippet-block .i_snippet-block-top span {
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_modal-content .i_snippet.additional-services .i_snippet-blocks .i_snippet-block .i_snippet-block-top span {
+    font-size: 14px;
   }
 }
 .i_modal-content .i_snippet.additional-services .i_snippet-blocks .i_snippet-block .i_snippet-block-bottom {

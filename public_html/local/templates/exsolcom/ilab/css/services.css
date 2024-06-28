@@ -15,23 +15,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.i_services .i_services-title .i_services-title-icon svg {
-  color: var(--color-circleIcon);
+  background-image: url("../img/svg/our-services-w.svg");
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position-x: 65%;
+  background-position-y: 50%;
 }
 @media screen and (max-width: 760px) {
   .i_services .i_services-title .i_services-title-icon {
     width: 40px;
     height: 40px;
-  }
-}
-.i_services .i_services-title .i_services-title-icon svg {
-  color: var(--color-circleIcon);
-}
-@media screen and (max-width: 760px) {
-  .i_services .i_services-title .i_services-title-icon svg {
-    width: 25px;
-    height: 25px;
+    background-size: 40px;
   }
 }
 .i_services .i_services-title .i_services-title-name {
