@@ -138,7 +138,7 @@ body{
     .i_header-left {
       width: 100%;
       display: flex;
-      gap: 10px;
+      gap: 20px;
 
       //HEADER LOGO
       .i_header-logo{
@@ -230,7 +230,7 @@ body{
           display: block;
         }
         button {
-          padding: 16px 58px;
+          padding: 16px 45px;
         }
       }
       //!HEADER BLOG
@@ -881,7 +881,7 @@ body{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
+  width: 86%;
   margin: 0;
   li {
     list-style-type: none;
@@ -3042,7 +3042,7 @@ body{
       //Header Left
       .i_header-left{
         @media screen and (max-width: 1150px){
-          gap: 10px;
+          gap: 20px;
         }
         //Header Burger
         .i_header-burger{
@@ -3062,7 +3062,9 @@ body{
           @media screen and (max-width: 1300px){
             display: flex;
             width: 100%;
+            gap: 20px;
             flex-wrap: wrap;
+            justify-content: flex-start;
           }
           @media screen and (max-width: 1150px){
             justify-content: flex-start;
@@ -3535,7 +3537,7 @@ body{
           height: 40px;
           button{
             font-size: 12px;
-            padding: 11px 50px;
+            padding: 11px 35px;
           }
         }
         //!Header Blog

@@ -152,7 +152,7 @@ body {
 .i_header .i_container .i_header-left {
   width: 100%;
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 .i_header .i_container .i_header-left .i_header-logo .i_header-logo-icon {
   color: var(--color-black);
@@ -237,7 +237,7 @@ body {
   }
 }
 .i_header .i_container .i_header-right .i_header-blog button {
-  padding: 16px 58px;
+  padding: 16px 45px;
 }
 .i_header .i_container .i_header-right .i_header-blog-icon {
   display: none;
@@ -798,7 +798,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
+  width: 86%;
   margin: 0;
 }
 .i_header-menu li {
@@ -2978,7 +2978,7 @@ body {
 }
 @media screen and (max-width: 1330px) and (max-width: 1150px) {
   .i_header .i_container .i_header-left {
-    gap: 10px;
+    gap: 20px;
   }
 }
 @media screen and (max-width: 1330px) {
@@ -2998,7 +2998,9 @@ body {
   .i_header .i_container .i_header-left .i_header-menu {
     display: flex;
     width: 100%;
+    gap: 20px;
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
 }
 @media screen and (max-width: 1330px) and (max-width: 1150px) {
@@ -3400,7 +3402,7 @@ body {
   }
   .i_header .i_container .i_header-right .i_header-blog button {
     font-size: 12px;
-    padding: 11px 50px;
+    padding: 11px 35px;
   }
   .i_header .i_container .i_header-right .i_header-more .i_header-circles {
     width: 40px;

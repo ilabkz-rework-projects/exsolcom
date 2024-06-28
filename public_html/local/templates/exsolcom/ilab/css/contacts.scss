@@ -1,0 +1,191 @@
+.i_contacts{
+  //CONTACTS TITLE
+  .i_contacts-title{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 50px 0 50px 0;
+    //CONTACTS TITLE ICON
+    .i_contacts-title-icon{
+      width: 50px;
+      height: 50px;
+      background-color: var(--color-circles);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url("../img/svg/our-blog-icon_w.svg");
+      background-repeat: no-repeat;
+      background-position-x: 65%;
+      background-position-y: 50%;
+      @media screen and (max-width: 760px){
+        width: 40px;
+        height: 40px;
+        background-size: 26px;
+      }
+    }
+    //!CONTACTS TITLE ICON
+    //CONTACTS TITLE NAME
+    .i_contacts-title-name{
+      display: flex;
+      justify-content: flex-start;
+      span{
+        font-size: 32px;
+        font-weight: 400;
+        color: var(--color-black);
+        @media screen and (max-width: 1330px){
+          font-size: 28px;
+        }
+        @media screen and (max-width: 760px){
+          font-size: 26px;
+        }
+        @media screen and (max-width: 480px){
+          font-size: 21px;
+        }
+      }
+      @media screen and (max-width: 1000px){
+        width: 50%;
+      }
+      @media screen and (max-width: 760px){
+        width: unset;
+      }
+
+    }
+    //!CONTACTS TITLE NAME
+  }
+  //!CONTACTS TITLE
+  //CONTACTS CONTENT
+  .i_contacts-content{
+    display: flex;
+    overflow: hidden;
+    border-radius: 30px;
+    //CONTACTS CONTENT MAP
+    .i_contacts-map{
+
+    }
+    //!CONTACTS CONTENT MAP
+    //CONTACTS CONTENT INFO
+    .i_contacts-info{
+      display: flex;
+      flex-direction: column;
+      background-color: var(--bg-buttonHover);
+      //CONTACTS INFO TITLE
+      .i_contacts-info-title{
+        //CONTACTS INFO TITLE ICON
+        .i_contacts-info-icon{
+          padding: 40px 30px;
+          border-bottom: 5px dotted #666666;
+          //CONTACTS INFO ITEM ICON PIC
+          .i_contacts-info-pic{
+            background-image: url("../img/svg/logo-exsolcome-icon.svg");
+            background-repeat: no-repeat;
+            background-position-x: 65%;
+            background-position-y: 50%;
+            background-size: 270px;
+            max-width: 270px;
+            width: 100%;
+            height: 50px;
+          }
+          //!CONTACTS INFO ITEM ICON PIC
+        }
+        //!CONTACTS INFO TITLE ICON
+        //CONTACTS INFO TITLE DESC
+        .i_contacts-info-desc{
+          display: flex;
+          flex-direction: column;
+          padding: 40px 30px;
+          gap: 20px;
+          //CONTACTS INFO TITLE DESC ITEM ADDRESS
+          .i_contacts-info-item.address{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            padding: 0 0 40px 0;
+            //CONTACTS INFO ITEM ICON
+            .i_contacts-info-item-icon{
+              min-width: 50px;
+              height: 50px;
+              background-color: var(--color-circles);
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-image: url("../img/svg/our-blog-icon_w.svg");
+              background-repeat: no-repeat;
+              background-position-x: 65%;
+              background-position-y: 50%;
+            }
+            //!CONTACTS INFO ITEM ICON
+            //CONTACTS INFO ITEM NAME
+            .i_contacts-info-item-name{
+              .family-text{
+                font-family: "Open Sans", sans-serif;
+                font-size: 14px;
+                color: var(--color-textInfoblock);
+              }
+              a{
+                text-decoration: none;
+              }
+            }
+            //!CONTACTS INFO ITEM NAME
+          }
+          //!CONTACTS INFO TITLE DESC ITEM ADDRESS
+          //CONTACTS INFO TITLE DESC ITEM
+          .i_contacts-info-item{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            //CONTACTS INFO ITEM ICON
+            .i_contacts-info-item-icon{
+              min-width: 50px;
+              height: 50px;
+              background-color: var(--color-circles);
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-image: url("../img/svg/our-blog-icon_w.svg");
+              background-repeat: no-repeat;
+              background-position-x: 65%;
+              background-position-y: 50%;
+            }
+            //!CONTACTS INFO ITEM ICON
+            //CONTACTS INFO ITEM NAME
+            .i_contacts-info-item-name{
+              .family-text{
+                font-family: "Open Sans", sans-serif;
+                font-size: 14px;
+                color: var(--color-textInfoblock);
+              }
+              a{
+                text-decoration: none;
+              }
+            }
+            //!CONTACTS INFO ITEM NAME
+          }
+          //!CONTACTS INFO TITLE DESC ITEM
+        }
+        //!CONTACTS INFO TITLE DESC
+        //CONTACTS INFO TITLE BTN
+        .i_contacts-btn{
+          display: flex;
+          padding: 0 30px;
+          button{
+            padding: 16px 44px;
+            @media screen and (max-width: 760px){
+              font-size: 14px;
+            }
+            @media screen and (max-width: 360px){
+              padding: 12px 38px;
+            }
+          }
+        }
+        //!CONTACTS INFO TITLE BTN
+      }
+      //!CONTACTS INFO TITLE
+    }
+    //!CONTACTS CONTENT INFO
+  }
+  //!CONTACTS CONTENT
+}
