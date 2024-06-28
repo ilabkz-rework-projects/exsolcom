@@ -180,7 +180,7 @@ else
 				}
 				?>
 			</div>
-			<div class="col-xs-12">
+			<div class="col-xs-12 programm-container">
 				<?
 				$sectionListParams = array(
 					"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
@@ -208,7 +208,7 @@ else
 				}
 				$APPLICATION->IncludeComponent(
 					"bitrix:catalog.section.list",
-					"i_programm",
+					"",
 					$sectionListParams,
 					$component,
 					array("HIDE_ICONS" => "Y")

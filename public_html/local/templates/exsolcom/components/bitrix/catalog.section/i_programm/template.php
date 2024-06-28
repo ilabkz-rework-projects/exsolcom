@@ -305,7 +305,7 @@ if (!isset($arParams['HIDE_SECTION_DESCRIPTION']) || $arParams['HIDE_SECTION_DES
 												<?
 												$APPLICATION->IncludeComponent(
 													'bitrix:catalog.item',
-													'',
+													'i_programm',
 													array(
 														'RESULT' => array(
 															'ITEM' => $item,
@@ -742,6 +742,7 @@ if (!isset($arParams['HIDE_SECTION_DESCRIPTION']) || $arParams['HIDE_SECTION_DES
 	}
 	?>
 </div>
+<?$APPLICATION->IncludeFile('/local/templates/exsolcom/ilab/comp/i_software.php',Array(),Array('MODE'=>'html', 'NAME'=>'Главная', 'SHOW_BORDER'=>false));// Search?><br>
 <?
 if ($showLazyLoad)
 {

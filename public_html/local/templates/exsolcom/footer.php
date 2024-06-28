@@ -243,8 +243,13 @@
 			<img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/svg/closeModal-dark.svg'?>" alt="x">
 		</div>
 		<div class="i_modal-header">
-			<div class="i_modal-img"></div>
-			<div class="i_modal-header-content"></div>
+			<div class="i_modal-header-container">
+				<div class="i_modal-img"></div>
+				<div class="i_modal-header-content"></div>
+			</div>
+			<div class="i_modal-header-bottom">
+
+			</div>
 		</div>
 		<div class="i_modal-content">
 

@@ -51,7 +51,6 @@ if ($item['DATE_ACTIVE_FROM']) {
 }
 
 
-
 $arFilter = array(
 	'IBLOCK_ID' => 2,
 );
@@ -64,31 +63,19 @@ while ($arRes = $dbRes->GetNext()) {
 
 
 ?>
-
-	<div class="product-item" id="<?$item['ID']?>">
-		<div class="product-item-left">
-			<div class="product-item-img">
-				<img src="<?= $item['PREVIEW_PICTURE']['SRC'] ?>" alt="img">
-			</div>
+	<div class="product-item" id="<? $item['ID'] ?>">
+		<div class="product-item-img">
+			<img src="<?= $item['PREVIEW_PICTURE']['SRC'] ?>" alt="img">
 		</div>
-		<div class="product-item-right">
-			<div class="product-item-top">
-				<? if ($item['DATE_ACTIVE_FROM']) { ?>
-					<div class="product-item-date">
-						<span><?= $formattedDate ?></span>
-					</div>
-				<? } ?>
-				<div class="product-item-topic" topic-value="<?= $item['PROPERTIES']['I_TOPIC_NAME']['VALUE'] ?>">
-					<span><?= $arResult['ELEMENT'][$item['IBLOCK_SECTION_ID']]['NAME'] ?></span>
-				</div>
+		<div class="product-item-title">
+			<span><?= $item['NAME'] ?></span>
+		</div>
+		<div class="product-item-detail">
+			<div class="product-item-detail-title">
+				<span><?= $item['PREVIEW_TEXT'] ?></span>
 			</div>
-			<div class="product-item-content">
-				<div class="product-item-name">
-					<span><?= $item['NAME'] ?></span>
-				</div>
-				<div class="product-item-title">
-					<span><?= $item['PREVIEW_TEXT'] ?></span>
-				</div>
+			<div class="product-item-btn">
+				<button>Запросить КП</button>
 			</div>
 		</div>
 	</div>

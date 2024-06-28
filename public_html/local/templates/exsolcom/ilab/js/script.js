@@ -267,25 +267,54 @@ document.addEventListener('DOMContentLoaded', (event) => {
 					modal.classList.add('active')
 
 					const content = data.CONTENT;
+
 					// Регулярное выражение для поиска <div class="i_modal-preview">...</div>
 					const modalPreviewRegex = /<div class="i_modal-preview">[\s\S]*?<\/div>/;
+					const modalPreviewContentRegex = /<span class="i_modal-preview-content">[\s\S]*?<\/span>/;
+					const modalPreviewEndingRegex = /<span class="i_modal-preview-ending">[\s\S]*?<\/span>/;
 					// Найти совпадение
-					const match = content.match(modalPreviewRegex);
+					const matchPreview = content.match(modalPreviewRegex);
+					const matchPreviewContent = content.match(modalPreviewContentRegex);
+					const matchPreviewEnding = content.match(modalPreviewEndingRegex);
+
 
 					let modalPreviewContent = '';
+					let modalPreviewContentContent = '';
+					let modalPreviewContentEnding = '';
 					let otherContent = '';
 
-					if (match) {
+					if(matchPreviewContent){
 						// Совпадение найдено
-						modalPreviewContent = match[0];
+						modalPreviewContentContent = matchPreviewContent[0];
+						// Остальной контент
+						otherContent = content.replace(modalPreviewContentContent, '').trim();
+					}
 
+					if(matchPreviewEnding){
+						// Совпадение найдено
+						modalPreviewContentEnding = matchPreviewEnding[0];
+						// Остальной контент
+						otherContent = content.replace(modalPreviewContentEnding, '').trim();
+					}
+
+					if (matchPreview) {
+						// Совпадение найдено
+						modalPreviewContent = matchPreview[0];
 						// Остальной контент
 						otherContent = content.replace(modalPreviewContent, '').trim();
-					} else {
+					} else{
 						// Совпадение не найдено, все содержимое остается в otherContent
 						otherContent = content;
 					}
+
+
+
+					console.log(otherContent)
+
+
 					modal.querySelector('.i_modal-header-content').innerHTML += modalPreviewContent;
+					modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentContent;
+					modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentEnding;
 
 					modal.querySelector('.i_modal-content').innerHTML = otherContent
 					modal.querySelector('.i_modal-img').innerHTML = `<img src="${data.IMAGE}" alt="${data.NAME}">`
@@ -314,23 +343,46 @@ document.addEventListener('DOMContentLoaded', (event) => {
 					const content = data.CONTENT;
 					// Регулярное выражение для поиска <div class="i_modal-preview">...</div>
 					const modalPreviewRegex = /<div class="i_modal-preview">[\s\S]*?<\/div>/;
+					const modalPreviewContentRegex = /<div class="i_modal-preview-content">[\s\S]*?<\/div>/;
+					const modalPreviewEndingRegex = /<div class="i_modal-preview-ending">[\s\S]*?<\/div>/;
 					// Найти совпадение
-					const match = content.match(modalPreviewRegex);
+					const matchPreview = content.match(modalPreviewRegex);
+					const matchPreviewContent = content.match(modalPreviewContentRegex);
+					const matchPreviewEnding = content.match(modalPreviewEndingRegex);
 
 					let modalPreviewContent = '';
+					let modalPreviewContentContent = '';
+					let modalPreviewContentEnding = '';
 					let otherContent = '';
 
-					if (match) {
+					if (matchPreview) {
 						// Совпадение найдено
-						modalPreviewContent = match[0];
+						modalPreviewContent = matchPreview[0];
 
 						// Остальной контент
 						otherContent = content.replace(modalPreviewContent, '').trim();
-					} else {
+					} else if(matchPreviewContent){
+						// Совпадение найдено
+						modalPreviewContentContent = matchPreviewContent[0];
+
+						// Остальной контент
+						otherContent = content.replace(modalPreviewContentContent, '').trim();
+					}else if(matchPreviewEnding){
+						// Совпадение найдено
+						modalPreviewContentEnding = matchPreviewEnding[0];
+
+						// Остальной контент
+						otherContent = content.replace(modalPreviewContentEnding, '').trim();
+					}else{
 						// Совпадение не найдено, все содержимое остается в otherContent
 						otherContent = content;
 					}
+
+					console.log(modalPreviewContent)
+
 					modal.querySelector('.i_modal-header-content').innerHTML += modalPreviewContent;
+					modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentContent;
+					modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentEnding;
 
 					modal.querySelector('.i_modal-content').innerHTML = otherContent
 					modal.querySelector('.i_modal-img').innerHTML = `<img src="${data.IMAGE}" alt="${data.NAME}">`
