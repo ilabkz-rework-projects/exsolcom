@@ -132,6 +132,7 @@ span:hover {
 @media screen and (max-width: 1330px) {
   .i_modal .i_container {
     padding: 0 3%;
+    margin: 25px 2%;
   }
 }
 .i_modal.active {
@@ -186,6 +187,11 @@ span:hover {
 .i_modal .i_modal-header .i_modal-header-content {
   width: 65%;
 }
+@media screen and (max-width: 480px) {
+  .i_modal .i_modal-header .i_modal-header-content {
+    width: 99%;
+  }
+}
 .i_modal .i_modal-header .i_modal-preview {
   display: flex;
   flex-direction: column;
@@ -202,11 +208,25 @@ span:hover {
 .i_modal .i_modal-header .i_modal-preview .i_modal-preview-title span {
   cursor: text;
 }
+@media screen and (max-width: 480px) {
+  .i_modal .i_modal-header .i_modal-preview .i_modal-preview-title {
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+  }
+}
 .i_modal .i_modal-header .i_modal-preview .i_modal-preview-subtitle {
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--color-textInfoblock);
   cursor: text;
+}
+@media screen and (max-width: 480px) {
+  .i_modal .i_modal-header .i_modal-preview .i_modal-preview-subtitle {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+  }
 }
 .i_modal .i_modal-header .i_modal-preview .i_modal-preview-content {
   font-size: 1rem;
@@ -215,11 +235,35 @@ span:hover {
   font-family: "Open Sans", sans-serif;
   cursor: text;
 }
+@media screen and (max-width: 1000px) {
+  .i_modal .i_modal-header .i_modal-preview .i_modal-preview-content {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_modal .i_modal-header .i_modal-preview .i_modal-preview-content {
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
 .i_modal .i_modal-header .i_modal-preview .i_modal-preview-ending {
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--color-textInfoblock);
   cursor: text;
+}
+@media screen and (max-width: 1000px) {
+  .i_modal .i_modal-header .i_modal-preview .i_modal-preview-ending {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_modal .i_modal-header .i_modal-preview .i_modal-preview-ending {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+  }
 }
 .i_modal .i_modal-header .i_modal-preview .i_modal-preview-ending span {
   cursor: text;

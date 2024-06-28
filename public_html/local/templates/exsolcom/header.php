@@ -169,7 +169,7 @@ $main = CSite::InDir(SITE_DIR.'index.php');
                     </span>
 					<span class="close_hide_menu"></span>
 				</button>
-				<button class="i_header-circles">
+				<button class="i_header-circles" id="submit-btn">
 					<svg class="email-icon" width="18" height="14" viewBox="0 0 184 143" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M170 143H14C6.3 143 0 136.7 0 129V14C0 6.3 6.3 0 14 0H170C177.7 0 184 6.3 184 14V129C184 136.7 177.7 143 170 143ZM97.8 106.1C94.6 109.2 89.5 109.2 86.3 106.1L68 87.8L28.8 127H155.2L116 87.8L97.8 106.1ZM16 117.2L56.7 76.5L16 35.8V117.2ZM18.8 16L92 89.2L165.2 16H18.8ZM127.3 76.5L168 117.2V35.8L127.3 76.5Z" />
 					</svg>
