@@ -1,16 +1,16 @@
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', function () {
 
-	BX.addCustomEvent('OnEditorInitedBefore', function(toolbar) {
+	BX.addCustomEvent('OnEditorInitedBefore', function (toolbar) {
 		var _this = this;
 
 		console.log(this)
 
 		// отучаю резать тэги
-		BX.addCustomEvent(this, 'OnGetParseRules', BX.proxy(function() {
-			_this.rules.tags.span   = {};
-			_this.rules.tags.svg    = {};
-			_this.rules.tags.use    = {};
-			_this.rules.tags.path    = {};
+		BX.addCustomEvent(this, 'OnGetParseRules', BX.proxy(function () {
+			_this.rules.tags.span = {};
+			_this.rules.tags.svg = {};
+			_this.rules.tags.use = {};
+			_this.rules.tags.path = {};
 		}, this));
 	})
 
@@ -45,20 +45,20 @@ window.addEventListener('DOMContentLoaded', function() {
 			nextEl: ".swiper-products-button-next",
 			prevEl: ".swiper-products-button-prev",
 		},
-		breakpoints : {
-			360:{
+		breakpoints: {
+			360: {
 				slidesPerView: 1,
 				spaceBetween: 30,
 			},
-			480:{
+			480: {
 				slidesPerView: 2,
 				spaceBetween: 20,
 			},
-			780:{
+			780: {
 				slidesPerView: 3,
 				spaceBetween: 20,
 			},
-			1150:{
+			1150: {
 				slidesPerView: 4,
 				spaceBetween: 40,
 			}
@@ -81,28 +81,28 @@ window.addEventListener('DOMContentLoaded', function() {
 			fill: "row",
 		},
 		spaceBetween: 30,
-		navigation:{
+		navigation: {
 			nextEl: ".swiper-projects-button-next",
 			prevEl: ".swiper-projects-button-prev",
 		},
-		breakpoints : {
-			360:{
+		breakpoints: {
+			360: {
 				slidesPerView: 2,
 				spaceBetween: 10,
 			},
-			480:{
+			480: {
 				slidesPerView: 2,
 				spaceBetween: 20,
 			},
-			760:{
+			760: {
 				slidesPerView: 3,
 				spaceBetween: 20,
 			},
-			1000:{
+			1000: {
 				slidesPerView: 4,
 				spaceBetween: 40,
 			},
-			1330:{
+			1330: {
 				slidesPerView: 5,
 				spaceBetween: 40,
 			}
@@ -120,7 +120,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 });
 
-document.addEventListener('DOMContentLoaded', (event) =>{
+document.addEventListener('DOMContentLoaded', (event) => {
 	// Отвечает за переключение с светлой темы на темную и наоборот
 	const currentTheme = localStorage.getItem('theme') || 'light';
 	document.documentElement.setAttribute('data-theme', currentTheme);
@@ -165,8 +165,8 @@ document.addEventListener('DOMContentLoaded', (event) =>{
 	const circle = document.getElementById('myCircles');
 	const closeButton = document.querySelector('.close_hide_menu');
 
-	circle.addEventListener('click', () =>{
-		if(!circle.classList.contains('wide')){
+	circle.addEventListener('click', () => {
+		if (!circle.classList.contains('wide')) {
 			circle.classList.add('wide');
 		}
 		language.classList.remove('expanded');
@@ -181,8 +181,8 @@ document.addEventListener('DOMContentLoaded', (event) =>{
 	const circle2 = document.getElementById('myCircles2');
 	const closeButton2 = document.querySelector('.close_hide_menu2');
 
-	circle2.addEventListener('click', () =>{
-		if(!circle2.classList.contains('wide')){
+	circle2.addEventListener('click', () => {
+		if (!circle2.classList.contains('wide')) {
 			circle2.classList.add('wide');
 		}
 	});
@@ -196,8 +196,8 @@ document.addEventListener('DOMContentLoaded', (event) =>{
 	const circle3 = document.getElementById('myCircles3');
 	const closeButton3 = document.querySelector('.close_hide_menu3');
 
-	circle3.addEventListener('click', () =>{
-		if(!circle3.classList.contains('wide')){
+	circle3.addEventListener('click', () => {
+		if (!circle3.classList.contains('wide')) {
 			circle3.classList.add('wide');
 		}
 	});
@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', (event) =>{
 	const closeSearch = document.querySelector('.i_search-close');
 
 	searchWrapper.addEventListener('click', () => {
-		if (!searchWrapper.classList.contains('widely')){
+		if (!searchWrapper.classList.contains('widely')) {
 			searchWrapper.classList.add('widely');
 		}
 
@@ -230,6 +230,7 @@ document.addEventListener('DOMContentLoaded', (event) =>{
 	const overlay = document.querySelector('.i_overlay')
 	const modal = document.querySelector('.i_modal')
 	const modalClose = document.querySelector('.i_modal .i_modal-close')
+
 	//SIDE MENU
 
 	const sideMenu = document.querySelector('.i_side-menu')
@@ -237,28 +238,30 @@ document.addEventListener('DOMContentLoaded', (event) =>{
 	const sideMenuClose = document.querySelector('.i_side-menu-close')
 
 	sideMenuButton.forEach(item => {
-		item.addEventListener('click', () =>{
+		item.addEventListener('click', () => {
 			sideMenu.classList.add('show')
 		})
 	})
 
-	sideMenuClose.addEventListener('click', () =>{
+	sideMenuClose.addEventListener('click', () => {
 		sideMenu.classList.remove('show')
 	})
 
 	// Модалка для услуг
 	servicesItems.forEach(item => {
-		item.addEventListener('click', ()=>{
+		item.addEventListener('click', () => {
 			fetch('/local/templates/exsolcom/ilab/ajax/getServicesModalContent.php', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json'
 				},
-				body: JSON.stringify({id : item.getAttribute('id')})
+				body: JSON.stringify({id: item.getAttribute('id')})
 			})
 				.then(response => response.json())
 				.then(data => {
 					modal.querySelector('.i_modal-header-content').innerHTML = '';
+					modal.querySelector('.i_modal-header-bottom').innerHTML = '';
+					modal.querySelector('.i_modal-header-bottom').innerHTML = '';
 					modal.querySelector('.i_modal-content').innerHTML = ''
 					modal.querySelector('.i_modal-img').innerHTML = ''
 
@@ -266,25 +269,50 @@ document.addEventListener('DOMContentLoaded', (event) =>{
 					modal.classList.add('active')
 
 					const content = data.CONTENT;
+
 					// Регулярное выражение для поиска <div class="i_modal-preview">...</div>
 					const modalPreviewRegex = /<div class="i_modal-preview">[\s\S]*?<\/div>/;
+					const modalPreviewContentRegex = /<span class="i_modal-preview-content">[\s\S]*?<\/span>/;
+					const modalPreviewEndingRegex = /<span class="i_modal-preview-ending">[\s\S]*?<\/span>/;
 					// Найти совпадение
-					const match = content.match(modalPreviewRegex);
+					const matchPreview = content.match(modalPreviewRegex);
+					const matchPreviewContent = content.match(modalPreviewContentRegex);
+					const matchPreviewEnding = content.match(modalPreviewEndingRegex);
+
 
 					let modalPreviewContent = '';
+					let modalPreviewContentContent = '';
+					let modalPreviewContentEnding = '';
 					let otherContent = '';
 
-					if (match) {
+					if(matchPreviewContent){
 						// Совпадение найдено
-						modalPreviewContent = match[0];
+						modalPreviewContentContent = matchPreviewContent[0];
+						// Остальной контент
+						otherContent = content.replace(modalPreviewContentContent, '').trim();
+					}
 
+					if(matchPreviewEnding){
+						// Совпадение найдено
+						modalPreviewContentEnding = matchPreviewEnding[0];
+						// Остальной контент
+						otherContent = content.replace(modalPreviewContentEnding, '').trim();
+					}
+
+					if (matchPreview) {
+						// Совпадение найдено
+						modalPreviewContent = matchPreview[0];
 						// Остальной контент
 						otherContent = content.replace(modalPreviewContent, '').trim();
-					} else {
+					} else{
 						// Совпадение не найдено, все содержимое остается в otherContent
 						otherContent = content;
 					}
+
+
 					modal.querySelector('.i_modal-header-content').innerHTML += modalPreviewContent;
+					modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentContent;
+					modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentEnding;
 
 					modal.querySelector('.i_modal-content').innerHTML = otherContent
 					modal.querySelector('.i_modal-img').innerHTML = `<img src="${data.IMAGE}" alt="${data.NAME}">`
@@ -293,13 +321,13 @@ document.addEventListener('DOMContentLoaded', (event) =>{
 	})
 
 	projectsItems.forEach(item => {
-		item.addEventListener('click', ()=>{
+		item.addEventListener('click', () => {
 			fetch('/local/templates/exsolcom/ilab/ajax/getProjectElementModalContent.php', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json'
 				},
-				body: JSON.stringify({id : item.getAttribute('id')})
+				body: JSON.stringify({id: item.getAttribute('id')})
 			})
 				.then(response => response.json())
 				.then(data => {
@@ -313,23 +341,46 @@ document.addEventListener('DOMContentLoaded', (event) =>{
 					const content = data.CONTENT;
 					// Регулярное выражение для поиска <div class="i_modal-preview">...</div>
 					const modalPreviewRegex = /<div class="i_modal-preview">[\s\S]*?<\/div>/;
+					const modalPreviewContentRegex = /<div class="i_modal-preview-content">[\s\S]*?<\/div>/;
+					const modalPreviewEndingRegex = /<div class="i_modal-preview-ending">[\s\S]*?<\/div>/;
 					// Найти совпадение
-					const match = content.match(modalPreviewRegex);
+					const matchPreview = content.match(modalPreviewRegex);
+					const matchPreviewContent = content.match(modalPreviewContentRegex);
+					const matchPreviewEnding = content.match(modalPreviewEndingRegex);
 
 					let modalPreviewContent = '';
+					let modalPreviewContentContent = '';
+					let modalPreviewContentEnding = '';
 					let otherContent = '';
 
-					if (match) {
+					if (matchPreview) {
 						// Совпадение найдено
-						modalPreviewContent = match[0];
+						modalPreviewContent = matchPreview[0];
 
 						// Остальной контент
 						otherContent = content.replace(modalPreviewContent, '').trim();
-					} else {
+					} else if(matchPreviewContent){
+						// Совпадение найдено
+						modalPreviewContentContent = matchPreviewContent[0];
+
+						// Остальной контент
+						otherContent = content.replace(modalPreviewContentContent, '').trim();
+					}else if(matchPreviewEnding){
+						// Совпадение найдено
+						modalPreviewContentEnding = matchPreviewEnding[0];
+
+						// Остальной контент
+						otherContent = content.replace(modalPreviewContentEnding, '').trim();
+					}else{
 						// Совпадение не найдено, все содержимое остается в otherContent
 						otherContent = content;
 					}
+
+					console.log(modalPreviewContent)
+
 					modal.querySelector('.i_modal-header-content').innerHTML += modalPreviewContent;
+					modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentContent;
+					modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentEnding;
 
 					modal.querySelector('.i_modal-content').innerHTML = otherContent
 					modal.querySelector('.i_modal-img').innerHTML = `<img src="${data.IMAGE}" alt="${data.NAME}">`
@@ -337,19 +388,73 @@ document.addEventListener('DOMContentLoaded', (event) =>{
 		})
 	})
 
+	// SUBMIT FORM
+
+	const submitBtn = document.querySelector('#submit-btn')
+	const submitModal = document.querySelector('.i_submit')
+	const submitModalBtn = document.querySelector('.i_submit-btn')
+	const submitCloseBtn = document.querySelector('.i_submit-close')
+
+	submitBtn.addEventListener('click', (event) => {
+		submitModal.classList.toggle('active')
+		overlay.classList.add('active')
+	})
+
+	submitCloseBtn.addEventListener('click', (event) => {
+		submitModal.classList.remove('active')
+		overlay.classList.remove('active')
+	})
+
+	submitModalBtn.addEventListener('click', (event) => {
+		submitModal.querySelector('.i_submit-errors').innerHTML = ''
+		const inputs = submitModal.querySelectorAll('input')
+		let errors = []
+
+		const data = {}
+
+		inputs.forEach(input => {
+			data[input.name] = input.value
+		})
+
+		for(let key in data){
+			if (data[key] === '' && key !== 'company') {
+				errors.push(key)
+			}
+		}
+
+		if (errors.length === 0) {
+			fetch('/local/templates/exsolcom/ilab/ajax/sendEmail.php', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify(data)
+			})
+				.then(response => response.json())
+				.then(data => {
+					console.log(data)
+				})
+		}else{
+			submitModal.querySelector('.i_submit-errors').innerHTML = 'Заполните все поля'
+		}
+	})
+
+
 	//OVERLAY
 	document.addEventListener('keydown', (event) => {
-		if(event.key === 'Escape'){
+		if (event.key === 'Escape') {
 			overlay.classList.remove('active')
 			modal.classList.remove('active')
 			sideMenu.classList.remove('show')
+			submitModal.classList.remove('active')
 		}
 	})
 
 	document.addEventListener('click', (event) => {
-		if(event.target.classList.contains('i_overlay')){
+		if (event.target.classList.contains('i_overlay')) {
 			overlay.classList.remove('active')
 			modal.classList.remove('active')
+			submitModal.classList.remove('active')
 		}
 	})
 
