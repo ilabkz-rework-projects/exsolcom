@@ -260,6 +260,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				.then(response => response.json())
 				.then(data => {
 					modal.querySelector('.i_modal-header-content').innerHTML = '';
+					modal.querySelector('.i_modal-header-bottom').innerHTML = '';
+					modal.querySelector('.i_modal-header-bottom').innerHTML = '';
 					modal.querySelector('.i_modal-content').innerHTML = ''
 					modal.querySelector('.i_modal-img').innerHTML = ''
 
@@ -306,10 +308,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 						// Совпадение не найдено, все содержимое остается в otherContent
 						otherContent = content;
 					}
-
-
-
-					console.log(otherContent)
 
 
 					modal.querySelector('.i_modal-header-content').innerHTML += modalPreviewContent;
