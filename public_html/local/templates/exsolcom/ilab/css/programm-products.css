@@ -3,6 +3,24 @@
   gap: 50px;
   justify-content: space-between;
 }
+.programm-container .bx_sitemap .bx_sitemap_ul li:before {
+  content: "";
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-880%, -50%);
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
 .programm-container .bx_sitemap .bx_sitemap_ul li {
   list-style-type: none;
   background-color: var(--color-circlesSecond);
@@ -27,16 +45,47 @@
 .programm-container .i_programm-catalog .catalog-section {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  align-items: flex-start;
+  gap: 30px;
 }
 .programm-container .i_programm-catalog .catalog-section .row {
   margin: 0;
+  width: 100%;
+  display: flex;
 }
 .programm-container .i_programm-catalog .catalog-section .row .product-item-small-card {
-  width: unset;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.programm-container .i_programm-catalog .catalog-section .row .product-item-small-card .product-item-big-card:nth-child(3) {
+  padding: 0;
+}
+.programm-container .i_programm-catalog .catalog-section .row .product-item-small-card .product-item-big-card:nth-child(3) .col-md-12 {
+  padding: 0;
 }
 .programm-container .i_programm-catalog .catalog-section .row .product-item-small-card .product-item-big-card {
   width: unset;
+  padding: 0 30px 0 0;
+}
+.programm-container .i_programm-catalog .i_software {
+  background-color: unset;
+}
+.programm-container .i_programm-catalog .i_software .i_container {
+  width: 100%;
+}
+.programm-container .i_programm-catalog .i_software .i_container .i_software-corporate .i_software-iconAnnounce {
+  width: 70%;
+}
+.programm-container .i_programm-catalog .i_software .i_container .i_software-corporate .i_software-iconAnnounce .i_software-block {
+  box-shadow: 0px 0px 26px -6px rgba(0, 0, 0, 0.12);
+}
+.programm-container .i_programm-catalog .i_software .i_container .i_software-corporate .i_software-iconAnnounce svg {
+  color: var(--color-black);
+}
+.programm-container .i_programm-catalog .i_software .i_container .i_software-corporate .i_software-group-textBtn .i_software-btn:hover {
+  background-color: var(--bg-buttonHoverSecond);
 }
 .programm-container .i_programm-catalog .product-item-container .product-item {
   display: flex;
