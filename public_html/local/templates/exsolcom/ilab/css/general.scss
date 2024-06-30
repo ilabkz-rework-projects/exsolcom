@@ -374,7 +374,7 @@ p{
         margin: 0;
 
         //WRAPPER LI menu-all-articles BEFORE
-        .menu-all-articles:before{
+        li:before{
           content: ' ';
           background-image: url("../img/svg/menu-blog-icon_w.svg");
           background-repeat: no-repeat;

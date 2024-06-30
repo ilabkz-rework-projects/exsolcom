@@ -65,22 +65,49 @@
 .i_blog .i_container .bx_sitemap {
   margin: 0;
 }
+.i_blog .i_container .bx_sitemap ul li:nth-child(n):before {
+  content: " ";
+  background-image: url("../img/svg/blog-icon-2_b.svg");
+  background-repeat: no-repeat;
+  left: 0;
+  top: 50%;
+  transform: translate(0%, -50%);
+  position: absolute;
+  background-size: 54px;
+  width: 54px;
+  height: 54px;
+}
+.i_blog .i_container .bx_sitemap ul .menu-all-articles:before {
+  content: " ";
+  background-image: url("../img/svg/blog-icon-2_w.svg") !important;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 50%;
+  transform: translate(0%, -50%);
+  position: absolute;
+  background-size: 54px;
+  width: 54px;
+  height: 54px;
+}
 .i_blog .i_container .bx_sitemap .bx_sitemap_ul {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
 }
-.i_blog .i_container .bx_sitemap .bx_sitemap_ul .menu-all-articles:before {
+.i_blog .i_container .bx_sitemap .bx_sitemap_ul li:nth-child(1):before {
   content: " ";
-  background-image: url("../img/svg/menu-blog-icon_w.svg");
+  background-image: url("../img/svg/blog-icon_b.svg") !important;
   background-repeat: no-repeat;
   left: 0;
   top: 50%;
-  transform: translate(150%, -50%);
+  transform: translate(0%, -50%);
   position: absolute;
-  background-size: 14px;
-  width: 14px;
-  height: 14px;
+  background-size: 54px;
+  width: 54px;
+  height: 54px;
+}
+.i_blog .i_container .bx_sitemap .bx_sitemap_ul li:nth-child(1).menu-all-articles:before {
+  background-image: url("../img/svg/blog-icon_w.svg") !important;
 }
 .i_blog .i_container .bx_sitemap .bx_sitemap_ul .menu-all-articles {
   background-color: var(--color-circles);
@@ -95,18 +122,6 @@
 .i_blog .i_container .bx_sitemap .bx_sitemap_ul .menu-all-articles .bx_sitemap_li_title a {
   font-size: 20px;
   color: var(--color-White);
-}
-.i_blog .i_container .bx_sitemap .bx_sitemap_ul li:before {
-  content: " ";
-  background-image: url("../img/svg/menu-blog-icon_b.svg");
-  background-repeat: no-repeat;
-  left: 0%;
-  top: 50%;
-  transform: translate(150%, -50%);
-  position: absolute;
-  background-size: 14px;
-  width: 14px;
-  height: 14px;
 }
 .i_blog .i_container .bx_sitemap .bx_sitemap_ul li {
   list-style-type: none;
@@ -142,6 +157,19 @@
   gap: 30px;
   padding: 70px 0 70px 0;
 }
+@media screen and (max-width: 1270px) {
+  .i_blog .i_container .catalog-section {
+    gap: 0px;
+  }
+  .i_blog .i_container .catalog-section .product-item-small-card .product-item-big-card {
+    width: 100%;
+    max-width: 1235px;
+    display: flex;
+  }
+  .i_blog .i_container .catalog-section .product-item-small-card .product-item-big-card .row {
+    padding: 0 0 30px 0;
+  }
+}
 .i_blog .i_container .catalog-section .product-item-container {
   display: flex;
   gap: 30px;
@@ -156,6 +184,18 @@
   border-radius: 30px;
   padding: 30px;
   background-color: var(--color-blockHv);
+}
+@media screen and (max-width: 1520px) {
+  .i_blog .i_container .catalog-section .product-item-container .product-item {
+    min-height: 380px;
+  }
+}
+@media screen and (max-width: 1270px) {
+  .i_blog .i_container .catalog-section .product-item-container .product-item {
+    min-height: unset;
+    width: 100%;
+    max-width: 1235px;
+  }
 }
 @media screen and (max-width: 1080px) {
   .i_blog .i_container .catalog-section .product-item-container .product-item {
@@ -180,6 +220,11 @@
 .i_blog .i_container .catalog-section .product-item-container .product-item .product-item-left {
   width: 40%;
 }
+@media screen and (max-width: 1270px) {
+  .i_blog .i_container .catalog-section .product-item-container .product-item .product-item-left {
+    width: 25%;
+  }
+}
 .i_blog .i_container .catalog-section .product-item-container .product-item .product-item-left .product-item-img {
   max-width: 290px;
   width: 100%;
@@ -194,6 +239,11 @@
   display: flex;
   flex-direction: column;
   margin: 0 0 0 50px;
+}
+@media screen and (max-width: 1270px) {
+  .i_blog .i_container .catalog-section .product-item-container .product-item .product-item-right {
+    width: 65%;
+  }
 }
 .i_blog .i_container .catalog-section .product-item-container .product-item .product-item-right .product-item-top {
   display: flex;

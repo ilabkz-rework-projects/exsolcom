@@ -395,7 +395,7 @@ p {
   flex-wrap: wrap;
   margin: 0;
 }
-.i_blog .i_container .bx_sitemap .bx_sitemap_ul .menu-all-articles:before {
+.i_blog .i_container .bx_sitemap .bx_sitemap_ul li:before {
   content: " ";
   background-image: url("../img/svg/menu-blog-icon_w.svg");
   background-repeat: no-repeat;
