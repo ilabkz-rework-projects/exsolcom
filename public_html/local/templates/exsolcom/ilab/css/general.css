@@ -365,6 +365,23 @@ span:hover {
 .i_modal .i_modal-header .i_modal-preview .i_modal-preview-ending span {
   cursor: text;
 }
+.i_modal .i_modal-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px -4px 14px 0px rgba(34, 60, 80, 0.18);
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.i_modal .i_modal-footer .i_modal-footer-btn button {
+  padding: 18px 44px;
+}
 
 p {
   display: inline !important;

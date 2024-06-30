@@ -377,7 +377,7 @@
 							<span>ERP ERP Управление предприятием 2 для Казахстана</span>
 						</div>
 						<div class="swiper-detail-btn">
-							<button>Запросить КП</button>
+							<button id="submit-btn">Запросить КП</button>
 						</div>
 					</div>
 				</div>

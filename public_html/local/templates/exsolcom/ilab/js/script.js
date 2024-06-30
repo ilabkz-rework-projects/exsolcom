@@ -390,55 +390,23 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 	// SUBMIT FORM
 
-	const submitBtn = document.querySelector('#submit-btn')
+	const submitBtn = document.querySelectorAll('#submit-btn')
 	const submitModal = document.querySelector('.i_submit')
-	const submitModalBtn = document.querySelector('.i_submit-btn')
 	const submitCloseBtn = document.querySelector('.i_submit-close')
 
-	submitBtn.addEventListener('click', (event) => {
-		submitModal.classList.toggle('active')
-		overlay.classList.add('active')
+	submitBtn.forEach(item => {
+		item.addEventListener('click', () => {
+			modal.classList.remove('active')
+			submitModal.classList.add('active')
+			overlay.classList.add('active')
+		})
 	})
+
 
 	submitCloseBtn.addEventListener('click', (event) => {
 		submitModal.classList.remove('active')
 		overlay.classList.remove('active')
 	})
-
-	submitModalBtn.addEventListener('click', (event) => {
-		submitModal.querySelector('.i_submit-errors').innerHTML = ''
-		const inputs = submitModal.querySelectorAll('input')
-		let errors = []
-
-		const data = {}
-
-		inputs.forEach(input => {
-			data[input.name] = input.value
-		})
-
-		for(let key in data){
-			if (data[key] === '' && key !== 'company') {
-				errors.push(key)
-			}
-		}
-
-		if (errors.length === 0) {
-			fetch('/local/templates/exsolcom/ilab/ajax/sendEmail.php', {
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify(data)
-			})
-				.then(response => response.json())
-				.then(data => {
-					console.log(data)
-				})
-		}else{
-			submitModal.querySelector('.i_submit-errors').innerHTML = 'Заполните все поля'
-		}
-	})
-
 
 	//OVERLAY
 	document.addEventListener('keydown', (event) => {

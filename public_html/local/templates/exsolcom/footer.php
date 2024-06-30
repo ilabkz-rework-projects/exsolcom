@@ -254,6 +254,11 @@
 		<div class="i_modal-content">
 
 		</div>
+		<div class="i_modal-footer">
+			<div class="i_modal-footer-btn">
+				<button id="submit-btn">Запросить коммерческое предложение</button>
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -266,24 +271,12 @@
 			<span>ОСТАВИТЬ ЗАЯВКУ</span>
 		</div>
 		<div class="i_submit-content">
-			<div class="i_submit-name">
-				<input type="text" name="name" placeholder="Имя">
-			</div>
-			<div class="i_submit-info">
-				<input type="text" name="phone" placeholder="Телефон">
-				<input type="text" name="email" placeholder="E-mail">
-			</div>
-			<div class="i_submit-company">
-				<input type="text" name="company" placeholder="Название компании">
-			</div>
-			<div class="i_submit-textarea">
-				<input type="text" name="message" placeholder="Сообщение"></input>
-			</div>
-		</div>
-		<div class="i_submit-errors">
-		</div>
-		<div class="i_submit-btn">
-			<span>Отправить</span>
+			<script data-b24-form="inline/15/xm0t3f" data-skip-moving="true">
+				(function(w,d,u){
+					var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
+					var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+				})(window,document,'https://cdn-ru.bitrix24.kz/b5265933/crm/form/loader_15.js');
+			</script>
 		</div>
 	</div>
 </div>

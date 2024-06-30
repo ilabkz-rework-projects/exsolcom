@@ -23,8 +23,9 @@
 
   .i_submit-close {
     position: absolute;
-    top: 30px;
-    right: 32px;
+    top: 10px;
+    z-index: 10;
+    right: 10px;
     cursor: pointer;
     transition: all 0.4s ease;
     width: 40px;
