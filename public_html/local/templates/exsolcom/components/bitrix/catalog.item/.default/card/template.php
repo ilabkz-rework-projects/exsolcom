@@ -93,6 +93,29 @@ while ($arRes = $dbRes->GetNext()) {
 		</div>
 	</div>
 
+	<div class="i_vacantion-item second" id="<?$item['ID']?>">
+		<div class="i_vacation-item-top">
+			<div class="i_vacantion-item-left">
+				<div class="i_vacantion-img">
+					<img src="<?= $item['PREVIEW_PICTURE']['SRC'] ?>" alt="img">
+				</div>
+			</div>
+			<div class="i_vacantion-item-right">
+				<div class="i_vacantion-item-topic">
+					<span><?= $arResult['ELEMENT'][$item['IBLOCK_SECTION_ID']]['NAME'] ?></span>
+				</div>
+				<div class="i_vacantion-item-name">
+					<span><?=$item['NAME']?></span>
+				</div>
+			</div>
+		</div>
+		<div class="i_vacantion-item-right second">
+			<div class="i_vacantion-item-title">
+				<span><?=$item['PREVIEW_TEXT']?></span>
+			</div>
+		</div>
+	</div>
+
 
 <?php
 //echo '<pre>';
