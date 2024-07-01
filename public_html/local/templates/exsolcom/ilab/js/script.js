@@ -431,5 +431,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		modal.classList.remove('active')
 	})
 
+	// I_BLOG DROPDOWN
+
+	const blogMenu = document.querySelector('.i_blog-menu')
+	blogMenu.addEventListener('click', () => {
+		blogMenu.parentElement.classList.toggle('i_blog-open-dropdown');
+	})
+
 
 });
