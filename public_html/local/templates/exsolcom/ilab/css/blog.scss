@@ -358,6 +358,169 @@
           // !PRODUCT ITEM RIGHT
         }
         // PRODUCT ITEM
+        // PRODUCT ITEM SECOND
+        .i_vacantion-item.second{
+          display: none;
+          @media screen and (max-width:590px){
+            display: flex;
+            max-width: 530px;
+            width: 100%;
+            height: max-content;
+            border-radius: 30px;
+            padding: 30px;
+            background-color: var(--color-blockHv);
+            flex-direction: column;
+            @media screen and (max-width: 590px){
+              padding: 20px;
+            }
+            //VACATION ITEM HOVER
+            &:hover{
+              box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+              cursor: pointer;
+              transition: all 0.4s ease;
+              background-color: #f9f9f9;
+              .i_vacation-item-top{
+                .i_vacantion-item-right{
+                  .i_vacantion-item-name{
+                    span{
+                      color: var(--color-red);
+                    }
+                  }
+                }
+              }
+            }
+            //!VACATION ITEM HOVER
+            //VACATION ITEM TOP
+            .i_vacation-item-top{
+              display: none;
+              @media screen and (max-width: 590px){
+                display: flex;
+                align-items: center;
+              }
+
+              @media screen and (max-width: 590px){
+                //VACATION ITEM LEFT
+                .i_vacantion-item-left{
+                  display: block;
+                  width: 36%;
+                  //VACATION ITEM LEFT IMG
+                  .i_vacantion-img{
+                    max-width: 290px;
+                    width: 100%;
+                    height: auto;
+                    img{
+                      width: 100%;
+                      height: 100%;
+                    }
+                  }
+                  //!VACATION ITEM LEFT IMG
+                }
+                //!VACATION ITEM LEFT
+                @media screen and (max-width: 590px){
+                  //VACATION ITEM RIGHT
+                  .i_vacantion-item-right{
+                    padding: 0 0 0 15px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    width: 60%;
+                    @media screen and (max-width: 360px){
+                      padding: 0 0 0 15px;
+                      gap: 15px;
+                    }
+                    // PRODUCT ITEM DATE
+                    .product-item-date{
+                      width: max-content;
+                      span{
+                        font-size: 13px;
+                        font-weight: 600;
+                        color: #7c7c7c;
+                      }
+                    }
+                    // !PRODUCT ITEM DATE
+                    //VACATION ITEM RIGHT ROLE
+                    .i_vacantion-item-topic{
+                      width: 100%;
+                      max-width: 200px;
+                      min-width: 186px;
+                      background-color: var(--color-bg-sticker);
+                      height: 20px;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      border-radius: 30px;
+                      font-size: 12px;
+                      @media screen and (max-width: 360px){
+                        min-width: 160px;
+                      }
+                      span{
+                        font-size: 13px;
+                        color: var(--color-WhiteWhite);
+                        cursor: text;
+                        @media screen and (max-width: 360px){
+                          font-size: 11px;
+                        }
+                      }
+                    }
+                    //!VACATION ITEM RIGHT ROLE
+                    //VACATION ITEM RIGHT NAME
+                    .i_vacantion-item-name{
+                      span{
+                        font-size: 16px;
+                        line-height: 18px;
+                        color: var(--color-textInfoblock);
+                        @media screen and (max-width: 360px){
+                          font-size: 14px;
+                        }
+                      }
+                    }
+                    //!VACATION ITEM RIGHT NAME
+                    //VACATION ITEM RIGHT TITLE
+                    .i_vacantion-item-title{
+                      @media screen and (max-width: 590px){
+                        display: none;
+                      }
+                      span{
+                        font-family: "Open Sans", sans-serif;
+                        font-size: 15px;
+                        cursor: text;
+                        color: var(--color-textInfoblock);
+                      }
+                    }
+                    //!VACATION ITEM RIGHT TITLE
+
+                  }
+                  //!VACATION ITEM RIGHT
+                }
+              }
+            }
+            //!VACATION ITEM TOP
+
+            //VACATION ITEM RIGHT SECOND
+            .i_vacantion-item-right.second{
+              display: none;
+              @media screen and (max-width: 590px){
+                display: flex;
+                padding: 30px 0 0 0;
+                width: 100%;
+                .i_vacantion-item-title{
+                  display: flex;
+                  span{
+                    color: var(--color-textInfoblock);
+                    @media screen and (max-width: 590px){
+                      font-size: 14px;
+                    }
+                    @media screen and (max-width: 360px){
+                      font-size: 12px;
+                    }
+                  }
+                }
+              }
+            }
+            //!VACATION ITEM RIGHT SECOND
+          }
+        }
+        // !PRODUCT ITEM SECOND
       }
       // !PRODUCT ITEM CONTAINER
 

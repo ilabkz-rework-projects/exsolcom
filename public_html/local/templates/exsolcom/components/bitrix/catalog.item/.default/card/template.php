@@ -101,6 +101,11 @@ while ($arRes = $dbRes->GetNext()) {
 				</div>
 			</div>
 			<div class="i_vacantion-item-right">
+                <? if ($item['DATE_ACTIVE_FROM']) { ?>
+                    <div class="product-item-date">
+                        <span><?= $formattedDate ?></span>
+                    </div>
+                <? } ?>
 				<div class="i_vacantion-item-topic">
 					<span><?= $arResult['ELEMENT'][$item['IBLOCK_SECTION_ID']]['NAME'] ?></span>
 				</div>
