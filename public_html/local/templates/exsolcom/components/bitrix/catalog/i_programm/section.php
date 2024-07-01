@@ -105,23 +105,30 @@ if ($sectionListParams["COUNT_ELEMENTS"] === "Y")
 		$sectionListParams["COUNT_ELEMENTS_FILTER"] = "CNT_AVAILABLE";
 	}
 }
-$APPLICATION->IncludeComponent(
-	"bitrix:catalog.section.list",
-	"",
-	$sectionListParams,
-	$component,
-	($arParams["SHOW_TOP_ELEMENTS"] !== "N" ? array("HIDE_ICONS" => "Y") : array())
-);
+
 ?>
-<div class="row">
-	<?
-	if ($isVerticalFilter)
-	{
-		include($_SERVER["DOCUMENT_ROOT"] . "/" . $this->GetFolder() . "/section_vertical.php");
-	}
-	else
-	{
-		include($_SERVER["DOCUMENT_ROOT"]."/".$this->GetFolder()."/section_horizontal.php");
-	}
+
+<div class="i_programm-container">
+	<?php
+	$APPLICATION->IncludeComponent(
+		"bitrix:catalog.section.list",
+		"",
+		$sectionListParams,
+		$component,
+		($arParams["SHOW_TOP_ELEMENTS"] !== "N" ? array("HIDE_ICONS" => "Y") : array())
+	);
 	?>
+	<div class="row">
+		<?
+		if ($isVerticalFilter)
+		{
+			include($_SERVER["DOCUMENT_ROOT"] . "/" . $this->GetFolder() . "/section_vertical.php");
+		}
+		else
+		{
+			include($_SERVER["DOCUMENT_ROOT"]."/".$this->GetFolder()."/section_horizontal.php");
+		}
+		?>
+	</div>
 </div>
+
