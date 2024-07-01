@@ -9,35 +9,66 @@
         top: 50%;
         left: 50%;
         position: absolute;
-        transform: translate(-880%, -50%);
+        transform: translate(-820%, -50%);
         display: inline-block;
-        width: 1em;
-        height: 1em;
+        width: 1.3em;
+        height: 1.3em;
         flex-shrink: 0;
         flex-grow: 0;
-        border: 1px solid #adb5bd;
+        border: 1px solid #d9d9d9;
         border-radius: 0.25em;
         margin-right: 0.5em;
         background-repeat: no-repeat;
         background-position: center center;
+        background-color: #ffffff;
         background-size: 50% 50%;
+      }
+      /* стили для активного состояния чекбокса (при нажатии на него) */
+      li:focus::before {
+        background-image: url("../img/svg/active-checkbox.svg");
+        background-size: 14px;
+        background-color: #191A1A;
+        border: 1px solid #3b3b3b;
       }
       li{
         list-style-type: none;
         background-color: var(--color-circlesSecond);
         box-sizing: border-box;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        align-items: center;
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.02);
         position: relative;
         border-radius: 30px;
+        max-width: 340px;
+        width: 170%;
+        height: 50px;
         margin: 20px 20px 0 0;
+        border: 1px solid #ededed;
+        &:hover{
+          cursor: pointer;
+          .bx_sitemap_li_title{
+            a{
+              transition: all .4s ease;
+              color: var(--color-red);
+            }
+          }
+        }
+        &:focus{
+          background-color: var(--color-circles);
+          .bx_sitemap_li_title{
+            a{
+              transition: all .4s ease;
+              color: var(--color-WhiteWhite);
+            }
+          }
+        }
         //PROPERTIES H2
         .bx_sitemap_li_title{
           font-size: 20px;
           line-height: unset;
           margin: 0;
-          padding: 20px 30px 20px 50px;
+          padding: 0px 0px 0px 60px;
           a{
             font-size: 17px;
             color: var(--color-black);
@@ -120,7 +151,7 @@
         text-align: center;
         overflow: hidden;
         cursor: pointer;
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.05);
+        box-shadow: 0px 0px 25px -1px rgba(0, 0, 0, 0.11);
         &:hover{
           transition: all .4s ease;
           box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
