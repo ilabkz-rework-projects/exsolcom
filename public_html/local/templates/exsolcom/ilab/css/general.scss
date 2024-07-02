@@ -374,6 +374,9 @@ p{
 
   .bx_sitemap {
     .bx_sitemap_ul {
+      li{
+        line-height: unset;
+      }
       li:before {
         content: '';
         top: 50%;
@@ -574,8 +577,12 @@ p{
             transform: translate(0%, -50%);
             position: absolute;
             background-size: 54px;
+            background-position: center;
             width: 54px;
             height: 54px;
+            @media screen and (max-width: 1330px){
+              background-size: 40px;
+            }
           }
         }
         .menu-all-articles{
@@ -590,6 +597,7 @@ p{
             background-size: 54px;
             width: 54px;
             height: 54px;
+
           }
         }
       }
@@ -609,8 +617,12 @@ p{
             transform: translate(0%, -50%);
             position: absolute;
             background-size: 54px;
+            background-position: center;
             width: 54px;
             height: 54px;
+            @media screen and (max-width: 1330px){
+              background-size: 40px;
+            }
           }
           @media screen and (max-width: 480px){
             .bx_sitemap_li_title{
@@ -688,7 +700,7 @@ p{
             .i_blog-dropdown-menu:before{
               content: ' ';
               border: 20px solid transparent;
-              border-bottom: 20px solid var(--color-circlesThird);
+              border-bottom: 20px solid var(--bg-buttonHoverSecond);
               position: absolute;
               top: -10%;
               right: 50%;
@@ -698,7 +710,7 @@ p{
             // BLOG_DROPDOWN_MENU
             .i_blog-dropdown-menu{
               position: absolute;
-              background-color: #ffffff;
+              background-color: var(--bg-buttonHoverSecond);
               max-width: 90vw;
               width: 100%;
               height: max-content;
@@ -790,12 +802,10 @@ p{
           margin: 20px 20px 0 0;
           //PROPERTIES H2
           .bx_sitemap_li_title{
-            font-size: 20px;
             line-height: unset;
             margin: 0;
             padding: 20px 30px 20px 50px;
             a{
-              font-size: 20px;
               color: var(--color-White);
             }
           }
@@ -847,6 +857,12 @@ p{
             padding: 20px 30px 20px 50px;
             a{
               font-size: 20px;
+              @media screen and (max-width: 1600px){
+                font-size: 18px;
+              }
+              @media screen and (max-width: 1330px){
+                font-size: 14px;
+              }
               color: var(--color-black);
             }
           }

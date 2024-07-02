@@ -63,10 +63,40 @@
 
       ul{
         li{
+          @media screen and (max-width: 1330px){
+            line-height: 0;
+          }
+          line-height: unset;
           .i_blog-dropdown-menu{
-            li{
+            li:nth-child(n){
+              background-color: transparent;
               .bx_sitemap_li_title{
                 display: block !important;
+                a{
+                  color: var(--color-black)!important;
+                  @media screen and (max-width: 400px){
+                    font-size: 14px;
+                    padding: 0 0 0 10px;
+                  }
+                }
+              }
+              &:before{
+                background-image: url(../img/svg/blog-icon-2_b.svg) !important;
+                background-size: 50px !important;
+                background-position: center!important;
+                width: 40px !important;
+                height: 40px !important;
+                background-color: var(--color-circlesSecond) !important;
+                border-radius: 30px !important;
+              }
+              &.menu-all-articles{
+                background-color: var(--color-circlesSecond);
+
+                .bx_sitemap_li_title{
+                  //a{
+                  //  color: var(--color-White)!important;
+                  //}
+                }
               }
             }
           }
@@ -180,7 +210,7 @@
             // BLOG_DROPDOWN_MENU
             .i_blog-dropdown-menu{
               position: absolute;
-              background-color: #ffffff;
+              background-color: var(--bg-buttonHoverSecond);
               max-width: 90vw;
               width: 100%;
               height: max-content;
@@ -272,12 +302,10 @@
           margin: 20px 20px 0 0;
           //PROPERTIES H2
           .bx_sitemap_li_title{
-            font-size: 20px;
             line-height: unset;
             margin: 0;
             padding: 20px 30px 20px 50px;
             a{
-              font-size: 20px;
               color: var(--color-White);
             }
           }
@@ -329,6 +357,12 @@
             padding: 20px 30px 20px 50px;
             a{
               font-size: 20px;
+              @media screen and (max-width: 1600px){
+                font-size: 18px;
+              }
+              @media screen and (max-width: 1330px){
+                font-size: 14px;
+              }
               color: var(--color-black);
             }
           }
