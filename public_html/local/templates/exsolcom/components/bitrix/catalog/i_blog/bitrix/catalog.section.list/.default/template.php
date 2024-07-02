@@ -69,8 +69,8 @@ if (0 < $arResult["SECTIONS_COUNT"])
 {
 ?>
 <ul class="<? echo $arCurView['LIST']; ?>">
-	<li id="" class=" <?=!$arParams['CURRENT_SECTION_ID'] ? 'menu-all-articles i_blog-open-dropdown' : ''?>" title="">
-        <ul class="<?=!$arParams['CURRENT_SECTION_ID'] ? 'i_blog-dropdown-menu' : ''?>">
+	<li id="" class="menu-all-articles i_blog-open-dropdown" title="">
+        <ul class="i_blog-dropdown-menu">
             <?
             switch ($arParams['VIEW_MODE'])
             {
@@ -225,7 +225,7 @@ if (0 < $arResult["SECTIONS_COUNT"])
                 }
                 ?>
         </ul>
-        <button class="<?=!$arParams['CURRENT_SECTION_ID'] ? 'i_blog-menu' : ''?>">
+        <button class="i_blog-menu">
             <h2 class="bx_sitemap_li_title">
                 <a href="/blog/">Все статьи</h2>
         </button>
