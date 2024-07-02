@@ -1327,6 +1327,29 @@ body {
     font-size: 15px;
   }
 }
+.i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block .i_our-services-desc {
+  width: 66%;
+}
+@media screen and (max-width: 1000px) {
+  .i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block .i_our-services-desc {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block .i_our-services-desc {
+    width: 67%;
+  }
+}
+@media screen and (max-width: 680px) {
+  .i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block .i_our-services-desc {
+    width: 102%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block .i_our-services-desc {
+    width: 90%;
+  }
+}
 .i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block .i_our-services-desc p {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;

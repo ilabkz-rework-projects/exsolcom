@@ -1433,6 +1433,19 @@ body{
             }
           }
           .i_our-services-desc{
+            width: 66%;
+            @media screen and (max-width: 1000px){
+              width: 60%;
+            }
+            @media screen and (max-width: 760px){
+              width: 67%;
+            }
+            @media screen and (max-width: 680px){
+              width: 102%;
+            }
+            @media screen and (max-width: 360px){
+              width: 90%;
+            }
             p{
               font-family: "Open Sans", sans-serif;
               font-size: 14px;
