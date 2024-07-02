@@ -1185,13 +1185,16 @@ body {
 .i_main .i_our-services .i_container .i_our-services-headline .i_our-services-circles svg {
   color: var(--color-circleIcon);
 }
-.i_main .i_our-services .i_container .i_our-services-headline span {
+.i_main .i_our-services .i_container .i_our-services-headline a {
+  text-decoration: unset;
+}
+.i_main .i_our-services .i_container .i_our-services-headline a span {
   font-size: 32px;
   font-weight: 400;
   color: var(--color-black);
   text-transform: uppercase;
 }
-.i_main .i_our-services .i_container .i_our-services-headline span:hover {
+.i_main .i_our-services .i_container .i_our-services-headline a span:hover {
   transition: 0.3s ease;
   cursor: pointer;
   color: var(--color-red);

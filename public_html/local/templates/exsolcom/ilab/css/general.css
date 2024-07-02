@@ -123,6 +123,7 @@ span:hover {
   width: unset;
   overflow-y: auto;
   height: calc(100% - 45px);
+  padding-bottom: 90px;
 }
 @media screen and (max-width: 1630px) {
   .i_modal .i_container {

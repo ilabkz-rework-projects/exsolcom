@@ -1307,15 +1307,18 @@ body{
           }
         }
         //!Группа иконка
-        span{
-          font-size: 32px;
-          font-weight: 400;
-          color: var(--color-black);
-          text-transform: uppercase;
-          &:hover{
-            transition: 0.3s ease;
-            cursor: pointer;
-            color: var(--color-red);
+        a{
+          text-decoration: unset;
+          span{
+            font-size: 32px;
+            font-weight: 400;
+            color: var(--color-black);
+            text-transform: uppercase;
+            &:hover{
+              transition: 0.3s ease;
+              cursor: pointer;
+              color: var(--color-red);
+            }
           }
         }
       }
