@@ -65,6 +65,9 @@
 .i_blog .i_container .bx_sitemap {
   margin: 0;
 }
+.i_blog .i_container .bx_sitemap ul li .i_blog-dropdown-menu li .bx_sitemap_li_title {
+  display: block !important;
+}
 @media screen and (max-width: 480px) {
   .i_blog .i_container .bx_sitemap ul li:nth-child(n) {
     display: none;
