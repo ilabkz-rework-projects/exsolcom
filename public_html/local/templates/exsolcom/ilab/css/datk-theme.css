@@ -30,6 +30,30 @@ html[data-theme=dark] .i_header .i_header-more #myCircles.wide .close_hide_menu 
 html[data-theme=dark] .i_header .i_header-more #title-search .i_search-close {
   background-image: url("../img/svg/close-iconNight.svg") !important;
 }
+html[data-theme=dark] .i_main .i_contacts .i_contacts-title .i_contacts-title-icon {
+  background-image: url("../img/svg/contacts-icon_b.svg");
+}
+html[data-theme=dark] .i_main .i_contacts .i_contacts-content .i_contacts-info .i_contacts-info-title .i_contacts-info-icon .i_contacts-info-pic {
+  background-image: url("../img/svg/logo-exsolcome-icon_w.svg");
+}
+html[data-theme=dark] .i_main .i_contacts .i_contacts-content .i_contacts-info .i_contacts-info-title .i_contacts-info-desc .i_contacts-info-item.address .i_contacts-info-item-icon {
+  background-image: url("../img/svg/contacts-icon_b.svg");
+}
+html[data-theme=dark] .i_main .i_contacts .i_contacts-content .i_contacts-info .i_contacts-info-title .i_contacts-info-desc .i_contacts-info-item.address .i_contacts-info-item-icon:hover {
+  background-image: url("../img/svg/contacts-icon_r.svg");
+}
+html[data-theme=dark] .i_main .i_contacts .i_contacts-content .i_contacts-info .i_contacts-info-title .i_contacts-info-desc .i_contact-items .i_contacts-info-item .i_contacts-info-item-icon_wht {
+  background-image: url("../img/svg/whatsapp-icon_b.svg");
+}
+html[data-theme=dark] .i_main .i_contacts .i_contacts-content .i_contacts-info .i_contacts-info-title .i_contacts-info-desc .i_contact-items .i_contacts-info-item .i_contacts-info-item-icon_wht:hover {
+  background-image: url("../img/svg/whatsapp-icon_r.svg");
+}
+html[data-theme=dark] .i_main .i_contacts .i_contacts-content .i_contacts-info .i_contacts-info-title .i_contacts-info-desc .i_contact-items .i_contacts-info-item .i_contacts-info-item-icon_em {
+  background-image: url("../img/svg/email-icon_b.svg");
+}
+html[data-theme=dark] .i_main .i_contacts .i_contacts-content .i_contacts-info .i_contacts-info-title .i_contacts-info-desc .i_contact-items .i_contacts-info-item .i_contacts-info-item-icon_em:hover {
+  background-image: url("../img/svg/email-icon_r.svg");
+}
 html[data-theme=dark] .i_main .i_programms .i_programms-title .i_programms-title-icon {
   width: 50px;
   height: 50px;
