@@ -26,15 +26,13 @@ $arFilter = array(
 	'IBLOCK_SECTION_ID' => $currentSectionId
 );
 
-$dbRes = \CIBlockElement::GetList(array(), $arFilter, false, array("*", "UF_*"));
+$dbRes = CIBlockElement::GetList(array(), $arFilter, false, false, array("*", "UF_*"));
 
 
-while($arRes = $dbRes->GetNext()) {
+while($arRes = $dbRes->Fetch()) {
 	$arResult['ELEMENT'][$arRes['ID']] = $arRes;
 	$arResult['ELEMENT'][$arRes['ID']]['IMAGES'] = CFile::GetPath($arRes['PREVIEW_PICTURE']);
 }
-
-
 
 
 // ---------------------------------------------------------------------------------------------------- iLaB?>
@@ -45,6 +43,6 @@ while($arRes = $dbRes->GetNext()) {
 
 <?/*if($USER->isAdmin()):?>
 	<pre class="pre">
-		<?print_r($arResult)?>
+		<?print_r($currentSectionId)?>
 	</pre>
 <?endif*/?>

@@ -434,10 +434,31 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	// I_BLOG DROPDOWN
 
 	const blogMenu = document.querySelector('.i_blog-menu')
-	blogMenu.addEventListener('click', () => {
+	blogMenu?.addEventListener('click', () => {
 		blogMenu.parentElement.classList.toggle('i_blog-open-dropdown');
 	})
 
+
+	// HISTORY
+	const iSeoTabs = document.querySelectorAll('.i_seo-dates-switch')
+
+	iSeoTabs.forEach(item => {
+		item.addEventListener('click', () => {
+			fetch('/local/templates/exsolcom/ilab/ajax/getHistoryContent.php', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({id: item.getAttribute('data-id')})
+			})
+				.then(response => response.json())
+				.then(data => {
+					const content = data.CONTENT;
+					document.querySelector('.i_seo-events').innerHTML = content;
+				})
+		})
+	})
+	
 
 
 });
