@@ -1,5 +1,5 @@
 .i_submit {
-  background-color: #fff;
+  background-color: var(--bg-block);
   position: fixed;
   top: 50%;
   left: 50%;
@@ -70,6 +70,7 @@
   }
 }
 .i_submit .i_submit-header span {
+  color: var(--color-textInfoblock);
   font-size: 1.5em;
 }
 @media screen and (max-width: 480px) {
@@ -84,6 +85,7 @@
 }
 .i_submit .i_submit-content .b24-form .b24-form-wrapper {
   border-radius: 100px;
+  background-color: var(--bg-block);
 }
 .i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-header-padding {
   padding: 10px;
@@ -151,7 +153,7 @@
   transition: all 0.4s ease;
   box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.17);
   color: var(--color-red);
-  background-color: var(--bg-buttonHover);
+  background-color: var(--bg-buttonHoverFirst);
 }
 .i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-sign {
   display: none;

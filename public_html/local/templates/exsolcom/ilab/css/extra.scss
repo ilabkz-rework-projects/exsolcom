@@ -1,6 +1,6 @@
 //SUBMIT FORM
 .i_submit{
-  background-color: #fff;
+  background-color: var(--bg-block);
   position: fixed;
   top: 50%;
   left: 50%;
@@ -69,6 +69,7 @@
     }
     border-bottom: 5px dotted #666666;
     span{
+      color: var(--color-textInfoblock);
       font-size: 1.5em;
       @media screen and (max-width: 480px){
         font-size: 1.3em;
@@ -85,6 +86,7 @@
       //SUBMIT CONTENT WRAPPER
       .b24-form-wrapper{
         border-radius: 100px;
+        background-color: var(--bg-block);
         //SUBMIT CONTENT HEADER PADDING
         .b24-form-header-padding{
           padding: 10px;
@@ -173,7 +175,7 @@
                   transition: all .4s ease;
                   box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.17);
                   color: var(--color-red);
-                  background-color: var(--bg-buttonHover);
+                  background-color: var(--bg-buttonHoverFirst);
                 }
               }
               //!SUBMIT FORM BTN

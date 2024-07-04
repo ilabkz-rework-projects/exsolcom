@@ -137,6 +137,18 @@ html[data-theme='dark']{
     //!PROGRAMMS
     //SERVICES
     .i_services {
+      .i_projects-section{
+        .i_projects-section__item{
+          a{
+            &:hover {
+
+              &:before {
+                background-image: url("../img/svg/slider-hover-products-dark.svg");
+              }
+            }
+          }
+        }
+      }
       .i_services-title {
         .i_services-title-icon {
           width: 50px;

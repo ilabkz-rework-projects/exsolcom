@@ -97,7 +97,7 @@ body {
   margin: 0 auto;
   width: 1520px;
 }
-@media screen and (max-width: 1520px) {
+@media screen and (max-width: 1620px) {
   .i_container {
     max-width: 96%;
     margin: 0 30px;
