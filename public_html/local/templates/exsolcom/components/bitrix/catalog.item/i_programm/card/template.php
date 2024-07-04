@@ -26,39 +26,15 @@ use \Bitrix\Main\Localization\Loc;
 ?>
 
 <?php
-//Добавляю дату
-if ($item['DATE_ACTIVE_FROM']) {
-// Исходная дата
-	$originalDate = $item['DATE_ACTIVE_FROM'];
-
-// Создаем объект DateTime из строки
-	$date = DateTime::createFromFormat('d.m.Y H:i:s', $originalDate);
-
-// Массив с названиями месяцев на русском
-	$months = [
-		1 => 'января', 2 => 'февраля', 3 => 'марта', 4 => 'апреля',
-		5 => 'мая', 6 => 'июня', 7 => 'июля', 8 => 'августа',
-		9 => 'сентября', 10 => 'октября', 11 => 'ноября', 12 => 'декабря'
-	];
-
-// Получаем день, месяц и год
-	$day = $date->format('d');
-	$month = $months[(int)$date->format('m')];
-	$year = $date->format('Y');
-
-// Формируем строку
-	$formattedDate = sprintf('%d %s %d', $day, $month, $year);
-}
 
 
-$arFilter = array(
-	'IBLOCK_ID' => 2,
-);
+$res = CIBlockElement::GetList([], ['IBLOCK_ID' => 9, 'ID' => $item['ID']], false, false, ['PROPERTY_I_PRICE']);
+$arResult = [];
+$price = 0;
 
-$dbRes = \CIBlockSection::GetList(array(), $arFilter, false, array("*")); // UF_* для выбора всех пользовательских свойств);
-
-while ($arRes = $dbRes->GetNext()) {
-	$arResult['ELEMENT'][$arRes['ID']] = $arRes;
+while($ob = $res->Fetch())
+{
+	$price = $ob['PROPERTY_I_PRICE_VALUE'];
 }
 
 
@@ -74,6 +50,9 @@ while ($arRes = $dbRes->GetNext()) {
 			<div class="product-item-detail-title">
 				<span><?= $item['PREVIEW_TEXT'] ?></span>
 			</div>
+			<div class="product-item-detail-price">
+				<span><?= $price ?> ₸ (электронная версия)</span>
+			</div>
 			<div class="product-item-btn">
 				<button>Запросить КП</button>
 			</div>
@@ -83,6 +62,6 @@ while ($arRes = $dbRes->GetNext()) {
 
 <?php
 //echo '<pre>';
-//print_r($item);
+//print_r($arResult['ELEMENT'][$item['ID']]);
 //echo '</pre>';
 ?>
