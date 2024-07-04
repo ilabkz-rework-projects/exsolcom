@@ -1,6 +1,5 @@
 <?if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true)die();
 $this->setFrameMode(true);
-use Ilab\Data\iGet;
 // ---------------------------------------------------------------------------------------------------- iLaB
 if($arResult):?>
 	<div class="i_projects-section">
