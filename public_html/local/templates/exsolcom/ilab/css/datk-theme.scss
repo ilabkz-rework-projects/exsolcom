@@ -137,6 +137,17 @@ html[data-theme='dark']{
     //!PROGRAMMS
     //SERVICES
     .i_services {
+      .i_projects-title {
+        .i_projects-title-icon {
+          background-image: url(../img/svg/projects-icon_b.svg);
+          @media screen and (max-width: 760px) {
+            width: 40px;
+            height: 40px;
+            background-size: 36px;
+          }
+        }
+      }
+
       .i_projects-section{
         .i_projects-section__item{
           a{

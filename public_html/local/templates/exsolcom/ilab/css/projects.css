@@ -1,3 +1,64 @@
+.i_projects-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.i_projects-title .i_projects-title-icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-circles);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/svg/projects-icon_w.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50px;
+}
+@media screen and (max-width: 760px) {
+  .i_projects-title .i_projects-title-icon {
+    width: 40px;
+    height: 40px;
+    background-size: 36px;
+  }
+}
+.i_projects-title .i_projects-title-name {
+  display: flex;
+  justify-content: flex-start;
+}
+.i_projects-title .i_projects-title-name span {
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--color-black);
+}
+@media screen and (max-width: 1330px) {
+  .i_projects-title .i_projects-title-name span {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_projects-title .i_projects-title-name span {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_projects-title .i_projects-title-name span {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .i_projects-title .i_projects-title-name {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_projects-title .i_projects-title-name {
+    width: unset;
+  }
+}
+
 .i_projects-section {
   display: flex;
   flex-direction: row;
@@ -163,8 +224,28 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 80px;
+  margin-top: 70px;
   gap: 30px;
+}
+@media screen and (max-width: 1330px) {
+  .i_projects-element {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 940px) {
+  .i_projects-element {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_projects-element {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .i_projects-element {
+    gap: 17px;
+  }
 }
 .i_projects-element .i_projects-element__item {
   width: calc(20% - 24px);
@@ -179,8 +260,52 @@
   min-height: 280px;
   cursor: pointer;
 }
+@media screen and (max-width: 1240px) {
+  .i_projects-element .i_projects-element__item {
+    width: calc(25% - 24px);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .i_projects-element .i_projects-element__item {
+    width: calc(30% - 70px);
+  }
+}
+@media screen and (max-width: 940px) {
+  .i_projects-element .i_projects-element__item {
+    width: calc(40% - 75px);
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_projects-element .i_projects-element__item {
+    width: calc(40% - 61px);
+    padding: 20px 20px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .i_projects-element .i_projects-element__item {
+    width: calc(50% - 10px);
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_projects-element .i_projects-element__item {
+    width: calc(48% - 4px);
+    padding: 20px 16px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .i_projects-element .i_projects-element__item {
+    width: calc(50% - 10px);
+    padding: 15px 12px;
+  }
+}
 .i_projects-element .i_projects-element__item .i_projects-element__item__img {
-  max-width: 120px;
+  max-width: 233px;
+  min-width: 164px;
+}
+@media screen and (max-width: 760px) {
+  .i_projects-element .i_projects-element__item .i_projects-element__item__img {
+    min-width: 134px;
+  }
 }
 .i_projects-element .i_projects-element__item .i_projects-element__item__img img {
   width: 100%;
@@ -188,11 +313,24 @@
 .i_projects-element .i_projects-element__item .i_projects-element__content {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 35px;
+}
+.i_projects-element .i_projects-element__item .i_projects-element__content .i_projects-element__item__name span {
+  font-size: 0.875rem;
+}
+@media screen and (max-width: 375px) {
+  .i_projects-element .i_projects-element__item .i_projects-element__content .i_projects-element__item__name span {
+    font-size: 0.813rem;
+  }
 }
 .i_projects-element .i_projects-element__item .i_projects-element__content .i_projects-element__item__text span {
   color: var(--color-text-input);
-  font-size: 0.875rem;
+  font-size: 0.813rem;
+}
+@media screen and (max-width: 375px) {
+  .i_projects-element .i_projects-element__item .i_projects-element__content .i_projects-element__item__text span {
+    font-size: 0.75rem;
+  }
 }
 
 /*# sourceMappingURL=projects.css.map */
