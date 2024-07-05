@@ -140,20 +140,6 @@ $main = CSite::InDir(SITE_DIR.'index.php');
 					<svg class="lupa-icon" width="18" height="18" viewBox="0 0 173 173" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M169.9 170C166.8 173.1 161.7 173.1 158.6 170L110.2 121.6C80.6997 144.8 37.9997 139.8 14.6997 110.3C-8.50034 80.8 -3.50034 38.1 25.9997 14.8C55.4997 -8.4 98.1997 -3.4 121.5 26.1C140.9 50.8 140.9 85.6 121.5 110.3L169.9 158.7C173.1 161.8 173.1 166.8 169.9 170C170 169.9 170 169.9 169.9 170ZM105.6 30.7C84.8997 9.99999 51.2997 9.99999 30.5997 30.7C9.89967 51.4 9.89967 85 30.5997 105.7C51.2997 126.4 84.8997 126.4 105.6 105.7C126.3 84.9 126.3 51.4 105.6 30.7Z" />
 					</svg>
-					<div class="i_search-container">
-						<div id="title-search" class="i_search">
-							<span class="i_search-close"></span>
-							<form action="/search/index.php">
-								<input id="title-search-input" class="color-text" type="text" placeholder="Искать на сайте" maxlength="50" autocomplete="off" size="10">
-								<div class="search_button">
-									<svg class="lupa-icon2" width="18" height="18" viewBox="0 0 173 173" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M169.9 170C166.8 173.1 161.7 173.1 158.6 170L110.2 121.6C80.6997 144.8 37.9997 139.8 14.6997 110.3C-8.50034 80.8 -3.50034 38.1 25.9997 14.8C55.4997 -8.4 98.1997 -3.4 121.5 26.1C140.9 50.8 140.9 85.6 121.5 110.3L169.9 158.7C173.1 161.8 173.1 166.8 169.9 170C170 169.9 170 169.9 169.9 170ZM105.6 30.7C84.8997 9.99999 51.2997 9.99999 30.5997 30.7C9.89967 51.4 9.89967 85 30.5997 105.7C51.2997 126.4 84.8997 126.4 105.6 105.7C126.3 84.9 126.3 51.4 105.6 30.7Z" />
-									</svg>
-									<input name="s" type="submit" value="Найти">
-								</div>
-							</form>
-						</div>
-					</div>
 				</button>
 				<button id="myCircles" class="i_header-circles i_header_select">
 					<a href="tel:+77005010039" class="i_phone_wpp">
@@ -174,6 +160,27 @@ $main = CSite::InDir(SITE_DIR.'index.php');
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M170 143H14C6.3 143 0 136.7 0 129V14C0 6.3 6.3 0 14 0H170C177.7 0 184 6.3 184 14V129C184 136.7 177.7 143 170 143ZM97.8 106.1C94.6 109.2 89.5 109.2 86.3 106.1L68 87.8L28.8 127H155.2L116 87.8L97.8 106.1ZM16 117.2L56.7 76.5L16 35.8V117.2ZM18.8 16L92 89.2L165.2 16H18.8ZM127.3 76.5L168 117.2V35.8L127.3 76.5Z" />
 					</svg>
 				</button>
+			</div>
+			<div class="i_search-container">
+
+				<?$APPLICATION->IncludeComponent(
+					"bitrix:search.title",
+					"i_search-input",
+					Array(
+						"CATEGORY_0" => "",
+						"CATEGORY_0_TITLE" => "",
+						"CHECK_DATES" => "N",
+						"CONTAINER_ID" => "title-search",
+						"INPUT_ID" => "title-search-input",
+						"NUM_CATEGORIES" => "1",
+						"ORDER" => "date",
+						"PAGE" => "#SITE_DIR#search/index.php",
+						"SHOW_INPUT" => "Y",
+						"SHOW_OTHERS" => "N",
+						"TOP_COUNT" => "5",
+						"USE_LANGUAGE_GUESS" => "Y"
+					)
+				);?>
 			</div>
 			<!--!HEADER MORE-->
 		</div>

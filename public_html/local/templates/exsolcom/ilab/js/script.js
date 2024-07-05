@@ -209,20 +209,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 	// Отвечает за раскрытие блока поиска в header
 	const searchWrapper = document.querySelector('.i_search-wrapper');
-	const titleSearch = document.getElementById('title-search');
-	const closeSearch = document.querySelector('.i_search-close');
+	const titleSearch = document.querySelector('#title-search');
+	const searchClose = document.querySelector('.i_search-close');
 
 	searchWrapper.addEventListener('click', () => {
-		if (!searchWrapper.classList.contains('widely')) {
-			searchWrapper.classList.add('widely');
-		}
-
-		closeSearch.addEventListener('click', (event) => {
-			event.stopPropagation();
-			searchWrapper.classList.remove('widely');
-		});
-
+		titleSearch.classList.toggle('active')
 	});
+
+	searchClose.addEventListener('click', () => {
+		titleSearch.classList.remove('active')
+	})
 
 	// Получаем данные для модальных окон
 	const servicesItems = document.querySelectorAll('.i_services-item');
