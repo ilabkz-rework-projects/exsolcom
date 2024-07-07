@@ -44,6 +44,7 @@ $strSectionEdit = CIBlock::GetArrayByID($arParams["IBLOCK_ID"], "SECTION_EDIT");
 $strSectionDelete = CIBlock::GetArrayByID($arParams["IBLOCK_ID"], "SECTION_DELETE");
 $arSectionDeleteParams = array("CONFIRM" => GetMessage('CT_BCSL_ELEMENT_DELETE_CONFIRM'));
 
+
 ?><div class="<? echo $arCurView['CONT']; ?>"><?
 if ('Y' == $arParams['SHOW_PARENT_NAME'] && 0 < $arResult['SECTION']['ID'])
 {
@@ -88,7 +89,7 @@ if (0 < $arResult["SECTIONS_COUNT"])
 							: $arSection["NAME"]
 						)
 					);
-				?><li id="<? echo $this->GetEditAreaId($arSection['ID']); ?>">
+				?><li id="<? echo $this->GetEditAreaId($arSection['ID']); ?>" class="<?=!$arParams['CURRENT_SECTION_ID'] ? 'menu-all-articles' : ''?>">
 				<a
 					href="<? echo $arSection['SECTION_PAGE_URL']; ?>"
 					class="bx_catalog_line_img"
@@ -194,7 +195,7 @@ if (0 < $arResult["SECTIONS_COUNT"])
 				}
 
 				echo (!$boolFirst ? "\n" : ''),str_repeat("\t", $arSection['RELATIVE_DEPTH_LEVEL']);
-				?><li id="<?=$this->GetEditAreaId($arSection['ID']);?>"><h2 class="bx_sitemap_li_title"><a href="<? echo $arSection["SECTION_PAGE_URL"]; ?>"><? echo $arSection["NAME"];?><?
+				?><li  id="<?=$this->GetEditAreaId($arSection['ID']);?>" class="<?=$arParams['CURRENT_SECTION_ID'] === $arSection['ID'] ? 'menu-all-articles' : ''?>"><h2 class="bx_sitemap_li_title"><a href="<? echo $arSection["SECTION_PAGE_URL"]; ?>"><? echo $arSection["NAME"];?><?
 				if ($arParams["COUNT_ELEMENTS"] && $arSection['ELEMENT_CNT'] !== null)
 				{
 					?> <span>(<? echo $arSection["ELEMENT_CNT"]; ?>)</span><?

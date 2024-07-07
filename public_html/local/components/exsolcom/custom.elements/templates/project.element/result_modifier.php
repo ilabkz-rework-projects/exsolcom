@@ -15,7 +15,7 @@ $parsedUrl = parse_url($requestUri, PHP_URL_PATH);
 $code = basename($parsedUrl);
 $currentSectionId = 0;
 
-$arSection = \CIBlockSection::GetList(array(), array('CODE' => $code, 'IBLOCK_ID' => 5,));
+$arSection = \CIBlockSection::GetList(array(), array('CODE' => $code, 'IBLOCK_ID' => 5));
 
 while($arSec = $arSection->GetNext()) {
 	$currentSectionId = $arSec['ID'];

@@ -117,6 +117,13 @@
                         <!--!FOOTER RIGHT MENU BURGER-->
                         <div class="i_footer-right-hope">
                             <!--FOOTER RIGHT ICON-->
+		                        <a href="/blog">
+			                        <button class="i_footer-right-more-blog">
+			                          Блог
+			                        </button>
+		                        </a>
+	                        <!--FOOTER RIGHT ICON-->
+                            <!--FOOTER RIGHT BLOG-->
                             <div class="i_footer-right-icons">
                                 <button id="myCircles3" class="i_footer-right-more-icon">
                                     <a href="tel:+77005010039" class="i_phone_wpp">
@@ -138,11 +145,6 @@
                                     </svg>
                                 </button>
                             </div>
-                            <!--FOOTER RIGHT ICON-->
-                            <!--FOOTER RIGHT BLOG-->
-                            <button class="i_footer-right-more-blog">
-                                Блог
-                            </button>
                             <!--!FOOTER RIGHT BLOG-->
 
                             <!--FOOTER RIGHT ICON-->

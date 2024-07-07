@@ -190,6 +190,7 @@ span:hover {
 .i_modal .i_modal-header .i_modal-header-container {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 @media screen and (max-width: 840px) {
   .i_modal .i_modal-header .i_modal-header-container {
@@ -260,6 +261,7 @@ span:hover {
 }
 .i_modal .i_modal-header .i_modal-img img {
   width: 100%;
+  object-fit: none;
 }
 .i_modal .i_modal-header .i_modal-header-content {
   width: 65%;

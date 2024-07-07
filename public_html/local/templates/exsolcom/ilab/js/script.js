@@ -266,51 +266,56 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 					const content = data.CONTENT;
 
-					// Регулярное выражение для поиска <div class="i_modal-preview">...</div>
-					const modalPreviewRegex = /<div class="i_modal-preview">[\s\S]*?<\/div>/;
-					const modalPreviewContentRegex = /<span class="i_modal-preview-content">[\s\S]*?<\/span>/;
-					const modalPreviewEndingRegex = /<span class="i_modal-preview-ending">[\s\S]*?<\/span>/;
-					// Найти совпадение
-					const matchPreview = content.match(modalPreviewRegex);
-					const matchPreviewContent = content.match(modalPreviewContentRegex);
-					const matchPreviewEnding = content.match(modalPreviewEndingRegex);
+					if(content){
+						// Регулярное выражение для поиска <div class="i_modal-preview">...</div>
+						const modalPreviewRegex = /<div class="i_modal-preview">[\s\S]*?<\/div>/;
+						const modalPreviewContentRegex = /<span class="i_modal-preview-content">[\s\S]*?<\/span>/;
+						const modalPreviewEndingRegex = /<span class="i_modal-preview-ending">[\s\S]*?<\/span>/;
+						// Найти совпадение
+						const matchPreview = content.match(modalPreviewRegex);
+						const matchPreviewContent = content.match(modalPreviewContentRegex);
+						const matchPreviewEnding = content.match(modalPreviewEndingRegex);
+
+						let modalPreviewContent = '';
+						let modalPreviewContentContent = '';
+						let modalPreviewContentEnding = '';
+						let otherContent = '';
+
+						if(matchPreviewContent){
+							// Совпадение найдено
+							modalPreviewContentContent = matchPreviewContent[0];
+							// Остальной контент
+							otherContent = content.replace(modalPreviewContentContent, '').trim();
+						}
+
+						if(matchPreviewEnding){
+							// Совпадение найдено
+							modalPreviewContentEnding = matchPreviewEnding[0];
+							// Остальной контент
+							otherContent = content.replace(modalPreviewContentEnding, '').trim();
+						}
+
+						if (matchPreview) {
+							// Совпадение найдено
+							modalPreviewContent = matchPreview[0];
+							// Остальной контент
+							otherContent = content.replace(modalPreviewContent, '').trim();
+						} else{
+							// Совпадение не найдено, все содержимое остается в otherContent
+							otherContent = content;
+						}
 
 
-					let modalPreviewContent = '';
-					let modalPreviewContentContent = '';
-					let modalPreviewContentEnding = '';
-					let otherContent = '';
+						modal.querySelector('.i_modal-header-content').innerHTML += modalPreviewContent;
+						modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentContent;
+						modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentEnding;
 
-					if(matchPreviewContent){
-						// Совпадение найдено
-						modalPreviewContentContent = matchPreviewContent[0];
-						// Остальной контент
-						otherContent = content.replace(modalPreviewContentContent, '').trim();
+						modal.querySelector('.i_modal-content').innerHTML = otherContent
+					}else{
+						modal.querySelector('.i_modal-content').innerHTML = data.PREVIEW_TEXT
+						modal.querySelector('.i_modal-header-content').innerHTML = data.NAME
 					}
 
-					if(matchPreviewEnding){
-						// Совпадение найдено
-						modalPreviewContentEnding = matchPreviewEnding[0];
-						// Остальной контент
-						otherContent = content.replace(modalPreviewContentEnding, '').trim();
-					}
-
-					if (matchPreview) {
-						// Совпадение найдено
-						modalPreviewContent = matchPreview[0];
-						// Остальной контент
-						otherContent = content.replace(modalPreviewContent, '').trim();
-					} else{
-						// Совпадение не найдено, все содержимое остается в otherContent
-						otherContent = content;
-					}
-
-
-					modal.querySelector('.i_modal-header-content').innerHTML += modalPreviewContent;
-					modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentContent;
-					modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentEnding;
-
-					modal.querySelector('.i_modal-content').innerHTML = otherContent
 					modal.querySelector('.i_modal-img').innerHTML = `<img src="${data.IMAGE}" alt="${data.NAME}">`
 				})
 		})
@@ -335,50 +340,55 @@ document.addEventListener('DOMContentLoaded', (event) => {
 					modal.classList.add('active')
 
 					const content = data.CONTENT;
-					// Регулярное выражение для поиска <div class="i_modal-preview">...</div>
-					const modalPreviewRegex = /<div class="i_modal-preview">[\s\S]*?<\/div>/;
-					const modalPreviewContentRegex = /<div class="i_modal-preview-content">[\s\S]*?<\/div>/;
-					const modalPreviewEndingRegex = /<div class="i_modal-preview-ending">[\s\S]*?<\/div>/;
-					// Найти совпадение
-					const matchPreview = content.match(modalPreviewRegex);
-					const matchPreviewContent = content.match(modalPreviewContentRegex);
-					const matchPreviewEnding = content.match(modalPreviewEndingRegex);
 
-					let modalPreviewContent = '';
-					let modalPreviewContentContent = '';
-					let modalPreviewContentEnding = '';
-					let otherContent = '';
+					if(content){
+						// Регулярное выражение для поиска <div class="i_modal-preview">...</div>
+						const modalPreviewRegex = /<div class="i_modal-preview">[\s\S]*?<\/div>/;
+						const modalPreviewContentRegex = /<div class="i_modal-preview-content">[\s\S]*?<\/div>/;
+						const modalPreviewEndingRegex = /<div class="i_modal-preview-ending">[\s\S]*?<\/div>/;
+						// Найти совпадение
+						const matchPreview = content.match(modalPreviewRegex);
+						const matchPreviewContent = content.match(modalPreviewContentRegex);
+						const matchPreviewEnding = content.match(modalPreviewEndingRegex);
 
-					if (matchPreview) {
-						// Совпадение найдено
-						modalPreviewContent = matchPreview[0];
+						let modalPreviewContent = '';
+						let modalPreviewContentContent = '';
+						let modalPreviewContentEnding = '';
+						let otherContent = '';
 
-						// Остальной контент
-						otherContent = content.replace(modalPreviewContent, '').trim();
-					} else if(matchPreviewContent){
-						// Совпадение найдено
-						modalPreviewContentContent = matchPreviewContent[0];
+						if (matchPreview) {
+							// Совпадение найдено
+							modalPreviewContent = matchPreview[0];
 
-						// Остальной контент
-						otherContent = content.replace(modalPreviewContentContent, '').trim();
-					}else if(matchPreviewEnding){
-						// Совпадение найдено
-						modalPreviewContentEnding = matchPreviewEnding[0];
+							// Остальной контент
+							otherContent = content.replace(modalPreviewContent, '').trim();
+						} else if(matchPreviewContent){
+							// Совпадение найдено
+							modalPreviewContentContent = matchPreviewContent[0];
 
-						// Остальной контент
-						otherContent = content.replace(modalPreviewContentEnding, '').trim();
+							// Остальной контент
+							otherContent = content.replace(modalPreviewContentContent, '').trim();
+						}else if(matchPreviewEnding){
+							// Совпадение найдено
+							modalPreviewContentEnding = matchPreviewEnding[0];
+
+							// Остальной контент
+							otherContent = content.replace(modalPreviewContentEnding, '').trim();
+						}else{
+							// Совпадение не найдено, все содержимое остается в otherContent
+							otherContent = content;
+						}
+
+						modal.querySelector('.i_modal-header-content').innerHTML += modalPreviewContent;
+						modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentContent;
+						modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentEnding;
+
+						modal.querySelector('.i_modal-content').innerHTML = otherContent
 					}else{
-						// Совпадение не найдено, все содержимое остается в otherContent
-						otherContent = content;
+						modal.querySelector('.i_modal-content').innerHTML = data.PREVIEW_TEXT
+						modal.querySelector('.i_modal-header-content').innerHTML = data.NAME
 					}
 
-					console.log(modalPreviewContent)
-
-					modal.querySelector('.i_modal-header-content').innerHTML += modalPreviewContent;
-					modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentContent;
-					modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentEnding;
-
-					modal.querySelector('.i_modal-content').innerHTML = otherContent
 					modal.querySelector('.i_modal-img').innerHTML = `<img src="${data.IMAGE}" alt="${data.NAME}">`
 				})
 		})
