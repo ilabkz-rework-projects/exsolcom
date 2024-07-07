@@ -54,7 +54,7 @@ while($ob = $res->Fetch())
 				<span><?= $price ?> ₸ (электронная версия)</span>
 			</div>
 			<div class="product-item-btn">
-				<button>Запросить КП</button>
+				<button id="form-kp-btn">Запросить КП</button>
 			</div>
 		</div>
 	</div>

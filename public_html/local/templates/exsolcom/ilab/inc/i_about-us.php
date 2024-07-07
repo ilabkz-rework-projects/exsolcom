@@ -1377,7 +1377,7 @@
 			<!--!WORK PROCESS BODY-->
 			<!--WORK PROCESS BNT-->
 			<div class="i_work-process-btn">
-				<button>
+				<button id="form-kp-btn">
 					Запросить коммерческое предложение
 				</button>
 			</div>

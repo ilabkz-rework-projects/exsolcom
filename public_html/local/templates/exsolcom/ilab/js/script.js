@@ -388,7 +388,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 	const submitBtn = document.querySelectorAll('#submit-btn')
 	const submitModal = document.querySelector('.i_submit')
-	const submitCloseBtn = document.querySelector('.i_submit-close')
+	const submitCloseBtn = submitModal.querySelector('.i_submit-close')
 
 	submitBtn.forEach(item => {
 		item.addEventListener('click', () => {
@@ -404,6 +404,28 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		overlay.classList.remove('active')
 	})
 
+	// FORM KP
+
+	const formKp = document.querySelectorAll('#form-kp-btn')
+	const formKpModal = document.querySelector('.i_form-kp')
+	const formKpCloseBtn = formKpModal.querySelector('.i_submit-close')
+
+	formKp.forEach(item => {
+		item.addEventListener('click', () => {
+			modal.classList.remove('active')
+			submitModal.classList.remove('active')
+			formKpModal.classList.add('active')
+			overlay.classList.add('active')
+		})
+	})
+
+
+	formKpCloseBtn.addEventListener('click', (event) => {
+		submitModal.classList.remove('active')
+		overlay.classList.remove('active')
+		formKpModal.classList.remove('active')
+	})
+
 	//OVERLAY
 	document.addEventListener('keydown', (event) => {
 		if (event.key === 'Escape') {
@@ -411,6 +433,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			modal.classList.remove('active')
 			sideMenu.classList.remove('show')
 			submitModal.classList.remove('active')
+			formKpModal.classList.remove('active')
 		}
 	})
 
@@ -419,6 +442,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			overlay.classList.remove('active')
 			modal.classList.remove('active')
 			submitModal.classList.remove('active')
+			formKpModal.classList.remove('active')
 		}
 	})
 

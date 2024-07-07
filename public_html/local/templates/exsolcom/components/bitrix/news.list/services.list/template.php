@@ -54,7 +54,7 @@ $this->setFrameMode(true);
 		<?if($arParams["DISPLAY_NAME"]!="N" && $arItem["NAME"]):?>
 			<div class="i_services-name">
 				<?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
-					<a href="<?echo $arItem["DETAIL_PAGE_URL"]?>"><b><?echo $arItem["NAME"]?></b></a><br />
+					<b><?echo $arItem["NAME"]?></b><br />
 				<?else:?>
 					<b><?echo $arItem["NAME"]?></b><br />
 				<?endif;?>

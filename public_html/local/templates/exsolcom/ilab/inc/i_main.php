@@ -240,7 +240,7 @@
 		<!--!Группа анонсы-->
 		<!--Кнопка Запросить коммерческое предложение-->
 		<div class="i_our-services-btn-request">
-			<button>Запросить коммерческое предложение</button>
+			<button id="form-kp-btn">Запросить коммерческое предложение</button>
 		</div>
 		<!--!Кнопка Запросить комерческое предложение-->
 	</div>
@@ -377,7 +377,7 @@
 							<span>ERP ERP Управление предприятием 2 для Казахстана</span>
 						</div>
 						<div class="swiper-detail-btn">
-							<button id="submit-btn">Запросить КП</button>
+							<button id="form-kp-btn">Запросить КП</button>
 						</div>
 					</div>
 				</div>
@@ -393,7 +393,7 @@
 							<span>ERP ERP Управление предприятием 2 для Казахстана</span>
 						</div>
 						<div class="swiper-detail-btn">
-							<button>Запросить КП</button>
+							<button id="form-kp-btn">Запросить КП</button>
 						</div>
 					</div>
 				</div>
@@ -409,7 +409,7 @@
 							<span>ERP ERP Управление предприятием 2 для Казахстана</span>
 						</div>
 						<div class="swiper-detail-btn">
-							<button>Запросить КП</button>
+							<button id="form-kp-btn">Запросить КП</button>
 						</div>
 					</div>
 				</div>
@@ -425,7 +425,7 @@
 							<span>ERP ERP Управление предприятием 2 для Казахстана</span>
 						</div>
 						<div class="swiper-detail-btn">
-							<button>Запросить КП</button>
+							<button id="form-kp-btn">Запросить КП</button>
 						</div>
 					</div>
 				</div>
@@ -441,7 +441,7 @@
 							<span>ERP ERP Управление предприятием</span>
 						</div>
 						<div class="swiper-detail-btn">
-							<button>Запросить КП</button>
+							<button id="form-kp-btn">Запросить КП</button>
 						</div>
 					</div>
 				</div>
@@ -457,14 +457,16 @@
 							<span>Текст рыбы</span>
 						</div>
 						<div class="swiper-detail-btn">
-							<button>Запросить КП</button>
+							<button id="form-kp-btn">Запросить КП</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="i_products-btn">
-			<button>Перейти в каталог</button>
+			<a href="/programm-products">
+				<button>Перейти в каталог</button>
+			</a>
 		</div>
 		<div class="pagination">
 			<div class="swiper-products-button-prev">
@@ -515,7 +517,7 @@
 				<!--Software text-->
 				<!--Software Кнопка-->
 				<div class="i_software-btn">
-					<button>Запросить прайс лист и КП</button>
+					<button id="form-kp-btn">Запросить прайс лист и КП</button>
 				</div>
 				<!--Software Кнопка-->
 			</div>

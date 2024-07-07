@@ -256,7 +256,7 @@
 		</div>
 		<div class="i_modal-footer">
 			<div class="i_modal-footer-btn">
-				<button id="submit-btn">Запросить коммерческое предложение</button>
+				<button id="form-kp-btn">Запросить коммерческое предложение</button>
 			</div>
 		</div>
 	</div>
@@ -276,6 +276,29 @@
 					var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
 					var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 				})(window,document,'https://cdn-ru.bitrix24.kz/b5265933/crm/form/loader_15.js');
+			</script>
+		</div>
+	</div>
+</div>
+
+<div class="i_form-kp">
+	<div class="i_container_modal">
+		<div class="i_submit-close">
+			<img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/svg/closeModal-dark.svg'?>" alt="x">
+		</div>
+		<div class="i_submit-header">
+			<span>Запросить коммерческое предложение</span>
+		</div>
+		<div class="i_submit-content">
+			<script id="bx24_form_inline" data-skip-moving="true">
+				(function(w,d,u,b){w['Bitrix24FormObject']=b;w[b] = w[b] || function(){arguments[0].ref=u;
+					(w[b].forms=w[b].forms||[]).push(arguments[0])};
+					if(w[b]['forms']) return;
+					var s=d.createElement('script');s.async=1;s.src=u+'?'+(1*new Date());
+					var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+				})(window,document,'https://exsolcom.bitrix24.kz/bitrix/js/crm/form_loader.js','b24form');
+
+				b24form({"id":"8","lang":"ru","sec":"ij6veh","type":"inline","node": document.getElementById('kp_container')});
 			</script>
 		</div>
 	</div>

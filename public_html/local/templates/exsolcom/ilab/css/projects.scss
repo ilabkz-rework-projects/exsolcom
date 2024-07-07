@@ -215,6 +215,7 @@
     border-radius: 30px;
     min-height: 280px;
     cursor: pointer;
+    background-color: var(--bg-block);
     @media screen and (max-width: 1240px){
       width: calc(25% - 24px);
     }
@@ -254,13 +255,14 @@
       flex-direction: column;
       gap: 35px;
       .i_projects-element__item__name span{
+        color: var(--color-textInfoblock);
         font-size: 0.875rem;
         @media screen and (max-width: 375px){
           font-size: 0.813rem;
         }
       }
       .i_projects-element__item__text span{
-        color: var(--color-text-input);
+        color: var(--color-text-li);
         font-size: 0.813rem;
         @media screen and (max-width: 375px){
           font-size: 0.75rem;

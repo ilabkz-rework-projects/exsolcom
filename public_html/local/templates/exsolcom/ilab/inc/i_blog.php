@@ -1,5 +1,4 @@
 <div class="i_blog">
-
 	<div class="i_blog-title">
 		<div class="i_blog-title-icon">
             <svg width="30" height="24" viewBox="0 0 295 228" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

@@ -29,7 +29,7 @@
 				</div>
 				<!--Software text-->
 				<!--Software Кнопка-->
-				<button class="i_software-btn">Запросить прайс лист и КП</button>
+				<button class="i_software-btn" id="form-kp-btn">Запросить прайс лист и КП</button>
 				<!--Software Кнопка-->
 			</div>
 			<!--Текст с кнопкой-->

@@ -1,4 +1,5 @@
-.i_submit {
+.i_submit,
+.i_form-kp {
   background-color: var(--bg-block);
   position: fixed;
   top: 50%;
@@ -14,12 +15,14 @@
   height: max-content;
   border-radius: 35px;
 }
-.i_submit.active {
+.i_submit.active,
+.i_form-kp.active {
   opacity: 1;
   visibility: visible;
   transform: translate(-50%, -50%);
 }
-.i_submit .i_submit-close {
+.i_submit .i_submit-close,
+.i_form-kp .i_submit-close {
   position: absolute;
   top: 30px;
   z-index: 10;
@@ -35,75 +38,91 @@
   justify-content: center;
 }
 @media screen and (max-width: 480px) {
-  .i_submit .i_submit-close {
+  .i_submit .i_submit-close,
+  .i_form-kp .i_submit-close {
     right: 20px;
     top: 20px;
   }
 }
 @media screen and (max-width: 480px) {
-  .i_submit .i_submit-close {
+  .i_submit .i_submit-close,
+  .i_form-kp .i_submit-close {
     right: 15px;
     top: 15px;
   }
 }
-.i_submit .i_submit-close img {
+.i_submit .i_submit-close img,
+.i_form-kp .i_submit-close img {
   width: 30px;
   height: 30px;
 }
-.i_submit .i_submit-close:hover {
+.i_submit .i_submit-close:hover,
+.i_form-kp .i_submit-close:hover {
   color: var(--color-red);
 }
-.i_submit .i_submit-header {
+.i_submit .i_submit-header,
+.i_form-kp .i_submit-header {
   display: flex;
   justify-content: center;
   padding: 40px 0 40px 0;
   border-bottom: 5px dotted #666666;
 }
 @media screen and (max-width: 480px) {
-  .i_submit .i_submit-header {
+  .i_submit .i_submit-header,
+  .i_form-kp .i_submit-header {
     padding: 30px 0 30px 0;
   }
 }
 @media screen and (max-width: 400px) {
-  .i_submit .i_submit-header {
+  .i_submit .i_submit-header,
+  .i_form-kp .i_submit-header {
     padding: 30px 0 25px 0;
   }
 }
-.i_submit .i_submit-header span {
+.i_submit .i_submit-header span,
+.i_form-kp .i_submit-header span {
   color: var(--color-textInfoblock);
   font-size: 1.5em;
 }
 @media screen and (max-width: 480px) {
-  .i_submit .i_submit-header span {
+  .i_submit .i_submit-header span,
+  .i_form-kp .i_submit-header span {
     font-size: 1.3em;
   }
 }
 @media screen and (max-width: 480px) {
-  .i_submit .i_submit-header span {
+  .i_submit .i_submit-header span,
+  .i_form-kp .i_submit-header span {
     font-size: 1.2em;
   }
 }
-.i_submit .i_submit-content .b24-form .b24-form-wrapper {
+.i_submit .i_submit-content .b24-form .b24-form-wrapper,
+.i_form-kp .i_submit-content .b24-form .b24-form-wrapper {
   border-radius: 100px;
   background-color: var(--bg-block);
 }
-.i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-header-padding {
+.i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-header-padding,
+.i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-header-padding {
   padding: 10px;
 }
-.i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content {
+.i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content,
+.i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-content {
   padding: 20px 30px 30px 30px;
 }
 @media screen and (max-width: 480px) {
-  .i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content {
+  .i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content,
+  .i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-content {
     padding: 20px 20px 30px 20px;
   }
 }
 @media screen and (max-width: 400px) {
-  .i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content {
+  .i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content,
+  .i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-content {
     padding: 10px 15px 20px 15px;
   }
 }
-.i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container:before {
+.i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container:before,
+.i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container:before {
   content: "*";
   color: red;
   font-size: 30px;
@@ -117,48 +136,57 @@
   border-radius: 30px;
   justify-content: center;
 }
-.i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container input {
+.i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container input,
+.i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container input {
   color: #919191;
   background-color: #f1f1f1;
   border-radius: 30px;
   border: 1px solid rgb(233, 233, 233);
   padding: 17px 20px 0;
 }
-.i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container .b24-form-control {
+.i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container .b24-form-control,
+.i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container .b24-form-control {
   border-radius: 30px;
   background-color: #f1f1f1;
   padding: 27px 20px 0;
 }
-.i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container .b24-form-control-label {
+.i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container .b24-form-control-label,
+.i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container .b24-form-control-label {
   font-family: "Comfortaa", sans-serif;
   color: #4e4e4e;
   font-size: 15px;
   padding-left: 20px;
 }
-.i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container .b24-form-control-label .b24-form-control-required {
+.i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container .b24-form-control-label .b24-form-control-required,
+.i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container .b24-form-control-label .b24-form-control-required {
   color: transparent;
 }
-.i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content .b24-form-btn-container .b24-form-btn-block {
+.i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content .b24-form-btn-container .b24-form-btn-block,
+.i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-content .b24-form-btn-container .b24-form-btn-block {
   display: flex;
   justify-content: center;
 }
-.i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content .b24-form-btn-container .b24-form-btn-block .b24-form-btn {
+.i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content .b24-form-btn-container .b24-form-btn-block .b24-form-btn,
+.i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-content .b24-form-btn-container .b24-form-btn-block .b24-form-btn {
   background-color: #FF161F;
   width: 70%;
   border-radius: 30px;
   font-family: "Comfortaa", sans-serif;
   font-size: 0.9em;
 }
-.i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content .b24-form-btn-container .b24-form-btn-block .b24-form-btn:hover {
+.i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content .b24-form-btn-container .b24-form-btn-block .b24-form-btn:hover,
+.i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-content .b24-form-btn-container .b24-form-btn-block .b24-form-btn:hover {
   transition: all 0.4s ease;
   box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.17);
   color: var(--color-red);
   background-color: var(--bg-buttonHoverFirst);
 }
-.i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-sign {
+.i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-sign,
+.i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-sign {
   display: none;
 }
-.i_submit .i_submit-content .b24-form .b24-form-wrapper.b24-form-border-bottom {
+.i_submit .i_submit-content .b24-form .b24-form-wrapper.b24-form-border-bottom,
+.i_form-kp .i_submit-content .b24-form .b24-form-wrapper.b24-form-border-bottom {
   border-bottom: transparent;
 }
 
