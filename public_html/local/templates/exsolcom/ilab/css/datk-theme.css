@@ -24,11 +24,29 @@ html[data-theme=dark] .i_modal .i_modal-content .i_snippet.important-info .i_sni
     background-size: 48px;
   }
 }
+html[data-theme=dark] .i_header .i_header-more .i_search-wrapper {
+  background-image: url("../img/svg/lupa-icon_b.svg") !important;
+}
+html[data-theme=dark] .i_header .i_header-more .i_search-wrapper:hover {
+  background-image: url("../img/svg/lupa-icon_w.svg") !important;
+}
 html[data-theme=dark] .i_header .i_header-more #myCircles.wide .close_hide_menu {
   background-image: url("../img/svg/close-iconNight.svg") !important;
 }
 html[data-theme=dark] .i_header .i_header-more #title-search .i_search-close {
   background-image: url("../img/svg/close-iconNight.svg") !important;
+}
+html[data-theme=dark] .i_header .i_search-container #title-search .i_search-close {
+  background-image: url("../img/svg/close-iconNight.svg") !important;
+}
+html[data-theme=dark] .i_header .i_search-container #title-search .i_search-close:hover {
+  background-image: url("../img/svg/close-iconLight.svg") !important;
+}
+html[data-theme=dark] .i_header .i_search-container #title-search .i_search-submit {
+  background-image: url("../img/svg/lupa-icon.svg");
+}
+html[data-theme=dark] .i_header .i_search-container #title-search .i_search-submit:hover {
+  background-image: url("../img/svg/lupa-icon-white.svg");
 }
 html[data-theme=dark] .i_main .i_contacts .i_contacts-title .i_contacts-title-icon {
   background-image: url("../img/svg/contacts-icon_b.svg");

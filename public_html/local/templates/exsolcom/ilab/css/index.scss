@@ -501,10 +501,23 @@ body{
           display: flex;
           justify-content: center;
           align-items: center;
+          background-image: url(../img/svg/lupa-icon_w.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 55px;
+          @media screen and (max-width: 1330px){
+            min-width: 40px;
+            width: 40px;
+            min-height: 40px;
+            height: 40px;
+            background-size: 45px;
+          }
 
           &:hover {
+            transition: all .4s ease;
             background-color: var(--color-circlesHover);
             cursor: pointer;
+            background-image: url(../img/svg/lupa-icon_b.svg);
           }
         }
 
@@ -596,6 +609,7 @@ body{
   #title-search{
     position: absolute;
     right: 166px;
+    //right: 189px; //for 1920px
     top: 50%;
     transform: translateY(-50%);
     width: 0;
@@ -603,15 +617,37 @@ body{
     opacity: 0;
     visibility: hidden;
     transition: all 0.4s ease;
+    @media screen and (max-width: 1590px){
+      right: 27px;
+    }
+    @media screen and (max-width: 1330px){
+      right: 24px;
+    }
+    @media screen and (max-width: 760px){
+      right: 12px;
+    }
+    @media screen and (max-width: 360px){
+      right: 9px;
+    }
     &.active{
       width: 82%;
+      //width: 80.2%; //for 1920px
       opacity: 1;
       visibility: visible;
+      @media screen and (max-width: 1590px){
+        width: 96.8%;
+      }
+      @media screen and (max-width: 1330px){
+        width: 96.5%;
+      }
     }
     form{
       display: flex;
       height: 55px;
       gap: 5px;
+      @media screen and (max-width: 1330px){
+        height: 44px;
+      }
     }
     .i_search-close{
       min-width: 55px;
@@ -624,13 +660,18 @@ body{
       align-items: center;
       border: 0;
       transition: all 0.4s ease;
-      background-image: url(../img/svg/close-iconLight.svg);
+      background-image: url("../img/svg/close-iconLight.svg");
       background-repeat: no-repeat;
       background-position: center;
+      @media screen and (max-width: 1330px){
+        min-width: 44px;
+        height: 44px;
+        background-size: 25px;
+      }
       &:hover{
         background-color: var(--color-circles);
         cursor: pointer;
-        background-image: url(../img/svg/close-iconNight.svg);
+        background-image: url("../img/svg/close-iconNight.svg");
       }
     }
     #title-search-input{
@@ -658,11 +699,18 @@ body{
       align-items: center;
       border: 0;
       transition: all 0.4s ease;
-      background-image: url(../img/svg/lupa-icon-white.svg);
+      background-image: url("../img/svg/lupa-icon-white.svg");
+      background-repeat: no-repeat;
+      background-position: center;
       &:hover{
         background-color: var(--color-circlesHover);
         cursor: pointer;
-        background-image: url(../img/svg/lupa-icon.svg);
+        background-image: url("../img/svg/lupa-icon.svg");
+      }
+      @media screen and (max-width: 1330px){
+        min-width: 44px;
+        height: 44px;
+        background-size: 45px;
       }
     }
   }

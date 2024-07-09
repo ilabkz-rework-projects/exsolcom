@@ -137,9 +137,9 @@ $main = CSite::InDir(SITE_DIR.'index.php');
 					</div>
 				</button>
 				<button class="i_search-wrapper">
-					<svg class="lupa-icon" width="18" height="18" viewBox="0 0 173 173" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M169.9 170C166.8 173.1 161.7 173.1 158.6 170L110.2 121.6C80.6997 144.8 37.9997 139.8 14.6997 110.3C-8.50034 80.8 -3.50034 38.1 25.9997 14.8C55.4997 -8.4 98.1997 -3.4 121.5 26.1C140.9 50.8 140.9 85.6 121.5 110.3L169.9 158.7C173.1 161.8 173.1 166.8 169.9 170C170 169.9 170 169.9 169.9 170ZM105.6 30.7C84.8997 9.99999 51.2997 9.99999 30.5997 30.7C9.89967 51.4 9.89967 85 30.5997 105.7C51.2997 126.4 84.8997 126.4 105.6 105.7C126.3 84.9 126.3 51.4 105.6 30.7Z" />
-					</svg>
+<!--					<svg class="lupa-icon" width="18" height="18" viewBox="0 0 173 173" fill="currentColor" xmlns="http://www.w3.org/2000/svg">-->
+<!--						<path fill-rule="evenodd" clip-rule="evenodd" d="M169.9 170C166.8 173.1 161.7 173.1 158.6 170L110.2 121.6C80.6997 144.8 37.9997 139.8 14.6997 110.3C-8.50034 80.8 -3.50034 38.1 25.9997 14.8C55.4997 -8.4 98.1997 -3.4 121.5 26.1C140.9 50.8 140.9 85.6 121.5 110.3L169.9 158.7C173.1 161.8 173.1 166.8 169.9 170C170 169.9 170 169.9 169.9 170ZM105.6 30.7C84.8997 9.99999 51.2997 9.99999 30.5997 30.7C9.89967 51.4 9.89967 85 30.5997 105.7C51.2997 126.4 84.8997 126.4 105.6 105.7C126.3 84.9 126.3 51.4 105.6 30.7Z" />-->
+<!--					</svg>-->
 				</button>
 				<button id="myCircles" class="i_header-circles i_header_select">
 					<a href="tel:+77005010039" class="i_phone_wpp">
@@ -164,23 +164,33 @@ $main = CSite::InDir(SITE_DIR.'index.php');
 			<div class="i_search-container">
 
 				<?$APPLICATION->IncludeComponent(
-					"bitrix:search.title",
-					"i_search-input",
-					Array(
-						"CATEGORY_0" => "",
-						"CATEGORY_0_TITLE" => "",
-						"CHECK_DATES" => "N",
-						"CONTAINER_ID" => "title-search",
-						"INPUT_ID" => "title-search-input",
-						"NUM_CATEGORIES" => "1",
-						"ORDER" => "date",
-						"PAGE" => "#SITE_DIR#search/index.php",
-						"SHOW_INPUT" => "Y",
-						"SHOW_OTHERS" => "N",
-						"TOP_COUNT" => "5",
-						"USE_LANGUAGE_GUESS" => "Y"
-					)
-				);?>
+	"bitrix:search.title", 
+	"i_search-input", 
+	array(
+		"CATEGORY_0" => array(
+			0 => "no",
+		),
+		"CATEGORY_0_TITLE" => "",
+		"CHECK_DATES" => "Y",
+		"CONTAINER_ID" => "title-search",
+		"INPUT_ID" => "title-search-input",
+		"NUM_CATEGORIES" => "3",
+		"ORDER" => "date",
+		"PAGE" => "#SITE_DIR#search/index.php",
+		"SHOW_INPUT" => "Y",
+		"SHOW_OTHERS" => "N",
+		"TOP_COUNT" => "10",
+		"USE_LANGUAGE_GUESS" => "N",
+		"COMPONENT_TEMPLATE" => "i_search-input",
+		"CATEGORY_1_TITLE" => "",
+		"CATEGORY_1" => array(
+		),
+		"CATEGORY_2_TITLE" => "",
+		"CATEGORY_2" => array(
+		)
+	),
+	false
+);?>
 			</div>
 			<!--!HEADER MORE-->
 		</div>

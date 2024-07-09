@@ -507,10 +507,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(../img/svg/lupa-icon_w.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 55px;
+}
+@media screen and (max-width: 1330px) {
+  .i_header .i_container .i_header-right .i_header-more .i_search-wrapper {
+    min-width: 40px;
+    width: 40px;
+    min-height: 40px;
+    height: 40px;
+    background-size: 45px;
+  }
 }
 .i_header .i_container .i_header-right .i_header-more .i_search-wrapper:hover {
+  transition: all 0.4s ease;
   background-color: var(--color-circlesHover);
   cursor: pointer;
+  background-image: url(../img/svg/lupa-icon_b.svg);
 }
 .i_header .i_container .i_header-right .i_header-more .i_header-circles {
   width: 50px;
@@ -581,15 +596,50 @@ body {
   visibility: hidden;
   transition: all 0.4s ease;
 }
+@media screen and (max-width: 1590px) {
+  .i_search-container #title-search {
+    right: 27px;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .i_search-container #title-search {
+    right: 24px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_search-container #title-search {
+    right: 12px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .i_search-container #title-search {
+    right: 9px;
+  }
+}
 .i_search-container #title-search.active {
   width: 82%;
   opacity: 1;
   visibility: visible;
 }
+@media screen and (max-width: 1590px) {
+  .i_search-container #title-search.active {
+    width: 96.8%;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .i_search-container #title-search.active {
+    width: 96.5%;
+  }
+}
 .i_search-container #title-search form {
   display: flex;
   height: 55px;
   gap: 5px;
+}
+@media screen and (max-width: 1330px) {
+  .i_search-container #title-search form {
+    height: 44px;
+  }
 }
 .i_search-container #title-search .i_search-close {
   min-width: 55px;
@@ -602,14 +652,21 @@ body {
   align-items: center;
   border: 0;
   transition: all 0.4s ease;
-  background-image: url(../img/svg/close-iconLight.svg);
+  background-image: url("../img/svg/close-iconLight.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (max-width: 1330px) {
+  .i_search-container #title-search .i_search-close {
+    min-width: 44px;
+    height: 44px;
+    background-size: 25px;
+  }
 }
 .i_search-container #title-search .i_search-close:hover {
   background-color: var(--color-circles);
   cursor: pointer;
-  background-image: url(../img/svg/close-iconNight.svg);
+  background-image: url("../img/svg/close-iconNight.svg");
 }
 .i_search-container #title-search #title-search-input {
   width: 100%;
@@ -636,12 +693,21 @@ body {
   align-items: center;
   border: 0;
   transition: all 0.4s ease;
-  background-image: url(../img/svg/lupa-icon-white.svg);
+  background-image: url("../img/svg/lupa-icon-white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .i_search-container #title-search .i_search-submit:hover {
   background-color: var(--color-circlesHover);
   cursor: pointer;
-  background-image: url(../img/svg/lupa-icon.svg);
+  background-image: url("../img/svg/lupa-icon.svg");
+}
+@media screen and (max-width: 1330px) {
+  .i_search-container #title-search .i_search-submit {
+    min-width: 44px;
+    height: 44px;
+    background-size: 45px;
+  }
 }
 
 .i_header-bottom {
