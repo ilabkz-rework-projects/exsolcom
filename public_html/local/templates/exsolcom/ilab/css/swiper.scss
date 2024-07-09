@@ -76,6 +76,7 @@
     .swiper.personal{
       width: 100%;
       margin: 70px 0;
+      padding-top: 10px;
       @media screen and (max-width: 680px){
         margin: 60px 0;
       }
@@ -117,10 +118,13 @@
             background-repeat: no-repeat;
             background-position-y: bottom;
           }
-          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
-          &:before{
+          @media screen and (min-width: 1330px){
             box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+            &:before{
+              box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+            }
           }
+
           .swiper-slide-name{
             span{
               color: var(--color-red) !important;
@@ -143,7 +147,7 @@
           left: 50%;
           transform: translate(-50%);
           @media screen and (max-width: 1330px){
-            width: 350px;
+            width: 350px !important;
             height: 350px;
           }
           @media screen and (max-width: 760px){
@@ -178,7 +182,6 @@
           }
           @media screen and (max-width: 760px){
             height: 580px;
-            width: 250px;
             padding: 0 20px 30px 20px;
           }
           .swiper-slide-group{
