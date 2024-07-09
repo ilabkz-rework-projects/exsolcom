@@ -356,6 +356,7 @@
             margin: 0;
             padding: 20px 30px 20px 50px;
             a{
+              text-decoration: none;
               font-size: 20px;
               @media screen and (max-width: 1600px){
                 font-size: 18px;
@@ -378,15 +379,33 @@
       flex-direction: column;
       gap: 30px;
       padding: 70px 0 70px 0;
+      .product-item-small-card{
+        .row{
+          display: flex;
+          gap: 30px;
+          .product-item-big-card{
+            //max-width: 1235px;
+            //display: flex;
+            .row{
+              gap: 0;
+              //padding: 0 0 30px 0;
+            }
+          }
+        }
+      }
       @media screen and (max-width: 1270px){
         gap: 0px;
         .product-item-small-card{
-          .product-item-big-card{
-            width: 100%;
-            max-width: 1235px;
+          .row{
             display: flex;
-            .row{
-              padding: 0 0 30px 0;
+            flex-direction: column;
+            .product-item-big-card{
+              width: 100%;
+              max-width: 1235px;
+              display: flex;
+              .row{
+                padding: 0 0 30px 0;
+              }
             }
           }
         }
@@ -687,6 +706,7 @@
                 width: 100%;
                 .i_vacantion-item-title{
                   display: flex;
+                  font-family: "Open Sans", sans-serif;
                   span{
                     color: var(--color-textInfoblock);
                     @media screen and (max-width: 590px){
