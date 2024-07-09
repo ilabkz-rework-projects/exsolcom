@@ -28,6 +28,9 @@
   display: flex;
   justify-content: flex-start;
 }
+.i_projects-title .i_projects-title-name a {
+  text-decoration: none;
+}
 .i_projects-title .i_projects-title-name span {
   font-size: 32px;
   font-weight: 400;
@@ -47,6 +50,9 @@
   .i_projects-title .i_projects-title-name span {
     font-size: 21px;
   }
+}
+.i_projects-title .i_projects-title-name span:hover {
+  color: var(--color-red);
 }
 @media screen and (max-width: 1000px) {
   .i_projects-title .i_projects-title-name {

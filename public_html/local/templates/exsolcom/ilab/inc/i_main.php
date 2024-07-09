@@ -549,7 +549,9 @@
 				</svg>
 			</div>
 			<div class="i_projects-title-name">
-				<span>НАШИ ПРОЕКТЫ</span>
+                <a href="projects/">
+                    <span>НАШИ ПРОЕКТЫ</span>
+                </a>
 			</div>
 		</div>
 <!--		<div class="swiper projects-swiper">-->
