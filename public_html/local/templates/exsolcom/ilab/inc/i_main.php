@@ -155,7 +155,7 @@
 				<!--Группа Навыки-->
 				<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/main/i_main_banner_right.php',Array(),Array('MODE'=>'html', 'NAME'=>'Правая часть банера', 'SHOW_BORDER'=>true))?>
 				<!--!Группа Навыки-->
-				<button class="i_banner-btn-apply">Оставить заявку</button> <!--Кнопка Оставить заявку-->
+				<button class="i_banner-btn-apply" id="submit-btn">Оставить заявку</button> <!--Кнопка Оставить заявку-->
 			</div>
 			<!--Правая часть баннера-->
 		</div>
