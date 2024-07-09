@@ -57,17 +57,20 @@
 .i_projects-section{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin-top: 80px;
   gap: 40px;
   @media screen and (max-width: 1593px){
+    gap: 40px;
+  }
+  @media screen and (max-width: 1230px){
     gap: 30px;
   }
   @media screen and (max-width: 760px){
     gap: 20px;
   }
-  @media screen and (max-width: 760px){
+  @media screen and (max-width: 360px){
     gap: 16px;
   }
   .i_projects-section__item{
@@ -76,17 +79,24 @@
     width: 16vw;
     height: 11vw;
     min-height: 220px;
-    @media screen and (max-width: 1593px){
-      width: 20%;
+    @media screen and (max-width: 1593px) {
+      width: 14%;
     }
+
+    @media screen and (max-width: 1460px){
+      width: 17%;
+    }
+
     @media screen and (max-width: 1330px){
       min-height: 214px;
     }
+    @media screen and (max-width: 1230px){
+      width: 22%;
+    }
     @media screen and (max-width: 1000px){
-      width: 23%;
       min-height: 204px;
     }
-    @media screen and (max-width: 810px){
+    @media screen and (max-width: 900px){
       width: 30%;
       min-height: 220px;
     }
@@ -124,7 +134,7 @@
       @media screen and (max-width: 1000px){
         width: 204px;
       }
-      @media screen and (max-width: 810px){
+      @media screen and (max-width: 900px){
         width: 220px;
       }
       @media screen and (max-width: 700px){
