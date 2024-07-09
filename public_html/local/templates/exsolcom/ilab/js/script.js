@@ -295,156 +295,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		sideMenu.classList.remove('show')
 	})
 
-	// Модалка для услуг
-	servicesItems.forEach(item => {
-		item.addEventListener('click', () => {
-			fetch('/local/templates/exsolcom/ilab/ajax/getServicesModalContent.php', {
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify({id: item.getAttribute('id')})
-			})
-				.then(response => response.json())
-				.then(data => {
-					modal.querySelector('.i_modal-header-content').innerHTML = '';
-					modal.querySelector('.i_modal-header-bottom').innerHTML = '';
-					modal.querySelector('.i_modal-header-bottom').innerHTML = '';
-					modal.querySelector('.i_modal-content').innerHTML = ''
-					modal.querySelector('.i_modal-img').innerHTML = ''
-
-					overlay.classList.add('active')
-					modal.classList.add('active')
-
-					const content = data.CONTENT;
-
-					if(content){
-						// Регулярное выражение для поиска <div class="i_modal-preview">...</div>
-						const modalPreviewRegex = /<div class="i_modal-preview">[\s\S]*?<\/div>/;
-						const modalPreviewContentRegex = /<span class="i_modal-preview-content">[\s\S]*?<\/span>/;
-						const modalPreviewEndingRegex = /<span class="i_modal-preview-ending">[\s\S]*?<\/span>/;
-						// Найти совпадение
-						const matchPreview = content.match(modalPreviewRegex);
-						const matchPreviewContent = content.match(modalPreviewContentRegex);
-						const matchPreviewEnding = content.match(modalPreviewEndingRegex);
-
-						let modalPreviewContent = '';
-						let modalPreviewContentContent = '';
-						let modalPreviewContentEnding = '';
-						let otherContent = '';
-
-						if(matchPreviewContent){
-							// Совпадение найдено
-							modalPreviewContentContent = matchPreviewContent[0];
-							// Остальной контент
-							otherContent = content.replace(modalPreviewContentContent, '').trim();
-						}
-
-						if(matchPreviewEnding){
-							// Совпадение найдено
-							modalPreviewContentEnding = matchPreviewEnding[0];
-							// Остальной контент
-							otherContent = content.replace(modalPreviewContentEnding, '').trim();
-						}
-
-						if (matchPreview) {
-							// Совпадение найдено
-							modalPreviewContent = matchPreview[0];
-							// Остальной контент
-							otherContent = content.replace(modalPreviewContent, '').trim();
-						} else{
-							// Совпадение не найдено, все содержимое остается в otherContent
-							otherContent = content;
-						}
-
-
-						modal.querySelector('.i_modal-header-content').innerHTML += modalPreviewContent;
-						modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentContent;
-						modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentEnding;
-
-						modal.querySelector('.i_modal-content').innerHTML = otherContent
-					}else{
-						modal.querySelector('.i_modal-content').innerHTML = data.PREVIEW_TEXT
-						modal.querySelector('.i_modal-header-content').innerHTML = data.NAME
-					}
-
-					modal.querySelector('.i_modal-img').innerHTML = `<img src="${data.IMAGE}" alt="${data.NAME}">`
-				})
-		})
-	})
-
-	projectsItems.forEach(item => {
-		item.addEventListener('click', () => {
-			fetch('/local/templates/exsolcom/ilab/ajax/getProjectElementModalContent.php', {
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify({id: item.getAttribute('id')})
-			})
-				.then(response => response.json())
-				.then(data => {
-					modal.querySelector('.i_modal-header-content').innerHTML = '';
-					modal.querySelector('.i_modal-content').innerHTML = ''
-					modal.querySelector('.i_modal-img').innerHTML = ''
-
-					overlay.classList.add('active')
-					modal.classList.add('active')
-
-					const content = data.CONTENT;
-
-					if(content){
-						// Регулярное выражение для поиска <div class="i_modal-preview">...</div>
-						const modalPreviewRegex = /<div class="i_modal-preview">[\s\S]*?<\/div>/;
-						const modalPreviewContentRegex = /<div class="i_modal-preview-content">[\s\S]*?<\/div>/;
-						const modalPreviewEndingRegex = /<div class="i_modal-preview-ending">[\s\S]*?<\/div>/;
-						// Найти совпадение
-						const matchPreview = content.match(modalPreviewRegex);
-						const matchPreviewContent = content.match(modalPreviewContentRegex);
-						const matchPreviewEnding = content.match(modalPreviewEndingRegex);
-
-						let modalPreviewContent = '';
-						let modalPreviewContentContent = '';
-						let modalPreviewContentEnding = '';
-						let otherContent = '';
-
-						if (matchPreview) {
-							// Совпадение найдено
-							modalPreviewContent = matchPreview[0];
-
-							// Остальной контент
-							otherContent = content.replace(modalPreviewContent, '').trim();
-						} else if(matchPreviewContent){
-							// Совпадение найдено
-							modalPreviewContentContent = matchPreviewContent[0];
-
-							// Остальной контент
-							otherContent = content.replace(modalPreviewContentContent, '').trim();
-						}else if(matchPreviewEnding){
-							// Совпадение найдено
-							modalPreviewContentEnding = matchPreviewEnding[0];
-
-							// Остальной контент
-							otherContent = content.replace(modalPreviewContentEnding, '').trim();
-						}else{
-							// Совпадение не найдено, все содержимое остается в otherContent
-							otherContent = content;
-						}
-
-						modal.querySelector('.i_modal-header-content').innerHTML += modalPreviewContent;
-						modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentContent;
-						modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentEnding;
-
-						modal.querySelector('.i_modal-content').innerHTML = otherContent
-					}else{
-						modal.querySelector('.i_modal-content').innerHTML = data.PREVIEW_TEXT
-						modal.querySelector('.i_modal-header-content').innerHTML = data.NAME
-					}
-
-					modal.querySelector('.i_modal-img').innerHTML = `<img src="${data.IMAGE}" alt="${data.NAME}">`
-				})
-		})
-	})
 
 	// SUBMIT FORM
 
@@ -503,7 +353,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 					modalKp.querySelector('.i_modal-img').innerHTML = `<img src="${img}" />`;
-					modalKp.querySelector('.i_modal-footer-price').innerHTML = `<span>Цена: ${data.PRICE}<span></span> ₸ (электронная версия)</span>`;
+					modalKp.querySelector('.i_modal-footer-price').innerHTML = `<span>${data.PRICE} ₸<span class="text">(электронная версия)</span></span>`;
 				})
 		})
 	})
@@ -590,6 +440,113 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				.then(data => {
 					const content = data.CONTENT;
 					document.querySelector('.i_seo-events').innerHTML = content;
+				})
+		})
+	})
+
+	// Модалка для услуг
+	servicesItems.forEach(item => {
+		item.addEventListener('click', () => {
+			fetch('/local/templates/exsolcom/ilab/ajax/getServicesModalContent.php', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({id: item.getAttribute('id')})
+			})
+				.then(response => response.json())
+				.then(data => {
+					modal.querySelector('.i_modal-header-content').innerHTML = '';
+					modal.querySelector('.i_modal-header-bottom').innerHTML = '';
+					modal.querySelector('.i_modal-header-bottom').innerHTML = '';
+					modal.querySelector('.i_modal-content').innerHTML = ''
+					modal.querySelector('.i_modal-img').innerHTML = ''
+
+					overlay.classList.add('active')
+					modal.classList.add('active')
+
+					const content = data.CONTENT;
+
+					if(content){
+						// Регулярное выражение для поиска <div class="i_modal-preview">...</div>
+						const modalPreviewRegex = /<div class="i_modal-preview">[\s\S]*?<\/div>/;
+						const modalPreviewContentRegex = /<span class="i_modal-preview-content">[\s\S]*?<\/span>/;
+						const modalPreviewEndingRegex = /<span class="i_modal-preview-ending">[\s\S]*?<\/span>/;
+						// Найти совпадение
+						const matchPreview = content.match(modalPreviewRegex);
+						const matchPreviewContent = content.match(modalPreviewContentRegex);
+						const matchPreviewEnding = content.match(modalPreviewEndingRegex);
+
+						let modalPreviewContent = '';
+						let modalPreviewContentContent = '';
+						let modalPreviewContentEnding = '';
+						let otherContent = '';
+
+						if(matchPreviewContent){
+							// Совпадение найдено
+							modalPreviewContentContent = matchPreviewContent[0];
+							// Остальной контент
+							otherContent = content.replace(modalPreviewContentContent, '').trim();
+						}
+
+						if(matchPreviewEnding){
+							// Совпадение найдено
+							modalPreviewContentEnding = matchPreviewEnding[0];
+							// Остальной контент
+							otherContent = content.replace(modalPreviewContentEnding, '').trim();
+						}
+
+						if (matchPreview) {
+							// Совпадение найдено
+							modalPreviewContent = matchPreview[0];
+							// Остальной контент
+							otherContent = content.replace(modalPreviewContent, '').trim();
+						} else{
+							// Совпадение не найдено, все содержимое остается в otherContent
+							otherContent = content;
+						}
+
+
+						modal.querySelector('.i_modal-header-content').innerHTML += modalPreviewContent;
+						modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentContent;
+						modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentEnding;
+
+						modal.querySelector('.i_modal-content').innerHTML = otherContent
+					}else{
+						modal.querySelector('.i_modal-content').innerHTML = data.PREVIEW_TEXT
+						modal.querySelector('.i_modal-header-content').innerHTML = data.NAME
+					}
+
+					modal.querySelector('.i_modal-img').innerHTML = `<img src="${data.IMAGE}" alt="${data.NAME}">`
+				})
+		})
+	})
+
+	projectsItems.forEach(item => {
+		item.addEventListener('click', () => {
+			fetch('/local/templates/exsolcom/ilab/ajax/getProjectElementModalContent.php', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({id: item.getAttribute('id'), iblockId: item.getAttribute('data_iblock_id')})
+			})
+				.then(response => response.json())
+				.then(data => {
+					modalKp.querySelector('.i_modal-content').innerHTML = ''
+					modalKp.querySelector('.i_modal-img').innerHTML = ''
+
+					overlay.classList.add('active')
+					modalKp.classList.add('active')
+					const content = data.CONTENT;
+
+					if(!content){
+						modalKp.querySelector('.i_modal-content').innerHTML = data.PREVIEW_TEXT;
+					}else{
+						modalKp.querySelector('.i_modal-content').innerHTML = content;
+					}
+
+					modalKp.querySelector('.i_modal-img').innerHTML = `<img src="${data.IMAGE}" alt="${data.NAME}">`
 				})
 		})
 	})

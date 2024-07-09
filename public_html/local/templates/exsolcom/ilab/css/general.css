@@ -424,7 +424,6 @@ span:hover {
 .i_modal-kp .i_modal-img {
   position: absolute;
   left: 15%;
-  top: 0;
 }
 .i_modal-kp.active {
   opacity: 1;
@@ -472,13 +471,58 @@ span:hover {
   box-shadow: 0px -4px 14px 0px rgba(34, 60, 80, 0.18);
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
+  gap: 40px;
+}
+.i_modal-kp .i_modal-footer .i_modal-footer-price {
+  background-color: var(--color-red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 40px 0 60px;
+}
+.i_modal-kp .i_modal-footer .i_modal-footer-price span {
+  color: var(--color-WhiteWhite);
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  font-size: 2.25rem;
+}
+.i_modal-kp .i_modal-footer .i_modal-footer-price span .text {
+  text-align: right;
+  font-size: 0.875rem;
+  font-family: "Open Sans", sans-serif;
 }
 .i_modal-kp .i_modal-footer .i_modal-footer-btn button {
   padding: 18px 44px;
 }
 
+.detail-item .detail-item-footer {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail-item .detail-item-footer button {
+  padding: 18px 44px;
+}
+
 p {
   display: inline !important;
+}
+
+.i_programms .product-item-container .product-item .product-item-detail .product-item-detail-price {
+  position: relative;
+  z-index: 1;
+}
+.i_programms .product-item-container .product-item .product-item-detail .product-item-detail-price span {
+  color: var(--color-textInfoblock);
+  font-size: 1.125rem;
+}
+.i_programms .product-item-container .product-item .product-item-detail .product-item-detail-price span .text {
+  font-size: 0.75rem;
+  font-family: "Open Sans", sans-serif;
 }
 
 .programm-container,
@@ -499,7 +543,7 @@ p {
 .i_programm-container .bx_sitemap .bx_sitemap_ul li:before {
   content: "";
   top: 50%;
-  left: 50%;
+  left: 60%;
   position: absolute;
   transform: translate(-820%, -50%);
   display: inline-block;
@@ -514,13 +558,6 @@ p {
   background-position: center center;
   background-color: #ffffff;
   background-size: 50% 50%;
-}
-.programm-container .bx_sitemap .bx_sitemap_ul li:focus::before,
-.i_programm-container .bx_sitemap .bx_sitemap_ul li:focus::before {
-  background-image: url("../img/svg/active-checkbox.svg");
-  background-size: 14px;
-  background-color: #191A1A;
-  border: 1px solid #3b3b3b;
 }
 .programm-container .bx_sitemap .bx_sitemap_ul li,
 .i_programm-container .bx_sitemap .bx_sitemap_ul li {
@@ -539,6 +576,22 @@ p {
   margin: 20px 20px 0 0;
   border: 1px solid #ededed;
 }
+.programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles,
+.i_programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles {
+  background-color: var(--color-circles);
+}
+.programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles:before,
+.i_programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles:before {
+  background-image: url("../img/svg/active-checkbox.svg");
+  background-size: 14px;
+  background-color: #191A1A;
+  border: 1px solid #3b3b3b;
+}
+.programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles .bx_sitemap_li_title a,
+.i_programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles .bx_sitemap_li_title a {
+  transition: all 0.4s ease;
+  color: var(--color-WhiteWhite);
+}
 .programm-container .bx_sitemap .bx_sitemap_ul li:hover,
 .i_programm-container .bx_sitemap .bx_sitemap_ul li:hover {
   cursor: pointer;
@@ -548,14 +601,9 @@ p {
   transition: all 0.4s ease;
   color: var(--color-red);
 }
-.programm-container .bx_sitemap .bx_sitemap_ul li:focus,
-.i_programm-container .bx_sitemap .bx_sitemap_ul li:focus {
-  background-color: var(--color-circles);
-}
-.programm-container .bx_sitemap .bx_sitemap_ul li:focus .bx_sitemap_li_title a,
-.i_programm-container .bx_sitemap .bx_sitemap_ul li:focus .bx_sitemap_li_title a {
-  transition: all 0.4s ease;
-  color: var(--color-WhiteWhite);
+.programm-container .bx_sitemap .bx_sitemap_ul li .bx_sitemap_li_title a,
+.i_programm-container .bx_sitemap .bx_sitemap_ul li .bx_sitemap_li_title a {
+  text-decoration: none;
 }
 .programm-container .bx_sitemap .bx_sitemap_ul li .bx_sitemap_li_title,
 .i_programm-container .bx_sitemap .bx_sitemap_ul li .bx_sitemap_li_title {

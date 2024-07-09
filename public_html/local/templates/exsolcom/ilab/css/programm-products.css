@@ -10,7 +10,7 @@
 .programm-container .bx_sitemap .bx_sitemap_ul li:before {
   content: "";
   top: 50%;
-  left: 50%;
+  left: 60%;
   position: absolute;
   transform: translate(-820%, -50%);
   display: inline-block;
@@ -25,12 +25,6 @@
   background-position: center center;
   background-color: #ffffff;
   background-size: 50% 50%;
-}
-.programm-container .bx_sitemap .bx_sitemap_ul li:focus::before {
-  background-image: url("../img/svg/active-checkbox.svg");
-  background-size: 14px;
-  background-color: #191A1A;
-  border: 1px solid #3b3b3b;
 }
 .programm-container .bx_sitemap .bx_sitemap_ul li {
   list-style-type: none;
@@ -48,19 +42,25 @@
   margin: 20px 20px 0 0;
   border: 1px solid #ededed;
 }
+.programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles {
+  background-color: var(--color-circles);
+}
+.programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles:before {
+  background-image: url("../img/svg/active-checkbox.svg");
+  background-size: 14px;
+  background-color: #191A1A;
+  border: 1px solid #3b3b3b;
+}
+.programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles .bx_sitemap_li_title a {
+  transition: all 0.4s ease;
+  color: var(--color-WhiteWhite);
+}
 .programm-container .bx_sitemap .bx_sitemap_ul li:hover {
   cursor: pointer;
 }
 .programm-container .bx_sitemap .bx_sitemap_ul li:hover .bx_sitemap_li_title a {
   transition: all 0.4s ease;
   color: var(--color-red);
-}
-.programm-container .bx_sitemap .bx_sitemap_ul li:focus {
-  background-color: var(--color-circles);
-}
-.programm-container .bx_sitemap .bx_sitemap_ul li:focus .bx_sitemap_li_title a {
-  transition: all 0.4s ease;
-  color: var(--color-WhiteWhite);
 }
 .programm-container .bx_sitemap .bx_sitemap_ul li .bx_sitemap_li_title {
   font-size: 20px;
@@ -214,6 +214,30 @@
 }
 .programm-container .i_programm-catalog .product-item-container .product-item .product-item-detail .product-item-detail-title span {
   color: var(--color-textInfoblock);
+}
+.programm-container .i_programm-catalog .product-item-container .product-item .product-item-detail .product-item-detail-price:after {
+  content: " ";
+  background-image: url("../img/svg/wrapper-icon-price.svg");
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 34px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.programm-container .i_programm-catalog .product-item-container .product-item .product-item-detail .product-item-detail-price {
+  position: relative;
+  z-index: 1;
+}
+.programm-container .i_programm-catalog .product-item-container .product-item .product-item-detail .product-item-detail-price span {
+  color: var(--color-textInfoblock);
+  font-size: 1.125rem;
+}
+.programm-container .i_programm-catalog .product-item-container .product-item .product-item-detail .product-item-detail-price span .text {
+  font-size: 0.75rem;
+  font-family: "Open Sans", sans-serif;
 }
 .programm-container .i_programm-catalog .product-item-container .product-item .product-item-detail .product-item-btn button {
   padding: 10px 25px;
