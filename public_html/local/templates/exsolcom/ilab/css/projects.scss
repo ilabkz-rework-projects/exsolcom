@@ -24,6 +24,9 @@
   .i_projects-title-name{
     display: flex;
     justify-content: flex-start;
+    a{
+      text-decoration: none;
+    }
     span{
       font-size: 32px;
       font-weight: 400;
@@ -36,6 +39,9 @@
       }
       @media screen and (max-width: 480px){
         font-size: 21px;
+      }
+      &:hover{
+        color: var(--color-red);
       }
     }
     @media screen and (max-width: 1000px){
