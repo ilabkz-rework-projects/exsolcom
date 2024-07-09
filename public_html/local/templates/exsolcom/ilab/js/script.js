@@ -531,12 +531,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			overlay.classList.add('active')
 		})
 	})
-
+	
 	formKpCloseBtn.addEventListener('click', (event) => {
 		submitModal.classList.remove('active')
 		overlay.classList.remove('active')
 		formKpModal.classList.remove('active')
 	})
+
 
 	//OVERLAY
 	document.addEventListener('keydown', (event) => {

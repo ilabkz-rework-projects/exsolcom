@@ -108,11 +108,33 @@
   left: 50%;
   transform: translate(-50%);
 }
+@media screen and (max-width: 1330px) {
+  .i_personal .i_container .swiper.personal .swiper-slide:before {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_personal .i_container .swiper.personal .swiper-slide:before {
+    height: 310px;
+    width: 310px;
+  }
+}
 .i_personal .i_container .swiper.personal .swiper-slide {
   display: flex;
   width: 330px;
   border-radius: 100% 100% 35px 35px;
   flex-direction: column;
+}
+@media screen and (max-width: 1330px) {
+  .i_personal .i_container .swiper.personal .swiper-slide {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_personal .i_container .swiper.personal .swiper-slide {
+    width: 250px;
+  }
 }
 .i_personal .i_container .swiper.personal .swiper-slide.swiper-slide-active {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
@@ -130,6 +152,30 @@
 }
 .i_personal .i_container .swiper.personal .swiper-slide.swiper-slide-active .swiper-slide-name span:hover {
   color: var(--color-red) !important;
+}
+.i_personal .i_container .swiper.personal .swiper-slide .swiper-slide:before {
+  content: "";
+  width: 406px;
+  height: 406px;
+  background-color: var(--bg-block);
+  border-radius: 100%;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  transform: translate(-50%);
+}
+@media screen and (max-width: 1330px) {
+  .i_personal .i_container .swiper.personal .swiper-slide .swiper-slide:before {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_personal .i_container .swiper.personal .swiper-slide .swiper-slide:before {
+    height: 310px;
+    width: 310px;
+  }
 }
 .i_personal .i_container .swiper.personal .swiper-slide .swiper-slide-block {
   padding: 64px 20px;
@@ -150,17 +196,46 @@
   z-index: 1;
   justify-content: flex-end;
 }
+@media screen and (max-width: 1330px) {
+  .i_personal .i_container .swiper.personal .swiper-slide .swiper-slide-block {
+    height: 630px;
+    width: 290px;
+    padding: 0 20px 40px 20px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_personal .i_container .swiper.personal .swiper-slide .swiper-slide-block {
+    height: 580px;
+    width: 250px;
+    padding: 0 20px 30px 20px;
+  }
+}
 .i_personal .i_container .swiper.personal .swiper-slide .swiper-slide-block .swiper-slide-group {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+@media screen and (max-width: 1330px) {
+  .i_personal .i_container .swiper.personal .swiper-slide .swiper-slide-block .swiper-slide-group {
+    gap: 24px;
+  }
 }
 .i_personal .i_container .swiper.personal .swiper-slide .swiper-slide-block .swiper-slide-group .swiper-slide-name {
   text-align: center;
 }
 .i_personal .i_container .swiper.personal .swiper-slide .swiper-slide-block .swiper-slide-group .swiper-slide-name span {
   color: var(--color-textInfoblock);
-  font-size: 28px;
+  font-size: 1.75rem;
+}
+@media screen and (max-width: 1330px) {
+  .i_personal .i_container .swiper.personal .swiper-slide .swiper-slide-block .swiper-slide-group .swiper-slide-name span {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_personal .i_container .swiper.personal .swiper-slide .swiper-slide-block .swiper-slide-group .swiper-slide-name span {
+    font-size: 1.25rem;
+  }
 }
 .i_personal .i_container .swiper.personal .swiper-slide .swiper-slide-block .swiper-slide-group .swiper-slide-title {
   font-size: 15px;
@@ -185,6 +260,18 @@
   z-index: 2;
   left: 50%;
   transform: translate(-50%);
+}
+@media screen and (max-width: 1330px) {
+  .i_personal .i_container .swiper.personal .swiper-slide .swiper-slide-picture {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_personal .i_container .swiper.personal .swiper-slide .swiper-slide-picture {
+    width: 310px;
+    height: 310px;
+  }
 }
 .i_personal .i_container .swiper.personal .swiper-slide .swiper-slide-picture .i_swiper-slide-image {
   width: 95%;
