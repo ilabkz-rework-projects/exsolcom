@@ -305,3 +305,21 @@
 		</div>
 	</div>
 </div>
+
+<div class="i_modal-kp">
+	<div class="i_container">
+		<div class="i_modal-close">
+			<img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/svg/closeModal-dark.svg'?>" alt="x">
+		</div>
+		<div class="i_modal-img"></div>
+
+		<div class="i_modal-content"></div>
+
+		<div class="i_modal-footer">
+			<div class="i_modal-footer-price"></div>
+			<div class="i_modal-footer-btn">
+				<button id="form-kp-btn">Запросить коммерческое предложение</button>
+			</div>
+		</div>
+	</div>
+</div>

@@ -23,7 +23,7 @@ use Bitrix\Catalog\ProductTable;
  */
 
 $this->setFrameMode(true);
-$this->addExternalCss('/bitrix/css/main/bootstrap.css');
+//$this->addExternalCss('/bitrix/css/main/bootstrap.css');
 
 if (!empty($arResult['NAV_RESULT']))
 {
