@@ -22,20 +22,20 @@ $this->setFrameMode(true);
 		$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
 		$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 		?>
-		<div class="news-page-item" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
+		<div class="news-page-item i_detail-modal-item" id="<?=$this->GetEditAreaId($arItem['ID']);?>" data-id="<?=$arItem['ID']?>" data_iblock_id="<?=$arParams['IBLOCK_ID']?>">
 			<?if($arParams["DISPLAY_PICTURE"]!="N" && is_array($arItem["PREVIEW_PICTURE"])):?>
 				<div class="news-item-img">
 					<?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
-						<a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><img
-									class="preview_picture"
-									border="0"
-									src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>"
-									width="<?=$arItem["PREVIEW_PICTURE"]["WIDTH"]?>"
-									height="<?=$arItem["PREVIEW_PICTURE"]["HEIGHT"]?>"
-									alt="<?=$arItem["PREVIEW_PICTURE"]["ALT"]?>"
-									title="<?=$arItem["PREVIEW_PICTURE"]["TITLE"]?>"
-									style="float:left"
-							/></a>
+						<img
+							class="preview_picture"
+							border="0"
+							src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>"
+							width="<?=$arItem["PREVIEW_PICTURE"]["WIDTH"]?>"
+							height="<?=$arItem["PREVIEW_PICTURE"]["HEIGHT"]?>"
+							alt="<?=$arItem["PREVIEW_PICTURE"]["ALT"]?>"
+							title="<?=$arItem["PREVIEW_PICTURE"]["TITLE"]?>"
+							style="float:left"
+							/>
 					<?else:?>
 						<img
 								class="preview_picture"
@@ -55,9 +55,9 @@ $this->setFrameMode(true);
 			<?endif?>
 			<?if($arParams["DISPLAY_NAME"]!="N" && $arItem["NAME"]):?>
 				<?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
-					<a href="<?echo $arItem["DETAIL_PAGE_URL"]?>"><b><?echo $arItem["NAME"]?></b></a>
+				<span><?echo $arItem["NAME"]?></span>
 				<?else:?>
-					<b><?echo $arItem["NAME"]?></b>
+					<span><?echo $arItem["NAME"]?></span>
 				<?endif;?>
 			<?endif;?>
 			<?if($arParams["DISPLAY_PREVIEW_TEXT"]!="N" && $arItem["PREVIEW_TEXT"]):?>
@@ -73,16 +73,16 @@ $this->setFrameMode(true);
 					<?=GetMessage("IBLOCK_FIELD_".$code)?>:&nbsp;<?=$value;?>
 				</small>
 			<?endforeach;?>
-			<?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
-				<small>
-					<?=$arProperty["NAME"]?>:&nbsp;
-					<?if(is_array($arProperty["DISPLAY_VALUE"])):?>
-						<?=implode("&nbsp;/&nbsp;", $arProperty["DISPLAY_VALUE"]);?>
-					<?else:?>
-						<?=$arProperty["DISPLAY_VALUE"];?>
-					<?endif?>
-				</small>
-			<?endforeach;?>
+<!--			--><?//foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
+<!--				<small>-->
+<!--					--><?php //=$arProperty["NAME"]?><!--:&nbsp;-->
+<!--					--><?//if(is_array($arProperty["DISPLAY_VALUE"])):?>
+<!--						--><?php //=implode("&nbsp;/&nbsp;", $arProperty["DISPLAY_VALUE"]);?>
+<!--					--><?//else:?>
+<!--						--><?php //=$arProperty["DISPLAY_VALUE"];?>
+<!--					--><?//endif?>
+<!--				</small>-->
+<!--			--><?//endforeach;?>
 		</div>
 	<?endforeach;?>
 	<?if($arParams["DISPLAY_BOTTOM_PAGER"]):?>

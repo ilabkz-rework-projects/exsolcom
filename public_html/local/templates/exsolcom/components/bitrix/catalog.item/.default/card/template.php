@@ -62,10 +62,9 @@ while ($arRes = $dbRes->GetNext()) {
 	$arResult['ELEMENT'][$arRes['ID']] = $arRes;
 }
 
-
 ?>
 
-	<div class="product-item" id="<?$item['ID']?>">
+	<div class="product-item i_detail-modal-item" data-id="<?=$item['ID']?>" data_iblock_id="2">
 		<div class="product-item-left">
 			<div class="product-item-img">
 				<img src="<?= $item['PREVIEW_PICTURE']['SRC'] ?>" alt="img">
@@ -93,7 +92,7 @@ while ($arRes = $dbRes->GetNext()) {
 		</div>
 	</div>
 
-	<div class="i_vacantion-item second" id="<?$item['ID']?>">
+	<div class="i_vacantion-item second" data-id="<?=$item['ID']?>" data_iblock_id="2">
 		<div class="i_vacation-item-top">
 			<div class="i_vacantion-item-left">
 				<div class="i_vacantion-img">

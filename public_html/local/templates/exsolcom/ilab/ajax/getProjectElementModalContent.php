@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$json = file_get_contents('php://input');
 	$getData = json_decode($json, true);
 
-	$res = CIBlockElement::GetList([], ['IBLOCK_ID' => 5], false, false, ['PROPERTY_I_CONTENT_LINK', 'ID', 'NAME', 'PREVIEW_PICTURE', 'DETAIL_PICTURE', 'PREVIEW_TEXT']);
+	$res = CIBlockElement::GetList([], ['IBLOCK_ID' => $getData['iblockId']], false, false, ['PROPERTY_I_CONTENT_LINK', 'ID', 'NAME', 'PREVIEW_PICTURE', 'DETAIL_PICTURE', 'PREVIEW_TEXT']);
 	$arResult = [];
 
 	while($ob = $res->Fetch())

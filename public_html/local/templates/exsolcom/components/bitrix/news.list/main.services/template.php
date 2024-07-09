@@ -21,12 +21,12 @@ $this->setFrameMode(true);
 	$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
 	$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 	?>
-	<div class="i_our-services-block" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
+	<div class="i_our-services-block i_services-modal-item" id="<?=$this->GetEditAreaId($arItem['ID']);?>" data-id="<?=$arItem['ID']?>">
 		<?if($arParams["DISPLAY_PICTURE"]!="N" && is_array($arItem["PREVIEW_PICTURE"])):?>
 		<div class="i_our-services-imbg">
 
 			<?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
-				<a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><img
+				<img
 						class="preview_picture"
 						border="0"
 						src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>"
@@ -35,7 +35,7 @@ $this->setFrameMode(true);
 						alt="<?=$arItem["PREVIEW_PICTURE"]["ALT"]?>"
 						title="<?=$arItem["PREVIEW_PICTURE"]["TITLE"]?>"
 						style="float:left"
-						/></a>
+						/>
 			<?else:?>
 				<img
 						class="preview_picture"
@@ -56,7 +56,7 @@ $this->setFrameMode(true);
 		<?if($arParams["DISPLAY_NAME"]!="N" && $arItem["NAME"]):?>
 		<div class="i_our-services-name">
 			<?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
-				<a href="<?echo $arItem["DETAIL_PAGE_URL"]?>"><span><?echo $arItem["NAME"]?></span></a>
+				<span><?echo $arItem["NAME"]?></span>
 			<?else:?>
 				<span><?echo $arItem["NAME"]?></span>
 			<?endif;?>

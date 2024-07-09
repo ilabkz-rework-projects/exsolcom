@@ -15,6 +15,7 @@ $main = CSite::InDir(SITE_DIR.'index.php');
 	$APPLICATION->ShowHead();
 	$APPLICATION->ShowPanel();
 	?>
+	<title><?$APPLICATION->ShowTitle()?></title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>

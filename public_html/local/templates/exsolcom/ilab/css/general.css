@@ -32,6 +32,10 @@ span:hover {
   color: var(--color-red);
 }
 
+.idn {
+  display: none !important;
+}
+
 .color-red {
   color: var(--color-red) !important;
 }
@@ -387,6 +391,10 @@ span:hover {
   cursor: text;
 }
 
+.i_modal-content {
+  padding-top: 10px;
+}
+
 .i_modal-kp {
   background-color: #fff;
   position: fixed;
@@ -408,7 +416,7 @@ span:hover {
   width: unset;
   overflow-y: auto;
   height: calc(100% - 45px);
-  padding: 0 10% 90px 30%;
+  padding: 0 10% 90px 20%;
 }
 @media screen and (max-width: 1630px) {
   .i_modal-kp .i_container {
@@ -423,7 +431,11 @@ span:hover {
 }
 .i_modal-kp .i_modal-img {
   position: absolute;
-  left: 15%;
+  left: 5%;
+  max-width: 300px;
+}
+.i_modal-kp .i_modal-img img {
+  width: 100%;
 }
 .i_modal-kp.active {
   opacity: 1;
@@ -497,7 +509,18 @@ span:hover {
   padding: 18px 44px;
 }
 
+.detail-item {
+  margin-top: 40px;
+  min-height: 400px;
+  position: relative;
+}
+.detail-item .detail-item-img {
+  position: absolute;
+  left: 20px;
+}
 .detail-item .detail-item-footer {
+  position: absolute;
+  bottom: 0;
   height: 90px;
   width: 100%;
   display: flex;
@@ -506,6 +529,10 @@ span:hover {
 }
 .detail-item .detail-item-footer button {
   padding: 18px 44px;
+}
+.detail-item .detail-item-content {
+  padding-bottom: 100px;
+  padding-left: 30%;
 }
 
 p {

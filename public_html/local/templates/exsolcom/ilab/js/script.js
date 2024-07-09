@@ -273,8 +273,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	})
 
 	// Получаем данные для модальных окон
-	const servicesItems = document.querySelectorAll('.i_services-item');
+	const servicesItems = document.querySelectorAll('.i_services-modal-item');
 	const projectsItems = document.querySelectorAll('.i_projects-element__item');
+	const detailModalItem = document.querySelectorAll('.i_detail-modal-item')
 	const overlay = document.querySelector('.i_overlay')
 	const modal = document.querySelector('.i_modal')
 	const modalClose = document.querySelector('.i_modal .i_modal-close')
@@ -351,6 +352,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 						modalKp.querySelector('.i_modal-content').innerHTML = content;
 					}
 
+					if(data.PRICE){
+						modalKp.querySelector('.i_modal-footer-price').classList.remove('idn')
+					}else{
+						modalKp.querySelector('.i_modal-footer-price').classList.add('idn')
+					}
 
 					modalKp.querySelector('.i_modal-img').innerHTML = `<img src="${img}" />`;
 					modalKp.querySelector('.i_modal-footer-price').innerHTML = `<span>${data.PRICE} ₸<span class="text">(электронная версия)</span></span>`;
@@ -452,7 +458,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				headers: {
 					'Content-Type': 'application/json'
 				},
-				body: JSON.stringify({id: item.getAttribute('id')})
+				body: JSON.stringify({id: item.getAttribute('data-id')})
 			})
 				.then(response => response.json())
 				.then(data => {
@@ -522,17 +528,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		})
 	})
 
-	projectsItems.forEach(item => {
+	function openDetailModal(item, detailItem){
 		item.addEventListener('click', () => {
 			fetch('/local/templates/exsolcom/ilab/ajax/getProjectElementModalContent.php', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json'
 				},
-				body: JSON.stringify({id: item.getAttribute('id'), iblockId: item.getAttribute('data_iblock_id')})
+				body: JSON.stringify({
+					id: detailItem ? item.getAttribute('data-id') : item.getAttribute('id'),
+					iblockId: item.getAttribute('data_iblock_id')
+				})
 			})
 				.then(response => response.json())
 				.then(data => {
+					modalKp.querySelector('.i_modal-footer-price').classList.add('idn')
 					modalKp.querySelector('.i_modal-content').innerHTML = ''
 					modalKp.querySelector('.i_modal-img').innerHTML = ''
 
@@ -549,8 +559,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 					modalKp.querySelector('.i_modal-img').innerHTML = `<img src="${data.IMAGE}" alt="${data.NAME}">`
 				})
 		})
-	})
-	
+	}
 
+	detailModalItem?.forEach(item => openDetailModal(item, true))
+	projectsItems?.forEach(item => openDetailModal(item, false))
 
 });
