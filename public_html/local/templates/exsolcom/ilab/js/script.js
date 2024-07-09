@@ -466,6 +466,56 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		overlay.classList.remove('active')
 	})
 
+	// MODAL KP
+
+	const modalKpBtn = document.querySelectorAll('#modal-kp')
+	const modalKp = document.querySelector('.i_modal-kp')
+	const modalKpCloseBtn = modalKp.querySelector('.i_modal-close')
+
+	modalKpBtn.forEach(item => {
+		item.addEventListener('click', () => {
+			modal.classList.remove('active')
+			submitModal.classList.remove('active')
+			formKpModal.classList.remove('active')
+			modalKp.classList.add('active')
+			overlay.classList.add('active')
+
+			modalKp.querySelector('.i_modal-content').innerHTML = '';
+
+			// Добавляем контент на страницу
+			fetch('/local/templates/exsolcom/ilab/ajax/getModalKpContent.php', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({id: item.getAttribute('data-id')})
+			})
+				.then(response => response.json())
+				.then(data => {
+					const content = data.CONTENT;
+					const img = data.IMAGE
+
+					if(!content){
+						modalKp.querySelector('.i_modal-content').innerHTML = data.PREVIEW_TEXT;
+					}else{
+						modalKp.querySelector('.i_modal-content').innerHTML = content;
+					}
+
+
+					modalKp.querySelector('.i_modal-img').innerHTML = `<img src="${img}" />`;
+					modalKp.querySelector('.i_modal-footer-price').innerHTML = `<span>Цена: ${data.PRICE}<span></span> ₸ (электронная версия)</span>`;
+				})
+		})
+	})
+
+
+	modalKpCloseBtn.addEventListener('click', (event) => {
+		submitModal.classList.remove('active')
+		overlay.classList.remove('active')
+		formKpModal.classList.remove('active')
+		modalKp.classList.remove('active')
+	})
+
 	// FORM KP
 
 	const formKp = document.querySelectorAll('#form-kp-btn')
@@ -475,18 +525,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	formKp.forEach(item => {
 		item.addEventListener('click', () => {
 			modal.classList.remove('active')
+			modalKp.classList.remove('active')
 			submitModal.classList.remove('active')
 			formKpModal.classList.add('active')
 			overlay.classList.add('active')
 		})
 	})
-
-
+	
 	formKpCloseBtn.addEventListener('click', (event) => {
 		submitModal.classList.remove('active')
 		overlay.classList.remove('active')
 		formKpModal.classList.remove('active')
 	})
+
 
 	//OVERLAY
 	document.addEventListener('keydown', (event) => {
@@ -496,6 +547,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			sideMenu.classList.remove('show')
 			submitModal.classList.remove('active')
 			formKpModal.classList.remove('active')
+			modalKp.classList.remove('active')
 		}
 	})
 
@@ -505,6 +557,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			modal.classList.remove('active')
 			submitModal.classList.remove('active')
 			formKpModal.classList.remove('active')
+			modalKp.classList.remove('active')
 		}
 	})
 

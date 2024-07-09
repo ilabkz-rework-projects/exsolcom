@@ -91,12 +91,26 @@
         z-index: -1;
         left: 50%;
         transform: translate(-50%);
+        @media screen and (max-width: 1330px){
+          width: 350px;
+          height: 350px;
+        }
+        @media screen and (max-width: 760px){
+          height: 310px;
+          width: 310px;
+        }
       }
       .swiper-slide {
         display: flex;
-        width: 330px;
+        width: 330px ;
         border-radius: 100% 100% 35px 35px;
         flex-direction: column;
+        @media screen and (max-width: 1330px){
+          width: 280px;
+        }
+        @media screen and (max-width: 760px){
+          width: 250px ;
+        }
         &.swiper-slide-active{
           .swiper-slide-block{
             background-image: url("../img/svg/bg-manage-slide.svg");
@@ -116,6 +130,28 @@
             }
           }
         }
+        //PERSONAL SWIPER SLIDE BLOCK BEFORE
+        .swiper-slide:before{
+          content: "";
+          width: 406px;
+          height: 406px;
+          background-color: var(--bg-block);
+          border-radius: 100%;
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+          position: absolute;
+          z-index: -1;
+          left: 50%;
+          transform: translate(-50%);
+          @media screen and (max-width: 1330px){
+            width: 350px;
+            height: 350px;
+          }
+          @media screen and (max-width: 760px){
+            height: 310px;
+            width: 310px;
+          }
+        }
+        //!PERSONAL SWIPER SLIDE BLOCK BEFORE
         //PERSONAL SWIPER SLIDE BLOCK
         .swiper-slide-block{
           padding: 64px 20px;
@@ -135,15 +171,34 @@
           transform: translate(-50%);
           z-index: 1;
           justify-content: flex-end;
+          @media screen and (max-width: 1330px){
+            height: 630px;
+            width: 290px;
+            padding: 0 20px 40px 20px;
+          }
+          @media screen and (max-width: 760px){
+            height: 580px;
+            width: 250px;
+            padding: 0 20px 30px 20px;
+          }
           .swiper-slide-group{
             display: flex;
             flex-direction: column;
             gap: 30px;
+            @media screen and (max-width: 1330px) {
+              gap: 24px;
+            }
             .swiper-slide-name{
               text-align: center;
               span{
                 color: var(--color-textInfoblock);
-                font-size: 28px;
+                font-size: 1.75rem;
+                @media screen and (max-width: 1330px) {
+                  font-size: 1.5rem;
+                }
+                @media screen and (max-width: 760px) {
+                  font-size: 1.25rem;
+                }
                 &:hover{
                   //color: unset !important;
                 }
@@ -176,6 +231,14 @@
           z-index: 2;
           left: 50%;
           transform: translate(-50%);
+          @media screen and (max-width: 1330px){
+            width: 350px;
+            height: 350px;
+          }
+          @media screen and (max-width: 760px){
+            width: 310px;
+            height: 310px;
+          }
           .i_swiper-slide-image{
             width: 95%;
             height: 95%;
