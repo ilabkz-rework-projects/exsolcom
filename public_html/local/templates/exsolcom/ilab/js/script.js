@@ -36,6 +36,58 @@ window.addEventListener('DOMContentLoaded', function () {
 				const activeSlide = this.slides[this.activeIndex];
 				activeSlide.classList.add("swiper-slide-active");
 			},
+		},
+		breakpoints:{
+			360:{
+				slidesPerView:1,
+				coverflowEffect: {
+					rotate: 0,
+					stretch: -10,
+					depth: 30,
+					modifier: 10,
+					slideShadows: false
+				},
+			},
+			480:{
+				slidesPerView:2,
+				coverflowEffect: {
+					rotate: 0,
+					stretch: -12,
+					depth: 30,
+					modifier: 10,
+					slideShadows: false
+				},
+			},
+			760:{
+				slidesPerView:3,
+				coverflowEffect: {
+					rotate: 0,
+					stretch: -14,
+					depth: 30,
+					modifier: 10,
+					slideShadows: false
+				},
+			},
+			1000:{
+				slidesPerView:4,
+				coverflowEffect: {
+					rotate: 0,
+					stretch: -16,
+					depth: 30,
+					modifier: 10,
+					slideShadows: false
+				},
+			},
+			1330:{
+				slidesPerView: "auto",
+				coverflowEffect: {
+					rotate: 0,
+					stretch: -18,
+					depth: 30,
+					modifier: 10,
+					slideShadows: false
+				},
+			}
 		}
 	});
 
