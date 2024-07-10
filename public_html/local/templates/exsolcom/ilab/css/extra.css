@@ -1,6 +1,6 @@
 .i_submit,
 .i_form-kp {
-  background-color: var(--bg-block);
+  background-color: var(--bg-third);
   position: fixed;
   top: 50%;
   left: 50%;
@@ -31,11 +31,15 @@
   transition: all 0.4s ease;
   width: 40px;
   height: 40px;
-  background: var(--bg-second);
+  background: var(--color-White);
   display: flex;
   align-items: center;
   border-radius: 100%;
   justify-content: center;
+  background-image: url("../img/svg/closeModal-dark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
 }
 @media screen and (max-width: 480px) {
   .i_submit .i_submit-close,
@@ -81,7 +85,7 @@
 }
 .i_submit .i_submit-header span,
 .i_form-kp .i_submit-header span {
-  color: var(--color-textInfoblock);
+  color: var(--color-black);
   font-size: 1.5em;
 }
 @media screen and (max-width: 480px) {
@@ -99,7 +103,7 @@
 .i_submit .i_submit-content .b24-form .b24-form-wrapper,
 .i_form-kp .i_submit-content .b24-form .b24-form-wrapper {
   border-radius: 100px;
-  background-color: var(--bg-block);
+  background-color: var(--bg-third);
 }
 .i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-header-padding,
 .i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-header-padding {
@@ -132,7 +136,7 @@
   display: flex;
   width: 20px;
   height: 20px;
-  background-color: white;
+  background-color: var(--bg-third);
   border-radius: 30px;
   justify-content: center;
 }

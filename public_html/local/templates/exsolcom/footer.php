@@ -267,7 +267,7 @@
 <div class="i_submit">
 	<div class="i_container_modal">
 		<div class="i_submit-close">
-			<img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/svg/closeModal-dark.svg'?>" alt="x">
+<!--			<img src="--><?php //=SITE_TEMPLATE_PATH.'/ilab/img/svg/closeModal-dark.svg'?><!--" alt="x">-->
 		</div>
 		<div class="i_submit-header">
 			<span>ОСТАВИТЬ ЗАЯВКУ</span>

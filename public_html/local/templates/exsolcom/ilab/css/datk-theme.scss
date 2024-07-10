@@ -33,6 +33,61 @@ html[data-theme='dark']{
       }
     }
   }
+  .i_submit {
+
+    .i_submit-close{
+      background-image: url("../img/svg/closeModal-white.svg") ;
+    }
+  }
+  //SIDE MENU
+  .i_side-menu{
+    .i_side-menu-close{
+      background-image: url("../img/svg/closeModal-white.svg");
+    }
+    .left-menu{
+      li:nth-child(1){
+        .menu-img{
+          background-image: url("../img/svg/programm-products_b.svg");
+        }
+      }
+      li:nth-child(2){
+        .menu-img{
+          background-image: url("../img/svg/our-cases_b.svg");
+        }
+      }
+      li:nth-child(3){
+        .menu-img{
+          background-image: url("../img/svg/projects-icon_b.svg");
+
+        }
+      }
+      li:nth-child(4){
+        .menu-img{
+          background-image: url("../img/svg/our-services-b.svg");
+        }
+      }
+      li:nth-child(5){
+        .menu-img{
+          background-image: url("../img/svg/pairs-icon_b.svg");
+        }
+      }
+      li:nth-child(6){
+        .menu-img{
+          background-image: url("../img/svg/vacantion-icon_b.svg");
+        }
+      }
+      li:nth-child(7){
+        .menu-img{
+          background-image: url("../img/svg/about-company-icon_b.svg");
+        }
+      }
+      li:nth-child(8){
+        .menu-img{
+          background-image: url("../img/svg/contact-icon-b.svg");
+        }
+      }
+    }
+  }
 
 
   .i_header{
@@ -65,9 +120,9 @@ html[data-theme='dark']{
           }
         }
         .i_search-submit{
-          background-image: url("../img/svg/lupa-icon.svg");
+          background-image: url("../img/svg/lupa-icon-white.svg");
           &:hover{
-            background-image: url("../img/svg/lupa-icon-white.svg");
+            background-image: url("../img/svg/lupa-icon_r.svg");
           }
         }
       }
@@ -143,7 +198,7 @@ html[data-theme='dark']{
           display: flex;
           align-items: center;
           justify-content: center;
-          background-image: url("../img/svg/programm-products_b.svg");
+          background-image: url("menu/programm-products_b.svg");
           background-repeat: no-repeat;
           background-size: 50px;
           background-position-x: 65%;
@@ -161,7 +216,7 @@ html[data-theme='dark']{
     .i_services {
       .i_projects-title {
         .i_projects-title-icon {
-          background-image: url(../img/svg/projects-icon_b.svg);
+          background-image: url(menu/projects-icon_b.svg);
           @media screen and (max-width: 760px) {
             width: 40px;
             height: 40px;
@@ -610,4 +665,6 @@ html[data-theme='dark']{
     }
   }
 }
+
+
 

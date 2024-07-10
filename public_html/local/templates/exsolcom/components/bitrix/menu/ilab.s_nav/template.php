@@ -8,7 +8,7 @@
 			</div>
 
 			<div class="i_side-menu-close">
-				<img src="/local/templates/exsolcom/ilab/img/svg/closeModal-dark.svg" alt="x">
+<!--				<img src="/local/templates/exsolcom/ilab/img/svg/closeModal-dark.svg" alt="x">-->
 			</div>
 
 			<ul class="left-menu">
@@ -18,16 +18,16 @@
 						continue;
 					?>
 					<? if ($arItem["SELECTED"]):?>
-					<li>
+					<li class="selected">
 						<div class="menu-img">
-							<img src="<?=$arItem['PARAMS']['IMG']?>" alt="img">
+<!--							<img src="--><?php //=$arItem['PARAMS']['IMG']?><!--" alt="img">-->
 						</div>
 						<a href="<?= $arItem["LINK"] ?>" class="selected"><?= $arItem["TEXT"] ?></a>
 					</li>
 				<? else:?>
 					<li>
 						<div class="menu-img">
-							<img src="<?=$arItem['PARAMS']['IMG']?>" alt="img">
+<!--							<img src="--><?php //=$arItem['PARAMS']['IMG']?><!--" alt="img">-->
 						</div>
 						<a href="<?= $arItem["LINK"] ?>"><?= $arItem["TEXT"] ?></a>
 					</li>

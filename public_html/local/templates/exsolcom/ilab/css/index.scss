@@ -7,13 +7,16 @@
 
 html{
   --bg: #ffffff;
-    --bg-second: #f5f5f5;
+  --bg-second: #f5f5f5;
+  --bg-third: #ffffff;
+  --bg-fourth: #f5f5f5;
   --color-black: #000000;
   --color-circles: #000000;
   --color-circlesHover: #f5f5f5;
   --color-circleIcon: #ffffff;
   --color-circlesSecond: #f5f5f5;
   --color-circlesThird: #ffffff;
+  --color-circlesFourth: #000000;
   --color-circlesSecondIcon: #000000;
   --color-nochangeSecondIcon: #ffffff;
   --color-nochangeThirdIcon: #000000;
@@ -42,12 +45,15 @@ html{
 html[data-theme='dark']{
   --bg: #000000;
   --bg-second: #111111;
+  --bg-third: #111111;
+  --bg-fourth: #000000;
   --color-black: #ffffff;
   --color-circles: #E1E1E1;
   --color-circlesHover: #1E1E1E;
   --color-circleIcon: #000000;
   --color-circlesSecond: #1E1E1E;
   --color-circlesThird: #1E1E1E;
+  --color-circlesFourth: #1E1E1E;
   --color-circlesSecondIcon: #ffffff;
   --color-nochangeSecondIcon: #ffffff;
   --color-nochangeThirdIcon: #000000;
@@ -679,7 +685,7 @@ body{
       height: 100%;
       border: none;
       outline: none;
-      background-color: var(--color-circlesHover);
+      background-color: var(--bg-buttonHover);
       border-radius: 25px;
       padding: 0 25px;
       font-size: 1rem;
@@ -692,7 +698,7 @@ body{
       min-width: 55px;
       margin-right: 6px;
       height: 55px;
-      background-color: var(--color-circles);
+      background-color: var(--color-circlesFourth);
       border-radius: 100%;
       display: flex;
       justify-content: center;
@@ -703,9 +709,13 @@ body{
       background-repeat: no-repeat;
       background-position: center;
       &:hover{
-        background-color: var(--color-circlesHover);
+        background-color: var(--color-circlesFourth);
         cursor: pointer;
-        background-image: url("../img/svg/lupa-icon.svg");
+        background-image: url("../img/svg/lupa-icon_r.svg");
+        background-size: 55px;
+        @media screen and (max-width: 1330px){
+          background-size: 45px;
+        }
       }
       @media screen and (max-width: 1330px){
         min-width: 44px;
@@ -882,7 +892,7 @@ body{
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: #fff;
+  background-color: var(--bg-third);
   box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.2);
   border-bottom-right-radius: 35px;
   width: 330px;
@@ -903,7 +913,7 @@ body{
       text-align: center;
       cursor: text;
       span{
-        color: var(--color-textInfoblock);
+        color: var(--color-black);
       }
     }
     .i_side-menu-close{
@@ -911,12 +921,16 @@ body{
       top: 33px;
       width: 50px;
       height: 50px;
-      background: var(--bg-buttonHover);
+      background: var(--bg-fourth);
       border-radius: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
+      background-image: url("../img/svg/closeModal-dark.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 35px;
       img{
         width: 30px;
         height: 30px;
@@ -927,6 +941,62 @@ body{
       flex-direction: column;
       gap: 20px;
     }
+    li:nth-child(1){
+      .menu-img{
+        background-image: url("../img/svg/programm-products_w.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    li:nth-child(2){
+      .menu-img{
+        background-image: url("../img/svg/our-cases_w.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    li:nth-child(3){
+      .menu-img{
+        background-image: url("../img/svg/projects-icon_w.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    li:nth-child(4){
+      .menu-img{
+        background-image: url("../img/svg/our-services-w.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    li:nth-child(5){
+      .menu-img{
+        background-image: url("../img/svg/pairs-icon_w.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    li:nth-child(6){
+      .menu-img{
+        background-image: url("../img/svg/vacantion-icon_w.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    li:nth-child(7){
+      .menu-img{
+        background-image: url("../img/svg/about-company-icon_w.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    li:nth-child(8){
+      .menu-img{
+        background-image: url("../img/svg/contact-icon-w.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
     li{
       list-style-type: none;
       display: flex;
@@ -936,20 +1006,157 @@ body{
         width: 40px;
         height: 40px;
         border-radius: 100%;
-        background-color: #000;
+        background-color: var(--color-circles);
         display: flex;
         align-items: center;
         justify-content: center;
+        color: var(--color-White);
         img{
           width: 100%;
           height: 100%;
         }
+
       }
 
       a{
         text-decoration: none;
-        color: #000;
+        color: var(--color-black);
         font-size: 0.875rem;
+      }
+      &.selected{
+        background-color: var(--bg-fourth);
+        border-radius: 30px;
+        padding: 5px;
+        .menu-img{
+          background-color: var(--bg-fourth);
+        }
+        &:nth-child(1){
+          .menu-img{
+            background-image: url("../img/svg/programm-products_r.svg") !important;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+        &:nth-child(2){
+          .menu-img{
+            background-image: url("../img/svg/our-cases_r.svg") !important;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+        &:nth-child(3){
+          .menu-img{
+            background-image: url("../img/svg/projects-icon_r.svg") !important;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+        &:nth-child(4){
+          .menu-img{
+            background-image: url("../img/svg/our-services_r.svg") !important;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+        &:nth-child(5){
+          .menu-img{
+            background-image: url("../img/svg/pairs-icon_r.svg") !important;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+        &:nth-child(6){
+          .menu-img{
+            background-image: url("../img/svg/vacantion-icon_r.svg") !important;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+        &:nth-child(7){
+          .menu-img{
+            background-image: url("../img/svg/about-company-icon_r.svg") !important;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+        &:nth-child(8){
+          .menu-img{
+            background-image: url("../img/svg/contact-icon-r.svg") !important;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+        a{
+          color: var(--color-red);
+        }
+      }
+      &:hover{
+        transition: all .4s ease;
+        &:nth-child(1){
+          .menu-img{
+            background-image: url("../img/svg/programm-products_r.svg") !important;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+        &:nth-child(2){
+          .menu-img{
+            background-image: url("../img/svg/our-cases_r.svg") !important;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+        &:nth-child(3){
+          .menu-img{
+            background-image: url("../img/svg/projects-icon_r.svg") !important;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+        &:nth-child(4){
+          .menu-img{
+            background-image: url("../img/svg/our-services_r.svg") !important;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+        &:nth-child(5){
+          .menu-img{
+            background-image: url("../img/svg/pairs-icon_r.svg") !important;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+        &:nth-child(6){
+          .menu-img{
+            background-image: url("../img/svg/vacantion-icon_r.svg") !important;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+        &:nth-child(7){
+          .menu-img{
+            background-image: url("../img/svg/about-company-icon_r.svg") !important;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+        &:nth-child(8){
+          .menu-img{
+            background-image: url("../img/svg/contact-icon-r.svg") !important;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+        .menu-img{
+          transition: all .4s ease;
+          background-color: var(--bg-fourth);
+        }
+        cursor: pointer;
+        a{
+          transition: all .4s ease;
+          color: var(--color-red);
+        }
       }
     }
   }
@@ -1360,21 +1567,18 @@ body{
           }
           .i_our-services-name{
             height: 18%;
-            a{
-              text-decoration: none;
-              span{
-                color: var(--color-textInfoblock);
-                font-size: 20px;
-                font-weight: bold;
-                @media screen and (max-width: 1520px){
-                  font-size: 18px;
-                }
-                @media screen and (max-width: 680px){
-                  font-size: 16px;
-                }
-                @media screen and (max-width: 360px){
-                  font-size: 15px;
-                }
+            span{
+              color: var(--color-textInfoblock);
+              font-size: 20px;
+              font-weight: bold;
+              @media screen and (max-width: 1520px){
+                font-size: 18px;
+              }
+              @media screen and (max-width: 680px){
+                font-size: 16px;
+              }
+              @media screen and (max-width: 360px){
+                font-size: 15px;
               }
             }
           }

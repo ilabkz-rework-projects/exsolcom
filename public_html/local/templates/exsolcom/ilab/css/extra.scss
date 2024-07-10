@@ -1,7 +1,7 @@
 //SUBMIT FORM
 .i_submit,
 .i_form-kp{
-  background-color: var(--bg-block);
+  background-color: var(--bg-third);
   position: fixed;
   top: 50%;
   left: 50%;
@@ -33,11 +33,15 @@
     transition: all 0.4s ease;
     width: 40px;
     height: 40px;
-    background: var(--bg-second);
+    background: var(--color-White);
     display: flex;
     align-items: center;
     border-radius: 100%;
     justify-content: center;
+    background-image: url("../img/svg/closeModal-dark.svg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
     @media screen and (max-width: 480px){
       right: 20px;
       top: 20px;
@@ -70,7 +74,7 @@
     }
     border-bottom: 5px dotted #666666;
     span{
-      color: var(--color-textInfoblock);
+      color: var(--color-black);
       font-size: 1.5em;
       @media screen and (max-width: 480px){
         font-size: 1.3em;
@@ -87,7 +91,7 @@
       //SUBMIT CONTENT WRAPPER
       .b24-form-wrapper{
         border-radius: 100px;
-        background-color: var(--bg-block);
+        background-color: var(--bg-third);
         //SUBMIT CONTENT HEADER PADDING
         .b24-form-header-padding{
           padding: 10px;
@@ -117,7 +121,7 @@
                 display: flex;
                 width: 20px;
                 height: 20px;
-                background-color: white;
+                background-color: var(--bg-third);
                 border-radius: 30px;
                 justify-content: center;
               }
