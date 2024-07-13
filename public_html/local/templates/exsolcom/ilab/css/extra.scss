@@ -33,7 +33,7 @@
     transition: all 0.4s ease;
     width: 40px;
     height: 40px;
-    background: var(--color-White);
+    background: var(--bg-fourth);
     display: flex;
     align-items: center;
     border-radius: 100%;
@@ -65,22 +65,25 @@
   .i_submit-header{
     display: flex;
     justify-content: center;
-    padding: 40px 0 40px 0;
+    padding: 40px 70px 40px 40px;
     @media screen and (max-width: 480px){
-      padding: 30px 0 30px 0;
+      padding: 30px 20px 30px 20px;
     }
     @media screen and (max-width: 400px){
-      padding: 30px 0 25px 0;
+      padding: 30px 15px 25px 15px;
     }
     border-bottom: 5px dotted #666666;
     span{
       color: var(--color-black);
       font-size: 1.5em;
-      @media screen and (max-width: 480px){
-        font-size: 1.3em;
+      @media screen and (max-width: 530px){
+        font-size: 1.375rem;
       }
       @media screen and (max-width: 480px){
-        font-size: 1.2em;
+        font-size: 1.125rem;
+      }
+      @media screen and (max-width: 380px){
+        font-size: 1rem;
       }
     }
   }

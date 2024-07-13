@@ -611,6 +611,7 @@ body{
 }
 //!HEADER
 
+//SEARCH CONTAINER
 .i_search-container{
   #title-search{
     position: absolute;
@@ -725,6 +726,7 @@ body{
     }
   }
 }
+//!SEARCH CONTAINER
 
 //HEADER BOTTOM
 .i_header-bottom{
@@ -3151,6 +3153,10 @@ body{
               align-items: center;
               justify-content: center;
               transition: all 0.4s ease;
+              //background-image: url("../img/svg/lupa-icon_w.svg");
+              //background-repeat: no-repeat;
+              //background-position: center;
+              //background-size: 55px;
               svg{
                 color: var(--color-circleIcon);
               }

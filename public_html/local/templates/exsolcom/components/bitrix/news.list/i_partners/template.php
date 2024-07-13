@@ -14,7 +14,7 @@ $this->setFrameMode(true);
 ?>
 <div class="partners-list">
 <?if($arParams["DISPLAY_TOP_PAGER"]):?>
-	<?=$arResult["NAV_STRING"]?><br />
+	<?=$arResult["NAV_STRING"]?>
 <?endif;?>
 <?foreach($arResult["ITEMS"] as $arItem):?>
 	<?
