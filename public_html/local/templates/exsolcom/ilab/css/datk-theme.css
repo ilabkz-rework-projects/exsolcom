@@ -78,6 +78,12 @@ html[data-theme=dark] .i_header .i_search-container #title-search .i_search-subm
 html[data-theme=dark] .i_header .i_search-container #title-search .i_search-submit:hover {
   background-image: url("../img/svg/lupa-icon_r.svg");
 }
+html[data-theme=dark] .i_main .i_partners .i_partners-title .i_partners-title-icon {
+  background-image: url("../img/svg/partners-icon_b.svg");
+}
+html[data-theme=dark] .i_main .i_partners .partners-list .partners-item:hover:before {
+  background-image: url("../img/svg/hover-programm-products-b-night.svg");
+}
 html[data-theme=dark] .i_main .i_contacts .i_contacts-title .i_contacts-title-icon {
   background-image: url("../img/svg/contacts-icon_b.svg");
 }
@@ -110,7 +116,7 @@ html[data-theme=dark] .i_main .i_programms .i_programms-title .i_programms-title
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("menu/programm-products_b.svg");
+  background-image: url("../img/svg/programm-products_b.svg");
   background-repeat: no-repeat;
   background-size: 50px;
   background-position-x: 65%;
@@ -124,7 +130,7 @@ html[data-theme=dark] .i_main .i_programms .i_programms-title .i_programms-title
   }
 }
 html[data-theme=dark] .i_main .i_services .i_projects-title .i_projects-title-icon {
-  background-image: url(menu/projects-icon_b.svg);
+  background-image: url("../img/svg/projects-icon_b.svg");
 }
 @media screen and (max-width: 760px) {
   html[data-theme=dark] .i_main .i_services .i_projects-title .i_projects-title-icon {

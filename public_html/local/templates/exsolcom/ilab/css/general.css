@@ -8,6 +8,7 @@ button {
   border: 0;
   cursor: pointer;
   transition: all 0.4s ease;
+  outline-style: none;
 }
 @media screen and (max-width: 1330px) {
   button {
@@ -106,7 +107,7 @@ span:hover {
 }
 
 .i_modal {
-  background-color: #fff;
+  background-color: var(--bg-block);
   position: fixed;
   top: 50%;
   left: 50%;
@@ -132,12 +133,19 @@ span:hover {
 @media screen and (max-width: 1630px) {
   .i_modal .i_container {
     padding: 0 5%;
+    padding-bottom: 90px;
   }
 }
 @media screen and (max-width: 1330px) {
   .i_modal .i_container {
     padding: 0 3%;
     margin: 25px 2%;
+    padding-bottom: 90px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_modal .i_container {
+    margin: 10px 2%;
   }
 }
 .i_modal.active {
@@ -153,7 +161,7 @@ span:hover {
   transition: all 0.4s ease;
   width: 40px;
   height: 40px;
-  background: var(--bg-second);
+  background: var(--color-Grey);
   display: flex;
   align-items: center;
   border-radius: 100%;
@@ -196,11 +204,6 @@ span:hover {
   align-items: center;
   width: 100%;
 }
-@media screen and (max-width: 840px) {
-  .i_modal .i_modal-header .i_modal-header-container {
-    align-items: flex-end;
-  }
-}
 @media screen and (max-width: 480px) {
   .i_modal .i_modal-header .i_modal-header-container {
     flex-direction: column;
@@ -221,6 +224,7 @@ span:hover {
     color: var(--color-textInfoblock);
     font-family: "Open Sans", sans-serif;
     cursor: text;
+    line-height: normal;
   }
 }
 @media screen and (max-width: 840px) and (max-width: 480px) {
@@ -264,8 +268,8 @@ span:hover {
   }
 }
 .i_modal .i_modal-header .i_modal-img img {
+  height: auto;
   width: 100%;
-  object-fit: none;
 }
 .i_modal .i_modal-header .i_modal-header-content {
   width: 65%;
@@ -279,7 +283,7 @@ span:hover {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #fff;
+  background-color: var(--bg-block);
   height: 90px;
   width: 100%;
   display: flex;
@@ -291,6 +295,11 @@ span:hover {
 }
 .i_modal .i_modal-footer .i_modal-footer-btn button {
   padding: 18px 44px;
+}
+@media screen and (max-width: 1330px) {
+  .i_modal .i_modal-footer .i_modal-footer-btn button {
+    padding: 14px 34px;
+  }
 }
 
 .i_modal-preview {
@@ -336,6 +345,7 @@ span:hover {
   font-weight: 600;
   color: var(--color-textInfoblock);
   cursor: text;
+  line-height: normal;
 }
 @media screen and (max-width: 760px) {
   .i_modal-preview .i_modal-preview-subtitle {
@@ -396,7 +406,7 @@ span:hover {
 }
 
 .i_modal-kp {
-  background-color: #fff;
+  background-color: var(--bg-block);
   position: fixed;
   top: 50%;
   left: 50%;
@@ -450,7 +460,7 @@ span:hover {
   transition: all 0.4s ease;
   width: 40px;
   height: 40px;
-  background: var(--bg-second);
+  background: var(--color-Grey);
   display: flex;
   align-items: center;
   border-radius: 100%;
@@ -474,7 +484,7 @@ span:hover {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #fff;
+  background-color: var(--bg-block);
   height: 90px;
   width: 100%;
   display: flex;
@@ -507,6 +517,11 @@ span:hover {
 }
 .i_modal-kp .i_modal-footer .i_modal-footer-btn button {
   padding: 18px 44px;
+}
+@media screen and (max-width: 1330px) {
+  .i_modal-kp .i_modal-footer .i_modal-footer-btn button {
+    padding: 14px 34px;
+  }
 }
 
 .detail-item {

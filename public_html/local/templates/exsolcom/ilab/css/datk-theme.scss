@@ -130,6 +130,25 @@ html[data-theme='dark']{
 
   }
   .i_main{
+    //PARTNERS
+    .i_partners{
+      .i_partners-title{
+        .i_partners-title-icon{
+          background-image: url("../img/svg/partners-icon_b.svg");
+        }
+      }
+      .partners-list{
+        .partners-item{
+          &:hover{
+            &:before{
+              background-image: url("../img/svg/hover-programm-products-b-night.svg");
+            }
+          }
+        }
+      }
+    }
+    //!PARTNERS
+
     //CONTACTS
     .i_contacts{
       //CONTACTS TITLE
@@ -198,7 +217,7 @@ html[data-theme='dark']{
           display: flex;
           align-items: center;
           justify-content: center;
-          background-image: url("menu/programm-products_b.svg");
+          background-image: url("../img/svg/programm-products_b.svg");
           background-repeat: no-repeat;
           background-size: 50px;
           background-position-x: 65%;
@@ -216,7 +235,7 @@ html[data-theme='dark']{
     .i_services {
       .i_projects-title {
         .i_projects-title-icon {
-          background-image: url(menu/projects-icon_b.svg);
+          background-image: url("../img/svg/projects-icon_b.svg");
           @media screen and (max-width: 760px) {
             width: 40px;
             height: 40px;

@@ -16,7 +16,7 @@
   .i_snippet-title {
     h2 {
       font-size: 32px;
-      color: var(--color-black);
+      color: var(--color-textInfoblock);
       @media screen and (max-width: 1330px) {
         font-size: 26px;
       }
@@ -80,11 +80,12 @@
     align-items: center;
     border-radius: 50%;
     font-size: 28px;
-    color: var(--color-White);
+    color: var(--color-White) !important;
     padding: 2px 0 0 0;
     cursor: text;
 
     span {
+      color: var(--color-White);
     }
   }
 
@@ -94,7 +95,7 @@
     h2 {
       text-align: center;
       font-size: 32px;
-      color: var(--color-black);
+      color: var(--color-textInfoblock);
       @media screen and (max-width: 1330px) {
         font-size: 26px;
       }
@@ -116,7 +117,7 @@
     text-align: center;
     line-height: 35px;
     font-weight: 600;
-    color: var(--color-black);
+    color: var(--color-textInfoblock);
     cursor: text;
     font-size: 18px;
     @media screen and (max-width: 760px) {
@@ -180,7 +181,7 @@
       }
       //SNIPPET SINGLE_TABLE ITEM NTH_CHILD
       &:nth-child(2n) {
-        background-color: var(--color-circlesSecond);
+        background-color: var(--bg-fifth);
       }
 
       //!SNIPPET SINGLE_TABLE ITEM NTH_CHILD
@@ -189,7 +190,7 @@
       .i_snippet-table-item-title {
         font-family: "Open Sans", sans-serif;
         cursor: text;
-        color: var(--color-black);
+        color: var(--color-textInfoblock);
         @media screen and (max-width: 1330px) {
           font-size: 15px;
           width: 40%;
@@ -354,7 +355,7 @@
         @media screen and (max-width: 1330px) {
           padding: 40px 0 0 25px;
         }
-        @media screen and (max-width: 1330px) {
+        @media screen and (max-width: 760px) {
           padding: 40px 0 0 0;
           border-top: 5px dotted #666666;
           border-left: none;
@@ -410,7 +411,7 @@
         }
         //SNIPPET MULTI_TABLE ITEM NTH_CHILD
         &:nth-child(2n + 1) {
-          background-color: var(--color-circlesSecond);
+          background-color: var(--bg-fifth);
         }
 
         //!SNIPPET MULTI_TABLE ITEM NTH_CHILD
@@ -419,7 +420,7 @@
         .i_snippet-table-item-title {
           font-family: "Open Sans", sans-serif;
           cursor: text;
-          color: var(--color-black);
+          color: var(--color-textInfoblock);
           font-size: 14px;
           line-height: 18px;
           @media screen and (max-width: 1330px) {
@@ -538,11 +539,12 @@
     align-items: center;
     border-radius: 50%;
     font-size: 28px;
-    color: var(--color-White);
+    color: var(--color-White) !important;
     padding: 2px 0 0 0;
     cursor: text;
 
     span {
+      color: var(--color-White);
     }
   }
 
@@ -552,7 +554,7 @@
     h2 {
       text-align: center;
       font-size: 32px;
-      color: var(--color-black);
+      color: var(--color-textInfoblock);
       @media screen and (max-width: 1330px) {
         font-size: 26px;
       }
@@ -572,7 +574,7 @@
     text-align: center;
     line-height: 35px;
     font-weight: 600;
-    color: var(--color-black);
+    color: var(--color-textInfoblock);
     cursor: text;
     font-size: 18px;
 
@@ -708,7 +710,7 @@
 
 //SNIPPET AGREEMENT_TABLE
 .i_snippet.agreement-table {
-  background-color: var(--color-blockHv);
+  background-color: var(--bg-fifth);
   max-width: 1270px;
   height: 100%;
   border-radius: 30px;
@@ -821,7 +823,7 @@
     padding: 40px;
     max-width: 1270px;
     width: 100%;
-    background-color: var(--bg-block-personal);
+    background-color: var(--bg-fifth);
     border-radius: 30px;
     display: flex;
     align-items: flex-start;
@@ -910,7 +912,7 @@
   .i_snippet.composition-block-third {
     max-width: 1270px;
     width: 100%;
-    background-color: var(--bg-block-personal);
+    background-color: var(--bg-fifth);
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -1092,7 +1094,7 @@
       width: 100%;
       min-height: 210px;
       height: 100%;
-      background-color: var(--bg-block-personal);
+      background-color: var(--bg-fifth);
       padding: 20px 30px;
       border-radius: 30px;
       //SNIPPET ADDITIONAL_SERVICES BLOCK TOP BORDER
@@ -1148,7 +1150,7 @@
       width: 100%;
       min-height: 96px;
       height: 100%;
-      background-color: var(--bg-block-personal);
+      background-color: var(--bg-fifth);
       padding: 20px 30px;
       border-radius: 30px;
       @media screen and (max-width: 1330px) {
@@ -1207,7 +1209,7 @@
     max-width: 1270px;
     width: 100%;
     height: max-content;
-    background-color: var(--bg-block-personal);
+    background-color: var(--bg-fifth);
     padding: 20px 30px;
     border-radius: 30px;
     margin: 30px 0 0 0;
@@ -1308,7 +1310,7 @@
 
   //SNIPPET AGREEMENT_TABLE
   .i_snippet.agreement-table {
-    background-color: var(--color-blockHv);
+    background-color: var(--bg-fifth);
     max-width: 1270px;
     height: 100%;
     border-radius: 30px;
@@ -1422,7 +1424,7 @@
     //SNIPPET AGREEMENT_TABLE BINARY_VERTICAL_TABLE TOP BORDER
     //SNIPPET AGREEMENT_TABLE BINARY_VERTICAL_TABLE TOP
     .i_snippet-top {
-      background-color: var(--color-blockHv);
+      background-color: var(--bg-fifth);
       max-width: 1270px;
       height: 100%;
       border-radius: 0 0 30px 30px;
@@ -1494,7 +1496,7 @@
       .i_snippet.composition-block:before {
         content: ' ';
         border: 20px solid transparent;
-        border-bottom: 20px solid var(--color-circlesThird);
+        border-bottom: 20px solid var(--bg-block);
         position: absolute;
         top: -39px;
         right: 85%;
@@ -1519,7 +1521,7 @@
         }
         //max-width: 1185px;
         //width: 100%;
-        background-color: var(--color-circlesThird);
+        background-color: var(--bg-block);
         border-radius: 30px;
         display: flex;
         align-items: flex-start;
@@ -1803,7 +1805,7 @@
 
         .i_footer-left-icons-number {
           text-decoration: none;
-          color: var(--color-black);
+          color: var(--color-textInfoblock);
           font-weight: 600;
         }
       }
@@ -1821,7 +1823,7 @@
 
 //SNIPPET COMBINE_TABLE
 .i_snippet.combine-table {
-  background-color: var(--color-blockHv);
+  background-color: var(--bg-fifth);
   border-radius: 30px;
   margin: 30px 0;
   padding: 30px;
