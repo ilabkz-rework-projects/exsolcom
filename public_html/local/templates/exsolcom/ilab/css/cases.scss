@@ -1,0 +1,78 @@
+// CASES
+.i_cases {
+  .i_container {
+    // CASES TITLE
+    .i_cases-title {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+      padding: 50px 0 50px 0;
+
+      .i_cases-title-icon {
+        width: 50px;
+        height: 50px;
+        background-color: var(--color-circles);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("../img/svg/our-cases_w.svg");
+        background-repeat: no-repeat;
+        background-position-x: 65%;
+        background-position-y: 50%;
+        background-size: 50px;
+
+        svg {
+          color: var(--color-circleIcon);
+        }
+
+        @media screen and (max-width: 760px) {
+          width: 40px;
+          height: 40px;
+          background-size: 40px;
+        }
+      }
+
+      .i_cases-title-name {
+        display: flex;
+        justify-content: flex-start;
+
+        span {
+          font-size: 32px;
+          font-weight: 400;
+          color: var(--color-black);
+          @media screen and (max-width: 1330px) {
+            font-size: 28px;
+          }
+          @media screen and (max-width: 760px) {
+            font-size: 26px;
+          }
+          @media screen and (max-width: 480px) {
+            font-size: 21px;
+          }
+        }
+
+        @media screen and (max-width: 1000px) {
+          width: 50%;
+        }
+        @media screen and (max-width: 760px) {
+          width: unset;
+        }
+
+      }
+    }
+    // !CASES TITLE
+    // CASES PROGECTS_SECTION TITLE
+    .i_projects-section{
+      .i_projects-section__item{
+        .i_projects-section__item__img{
+          max-width: 134px;
+          width: 60%;
+          height: 60%;
+        }
+      }
+    }
+    // !CASES PROGECTS_SECTION TITLE
+  }
+}

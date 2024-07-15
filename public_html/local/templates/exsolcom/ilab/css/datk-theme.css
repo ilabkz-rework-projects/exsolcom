@@ -231,6 +231,16 @@ html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_b
     z-index: -1;
   }
 }
+html[data-theme=dark] .i_main .i_cases .i_cases-title .i_cases-title-icon {
+  background-image: url("../img/svg/our-cases_b.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 65%;
+  background-position-y: 50%;
+}
+html[data-theme=dark] .i_main .i_cases .i_projects-section .i_projects-section__item a:hover:before {
+  background-image: url("../img/svg/slider-hover-products-dark.svg");
+}
 html[data-theme=dark] .i_main .i_blog .i_blog-title .i_blog-title-icon {
   background-image: url("../img/svg/our-blog-icon_b.svg");
   background-repeat: no-repeat;

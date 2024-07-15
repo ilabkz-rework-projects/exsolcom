@@ -363,6 +363,36 @@ html[data-theme='dark']{
     }
     //!INFOBLOCK (main page)
 
+    //CASES
+    .i_cases{
+      //CASES TITLE
+      .i_cases-title{
+        .i_cases-title-icon{
+          background-image: url("../img/svg/our-cases_b.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-position-x: 65%;
+          background-position-y: 50%;
+        }
+      }
+      //CASES TITLE
+      //CASES PROJECTS TITLE
+      .i_projects-section{
+        .i_projects-section__item{
+          a{
+            &:hover {
+
+              &:before {
+                background-image: url("../img/svg/slider-hover-products-dark.svg");
+              }
+            }
+          }
+        }
+      }
+      //!CASES PROJECTS TITLE
+    }
+    //!CASES
+
     //BLOG
     .i_blog{
       //BLOG TITLE
