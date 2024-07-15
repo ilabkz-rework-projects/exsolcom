@@ -2129,12 +2129,14 @@ body {
 }
 @media screen and (max-width: 430px) {
   .i_infoblock .i_container .i_news .news-list .news-item {
-    gap: 10px;
+    gap: 25px;
   }
 }
 .i_infoblock .i_container .i_news .news-list .news-item .news-item-img {
+  max-width: 290px;
   width: 110%;
-  height: 58%;
+  object-fit: contain;
+  min-width: 125px;
 }
 .i_infoblock .i_container .i_news .news-list .news-item .news-item-img img {
   width: 100%;
@@ -2143,19 +2145,16 @@ body {
 @media screen and (max-width: 1330px) {
   .i_infoblock .i_container .i_news .news-list .news-item .news-item-img {
     width: 102%;
-    height: 52%;
   }
 }
 @media screen and (max-width: 1330px) {
   .i_infoblock .i_container .i_news .news-list .news-item .news-item-img {
     width: 102%;
-    height: 50%;
   }
 }
 @media screen and (max-width: 480px) {
   .i_infoblock .i_container .i_news .news-list .news-item .news-item-img {
     width: 92%;
-    height: 42%;
   }
 }
 .i_infoblock .i_container .i_news .news-list .news-date-time span {
@@ -2168,30 +2167,31 @@ body {
     font-size: 13px;
   }
 }
-.i_infoblock .i_container .i_news .news-list a {
+.i_infoblock .i_container .i_news .news-list .news-item-name {
   display: flex;
   justify-items: center;
   text-decoration: none;
+  line-height: normal;
 }
-.i_infoblock .i_container .i_news .news-list a b {
+.i_infoblock .i_container .i_news .news-list .news-item-name b {
   height: 42px;
   font-size: 21px;
   text-align: center;
 }
 @media screen and (max-width: 1330px) {
-  .i_infoblock .i_container .i_news .news-list a b {
+  .i_infoblock .i_container .i_news .news-list .news-item-name b {
     font-size: 18px;
     height: 42px;
   }
 }
 @media screen and (max-width: 480px) {
-  .i_infoblock .i_container .i_news .news-list a b {
+  .i_infoblock .i_container .i_news .news-list .news-item-name b {
     font-size: 16px;
     height: 32px;
   }
 }
 @media screen and (max-width: 360px) {
-  .i_infoblock .i_container .i_news .news-list a b {
+  .i_infoblock .i_container .i_news .news-list .news-item-name b {
     font-size: 15px;
   }
 }

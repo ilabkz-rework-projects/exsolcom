@@ -2216,28 +2216,31 @@ body{
             gap: 25px;
           }
           @media screen and (max-width: 430px){
-            gap: 10px;
+            gap: 25px;
           }
           //News изображение
           .news-item-img{
+            max-width: 290px;
             width: 110%;
-            height: 58%;
+            //height: 58%;
+            object-fit: contain;
+            min-width: 125px;
             img{
               width: 100%;
               height: 100%;
             }
             @media screen and (max-width: 1330px){
               width: 102%;
-              height: 52%;
+              //height: 52%;
             }
             @media screen and (max-width: 1330px){
               width: 102%;
-              height: 50%;
+              //height: 50%;
             }
 
             @media screen and (max-width: 480px){
               width: 92%;
-              height: 42%;
+              //height: 42%;
             }
             }
           }
@@ -2255,10 +2258,11 @@ body{
           }
           //!News Date
           //News Headline
-          a{
+          .news-item-name{
             display: flex;
             justify-items: center;
             text-decoration: none;
+            line-height: normal;
             b{
               height: 42px;
               font-size: 21px;
