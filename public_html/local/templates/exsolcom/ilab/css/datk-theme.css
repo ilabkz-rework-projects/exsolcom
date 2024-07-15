@@ -78,6 +78,38 @@ html[data-theme=dark] .i_header .i_search-container #title-search .i_search-subm
 html[data-theme=dark] .i_header .i_search-container #title-search .i_search-submit:hover {
   background-image: url("../img/svg/lupa-icon_r.svg");
 }
+html[data-theme=dark] .i_main .i_products .swiper-slide:hover:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200%;
+  height: 200%;
+  background-image: url("../img/svg/slider-hover-products-dark.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+  border-radius: 50%;
+}
+html[data-theme=dark] .i_main .i_projects .swiper.projects-swiper .swiper-slide .swiper-slide:hover {
+  box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.2);
+  background-color: var(--bg-blockSliderProjectHover);
+}
+html[data-theme=dark] .i_main .i_projects .swiper.projects-swiper .swiper-slide .swiper-slide:hover:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200%;
+  height: 200%;
+  background-image: url("../img/svg/slider-hover-projects-dark.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+  border-radius: 50%;
+}
 html[data-theme=dark] .i_main .i_partners .i_partners-title .i_partners-title-icon {
   background-image: url("../img/svg/partners-icon_b.svg");
 }

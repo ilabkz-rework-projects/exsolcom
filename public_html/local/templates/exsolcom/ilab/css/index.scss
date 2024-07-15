@@ -1694,6 +1694,8 @@ body{
         display: flex;
         gap: 40px;
         align-items: center;
+        position: relative;
+        z-index: 2;
         @media screen and (max-width: 680px){
           flex-direction: column;
           gap: 20px;

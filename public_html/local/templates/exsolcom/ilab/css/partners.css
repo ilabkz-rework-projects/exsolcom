@@ -15,6 +15,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("../img/svg/partners-icon_w.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 55px;
 }
 .i_partners .i_partners-title .i_partners-title-icon svg {
   color: var(--color-circleIcon);
@@ -74,16 +78,68 @@
   gap: 40px;
   margin-top: 70px;
 }
+@media screen and (max-width: 1330px) {
+  .i_partners .partners-list {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_partners .partners-list {
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .i_partners .partners-list {
+    gap: 12px;
+  }
+}
 .i_partners .partners-list .partners-item {
   position: relative;
   text-align: center;
-  background-color: var(--bg-second);
+  background-color: var(--bg-buttonHover);
   background-repeat: no-repeat;
   background-position: center;
   background-blend-mode: multiply;
   background-size: contain;
   border-radius: 50%;
-  width: calc(16.6666666667% - 40px);
+  width: calc(16.6666666667% - 35px);
+  max-width: 220px;
+}
+@media screen and (max-width: 1330px) {
+  .i_partners .partners-list .partners-item {
+    width: calc(16.6666666667% - 25px);
+    max-width: 185px;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .i_partners .partners-list .partners-item {
+    width: calc(20% - 25px);
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 940px) {
+  .i_partners .partners-list .partners-item {
+    width: calc(25% - 23px);
+    max-width: 190px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .i_partners .partners-list .partners-item {
+    width: calc(33.3333333333% - 20px);
+    max-width: 190px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .i_partners .partners-list .partners-item {
+    width: calc(33.3333333333% - 10px);
+    max-width: 130px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .i_partners .partners-list .partners-item {
+    width: calc(33.3333333333% - 10px);
+    max-width: 100px;
+  }
 }
 .i_partners .partners-list .partners-item img {
   width: 100%;
@@ -92,7 +148,7 @@
   visibility: hidden;
 }
 .i_partners .partners-list .partners-item:hover {
-  background-color: var(--bg);
+  background-color: var(--bg-block);
   cursor: pointer;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
 }
@@ -104,7 +160,7 @@
   transform: translate(-50%, -50%);
   width: 200%;
   height: 200%;
-  background-image: url("../img/svg/bg-element-light_2.svg");
+  background-image: url("../img/svg/hover-programm-products-b-light.svg");
   background-repeat: no-repeat;
   background-size: inherit;
   z-index: -1;
