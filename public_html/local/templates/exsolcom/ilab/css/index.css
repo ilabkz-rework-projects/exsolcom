@@ -1596,6 +1596,8 @@ body {
   display: flex;
   gap: 40px;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 @media screen and (max-width: 680px) {
   .i_main .i_software .i_container .i_software-corporate {
