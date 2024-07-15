@@ -421,6 +421,11 @@ span:hover {
   height: 90%;
   border-radius: 35px;
 }
+@media screen and (max-width: 930px) {
+  .i_modal-kp {
+    padding: 15px;
+  }
+}
 .i_modal-kp .i_container {
   margin: 25px 5%;
   width: unset;
@@ -431,18 +436,80 @@ span:hover {
 @media screen and (max-width: 1630px) {
   .i_modal-kp .i_container {
     padding: 0 5%;
+    padding: 0 10% 90px 22%;
   }
 }
 @media screen and (max-width: 1330px) {
   .i_modal-kp .i_container {
     padding: 0 3%;
     margin: 25px 2%;
+    padding: 0 10% 90px 27%;
+  }
+}
+@media screen and (max-width: 1270px) {
+  .i_modal-kp .i_container {
+    padding: 0 3%;
+    margin: 25px 3%;
+    padding: 0 5% 90px 30%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .i_modal-kp .i_container {
+    padding: 0 5% 90px 3%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .i_modal-kp .i_modal-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .i_modal-kp .i_modal-img {
   position: absolute;
   left: 5%;
   max-width: 300px;
+}
+@media screen and (max-width: 1740px) {
+  .i_modal-kp .i_modal-img {
+    max-width: 280px;
+  }
+}
+@media screen and (max-width: 1550px) {
+  .i_modal-kp .i_modal-img {
+    max-width: 260px;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .i_modal-kp .i_modal-img {
+    max-width: 240px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .i_modal-kp .i_modal-img {
+    max-width: 215px;
+  }
+}
+@media screen and (max-width: 890px) {
+  .i_modal-kp .i_modal-img {
+    max-width: 190px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .i_modal-kp .i_modal-img {
+    max-width: 180px;
+  }
+}
+@media screen and (max-width: 710px) {
+  .i_modal-kp .i_modal-img {
+    max-width: 150px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .i_modal-kp .i_modal-img {
+    position: relative;
+  }
 }
 .i_modal-kp .i_modal-img img {
   width: 100%;
@@ -521,6 +588,12 @@ span:hover {
 @media screen and (max-width: 1330px) {
   .i_modal-kp .i_modal-footer .i_modal-footer-btn button {
     padding: 14px 34px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_modal-kp .i_modal-footer .i_modal-footer-btn button {
+    font-size: 12px;
+    padding: 10px 25px;
   }
 }
 

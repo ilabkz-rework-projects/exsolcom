@@ -400,6 +400,9 @@ span {
   width: 95%;
   height: 90%;
   border-radius: 35px;
+  @media screen and (max-width: 930px){
+    padding: 15px;
+  }
 
   .i_container{
     margin: 25px 5%;
@@ -409,10 +412,29 @@ span {
     padding: 0 10% 90px 20%;
     @media screen and (max-width: 1630px){
       padding: 0 5%;
+      padding: 0 10% 90px 22%;
     }
     @media screen and (max-width: 1330px){
       padding: 0 3%;
       margin: 25px 2%;
+      padding: 0 10% 90px 27%;
+    }
+    @media screen and (max-width: 1270px){
+      padding: 0 3%;
+      margin: 25px 3%;
+      padding: 0 5% 90px 30%;
+    }
+    @media screen and (max-width: 620px){
+      padding: 0 5% 90px 3%;
+    }
+  }
+
+  .i_modal-box{
+    @media screen and (max-width: 620px){
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 
@@ -420,6 +442,30 @@ span {
     position: absolute;
     left: 5%;
     max-width: 300px;
+    @media screen and (max-width: 1740px){
+      max-width: 280px;
+    }
+    @media screen and (max-width: 1550px){
+      max-width: 260px;
+    }
+    @media screen and (max-width: 1330px){
+      max-width: 240px;
+    }
+    @media screen and (max-width: 1000px){
+      max-width: 215px;
+    }
+    @media screen and (max-width: 890px){
+      max-width: 190px;
+    }
+    @media screen and (max-width: 780px){
+      max-width: 180px;
+    }
+    @media screen and (max-width: 710px){
+      max-width: 150px;
+    }
+    @media screen and (max-width: 620px){
+      position: relative;
+    }
     img{
       width: 100%;
     }
@@ -498,6 +544,10 @@ span {
         padding: 18px 44px;
         @media screen and (max-width: 1330px){
           padding: 14px 34px;
+        }
+        @media screen and (max-width: 480px){
+          font-size: 12px;
+          padding: 10px 25px;
         }
       }
     }
