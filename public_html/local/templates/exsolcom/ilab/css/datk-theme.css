@@ -24,7 +24,8 @@ html[data-theme=dark] .i_modal .i_modal-content .i_snippet.important-info .i_sni
     background-size: 48px;
   }
 }
-html[data-theme=dark] .i_submit .i_submit-close {
+html[data-theme=dark] .i_submit .i_submit-close,
+html[data-theme=dark] .i_form-kp .i_submit-close {
   background-image: url("../img/svg/closeModal-white.svg");
 }
 html[data-theme=dark] .i_side-menu .i_side-menu-close {
