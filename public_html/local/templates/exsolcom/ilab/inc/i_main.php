@@ -774,7 +774,7 @@
 			<!--!OUR STATUS GROUP TITLE ICON-->
 			<!--OUR STATUS GROUP TITLE NAME-->
 			<div class="i_our-status-group-title-name">
-				<span>НАШИ СТАТУСЫ</span>
+                <a href="https://consulting.1c.ru/partners/14482.html"><span>НАШИ СТАТУСЫ</span></a>
 			</div>
 			<!--!OUR STATUS GROUP TITLE NAME-->
 		</div>
@@ -841,10 +841,10 @@
 		<!--!OUR STATUS GROUP BLOCKS-->
 		<!--OUR STATUS GROUP BTN-->
 		<div class="i_our-status-group-btn">
-			<button>Посмотреть детально рейтинги компании на сайте 1C</button>
+            <a href="https://consulting.1c.ru/partners/14482.html"><button>Посмотреть детально рейтинги компании на сайте 1C</button></a>
 		</div>
 		<div class="i_our-status-group-btn_1">
-			<button>Все рейтинги компании на сайте 1C</button>
+            <a href="https://consulting.1c.ru/partners/14482.html"><button>Все рейтинги компании на сайте 1C</button></a>
 		</div>
 		<!--!OUR STATUS GROUP BTN-->
 	</div>

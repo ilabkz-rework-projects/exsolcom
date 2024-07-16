@@ -259,7 +259,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		circle3.classList.remove('wide');
 	});
 
-	// Отвечает за раскрытие блока поиска в header
+	const searchWrapperFooter = document.getElementById('i_search-wrapper2');
+	const titleSearch2 = document.querySelector('#title-search2');
+	const searchClose2 = document.querySelector('.i_search-close2');
+
+	searchWrapperFooter.addEventListener('click', () => {
+		titleSearch2.classList.toggle('active')
+	});
+
+	searchClose2.addEventListener('click', () => {
+		titleSearch2.classList.remove('active')
+	})
+
+
+	// Отвечает за раскрытие формы поиска в header
 	const searchWrapper = document.querySelector('.i_search-wrapper');
 	const titleSearch = document.querySelector('#title-search');
 	const searchClose = document.querySelector('.i_search-close');
@@ -270,7 +283,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 	searchClose.addEventListener('click', () => {
 		titleSearch.classList.remove('active')
-	})
+	});
+
+
+
 
 	// Получаем данные для модальных окон
 	const servicesItems = document.querySelectorAll('.i_services-modal-item');
