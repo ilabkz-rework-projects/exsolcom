@@ -20,6 +20,9 @@ button:hover {
   color: var(--color-red);
   background-color: var(--bg-buttonHover);
 }
+button:hover a {
+  color: var(--color-red) !important;
+}
 button:hover svg {
   color: var(--color-red) !important;
 }
@@ -62,6 +65,35 @@ span:hover {
 .news-item a b,
 .news-page-item a b {
   color: var(--color-textInfoblock);
+}
+.news-item span,
+.news-page-item span {
+  color: var(--color-textInfoblock);
+  height: 42px;
+  font-size: 21px;
+  text-align: center;
+  font-weight: 600;
+}
+@media screen and (max-width: 1330px) {
+  .news-item span,
+  .news-page-item span {
+    font-size: 18px;
+    height: 42px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .news-item span,
+  .news-page-item span {
+    font-size: 16px;
+    height: 32px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .news-item span,
+  .news-page-item span {
+    font-size: 15px;
+    height: 45px;
+  }
 }
 
 .blog-item {
