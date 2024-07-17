@@ -203,6 +203,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 	language.addEventListener('click', () => {
 		language.classList.toggle('expanded');
+		sideMenu.classList.remove('show');
+		circle2.classList.remove('wide');
+		titleSearch2.classList.remove('active');
 	});
 
 	textOptions.forEach(option => {
@@ -222,6 +225,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			circle.classList.add('wide');
 		}
 		language.classList.remove('expanded');
+		sideMenu.classList.remove('show');
+		titleSearch2.classList.remove('active');
+		circle3.classList.remove('wide');
+		circle2.classList.remove('wide');
 	});
 
 	closeButton.addEventListener('click', (event) => {
@@ -237,6 +244,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		if (!circle2.classList.contains('wide')) {
 			circle2.classList.add('wide');
 		}
+		sideMenu.classList.remove('show');
+		language.classList.remove('expanded');
+		circle.classList.remove('wide');
+		titleSearch.classList.remove('active');
+		titleSearch2.classList.remove('active');
 	});
 
 	closeButton2.addEventListener('click', (event) => {
@@ -252,6 +264,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		if (!circle3.classList.contains('wide')) {
 			circle3.classList.add('wide');
 		}
+		sideMenu.classList.remove('show');
+		language.classList.remove('expanded');
+		titleSearch.classList.remove('active')
+		circle.classList.remove('wide');
 	});
 
 	closeButton3.addEventListener('click', (event) => {
@@ -259,12 +275,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		circle3.classList.remove('wide');
 	});
 
+	// Отвечает за раскрытие формы поиска в Footer
 	const searchWrapperFooter = document.getElementById('i_search-wrapper2');
 	const titleSearch2 = document.querySelector('#title-search2');
 	const searchClose2 = document.querySelector('.i_search-close2');
 
 	searchWrapperFooter.addEventListener('click', () => {
-		titleSearch2.classList.toggle('active')
+		titleSearch2.classList.toggle('active');
+		sideMenu.classList.remove('show');
+		language.classList.remove('expanded')
+		titleSearch.classList.remove('active');
+		circle.classList.remove('wide');
+		circle2.classList.remove('wide');
 	});
 
 	searchClose2.addEventListener('click', () => {
@@ -278,7 +300,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	const searchClose = document.querySelector('.i_search-close');
 
 	searchWrapper.addEventListener('click', () => {
-		titleSearch.classList.toggle('active')
+		titleSearch.classList.toggle('active');
+		sideMenu.classList.remove('show');
+		language.classList.remove('expanded');
+		titleSearch2.classList.remove('active');
+		circle3.classList.remove('wide');
+		circle2.classList.remove('wide');
 	});
 
 	searchClose.addEventListener('click', () => {
@@ -304,12 +331,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 	sideMenuButton.forEach(item => {
 		item.addEventListener('click', () => {
-			sideMenu.classList.add('show')
-		})
+			sideMenu.classList.add('show');
+			circle.classList.remove('wide');
+			circle2.classList.remove('wide');
+			circle3.classList.remove('wide');
+			language.classList.remove('expanded')
+			titleSearch.classList.remove('active');
+			titleSearch2.classList.remove('active');
+			language.classList.remove('expanded');
+		});
 	})
 
 	sideMenuClose.addEventListener('click', () => {
-		sideMenu.classList.remove('show')
+		sideMenu.classList.remove('show');
 	})
 
 
@@ -324,7 +358,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			modal.classList.remove('active')
 			submitModal.classList.add('active')
 			overlay.classList.add('active')
-		})
+			sideMenu.classList.remove('show')
+			language.classList.remove('expanded');
+			titleSearch.classList.remove('active');
+			titleSearch2.classList.remove('active');
+			circle.classList.remove('wide');
+			circle2.classList.remove('wide');
+			circle3.classList.remove('wide');
+		});
+
 	})
 
 
@@ -401,6 +443,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			submitModal.classList.remove('active')
 			formKpModal.classList.add('active')
 			overlay.classList.add('active')
+			sideMenu.classList.remove('show')
+			language.classList.remove('expanded');
+			circle.classList.remove('wide');
+			circle2.classList.remove('wide');
+			circle3.classList.remove('wide');
 		})
 	})
 	

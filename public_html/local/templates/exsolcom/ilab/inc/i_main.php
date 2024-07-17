@@ -330,9 +330,11 @@
 );?>
         <!--!PERSONAL SWIPER PERSONAL-->
 		<div class="i_personal-btn">
-			<button>
-				Скачать презентацию компании
-			</button>
+            <a href="../upload/presentation/presentation.pdf" target="_blank" download>
+                <button>
+                    Скачать презентацию компании
+                </button>
+            </a>
 		</div>
 		<div class="pagination">
 			<div class="swiper-personal-button-prev">

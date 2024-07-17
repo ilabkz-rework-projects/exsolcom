@@ -198,6 +198,9 @@
           justify-content: center;
         }
         button{
+          &:hover{
+            background-color: var(--bg-buttonHoverSecond);
+          }
           padding: 20px 48px;
           @media screen and (max-width: 1330px){
             padding: 16px 38px;

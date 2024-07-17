@@ -207,6 +207,9 @@
 .i_about-us .i_about-company .i_about-company-strategy .i_about-company-strategy-btn button {
   padding: 20px 48px;
 }
+.i_about-us .i_about-company .i_about-company-strategy .i_about-company-strategy-btn button:hover {
+  background-color: var(--bg-buttonHoverSecond);
+}
 @media screen and (max-width: 1330px) {
   .i_about-us .i_about-company .i_about-company-strategy .i_about-company-strategy-btn button {
     padding: 16px 38px;

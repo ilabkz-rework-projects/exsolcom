@@ -64,9 +64,11 @@
 				<!--!ABOUT COMPANY STRATEGY DESC-->
 				<!--ABOUT COMPANY STRATEGY BTN-->
 				<div class="i_about-company-strategy-btn">
-					<button>
-						Скачать презентацию компаний
-					</button>
+                    <a href="../upload/presentation/presentation.pdf" target="_blank" download>
+                        <button>
+                            Скачать презентацию компаний
+                        </button>
+                    </a>
 				</div>
 				<!--!ABOUT COMPANY STRATEGY BTN-->
 			</div>
