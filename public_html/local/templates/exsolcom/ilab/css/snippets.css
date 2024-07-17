@@ -627,6 +627,9 @@
   right: 50%;
   transform: translateX(50%);
 }
+.i_snippet.container-composition .i_snippet.composition-block-second .i_snippet-picture {
+  background-image: url("../img/svg/info-call-icon.svg") !important;
+}
 .i_snippet.container-composition .i_snippet.composition-block,
 .i_snippet.container-composition .i_snippet.composition-block-second {
   padding: 40px;
@@ -659,19 +662,23 @@
   max-width: 100px;
   min-width: 100px;
   width: 100%;
-  width: 100%;
-  height: 100%;
+  height: 100px;
+  background-image: url("../img/svg/info-system-icon.svg");
 }
 @media screen and (max-width: 760px) {
   .i_snippet.container-composition .i_snippet.composition-block .i_snippet-picture,
   .i_snippet.container-composition .i_snippet.composition-block-second .i_snippet-picture {
     min-width: 80px;
+    height: 80px;
+    background-size: 80px;
   }
 }
 @media screen and (max-width: 480px) {
   .i_snippet.container-composition .i_snippet.composition-block .i_snippet-picture,
   .i_snippet.container-composition .i_snippet.composition-block-second .i_snippet-picture {
     min-width: 50px;
+    height: 50px;
+    background-size: 50px;
   }
 }
 .i_snippet.container-composition .i_snippet.composition-block .i_snippet-picture img,
@@ -756,17 +763,22 @@
 .i_snippet.container-composition .i_snippet.composition-block-third .i_snippet-top .i_snippet-picture {
   max-width: 100px;
   min-width: 100px;
+  background-image: url("../img/svg/update-icon.svg");
   width: 100%;
-  height: 100%;
+  height: 100px;
 }
 @media screen and (max-width: 760px) {
   .i_snippet.container-composition .i_snippet.composition-block-third .i_snippet-top .i_snippet-picture {
     min-width: 80px;
+    height: 80px;
+    background-size: 80px;
   }
 }
 @media screen and (max-width: 480px) {
   .i_snippet.container-composition .i_snippet.composition-block-third .i_snippet-top .i_snippet-picture {
     min-width: 50px;
+    height: 50px;
+    background-size: 50px;
   }
 }
 .i_snippet.container-composition .i_snippet.composition-block-third .i_snippet-top .i_snippet-picture img {

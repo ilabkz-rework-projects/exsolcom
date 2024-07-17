@@ -1,6 +1,6 @@
 .programm-container{
   display: flex;
-  gap: 50px;
+  gap: 80px;
   justify-content: space-between;
   .bx_sitemap{
     .bx_sitemap_ul{
@@ -310,7 +310,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-image: url("menu/programm-products_w.svg");
+      background-image: url("../img/svg/programm-products_w.svg");
       background-repeat: no-repeat;
       background-size: 50px;
       background-position-x: 65%;
