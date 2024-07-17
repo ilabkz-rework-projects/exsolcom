@@ -831,8 +831,38 @@ body{
         }
       }
       //!Группа Соц-сети
+      //Группа CHANGES THEAM
+      .i_banner-night_sun{
+        //.i_banner-night_sun_item{
+        //  background-image: url("../img/svg/icon-chage-team/night-icon_w.svg");
+        //  background-repeat: no-repeat;
+        //  background-size: 35px;
+        //  background-position-x: 5px;
+        //  background-position-y: 5px;
+        //}
+      }
+      //!Группа CHANGES THEAM
     }
     //!HEADER BOTTOM_POINTS
+  }
+}
+
+.i_header-bottom{
+  .i_container{
+    .i_banner-group_social{
+      .i_banner-night_sun_item{
+        background-image: url("../img/svg/icon-chage-team/night-icon_w.svg") !important;
+        background-size: 35px;
+        background-position-x: 5px;
+        background-position-y: 5px;
+        background-repeat: no-repeat;
+        @media screen and (max-width: 1330px){
+          background-size: 30px;
+          background-position-x: 3px;
+          background-position-y: 3px;
+        }
+      }
+    }
   }
 }
 //!HEADER BOTTOM
@@ -1926,16 +1956,20 @@ body{
     align-items: center;
     border: 0;
     justify-content: center;
+    background-image: url("../img/svg/icon-chage-team/night-icon_w.svg");
+    background-position-x: 5px;
+    background-position-y: 5px;
+    background-size: 35px;
+    background-repeat: no-repeat;
     svg{
       margin: 0 5px 5px 0;
     }
     @media screen and (max-width: 1330px){
       width: 40px;
       height: 40px;
-      svg{
-        width: 27px;
-        height: 27px;
-      }
+      background-position-x: 3px;
+      background-position-y: 3px;
+      background-size: 30px;
     }
     @media screen and (max-width: 1000px){
       svg{
@@ -1957,10 +1991,11 @@ body{
     //  color: var(--color-circleIcon);
     //}
     &:focus {
-      background-color: var(--color-Grey);
+      //background-color: var(--color-Grey);
       transition: 0.3s ease;
       cursor: pointer;
       border: none;
+      //background-image: url("../img/svg/icon-chage-team/night-icon_r.svg");
       .i_banner-icon-nightSun {
         margin-bottom: 5px;
         margin-right: 5px;
@@ -4231,6 +4266,9 @@ body{
                   margin: 0;
                   opacity: 0;
                   visibility: hidden;
+                  @media screen and (max-width: 760px){
+                    left: -15%;
+                  }
 
                   a{
                     color: var(--color-black);
@@ -4241,12 +4279,18 @@ body{
                     position: relative;
                     background-color: transparent;
                     text-wrap: nowrap;
-                    @media screen and (max-width: 1000px){
+                    @media screen and (max-width: 1100px){
                       font-size: 14px;
                     }
-                    @media screen and (max-width: 760px){
+                    @media screen and (max-width: 1000px){
                       font-size: 13px;
                     }
+                    @media screen and (max-width: 760px){
+                      font-size: 12px;
+                    }
+                    //@media screen and (max-width: 471px){
+                    //  font-size: 14px;
+                    //}
                   }
                 }
                 &.wide{
@@ -4272,21 +4316,26 @@ body{
                     height: 100%;
                     z-index: 1;
                     @media screen and (max-width: 1100px){
-                      right: -480%;
+                      //right: -480%;
+                      right: -330%;
                       transform: translateX(50%);
                       background-size: 22px auto;
                     }
                     @media screen and (max-width: 1000px){
-                      right: -440%;
+                      //right: -440%;
+                      right: -290%;
                       transform: translateX(50%);
                       background-size: 22px auto;
                     }
-                    @media screen and (max-width: 471px){
-                      right: -420%;
+                    @media screen and (max-width: 760px){
+                      right: -245%;
                     }
-                    @media screen and (max-width: 385px){
-                      right: -380%;
-                    }
+                    //@media screen and (max-width: 471px){
+                    //  right: -360%;
+                    //}
+                    //@media screen and (max-width: 385px){
+                    //  right: -380%;
+                    //}
                   }
                   .j_drop{
                     width: 240px;
@@ -4295,17 +4344,21 @@ body{
                     z-index: 1;
                     height: 105%;
                     @media screen and (max-width: 1100px){
-                      width: 260px;
+                      width: 195px; //260px
                     }
                     @media screen and (max-width: 1000px){
-                      width: 240px;
+                      //width: 240px;
+                      width: 175px;
                     }
-                    @media screen and (max-width: 471px){
-                      width: 230px;
+                    @media screen and (max-width: 760px){
+                      width: 165px;
                     }
-                    @media screen and (max-width: 385px){
-                      width: 214px;
-                    }
+                    //@media screen and (max-width: 471px){
+                    //  width: 210px;
+                    //}
+                    //@media screen and (max-width: 385px){
+                    //  width: 214px;
+                    //}
 
                     a{
                       opacity: 1;
@@ -4318,6 +4371,9 @@ body{
                       left: 15px;
                       top: 50%;
                       transform: translateY(-50%);
+                      @media screen and (max-width: 760px){
+                        left: 13px;
+                      }
                     }
                   }
                 }
@@ -4969,9 +5025,15 @@ body{
                 align-items: center;
                 border: 0;
                 justify-content: center;
+                background-image: url("../img/svg/icon-chage-team/night-icon_w.svg");
+                background-position-x: 3px;
+                background-position-y: 3px;
+                background-size: 30px;
+                background-repeat: no-repeat;
+
                 //HOVER NIGHT SUN
-                &:focus {
-                  background-color: var(--color-Grey);
+                &:active {
+                  //background-color: var(--color-Grey);
                   transition: 0.3s ease;
                   cursor: pointer;
                   border: none;

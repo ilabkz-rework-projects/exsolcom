@@ -89,6 +89,21 @@ html[data-theme='dark']{
       }
     }
   }
+  .i_header-bottom{
+    .i_container{
+      .i_banner-group_social{
+        .i_banner-night_sun_item{
+          background-image: url("../img/svg/icon-chage-team/day-icon_b.svg") !important; ;
+          background-position: center;
+          background-size: 40px;
+          background-repeat: no-repeat;
+          @media screen and (max-width: 1330px){
+            background-size: 35px;
+          }
+        }
+      }
+    }
+  }
 
 
   .i_header{
@@ -701,6 +716,20 @@ html[data-theme='dark']{
     background-image: url("../img/svg/bg-element-dark_2.svg");
   }
   .i_banner{
+    .i_container{
+      .i_banner-left{
+        .i_banner-group_social{
+          .i_banner-night_sun{
+            .i_banner-night_sun_item{
+              background-image: url("../img/svg/icon-chage-team/day-icon_b.svg");
+              background-position: center;
+              background-size: 35px;
+              background-repeat: no-repeat;
+            }
+          }
+        }
+      }
+    }
     .i_banner-bg{
       display: none;
     }
@@ -767,21 +796,28 @@ html[data-theme='dark']{
         transform: translateX(50%);
       }
     }
-    .i_banner-container .i_banner-right .i_banner-group_social .i_banner-night_sun{
-      .i_banner-sun_item{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        svg{
-
+    .i_banner-container{
+      .i_banner-right{
+        .i_banner-group_social{
+          .i_banner-night_sun{
+            .i_banner-night_sun_item{
+              background-image: url("../img/svg/icon-chage-team/day-icon_b.svg");
+              background-position: center;
+              background-size: 40px;
+              background-repeat: no-repeat;
+              @media screen and (max-width: 1330px){
+                background-size: 35px;
+              }
+            }
+          }
         }
       }
-      .i_banner-night_item{
-
-      }
     }
+
   }
 }
+
+
 
 
 

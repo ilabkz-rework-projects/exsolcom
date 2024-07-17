@@ -813,6 +813,20 @@ body {
     height: 16px;
   }
 }
+.i_header-bottom .i_container .i_banner-group_social .i_banner-night_sun_item {
+  background-image: url("../img/svg/icon-chage-team/night-icon_w.svg") !important;
+  background-size: 35px;
+  background-position-x: 5px;
+  background-position-y: 5px;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 1330px) {
+  .i_header-bottom .i_container .i_banner-group_social .i_banner-night_sun_item {
+    background-size: 30px;
+    background-position-x: 3px;
+    background-position-y: 3px;
+  }
+}
 
 .i_header-menu {
   background-color: transparent;
@@ -1826,6 +1840,11 @@ body {
   align-items: center;
   border: 0;
   justify-content: center;
+  background-image: url("../img/svg/icon-chage-team/night-icon_w.svg");
+  background-position-x: 5px;
+  background-position-y: 5px;
+  background-size: 35px;
+  background-repeat: no-repeat;
 }
 .i_banner-group_social .i_banner-night_sun_item svg {
   margin: 0 5px 5px 0;
@@ -1834,14 +1853,12 @@ body {
   .i_banner-group_social .i_banner-night_sun_item {
     width: 40px;
     height: 40px;
-  }
-  .i_banner-group_social .i_banner-night_sun_item svg {
-    width: 27px;
-    height: 27px;
+    background-position-x: 3px;
+    background-position-y: 3px;
+    background-size: 30px;
   }
 }
 .i_banner-group_social .i_banner-night_sun_item:focus {
-  background-color: var(--color-Grey);
   transition: 0.3s ease;
   cursor: pointer;
   border: none;
@@ -4085,6 +4102,13 @@ body {
     opacity: 0;
     visibility: hidden;
   }
+}
+@media screen and (max-width: 1100px) and (max-width: 760px) {
+  .i_footer .i_container .i_footer-right .i_footer-right-groupMore .i_footer-right-moreGroup .i_footer-right-more #myCircles3 .i_drop {
+    left: -15%;
+  }
+}
+@media screen and (max-width: 1100px) {
   .i_footer .i_container .i_footer-right .i_footer-right-groupMore .i_footer-right-moreGroup .i_footer-right-more #myCircles3 .i_drop a {
     color: var(--color-black);
     font-weight: 600;
@@ -4096,14 +4120,19 @@ body {
     text-wrap: nowrap;
   }
 }
-@media screen and (max-width: 1100px) and (max-width: 1000px) {
+@media screen and (max-width: 1100px) and (max-width: 1100px) {
   .i_footer .i_container .i_footer-right .i_footer-right-groupMore .i_footer-right-moreGroup .i_footer-right-more #myCircles3 .i_drop a {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 1100px) and (max-width: 760px) {
+@media screen and (max-width: 1100px) and (max-width: 1000px) {
   .i_footer .i_container .i_footer-right .i_footer-right-groupMore .i_footer-right-moreGroup .i_footer-right-more #myCircles3 .i_drop a {
     font-size: 13px;
+  }
+}
+@media screen and (max-width: 1100px) and (max-width: 760px) {
+  .i_footer .i_container .i_footer-right .i_footer-right-groupMore .i_footer-right-moreGroup .i_footer-right-more #myCircles3 .i_drop a {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -4129,26 +4158,21 @@ body {
 }
 @media screen and (max-width: 1100px) and (max-width: 1100px) {
   .i_footer .i_container .i_footer-right .i_footer-right-groupMore .i_footer-right-moreGroup .i_footer-right-more #myCircles3.wide .close_hide_menu3 {
-    right: -480%;
+    right: -330%;
     transform: translateX(50%);
     background-size: 22px auto;
   }
 }
 @media screen and (max-width: 1100px) and (max-width: 1000px) {
   .i_footer .i_container .i_footer-right .i_footer-right-groupMore .i_footer-right-moreGroup .i_footer-right-more #myCircles3.wide .close_hide_menu3 {
-    right: -440%;
+    right: -290%;
     transform: translateX(50%);
     background-size: 22px auto;
   }
 }
-@media screen and (max-width: 1100px) and (max-width: 471px) {
+@media screen and (max-width: 1100px) and (max-width: 760px) {
   .i_footer .i_container .i_footer-right .i_footer-right-groupMore .i_footer-right-moreGroup .i_footer-right-more #myCircles3.wide .close_hide_menu3 {
-    right: -420%;
-  }
-}
-@media screen and (max-width: 1100px) and (max-width: 385px) {
-  .i_footer .i_container .i_footer-right .i_footer-right-groupMore .i_footer-right-moreGroup .i_footer-right-more #myCircles3.wide .close_hide_menu3 {
-    right: -380%;
+    right: -245%;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -4162,22 +4186,17 @@ body {
 }
 @media screen and (max-width: 1100px) and (max-width: 1100px) {
   .i_footer .i_container .i_footer-right .i_footer-right-groupMore .i_footer-right-moreGroup .i_footer-right-more #myCircles3.wide .j_drop {
-    width: 260px;
+    width: 195px;
   }
 }
 @media screen and (max-width: 1100px) and (max-width: 1000px) {
   .i_footer .i_container .i_footer-right .i_footer-right-groupMore .i_footer-right-moreGroup .i_footer-right-more #myCircles3.wide .j_drop {
-    width: 240px;
+    width: 175px;
   }
 }
-@media screen and (max-width: 1100px) and (max-width: 471px) {
+@media screen and (max-width: 1100px) and (max-width: 760px) {
   .i_footer .i_container .i_footer-right .i_footer-right-groupMore .i_footer-right-moreGroup .i_footer-right-more #myCircles3.wide .j_drop {
-    width: 230px;
-  }
-}
-@media screen and (max-width: 1100px) and (max-width: 385px) {
-  .i_footer .i_container .i_footer-right .i_footer-right-groupMore .i_footer-right-moreGroup .i_footer-right-more #myCircles3.wide .j_drop {
-    width: 214px;
+    width: 165px;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -4192,6 +4211,13 @@ body {
     top: 50%;
     transform: translateY(-50%);
   }
+}
+@media screen and (max-width: 1100px) and (max-width: 760px) {
+  .i_footer .i_container .i_footer-right .i_footer-right-groupMore .i_footer-right-moreGroup .i_footer-right-more #myCircles3.wide .j_drop svg {
+    left: 13px;
+  }
+}
+@media screen and (max-width: 1100px) {
   .i_footer .i_container .i_footer-right .i_footer-right-groupMore .i_footer-right-moreGroup .i_footer-right-more .i_footer-right-more-icon {
     width: 40px;
     height: 40px;
@@ -4741,14 +4767,18 @@ body {
     align-items: center;
     border: 0;
     justify-content: center;
+    background-image: url("../img/svg/icon-chage-team/night-icon_w.svg");
+    background-position-x: 3px;
+    background-position-y: 3px;
+    background-size: 30px;
+    background-repeat: no-repeat;
   }
-  .i_main .i_banner .i_container .i_banner-left .i_banner-group_social .i_banner-night_sun .i_banner-night_sun_item:focus {
-    background-color: var(--color-Grey);
+  .i_main .i_banner .i_container .i_banner-left .i_banner-group_social .i_banner-night_sun .i_banner-night_sun_item:active {
     transition: 0.3s ease;
     cursor: pointer;
     border: none;
   }
-  .i_main .i_banner .i_container .i_banner-left .i_banner-group_social .i_banner-night_sun .i_banner-night_sun_item:focus .i_banner-icon-nightSun {
+  .i_main .i_banner .i_container .i_banner-left .i_banner-group_social .i_banner-night_sun .i_banner-night_sun_item:active .i_banner-icon-nightSun {
     color: var(--color-black);
     margin-bottom: 3px;
     margin-right: 3px;

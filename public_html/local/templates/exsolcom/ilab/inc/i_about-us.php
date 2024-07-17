@@ -807,9 +807,11 @@
 					<!--!CLOUD GROUP DESC DEPICTION-->
 					<!--CLOUD GROUP DESC BTN-->
 					<div class="i_cloud-group-desc-btn">
-						<button>
-							Подробнее
-						</button>
+                        <a href="https://exsolcom-1cfresh.kz/">
+                            <button>
+                                Подробнее
+                            </button>
+                        </a>
 					</div>
 					<!--!CLOUD GROUP DESC BTN-->
 				</div>
