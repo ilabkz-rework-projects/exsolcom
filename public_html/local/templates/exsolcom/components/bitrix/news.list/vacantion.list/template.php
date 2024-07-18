@@ -40,7 +40,7 @@ $this->setFrameMode(true);
 		</div>
 
 	</div>
-    <div class="i_vacantion-item second" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
+    <div class="i_vacantion-item second i_detail-modal-item" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
         <div class="i_vacation-item-top">
             <div class="i_vacantion-item-left">
                 <div class="i_vacantion-img">

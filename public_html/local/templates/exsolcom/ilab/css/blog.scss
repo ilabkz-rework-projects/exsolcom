@@ -1,6 +1,20 @@
 // BLOG
-.i_blog{
-  .i_container{
+.i_blog-page{
+  position: relative;
+  &:before{
+    content: " ";
+    transition: all .4s ease;
+    background-image: url("../img/svg/bg-element-light_2.svg");
+    background-repeat: no-repeat;
+    background-position-x: 125%;
+    background-position-y: 15%;
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    right: -110px;
+    top: 10%;
+  }
+.i_container{
     // BLOG TITLE
     .i_blog-title{
       display: flex;
@@ -73,7 +87,7 @@
               .bx_sitemap_li_title{
                 display: block !important;
                 a{
-                  color: var(--color-black)!important;
+                  color: var(--color-textInfoblock)!important;
                   @media screen and (max-width: 400px){
                     font-size: 14px;
                     padding: 0 0 0 10px;
@@ -161,7 +175,7 @@
             display: none;
           }
           .i_blog-menu{
-            background-color: var(--color-circles);
+            background-color: var(--bg-seventh);
           }
           @media screen and (max-width: 480px){
             width: 90vw;
@@ -223,9 +237,10 @@
               gap: 10px;
               padding: 15px;
               box-shadow: 0px 0px 25px -1px rgba(0, 0, 0, 0.11);
-              transform: translateY(-100px);
+              transform: translateY(70px);
               opacity: 0;
               visibility: hidden;
+              transition: all .4s ease;
               li:nth-child(n){
                 display: flex;
                 width: 80vw;
@@ -264,7 +279,7 @@
               align-items: center;
               justify-content: center;
               position: relative;
-              background-color: var(--color-circles);
+              background-color: var(--bg-seventh);
               &:before{
                 content: ' ';
                 background-image: url("../img/svg/blog-icon_w.svg")!important;
@@ -283,11 +298,12 @@
                 z-index: 1;
                 top: 35%;
                 right: 6%;
-                border: solid white;
+                border: solid var(--color-White);
                 border-width: 0 2px 2px 0;
                 display: inline-block;
                 padding: 4px;
                 transform: rotate(45deg);
+                transition: all .4s ease;
               }
             }
             // !BLOG_MENU

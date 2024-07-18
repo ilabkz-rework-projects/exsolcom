@@ -1,12 +1,13 @@
 html[data-theme='dark']{
-  .i_modal{
+  .i_modal,
+  .i_modal-kp{
     .i_modal-content{
       .i_snippet.important-info{
         .i_snippet.binary-vertical-table{
           .i_snippet-top{
             .i_footer-left-icons-item{
               .i_footer-left-icons-item-circles{
-                background-image: url(../img/svg/whatsapp-icon_b.svg);
+                background-image: url("../img/svg/whatsapp-icon_b.svg");
                 background-repeat: no-repeat;
                 background-size: 55px;
                 background-position-x: 65%;
@@ -14,7 +15,7 @@ html[data-theme='dark']{
                 &:hover{
                   background-color: var(--color-circlesHover);
                   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
-                  background-image: url(../img/svg/whatsapp-icon_r.svg);
+                  background-image: url("../img/svg/whatsapp-icon_r.svg");
                   background-repeat: no-repeat;
                   background-size: 55px;
                   background-position-x: 65%;
@@ -489,7 +490,12 @@ html[data-theme='dark']{
     //!CASES
 
     //BLOG
-    .i_blog{
+    .i_blog,
+    .i_blog-page{
+      &:before{
+        transition: all .4s ease;
+        background-image: url("../img/svg/bg-element-dark_2.svg");
+      }
       //BLOG TITLE
       .i_blog-title{
         .i_blog-title-icon{
@@ -556,6 +562,28 @@ html[data-theme='dark']{
                 background-image: url("../img/svg/blog-icon_b.svg")!important;
               }
             }
+            // BLOG DROPDOWN MENU
+            .i_blog-dropdown-menu{
+              li{
+                &:before{
+                  background-image: url("../img/svg/blog-icon-2_w.svg")!important;
+                }
+                &.menu-all-articles{
+                  &:before{
+                    background-image: url("../img/svg/blog-icon-2_b.svg")!important;
+                  }
+                }
+              }
+            }
+            // !BLOG DROPDOWN MENU
+            // BLOG MENU
+            .i_blog-menu{
+              &:before{
+                background-image: url("../img/svg/blog-icon_b.svg") !important;
+              }
+
+            }
+            // !BLOG MENU
           }
           //!WRAPPER LI BEFORE
 

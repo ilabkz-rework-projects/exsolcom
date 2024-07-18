@@ -24,6 +24,9 @@ button {
     }
   }
 }
+.color-red{
+  color: var(--color-red) !important;
+}
 
 span {
   transition: all .4s ease;
@@ -35,13 +38,16 @@ span {
   }
 }
 
+a{
+  cursor: pointer !important;
+}
+
+
 .idn{
   display: none !important;
 }
 
-.color-red{
-  color: var(--color-red) !important;
-}
+
 
 .text-weight{
   font-weight: 600 !important;
@@ -330,11 +336,12 @@ span {
     gap: 15px;
     .i_modal-preview-content,
     .i_modal-preview-ending{
-      display: none;
+      display: block;
     }
   }
   .i_modal-preview-title{
-    font-size: 1.5rem;
+    //font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 600;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -354,7 +361,8 @@ span {
     }
   }
   .i_modal-preview-subtitle{
-    font-size: 1.25rem;
+    //font-size: 1.25rem;
+    font-size: 20px;
     font-weight: 600;
     color: var(--color-textInfoblock);
     cursor: text;
@@ -370,7 +378,8 @@ span {
     }
   }
   .i_modal-preview-content{
-    font-size: 1rem;
+    //font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
     color: var(--color-textInfoblock);
     font-family: "Open Sans", sans-serif;
@@ -385,7 +394,8 @@ span {
     }
   }
   .i_modal-preview-ending{
-    font-size: 1.25rem;
+    //font-size: 1.25rem;
+    font-size: 20px;
     font-weight: 600;
     color: var(--color-textInfoblock);
     cursor: text;
@@ -426,6 +436,9 @@ span {
   @media screen and (max-width: 930px){
     padding: 15px;
   }
+  @media screen and (max-width: 480px){
+    padding: 25px 5px;
+  }
 
   .i_container{
     margin: 25px 5%;
@@ -448,7 +461,8 @@ span {
       padding: 0 5% 90px 30%;
     }
     @media screen and (max-width: 620px){
-      padding: 0 5% 90px 3%;
+      padding: 0 0% 90px 0%;
+      margin: 25px 5%;
     }
   }
 
@@ -517,6 +531,10 @@ span {
     @media screen and (max-width: 1330px){
       top: 10px;
       right: 26px;
+    }
+    @media screen and (max-width: 480px){
+      top: 10px;
+      right: 10px;
     }
 
     img{
@@ -747,7 +765,7 @@ p{
 }
 // !PROGRAMM PRODUCT
 // BLOG
-.i_blog{
+.i_blog-page{
   .i_container{
     //BX_SITEMAP
     .bx_sitemap{
@@ -923,7 +941,7 @@ p{
           }
           .i_blog-menu{
             display: none;
-            background-color: var(--color-circlesSecond);
+            background-color: var(--bg-seventh);
             .bx_sitemap_li_title.second{
               display: block;
               a{
@@ -984,7 +1002,7 @@ p{
             .i_blog-dropdown-menu:before{
               content: ' ';
               border: 20px solid transparent;
-              border-bottom: 20px solid var(--bg-buttonHoverSecond);
+              border-bottom: 20px solid var(--bg-sixth);
               position: absolute;
               top: -10%;
               right: 50%;
@@ -994,7 +1012,7 @@ p{
             // BLOG_DROPDOWN_MENU
             .i_blog-dropdown-menu{
               position: absolute;
-              background-color: var(--bg-buttonHoverSecond);
+              background-color: var(--bg-sixth);
               max-width: 90vw;
               width: 100%;
               height: max-content;
@@ -1007,7 +1025,7 @@ p{
               gap: 10px;
               padding: 15px;
               box-shadow: 0px 0px 25px -1px rgba(0, 0, 0, 0.11);
-              transform: translateY(-100px);
+              transform: translateY(70px);
               opacity: 0;
               visibility: hidden;
               li:nth-child(n){
@@ -1048,7 +1066,7 @@ p{
               align-items: center;
               justify-content: center;
               position: relative;
-              background-color: var(--color-circles);
+              background-color: var(--bg-seventh);
               &:before{
                 content: ' ';
                 background-image: url("../img/svg/blog-icon_w.svg")!important;
@@ -1067,7 +1085,7 @@ p{
                 z-index: 1;
                 top: 35%;
                 right: 6%;
-                border: solid white;
+                border: solid var(--color-White);
                 border-width: 0 2px 2px 0;
                 display: inline-block;
                 padding: 4px;
