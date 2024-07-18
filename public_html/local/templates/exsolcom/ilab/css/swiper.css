@@ -68,6 +68,9 @@
     height: 20px;
   }
 }
+.i_personal .i_container .i_personal-title .i_personal-title-name a {
+  text-decoration: none;
+}
 .i_personal .i_container .i_personal-title .i_personal-title-name span {
   font-size: 32px;
   font-weight: 400;
@@ -349,6 +352,9 @@
     width: 22px;
     height: 22px;
   }
+}
+.i_products .i_container .i_products-title .i_products-title-name a {
+  text-decoration: none;
 }
 .i_products .i_container .i_products-title .i_products-title-name span {
   font-size: 32px;

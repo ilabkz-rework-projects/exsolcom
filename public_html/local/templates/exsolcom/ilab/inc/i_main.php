@@ -258,7 +258,9 @@
 				</svg>
 			</div>
 			<div class="i_personal-title-name">
-				<span>BAM БУДУТ ПОМОГАТЬ</span>
+                <a href="/about-us/#our-team">
+                    <span>BAM БУДУТ ПОМОГАТЬ</span>
+                </a>
 			</div>
 		</div>
         <!--!PERSONAL TITLE-->
@@ -362,7 +364,9 @@
 				</svg>
 			</div>
 			<div class="i_products-title-name">
-				<span>ПРОГРАММНЫЕ ПРОДУКТЫ ДЛЯ ВАС</span>
+                <a href="/programm-products">
+				    <span>ПРОГРАММНЫЕ ПРОДУКТЫ ДЛЯ ВАС</span>
+                </a>
 			</div>
 		</div>
 		<?$APPLICATION->IncludeComponent(
@@ -744,7 +748,9 @@
 			)
 		);?>
 		<div class="i_projects-btn">
-			<button>Смотреть отзывы и кейсы</button>
+            <a href="/our-cases">
+			    <button>Смотреть отзывы и кейсы</button>
+            </a>
 		</div>
 		<div class="pagination">
 			<div class="swiper-projects-button-prev">

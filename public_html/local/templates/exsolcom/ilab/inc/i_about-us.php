@@ -202,7 +202,7 @@
 	</div>
 	<!--!DIRECTORSHIP-->
 	<!--TEAM-->
-	<div class="i_team">
+	<div id="our-team" class="i_team">
 		<div class="i_container">
 			<!--TEAM TITLE-->
 			<div class="i_team-title">

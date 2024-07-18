@@ -349,7 +349,7 @@ a {
   }
   .i_modal-preview .i_modal-preview-content,
   .i_modal-preview .i_modal-preview-ending {
-    display: block;
+    display: none;
   }
 }
 .i_modal-preview .i_modal-preview-title {
@@ -507,6 +507,10 @@ a {
     flex-direction: column;
     align-items: center;
   }
+}
+.i_modal-kp .i_modal-box .i_modal-content .i_modal-preview .i_modal-preview-content,
+.i_modal-kp .i_modal-box .i_modal-content .i_modal-preview .i_modal-preview-ending {
+  display: block;
 }
 .i_modal-kp .i_modal-img {
   position: absolute;
