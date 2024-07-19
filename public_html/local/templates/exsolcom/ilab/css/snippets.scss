@@ -204,6 +204,8 @@
         }
 
         span {
+          cursor: text;
+          color: var(--color-textInfoblock);
         }
       }
 
@@ -436,6 +438,8 @@
           }
 
           span {
+            cursor: text;
+            color: var(--color-textInfoblock);
           }
         }
 
@@ -916,6 +920,8 @@
         }
 
         span {
+          color: var(--color-textInfoblock);
+          cursor: text;
         }
       }
 
@@ -1014,6 +1020,8 @@
           }
 
           span {
+            color: var(--color-textInfoblock);
+            cursor: text;
           }
         }
 
@@ -1616,6 +1624,8 @@
             }
 
             span {
+              color: var(--color-textInfoblock);
+              cursor: text;
             }
           }
 

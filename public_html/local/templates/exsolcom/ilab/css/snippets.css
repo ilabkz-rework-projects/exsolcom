@@ -166,6 +166,10 @@
     font-size: 13px;
   }
 }
+.i_snippet.single-table .i_snippet-table-group-item .i_snippet-table-item .i_snippet-table-item-title span {
+  cursor: text;
+  color: var(--color-textInfoblock);
+}
 .i_snippet.single-table .i_snippet-table-group-item .i_snippet-table-item .i_snippet-table-item-value {
   text-wrap: nowrap;
   text-align: end;
@@ -345,6 +349,10 @@
   .i_snippet.multi-table .i_snippet-multi-table-items .i_snippet-multi-table-item .i_snippet-table-item .i_snippet-table-item-title {
     font-size: 13px;
   }
+}
+.i_snippet.multi-table .i_snippet-multi-table-items .i_snippet-multi-table-item .i_snippet-table-item .i_snippet-table-item-title span {
+  cursor: text;
+  color: var(--color-textInfoblock);
 }
 .i_snippet.multi-table .i_snippet-multi-table-items .i_snippet-multi-table-item .i_snippet-table-item .i_snippet-table-item-value {
   text-wrap: nowrap;
@@ -748,6 +756,11 @@
     font-size: 13px;
   }
 }
+.i_snippet.container-composition .i_snippet.composition-block .i_snippet-group-text .i_snippet-group-text-desc span,
+.i_snippet.container-composition .i_snippet.composition-block-second .i_snippet-group-text .i_snippet-group-text-desc span {
+  color: var(--color-textInfoblock);
+  cursor: text;
+}
 .i_snippet.container-composition .i_snippet.composition-block-third {
   max-width: 1270px;
   width: 100%;
@@ -839,6 +852,10 @@
   .i_snippet.container-composition .i_snippet.composition-block-third .i_snippet-top .i_snippet-group-text .i_snippet-group-text-desc {
     font-size: 13px;
   }
+}
+.i_snippet.container-composition .i_snippet.composition-block-third .i_snippet-top .i_snippet-group-text .i_snippet-group-text-desc span {
+  color: var(--color-textInfoblock);
+  cursor: text;
 }
 .i_snippet.container-composition .i_snippet.composition-block-third .i_snippet-binary-table-third {
   display: flex;
@@ -1334,6 +1351,10 @@
   .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block .i_snippet-group-text .i_snippet-group-text-desc {
     font-size: 13px;
   }
+}
+.i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block .i_snippet-group-text .i_snippet-group-text-desc span {
+  color: var(--color-textInfoblock);
+  cursor: text;
 }
 .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet-multi-table-btn {
   padding: 0 0 50px 0;

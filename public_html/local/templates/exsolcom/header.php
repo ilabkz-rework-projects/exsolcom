@@ -162,40 +162,42 @@ $main = CSite::InDir(SITE_DIR.'index.php');
 					</svg>
 				</button>
 			</div>
-			<div class="i_search-container">
-
-				<?$APPLICATION->IncludeComponent(
-	"bitrix:search.title", 
-	"i_search-input", 
-	array(
-		"CATEGORY_0" => array(
-			0 => "no",
-		),
-		"CATEGORY_0_TITLE" => "",
-		"CHECK_DATES" => "Y",
-		"CONTAINER_ID" => "title-search",
-		"INPUT_ID" => "title-search-input",
-		"NUM_CATEGORIES" => "3",
-		"ORDER" => "date",
-		"PAGE" => "#SITE_DIR#search/index.php",
-		"SHOW_INPUT" => "Y",
-		"SHOW_OTHERS" => "N",
-		"TOP_COUNT" => "10",
-		"USE_LANGUAGE_GUESS" => "N",
-		"COMPONENT_TEMPLATE" => "i_search-input",
-		"CATEGORY_1_TITLE" => "",
-		"CATEGORY_1" => array(
-		),
-		"CATEGORY_2_TITLE" => "",
-		"CATEGORY_2" => array(
-		)
-	),
-	false
-);?>
-			</div>
 			<!--!HEADER MORE-->
 		</div>
 		<!--!HEADER RIGHT-->
+		<!--SEARCH CONTAINER-->
+        <div class="i_search-container">
+
+            <?$APPLICATION->IncludeComponent(
+                "bitrix:search.title",
+                "i_search-input",
+                array(
+                    "CATEGORY_0" => array(
+                        0 => "no",
+                    ),
+                    "CATEGORY_0_TITLE" => "",
+                    "CHECK_DATES" => "Y",
+                    "CONTAINER_ID" => "title-search",
+                    "INPUT_ID" => "title-search-input",
+                    "NUM_CATEGORIES" => "3",
+                    "ORDER" => "date",
+                    "PAGE" => "#SITE_DIR#search/index.php",
+                    "SHOW_INPUT" => "Y",
+                    "SHOW_OTHERS" => "N",
+                    "TOP_COUNT" => "10",
+                    "USE_LANGUAGE_GUESS" => "N",
+                    "COMPONENT_TEMPLATE" => "i_search-input",
+                    "CATEGORY_1_TITLE" => "",
+                    "CATEGORY_1" => array(
+                    ),
+                    "CATEGORY_2_TITLE" => "",
+                    "CATEGORY_2" => array(
+                    )
+                ),
+                false
+            );?>
+        </div>
+		<!--!SEARCH CONTAINER-->
 	</div>
 </header>
 

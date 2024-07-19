@@ -155,37 +155,37 @@
                             </button>
                             <!--!FOOTER RIGHT ICON-->
                         </div>
-                        <div class="i_search-container2">
-
-                            <?$APPLICATION->IncludeComponent(
-                                "bitrix:search.title",
-                                "i_search-input2",
-                                array(
-                                    "CATEGORY_0" => array(
-                                        0 => "no",
-                                    ),
-                                    "CATEGORY_0_TITLE" => "",
-                                    "CHECK_DATES" => "Y",
-                                    "CONTAINER_ID" => "title-search2",
-                                    "INPUT_ID" => "title-search-input2",
-                                    "NUM_CATEGORIES" => "3",
-                                    "ORDER" => "date",
-                                    "PAGE" => "#SITE_DIR#search/index.php",
-                                    "SHOW_INPUT" => "Y",
-                                    "SHOW_OTHERS" => "N",
-                                    "TOP_COUNT" => "10",
-                                    "USE_LANGUAGE_GUESS" => "N",
-                                    "COMPONENT_TEMPLATE" => "i_search-input2",
-                                    "CATEGORY_1_TITLE" => "",
-                                    "CATEGORY_1" => array(
-                                    ),
-                                    "CATEGORY_2_TITLE" => "",
-                                    "CATEGORY_2" => array(
-                                    )
-                                ),
-                                false
-                            );?>
-                        </div>
+<!--                        <div class="i_search-container2">-->
+<!---->
+<!--                            --><?//$APPLICATION->IncludeComponent(
+//                                "bitrix:search.title",
+//                                "i_search-input2",
+//                                array(
+//                                    "CATEGORY_0" => array(
+//                                        0 => "no",
+//                                    ),
+//                                    "CATEGORY_0_TITLE" => "",
+//                                    "CHECK_DATES" => "Y",
+//                                    "CONTAINER_ID" => "title-search2",
+//                                    "INPUT_ID" => "title-search-input2",
+//                                    "NUM_CATEGORIES" => "3",
+//                                    "ORDER" => "date",
+//                                    "PAGE" => "#SITE_DIR#search/index.php",
+//                                    "SHOW_INPUT" => "Y",
+//                                    "SHOW_OTHERS" => "N",
+//                                    "TOP_COUNT" => "10",
+//                                    "USE_LANGUAGE_GUESS" => "N",
+//                                    "COMPONENT_TEMPLATE" => "i_search-input2",
+//                                    "CATEGORY_1_TITLE" => "",
+//                                    "CATEGORY_1" => array(
+//                                    ),
+//                                    "CATEGORY_2_TITLE" => "",
+//                                    "CATEGORY_2" => array(
+//                                    )
+//                                ),
+//                                false
+//                            );?>
+<!--                        </div>-->
                     </div>
                     <!--!FOOTER RIGHT BLOG ICON SOCIAL-->
                     <!--FOOTER RIGHT SOCIAL-->
@@ -263,6 +263,37 @@
                     </div>
                 </div>
                 <!--FOOTER RIGHT BLOG MORE GROUP -->
+            </div>
+            <div class="i_search-container2">
+
+                <?$APPLICATION->IncludeComponent(
+                    "bitrix:search.title",
+                    "i_search-input2",
+                    array(
+                        "CATEGORY_0" => array(
+                            0 => "no",
+                        ),
+                        "CATEGORY_0_TITLE" => "",
+                        "CHECK_DATES" => "Y",
+                        "CONTAINER_ID" => "title-search2",
+                        "INPUT_ID" => "title-search-input2",
+                        "NUM_CATEGORIES" => "3",
+                        "ORDER" => "date",
+                        "PAGE" => "#SITE_DIR#search/index.php",
+                        "SHOW_INPUT" => "Y",
+                        "SHOW_OTHERS" => "N",
+                        "TOP_COUNT" => "10",
+                        "USE_LANGUAGE_GUESS" => "N",
+                        "COMPONENT_TEMPLATE" => "i_search-input2",
+                        "CATEGORY_1_TITLE" => "",
+                        "CATEGORY_1" => array(
+                        ),
+                        "CATEGORY_2_TITLE" => "",
+                        "CATEGORY_2" => array(
+                        )
+                    ),
+                    false
+                );?>
             </div>
         </div>
         <!--!FOOTER RIGHT-->
