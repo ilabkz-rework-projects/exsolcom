@@ -593,7 +593,7 @@
 .i_snippet.desc-depiction {
   //SNIPPET TITLE_SECOND DESC
   .i_snippet-desc {
-    padding: 0 0 30px 0;
+    padding: 0 0 0 0;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 22px;
@@ -604,6 +604,8 @@
     }
 
     span {
+      cursor: text;
+      color: var(--color-textInfoblock);
     }
   }
 
@@ -670,7 +672,7 @@
 .i_snippet.desc {
   //SNIPPET TITLE_SECOND DESC
   .i_snippet-desc {
-    padding: 0 0 30px 0;
+    padding: 0 0 0px 0;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 22px;
@@ -681,6 +683,8 @@
     }
 
     span {
+      cursor: text;
+      color: var(--color-textInfoblock);
     }
   }
 
@@ -1324,6 +1328,8 @@
     //SNIPPET TITLE_SECOND DESC
     .i_snippet-desc {
       span {
+        cursor: text;
+        color: var(--color-textInfoblock);
         line-height: 22px;
       }
     }
@@ -2024,7 +2030,7 @@
   .i_snippet-points {
     width: 100%;
     height: max-content;
-    padding: 30px 30px 0 30px;
+    padding: 30px 30px 20px 30px;
 
     ul {
       display: flex;
@@ -2072,3 +2078,51 @@
 }
 
 //!SNIPPET PICTURE
+
+//SNIPPET LIST_WORK
+.i_snippet.list-work{
+  .i_snippet-list{
+    padding: 20px 0;
+    ol{
+      list-style-type: none;
+      counter-reset: my-counter;
+      padding-left: 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      li::before{
+        content: counter(my-counter);
+        counter-increment: my-counter;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: var(--color-Grey);
+        color: black; /* Цвет текста внутри круга */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-right: 0.5em;
+      }
+      li {
+        position: relative;
+        margin-bottom: 10px; /* Расстояние между элементами списка */
+        padding-left: 35px; /* Отступ для номера */
+
+        span{
+          line-height: normal;
+          font-family: "Open Sans", sans-serif;
+          padding: 5px 0 0 0;
+          cursor: text;
+          color: var(--color-textInfoblock);
+          @media screen and (max-width: 480px){
+            font-size: 0.875rem;
+          }
+        }
+      }
+    }
+  }
+}
+//!SNIPPET LIST_WORK
