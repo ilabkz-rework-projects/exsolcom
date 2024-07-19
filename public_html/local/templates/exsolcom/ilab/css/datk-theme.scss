@@ -566,7 +566,7 @@ html[data-theme='dark']{
             .i_blog-dropdown-menu{
               li{
                 &:before{
-                  background-image: url("../img/svg/blog-icon-2_w.svg")!important;
+                  background-image: url("../img/svg/blog-icon-2_b.svg")!important;
                 }
                 &.menu-all-articles{
                   &:before{
@@ -579,7 +579,7 @@ html[data-theme='dark']{
             // BLOG MENU
             .i_blog-menu{
               &:before{
-                background-image: url("../img/svg/blog-icon_b.svg") !important;
+                background-image: url("../img/svg/blog-icon_w.svg") !important;
               }
 
             }

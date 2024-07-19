@@ -12,6 +12,7 @@
   width: 800px;
   height: 800px;
   right: -110px;
+  z-index: -1;
   top: 10%;
 }
 .i_blog-page .i_container .i_blog-title {
@@ -96,7 +97,7 @@
   display: block !important;
 }
 .i_blog-page .i_container .bx_sitemap ul li .i_blog-dropdown-menu li:nth-child(n) .bx_sitemap_li_title a {
-  color: var(--color-textInfoblock) !important;
+  color: var(--color-black) !important;
 }
 @media screen and (max-width: 400px) {
   .i_blog-page .i_container .bx_sitemap ul li .i_blog-dropdown-menu li:nth-child(n) .bx_sitemap_li_title a {
@@ -105,16 +106,16 @@
   }
 }
 .i_blog-page .i_container .bx_sitemap ul li .i_blog-dropdown-menu li:nth-child(n):before {
-  background-image: url(../img/svg/blog-icon-2_b.svg) !important;
+  background-image: url("../img/svg/blog-icon-2_b.svg") !important;
   background-size: 50px !important;
   background-position: center !important;
   width: 40px !important;
   height: 40px !important;
-  background-color: var(--color-circlesSecond) !important;
+  background-color: var(--bg-buttonHover) !important;
   border-radius: 30px !important;
 }
 .i_blog-page .i_container .bx_sitemap ul li .i_blog-dropdown-menu li:nth-child(n).menu-all-articles {
-  background-color: var(--color-circlesSecond);
+  background-color: var(--bg-buttonHover);
 }
 @media screen and (max-width: 480px) {
   .i_blog-page .i_container .bx_sitemap ul li:nth-child(n) {
@@ -209,7 +210,7 @@
   }
   .i_blog-page .i_container .bx_sitemap .bx_sitemap_ul li:nth-child(1) .i_blog-dropdown-menu {
     position: absolute;
-    background-color: var(--bg-buttonHoverSecond);
+    background-color: var(--color-circlesThird);
     max-width: 90vw;
     width: 100%;
     height: max-content;
@@ -250,7 +251,7 @@
     content: none;
   }
   .i_blog-page .i_container .bx_sitemap .bx_sitemap_ul li:nth-child(1) .i_blog-dropdown-menu li:nth-child(n) .bx_sitemap_li_title a {
-    color: var(--color-textInfoblock);
+    color: var(--color-black);
   }
   .i_blog-page .i_container .bx_sitemap .bx_sitemap_ul li:nth-child(1) .i_blog-menu {
     width: 90vw;
@@ -259,7 +260,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    background-color: var(--bg-seventh);
+    background-color: var(--color-circlesFourth);
   }
   .i_blog-page .i_container .bx_sitemap .bx_sitemap_ul li:nth-child(1) .i_blog-menu:before {
     content: " ";

@@ -12,6 +12,7 @@
     width: 800px;
     height: 800px;
     right: -110px;
+    z-index: -1;
     top: 10%;
   }
 .i_container{
@@ -87,7 +88,7 @@
               .bx_sitemap_li_title{
                 display: block !important;
                 a{
-                  color: var(--color-textInfoblock)!important;
+                  color: var(--color-black)!important;
                   @media screen and (max-width: 400px){
                     font-size: 14px;
                     padding: 0 0 0 10px;
@@ -95,16 +96,16 @@
                 }
               }
               &:before{
-                background-image: url(../img/svg/blog-icon-2_b.svg) !important;
+                background-image: url("../img/svg/blog-icon-2_b.svg") !important;
                 background-size: 50px !important;
                 background-position: center!important;
                 width: 40px !important;
                 height: 40px !important;
-                background-color: var(--color-circlesSecond) !important;
+                background-color: var(--bg-buttonHover) !important;
                 border-radius: 30px !important;
               }
               &.menu-all-articles{
-                background-color: var(--color-circlesSecond);
+                background-color: var(--bg-buttonHover);
 
                 .bx_sitemap_li_title{
                   //a{
@@ -224,7 +225,7 @@
             // BLOG_DROPDOWN_MENU
             .i_blog-dropdown-menu{
               position: absolute;
-              background-color: var(--bg-buttonHoverSecond);
+              background-color: var(--color-circlesThird);
               max-width: 90vw;
               width: 100%;
               height: max-content;
@@ -264,7 +265,7 @@
                 }
                 .bx_sitemap_li_title{
                   a{
-                    color: var(--color-textInfoblock);
+                    color: var(--color-black);
                   }
                 }
               }
@@ -279,7 +280,7 @@
               align-items: center;
               justify-content: center;
               position: relative;
-              background-color: var(--bg-seventh);
+              background-color: var(--color-circlesFourth);
               &:before{
                 content: ' ';
                 background-image: url("../img/svg/blog-icon_w.svg")!important;

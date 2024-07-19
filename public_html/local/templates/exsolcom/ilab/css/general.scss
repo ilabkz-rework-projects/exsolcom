@@ -951,11 +951,11 @@ p{
           }
           .i_blog-menu{
             display: none;
-            background-color: var(--bg-seventh);
+            background-color: var(--color-circlesFourth);
             .bx_sitemap_li_title.second{
               display: block;
               a{
-                color: var(--color-White);
+                color: var(--color-WhiteWhite);
               }
             }
             @media screen and (max-width: 480px){
@@ -1012,7 +1012,7 @@ p{
             .i_blog-dropdown-menu:before{
               content: ' ';
               border: 20px solid transparent;
-              border-bottom: 20px solid var(--bg-sixth);
+              border-bottom: 20px solid var(--color-circlesThird);
               position: absolute;
               top: -10%;
               right: 50%;
@@ -1022,7 +1022,7 @@ p{
             // BLOG_DROPDOWN_MENU
             .i_blog-dropdown-menu{
               position: absolute;
-              background-color: var(--bg-sixth);
+              background-color: var(--color-circlesThird);
               max-width: 90vw;
               width: 100%;
               height: max-content;
@@ -1061,7 +1061,7 @@ p{
                 }
                 .bx_sitemap_li_title{
                   a{
-                    color: var(--color-textInfoblock);
+                    color: var(--color-black);
                   }
                 }
               }
@@ -1072,11 +1072,11 @@ p{
             .i_blog-menu{
               width: 90vw;
               display: flex !important;
-              height: 40px;
+              height: 42px;
               align-items: center;
               justify-content: center;
               position: relative;
-              background-color: var(--bg-seventh);
+              background-color: var(--color-circlesFourth);
               &:before{
                 content: ' ';
                 background-image: url("../img/svg/blog-icon_w.svg")!important;
@@ -1095,7 +1095,7 @@ p{
                 z-index: 1;
                 top: 35%;
                 right: 6%;
-                border: solid var(--color-White);
+                border: solid var(--color-WhiteWhite);
                 border-width: 0 2px 2px 0;
                 display: inline-block;
                 padding: 4px;
