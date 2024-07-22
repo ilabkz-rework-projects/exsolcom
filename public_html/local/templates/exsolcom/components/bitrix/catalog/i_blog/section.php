@@ -74,13 +74,12 @@ if ($isFilter)
 $requestUri = $_SERVER['REQUEST_URI'];
 
 // Разбираем URL и извлекаем строку запроса
-$query = parse_url($requestUri, PHP_URL_QUERY);
+$query = parse_url($requestUri, PHP_URL_PATH);
 
 // Разбираем параметры строки запроса
 parse_str($query, $params);
 
-// Получаем значение параметра SECTION_ID
-$section_id = $params['SECTION_ID'];
+$last_segment = basename($query);
 
 $sectionListParams = array(
 	"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
@@ -95,7 +94,7 @@ $sectionListParams = array(
 	"SHOW_PARENT_NAME" => $arParams["SECTIONS_SHOW_PARENT_NAME"],
 	"HIDE_SECTION_NAME" => ($arParams["SECTIONS_HIDE_SECTION_NAME"] ?? "N"),
 	"ADD_SECTIONS_CHAIN" => ($arParams["ADD_SECTIONS_CHAIN"] ?? ''),
-	"CURRENT_SECTION_ID" => $section_id
+	"CURRENT_SECTION_ID" => $last_segment
 );
 if ($sectionListParams["COUNT_ELEMENTS"] === "Y")
 {

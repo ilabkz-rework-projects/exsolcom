@@ -44,10 +44,6 @@ $strSectionEdit = CIBlock::GetArrayByID($arParams["IBLOCK_ID"], "SECTION_EDIT");
 $strSectionDelete = CIBlock::GetArrayByID($arParams["IBLOCK_ID"], "SECTION_DELETE");
 $arSectionDeleteParams = array("CONFIRM" => GetMessage('CT_BCSL_ELEMENT_DELETE_CONFIRM'));
 
-//echo '<pre>';
-//print_r($arParams['CURRENT_SECTION_ID']);
-//echo '</pre>';
-
 ?><div class="<? echo $arCurView['CONT']; ?>"><?
 if ('Y' == $arParams['SHOW_PARENT_NAME'] && 0 < $arResult['SECTION']['ID'])
 {
@@ -203,7 +199,8 @@ if (0 < $arResult["SECTIONS_COUNT"])
             }
 
             echo (!$boolFirst ? "\n" : ''),str_repeat("\t", $arSection['RELATIVE_DEPTH_LEVEL']);
-            ?><li id="<?=$this->GetEditAreaId($arSection['ID']);?>" class="<?=$arParams['CURRENT_SECTION_ID'] === $arSection['ID'] ? 'menu-all-articles' : ''?>"><h2 class="bx_sitemap_li_title"><a href="<? echo $arSection["SECTION_PAGE_URL"]; ?>"><? echo $arSection["NAME"];?><?
+
+            ?><li id="<?=$this->GetEditAreaId($arSection['ID']);?>" class="<?=$arParams['CURRENT_SECTION_ID'] === $arSection['CODE'] ? 'menu-all-articles' : ''?>"><h2 class="bx_sitemap_li_title"><a href="<? echo $arSection["SECTION_PAGE_URL"]; ?>"><? echo $arSection["NAME"];?><?
                         if ($arParams["COUNT_ELEMENTS"] && $arSection['ELEMENT_CNT'] !== null)
                         {
                             ?> <span>(<? echo $arSection["ELEMENT_CNT"]; ?>)</span><?
@@ -362,7 +359,8 @@ if (0 < $arResult["SECTIONS_COUNT"])
 				}
 
 				echo (!$boolFirst ? "\n" : ''),str_repeat("\t", $arSection['RELATIVE_DEPTH_LEVEL']);
-				?><li id="<?=$this->GetEditAreaId($arSection['ID']);?>" class="<?=$arParams['CURRENT_SECTION_ID'] === $arSection['ID'] ? 'menu-all-articles' : ''?>"><h2 class="bx_sitemap_li_title"><a href="<? echo $arSection["SECTION_PAGE_URL"]; ?>"><? echo $arSection["NAME"];?><?
+
+				?><li id="<?=$this->GetEditAreaId($arSection['ID']);?>" class="<?=$arParams['CURRENT_SECTION_ID'] === $arSection['CODE'] ? 'menu-all-articles' : ''?>"><h2 class="bx_sitemap_li_title"><a href="<? echo $arSection["SECTION_PAGE_URL"]; ?>"><? echo $arSection["NAME"];?><?
 				if ($arParams["COUNT_ELEMENTS"] && $arSection['ELEMENT_CNT'] !== null)
 				{
 					?> <span>(<? echo $arSection["ELEMENT_CNT"]; ?>)</span><?
