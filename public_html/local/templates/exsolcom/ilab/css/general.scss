@@ -301,7 +301,8 @@ a{
       img{
         height: auto;
         width: 100%;
-        //object-fit: none;
+        max-height: 300px;
+        object-fit: contain;
       }
     }
 

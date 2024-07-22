@@ -304,6 +304,8 @@ a {
 .i_modal .i_modal-header .i_modal-img img {
   height: auto;
   width: 100%;
+  max-height: 300px;
+  object-fit: contain;
 }
 .i_modal .i_modal-header .i_modal-header-content {
   width: 65%;
