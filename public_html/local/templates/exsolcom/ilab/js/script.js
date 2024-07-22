@@ -401,7 +401,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			})
 				.then(response => response.json())
 				.then(data => {
-					const content = data.CONTENT;
+					let content = data.CONTENT;
+					content = content !== false ? content.replace(/<\?[\s\S]*?\?>/g, '') : false;
+
 					const img = data.IMAGE
 
 					if(!content){
@@ -534,7 +536,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 					overlay.classList.add('active')
 					modal.classList.add('active')
 
-					const content = data.CONTENT;
+					let content = data.CONTENT;
+					content = content !== false ? content.replace(/<\?[\s\S]*?\?>/g, '') : false;
 
 					if(content){
 						// Регулярное выражение для поиска <div class="i_modal-preview">...</div>
@@ -611,7 +614,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 					overlay.classList.add('active')
 					modalKp.classList.add('active')
-					const content = data.CONTENT;
+
+					let content = data.CONTENT;
+
+					content = content !== false ? content.replace(/<\?[\s\S]*?\?>/g, '') : false;
 
 					if(!content){
 						modalKp.querySelector('.i_modal-content').innerHTML = data.PREVIEW_TEXT;
