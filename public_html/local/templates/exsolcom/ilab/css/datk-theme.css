@@ -379,7 +379,7 @@ html[data-theme=dark] .i_main .i_blog-page .bx_sitemap .bx_sitemap_ul li:nth-chi
 }
 html[data-theme=dark] .i_main .i_blog .bx_sitemap .bx_sitemap_ul li:nth-child(1) .i_blog-dropdown-menu li.menu-all-articles:before,
 html[data-theme=dark] .i_main .i_blog-page .bx_sitemap .bx_sitemap_ul li:nth-child(1) .i_blog-dropdown-menu li.menu-all-articles:before {
-  background-image: url("../img/svg/blog-icon-2_b.svg") !important;
+  background-image: url("../img/svg/blog-icon-2_r.svg") !important;
 }
 html[data-theme=dark] .i_main .i_blog .bx_sitemap .bx_sitemap_ul li:nth-child(1) .i_blog-menu:before,
 html[data-theme=dark] .i_main .i_blog-page .bx_sitemap .bx_sitemap_ul li:nth-child(1) .i_blog-menu:before {

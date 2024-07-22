@@ -107,9 +107,12 @@
               &.menu-all-articles{
                 background-color: var(--bg-buttonHover);
 
+                &:before{
+                  background-color: var(--bg-fourth) !important;
+                }
                 .bx_sitemap_li_title{
                   //a{
-                  //  color: var(--color-White)!important;
+                  //  color: var(--color-red-b);
                   //}
                 }
               }
@@ -262,6 +265,15 @@
                 }
                 &:after{
                   content: none;
+                }
+                &.menu-all-articles{
+                  background-color: var(--bg-fourth);
+
+                  .bx_sitemap_li_title{
+                    a{
+                      color: var(--color-red-b) !important;
+                    }
+                  }
                 }
                 .bx_sitemap_li_title{
                   a{
