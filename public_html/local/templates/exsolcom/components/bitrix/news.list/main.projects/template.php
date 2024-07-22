@@ -21,16 +21,18 @@ $this->setFrameMode(true);
 			?>
 
 			<div class="swiper-slide swiper-slide-parent" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
-				<!--PERSONAL SWIPER SLIDE PICTURE-->
-				<div class="swiper-slide">
-					<div class="swiper-slide-icon">
-						<img src="<?=$arItem['IMAGES']?>" alt="<?=$arItem['NAME']?>">
+				<a href="<?=$arItem['SECTION_PAGE_URL']?>">
+					<!--PERSONAL SWIPER SLIDE PICTURE-->
+					<div class="swiper-slide">
+						<div class="swiper-slide-icon">
+							<img src="<?=$arItem['IMAGES']?>" alt="<?=$arItem['NAME']?>">
+						</div>
+						<div class="swiper-slide-title">
+							<span><?=$arItem['NAME']?></span>
+						</div>
 					</div>
-					<div class="swiper-slide-title">
-						<span><?=$arItem['NAME']?></span>
-					</div>
-				</div>
-				<!--!PERSONAL SWIPER SLIDE BLOCK-->
+					<!--!PERSONAL SWIPER SLIDE BLOCK-->
+				</a>
 			</div>
 		<?endforeach;?>
 	</div>
