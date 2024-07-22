@@ -149,7 +149,7 @@ a {
   left: 50%;
   transform: translate(-50%, -190%);
   z-index: 991;
-  padding: 20px 20px 20px 0;
+  padding: 20px 20px 65px 0;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
   opacity: 0;
   visibility: hidden;
@@ -160,12 +160,12 @@ a {
 }
 @media screen and (max-width: 1330px) {
   .i_modal {
-    padding: 20px 15px 20px 0;
+    padding: 20px 15px 65px 0;
   }
 }
 @media screen and (max-width: 760px) {
   .i_modal {
-    padding: 20px 10px 20px 0;
+    padding: 50px 0px 65px 0;
   }
 }
 .i_modal .i_container {
@@ -175,17 +175,17 @@ a {
   overflow-y: auto;
   height: calc(100% - 45px);
   padding-bottom: 90px;
+  max-width: unset;
 }
 @media screen and (max-width: 1330px) {
   .i_modal .i_container {
-    margin: 25px 2%;
-    padding: 0 5%;
+    margin: 10px 10px;
   }
 }
 @media screen and (max-width: 760px) {
   .i_modal .i_container {
-    margin: 10px 2%;
-    padding: 0 0%;
+    margin: 10px 24px 10px 0;
+    padding: 0 24px 0 20px;
   }
 }
 .i_modal.active {
@@ -207,12 +207,6 @@ a {
   border-radius: 100%;
   justify-content: center;
   z-index: 101;
-}
-@media screen and (max-width: 1330px) {
-  .i_modal .i_modal-close {
-    top: 10px;
-    right: 26px;
-  }
 }
 .i_modal .i_modal-close img {
   width: 30px;
@@ -412,6 +406,7 @@ a {
   color: var(--color-textInfoblock);
   font-family: "Open Sans", sans-serif;
   cursor: text;
+  line-height: normal;
 }
 @media screen and (max-width: 1000px) {
   .i_modal-preview .i_modal-preview-content {
@@ -458,7 +453,7 @@ a {
   left: 50%;
   transform: translate(-50%, -190%);
   z-index: 991;
-  padding: 20px;
+  padding: 20px 20px 65px 0;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
   opacity: 0;
   visibility: hidden;
@@ -467,47 +462,33 @@ a {
   height: 90%;
   border-radius: 35px;
 }
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 620px) {
   .i_modal-kp {
-    padding: 15px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .i_modal-kp {
-    padding: 25px 5px;
+    padding: 0 20px 75px 0;
   }
 }
 .i_modal-kp .i_container {
-  margin: 25px 5%;
+  margin: 10px 5px;
   width: unset;
   overflow-y: auto;
   height: calc(100% - 45px);
-  padding: 0 10% 90px 20%;
-}
-@media screen and (max-width: 1630px) {
-  .i_modal-kp .i_container {
-    padding: 0 5%;
-    padding: 0 10% 90px 22%;
-  }
+  padding: 0 5% 90px 25%;
+  max-width: unset;
 }
 @media screen and (max-width: 1330px) {
   .i_modal-kp .i_container {
-    padding: 0 3%;
-    margin: 25px 2%;
-    padding: 0 10% 90px 27%;
+    padding: 0 3% 90px 25%;
   }
 }
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 930px) {
   .i_modal-kp .i_container {
-    padding: 0 3%;
-    margin: 25px 3%;
-    padding: 0 5% 90px 30%;
+    padding: 0 3% 90px 28%;
   }
 }
 @media screen and (max-width: 620px) {
   .i_modal-kp .i_container {
-    padding: 0 0% 90px 0%;
-    margin: 25px 5%;
+    padding: 0 20px 90px 20px;
+    margin: 25px 5px;
   }
 }
 @media screen and (max-width: 620px) {
@@ -535,6 +516,7 @@ a {
 @media screen and (max-width: 1550px) {
   .i_modal-kp .i_modal-img {
     max-width: 260px;
+    left: 3%;
   }
 }
 @media screen and (max-width: 1330px) {
@@ -542,22 +524,23 @@ a {
     max-width: 240px;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1180px) {
   .i_modal-kp .i_modal-img {
     max-width: 215px;
+    left: 2%;
   }
 }
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 1000px) {
   .i_modal-kp .i_modal-img {
     max-width: 190px;
   }
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 890px) {
   .i_modal-kp .i_modal-img {
     max-width: 180px;
   }
 }
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 760px) {
   .i_modal-kp .i_modal-img {
     max-width: 150px;
   }
@@ -565,6 +548,7 @@ a {
 @media screen and (max-width: 620px) {
   .i_modal-kp .i_modal-img {
     position: relative;
+    max-width: 215px;
   }
 }
 .i_modal-kp .i_modal-img img {
@@ -577,8 +561,8 @@ a {
 }
 .i_modal-kp .i_modal-close {
   position: absolute;
-  top: 30px;
-  right: 32px;
+  top: 10px;
+  right: 10px;
   cursor: pointer;
   transition: all 0.4s ease;
   width: 40px;
@@ -589,12 +573,6 @@ a {
   border-radius: 100%;
   justify-content: center;
   z-index: 101;
-}
-@media screen and (max-width: 1330px) {
-  .i_modal-kp .i_modal-close {
-    top: 10px;
-    right: 26px;
-  }
 }
 @media screen and (max-width: 480px) {
   .i_modal-kp .i_modal-close {
