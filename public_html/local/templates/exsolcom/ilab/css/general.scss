@@ -74,25 +74,25 @@ a{
       color: var(--color-textInfoblock);
     }
   }
-   span {
-     color: var(--color-textInfoblock);
-     height: 42px;
-     font-size: 21px;
-     text-align: center;
-     font-weight: 600;
-     @media screen and (max-width: 1330px){
-       font-size: 18px;
-       height: 42px;
-     }
-     @media screen and (max-width: 480px){
-       font-size: 16px;
-       height: 32px;
-     }
-     @media screen and (max-width: 360px){
-       font-size: 15px;
-       height: 45px;
-     }
-   }
+  span {
+    color: var(--color-textInfoblock);
+    height: 42px;
+    font-size: 21px;
+    text-align: center;
+    font-weight: 600;
+    @media screen and (max-width: 1330px){
+      font-size: 18px;
+      height: 42px;
+    }
+    @media screen and (max-width: 480px){
+      font-size: 16px;
+      height: 32px;
+    }
+    @media screen and (max-width: 360px){
+      font-size: 15px;
+      height: 45px;
+    }
+  }
 
 }
 
@@ -172,7 +172,7 @@ a{
   }
 
   .i_container{
-    margin: 50px 15px 10px 5px;
+    margin: 10px 5px;
     padding: 0 10%;
     width: unset;
     overflow-y: auto;
@@ -204,8 +204,8 @@ a{
 
   .i_modal-close {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
     transition: all 0.4s ease;
     width: 40px;
@@ -458,7 +458,7 @@ a{
   }
 
   .i_container{
-    margin: 50px 15px 10px 5px;
+    margin: 10px 5px;
     width: unset;
     overflow-y: auto;
     height: calc(100% - 45px);
@@ -542,8 +542,8 @@ a{
 
   .i_modal-close {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
     transition: all 0.4s ease;
     width: 40px;
