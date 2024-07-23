@@ -34,17 +34,17 @@
 		$component, array("HIDE_ICONS" => "Y")
 	);?>
 <?else:?>
-	<input type="text" name="q" value="<?=$arResult["REQUEST"]["QUERY"]?>" size="40" />
+	<input class="i_search-input-l" type="text" name="q" value="<?=$arResult["REQUEST"]["QUERY"]?>" size="40" placeholder="Поисковое слово"/>
 <?endif;?>
 <?if($arParams["SHOW_WHERE"]):?>
-	&nbsp;<select name="where">
+	&nbsp;<select class="i_search-select" name="where">
 	<option value=""><?=GetMessage("SEARCH_ALL")?></option>
 	<?foreach($arResult["DROPDOWN"] as $key=>$value):?>
 	<option value="<?=$key?>"<?if($arResult["REQUEST"]["WHERE"]==$key) echo " selected"?>><?=$value?></option>
 	<?endforeach?>
 	</select>
 <?endif;?>
-	&nbsp;<input type="submit" value="<?=GetMessage("SEARCH_GO")?>" />
+	&nbsp;<input class="i_search-input-btn" type="submit" value="<?=GetMessage("SEARCH_GO")?>" />
 	<input type="hidden" name="how" value="<?echo $arResult["REQUEST"]["HOW"]=="d"? "d": "r"?>" />
 <?if($arParams["SHOW_WHEN"]):?>
 	<script>
@@ -136,51 +136,74 @@ endif;?>
 		</tr>
 	</table>
 <?elseif(count($arResult["SEARCH"])>0):?>
+<div class="i_search-content">
 	<?if($arParams["DISPLAY_TOP_PAGER"] != "N") echo $arResult["NAV_STRING"]?>
-	<br /><hr />
-	<?foreach($arResult["SEARCH"] as $arItem):?>
-		<a href="<?echo $arItem["URL"]?>"><?echo $arItem["TITLE_FORMATED"]?></a>
-		<p><?echo $arItem["BODY_FORMATED"]?></p>
-		<?if (
-			$arParams["SHOW_RATING"] == "Y"
-			&& $arItem["RATING_TYPE_ID"] <> ''
-			&& $arItem["RATING_ENTITY_ID"] > 0
-		):?>
-			<div class="search-item-rate"><?
-				$APPLICATION->IncludeComponent(
-					"bitrix:rating.vote", $arParams["RATING_TYPE"],
-					Array(
-						"ENTITY_TYPE_ID" => $arItem["RATING_TYPE_ID"],
-						"ENTITY_ID" => $arItem["RATING_ENTITY_ID"],
-						"OWNER_ID" => $arItem["USER_ID"],
-						"USER_VOTE" => $arItem["RATING_USER_VOTE_VALUE"],
-						"USER_HAS_VOTED" => $arItem["RATING_USER_VOTE_VALUE"] == 0? 'N': 'Y',
-						"TOTAL_VOTES" => $arItem["RATING_TOTAL_VOTES"],
-						"TOTAL_POSITIVE_VOTES" => $arItem["RATING_TOTAL_POSITIVE_VOTES"],
-						"TOTAL_NEGATIVE_VOTES" => $arItem["RATING_TOTAL_NEGATIVE_VOTES"],
-						"TOTAL_VALUE" => $arItem["RATING_TOTAL_VALUE"],
-						"PATH_TO_USER_PROFILE" => $arParams["~PATH_TO_USER_PROFILE"],
-					),
-					$component,
-					array("HIDE_ICONS" => "Y")
-				);?>
-			</div>
-		<?endif;?>
-		<small><?=GetMessage("SEARCH_MODIFIED")?> <?=$arItem["DATE_CHANGE"]?></small><br /><?
-		if($arItem["CHAIN_PATH"]):?>
-			<small><?=GetMessage("SEARCH_PATH")?>&nbsp;<?=$arItem["CHAIN_PATH"]?></small><?
-		endif;
-		?><hr />
-	<?endforeach;?>
-	<?if($arParams["DISPLAY_BOTTOM_PAGER"] != "N") echo $arResult["NAV_STRING"]?>
+    <div class="i_search-content-separate">
+        <p>
+            <?if($arResult["REQUEST"]["HOW"]=="d"):?>
+            <div class="i_search-content-separate-item-a">
+                <a href="<?=$arResult["URL"]?>&amp;how=r<?echo $arResult["REQUEST"]["FROM"]? '&amp;from='.$arResult["REQUEST"]["FROM"]: ''?><?echo $arResult["REQUEST"]["TO"]? '&amp;to='.$arResult["REQUEST"]["TO"]: ''?>"><?=GetMessage("SEARCH_SORT_BY_RANK")?></a>
+            </div>
+            <div class="i_search-content-separate-item-sort">
+                <b><?=GetMessage("SEARCH_SORTED_BY_DATE")?></b>
+            </div>
+            <?else:?>
+            <div class="i_search-content-separate-item-sort">
+                <b><?=GetMessage("SEARCH_SORTED_BY_RANK")?></b>&nbsp;
+            </div>
+            <div class="i_search-content-separate-item-a">
+            <a href="<?=$arResult["URL"]?>&amp;how=d<?echo $arResult["REQUEST"]["FROM"]? '&amp;from='.$arResult["REQUEST"]["FROM"]: ''?><?echo $arResult["REQUEST"]["TO"]? '&amp;to='.$arResult["REQUEST"]["TO"]: ''?>"><?=GetMessage("SEARCH_SORT_BY_DATE")?></a>
+            </div>
+            <?endif;?>
+        </p>
+    </div>
+</div>
 	<br />
-	<p>
-	<?if($arResult["REQUEST"]["HOW"]=="d"):?>
-		<a href="<?=$arResult["URL"]?>&amp;how=r<?echo $arResult["REQUEST"]["FROM"]? '&amp;from='.$arResult["REQUEST"]["FROM"]: ''?><?echo $arResult["REQUEST"]["TO"]? '&amp;to='.$arResult["REQUEST"]["TO"]: ''?>"><?=GetMessage("SEARCH_SORT_BY_RANK")?></a>&nbsp;|&nbsp;<b><?=GetMessage("SEARCH_SORTED_BY_DATE")?></b>
-	<?else:?>
-		<b><?=GetMessage("SEARCH_SORTED_BY_RANK")?></b>&nbsp;|&nbsp;<a href="<?=$arResult["URL"]?>&amp;how=d<?echo $arResult["REQUEST"]["FROM"]? '&amp;from='.$arResult["REQUEST"]["FROM"]: ''?><?echo $arResult["REQUEST"]["TO"]? '&amp;to='.$arResult["REQUEST"]["TO"]: ''?>"><?=GetMessage("SEARCH_SORT_BY_DATE")?></a>
-	<?endif;?>
-	</p>
+<div class="i_search-result">
+	<?foreach($arResult["SEARCH"] as $arItem):?>
+        <div class="i_search-result-content">
+            <div class="i_search-result-left">
+                <a class="color-red" href="<?echo $arItem["URL"]?>"><?echo $arItem["TITLE_FORMATED"]?></a>
+                <p><?echo $arItem["BODY_FORMATED"]?></p>
+            </div>
+            <?if (
+                $arParams["SHOW_RATING"] == "Y"
+                && $arItem["RATING_TYPE_ID"] <> ''
+                && $arItem["RATING_ENTITY_ID"] > 0
+            ):?>
+                <div class="search-item-rate"><?
+                    $APPLICATION->IncludeComponent(
+                        "bitrix:rating.vote", $arParams["RATING_TYPE"],
+                        Array(
+                            "ENTITY_TYPE_ID" => $arItem["RATING_TYPE_ID"],
+                            "ENTITY_ID" => $arItem["RATING_ENTITY_ID"],
+                            "OWNER_ID" => $arItem["USER_ID"],
+                            "USER_VOTE" => $arItem["RATING_USER_VOTE_VALUE"],
+                            "USER_HAS_VOTED" => $arItem["RATING_USER_VOTE_VALUE"] == 0? 'N': 'Y',
+                            "TOTAL_VOTES" => $arItem["RATING_TOTAL_VOTES"],
+                            "TOTAL_POSITIVE_VOTES" => $arItem["RATING_TOTAL_POSITIVE_VOTES"],
+                            "TOTAL_NEGATIVE_VOTES" => $arItem["RATING_TOTAL_NEGATIVE_VOTES"],
+                            "TOTAL_VALUE" => $arItem["RATING_TOTAL_VALUE"],
+                            "PATH_TO_USER_PROFILE" => $arParams["~PATH_TO_USER_PROFILE"],
+                        ),
+                        $component,
+                        array("HIDE_ICONS" => "Y")
+                    );?>
+                </div>
+            <?endif;?>
+            <small class="i_search-renamed"><?=GetMessage("SEARCH_MODIFIED")?> <?=$arItem["DATE_CHANGE"]?></small><?
+            if($arItem["CHAIN_PATH"]):?>
+                <small class="i_search-road"><?=GetMessage("SEARCH_PATH")?>&nbsp;<?=$arItem["CHAIN_PATH"]?></small><?
+            endif;
+            ?><hr />
+        </div>
+	<?endforeach;?>
+</div>
+    <div class="i_search-switching">
+        <?if($arParams["DISPLAY_BOTTOM_PAGER"] != "N") echo $arResult["NAV_STRING"]?>
+    </div>
+	<br />
+
 <?else:?>
 	<?ShowNote(GetMessage("SEARCH_NOTHING_TO_FOUND"));?>
 <?endif;?>

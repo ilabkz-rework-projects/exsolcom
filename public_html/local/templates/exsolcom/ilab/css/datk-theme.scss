@@ -860,6 +860,28 @@ html[data-theme='dark']{
     }
 
   }
+  //SEARCH PAGE
+  .i_search {
+    .i_container {
+      .i_search-page-title {
+
+        .i_search-page-title-icon {
+          width: 50px;
+          height: 50px;
+          background-color: var(--color-circles);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-image: url("../img/svg/lupa-icon_b.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 55px;
+        }
+      }
+    }
+  }
+  //!SEARCH PAGE
 }
 
 

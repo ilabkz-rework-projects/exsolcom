@@ -2,8 +2,17 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("News");
 ?>
+
+
 <div class="i_search">
 	<div class="i_container">
+        <div class="i_search-page-title">
+            <div class="i_search-page-title-icon">
+            </div>
+            <div class="i_search-page-title-name">
+                <span>РЕЗУЛЬТАТЫ <span class="color-red">ПОИСКА</span></span>
+            </div>
+        </div>
 		<?$APPLICATION->IncludeComponent(
 			"bitrix:search.page",
 			"i_search-page",
