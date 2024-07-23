@@ -584,6 +584,23 @@ document.addEventListener('DOMContentLoaded', (event) => {
 						modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentEnding;
 
 						modal.querySelector('.i_modal-content').innerHTML = otherContent
+
+
+						modal.querySelectorAll('.i_modal-content #form-kp-btn').forEach(item => {
+							item.addEventListener('click', ()=>{
+								modal.classList.remove('active')
+								modalKp.classList.remove('active')
+								submitModal.classList.remove('active')
+								formKpModal.classList.add('active')
+								overlay.classList.add('active')
+								sideMenu.classList.remove('show')
+								language.classList.remove('expanded');
+								circle.classList.remove('wide');
+								circle2.classList.remove('wide');
+								circle3.classList.remove('wide');
+							})
+						})
+
 					}else{
 						modal.querySelector('.i_modal-content').innerHTML = data.PREVIEW_TEXT
 						modal.querySelector('.i_modal-header-content').innerHTML = data.NAME
