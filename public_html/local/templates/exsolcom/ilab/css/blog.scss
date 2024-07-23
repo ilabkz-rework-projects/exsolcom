@@ -411,7 +411,7 @@
       .product-item-small-card{
         .row{
           display: flex;
-          gap: 30px;
+          //gap: 30px;
           .product-item-big-card{
             //max-width: 1235px;
             //display: flex;
@@ -437,6 +437,13 @@
               }
             }
           }
+        }
+      }
+      .col-md-12{
+        padding-right: 15px;
+        padding-left: 15px;
+        @media screen and (max-width: 480px){
+          padding: 0 10px 0 10px;
         }
       }
       // PRODUCT ITEM CONTAINER

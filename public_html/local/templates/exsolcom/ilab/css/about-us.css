@@ -1867,6 +1867,12 @@
 .i_about-us .i_seo .i_seo-dates .i_seo-dates-switch:hover span {
   color: var(--color-red);
 }
+.i_about-us .i_seo .i_seo-dates .i_seo-dates-switch.check {
+  background-color: var(--color-circles);
+}
+.i_about-us .i_seo .i_seo-dates .i_seo-dates-switch.check span {
+  color: var(--color-White);
+}
 .i_about-us .i_seo .i_seo-dates .i_seo-dates-switch span {
   font-weight: 600;
   font-size: 18px;

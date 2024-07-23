@@ -49,7 +49,7 @@ html {
 html[data-theme=dark] {
   --bg: #000000;
   --bg-second: #111111;
-  --bg-third: #111111;
+  --bg-third: #222222;
   --bg-fourth: #000000;
   --bg-fifth: #EFEFEF;
   --bg-sixth: #EFEFEF;

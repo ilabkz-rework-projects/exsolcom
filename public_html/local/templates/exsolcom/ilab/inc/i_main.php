@@ -584,8 +584,8 @@
 			)
 		);?>
 		<div class="i_projects-btn">
-            <a href="/our-cases">
-			    <button>Смотреть отзывы и кейсы</button>
+            <a href="projects/">
+			    <button>Все проекты</button>
             </a>
 		</div>
 		<div class="pagination">

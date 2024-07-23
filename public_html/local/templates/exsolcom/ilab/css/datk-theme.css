@@ -108,11 +108,7 @@ html[data-theme=dark] .i_main .i_products .swiper-slide:hover:before {
   z-index: -1;
   border-radius: 50%;
 }
-html[data-theme=dark] .i_main .i_projects .swiper.projects-swiper .swiper-slide .swiper-slide:hover {
-  box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.2);
-  background-color: var(--bg-blockSliderProjectHover);
-}
-html[data-theme=dark] .i_main .i_projects .swiper.projects-swiper .swiper-slide .swiper-slide:hover:before {
+html[data-theme=dark] .i_main .i_projects .swiper.projects-swiper .swiper-slide-parent:hover:before {
   content: "";
   position: absolute;
   top: 50%;

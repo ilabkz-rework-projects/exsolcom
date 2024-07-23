@@ -327,6 +327,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 	const sideMenu = document.querySelector('.i_side-menu')
 	const sideMenuButton = document.querySelectorAll('.i_header-burger')
+	const sideMenuButtonFooter = document.querySelectorAll('.i_footer-right-more-icon_2')
 	const sideMenuClose = document.querySelector('.i_side-menu-close')
 
 	sideMenuButton.forEach(item => {
@@ -339,6 +340,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			titleSearch.classList.remove('active');
 			titleSearch2.classList.remove('active');
 			language.classList.remove('expanded');
+		});
+	});
+
+	sideMenuButtonFooter.forEach(item => {
+		item.addEventListener('click', () => {
+			sideMenu.classList.add('show');
 		});
 	})
 
@@ -512,9 +519,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 	// HISTORY
 	const iSeoTabs = document.querySelectorAll('.i_seo-dates-switch')
+	const iSeoDates = document.querySelectorAll('.i_seo-dates')
 
 	iSeoTabs.forEach(item => {
 		item.addEventListener('click', () => {
+			iSeoTabs.forEach(tab => tab.classList.remove('check'));
+			item.classList.add('check');
+		});
+	});
+
+	iSeoTabs.forEach(item => {
+		item.addEventListener('click', () => {
+			// iSeoTabs.classList.add('check');
 			fetch('/local/templates/exsolcom/ilab/ajax/getHistoryContent.php', {
 				method: 'POST',
 				headers: {

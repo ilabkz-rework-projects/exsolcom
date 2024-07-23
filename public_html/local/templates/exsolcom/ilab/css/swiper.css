@@ -94,6 +94,7 @@
   width: 100%;
   margin: 70px 0;
   padding-top: 10px;
+  overflow: visible;
 }
 @media screen and (max-width: 680px) {
   .i_personal .i_container .swiper.personal {
@@ -193,7 +194,6 @@
   flex-direction: column;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
   border-radius: 100% 100% 35px 35px;
-  cursor: pointer;
   gap: 40px;
   position: relative;
   top: 50%;
@@ -229,6 +229,7 @@
   text-align: center;
 }
 .i_personal .i_container .swiper.personal .swiper-slide .swiper-slide-block .swiper-slide-group .swiper-slide-name span {
+  cursor: grab;
   color: var(--color-textInfoblock);
   font-size: 1.75rem;
 }
@@ -420,6 +421,7 @@
   opacity: 1;
   visibility: visible;
   transform: translateY(-20%);
+  transition: all 1s ease;
 }
 @media screen and (max-width: 1250px) {
   .i_products .i_container .swiper-slide:hover .swiper-detail {
@@ -502,12 +504,12 @@
 .i_products .i_container .swiper-slide .swiper-detail {
   opacity: 0;
   visibility: hidden;
-  transition: all 0.4s ease;
   display: flex;
   flex-direction: column;
   gap: 30px;
   margin: 0 20px;
   position: relative;
+  transition: all 0.01s ease;
 }
 @media screen and (max-width: 1218px) {
   .i_products .i_container .swiper-slide .swiper-detail {
@@ -703,7 +705,7 @@
     width: 60%;
   }
 }
-.i_projects .i_container .swiper.projects-swiper .swiper-slide .swiper-slide .swiper-slide-icon svg {
+.i_projects .i_container .swiper.projects-swiper .swiper-slide .swiper-slide .swiper-slide-icon img {
   width: 100%;
   height: 100%;
   color: var(--color-red);
@@ -805,7 +807,8 @@
   position: absolute;
   right: 0px;
   top: 0px;
-  z-index: 2;
+  z-index: 50;
+  outline: none;
 }
 .pagination .swiper-personal-button-next,
 .pagination .swiper-personal-button-prev,
@@ -887,7 +890,7 @@
     transform: translateX(50%);
     right: 50%;
     top: 75%;
-    z-index: 1;
+    z-index: 50;
     gap: 10px;
   }
 }
@@ -923,7 +926,7 @@
     transform: translateX(50%);
     right: 50%;
     top: 82%;
-    z-index: 1;
+    z-index: 50;
     gap: 40px;
   }
 }
@@ -949,7 +952,7 @@
     transform: translateX(50%);
     right: 50%;
     top: 85%;
-    z-index: 1;
+    z-index: 50;
     gap: 20px;
   }
 }
