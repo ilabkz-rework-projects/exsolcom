@@ -665,7 +665,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 						// навешиваем обработчик на кнопку для перехода на страницу с программным продуктом
 						footerProgrammBtn.addEventListener('click', () => {
-							window.location.href = `http://new.exsolcom.kz/programm-products/?programm_id=${data.PROGRAMM_LINK}`
+							window.location.href = `http://new.exsolcom.kz/programm-products/?programm_id=${data.PROGRAMM_LINK !== null ? data.PROGRAMM_LINK : ''}`
 						})
 					}
 				})
