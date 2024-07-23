@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$json = file_get_contents('php://input');
 	$getData = json_decode($json, true);
 
-	$res = CIBlockElement::GetList([], ['IBLOCK_ID' => $getData['iblockId']], false, false, ['PROPERTY_I_CONTENT_LINK', 'ID', 'NAME', 'PREVIEW_PICTURE', 'DETAIL_PICTURE', 'PREVIEW_TEXT']);
+	$res = CIBlockElement::GetList([], ['IBLOCK_ID' => $getData['iblockId']], false, false, ['PROPERTY_I_CONTENT_LINK', 'ID', 'NAME', 'PREVIEW_PICTURE', 'DETAIL_PICTURE', 'PREVIEW_TEXT', 'PROPERTY_I_PROGRAMM_LINK']);
 	$arResult = [];
 
 	while($ob = $res->Fetch())
@@ -22,6 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			$arResult['NAME'] = $ob['NAME'];
 			$arResult['IMAGE'] = CFile::GetPath($ob['PREVIEW_PICTURE']);
 			$arResult['PREVIEW_TEXT'] = $ob['PREVIEW_TEXT'];
+			$arResult['PROGRAMM_LINK'] = $ob['PROPERTY_I_PROGRAMM_LINK_VALUE'];
 		}
 	}
 
