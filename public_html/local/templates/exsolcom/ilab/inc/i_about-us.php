@@ -381,7 +381,8 @@
 					<div class="i_seo-events-2022-title">
 						<span>2022 год - <span class="i_seo-events-2022-title-color">Успешные проекты.</span></span>
 					</div>
-					<!--!SEO EVENTS 2022 TITLE--> <!--SEO EVENTS 2022 DESC-->
+					<!--!SEO EVENTS 2022 TITLE-->
+                    <!--SEO EVENTS 2022 DESC-->
 					<div class="i_seo-events-2022-desc">
 						<!--SEO EVENTS 2022 DESC GROUP-->
 						<div class="i_seo-events-2022-desc-group">

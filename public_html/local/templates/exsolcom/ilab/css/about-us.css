@@ -1907,6 +1907,7 @@
 .i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-title {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 .i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-title span {
   font-size: 24px;
@@ -1921,7 +1922,7 @@
   }
 }
 .i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-title span .i_seo-events-2022-title-color {
-  color: var(--color-red);
+  color: var(--color-red) !important;
 }
 .i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-desc {
   display: flex;
@@ -1982,6 +1983,115 @@
   line-height: 20px;
 }
 .i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-desc .i_seo-events-2022-desc-depiction ul li span {
+  font-size: 15px;
+  color: var(--color-black);
+  font-family: "Open Sans", sans-serif;
+  cursor: text;
+}
+.i_about-us .i_seo-events-2022-title {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.i_about-us .i_seo-events-2022-title span {
+  font-size: 24px !important;
+  color: var(--color-black);
+  font-weight: 600;
+  text-align: center;
+  cursor: text;
+}
+@media screen and (max-width: 480px) {
+  .i_about-us .i_seo-events-2022-title span {
+    font-size: 22px !important;
+  }
+}
+.i_about-us .i_seo-events-2022-title span .i_seo-events-2022-title-color {
+  color: var(--color-red) !important;
+}
+.i_about-us .i_seo-events-2022-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-group {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-group:nth-child(3) {
+  padding: 20px 0 0 0;
+}
+.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-group:nth-child(3) .i_seo-events-2022-desc-headline-lostWords {
+  padding: 20px 0 0 0;
+}
+.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-group .i_seo-events-2022-desc-headline span,
+.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-group .i_seo-events-2022-desc-headline-lostWords span {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-black);
+  cursor: text;
+}
+.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-group .i_seo-events-2022-desc-headline span .i_seo-events-2022-desc-headline-color,
+.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-group .i_seo-events-2022-desc-headline-lostWords span .i_seo-events-2022-desc-headline-color {
+  color: var(--color-red);
+}
+.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-group .i_seo-events-2022-desc-depiction {
+  padding: 0 0 0 20px;
+}
+.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-group .i_seo-events-2022-desc-depiction ul li:before {
+  content: " ";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-text-li);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -16px;
+  top: 5px;
+  margin-right: 0.5em;
+  z-index: 1;
+}
+.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-group .i_seo-events-2022-desc-depiction ul li {
+  position: relative;
+  list-style-type: none;
+  color: var(--color-black);
+  line-height: 20px;
+}
+.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-group .i_seo-events-2022-desc-depiction ul li span {
+  font-size: 15px;
+  color: var(--color-black);
+  font-family: "Open Sans", sans-serif;
+  cursor: text;
+}
+.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-headline,
+.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-headline-lostWords {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-black);
+}
+.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-headline span,
+.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-headline-lostWords span {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-black);
+  cursor: text;
+}
+.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-headline span .i_seo-events-2022-desc-headline-color,
+.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-headline-lostWords span .i_seo-events-2022-desc-headline-color {
+  color: var(--color-red);
+}
+.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-depiction {
+  padding: 0 0 0 20px;
+}
+.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-depiction ul li {
+  color: var(--color-text-li);
+  line-height: 20px;
+}
+.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-depiction ul li span {
   font-size: 15px;
   color: var(--color-black);
   font-family: "Open Sans", sans-serif;

@@ -2122,7 +2122,9 @@
         position: relative;
         margin-bottom: 10px; /* Расстояние между элементами списка */
         padding-left: 35px; /* Отступ для номера */
-
+        a{
+          color: var(--color-red);
+        }
         span{
           line-height: normal;
           font-family: "Open Sans", sans-serif;
@@ -2138,3 +2140,134 @@
   }
 }
 //!SNIPPET LIST_WORK
+
+//SNIPPET HEADLINE INT
+//SEO EVENTS 2022 TITLE
+.i_seo-events-2022-title{
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  span{
+    font-size: 24px;
+    color: var(--color-textInfoblock);
+    font-weight: 600;
+    text-align: center;
+    @media screen and (max-width: 480px){
+      font-size: 22px;
+    }
+    .i_seo-events-2022-title-color{
+      color: var(--color-red) !important;
+    }
+    cursor: text;
+  }
+}
+//!SEO EVENTS 2022 TITLE
+//!SNIPPET HEADLINE INT
+
+//SNIPPET NAME HEADLINE WITH LIST
+//SEO EVENTS 2022 DESC
+.i_seo-events-2022-desc{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  //SEO EVENTS 2022 DESC GROUP
+  .i_seo-events-2022-desc-group{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    //SEO EVENTS 2022 DESC HEADLINE LOST_WORDS
+    &:nth-child(3){
+      padding: 20px 0 0 0;
+      .i_seo-events-2022-desc-headline-lostWords{
+        padding: 20px 0 0 0;
+      }
+    }
+
+    //!SEO EVENTS 2022 DESC HEADLINE LOST_WORDS
+    //SEO EVENTS 2022 DESC HEADLINE
+    .i_seo-events-2022-desc-headline,
+    .i_seo-events-2022-desc-headline-lostWords{
+      span{
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--color-textInfoblock);
+        .i_seo-events-2022-desc-headline-color{
+          color: var(--color-red);
+        }
+        cursor: text;
+      }
+    }
+    //!SEO EVENTS 2022 DESC HEADLINE
+    //SEO EVENTS 2022 DESC DEPICTION
+    .i_seo-events-2022-desc-depiction{
+      padding: 0 0 0 20px;
+      ul{
+        li:before{
+          content: " ";
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: var(--color-text-li);
+          color: black;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          left: -16px;
+          top: 5px;
+          margin-right: 0.5em;
+          z-index: 1;
+        }
+        li{
+          position: relative;
+          list-style-type: none;
+          color: var(--color-textInfoblock);
+          line-height: 20px;
+          span{
+            font-size: 15px;
+            color: var(--color-black) ;
+            font-family: "Open Sans", sans-serif;
+            cursor: text;
+          }
+        }
+      }
+    }
+    //!SEO EVENTS 2022 DESC DEPICTION
+  }
+  //!SEO EVENTS 2022 DESC GROUP
+  //SEO EVENTS 2022 DESC HEADLINE
+  .i_seo-events-2022-desc-headline,
+  .i_seo-events-2022-desc-headline-lostWords{
+    span{
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--color-textInfoblock);
+      .i_seo-events-2022-desc-headline-color{
+        color: var(--color-red);
+      }
+      cursor: text;
+    }
+  }
+  //!SEO EVENTS 2022 DESC HEADLINE
+  //SEO EVENTS 2022 DESC DEPICTION
+  .i_seo-events-2022-desc-depiction{
+    padding: 0 0 0 20px;
+    ul{
+      li{
+        color: var(--color-text-li);
+        line-height: 20px;
+        span{
+          font-size: 15px;
+          color: var(--color-black) ;
+          font-family: "Open Sans", sans-serif;
+          cursor: text;
+        }
+      }
+    }
+  }
+  //!SEO EVENTS 2022 DESC DEPICTION
+}
+//!SEO EVENTS 2022 DESC
+//!SNIPPET NAME HEADLINE WITH LIST
+
