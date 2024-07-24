@@ -2172,6 +2172,7 @@
                 padding: 20px 0 0 0;
               }
             }
+
             //!SEO EVENTS 2022 DESC HEADLINE LOST_WORDS
             //SEO EVENTS 2022 DESC HEADLINE
             .i_seo-events-2022-desc-headline,
@@ -2196,7 +2197,7 @@
                   line-height: 20px;
                   span{
                     font-size: 15px;
-                    color: var(--color-black);
+                    color: var(--color-black) ;
                     font-family: "Open Sans", sans-serif;
                     cursor: text;
                   }
@@ -2206,6 +2207,37 @@
             //!SEO EVENTS 2022 DESC DEPICTION
           }
           //!SEO EVENTS 2022 DESC GROUP
+          //SEO EVENTS 2022 DESC HEADLINE
+          .i_seo-events-2022-desc-headline,
+          .i_seo-events-2022-desc-headline-lostWords{
+            span{
+              font-size: 18px;
+              font-weight: 600;
+              color: var(--color-black);
+              .i_seo-events-2022-desc-headline-color{
+                color: var(--color-red);
+              }
+              cursor: text;
+            }
+          }
+          //!SEO EVENTS 2022 DESC HEADLINE
+          //SEO EVENTS 2022 DESC DEPICTION
+          .i_seo-events-2022-desc-depiction{
+            padding: 0 0 0 20px;
+            ul{
+              li{
+                color: var(--color-text-li);
+                line-height: 20px;
+                span{
+                  font-size: 15px;
+                  color: var(--color-black) ;
+                  font-family: "Open Sans", sans-serif;
+                  cursor: text;
+                }
+              }
+            }
+          }
+          //!SEO EVENTS 2022 DESC DEPICTION
         }
         //!SEO EVENTS 2022 DESC
       }
