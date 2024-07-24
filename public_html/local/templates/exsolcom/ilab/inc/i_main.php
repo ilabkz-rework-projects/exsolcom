@@ -477,21 +477,7 @@
 			</div>
 			<!--Иконка с 1С-->
 			<!--Текст с кнопкой-->
-			<div class="i_software-group-textBtn">
-				<!--Software text-->
-				<div class="i_software-group-text">
-					<span class="i_software-headline">Линейка корпоративных продуктов для Казахстана</span>
-					<p class="i_software-desc">
-						Предназначена для решения задач управления финансами и ведения учета, как обособленных предприятий, так и предприятий, объединенных в группы (холдинги, конгломераты, группы компаний).
-					</p>
-				</div>
-				<!--Software text-->
-				<!--Software Кнопка-->
-				<div class="i_software-btn">
-					<button id="form-kp-btn">Запросить прайс лист и КП</button>
-				</div>
-				<!--Software Кнопка-->
-			</div>
+			<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/main/i_main_software_text.php',Array(),Array('MODE'=>'html', 'NAME'=>'Линейка кормпоративных продуктов', 'SHOW_BORDER'=>true))?>
 			<!--Текст с кнопкой-->
 		</div>
 	</div>
