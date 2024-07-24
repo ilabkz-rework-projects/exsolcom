@@ -379,6 +379,10 @@
     font-size: 13px;
   }
 }
+.i_snippet.multi-table .i_snippet-multi-table-items .i_snippet-multi-table-item .i_snippet-table-item .i_snippet-table-item-value span {
+  color: black;
+  cursor: text;
+}
 .i_snippet.multi-table .i_snippet-multi-table-items .i_snippet-multi-table-item .i_snippet-table-item .i_snippet-table-item-value .color-red {
   color: var(--color-red) !important;
   cursor: text;

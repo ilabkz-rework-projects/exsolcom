@@ -64,7 +64,7 @@
 				<!--!ABOUT COMPANY STRATEGY DESC-->
 				<!--ABOUT COMPANY STRATEGY BTN-->
 				<div class="i_about-company-strategy-btn">
-                    <a href="../upload/presentation/presentation.pdf" target="_blank" download>
+                    <a href="https://drive.google.com/uc?export=download&id=1wI4qaYHD-5QR3mqtzv7iRFkrj_-40xll" target="_blank" download>
                         <button>
                             Скачать презентацию компаний
                         </button>
