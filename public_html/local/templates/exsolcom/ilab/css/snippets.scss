@@ -129,6 +129,10 @@
       font-size: 14px;
       line-height: 20px;
     }
+    span{
+      cursor: text;
+      color: var(--color-textInfoblock);
+    }
   }
 
   //!SNIPPET TITLE SUBTITLE
@@ -155,6 +159,8 @@
   padding: 40px 0;
   position: relative;
   border-bottom: 5px dotted #666666;
+  max-width: 1470px;
+  width: 100%;
   //SNIPPET SINGLE_TABLE TITLE
   //.i_snippet-title{
   //  //display: flex;
@@ -168,7 +174,7 @@
   .i_snippet-table-group-item {
     //SNIPPET SINGLE_TABLE ITEM
     .i_snippet-table-item {
-      max-width: 1270px;
+      max-width: 1470px;
       width: 100%;
       height: max-content;
       background-color: var(--bg-block);
@@ -586,6 +592,8 @@
     font-size: 18px;
 
     span {
+      cursor: text;
+      color: var(--color-textInfoblock);
     }
   }
 
@@ -1326,6 +1334,9 @@
 
 //SNIPPET IMPORTANT_INFO
 .i_snippet.important-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   //SNIPPET ADDITIONAL_SERVICES TITLE
   .i_snippet-title {
     padding: 50px 0;
@@ -1645,6 +1656,9 @@
         button {
           &:hover {
             background-color: var(--bg-buttonHoverSecond);
+          }
+          @media screen and (max-width: 760px) {
+            padding: 12px 18px;
           }
         }
       }

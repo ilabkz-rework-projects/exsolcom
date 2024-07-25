@@ -402,6 +402,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			overlay.classList.add('active')
 			footerKpBtn.classList.remove('idn')
 
+
 			modalKp.querySelector('.i_modal-content').innerHTML = '';
 
 			// Добавляем контент на страницу

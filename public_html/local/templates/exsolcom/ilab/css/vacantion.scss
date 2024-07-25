@@ -169,6 +169,7 @@
             font-size: 15px;
             cursor: text;
             color: var(--color-textInfoblock);
+            line-height: 16px;
 
           }
         }
@@ -289,6 +290,7 @@
                     font-size: 15px;
                     cursor: text;
                     color: var(--color-textInfoblock);
+                    line-height: 16px;
                   }
                 }
                 //!VACATION ITEM RIGHT TITLE
@@ -310,6 +312,7 @@
             .i_vacantion-item-title{
               display: flex;
               span{
+                line-height: 16px;
                 @media screen and (max-width: 590px){
                   font-size: 14px;
                 }

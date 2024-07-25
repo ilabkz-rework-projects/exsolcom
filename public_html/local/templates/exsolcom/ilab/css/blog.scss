@@ -722,6 +722,7 @@
                         font-size: 15px;
                         cursor: text;
                         color: var(--color-textInfoblock);
+                        line-height: 16px;
                       }
                     }
                     //!VACATION ITEM RIGHT TITLE
@@ -744,6 +745,7 @@
                   display: flex;
                   font-family: "Open Sans", sans-serif;
                   span{
+                    line-height: 16px;
                     color: var(--color-textInfoblock);
                     @media screen and (max-width: 590px){
                       font-size: 14px;

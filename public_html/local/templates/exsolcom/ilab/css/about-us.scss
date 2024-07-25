@@ -1112,11 +1112,12 @@
             //TEAM PERSONAL BLOCK DEPICTION GROUP NAME
             .block-depiction-group-name{
               text-align: center;
-              width: max-content;
+              width: 80%;
               span{
                 color: var(--color-textInfoblock);
                 cursor: text;
                 font-size: 28px;
+                line-height: normal;
                 @media screen and (max-width: 1510px){
                   font-size: 24px;
                 }

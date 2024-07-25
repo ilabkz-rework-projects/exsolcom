@@ -1327,6 +1327,7 @@ p {
     font-size: 15px;
     cursor: text;
     color: var(--color-textInfoblock);
+    line-height: 16px;
   }
 }
 @media screen and (max-width: 590px) {
@@ -1344,6 +1345,7 @@ p {
     display: flex;
   }
   .i_blog-page .i_container .bx_sitemap .catalog-section .product-item-container .i_vacantion-item.second .i_vacantion-item-right.second .i_vacantion-item-title span {
+    line-height: 16px;
     color: var(--color-textInfoblock);
   }
 }

@@ -173,6 +173,7 @@
   font-size: 15px;
   cursor: text;
   color: var(--color-textInfoblock);
+  line-height: 16px;
 }
 .i_services .i_vacantion-list .i_vacantion-item.second {
   display: none;
@@ -279,6 +280,7 @@
     font-size: 15px;
     cursor: text;
     color: var(--color-textInfoblock);
+    line-height: 16px;
   }
 }
 @media screen and (max-width: 590px) {
@@ -294,6 +296,9 @@
   }
   .i_services .i_vacantion-list .i_vacantion-item.second .i_vacantion-item-right.second .i_vacantion-item-title {
     display: flex;
+  }
+  .i_services .i_vacantion-list .i_vacantion-item.second .i_vacantion-item-right.second .i_vacantion-item-title span {
+    line-height: 16px;
   }
 }
 @media screen and (max-width: 590px) and (max-width: 590px) and (max-width: 590px) {
