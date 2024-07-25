@@ -64,7 +64,7 @@ while ($arRes = $dbRes->GetNext()) {
 
 ?>
 
-	<div class="product-item i_detail-modal-item" data-id="<?=$item['ID']?>" data_iblock_id="2">
+	<div class="product-item i_detail-modal-item i_modal-footer-hd" data-id="<?=$item['ID']?>" data_iblock_id="2">
 		<div class="product-item-left">
 			<div class="product-item-img">
 				<img src="<?= $item['PREVIEW_PICTURE']['SRC'] ?>" alt="img">
