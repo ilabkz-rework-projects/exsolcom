@@ -2082,6 +2082,7 @@ body.lock {
   align-items: center;
   gap: 20px;
   width: 45%;
+  justify-content: center;
   height: 615px;
   background-color: var(--color-blockHv);
   border-radius: 30px;

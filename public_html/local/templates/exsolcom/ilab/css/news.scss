@@ -91,7 +91,9 @@
         background-color: var(--color-blockHv);
         width: 23%;
         //min-width: 340px;
-        height: max-content;
+        max-height: 600px;
+        //height: max-content;
+        justify-content: center;
         border-radius: 30px;
         padding: 50px 30px 60px;
         gap: 20px;

@@ -179,6 +179,11 @@ a{
     height: calc(100% - 45px);
     padding-bottom: 90px;
     max-width: unset;
+    .i_modal-content{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
     @media screen and (max-width: 1630px){
       //padding: 0 5%;
       //padding-bottom: 90px;
