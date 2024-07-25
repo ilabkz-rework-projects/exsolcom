@@ -322,6 +322,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	const overlay = document.querySelector('.i_overlay')
 	const modal = document.querySelector('.i_modal')
 	const modalClose = document.querySelector('.i_modal .i_modal-close')
+	const documentBody = document.querySelector('body')
+
 
 	//SIDE MENU
 
@@ -374,7 +376,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			circle3.classList.remove('wide');
 			footerProgrammBtn.classList.add('idn')
 			footerKpBtn.classList.remove('idn')
-
+			documentBody.classList.add('lock')
 		});
 
 	})
@@ -383,6 +385,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	submitCloseBtn.addEventListener('click', (event) => {
 		submitModal.classList.remove('active')
 		overlay.classList.remove('active')
+		documentBody.classList.remove('lock')
 	})
 
 	// MODAL KP
@@ -401,7 +404,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			modalKp.classList.add('active')
 			overlay.classList.add('active')
 			footerKpBtn.classList.remove('idn')
-
+			documentBody.classList.add('lock')
 
 			modalKp.querySelector('.i_modal-content').innerHTML = '';
 
@@ -446,6 +449,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		modalKp.classList.remove('active')
 		footerKpBtn.classList.remove('idn')
 		footerProgrammBtn.classList.add('idn')
+		documentBody.classList.remove('lock')
 	})
 
 	// FORM KP
@@ -469,6 +473,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			circle3.classList.remove('wide');
 			footerProgrammBtn.classList.add('idn')
 			footerKpBtn.classList.remove('idn')
+			documentBody.classList.add('lock')
 		})
 	})
 	
@@ -476,6 +481,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		submitModal.classList.remove('active')
 		overlay.classList.remove('active')
 		formKpModal.classList.remove('active')
+		documentBody.classList.remove('lock')
 	})
 
 
@@ -490,6 +496,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			modalKp.classList.remove('active')
 			footerKpBtn.classList.remove('idn')
 			footerProgrammBtn.classList.add('idn')
+			documentBody.classList.remove('lock')
 		}
 	})
 
@@ -502,12 +509,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			modalKp.classList.remove('active')
 			footerKpBtn.classList.remove('idn')
 			footerProgrammBtn.classList.add('idn')
+			documentBody.classList.remove('lock')
 		}
 	})
 
 	modalClose.addEventListener('click', () => {
 		overlay.classList.remove('active')
 		modal.classList.remove('active')
+		documentBody.classList.remove('lock')
 	})
 
 	// I_BLOG DROPDOWN
@@ -567,6 +576,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 					overlay.classList.add('active')
 					modal.classList.add('active')
+					documentBody.classList.add('lock')
 
 					let content = data.CONTENT;
 					content = content !== false ? content.replace(/<\?[\s\S]*?\?>/g, '') : false;
@@ -663,6 +673,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 					overlay.classList.add('active')
 					modalKp.classList.add('active')
+					documentBody.classList.add('lock')
 
 					let content = data.CONTENT;
 
@@ -710,6 +721,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				formKpModal.classList.remove('active')
 				modalKp.classList.add('active')
 				overlay.classList.add('active')
+				documentBody.classList.add('lock')
 				footerKpBtn.classList.remove('idn')
 
 				modalKp.querySelector('.i_modal-content').innerHTML = '';

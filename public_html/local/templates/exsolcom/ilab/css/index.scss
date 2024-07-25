@@ -93,6 +93,10 @@ body{
   overflow-x: hidden;
   background-color: var(--bg);
   transition: background-color 0.5s, color 0.5s; /* Плавный переход между темами */
+
+  &.lock{
+    overflow: hidden;
+  }
 }
 
 .transition {
