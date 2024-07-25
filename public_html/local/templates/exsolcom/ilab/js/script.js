@@ -778,7 +778,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 	document.querySelectorAll('.i_modal-footer-hd').forEach(item => {
 		item.addEventListener('click', () => {
-			modalKpFooter.classList.add('idn')
+			modalKpFooter.classList.add('idn');
+			modalKp.classList.add('pad'); // убираем padding для карточек новости и блога
 		})
 	})
 

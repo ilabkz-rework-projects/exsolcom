@@ -95,7 +95,7 @@ body {
   transition: background-color 0.5s, color 0.5s; /* Плавный переход между темами */
 }
 body.lock {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .transition {

@@ -451,6 +451,9 @@ a{
   width: 95%;
   height: 90%;
   border-radius: 35px;
+  &.pad{
+    padding: 50px 20px 0px 0px;
+  }
   @media screen and (max-width: 620px){
     padding: 30px 20px 75px 0;
   }
