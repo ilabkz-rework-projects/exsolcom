@@ -94,6 +94,9 @@ body {
   background-color: var(--bg);
   transition: background-color 0.5s, color 0.5s; /* Плавный переход между темами */
 }
+body.lock {
+  overflow: hidden;
+}
 
 .transition {
   transition: background-color 1s ease, color 1s ease;

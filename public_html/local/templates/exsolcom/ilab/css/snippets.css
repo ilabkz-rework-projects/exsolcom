@@ -1711,6 +1711,9 @@
   display: flex;
   padding: 50px 0 30px 0;
 }
+.i_snippet.base-title .i_snippet-title h3 {
+  text-align: left;
+}
 .i_snippet.base-title .i_snippet-title h3 .color-red {
   cursor: text !important;
 }
