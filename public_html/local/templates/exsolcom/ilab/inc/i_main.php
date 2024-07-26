@@ -331,13 +331,8 @@
 	false
 );?>
         <!--!PERSONAL SWIPER PERSONAL-->
-		<div class="i_personal-btn">
-            <a href="https://drive.google.com/uc?export=download&id=1wI4qaYHD-5QR3mqtzv7iRFkrj_-40xll" target="_blank" download>
-                <button>
-                    Скачать презентацию компании
-                </button>
-            </a>
-		</div>
+		<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/main/i_main_personal_btn.php',Array(),Array('MODE'=>'html', 'NAME'=>'Презентация компании', 'SHOW_BORDER'=>true))?>
+
 		<div class="pagination">
 			<div class="swiper-personal-button-prev">
 				<svg class="prev-icon" width="11" height="18" viewBox="0 0 11 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
