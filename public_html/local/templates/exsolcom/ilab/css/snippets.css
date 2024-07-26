@@ -1748,6 +1748,48 @@
   cursor: text;
 }
 
+.i_snippet.titlePicture {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+@media screen and (max-width: 1330px) {
+  .i_snippet.titlePicture {
+    gap: 20px;
+  }
+}
+.i_snippet.titlePicture .i_snippet-title span {
+  font-family: "Comfortaa", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 23px;
+  color: #7C7C7C;
+  cursor: text;
+}
+@media screen and (max-width: 1330px) {
+  .i_snippet.titlePicture .i_snippet-title span {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_snippet.titlePicture .i_snippet-title span {
+    font-size: 0.875rem;
+  }
+}
+.i_snippet.titlePicture .i_snippet-picture {
+  max-width: 190px;
+}
+@media screen and (max-width: 1330px) {
+  .i_snippet.titlePicture .i_snippet-picture {
+    max-width: 150px;
+  }
+}
+.i_snippet.titlePicture .i_snippet-picture img {
+  width: 100%;
+  object-fit: contain;
+}
+
 .i_snippet.picture {
   margin: 20px 0;
 }

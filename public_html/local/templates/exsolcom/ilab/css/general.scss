@@ -333,6 +333,7 @@ a{
     box-shadow: 0px -4px 14px 0px rgba(34, 60, 80, 0.18);
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
+
     .i_modal-footer-btn{
       button{
         padding: 18px 44px;
@@ -456,11 +457,14 @@ a{
   width: 95%;
   height: 90%;
   border-radius: 35px;
-  &.pad{
+    &.pad{
     padding: 50px 20px 0px 0px;
   }
+  @media screen and (max-width: 780px){
+    padding: 30px 20px 35px 0;
+  }
   @media screen and (max-width: 620px){
-    padding: 30px 20px 75px 0;
+    padding: 30px 20px 45px 0;
   }
   @media screen and (max-width: 480px){
     //padding: 25px 5px;
@@ -595,6 +599,18 @@ a{
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
     gap: 40px;
+    overflow: hidden;
+    @media screen and (max-width: 1330px){
+      gap: 30px;
+    }
+    @media screen and (max-width: 780px){
+      height: 60px;
+      gap: 20px;
+    }
+    @media screen and (max-width: 360px){
+      gap: 12px;
+
+    }
     .i_modal-footer-price{
       background-color: var(--color-red);
       display: flex;
@@ -602,29 +618,60 @@ a{
       align-items: center;
       height: 100%;
       padding: 0 40px 0 60px;
+      @media screen and (max-width: 1330px){
+        padding: 0 15px 0 20px;
+      }
       span{
         color: var(--color-WhiteWhite);
         display: flex;
         flex-direction: column;
         text-align: right;
         font-size: 2.25rem;
+        @media screen and (max-width: 1330px){
+          font-size: 2rem;
+        }
+        @media screen and (max-width: 760px){
+          font-size: 1.5rem;
+        }
         .text{
           text-align: right;
           font-size: 0.875rem;
           font-family: "Open Sans", sans-serif;
+          @media screen and (max-width: 1330px){
+            font-size: 0.75rem;
+          }
+          @media screen and (max-width: 760px){
+            font-size: 0.688rem;
+          }
         }
       }
     }
     .i_modal-footer-btn{
-      button{
+
+      button:nth-child(1){
+        @media screen and (max-width: 660px){
+          display: none;
+        }
+
         padding: 18px 44px;
         @media screen and (max-width: 1330px){
           padding: 14px 34px;
         }
         @media screen and (max-width: 480px){
           font-size: 12px;
+        }
+      }
+      button:nth-child(2){
+        display: none;
+        @media screen and (max-width: 660px){
+          display: block;
           padding: 10px 25px;
         }
+        @media screen and (max-width: 480px){
+          font-size: 12px;
+          padding: 8px 22px;
+        }
+
       }
     }
   }

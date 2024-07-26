@@ -2094,6 +2094,46 @@
 
 //!SNIPPET LIST
 
+//SNIPPET TITLE_PICTURE
+.i_snippet.titlePicture{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  @media screen and (max-width: 1330px){
+    gap: 20px;
+  }
+  .i_snippet-title{
+    span{
+      font-family: "Comfortaa", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 23px;
+      color: #7C7C7C;
+      cursor: text;
+      @media screen and (max-width: 1330px){
+        font-size: 1.125rem;
+      }
+      @media screen and (max-width: 480px){
+        font-size: 0.875rem;
+      }
+    }
+  }
+  .i_snippet-picture{
+    max-width: 190px;
+    @media screen and (max-width: 1330px){
+      max-width: 150px;
+    }
+
+    img{
+      width: 100%;
+      object-fit: contain;
+
+    }
+  }
+}
+//!SNIPPET TITLE_PICTURE
+
 //SNIPPET PICTURE
 .i_snippet.picture {
   margin: 20px 0;
