@@ -383,7 +383,7 @@
 			<div class="i_modal-footer-price idn"></div>
 			<div class="i_modal-footer-btn">
 				<button id="form-kp-btn">Запросить коммерческое предложение</button>
-                <button id="form-kp-btn">Запросить КП</button>
+                <button id="form-kp-btnSecond">Запросить КП</button>
 				<button id="form-programm-btn" class="idn">Перейти к программному продукту</button>
 <!--                <button id="form-reply-btn">Откликнуться на вакансию</button>-->
 			</div>

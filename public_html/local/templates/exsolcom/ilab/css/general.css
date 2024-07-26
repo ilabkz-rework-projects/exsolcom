@@ -42,6 +42,7 @@ span:hover {
 
 a {
   cursor: pointer !important;
+  color: var(--color-red) !important;
 }
 
 .idn {
@@ -710,6 +711,20 @@ a {
   .i_modal-kp .i_modal-footer .i_modal-footer-btn button:nth-child(2) {
     font-size: 12px;
     padding: 8px 22px;
+  }
+}
+.i_modal-kp .i_modal-footer .i_modal-footer-btn button:nth-child(3) {
+  padding: 18px 44px;
+}
+@media screen and (max-width: 1330px) {
+  .i_modal-kp .i_modal-footer .i_modal-footer-btn button:nth-child(3) {
+    padding: 14px 34px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_modal-kp .i_modal-footer .i_modal-footer-btn button:nth-child(3) {
+    font-size: 12px;
+    padding: 10px 25px;
   }
 }
 

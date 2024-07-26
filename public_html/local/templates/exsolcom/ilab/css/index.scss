@@ -2495,7 +2495,7 @@ body{
             display: grid;
             grid-template-columns: 94px 200px;
             grid-auto-rows: 100px 40px;
-            grid-gap: 10px;
+            grid-gap: 20px 10px;
             padding: 18px 13px;
           }
           //Blog изображение
@@ -2591,11 +2591,12 @@ body{
           }
           //!Blog Информация
           //Blog Headline
-          a{
+          .blog-name{
             text-decoration: none;
             b{
               font-size: 21px;
               text-align: center;
+              line-height: normal;
               @media screen and (max-width: 1330px){
                 font-size: 18px;
               }

@@ -519,7 +519,7 @@
   line-height: 22px;
 }
 .i_snippet.desc-link .i_snippet-desc-link span a {
-  color: var(--color-red);
+  color: var(--color-red) !important;
 }
 .i_snippet.desc-link .i_snippet-desc-link span .color-red {
   color: var(--color-red);
@@ -1712,6 +1712,7 @@
   padding: 50px 0 30px 0;
 }
 .i_snippet.base-title .i_snippet-title h3 {
+  line-height: normal;
   text-align: left;
 }
 .i_snippet.base-title .i_snippet-title h3 .color-red {

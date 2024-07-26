@@ -331,6 +331,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	const modalKp = document.querySelector('.i_modal-kp')
 	const modalKpCloseBtn = modalKp.querySelector('.i_modal-close')
 	const footerKpBtn = modalKp.querySelector('.i_modal-footer-btn #form-kp-btn')
+	const footerKpBtnSecond = modalKp.querySelector('.i_modal-footer-btn #form-kp-btnSecond')
 	const footerProgrammBtn = modalKp.querySelector('.i_modal-footer-btn #form-programm-btn')
 	const modalKpFooter = modalKp.querySelector('.i_modal-footer')
 
@@ -386,6 +387,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			circle3.classList.remove('wide');
 			footerProgrammBtn.classList.add('idn')
 			footerKpBtn.classList.remove('idn')
+			footerKpBtnSecond.classList.remove('idn')
 			documentBody.classList.add('lock')
 			modalKpFooter.classList.remove('idn')
 		});
@@ -407,6 +409,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			modalKp.classList.add('active')
 			overlay.classList.add('active')
 			footerKpBtn.classList.remove('idn')
+			footerKpBtnSecond.classList.remove('idn')
 			documentBody.classList.add('lock')
 			modalKpFooter.classList.remove('idn')
 
@@ -452,6 +455,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		formKpModal.classList.remove('active')
 		modalKp.classList.remove('active')
 		footerKpBtn.classList.remove('idn')
+		footerKpBtnSecond.classList.remove('idn')
 		footerProgrammBtn.classList.add('idn')
 		documentBody.classList.remove('lock')
 		modalKpFooter.classList.remove('idn')
@@ -478,6 +482,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			circle3.classList.remove('wide');
 			footerProgrammBtn.classList.add('idn')
 			footerKpBtn.classList.remove('idn')
+			footerKpBtnSecond.classList.remove('idn')
 			documentBody.classList.add('lock')
 		})
 	})
@@ -501,6 +506,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			formKpModal.classList.remove('active')
 			modalKp.classList.remove('active')
 			footerKpBtn.classList.remove('idn')
+			footerKpBtnSecond.classList.remove('idn')
 			footerProgrammBtn.classList.add('idn')
 			documentBody.classList.remove('lock')
 			modalKpFooter.classList.remove('idn')
@@ -515,6 +521,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			formKpModal.classList.remove('active')
 			modalKp.classList.remove('active')
 			footerKpBtn.classList.remove('idn')
+			footerKpBtnSecond.classList.remove('idn')
 			footerProgrammBtn.classList.add('idn')
 			documentBody.classList.remove('lock')
 			modalKpFooter.classList.remove('idn')
@@ -698,6 +705,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 					if(!detailItem){
 						footerKpBtn.classList.add('idn')
+						footerKpBtnSecond.classList.add('idn')
 						footerProgrammBtn.classList.remove('idn')
 
 						// навешиваем обработчик на кнопку для перехода на страницу с программным продуктом

@@ -641,7 +641,7 @@
       line-height: 22px;
 
       a {
-        color: var(--color-red);
+        color: var(--color-red)!important;
       }
 
       .color-red {
@@ -2039,6 +2039,7 @@
   //SNIPPET TITLE TITLE
   .i_snippet-title {
     h3{
+      line-height: normal;
       text-align: left;
       .color-red{
         cursor: text !important;

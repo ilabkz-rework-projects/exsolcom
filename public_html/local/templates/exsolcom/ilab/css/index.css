@@ -2373,7 +2373,7 @@ body.lock {
     display: grid;
     grid-template-columns: 94px 200px;
     grid-auto-rows: 100px 40px;
-    grid-gap: 10px;
+    grid-gap: 20px 10px;
     padding: 18px 13px;
   }
 }
@@ -2473,30 +2473,31 @@ body.lock {
     width: 50%;
   }
 }
-.i_infoblock .i_blog .blog-list .blog-item a {
+.i_infoblock .i_blog .blog-list .blog-item .blog-name {
   text-decoration: none;
 }
-.i_infoblock .i_blog .blog-list .blog-item a b {
+.i_infoblock .i_blog .blog-list .blog-item .blog-name b {
   font-size: 21px;
   text-align: center;
+  line-height: normal;
 }
 @media screen and (max-width: 1330px) {
-  .i_infoblock .i_blog .blog-list .blog-item a b {
+  .i_infoblock .i_blog .blog-list .blog-item .blog-name b {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 480px) {
-  .i_infoblock .i_blog .blog-list .blog-item a b {
+  .i_infoblock .i_blog .blog-list .blog-item .blog-name b {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 450px) {
-  .i_infoblock .i_blog .blog-list .blog-item a b {
+  .i_infoblock .i_blog .blog-list .blog-item .blog-name b {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 420px) {
-  .i_infoblock .i_blog .blog-list .blog-item a b {
+  .i_infoblock .i_blog .blog-list .blog-item .blog-name b {
     font-size: 15px;
   }
 }
