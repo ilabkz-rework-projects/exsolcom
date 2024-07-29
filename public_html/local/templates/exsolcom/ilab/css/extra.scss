@@ -1,6 +1,7 @@
 //SUBMIT FORM
 .i_submit,
-.i_form-kp{
+.i_form-kp,
+.i_form-vc{
   background-color: var(--bg-third);
   position: fixed;
   top: 50%;
@@ -24,7 +25,8 @@
     transform: translate(-50%, -50%);
   }
 
-  .i_submit-close {
+  .i_submit-close,
+  .i_form-vc-close{
     position: absolute;
     top: 30px;
     z-index: 10;

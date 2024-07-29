@@ -40,7 +40,6 @@ span {
 
 a{
   cursor: pointer !important;
-  color: var(--color-red)!important;
 }
 
 
@@ -371,6 +370,7 @@ a{
     text-transform: uppercase;
     cursor: text;
     color: var(--color-textInfoblock);
+    line-height: normal;
     span{
       cursor: text;
     }
@@ -379,7 +379,12 @@ a{
       margin-bottom: 0;
     }
     @media screen and (max-width: 480px){
-      font-size: 21px;
+      font-size: 1.125rem;
+      line-height: 25px;
+      text-align: center;
+    }
+    @media screen and (max-width: 400px){
+      font-size: 1rem;
       line-height: 25px;
       text-align: center;
     }
@@ -399,6 +404,9 @@ a{
       font-size: 16px;
       line-height: 22px;
       text-align: center;
+    }
+    a{
+      color: var(--color-red);
     }
   }
   .i_modal-preview-content{

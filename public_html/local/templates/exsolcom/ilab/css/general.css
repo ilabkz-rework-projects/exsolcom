@@ -42,7 +42,6 @@ span:hover {
 
 a {
   cursor: pointer !important;
-  color: var(--color-red) !important;
 }
 
 .idn {
@@ -371,6 +370,7 @@ a {
   text-transform: uppercase;
   cursor: text;
   color: var(--color-textInfoblock);
+  line-height: normal;
 }
 .i_modal-preview .i_modal-preview-title span {
   cursor: text;
@@ -383,7 +383,14 @@ a {
 }
 @media screen and (max-width: 480px) {
   .i_modal-preview .i_modal-preview-title {
-    font-size: 21px;
+    font-size: 1.125rem;
+    line-height: 25px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .i_modal-preview .i_modal-preview-title {
+    font-size: 1rem;
     line-height: 25px;
     text-align: center;
   }
@@ -407,6 +414,9 @@ a {
     line-height: 22px;
     text-align: center;
   }
+}
+.i_modal-preview .i_modal-preview-subtitle a {
+  color: var(--color-red);
 }
 .i_modal-preview .i_modal-preview-content {
   font-size: 16px;

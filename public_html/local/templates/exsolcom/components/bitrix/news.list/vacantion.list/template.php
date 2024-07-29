@@ -12,7 +12,7 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
-<div class="i_vacantion-list">
+<div class=" i_vacantion-list">
 <?if($arParams["DISPLAY_TOP_PAGER"]):?>
 	<?=$arResult["NAV_STRING"]?><br />
 <?endif;?>
@@ -40,7 +40,7 @@ $this->setFrameMode(true);
 		</div>
 
 	</div>
-    <div class="i_vacantion-item second i_detail-modal-item" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
+    <div class="i_vacantion-item second i_detail-modal-item" id="<?=$this->GetEditAreaId($arItem['ID']);?>" data-id="<?=$arItem['ID']?>" data_iblock_id="<?=$arParams['IBLOCK_ID']?>">
         <div class="i_vacation-item-top">
             <div class="i_vacantion-item-left">
                 <div class="i_vacantion-img">

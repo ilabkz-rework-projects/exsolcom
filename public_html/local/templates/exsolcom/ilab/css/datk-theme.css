@@ -29,7 +29,9 @@ html[data-theme=dark] .i_modal-kp .i_modal-content .i_snippet.important-info .i_
   }
 }
 html[data-theme=dark] .i_submit .i_submit-close,
-html[data-theme=dark] .i_form-kp .i_submit-close {
+html[data-theme=dark] .i_submit .i_form-vc-close,
+html[data-theme=dark] .i_form-kp .i_submit-close,
+html[data-theme=dark] .i_form-kp .i_form-vc-close {
   background-image: url("../img/svg/closeModal-white.svg");
 }
 html[data-theme=dark] .i_side-menu .i_side-menu-close {

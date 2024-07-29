@@ -332,6 +332,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	const modalKpCloseBtn = modalKp.querySelector('.i_modal-close')
 	const footerKpBtn = modalKp.querySelector('.i_modal-footer-btn #form-kp-btn')
 	const footerKpBtnSecond = modalKp.querySelector('.i_modal-footer-btn #form-kp-btnSecond')
+	const vacationBtn = modalKp.querySelector('.i_modal-footer-btn #form-reply-btn')
 	const footerProgrammBtn = modalKp.querySelector('.i_modal-footer-btn #form-programm-btn')
 	const modalKpFooter = modalKp.querySelector('.i_modal-footer')
 
@@ -389,6 +390,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			footerKpBtn.classList.remove('idn')
 			footerKpBtnSecond.classList.remove('idn')
 			documentBody.classList.add('lock')
+			vacationBtn.classList.add('idn')
 			modalKpFooter.classList.remove('idn')
 		});
 
@@ -398,6 +400,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	submitCloseBtn.addEventListener('click', (event) => {
 		submitModal.classList.remove('active')
 		overlay.classList.remove('active')
+		vacationBtn.classList.add('idn')
 		documentBody.classList.remove('lock')
 	})
 
@@ -411,6 +414,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			footerKpBtn.classList.remove('idn')
 			footerKpBtnSecond.classList.remove('idn')
 			documentBody.classList.add('lock')
+			vacationBtn.classList.add('idn')
 			modalKpFooter.classList.remove('idn')
 
 			modalKp.querySelector('.i_modal-content').innerHTML = '';
@@ -458,6 +462,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		footerKpBtnSecond.classList.remove('idn')
 		footerProgrammBtn.classList.add('idn')
 		documentBody.classList.remove('lock')
+		vacationBtn.classList.add('idn')
 		modalKpFooter.classList.remove('idn')
 	})
 
@@ -466,6 +471,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	const formKp = document.querySelectorAll('#form-kp-btn')
 	const formKpModal = document.querySelector('.i_form-kp')
 	const formKpCloseBtn = formKpModal.querySelector('.i_submit-close')
+
+	const formVcModal = document.querySelector('.i_form-vc')
+	const formVcCloseBtn = formVcModal.querySelector('.i_form-vc-close')
 
 
 	formKp.forEach(item => {
@@ -483,6 +491,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			footerProgrammBtn.classList.add('idn')
 			footerKpBtn.classList.remove('idn')
 			footerKpBtnSecond.classList.remove('idn')
+			vacationBtn.classList.add('idn')
 			documentBody.classList.add('lock')
 		})
 	})
@@ -492,6 +501,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		overlay.classList.remove('active')
 		formKpModal.classList.remove('active')
 		documentBody.classList.remove('lock')
+		vacationBtn.classList.add('idn')
 		modalKpFooter.classList.remove('idn')
 	})
 
@@ -509,7 +519,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			footerKpBtnSecond.classList.remove('idn')
 			footerProgrammBtn.classList.add('idn')
 			documentBody.classList.remove('lock')
+			vacationBtn.classList.add('idn')
 			modalKpFooter.classList.remove('idn')
+			formVcModal.classList.remove('active')
 		}
 	})
 
@@ -524,7 +536,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			footerKpBtnSecond.classList.remove('idn')
 			footerProgrammBtn.classList.add('idn')
 			documentBody.classList.remove('lock')
+			vacationBtn.classList.add('idn')
 			modalKpFooter.classList.remove('idn')
+			formVcModal.classList.remove('active')
 		}
 	})
 
@@ -592,6 +606,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 					overlay.classList.add('active')
 					modal.classList.add('active')
+					vacationBtn.classList.add('idn')
 					documentBody.classList.add('lock')
 
 					let content = data.CONTENT;
@@ -656,6 +671,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 								circle.classList.remove('wide');
 								circle2.classList.remove('wide');
 								circle3.classList.remove('wide');
+								vacationBtn.classList.add('idn')
 							})
 						})
 
@@ -740,6 +756,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				overlay.classList.add('active')
 				documentBody.classList.add('lock')
 				footerKpBtn.classList.remove('idn')
+				vacationBtn.classList.add('idn')
 
 				modalKp.querySelector('.i_modal-content').innerHTML = '';
 
@@ -790,6 +807,31 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			modalKp.classList.add('pad'); // убираем padding для карточек новости и блога
 		})
 	})
+
+	document.querySelectorAll('.i_vacantion-item').forEach(item => {
+		item.addEventListener('click', () => {
+			footerKpBtn.classList.add('idn')
+			vacationBtn.classList.remove('idn')
+		})
+	})
+
+	vacationBtn.addEventListener('click', () => {
+		modal.classList.remove('active')
+		submitModal.classList.remove('active')
+		formKpModal.classList.remove('active')
+		modalKp.classList.remove('active')
+		overlay.classList.add('active')
+		documentBody.classList.add('lock')
+		footerKpBtn.classList.remove('idn')
+		vacationBtn.classList.add('idn')
+		formVcModal.classList.add('active')
+	})
+
+	formVcCloseBtn.addEventListener('click', () => {
+		formVcModal.classList.remove('active')
+		overlay.classList.remove('active')
+	})
+
 
 	// //Обработка клика на ссылке с якорем
 	// $(document).ready(function() {
