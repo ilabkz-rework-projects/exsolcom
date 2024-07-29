@@ -30,6 +30,13 @@
   font-size: 24px;
   line-height: normal;
 }
+.i_snippet .i_snippet-title h3 span {
+  color: var(--color-textInfoblock);
+  cursor: text !important;
+}
+.i_snippet .i_snippet-title h3 span:hover {
+  color: var(--color-textInfoblock);
+}
 @media screen and (max-width: 1330px) {
   .i_snippet .i_snippet-title h3 {
     font-size: 21px;
@@ -511,15 +518,15 @@
 .i_snippet.desc-link {
   padding: 0 0 30px 0;
 }
+.i_snippet.desc-link .i_snippet-desc-link a {
+  color: var(--color-red) !important;
+}
 .i_snippet.desc-link .i_snippet-desc-link span {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: var(--color-textInfoblock);
   cursor: text;
   line-height: 22px;
-}
-.i_snippet.desc-link .i_snippet-desc-link span a {
-  color: var(--color-red) !important;
 }
 .i_snippet.desc-link .i_snippet-desc-link span .color-red {
   color: var(--color-red);

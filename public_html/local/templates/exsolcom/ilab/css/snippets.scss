@@ -44,6 +44,13 @@
       text-align: center;
       font-size: 24px;
       line-height: normal;
+      span{
+        color: var(--color-textInfoblock);
+        cursor: text !important;
+        &:hover{
+          color: var(--color-textInfoblock);
+        }
+      }
       @media screen and (max-width: 1330px) {
         font-size: 21px;
       }
@@ -633,16 +640,15 @@
   padding: 0 0 30px 0;
   //SNIPPET TITLE_SECOND DESC_LINK
   .i_snippet-desc-link {
+    a {
+      color: var(--color-red)!important;
+    }
     span {
       font-family: "Open Sans", sans-serif;
       font-size: 16px;
       color: var(--color-textInfoblock);
       cursor: text;
       line-height: 22px;
-
-      a {
-        color: var(--color-red)!important;
-      }
 
       .color-red {
         color: var(--color-red);
@@ -1907,6 +1913,7 @@
         text-align: left;
         cursor: text !important;
         h3{
+
           .color-red{
             cursor: text !important;
           }

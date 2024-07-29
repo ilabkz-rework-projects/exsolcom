@@ -692,6 +692,16 @@ a{
           padding: 10px 25px;
         }
       }
+      button:nth-child(4){
+        padding: 18px 44px;
+        @media screen and (max-width: 1330px){
+          padding: 14px 34px;
+        }
+        @media screen and (max-width: 480px){
+          font-size: 12px;
+          padding: 10px 25px;
+        }
+      }
     }
   }
 }

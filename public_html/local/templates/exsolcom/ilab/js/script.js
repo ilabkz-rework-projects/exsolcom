@@ -812,6 +812,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		item.addEventListener('click', () => {
 			footerKpBtn.classList.add('idn')
 			vacationBtn.classList.remove('idn')
+			footerKpBtnSecond.classList.add('idn')
 		})
 	})
 

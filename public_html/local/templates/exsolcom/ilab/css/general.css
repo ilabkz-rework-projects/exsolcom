@@ -737,6 +737,20 @@ a {
     padding: 10px 25px;
   }
 }
+.i_modal-kp .i_modal-footer .i_modal-footer-btn button:nth-child(4) {
+  padding: 18px 44px;
+}
+@media screen and (max-width: 1330px) {
+  .i_modal-kp .i_modal-footer .i_modal-footer-btn button:nth-child(4) {
+    padding: 14px 34px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_modal-kp .i_modal-footer .i_modal-footer-btn button:nth-child(4) {
+    font-size: 12px;
+    padding: 10px 25px;
+  }
+}
 
 .detail-item {
   margin-top: 40px;

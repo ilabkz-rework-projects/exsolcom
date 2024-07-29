@@ -97,6 +97,24 @@
       .b24-form-wrapper{
         border-radius: 100px;
         background-color: var(--bg-third);
+        //FORM HEADER
+        .b24-form-header{
+          display: flex;
+          justify-content: center;
+          padding: 40px 70px 40px 40px;
+          border-bottom: 5px dotted #666666;
+          @media screen and (max-width: 480px){
+            padding: 30px 20px 30px 20px;
+          }
+          @media screen and (max-width: 440px){
+            padding: 20px 85px 10px 85px;
+          }
+          .b24-form-header-title{
+            font-family: "Comfortaa", sans-serif;
+          }
+        }
+        //!FORM HEADER
+
         //SUBMIT CONTENT HEADER PADDING
         .b24-form-header-padding{
           padding: 10px;
@@ -115,6 +133,7 @@
           form{
             //SUBMIT CONTENT FORM FIELD
             .b24-form-field{
+              border-radius: 35px;
               //SUBMIT CONTENT FORM CONTROL CONTAINER BEFORE
               .b24-form-control-container:before{
                 content: "\002A";
