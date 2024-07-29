@@ -844,7 +844,6 @@ p {
   width: 170%;
   height: 50px;
   margin: 20px 20px 0 0;
-  border: 1px solid #ededed;
 }
 .programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles,
 .i_programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles {
@@ -854,13 +853,13 @@ p {
 .i_programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles:before {
   background-image: url("../img/svg/active-checkbox.svg");
   background-size: 14px;
-  background-color: #191A1A;
-  border: 1px solid #3b3b3b;
+  background-color: var(--bg-check-box);
+  border: 1px solid var(--color-circles);
 }
 .programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles .bx_sitemap_li_title a,
 .i_programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles .bx_sitemap_li_title a {
   transition: all 0.4s ease;
-  color: var(--color-WhiteWhite);
+  color: var(--color-White);
 }
 .programm-container .bx_sitemap .bx_sitemap_ul li:hover,
 .i_programm-container .bx_sitemap .bx_sitemap_ul li:hover {

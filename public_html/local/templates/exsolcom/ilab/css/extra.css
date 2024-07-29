@@ -167,16 +167,17 @@
 .i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-header .b24-form-header-title,
 .i_form-vc .i_submit-content .b24-form .b24-form-wrapper .b24-form-header .b24-form-header-title {
   font-family: "Comfortaa", sans-serif;
+  color: var(--color-black);
 }
 .i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-header-padding,
 .i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-header-padding,
 .i_form-vc .i_submit-content .b24-form .b24-form-wrapper .b24-form-header-padding {
-  padding: 10px;
+  padding: 0px;
 }
 .i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content,
 .i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-content,
 .i_form-vc .i_submit-content .b24-form .b24-form-wrapper .b24-form-content {
-  padding: 20px 30px 30px 30px;
+  padding: 30px 30px 30px 30px;
 }
 @media screen and (max-width: 480px) {
   .i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content,
@@ -195,7 +196,8 @@
 .i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field,
 .i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field,
 .i_form-vc .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field {
-  border-radius: 35px;
+  border-radius: 50px;
+  background-color: #f1f1f1;
 }
 .i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container:before,
 .i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container:before,
