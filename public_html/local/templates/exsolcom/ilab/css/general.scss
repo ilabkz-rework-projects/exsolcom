@@ -764,18 +764,28 @@ p{
   display: flex;
   gap: 50px;
   justify-content: space-between;
-
+  @media screen and (max-width: 760px){
+    flex-direction: column;
+  }
   .bx_sitemap {
+    width: 30%;
+    @media screen and (max-width: 760px){
+      width: 100%
+    }
     .bx_sitemap_ul {
+      @media screen and (max-width: 760px){
+        display: flex;
+        flex-wrap: wrap;
+      }
       li{
         line-height: unset;
       }
       li:before {
         content: '';
         top: 50%;
-        left: 60%;
+        left: 0;
         position: absolute;
-        transform: translate(-820%, -50%);
+        transform: translate(70%, -50%);
         display: inline-block;
         width: 1.3em;
         height: 1.3em;
@@ -788,6 +798,11 @@ p{
         background-position: center center;
         background-color: #ffffff;
         background-size: 50% 50%;
+        @media screen and (max-width: 480px){
+          width: 1em;
+          height: 1em;
+          transform: translate(70%, -50%);
+        }
       }
 
       /* стили для активного состояния чекбокса (при нажатии на него) */
@@ -813,6 +828,23 @@ p{
         height: 50px;
         margin: 20px 20px 0 0;
         //border: 1px solid #ededed;
+        @media screen and (max-width: 1330px){
+          max-width: 295px;
+        }
+        @media screen and (max-width: 760px){
+          max-width: 225px;
+          margin: 20px 10px 0 0;
+          flex-basis: 31%;
+        }
+        @media screen and (max-width: 480px){
+          max-width: 205px;
+          margin: 20px 10px 0 0;
+          flex-basis: 45%;
+        }
+        @media screen and (max-width: 360px){
+          max-width: 154px;
+          margin: 10px 5px 0 0;
+        }
         &.menu-all-articles{
           &:before {
             background-image: url("../img/svg/active-checkbox.svg");
@@ -862,10 +894,22 @@ p{
           line-height: unset;
           margin: 0;
           padding: 0px 0px 0px 60px;
-
+          @media screen and (max-width: 760px){
+            padding: 0px 0px 0px 50px;
+          }
+          @media screen and (max-width: 480px){
+            padding: 0px 0px 0px 35px;
+          }
           a {
-            font-size: 17px;
+            text-wrap: wrap;
+            font-size: 1.063rem;
             color: var(--color-black);
+            @media screen and (max-width: 760px){
+              font-size: 0.875rem;
+            }
+            @media screen and (max-width: 380px){
+              font-size: 0.75rem;
+            }
           }
         }
 
@@ -1301,6 +1345,9 @@ p{
               }
             }
           }
+        }
+        @media screen and (max-width: 480px){
+          flex-direction: row;
         }
         // PRODUCT ITEM CONTAINER
         .product-item-container{
