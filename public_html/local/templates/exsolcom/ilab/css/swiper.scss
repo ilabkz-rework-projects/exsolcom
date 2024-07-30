@@ -457,6 +457,17 @@
           height: 100%;
         }
       }
+      //link area before
+      .swiper-title:before{
+        content: " ";
+        position: absolute;
+        top: -135px;
+        bottom: -115px;
+        right: -95px;
+        left: -95px;
+        background-color: transparent;
+      }
+      //!link area before
       .swiper-title{
         font-size: 22px;
         position: relative;

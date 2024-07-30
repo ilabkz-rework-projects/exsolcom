@@ -482,6 +482,15 @@
   width: 100%;
   height: 100%;
 }
+.i_products .i_container .swiper-slide .swiper-title:before {
+  content: " ";
+  position: absolute;
+  top: -135px;
+  bottom: -115px;
+  right: -95px;
+  left: -95px;
+  background-color: transparent;
+}
 .i_products .i_container .swiper-slide .swiper-title {
   font-size: 22px;
   position: relative;

@@ -40,11 +40,11 @@ while($ob = $res->Fetch())
 
 
 ?>
-	<div class="product-item" id="modal-kp" data-id="<?= $item['ID'] ?>">
+	<div class="product-item"  data-id="<?= $item['ID'] ?>">
 		<div class="product-item-img">
 			<img src="<?= $item['PREVIEW_PICTURE']['SRC'] ?>" alt="img">
 		</div>
-		<div class="product-item-title" data-id="<?= $item['ID'] ?>">
+		<div class="product-item-title" id="modal-kp" data-id="<?= $item['ID'] ?>">
 			<span><?= $item['NAME'] ?></span>
 		</div>
 		<div class="product-item-detail">
@@ -52,7 +52,10 @@ while($ob = $res->Fetch())
 				<span><?= $item['PREVIEW_TEXT'] ?></span>
 			</div>
 			<div class="product-item-detail-price">
-				<span><span class="color-red"><?= $price ?></span> ₸<span class="text"> (электронная версия)</span></span>
+				<span><span class="color-red"><?= $price ?></span> ₸
+                    <span class="text"> (электронная версия)</span>
+                    <span class="text2"> (эл. версия)</span>
+                </span>
 			</div>
 			<div class="product-item-btn">
 				<button id="form-kp-btn">Запросить КП</button>

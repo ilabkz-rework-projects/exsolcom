@@ -834,28 +834,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	})
 
 
-	// //Обработка клика на ссылке с якорем
-	// $(document).ready(function() {
-	// 	$('a[href^="/about-us/#our-team"]').on('click', function(e) {
-	// 		// Стандартное действие ссылки нужно оставить, чтобы браузер перешел на другую страницу
-	// 	});
-	// });
-	//
-	// //Плавная прокрутка при загрузке страницы
-	// $(document).ready(function() {
-	// 	// Проверяем, есть ли якорь в URL
-	// 	if (window.location.hash) {
-	// 		var target = window.location.hash;
-	// 		var $target = $(target);
-	//
-	// 		if ($target.length) {
-	// 			// Определяем положение блока на странице
-	// 			var offsetTop = $target.offset().top;
-	//
-	// 			// Выполняем плавную прокрутку
-	// 			$('html, body').animate({scrollTop: offsetTop}, 1000);
-	// 		}
-	// 	}
-	// });
+
+
 
 });

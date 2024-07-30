@@ -301,19 +301,47 @@
           .product-item-detail{
             opacity: 1;
             visibility: visible;
-            transform: translateY(-15%);
+            transform: translateY(-30%);
+            @media screen and (max-width: 1330px){
+              transform: translateY(-28%);
+            }
+            @media screen and (max-width: 1000px){
+              transform: translateY(-30%);
+            }
           }
           .product-item-title{
-            transform: translateY(-190%);
+            transform: translateY(-100%);
+            @media screen and (max-width: 1330px){
+              transform: translateY(-75%);
+            }
+            @media screen and (max-width: 1000px){
+              transform: translateY(-160%);
+            }
+            @media screen and (max-width: 360px){
+              transform: translateY(-95%);
+            }
             span{
               transition: all .4s ease;
               color: var(--color-red);
+              height: 45px;
+              @media screen and (max-width: 1000px){
+                height: 30px;
+              }
             }
           }
           .product-item-img{
             width: 50%;
             height: 50%;
-            transform: translateY(-20%);
+            transform: translateY(-15%);
+            @media screen and (max-width: 1330px){
+              width: 45%;
+              height: 48%;
+              transform: translateY(-10%);
+            }
+            @media screen and (max-width: 1000px){
+              opacity: 0;
+
+            }
           }
         }
         .product-item-img{
@@ -322,11 +350,29 @@
           transition: all 0.4s ease;
           position: relative;
           transform: translateY(10%);
+          @media screen and (max-width: 1330px){
+            transform: translateY(20%);
+          }
+          @media screen and (max-width: 1000px){
+            transform: translateY(35%);
+          }
           img{
             width: 100%;
             height: 100%;
           }
         }
+
+        // link area
+        .product-item-title:before{
+          content: " ";
+          position: absolute;
+          top: -135px;
+          bottom: -115px;
+          right: -95px;
+          left: -95px;
+          background-color: transparent;
+        }
+        //! link area
         .product-item-title{
           font-size: 22px;
           position: relative;
@@ -335,15 +381,29 @@
           margin-bottom: 0;
           text-overflow: unset;
           white-space: nowrap;
+          @media screen and (max-width: 1330px){
+            font-size: 19px;
+            transform: translateY(20px);
+          }
           @media screen and (max-width: 1250px){
             font-size: 18px;
           }
+          @media screen and (max-width: 1000px){
+            font-size: 1rem;
+            transform: translateY(45px);
+          }
           @media screen and (max-width: 479px){
-            font-size: 22px;
-            top: -5%;
+            font-size: 0.875rem;
+          }
+          @media screen and  (max-width: 360px){
+            font-size: 0.75rem;
           }
           span{
+            height: 45px;
             color: var(--color-textInfoblock);
+            text-wrap: wrap;
+            display: inline-block;
+            width: 99%;
           }
         }
         .product-item-detail{
@@ -352,10 +412,24 @@
           transition: all .4s ease;
           display: flex;
           flex-direction: column;
-          gap: 30px;
+          gap: 25px;
           margin: 0 20px;
           position: relative;
+          @media screen and (max-width: 360px){
+            gap: 15px;
+          }
           .product-item-detail-title{
+            line-height: normal;
+            @media screen and (max-width: 1330px){
+              font-size: 0.813rem;
+              transform: translateY(-5px);
+            }
+            @media screen and (max-width: 1000px){
+              font-size: 0.688rem;
+            }
+            @media screen and (max-width: 360px){
+              width: 140px;
+            }
             span{
               color: var(--color-textInfoblock);
             }
@@ -371,25 +445,62 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: -1;
+            @media screen and (max-width: 360px){
+              height: 25px;
+            }
           }
           .product-item-detail-price{
             position: relative;
             z-index: 1;
+            @media screen and (max-width: 1330px){
+              transform: translateY(-10px);
+            }
             span{
               color: var(--color-textInfoblock);
               font-size: 1.125rem;
+              @media screen and (max-width: 1000px){
+                font-size: 0.875rem;
+                .text{
+                  display: none;
+                  font-size: 0.75rem;
+                  font-family: "Open Sans", sans-serif;
+                }
+                .text2{
+                  display: inline-block !important;
+                  font-size: 0.75rem;
+                  font-family: "Open Sans", sans-serif;
+                }
+              }
+              @media screen and (max-width: 360px){
+                text-wrap: nowrap;
+                .text2{
+                  font-size: 0.625rem;
+                }
+              }
               .text{
                 font-size: 0.75rem;
                 font-family: "Open Sans", sans-serif;
               }
+              .text2{
+                display: none;
+              }
+
             }
           }
           .product-item-btn{
+            @media screen and (max-width: 1330px){
+              transform: translateY(-15px);
+            }
             button{
-              padding: 10px 25px;
-              @media screen and (max-width: 1250px){
-                padding: 10px 20px;
-                font-size: 14px;
+              font-size: 15px;
+              padding: 10px 17px;
+              @media screen and (max-width: 1000px){
+                padding: 6px 5px;
+                font-size: 12px;
+              }
+              @media screen and (max-width: 360px){
+                padding: 5px 7px;
+                font-size: 10px;
               }
               &:hover{
                 background-color: var(--bg-buttonHoverFirst);
