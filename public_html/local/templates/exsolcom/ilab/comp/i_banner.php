@@ -42,7 +42,7 @@
 		</div>
 		 <!--!Левая часть баннера--> <!--Фоновая картинка-->
 		<div class="i_banner-bg">
- <img alt="Notice-our-services" src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/main-1.png'?>">
+ <img alt="Notice-our-services" src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/banner_main_page_600px.png'?>">
 		</div>
 		 <!--Фоновая картинка--> <!--Правая часть баннера-->
 		<div class="i_banner-right">
