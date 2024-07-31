@@ -86,26 +86,39 @@
 .i_form-vc .i_form-vc-close:hover {
   color: var(--color-red);
 }
+.i_submit .i_submit-header:before,
+.i_form-kp .i_submit-header:before,
+.i_form-vc .i_submit-header:before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 0px);
+  background-image: url("/local/templates/exsolcom/ilab/css/../img/svg/doth-vertical_downGrey.svg");
+  height: 12px;
+  right: 50%;
+  transform: translateX(50%);
+  background-size: 10px;
+}
 .i_submit .i_submit-header,
 .i_form-kp .i_submit-header,
 .i_form-vc .i_submit-header {
   display: flex;
   justify-content: center;
   padding: 40px 70px 40px 40px;
-  border-bottom: 5px dotted #666666;
+  position: relative;
 }
 @media screen and (max-width: 480px) {
   .i_submit .i_submit-header,
   .i_form-kp .i_submit-header,
   .i_form-vc .i_submit-header {
-    padding: 30px 20px 30px 20px;
+    padding: 30px 35px 30px 20px;
   }
 }
 @media screen and (max-width: 400px) {
   .i_submit .i_submit-header,
   .i_form-kp .i_submit-header,
   .i_form-vc .i_submit-header {
-    padding: 30px 15px 25px 15px;
+    padding: 30px 50px 25px 15px;
   }
 }
 .i_submit .i_submit-header span,
@@ -142,13 +155,26 @@
   border-radius: 100px;
   background-color: var(--bg-third);
 }
+.i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-header:before,
+.i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-header:before,
+.i_form-vc .i_submit-content .b24-form .b24-form-wrapper .b24-form-header:before {
+  content: " ";
+  background-image: url("../img/svg/doth-vertical_downGrey.svg");
+  width: calc(100% - 1px);
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  height: 12px;
+  background-size: 12px;
+  position: absolute;
+}
 .i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-header,
 .i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-header,
 .i_form-vc .i_submit-content .b24-form .b24-form-wrapper .b24-form-header {
   display: flex;
   justify-content: center;
   padding: 40px 70px 40px 40px;
-  border-bottom: 5px dotted #666666;
+  position: relative;
 }
 @media screen and (max-width: 480px) {
   .i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-header,

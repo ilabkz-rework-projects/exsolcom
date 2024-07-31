@@ -63,18 +63,32 @@
     }
   }
 
+  //SUBMIT HEADER BEFORE
+  .i_submit-header:before{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 0px);
+    background-image: url("/local/templates/exsolcom/ilab/css/../img/svg/doth-vertical_downGrey.svg");
+    height: 12px;
+    right: 50%;
+    transform: translateX(50%);
+    background-size: 10px;
+  }
+  //!SUBMIT HEADER BEFORE
   //SUBMIT HEADER
   .i_submit-header{
     display: flex;
     justify-content: center;
     padding: 40px 70px 40px 40px;
+    position: relative;
     @media screen and (max-width: 480px){
-      padding: 30px 20px 30px 20px;
+      padding: 30px 35px 30px 20px;
     }
     @media screen and (max-width: 400px){
-      padding: 30px 15px 25px 15px;
+      padding: 30px 50px 25px 15px;
     }
-    border-bottom: 5px dotted #666666;
+    //border-bottom: 5px dotted #666666;
     span{
       color: var(--color-black);
       font-size: 1.5em;
@@ -98,12 +112,26 @@
       .b24-form-wrapper{
         border-radius: 100px;
         background-color: var(--bg-third);
+        //FORM HEADER BEFORE
+        .b24-form-header:before{
+          content: " ";
+          background-image: url("../img/svg/doth-vertical_downGrey.svg");
+          width: calc(100% - 1px);
+          bottom: 0;
+          right: 50%;
+          transform: translateX(50%);
+          height: 12px;
+          background-size: 12px;
+          position: absolute;
+        }
+        //!FORM HEADER BEFORE
         //FORM HEADER
         .b24-form-header{
           display: flex;
           justify-content: center;
           padding: 40px 70px 40px 40px;
-          border-bottom: 5px dotted #666666;
+          //border-bottom: 5px dotted #666666;
+          position: relative;
           @media screen and (max-width: 480px){
             padding: 30px 20px 30px 20px;
           }
