@@ -307,6 +307,24 @@ if (isset($arResult['ITEM']))
 			var <?=$obName?> = new JCCatalogItem(<?=CUtil::PhpToJSObject($jsParams, false, true)?>);
 		</script>
 	</div>
+
+<!--    <script>-->
+<!--        document.addEventListener('DOMContentLoaded', function() {-->
+<!--            const programm = {-->
+<!--                programmItems: document.querySelectorAll('.product-item'),-->
+<!--                resize: function() {-->
+<!--                    this.programmItems.forEach((product) => {-->
+<!--                        const width = product.getBoundingClientRect().width;-->
+<!--                        product.style.height = `${width}px`;-->
+<!--                    });-->
+<!--                }-->
+<!--            };-->
+<!---->
+<!--            window.addEventListener('resize', () => programm.resize());-->
+<!--            programm.resize();-->
+<!--        });-->
+<!--    </script>-->
+
 	<?
 	unset($item, $actualItem, $minOffer, $itemIds, $jsParams);
 }

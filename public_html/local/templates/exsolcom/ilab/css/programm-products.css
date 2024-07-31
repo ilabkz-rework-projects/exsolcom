@@ -107,17 +107,23 @@
   }
 }
 .programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles {
-  background-color: var(--bg-check-box);
+  background-color: var(--color-circlesSecond);
 }
 .programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles:before {
   background-image: url("../img/svg/ellipse-icon.svg");
   background-size: 12px;
   background-position: center;
-  background-color: var(--bg-check-box);
+  background-color: var(--bg-block);
+  border: 1px solid #d9d9d9;
+}
+@media screen and (max-width: 480px) {
+  .programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles:before {
+    background-size: 10px;
+  }
 }
 .programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles .bx_sitemap_li_title a {
   transition: all 0.4s ease;
-  color: var(--color-White);
+  color: var(--color-black);
 }
 .programm-container .bx_sitemap .bx_sitemap_ul li:hover {
   cursor: pointer;
@@ -194,6 +200,11 @@
     padding: 0 0 30px 0;
   }
 }
+@media screen and (max-width: 1270px) and (max-width: 950px) {
+  .programm-container .i_programm-catalog .catalog-section .product-item-small-card .product-item-big-card .row {
+    padding: 0 0 15px 0;
+  }
+}
 @media screen and (max-width: 1270px) and (max-width: 480px) {
   .programm-container .i_programm-catalog .catalog-section .product-item-small-card .product-item-big-card .row {
     padding: 0;
@@ -202,11 +213,12 @@
 @media screen and (max-width: 480px) {
   .programm-container .i_programm-catalog .catalog-section {
     flex-direction: row;
+    gap: 15px !important;
   }
 }
 @media screen and (max-width: 360px) {
   .programm-container .i_programm-catalog .catalog-section {
-    gap: 10px;
+    gap: 15px !important;
   }
 }
 .programm-container .i_programm-catalog .catalog-section .row {
@@ -216,7 +228,7 @@
 }
 @media screen and (max-width: 480px) {
   .programm-container .i_programm-catalog .catalog-section .row {
-    gap: 10px;
+    gap: 15px;
     flex-wrap: wrap;
   }
 }
@@ -235,6 +247,11 @@
 .programm-container .i_programm-catalog .catalog-section .row .product-item-small-card .product-item-big-card {
   width: unset;
   padding: 0 30px 0 0;
+}
+@media screen and (max-width: 950px) {
+  .programm-container .i_programm-catalog .catalog-section .row .product-item-small-card .product-item-big-card {
+    padding: 0 15px 0 0;
+  }
 }
 @media screen and (max-width: 760px) {
   .programm-container .i_programm-catalog .catalog-section .row .product-item-small-card .product-item-big-card {
@@ -323,12 +340,11 @@
 .programm-container .i_programm-catalog .product-item-container .product-item {
   display: flex;
   flex-direction: column;
-  height: 350px;
+  max-height: 350px;
   justify-content: center;
   align-items: center;
   border-radius: 100%;
   max-width: 350px;
-  width: calc(33.3333333333% + 265px);
   background-color: var(--bg-block);
   text-align: center;
   overflow: hidden;
@@ -337,31 +353,31 @@
 }
 @media screen and (max-width: 1330px) {
   .programm-container .i_programm-catalog .product-item-container .product-item {
-    height: 295px;
+    max-height: 295px;
     max-width: 295px;
   }
 }
 @media screen and (max-width: 1000px) {
   .programm-container .i_programm-catalog .product-item-container .product-item {
-    height: 215px;
+    max-height: 215px;
     max-width: 215px;
   }
 }
 @media screen and (max-width: 760px) {
   .programm-container .i_programm-catalog .product-item-container .product-item {
-    height: 230px;
+    max-height: 230px;
     max-width: 230px;
   }
 }
 @media screen and (max-width: 480px) {
   .programm-container .i_programm-catalog .product-item-container .product-item {
-    height: 205px;
+    max-height: 205px;
     max-width: 205px;
   }
 }
 @media screen and (max-width: 360px) {
   .programm-container .i_programm-catalog .product-item-container .product-item {
-    height: 155px;
+    max-height: 155px;
     max-width: 155px;
   }
 }
@@ -588,8 +604,9 @@
 .programm-container .i_programm-catalog .product-item-container .product-item .product-item-detail .product-item-detail-price span {
   color: var(--color-textInfoblock);
   font-size: 1.125rem;
+  text-wrap: nowrap;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1250px) {
   .programm-container .i_programm-catalog .product-item-container .product-item .product-item-detail .product-item-detail-price span {
     font-size: 0.875rem;
   }

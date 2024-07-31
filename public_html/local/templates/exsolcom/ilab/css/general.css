@@ -911,10 +911,10 @@ p {
 }
 .programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles:before,
 .i_programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles:before {
-  background-image: url("../img/svg/active-checkbox.svg");
-  background-size: 14px;
-  background-color: var(--bg-check-box);
-  border: 1px solid var(--color-circles);
+  background-image: url("../img/svg/ellipse-icon.svg");
+  background-size: 12px;
+  background-color: #d9d9d9;
+  border: 1px solid var(--color-red);
 }
 .programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles .bx_sitemap_li_title a,
 .i_programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles .bx_sitemap_li_title a {
