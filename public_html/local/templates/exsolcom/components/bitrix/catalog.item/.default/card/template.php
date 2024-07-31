@@ -92,7 +92,7 @@ while ($arRes = $dbRes->GetNext()) {
 		</div>
 	</div>
 
-	<div class="i_vacantion-item second i_detail-modal-item" data-id="<?=$item['ID']?>" data_iblock_id="2">
+	<div class="i_vacantion-item second i_detail-modal-item i_modal-footer-hd" data-id="<?=$item['ID']?>" data_iblock_id="2">
 		<div class="i_vacation-item-top">
 			<div class="i_vacantion-item-left">
 				<div class="i_vacantion-img">
