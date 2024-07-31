@@ -40,7 +40,7 @@ while($ob = $res->Fetch())
 
 
 ?>
-	<div class="product-item"  data-id="<?= $item['ID'] ?>">
+	<div class="programm-item"  data-id="<?= $item['ID'] ?>">
 		<div class="product-item-img">
 			<img src="<?= $item['PREVIEW_PICTURE']['SRC'] ?>" alt="img">
 		</div>

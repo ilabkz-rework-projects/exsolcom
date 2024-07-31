@@ -845,7 +845,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 	//при изменении размера окна высота элементов .product-item будет автоматически подстраиваться под их ширину.
     const programm = {
-        programmItems: document.querySelectorAll('.product-item'),
+        programmItems: document.querySelectorAll('.programm-item'),
         resize: function (){
             this.programmItems.forEach((product) => {
                 const width = product.getBoundingClientRect().width;

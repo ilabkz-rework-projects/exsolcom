@@ -819,18 +819,24 @@ p {
 }
 .programm-container .bx_sitemap .bx_sitemap_ul,
 .i_programm-container .bx_sitemap .bx_sitemap_ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   /* стили для активного состояния чекбокса (при нажатии на него) */
 }
 @media screen and (max-width: 760px) {
   .programm-container .bx_sitemap .bx_sitemap_ul,
   .i_programm-container .bx_sitemap .bx_sitemap_ul {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    gap: 10px;
   }
 }
-.programm-container .bx_sitemap .bx_sitemap_ul li,
-.i_programm-container .bx_sitemap .bx_sitemap_ul li {
-  line-height: unset;
+@media screen and (max-width: 480px) {
+  .programm-container .bx_sitemap .bx_sitemap_ul,
+  .i_programm-container .bx_sitemap .bx_sitemap_ul {
+    justify-content: space-between;
+  }
 }
 .programm-container .bx_sitemap .bx_sitemap_ul li:before,
 .i_programm-container .bx_sitemap .bx_sitemap_ul li:before {
@@ -840,12 +846,12 @@ p {
   position: absolute;
   transform: translate(70%, -50%);
   display: inline-block;
-  width: 1.3em;
-  height: 1.3em;
+  width: 20px;
+  height: 20px;
   flex-shrink: 0;
   flex-grow: 0;
   border: 1px solid #d9d9d9;
-  border-radius: 0.25em;
+  border-radius: 1.25em;
   margin-right: 0.5em;
   background-repeat: no-repeat;
   background-position: center center;
@@ -855,9 +861,9 @@ p {
 @media screen and (max-width: 480px) {
   .programm-container .bx_sitemap .bx_sitemap_ul li:before,
   .i_programm-container .bx_sitemap .bx_sitemap_ul li:before {
-    width: 1em;
-    height: 1em;
-    transform: translate(70%, -50%);
+    width: 18px;
+    height: 18px;
+    transform: translate(50%, -50%);
   }
 }
 .programm-container .bx_sitemap .bx_sitemap_ul li,
@@ -872,9 +878,8 @@ p {
   position: relative;
   border-radius: 30px;
   max-width: 340px;
-  width: 170%;
+  width: 100%;
   height: 50px;
-  margin: 20px 20px 0 0;
 }
 @media screen and (max-width: 1330px) {
   .programm-container .bx_sitemap .bx_sitemap_ul li,
@@ -886,40 +891,48 @@ p {
   .programm-container .bx_sitemap .bx_sitemap_ul li,
   .i_programm-container .bx_sitemap .bx_sitemap_ul li {
     max-width: 225px;
-    margin: 20px 10px 0 0;
     flex-basis: 31%;
   }
 }
 @media screen and (max-width: 480px) {
   .programm-container .bx_sitemap .bx_sitemap_ul li,
   .i_programm-container .bx_sitemap .bx_sitemap_ul li {
-    max-width: 205px;
-    margin: 20px 10px 0 0;
-    flex-basis: 45%;
+    max-width: 210px;
+    flex-basis: 48%;
   }
 }
 @media screen and (max-width: 360px) {
   .programm-container .bx_sitemap .bx_sitemap_ul li,
   .i_programm-container .bx_sitemap .bx_sitemap_ul li {
     max-width: 154px;
-    margin: 10px 5px 0 0;
   }
 }
 .programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles,
 .i_programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles {
-  background-color: var(--color-circles);
+  background-color: var(--color-circlesSecond);
 }
 .programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles:before,
 .i_programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles:before {
   background-image: url("../img/svg/ellipse-icon.svg");
   background-size: 12px;
-  background-color: #d9d9d9;
-  border: 1px solid var(--color-red);
+  background-position: center;
+  background-color: var(--bg-block);
+  border: 1px solid #d9d9d9;
+  width: 20px;
+  height: 20px;
+}
+@media screen and (max-width: 480px) {
+  .programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles:before,
+  .i_programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles:before {
+    background-size: 10px;
+    width: 18px;
+    height: 18px;
+  }
 }
 .programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles .bx_sitemap_li_title a,
 .i_programm-container .bx_sitemap .bx_sitemap_ul li.menu-all-articles .bx_sitemap_li_title a {
   transition: all 0.4s ease;
-  color: var(--color-White);
+  color: var(--color-black);
 }
 .programm-container .bx_sitemap .bx_sitemap_ul li:hover,
 .i_programm-container .bx_sitemap .bx_sitemap_ul li:hover {
@@ -934,23 +947,33 @@ p {
 .i_programm-container .bx_sitemap .bx_sitemap_ul li .bx_sitemap_li_title a {
   text-decoration: none;
 }
+.programm-container .bx_sitemap .bx_sitemap_ul li a:before,
+.i_programm-container .bx_sitemap .bx_sitemap_ul li a:before {
+  content: " ";
+  position: absolute;
+  top: -15px;
+  bottom: -15px;
+  right: -15px;
+  left: -65px;
+  background-color: transparent;
+}
 .programm-container .bx_sitemap .bx_sitemap_ul li .bx_sitemap_li_title,
 .i_programm-container .bx_sitemap .bx_sitemap_ul li .bx_sitemap_li_title {
   font-size: 20px;
   line-height: unset;
   margin: 0;
-  padding: 0px 0px 0px 60px;
+  padding: 0px 15px 0px 60px;
 }
 @media screen and (max-width: 760px) {
   .programm-container .bx_sitemap .bx_sitemap_ul li .bx_sitemap_li_title,
   .i_programm-container .bx_sitemap .bx_sitemap_ul li .bx_sitemap_li_title {
-    padding: 0px 0px 0px 50px;
+    padding: 0px 10px 0px 50px;
   }
 }
 @media screen and (max-width: 480px) {
   .programm-container .bx_sitemap .bx_sitemap_ul li .bx_sitemap_li_title,
   .i_programm-container .bx_sitemap .bx_sitemap_ul li .bx_sitemap_li_title {
-    padding: 0px 0px 0px 35px;
+    padding: 0px 10px 0px 35px;
   }
 }
 .programm-container .bx_sitemap .bx_sitemap_ul li .bx_sitemap_li_title a,
@@ -958,6 +981,7 @@ p {
   text-wrap: wrap;
   font-size: 1.063rem;
   color: var(--color-black);
+  position: relative;
 }
 @media screen and (max-width: 760px) {
   .programm-container .bx_sitemap .bx_sitemap_ul li .bx_sitemap_li_title a,
