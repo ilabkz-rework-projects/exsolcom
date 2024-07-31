@@ -5,7 +5,7 @@ use \Bitrix\Main\Localization\Loc;
 /**
  * @global CMain $APPLICATION
  * @var array $arParams
- * @var array
+ * @var array $arResult
  * @var array $actualItem
  * @var array $minOffer
  * @var array Ids

@@ -664,6 +664,7 @@ a {
   flex-direction: column;
   text-align: right;
   font-size: 2.25rem;
+  cursor: text;
 }
 @media screen and (max-width: 1330px) {
   .i_modal-kp .i_modal-footer .i_modal-footer-price span {

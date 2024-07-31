@@ -177,7 +177,8 @@ html[data-theme=dark] .i_main .i_programms .i_programms-title .i_programms-title
     background-size: 40px;
   }
 }
-html[data-theme=dark] .i_main .i_programms .product-item-container .product-item:hover:before {
+html[data-theme=dark] .i_main .i_programms .product-item-container .product-item:hover:before,
+html[data-theme=dark] .i_main .i_programms .product-item-container .programm-item:hover:before {
   transition: all 0.4s ease;
   content: "";
   position: absolute;
