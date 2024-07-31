@@ -55,7 +55,7 @@ html[data-theme='dark']{
   --bg-fifth: #EFEFEF;
   --bg-sixth: #EFEFEF;
   --bg-seventh: #EFEFEF;
-  --bg-check-box: #E4E4E4;
+  --bg-check-box: #f9f9f9;
   --color-black: #ffffff;
   --color-circles: #E1E1E1;
   --color-circlesHover: #1E1E1E;
@@ -522,7 +522,7 @@ body{
           display: flex;
           justify-content: center;
           align-items: center;
-          background-image: url(../img/svg/lupa-icon_w.svg);
+          background-image: url("../img/svg/lupa-icon_w.svg");
           background-repeat: no-repeat;
           background-position: center;
           background-size: 55px;

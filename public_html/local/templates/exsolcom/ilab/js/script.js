@@ -469,6 +469,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	// FORM KP
 
 	const formKp = document.querySelectorAll('#form-kp-btn')
+	const formKpSecond = document.querySelectorAll('#form-kp-btnSecond')
 	const formKpModal = document.querySelector('.i_form-kp')
 	const formKpCloseBtn = formKpModal.querySelector('.i_submit-close')
 
@@ -493,6 +494,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			footerKpBtnSecond.classList.remove('idn')
 			vacationBtn.classList.add('idn')
 			documentBody.classList.add('lock')
+		})
+	})
+
+	// BTN abridged version
+	formKpSecond.forEach(item => {
+		item.addEventListener('click', () => {
+			formKpModal.classList.add('active')
+			modalKp.classList.remove('active')
 		})
 	})
 	
