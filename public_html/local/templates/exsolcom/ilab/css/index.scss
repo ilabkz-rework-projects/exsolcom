@@ -1,3 +1,6 @@
+@import './mixins';
+
+
 @font-face {
   font-family: 'Comfortaa'; /* Имя шрифта, которое вы будете использовать в CSS */
   src: url('../fonts/Comfortaa-VariableFont_wght.ttf') format('truetype'); /* Путь к шрифту и формат */
@@ -1255,6 +1258,8 @@ body{
 
 //MAIN
 .i_main {
+
+  overflow: hidden;
 
   //MAIN BANNER
   .i_banner  {
@@ -2625,11 +2630,12 @@ body{
             text-overflow: ellipsis;
             margin-bottom: 10px;
             span{
+              @include title_limit(3);
               font-family: "Open Sans", sans-serif;
               font-size: 14px;
               font-weight: 400;
               color: var(--color-textInfoblock);
-              text-align: center;
+              text-align: start;
               @media screen and (max-width: 480px){
                 font-size: 13px;
               }
