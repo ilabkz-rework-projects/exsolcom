@@ -281,6 +281,14 @@
   }
 
   //!SNIPPET MULTI_TABLE TITLE
+  .i_snippet-multi-table-item:nth-child(n + 2){
+    @media screen and (max-width: 760px){
+      display: none;
+    }
+    &.is-visible{
+      display: block;
+    }
+  }
   //SNIPPET MULTI_TABLE ITEMS
   .i_snippet-multi-table-items {
     display: flex;

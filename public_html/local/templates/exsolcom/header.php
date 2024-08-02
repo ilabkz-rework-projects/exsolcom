@@ -310,7 +310,7 @@ $main = CSite::InDir(SITE_DIR.'index.php');
 	<!--!HEADER BOTTOM-->
 <?}?>
 
-<main class="i_main">
+<main class="i_main about-us">
 
 
 

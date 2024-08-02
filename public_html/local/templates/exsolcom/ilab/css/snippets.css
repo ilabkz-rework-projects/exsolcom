@@ -225,6 +225,14 @@
   position: relative;
   border-bottom: 5px dotted #666666;
 }
+@media screen and (max-width: 760px) {
+  .i_snippet.multi-table .i_snippet-multi-table-item:nth-child(n+2) {
+    display: none;
+  }
+}
+.i_snippet.multi-table .i_snippet-multi-table-item:nth-child(n+2).is-visible {
+  display: block;
+}
 .i_snippet.multi-table .i_snippet-multi-table-items {
   display: flex;
   flex-wrap: wrap;

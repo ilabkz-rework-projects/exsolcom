@@ -789,6 +789,9 @@ body.lock {
 .i_header-bottom .i_container .i_breadcrumbs .bx-breadcrumb .bx-breadcrumb-item span {
   color: var(--color-red);
 }
+.i_header-bottom .i_container .i_breadcrumbs .bx-breadcrumb .bx-breadcrumb-item a {
+  text-decoration: none;
+}
 .i_header-bottom .i_container .i_banner-group_social {
   gap: 30px;
 }
@@ -1119,6 +1122,9 @@ body.lock {
   color: var(--color-black);
 }
 
+.i_main {
+  overflow: hidden;
+}
 .i_main .i_banner {
   display: flex;
   justify-content: space-between;
@@ -1202,12 +1208,12 @@ body.lock {
   display: flex;
   align-items: center;
   gap: 20px;
-  transition: all 0.4s ease;
 }
 .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item:hover {
   background-color: var(--color-circlesSecond);
   border-radius: 50px;
   cursor: pointer;
+  transition: all 0.8s ease;
 }
 .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_1 {
   background-image: url("../img/svg/group-banner-icons/banner-icon_1_b.svg");
@@ -2514,11 +2520,18 @@ body.lock {
   margin-bottom: 10px;
 }
 .i_infoblock .i_blog .blog-list .blog-item .i_blog-preview span {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: var(--color-textInfoblock);
-  text-align: center;
+  text-align: start;
 }
 @media screen and (max-width: 480px) {
   .i_infoblock .i_blog .blog-list .blog-item .i_blog-preview span {

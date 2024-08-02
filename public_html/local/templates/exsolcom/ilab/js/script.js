@@ -861,4 +861,24 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 
+
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+	const showMore = document.querySelector('.show-more');
+	if (!showMore) {
+		console.error('Элемент .show-more не найден');
+		return;
+	}
+
+	const productsLength = document.querySelectorAll('.i_snippet-multi-table-item').length;
+	let items = 4;
+
+	showMore.addEventListener('click', () => {
+		items = Math.min(items + 2, productsLength); // Гарантируем, что items не превысит productsLength
+		const array = Array.from(document.querySelector('.i_snippet-multi-table-items').children);
+		const visItems = array.slice(0, items);
+
+		visItems.forEach(el => el.classList.add('is-visible')); // Исправлена эта строка
+	});
 });

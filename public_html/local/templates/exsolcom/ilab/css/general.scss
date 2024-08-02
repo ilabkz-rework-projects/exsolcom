@@ -843,6 +843,7 @@ p{
           max-width: 210px;
           //margin: 20px 10px 0 0;
           flex-basis: 48%;
+          height: 42px;
         }
         @media screen and (max-width: 360px){
           max-width: 154px;
@@ -918,6 +919,7 @@ p{
             padding: 0px 10px 0px 35px;
           }
           a{
+            line-height: normal;
             text-wrap: wrap;
             font-size: 1.063rem;
             color: var(--color-black);

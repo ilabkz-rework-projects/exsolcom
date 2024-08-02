@@ -900,6 +900,7 @@ p {
   .i_programm-container .bx_sitemap .bx_sitemap_ul li {
     max-width: 210px;
     flex-basis: 48%;
+    height: 42px;
   }
 }
 @media screen and (max-width: 360px) {
@@ -979,6 +980,7 @@ p {
 }
 .programm-container .bx_sitemap .bx_sitemap_ul li .bx_sitemap_li_title a,
 .i_programm-container .bx_sitemap .bx_sitemap_ul li .bx_sitemap_li_title a {
+  line-height: normal;
   text-wrap: wrap;
   font-size: 1.063rem;
   color: var(--color-black);

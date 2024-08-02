@@ -1,3 +1,7 @@
+.i_main.about-us {
+  overflow: visible;
+}
+
 .i_about-us .i_about-company:before {
   content: " ";
   background-image: url("../img/svg/bg-image-about-company-Grey.svg");
@@ -565,6 +569,12 @@
     border-radius: 0 0 30px 30px;
   }
 }
+.i_about-us .i_directorship .i_directorship-basic .i_directorship-basic-block .i_directorship-basic-block-desc .i_directorship-basic-block-desc-bottom .i_directorship-basic-block-desc-bottom-container {
+  color: var(--color-WhiteWhite);
+  line-height: 21px;
+  font-size: 16px;
+  cursor: text;
+}
 .i_about-us .i_directorship .i_directorship-basic .i_directorship-basic-block .i_directorship-basic-block-desc .i_directorship-basic-block-desc-bottom .i_directorship-basic-block-desc-bottom-container span {
   color: var(--color-WhiteWhite);
   line-height: 21px;
@@ -809,6 +819,12 @@
     height: 100%;
     border-radius: 0 0 30px 30px;
   }
+}
+.i_about-us .i_directorship .i_directorship-basic .i_directorship-basic-block_second .i_directorship-basic-block-desc_second .i_directorship-basic-block-desc-bottom_second .i_directorship-basic-block-desc-bottom-container {
+  color: var(--color-WhiteWhite);
+  line-height: 21px;
+  font-size: 16px;
+  cursor: text;
 }
 .i_about-us .i_directorship .i_directorship-basic .i_directorship-basic-block_second .i_directorship-basic-block-desc_second .i_directorship-basic-block-desc-bottom_second .i_directorship-basic-block-desc-bottom-container span {
   color: var(--color-WhiteWhite);

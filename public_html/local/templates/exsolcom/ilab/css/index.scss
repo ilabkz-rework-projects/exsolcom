@@ -834,6 +834,9 @@ body{
           span{
             color:var(--color-red);
           }
+          a{
+            text-decoration: none;
+          }
         }
       }
     }
@@ -1368,11 +1371,11 @@ body{
             display: flex;
             align-items: center;
             gap: 20px;
-            transition: all .4s ease;
             &:hover {
               background-color: var(--color-circlesSecond);
               border-radius: 50px;
               cursor: pointer;
+              transition: all .8s ease;
               .i_banner-circles_1{
                 background-image: url("../img/svg/group-banner-icons/banner-icon_1_b.svg");
               }
