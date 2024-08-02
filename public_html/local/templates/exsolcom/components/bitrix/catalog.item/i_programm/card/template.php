@@ -52,10 +52,16 @@ while($ob = $res->Fetch())
 				<span><?= $item['PREVIEW_TEXT'] ?></span>
 			</div>
 			<div class="product-item-detail-price">
-				<span><span class="color-red"><?= $price ?></span> ₸
-                    <span class="text"> (электронная версия)</span>
-                    <span class="text2"> (эл. версия)</span>
+				<?if($price){?>
+					<span><span class="color-red"><?= $price ?></span> ₸
+						<span class="text"> (электронная версия)</span>
+						<span class="text2"> (эл. версия)</span>
+					</span>
+				<?}else{?>
+					<span><span class="color-red">Цена по запросу</span>
                 </span>
+				<?}?>
+
 			</div>
 			<div class="product-item-btn">
 				<button id="form-kp-btn">Запросить КП</button>
