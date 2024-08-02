@@ -225,14 +225,6 @@
   position: relative;
   border-bottom: 5px dotted #666666;
 }
-@media screen and (max-width: 760px) {
-  .i_snippet.multi-table .i_snippet-multi-table-item:nth-child(n+2) {
-    display: none;
-  }
-}
-.i_snippet.multi-table .i_snippet-multi-table-item:nth-child(n+2).is-visible {
-  display: block;
-}
 .i_snippet.multi-table .i_snippet-multi-table-items {
   display: flex;
   flex-wrap: wrap;
@@ -241,6 +233,11 @@
 .i_snippet.multi-table .i_snippet-multi-table-items .i_snippet-multi-table-item {
   position: relative;
   width: 49%;
+}
+@media screen and (max-width: 760px) {
+  .i_snippet.multi-table .i_snippet-multi-table-items .i_snippet-multi-table-item:nth-child(n+2) {
+    display: none;
+  }
 }
 @media screen and (max-width: 760px) {
   .i_snippet.multi-table .i_snippet-multi-table-items .i_snippet-multi-table-item {
@@ -409,30 +406,57 @@
   cursor: text;
 }
 
+.i_snippet-multi-table-btnSecond {
+  padding: 0 !important;
+}
+@media screen and (max-width: 760px) {
+  .i_snippet-multi-table-btnSecond {
+    padding: 50px 0 60px 0;
+  }
+}
+.i_snippet-multi-table-btnSecond .show-less {
+  display: none;
+}
+
 .i_snippet-multi-table-btn {
+  padding: 0 !important;
+}
+@media screen and (max-width: 760px) {
+  .i_snippet-multi-table-btn {
+    padding: 50px 0 60px 0 !important;
+  }
+}
+.i_snippet-multi-table-btn .show-more {
+  display: none;
+}
+@media screen and (max-width: 760px) {
+  .i_snippet-multi-table-btn .show-more {
+    display: block;
+  }
+}
+
+.i_snippet-multi-table-btn,
+.i_snippet-multi-table-btnSecond {
   display: flex;
   justify-content: center;
   padding: 50px 0 80px 0;
 }
 @media screen and (max-width: 1330px) {
-  .i_snippet-multi-table-btn {
+  .i_snippet-multi-table-btn,
+  .i_snippet-multi-table-btnSecond {
     padding: 50px 0 60px 0;
   }
 }
-.i_snippet-multi-table-btn button {
+.i_snippet-multi-table-btn button,
+.i_snippet-multi-table-btnSecond button {
   padding: 18px 65px;
 }
 @media screen and (max-width: 1330px) {
-  .i_snippet-multi-table-btn button {
+  .i_snippet-multi-table-btn button,
+  .i_snippet-multi-table-btnSecond button {
     padding: 12px 44px;
   }
 }
-@media screen and (max-width: 480px) {
-  .i_snippet-multi-table-btn {
-    display: none;
-  }
-}
-
 .i_snippet-multi-table-btn.second {
   display: none;
 }
