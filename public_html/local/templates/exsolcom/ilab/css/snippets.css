@@ -230,6 +230,9 @@
   flex-wrap: wrap;
   gap: 5px;
 }
+.i_snippet.multi-table .i_snippet-multi-table-items .i_snippet-multi-table-item.is-visible {
+  display: block !important;
+}
 .i_snippet.multi-table .i_snippet-multi-table-items .i_snippet-multi-table-item {
   position: relative;
   width: 49%;

@@ -289,9 +289,9 @@
     gap: 5px;
 
     .i_snippet-multi-table-item{
-      //&.is-visible{
-      //  display: block;
-      //}
+      &.is-visible{
+        display: block !important;
+      }
     }
     //SNIPPET MULTI_TABLE ITEMS ITEM
     .i_snippet-multi-table-item {
