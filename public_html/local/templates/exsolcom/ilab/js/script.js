@@ -875,17 +875,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			initialVisItems.forEach(el => el.classList.remove('is-visible'));
 
 			showMore.addEventListener('click', () => {
-				items = Math.min(items + 2, productsLength); // Гарантируем, что items не превысит productsLength
+				items = Math.min(items + 3, productsLength); // Гарантируем, что items не превысит productsLength
 				const visItems = array.slice(0, items);
 				const boxBtn = document.querySelector('.i_snippet-multi-table-btn');
+				const boxBtn2 = document.querySelector('.i_snippet-multi-table-btnSecond');
 
 				visItems.forEach(el => el.classList.add('is-visible'));
 
-				// Скрываем кнопку "Показать больше" и показываем кнопку "Свернуть список", когда показаны все элементы
+				// Скрываем кнопку "Развернуть весь список" и показываем кнопку "Свернуть список", когда показаны все элементы
 				if (items >= productsLength) {
 					showMore.style.display = 'none';
+					boxBtn.style.padding = '0';
 					showLess.style.display = 'block';
-					boxBtn.style.padding = '50px 0 60px 0';
+					boxBtn2.style.padding = '30px 0';
 				}
 			});
 
@@ -893,13 +895,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				items = productsLength - 3; // Показать все кроме последних 3
 				const visItems = array.slice(0, items);
 				const boxBtn = document.querySelector('.i_snippet-multi-table-btn');
+				const boxBtn2 = document.querySelector('.i_snippet-multi-table-btnSecond');
 
 				array.forEach(el => el.classList.remove('is-visible'));
 				visItems.forEach(el => el.classList.remove('is-visible'));
 
 				showMore.style.display = 'block';
 				showLess.style.display = 'none';
-				boxBtn.style.padding = 'unset';
+				boxBtn.style.padding = '30px 0';
+				boxBtn2.style.padding = '0';
 			});
 
 			observer.disconnect(); // Останавливаем наблюдение после нахождения элемента
