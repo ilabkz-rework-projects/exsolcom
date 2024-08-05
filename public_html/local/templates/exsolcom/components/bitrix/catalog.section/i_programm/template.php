@@ -741,6 +741,9 @@ if (!isset($arParams['HIDE_SECTION_DESCRIPTION']) || $arParams['HIDE_SECTION_DES
         );
     }
     ?>
+    <div class="i_programm_product-btn">
+        <button class="show-else">Еще</button>
+    </div>
 </div>
 <?$APPLICATION->IncludeFile('/local/templates/exsolcom/ilab/comp/i_software.php',Array(),Array('MODE'=>'html', 'NAME'=>'Главная', 'SHOW_BORDER'=>false));// Search?><br>
 <?

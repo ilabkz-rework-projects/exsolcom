@@ -789,6 +789,7 @@ p{
       }
       @media screen and (max-width: 480px){
         justify-content: space-between;
+        gap: 10px 5px;
       }
       li:before{
         content: '';
@@ -834,12 +835,17 @@ p{
         max-width: 340px;
         width: 100%;
         height: 50px;
+        @media screen and (max-width: 1290px){
+          height: unset;
+          padding: 10px 0;
+        }
         //margin: 20px 20px 0 0;
         //border: 1px solid #ededed;
         @media screen and (max-width: 1330px){
           max-width: 295px;
         }
         @media screen and (max-width: 760px){
+          padding: 5px 0;
           max-width: 225px;
           //margin: 20px 10px 0 0;
           flex-basis: 31%;
@@ -850,8 +856,12 @@ p{
           flex-basis: 48%;
           height: 42px;
         }
+        @media screen and (max-width: 455px){
+          height: unset;
+
+        }
         @media screen and (max-width: 360px){
-          max-width: 154px;
+          max-width: 160px;
           //margin: 10px 5px 0 0;
         }
         &.menu-all-articles{
@@ -912,7 +922,6 @@ p{
           background-color: transparent;
         }
         .bx_sitemap_li_title{
-          font-size: 20px;
           line-height: unset;
           margin: 0;
           padding: 0px 15px 0px 60px;
@@ -921,7 +930,7 @@ p{
             padding: 0px 10px 0px 50px;
           }
           @media screen and (max-width: 480px){
-            padding: 0px 10px 0px 35px;
+            padding: 0px 10px 5px 35px;
           }
           a{
             line-height: normal;
@@ -929,11 +938,20 @@ p{
             font-size: 1.063rem;
             color: var(--color-black);
             position: relative;
-            @media screen and (max-width: 760px){
+            @media screen and (max-width: 1530px){
               font-size: 0.875rem;
             }
-            @media screen and (max-width: 380px){
+            @media screen and (max-width: 880px){
               font-size: 0.75rem;
+            }
+            @media screen and (max-width: 640px){
+              font-size: 0.688rem;
+            }
+            @media screen and (max-width: 480px){
+              font-size: 0.625rem;
+            }
+            @media screen and (max-width: 380px){
+              //font-size: 0.75rem;
             }
           }
         }

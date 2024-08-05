@@ -912,5 +912,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 	observer.observe(document.body, { childList: true, subtree: true });
 
+	//Обьявляем переменные для раскрытия программных продуктов
+
+	const showElse = document.querySelector('.show-else');
+	const programmList = document.querySelectorAll('.product-item-list-col-3');
+
+	showElse.addEventListener('click', () =>{
+		programmList.forEach(item => {
+			item.classList.toggle('visible');
+		});
+	});
+
+
+
 });
+
 

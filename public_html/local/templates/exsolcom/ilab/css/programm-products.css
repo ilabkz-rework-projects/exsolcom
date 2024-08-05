@@ -35,6 +35,19 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
+  position: relative;
+}
+.programm-container .i_programm-catalog .catalog-section .product-item-list-col-3:nth-child(n+3) {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.4s ease;
+}
+.programm-container .i_programm-catalog .catalog-section .product-item-list-col-3.visible {
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+  transition: all 0.4s ease;
 }
 @media screen and (max-width: 1270px) {
   .programm-container .i_programm-catalog .catalog-section {
@@ -61,7 +74,8 @@
 }
 @media screen and (max-width: 480px) {
   .programm-container .i_programm-catalog .catalog-section {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 48% 48%;
     gap: 15px !important;
   }
 }
@@ -110,6 +124,25 @@
 @media screen and (max-width: 480px) {
   .programm-container .i_programm-catalog .catalog-section .row .product-item-small-card .product-item-big-card {
     padding: 0;
+  }
+}
+.programm-container .i_programm-catalog .catalog-section .i_programm_product-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 480px) {
+  .programm-container .i_programm-catalog .catalog-section .i_programm_product-btn {
+    display: grid;
+    grid-column: 1/2 span;
+  }
+}
+.programm-container .i_programm-catalog .catalog-section .i_programm_product-btn button {
+  padding: 16px 48px;
+}
+@media screen and (max-width: 480px) {
+  .programm-container .i_programm-catalog .catalog-section .i_programm_product-btn button {
+    padding: 12px 35px;
   }
 }
 .programm-container .i_programm-catalog .i_software {
@@ -392,7 +425,6 @@
 .programm-container .i_programm-catalog .product-item-container .programm-item .product-item-title span {
   height: 45px;
   color: var(--color-textInfoblock);
-  text-wrap: wrap;
   display: inline-block;
   width: 99%;
 }
