@@ -440,14 +440,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
 						modalKp.querySelector('.i_modal-content').innerHTML = content;
 					}
 
-					if(data.PRICE){
-						modalKp.querySelector('.i_modal-footer-price').classList.remove('idn')
+					modalKp.querySelector('.i_modal-footer-price').classList.remove('idn')
+					modalKp.querySelector('.i_modal-img').innerHTML = `<img src="${img}" />`;
+
+					if(data.PRICE !== null){
+						modalKp.querySelector('.i_modal-footer-price').innerHTML = `<span>${data.PRICE} ₸<span class="text">(электронная версия)</span></span>`;
 					}else{
-						modalKp.querySelector('.i_modal-footer-price').classList.add('idn')
+						modalKp.querySelector('.i_modal-footer-price').innerHTML = `<span>Цена по запросу</span>`;
 					}
 
-					modalKp.querySelector('.i_modal-img').innerHTML = `<img src="${img}" />`;
-					modalKp.querySelector('.i_modal-footer-price').innerHTML = `<span>${data.PRICE} ₸<span class="text">(электронная версия)</span></span>`;
 				})
 		})
 	})
