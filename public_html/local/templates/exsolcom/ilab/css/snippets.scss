@@ -2177,8 +2177,23 @@
 //SNIPPET PICTURE
 .i_snippet.picture {
   margin: 20px 0;
-
+  display: flex;
+  gap: 20px;
+  padding: 15px 70px;
+  @media screen and (max-width: 1000px){
+    padding: 5px 5px;
+  }
+  @media screen and (max-width: 480px){
+    padding: 0;
+    margin: 15px 0;
+    gap: 5px;
+  }
+  .i_snippet-first-picture{
+  }
+  .i_snippet-second-picture{
+  }
   img {
+    object-fit: contain;
     width: 100%;
     height: 100%;
   }
@@ -2284,6 +2299,7 @@
     .i_seo-events-2022-desc-headline,
     .i_seo-events-2022-desc-headline-lostWords{
       span{
+        line-height: normal;
         font-size: 18px;
         font-weight: 600;
         color: var(--color-textInfoblock);
@@ -2300,8 +2316,8 @@
       ul{
         li:before{
           content: " ";
-          width: 8px;
-          height: 8px;
+          width: 5px;
+          height: 5px;
           border-radius: 50%;
           background-color: var(--color-text-li);
           color: black;
@@ -2309,8 +2325,8 @@
           align-items: center;
           justify-content: center;
           position: absolute;
-          left: -16px;
-          top: 5px;
+          left: -15px;
+          top: 8px;
           margin-right: 0.5em;
           z-index: 1;
         }
@@ -2319,10 +2335,11 @@
           list-style-type: none;
           color: var(--color-textInfoblock);
           line-height: 20px;
+          font-family: "Open Sans", sans-serif;
           span{
+            font-family: "Open Sans", sans-serif;
             font-size: 15px;
             color: var(--color-black) ;
-            font-family: "Open Sans", sans-serif;
             cursor: text;
           }
         }
@@ -2335,6 +2352,7 @@
   .i_seo-events-2022-desc-headline,
   .i_seo-events-2022-desc-headline-lostWords{
     span{
+      line-height: normal;
       font-size: 18px;
       font-weight: 600;
       color: var(--color-textInfoblock);
