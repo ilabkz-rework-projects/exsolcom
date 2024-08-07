@@ -1162,6 +1162,7 @@ body{
         }
         a{
           color: var(--color-red);
+          font-weight: 600;
         }
       }
       &:hover{
@@ -1230,6 +1231,7 @@ body{
         a{
           transition: all .4s ease;
           color: var(--color-red);
+          font-weight: 600;
         }
       }
     }

@@ -1048,6 +1048,7 @@ body.lock {
 }
 .i_side-menu .i_side-menu-container li.selected a {
   color: var(--color-red);
+  font-weight: 600;
 }
 .i_side-menu .i_side-menu-container li:hover {
   transition: all 0.4s ease;
@@ -1100,6 +1101,7 @@ body.lock {
 .i_side-menu .i_side-menu-container li:hover a {
   transition: all 0.4s ease;
   color: var(--color-red);
+  font-weight: 600;
 }
 
 .i_header-burger {

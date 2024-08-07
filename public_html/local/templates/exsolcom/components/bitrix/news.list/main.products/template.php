@@ -20,9 +20,10 @@ $this->setFrameMode(true);
 			$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 			?>
 			<div class="swiper-slide product-item" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
-				<div class="swiper-img">
-					<img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/products-swiper.png'?>" alt="products-swiper">
-				</div>
+
+                <div class="swiper-img">
+                    <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/products-swiper.png'?>" alt="products-swiper">
+                </div>
 				<div class="swiper-title" id="modal-kp" data-id="<?= $arItem['ID'] ?>">
 					<span><?=$arItem['NAME']?></span>
 				</div>

@@ -61,6 +61,7 @@
   padding: 40px 0;
   position: relative;
   border-bottom: 5px dotted #666666;
+  margin-bottom: 20px;
 }
 .i_snippet.title .i_snippet-number {
   min-width: 50px;
