@@ -40,7 +40,7 @@ while($ob = $res->Fetch())
 
 
 ?>
-	<div class="programm-item"  data-id="<?= $item['ID'] ?>">
+	<div class="programm-item"  data-id="<?= $item['ID'] ?>" >
 		<div class="product-item-img">
 			<img src="<?= $item['PREVIEW_PICTURE']['SRC'] ?>" alt="img">
 		</div>
@@ -66,6 +66,17 @@ while($ob = $res->Fetch())
 			<div class="product-item-btn">
 				<button id="form-kp-btn">Запросить КП</button>
 			</div>
+		</div>
+		<div class="i_item_compare">
+			<div class="i_compare_succes j_compare_success idnone" data-id="<?=$e['ID']?>">
+				<div class="i_submodal_arrow"></div>
+				<div class="i_bs_close j_cs_close"></div>
+				<div class="j_me1"><?=GetMessage('COMPARE_ONE')?></div>
+				<div class="j_me2"><?=GetMessage('COMPARE_SUCCES')?></div>
+			</div>
+			<a class="i_compare_but j_item_compare" data-iblock_id="<?=9?>" data-id="<?=$item['ID']?>" data-change_text='{"txt_default":"Test","txt_change":"Test"}'>
+				<span>Сравнить</span>
+			</a>
 		</div>
 	</div>
 

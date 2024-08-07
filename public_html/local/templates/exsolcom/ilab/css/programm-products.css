@@ -263,6 +263,10 @@
     max-width: 155px;
   }
 }
+.programm-container .i_programm-catalog .product-item-container .programm-item .i_item_compare {
+  position: absolute;
+  bottom: 20px;
+}
 .programm-container .i_programm-catalog .product-item-container .programm-item:hover {
   transition: all 0.4s ease;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);

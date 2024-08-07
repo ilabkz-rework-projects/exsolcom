@@ -237,6 +237,10 @@
           max-height: 155px;
           max-width: 155px;
         }
+        .i_item_compare{
+          position: absolute;
+          bottom: 20px;
+        }
         &:hover{
           transition: all .4s ease;
           box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
