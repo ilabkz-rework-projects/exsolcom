@@ -6,8 +6,10 @@ use Ilab\Core\Transform;
 Loc::loadMessages(Bitrix\Main\Application::getDocumentRoot().SITE_TEMPLATE_PATH.'/header.php');
 
 $l = $arParams['I_LANGUAGE_ID'];
-//	---------------------------------------------------------------------------------------------------- iLaB PowereD
+
+//	---------------------------------------------------------------------------------------------------- iLaB Powered
 if( $arResult['ITEMS'] ):?>
+
 
 	<!-- scrollBar -->
 	<div class="ilab_c_pag_hor">
@@ -54,7 +56,7 @@ if( $arResult['ITEMS'] ):?>
 					<div class="swiper-slide ilab_c_item i_item jq_item">
 						<div class="ilab_c_i_remove_compare j_remove_compare" data-id="<?=$e['ID']?>" data-iblock_id="<?=$e['IBLOCK_ID']?>"><span><?=Loc::getMessage('COMP_REMOVE',false,$l)?></span></div>
 						<div class="ilab_c_i_block_compare">
-							<a class="ilab_c_i_image swiper-lazy<?if(!$e['I_PICTURE'])echo ' ilab_c_i_nophoto'?>" href="<?=$e['DETAIL_PAGE_URL']?>"<?if($e['I_PICTURE'])echo ' style="background-image: url('.$e['I_PICTURE'].')"'?>></a>
+							<a class="ilab_c_i_image swiper-lazy<?if(!$e['PREVIEW_PICTURE']['SRC'])echo ' ilab_c_i_nophoto'?>" href="<?=$e['DETAIL_PAGE_URL']?>"<?if($e['PREVIEW_PICTURE']['SRC'])echo ' style="background-image: url('.$e['PREVIEW_PICTURE']['SRC'].')"'?>></a>
 							<div class="ilab_c_i_price i_item_price">
 								<div class="i_item_price">
 									<?/*if( array_key_exists($arParams['I_DEALER_PRICE'], $arResult['I_PRICES_GROUP']) ):// Дилер
@@ -272,7 +274,11 @@ if( $arResult['ITEMS'] ):?>
 <?endif?>
 
 
-
+<?
+//echo '<pre>';
+//print_r($arResult['ITEMS']);
+//echo '</pre>';
+?>
 
 
 <?/*if($USER->isAdmin()):?>

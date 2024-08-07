@@ -71,11 +71,7 @@ if( $_SERVER['REQUEST_METHOD']=='POST' && $_POST['KEY']=='CompareModal_v0.0.1' )
 		"COMPATIBLE_MODE" => "Y",
 		// ilab
 		"I_PROPERTY_CODE" => array(
-			0 => "CML2_LINK",
-			1 => "CML2_TRAITS",
-			2 => "CML2_BASE_UNIT",
-			3 => "CML2_TAXES",
-			4 => "CML2_BAR_CODE"
+			0 => "I_PRICE",
 		),
 		'I_LANGUAGE' => $_POST['i_language'],
 		"CH_IBLOCK_TYPE" => "catalog",

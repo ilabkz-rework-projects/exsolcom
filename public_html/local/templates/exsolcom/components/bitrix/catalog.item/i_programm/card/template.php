@@ -74,7 +74,7 @@ while($ob = $res->Fetch())
 				<div class="j_me1"><?=GetMessage('COMPARE_ONE')?></div>
 				<div class="j_me2"><?=GetMessage('COMPARE_SUCCES')?></div>
 			</div>
-			<a class="i_compare_but j_item_compare" data-iblock_id="<?=9?>" data-id="<?=$item['ID']?>" data-change_text='{"txt_default":"Test","txt_change":"Test"}'>
+			<a class="i_compare_but j_item_compare" data-iblock_id="<?=9?>" data-id="<?=$item['ID']?>" data-change_text='{"txt_default":"Сравнить","txt_change":"Удалить"}'>
 				<span>Сравнить</span>
 			</a>
 		</div>

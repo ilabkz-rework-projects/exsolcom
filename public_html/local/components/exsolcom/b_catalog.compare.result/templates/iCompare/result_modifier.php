@@ -68,54 +68,11 @@ if( $arResult['ITEMS'] ):
 
 
 // -------------------------------------------------- DEFAULT no props
-	$ipc = [
-		'CML2_LINK',
-		'FORUM_TOPIC_ID',
-		'ARFP',
 
-		'MINIMUM_PRICE',
-		'MAXIMUM_PRICE',
-
-		'I_INSTRUCTION',
-		'I_VIDEO',
-		'I_RECOMMEND',
-		'I_MULTI_PRICE',
-		'I_PRO_DAY',
-
-		'I_NAME_KZ',
-		'I_NAME_EN',
-		'I_NAME_RU',
-
-		'I_FULLNAME_EN',
-		'I_FULLNAME_KZ',
-		'I_FULLNAME_RU',
-
-		'ST_DISCOUNT',
-		'ST_NEW',
-		'ST_BESTSELLER',
-		'ST_1_GIFT',
-		'ST_OWN_BRANDS',
-
-		'B_DISCOUNT',
-		'B_NEW',
-		'B_BESTSELLER',
-
-		'M_DISCOUNT',
-		'M_BESTSELLER',
-		'M_NEW',
-
-		'S_GIFT',
-		'S_CREDIT',
-		'S_ACTION',
-		'S_BEST_PRICE'
-	];
-
-	if( $arParams['I_PROPERTY_CODE'] )
-		$ipc = array_merge($ipc, $arParams['I_PROPERTY_CODE']);
 // -------------------------------------------------- PROPERTY
 	$propertyIterator = Iblock\PropertyTable::getList(Array(
 		'select'	=> array('ID', 'IBLOCK_ID', 'NAME', 'CODE', 'PROPERTY_TYPE'),
-		'filter'	=> array('=IBLOCK_ID'=>$arParams['IBLOCK_ID'], '=ACTIVE'=>'Y', '!=PROPERTY_TYPE'=>Iblock\PropertyTable::TYPE_FILE, '!=CODE'=>$ipc),//'=CODE'=>'I_!%'
+		'filter'	=> array('=IBLOCK_ID'=>$arParams['IBLOCK_ID'], '=ACTIVE'=>'Y', '!=PROPERTY_TYPE'=>Iblock\PropertyTable::TYPE_FILE),//'=CODE'=>'I_!%'
 		'order'		=> array('SORT'=>'ASC', 'NAME'=>'ASC')
 	));
 	while($ob = $propertyIterator->fetch())
