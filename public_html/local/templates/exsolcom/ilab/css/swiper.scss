@@ -479,6 +479,10 @@
           font-size: 22px;
           top: -5%;
         }
+        @media screen and (max-width: 360px){
+          font-size: 22px;
+          top: -1%;
+        }
         span{
           color: var(--color-textInfoblock);
         }
@@ -496,12 +500,16 @@
         @media screen and (max-width: 1218px){
           margin: 0 15px;
         }
-        @media screen and (max-width: 1218px){
-          margin: 0 10px;
-        }
         @media screen and (max-width: 1250px){
           gap: 15px;
           margin: 0 15px;
+        }
+        @media screen and (max-width: 1218px){
+          margin: 0 10px;
+        }
+        @media screen and (max-width: 360px){
+          gap: 25px;
+          margin: 0 30px;
         }
         .swiper-detail-title{
           font-size: 14px;
@@ -524,6 +532,10 @@
             @media screen and (max-width: 1250px){
               padding: 10px 20px;
               font-size: 14px;
+            }
+            @media screen and (max-width: 480px){
+              padding: 6px 12px;
+              font-size: 11px;
             }
             &:hover{
               background-color: var(--bg-buttonHoverFirst);
@@ -564,283 +576,283 @@
   padding: 60px 0;
   background-color: var(--bg-second);
   position: relative;
-    .i_container {
-      position: relative;
-      .i_projects-title {
+  .i_container {
+    position: relative;
+    .i_projects-title {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: 20px;
+      justify-content: center;
+      position: relative ;
+      z-index: 2;
+
+      .i_projects-title-bg {
         display: flex;
         align-items: center;
-        flex-wrap: nowrap;
-        gap: 20px;
         justify-content: center;
-        position: relative ;
-        z-index: 2;
-
-        .i_projects-title-bg {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 50px;
-          height: 50px;
-          background-color: var(--color-circles);
-          border-radius: 50%;
-          @media screen and (max-width: 760px){
-            width: 40px;
-            height: 40px;
-            svg{
-              width: 27px;
-              height: 28px;
-            }
-          }
-          svg {
-            color: var(--color-circleIcon);
+        width: 50px;
+        height: 50px;
+        background-color: var(--color-circles);
+        border-radius: 50%;
+        @media screen and (max-width: 760px){
+          width: 40px;
+          height: 40px;
+          svg{
+            width: 27px;
+            height: 28px;
           }
         }
-
-        .i_projects-title-name {
-          span {
-            font-size: 32px;
-            font-weight: 400;
-            @media screen and (max-width: 1330px) {
-              font-size: 28px;
-            }
-            @media screen and (max-width: 760px){
-              font-size: 26px;
-            }
-            @media screen and (max-width: 480px){
-              font-size: 21px;
-            }
-          }
+        svg {
+          color: var(--color-circleIcon);
         }
       }
 
-      .projects-swiper {
-        position: relative;
-        margin: 70px 0;
-        @media screen and (max-width: 600px){
-          margin: 50px 0;
-        }
-      }
-
-      .swiper.projects-swiper {
-        width: 100%;
-        height: 100%;
-        overflow: unset;
-        .swiper-slide a{
-          text-decoration: none;
-        }
-        .swiper-slide .swiper-slide {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          border-radius: 100%;
-          background-color: var(--bg-block);
-          cursor: pointer;
-          padding: 10px;
-          text-align: center;
-          gap: 40px;
-          position: relative;
-          box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.15);
+      .i_projects-title-name {
+        span {
+          font-size: 32px;
+          font-weight: 400;
           @media screen and (max-width: 1330px) {
-            gap: 30px;
+            font-size: 28px;
           }
-          @media screen and (max-width: 480px) {
-            gap: 25px;
+          @media screen and (max-width: 760px){
+            font-size: 26px;
           }
-          @media screen and (max-width: 480px) {
-            gap: 15px;
+          @media screen and (max-width: 480px){
+            font-size: 21px;
+          }
+        }
+      }
+    }
+
+    .projects-swiper {
+      position: relative;
+      margin: 70px 0;
+      @media screen and (max-width: 600px){
+        margin: 50px 0;
+      }
+    }
+
+    .swiper.projects-swiper {
+      width: 100%;
+      height: 100%;
+      overflow: unset;
+      .swiper-slide a{
+        text-decoration: none;
+      }
+      .swiper-slide .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        background-color: var(--bg-block);
+        cursor: pointer;
+        padding: 10px;
+        text-align: center;
+        gap: 40px;
+        position: relative;
+        box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.15);
+        @media screen and (max-width: 1330px) {
+          gap: 30px;
+        }
+        @media screen and (max-width: 480px) {
+          gap: 25px;
+        }
+        @media screen and (max-width: 480px) {
+          gap: 15px;
+        }
+
+        .swiper-slide-icon {
+          width: 57%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          @media screen and (max-width: 1330px) {
+            width: 60%;
           }
 
-          .swiper-slide-icon {
-            width: 57%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            @media screen and (max-width: 1330px) {
-              width: 60%;
-            }
-
-            img {
-              width: 100%;
-              height: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+            color: var(--color-red);
+          }
+        }
+      }
+      .swiper-slide-parent{
+        &:hover {
+          z-index: -1;
+          &:before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200%;
+            height: 200%;
+            background-image: url("../img/svg/slider-hover-projects-light.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            z-index: -1;
+            border-radius: 50%;
+          }
+          .swiper-slide-title {
+            span {
               color: var(--color-red);
             }
           }
-        }
-        .swiper-slide-parent{
-          &:hover {
-            z-index: -1;
-            &:before{
-              content: "";
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              width: 200%;
-              height: 200%;
-              background-image: url("../img/svg/slider-hover-projects-light.svg");
-              background-repeat: no-repeat;
-              background-size: contain;
-              z-index: -1;
-              border-radius: 50%;
-            }
-            .swiper-slide-title {
-              span {
-                color: var(--color-red);
-              }
-            }
 
-            .swiper-slide-icon {
-              svg {
-                color: var(--color-nochangeThirdIcon);
-              }
+          .swiper-slide-icon {
+            svg {
+              color: var(--color-nochangeThirdIcon);
             }
           }
-          .swiper-slide-title {
-            position: relative;
-            transform: translateY(-42%);
-            line-height: 20px;
-            width: 80%;
-            display: flex;
-            align-items: start;
-            justify-content: center;
-            height: 35%;
+        }
+        .swiper-slide-title {
+          position: relative;
+          transform: translateY(-42%);
+          line-height: 20px;
+          width: 80%;
+          display: flex;
+          align-items: start;
+          justify-content: center;
+          height: 35%;
+          @media screen and (max-width: 1330px) {
+            line-height: 16px;
+          }
+          @media screen and (max-width: 480px) {
+            line-height: 14px;
+          }
+          span {
+            color: var(--color-textInfoblock);
             @media screen and (max-width: 1330px) {
-              line-height: 16px;
+              font-size: 14px;
             }
             @media screen and (max-width: 480px) {
-              line-height: 14px;
+              font-size: 13px;
             }
-            span {
-              color: var(--color-textInfoblock);
-              @media screen and (max-width: 1330px) {
-                font-size: 14px;
-              }
-              @media screen and (max-width: 480px) {
-                font-size: 13px;
-              }
-              @media screen and (max-width: 360px) {
-                font-size: 12px;
-              }
+            @media screen and (max-width: 360px) {
+              font-size: 12px;
             }
-          }
-        }
-      }
-
-      .i_projects-btn {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        z-index: 2;
-        @media screen and (max-width: 600px) {
-          padding: 90px 0 0 0;
-        }
-        button {
-          padding: 20px 44px;
-          &:hover {
-            background-color: var(--bg-buttonHoverSecond);
-          }
-          @media screen and (max-width: 1330px) {
-            padding: 16px 22px;
-            font-size: 14px;
-          }
-          @media screen and (max-width: 360px) {
-            padding: 10px 22px;
           }
         }
       }
     }
+
+    .i_projects-btn {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+      @media screen and (max-width: 600px) {
+        padding: 90px 0 0 0;
+      }
+      button {
+        padding: 20px 44px;
+        &:hover {
+          background-color: var(--bg-buttonHoverSecond);
+        }
+        @media screen and (max-width: 1330px) {
+          padding: 16px 22px;
+          font-size: 14px;
+        }
+        @media screen and (max-width: 360px) {
+          padding: 10px 22px;
+        }
+      }
+    }
   }
+}
 //PROJECTS
 
-  //Навигационные кнопки
-  .pagination {
+//Навигационные кнопки
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 50;
+  outline: none;
+
+  .swiper-personal-button-next,
+  .swiper-personal-button-prev,
+  .swiper-products-button-next,
+  .swiper-products-button-prev,
+  .swiper-projects-button-next,
+  .swiper-projects-button-prev {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: var(--color-circlesSecond);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.05);
     display: flex;
     align-items: center;
-    gap: 10px;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    z-index: 50;
-    outline: none;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--color-black);
+    transition: all .4s ease;
 
-    .swiper-personal-button-next,
-    .swiper-personal-button-prev,
-    .swiper-products-button-next,
-    .swiper-products-button-prev,
-    .swiper-projects-button-next,
-    .swiper-projects-button-prev {
-      width: 50px;
-      height: 50px;
-      border-radius: 100%;
-      background-color: var(--color-circlesSecond);
-      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.05);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      color: var(--color-black);
-      transition: all .4s ease;
+    &:hover {
+      color: var(--color-red);
+    }
 
-      &:hover {
-        color: var(--color-red);
-      }
+    .prev-icon {
+      margin-right: 5px;
+    }
 
-      .prev-icon {
-        margin-right: 5px;
-      }
+    .next-icon {
+      margin-left: 5px;
+    }
 
+    @media screen and (max-width: 1330px) {
+      width: 40px;
+      height: 40px;
+      .prev-icon,
       .next-icon {
-        margin-left: 5px;
+        width: 8px;
+        height: 13px;
       }
-
-      @media screen and (max-width: 1330px) {
-        width: 40px;
-        height: 40px;
-        .prev-icon,
-        .next-icon {
-          width: 8px;
-          height: 13px;
-        }
-      }
-    }
-
-    .swiper-products-button-next,
-    .swiper-products-button-prev,
-    .swiper-projects-button-next,
-    .swiper-projects-button-prev {
-      background-color: var(--color-circlesThird);
     }
   }
 
-  .i_products{
-    .pagination{
-      @media screen and (max-width: 900px){
-        transform: translateX(50%);
-        right: 50%;
-        top: 75%;
-        z-index: 50;
-        gap: 10px;
-      }
-      @media screen and (max-width: 760px){
-        top: 75%;
-      }
-      @media screen and (max-width: 600px){
-        top: 70%;
-      }
-      @media screen and (max-width: 479px){
-        top: 80%;
-      }
-      @media screen and (max-width: 380px){
-        top: 75%;
-      }
-      @media screen and (max-width: 360px){
-        top: 78%;
-        gap: 20px;
-      }
-
-    }
+  .swiper-products-button-next,
+  .swiper-products-button-prev,
+  .swiper-projects-button-next,
+  .swiper-projects-button-prev {
+    background-color: var(--color-circlesThird);
   }
+}
+
+.i_products{
+  .pagination{
+    @media screen and (max-width: 900px){
+      transform: translateX(50%);
+      right: 50%;
+      top: 75%;
+      z-index: 50;
+      gap: 10px;
+    }
+    @media screen and (max-width: 760px){
+      top: 75%;
+    }
+    @media screen and (max-width: 600px){
+      top: 70%;
+    }
+    @media screen and (max-width: 479px){
+      top: 80%;
+    }
+    @media screen and (max-width: 380px){
+      top: 75%;
+    }
+    @media screen and (max-width: 360px){
+      top: 78%;
+      gap: 20px;
+    }
+
+  }
+}
 
 .i_projects{
   .pagination{

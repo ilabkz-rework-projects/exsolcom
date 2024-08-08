@@ -90,6 +90,18 @@ html[data-theme='dark']{
           background-image: url("../img/svg/contact-icon-b.svg");
         }
       }
+      li{
+        &.selected{
+          a{
+            font-weight: 600;
+          }
+        }
+        &:hover{
+          a{
+            font-weight: 600;
+          }
+        }
+      }
     }
   }
   .i_header-bottom{
@@ -793,6 +805,7 @@ html[data-theme='dark']{
       img{
         width: 100%;
         height: 100%;
+        object-fit: contain;
       }
       @media screen and (max-width: 1330px){
         width: 33%;

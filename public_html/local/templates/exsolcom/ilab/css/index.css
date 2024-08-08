@@ -90,7 +90,6 @@ html[data-theme=dark] {
 }
 
 body {
-  position: relative;
   font-family: "Comfortaa", sans-serif; /* Укажите имя шрифта */
   line-height: 1;
   overflow-x: hidden;

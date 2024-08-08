@@ -63,6 +63,12 @@ html[data-theme=dark] .i_side-menu .left-menu li:nth-child(7) .menu-img {
 html[data-theme=dark] .i_side-menu .left-menu li:nth-child(8) .menu-img {
   background-image: url("../img/svg/contact-icon-b.svg");
 }
+html[data-theme=dark] .i_side-menu .left-menu li.selected a {
+  font-weight: 600;
+}
+html[data-theme=dark] .i_side-menu .left-menu li:hover a {
+  font-weight: 600;
+}
 html[data-theme=dark] .i_header-bottom .i_container .i_banner-group_social .i_banner-night_sun_item {
   background-image: url("../img/svg/icon-chage-team/day-icon_b.svg") !important;
   background-position: center;
@@ -536,6 +542,7 @@ html[data-theme=dark] .i_banner .i_banner-bg_2 {
 html[data-theme=dark] .i_banner .i_banner-bg_2 img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 @media screen and (max-width: 1330px) {
   html[data-theme=dark] .i_banner .i_banner-bg_2 {

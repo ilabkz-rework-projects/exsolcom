@@ -369,6 +369,7 @@ a{
   }
   .i_modal-preview-title{
     //font-size: 1.5rem;
+    font-family: "Comfortaa", sans-serif;
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -433,6 +434,7 @@ a{
   }
   .i_modal-preview-ending{
     //font-size: 1.25rem;
+    font-family: "Comfortaa", sans-serif;
     font-size: 20px;
     font-weight: 600;
     color: var(--color-textInfoblock);
@@ -471,7 +473,7 @@ a{
   width: 95%;
   height: 90%;
   border-radius: 35px;
-    &.pad{
+  &.pad{
     padding: 50px 20px 0px 0px;
   }
   @media screen and (max-width: 780px){
@@ -1361,7 +1363,17 @@ p{
             line-height: unset;
             margin: 0;
             padding: 20px 30px 20px 50px;
+            a:before{
+              content: " ";
+              right: -30px;
+              left: -50px;
+              top: -15px;
+              bottom: -15px;
+              background-color: transparent;
+              position: absolute;
+            }
             a{
+              position: relative;
               font-size: 20px;
               @media screen and (max-width: 1600px){
                 font-size: 18px;
