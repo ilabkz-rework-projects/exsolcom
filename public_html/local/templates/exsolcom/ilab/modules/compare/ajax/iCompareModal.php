@@ -75,7 +75,7 @@ if( $_SERVER['REQUEST_METHOD']=='POST' && $_POST['KEY']=='CompareModal_v0.0.1' )
 		),
 		'I_LANGUAGE' => $_POST['i_language'],
 		"CH_IBLOCK_TYPE" => "catalog",
-		"CH_IBLOCK_ID" => "3",
+		"CH_IBLOCK_ID" => "9",
 		"CH_IBLOCK" => "Y",
 		"V_IBLOCK_TYPE" => "I_CITY_IBLOCK_TYPE",
 		"V_IBLOCK_ID" => "I_CITY_IBLOCK_ID",
