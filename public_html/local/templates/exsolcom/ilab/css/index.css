@@ -2854,6 +2854,14 @@ body.lock {
     display: none;
   }
 }
+.i_our-status .i_container .i_our-status-group-btn_1 {
+  display: none;
+}
+@media screen and (max-width: 478px) {
+  .i_our-status .i_container .i_our-status-group-btn_1 {
+    display: flex;
+  }
+}
 .i_our-status .i_container .i_our-status-group-btn_1 a {
   text-decoration: none;
   color: var(--color-buttonText);

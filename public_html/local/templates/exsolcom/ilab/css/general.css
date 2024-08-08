@@ -531,6 +531,11 @@ a {
 .i_modal-kp .i_modal-box .i_modal-content .i_modal-preview .i_modal-preview-ending {
   display: block;
 }
+.i_modal-kp .i_modal-box .i_modal-content .i_modal-preview .i_modal-preview-content a,
+.i_modal-kp .i_modal-box .i_modal-content .i_modal-preview .i_modal-preview-ending a {
+  text-decoration: none;
+  color: var(--color-red);
+}
 .i_modal-kp .i_modal-img {
   position: absolute;
   left: 5%;
