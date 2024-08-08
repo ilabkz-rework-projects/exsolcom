@@ -1690,7 +1690,6 @@
         ////!WORK PROCESS BODY GROUP LOGO SECOND BEFORE
         //WORK PROCESS BODY GROUP LOGO SECOND
         .i_work-process-body-group-logo{
-          display: flex;
           justify-content: center;
           padding: 50px 0;
           margin: 0 auto;
@@ -1699,15 +1698,13 @@
           min-width: 200px;
           width: 100%;
           position: relative;
+          display: none;
           svg{
             width: 100%;
             height: 100%;
             color: var(--color-black);
           }
 
-          @media screen and (max-width: 2000px){
-            display: none;
-          }
           //WORK PROCESS MOBILE 789px SECOND
           @media screen and (max-width: 877px){
             display: flex;
@@ -1718,32 +1715,31 @@
         //!WORK PROCESS BODY GROUP LOGO SECOND
 
         //WORK PROCESS BODY GROUP SECOND BEFORE
-        .i_work-process-body-group-block-container:before{
-          content: " ";
-          position: absolute;
-          /* bottom: 0; */
-          height: calc(100% + 0px);
-          background-image: url(../img/svg/doth-vertical_downGrey.svg);
-          width: 9px;
-          background-size: 10px;
-          left: 0;
-          bottom: 50%;
-          transform: translate(550%, -35%);
-          top: 0;
-          z-index: -1;
-          @media screen and (max-width: 610px){
-            height: calc(100% - -40px);
-            background-size: 10px;
-            top: 0;
-            bottom: 50%;
-            left: 0;
-            transform: translate(550%, -45%);
-          }
-        }
+        //.i_work-process-body-group-block-container:before{
+        //  content: " ";
+        //  position: absolute;
+        //  /* bottom: 0; */
+        //  height: calc(100% + 0px);
+        //  background-image: url(../img/svg/doth-vertical_downGrey.svg);
+        //  width: 9px;
+        //  background-size: 10px;
+        //  left: 0;
+        //  bottom: 50%;
+        //  transform: translate(550%, -35%);
+        //  top: 0;
+        //  z-index: -1;
+        //  @media screen and (max-width: 610px){
+        //    height: calc(100% - -40px);
+        //    background-size: 10px;
+        //    top: 0;
+        //    bottom: 50%;
+        //    left: 0;
+        //    transform: translate(550%, -45%);
+        //  }
+        //}
         //WORK PROCESS BODY GROUP SECOND BEFORE
         //WORK PROCESS BODY GROUP SECOND
         .i_work-process-body-group-second{
-          display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
@@ -1751,9 +1747,7 @@
           gap: 120px 240px;
           padding: 0 0 50px 0;
           position: relative;
-          @media screen and (max-width: 2000px){
-            display: none;
-          }
+          display: none;
           //WORK PROCESS MOBILE 789px SECOND
           @media screen and (max-width: 877px){
             display: flex;

@@ -94,10 +94,11 @@
   bottom: 0;
   width: calc(100% - 0px);
   background-image: url("/local/templates/exsolcom/ilab/css/../img/svg/doth-vertical_downGrey.svg");
-  height: 12px;
+  height: 8px;
   right: 50%;
   transform: translateX(50%);
   background-size: 10px;
+  background-position-y: -5px;
 }
 .i_submit .i_submit-header,
 .i_form-kp .i_submit-header,
@@ -257,6 +258,7 @@
   border-radius: 30px;
   background-color: #f1f1f1;
   padding: 27px 20px 0;
+  margin: 0 0 -5px 0;
 }
 .i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container .b24-form-control-label,
 .i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container .b24-form-control-label,

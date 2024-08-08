@@ -513,6 +513,7 @@
   }
 }
 .i_blog-page .i_container .catalog-section .product-item-container .product-item .product-item-right .product-item-content .product-item-title span {
+  line-height: normal;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   cursor: text;

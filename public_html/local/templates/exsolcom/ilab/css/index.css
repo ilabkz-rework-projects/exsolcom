@@ -90,7 +90,6 @@ html[data-theme=dark] {
 }
 
 body {
-  position: relative;
   font-family: "Comfortaa", sans-serif; /* Укажите имя шрифта */
   line-height: 1;
   overflow-x: hidden;
@@ -2853,6 +2852,14 @@ body.lock {
 @media screen and (max-width: 478px) {
   .i_our-status .i_container .i_our-status-group-btn button {
     display: none;
+  }
+}
+.i_our-status .i_container .i_our-status-group-btn_1 {
+  display: none;
+}
+@media screen and (max-width: 478px) {
+  .i_our-status .i_container .i_our-status-group-btn_1 {
+    display: flex;
   }
 }
 .i_our-status .i_container .i_our-status-group-btn_1 a {

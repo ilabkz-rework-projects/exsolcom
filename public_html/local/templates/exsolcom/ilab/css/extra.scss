@@ -70,10 +70,11 @@
     bottom: 0;
     width: calc(100% - 0px);
     background-image: url("/local/templates/exsolcom/ilab/css/../img/svg/doth-vertical_downGrey.svg");
-    height: 12px;
+    height: 8px;
     right: 50%;
     transform: translateX(50%);
     background-size: 10px;
+    background-position-y: -5px;
   }
   //!SUBMIT HEADER BEFORE
   //SUBMIT HEADER
@@ -198,6 +199,7 @@
                   border-radius: 30px;
                   background-color: #f1f1f1;
                   padding: 27px 20px 0;
+                  margin: 0 0 -5px 0;
                 }
 
                 //!SUBMIT CONTENT FORM CONTROL TEXTAREA
