@@ -58,8 +58,12 @@ if ($arResult['ITEMS']):?>
 					     data-iblock_id="<?= $e['IBLOCK_ID'] ?>">
 						<span><?= Loc::getMessage('COMP_REMOVE', false, $l) ?></span></div>
 					<div class="ilab_c_i_block_compare">
-						<a class="ilab_c_i_image swiper-lazy<? if (!$e['PREVIEW_PICTURE']['SRC']) echo ' ilab_c_i_nophoto' ?>"
-						   href="<?= $e['DETAIL_PAGE_URL'] ?>"<? if ($e['PREVIEW_PICTURE']['SRC']) echo ' style="background-image: url(' . $e['PREVIEW_PICTURE']['SRC'] . ')"' ?>></a>
+                        <div class="i_image-programm-product-box">
+                            <a class="ilab_c_i_image swiper-lazy<? if (!$e['PREVIEW_PICTURE']['SRC']) echo ' ilab_c_i_nophoto' ?>"
+                               href="<?= $e['DETAIL_PAGE_URL'] ?>"<? if ($e['PREVIEW_PICTURE']['SRC']) echo ' style="background-image: url(' . $e['PREVIEW_PICTURE']['SRC'] . ')"' ?>></a>
+                        </div>
+                        <a class="ilab_c_i_name"
+                           href="<?= $e['DETAIL_PAGE_URL'] ?>"><? echo ($e['PROPERTIES']['I_NAME_' . strtoupper(LANGUAGE_ID)]['VALUE']) ? $e['PROPERTIES']['I_NAME_' . strtoupper(LANGUAGE_ID)]['VALUE'] : $e['NAME'] ?></a>
 						<div class="ilab_c_i_price i_item_price">
 							<div class="i_item_price">
 								<?if ($e['PROPERTIES']['I_PRICE']['VALUE']):
@@ -258,8 +262,7 @@ if ($arResult['ITEMS']):?>
 
 						</div>
 					</div>
-					<a class="ilab_c_i_name"
-					   href="<?= $e['DETAIL_PAGE_URL'] ?>"><? echo ($e['PROPERTIES']['I_NAME_' . strtoupper(LANGUAGE_ID)]['VALUE']) ? $e['PROPERTIES']['I_NAME_' . strtoupper(LANGUAGE_ID)]['VALUE'] : $e['NAME'] ?></a>
+
 				</div>
 			<? endforeach ?>
 			<!-- Product -->
@@ -308,6 +311,6 @@ if ($arResult['ITEMS']):?>
 ?>
 
 
-<? /*if($USER->isAdmin()):?>
+<?/*if($USER->isAdmin()):?>
 	<pre class="pre"><?print_r($arParams)?></pre>
-<?endif*/ ?>
+<?endif*/?>

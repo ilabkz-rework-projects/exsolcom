@@ -1,8 +1,7 @@
 /* ---------------------------------------------------------------------------------------------------- CompareModal */
 .ilab_compare {
-  background-color: white;
+  background-color: var(--bg-block);
   position: fixed;
-  border: 1px solid black;
   top: 20px; /*115px;*/
   bottom: 70px;
   right: 20px;
@@ -10,6 +9,8 @@
   padding: 30px 50px 30px 30px;
   overflow: hidden;
   z-index: 1001;
+  border-radius: 35px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
   /*display: none;*/
 }
 .ilab_compare .i_item .i_item_buy {
@@ -17,14 +18,16 @@
 }
 
 .ilab_compare_close {
-  background: url("/local/templates/exsolcom/ilab/modules/compare/img/svg/close.svg") no-repeat center center/22px;
+  background: url("../img/svg/closeModal-dark.svg") no-repeat center center/35px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 10px;
   z-index: 10;
+  background-color: var(--color-Grey);
   cursor: pointer;
   height: 50px;
   width: 50px;
+  border-radius: 50%;
 }
 
 .ilab_compare_result {
@@ -60,21 +63,20 @@
 }
 
 .ilab_c_ph_scroll {
-  background-color: #e2e2e9;
-  height: inherit;
+  background-color: #f1f1f1;
+  height: 10px;
   border-radius: 10px;
 }
 
 .ilab_c_ph_scroll div {
-  background-color: white;
-  border: 1px solid #cdcdd3;
+  background-color: var(--color-red);
+  border: 1px solid #E7E7E7;
   border-radius: 8px;
-  height: 16px;
-  top: -5px;
+  height: 10px;
+  top: 0;
 }
 
 .ilab_c_ph_scroll div:after {
-  content: "";
   position: absolute;
   box-shadow: 2px 0 0 0 #cdcdd3 inset, 4px 0 0 0 #FFF inset, 6px 0 0 0 #cdcdd3 inset, 8px 0 0 0 #FFF inset, 10px 0 0 0 #cdcdd3 inset;
   width: 10px;
@@ -152,9 +154,10 @@
   padding-top: 30px !important;
   position: absolute;
   top: 0;
-  left: 30px;
-  bottom: 30px;
-  right: 50px;
+  left: 40px;
+  bottom: 40px;
+  right: 70px;
+  overflow: hidden;
 }
 
 .ilab_c_pinfo,
@@ -168,15 +171,28 @@
 }
 
 .ilab_c_ct_product {
-  color: black;
+  color: var(--color-textInfoblock);
+  font-size: 2rem;
+  line-height: 150%;
 }
 
 .ilab_c_ct_incompare {
-  margin-top: 10px;
+  margin-top: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: #999999;
+  font-size: 0.938rem;
+}
+
+.ilab_c_ct_count {
+  font-size: 1.188rem;
+  padding: 15px 0 0 0;
+}
+.ilab_c_ct_count span {
+  color: var(--color-textInfoblock);
 }
 
 .ilab_c_characteristics_title {
-  font-size: 175%;
+  font-size: 1.563rem;
   color: #3e4249;
   position: absolute;
   bottom: -11px;
@@ -201,12 +217,17 @@
 
 .ilab_c_i_remove_compare {
   position: absolute;
-  right: 20px;
+  left: 0;
   top: 0;
   z-index: 1;
   display: inline-block;
-  padding: 5px 0 5px 25px;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDM0RDMwMDA3RDk3MTFFNkE4RUFFNjM0MTI1ODU0ODIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDM0RDMwMDE3RDk3MTFFNkE4RUFFNjM0MTI1ODU0ODIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpEMzREMkZGRTdEOTcxMUU2QThFQUU2MzQxMjU4NTQ4MiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpEMzREMkZGRjdEOTcxMUU2QThFQUU2MzQxMjU4NTQ4MiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pv2/tscAAAHDSURBVHjatJXPK0RRFMffk0xZmhErCiHGwpTdZN6CjcJWscA/YJqNFd4UxcaPP8AGC+uRldQo65GiIRG7ETNLxWZ8r763zlz3mUyc+sxt3rnn++4999zz3HK57Py11aufXO7K5msHU2AMdIEIeAX34BgcgiczKBaLOnUWsUawDS5AC1gGAyDEcYnPlX+H8yvMFG0G5xz7QAqcgRL9Jf5P0R8R862iDeAIZMA0KFRJXYHzMowL2UQ3mC//l+ei5t+B9YqDgrWBWdArJq9wTFuETF8S3DDHj3ql8+AAPItAl6vwLYI+/dqKrIY5uf0R5sbcVlqIOOIlacvLVPyo3H4HuA7Il16dBxIBgspUsffIlYZZ2EEHkaVg9oeDVClokqJFCjsBh+KxPj1xSKaFdT1r0QcQDRDUOfTE1m3C/eBW5vQUTICTAEHfyLFvKbdJHa9Fd8ElWBVl5QYcii/8cuuq+Qx9OVTrY5fa4h2eqaHb7TGfSbNLLbLF1XJNuxn/7e5/gHHmVt2u1ipiyr/P+SruPaj1vYA4SywPNsGwrj+OCT7Pc8txxjlmQ5H2BhaYY5X8NdBp6fyDqnnYtuD+xzfqU4ABAK/kb2COfBbgAAAAAElFTkSuQmCC") no-repeat left center;
+  padding: 5px 0 5px 26px;
+  background: url("../img/svg/closeModal-dark.svg") no-repeat left center/18px auto;
+  background-position: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: var(--color-Grey);
   cursor: pointer;
   font-size: 87.5%;
 }
@@ -214,15 +235,23 @@
 .ilab_c_i_remove_compare span {
   color: #1a1a18;
   border-bottom: 1px dashed;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin: 0 0 0 5px;
 }
 
 .ilab_c_i_block_compare {
   position: relative;
 }
 
+.i_image-programm-product-box {
+  display: flex;
+  justify-content: center;
+}
+
 .ilab_c_i_image {
-  width: 90px;
-  height: 90px;
+  width: 110px;
+  height: 110px;
   display: block;
   border-radius: 2px;
   background-repeat: no-repeat;
@@ -241,6 +270,14 @@
 
 .ilab_c_i_price .i_item_price {
   margin-bottom: 0 !important;
+}
+
+.ilab_c_i_price .i_item_price .i_pr_min .i_price {
+  color: var(--color-red);
+  font-size: 1.188rem;
+}
+.ilab_c_i_price .i_item_price .i_pr_min .i_currency {
+  color: var(--color-textInfoblock);
 }
 
 .ilab_c_i_price {
@@ -275,6 +312,9 @@
   line-height: 1.3em;
   height: 2.6em;
   overflow: hidden;
+  font-size: 1.188rem;
+  text-decoration: none;
+  color: var(--color-textInfoblock);
 }
 
 .ilab_c_i_more_info {
