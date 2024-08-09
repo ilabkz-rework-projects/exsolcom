@@ -247,12 +247,21 @@ else
 					);
 				}
                 ?>
+				<?
+				// Извлекаем параметр sort из URL
+				$sortOrder = isset($_GET['sort']) ? $_GET['sort'] : 'desc'; // По умолчанию убывание
+//				echo $sortOrder;
+				?>
                 <div class="i_programm-catalog">
                     <div class="i_programm-compare-box">
                         <span class="i_but_ac i_open_compare j_open_compare">
                             Сравнить
                         </span>
                     </div>
+	                <div class="i_programm-sort">
+		                <div class="i_programm-sort-title"><span>Отсортировать по</span></div>
+		                <div class="i_programm-sort-value <?=$sortOrder === 'asc' ? 'asc' : 'desc'?>"><a href="/programm-products?sort=<?=$sortOrder === 'asc' ? 'desc' : 'asc'?>"><span>Цена</span></a></div>
+	                </div>
                 <?
 				$intSectionID = $APPLICATION->IncludeComponent(
 					"bitrix:catalog.section",

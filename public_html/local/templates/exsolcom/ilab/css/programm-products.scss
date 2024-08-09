@@ -434,6 +434,7 @@
             height: 40%;
             top: 15%;
             transform: translateY(-50%);
+            border-radius: 100%;
             @media screen and (max-width: 1330px){
               width: 45%;
               height: 48%;
@@ -471,10 +472,11 @@
           content: " ";
           position: absolute;
           top: -135px;
-          bottom: -115px;
+          bottom: -15px;
           right: -95px;
           left: -95px;
           background-color: transparent;
+
           @media screen and (max-width: 480px){
             top: -145px;
             bottom: 45px;

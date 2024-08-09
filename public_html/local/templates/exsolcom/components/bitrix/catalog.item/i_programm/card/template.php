@@ -37,8 +37,6 @@ while($ob = $res->Fetch())
 	$price = $ob['PROPERTY_I_PRICE_VALUE'];
 }
 
-
-
 ?>
 	<div class="programm-item"  data-id="<?= $item['ID'] ?>" >
 		<div class="product-item-img">
