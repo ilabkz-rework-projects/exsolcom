@@ -316,6 +316,19 @@ html[data-theme='dark']{
         }
       }
       //!PROGRAMMS TITLE
+
+
+      //PROGRAMM CONTAINER
+      .programm-container{
+        .i_programm-catalog{
+          .i_programm-compare-box{
+            .i_but_ac:before{
+              background-image: url("../img/svg/separate-icon_2_grey.svg");
+            }
+          }
+        }
+      }
+      //!PROGRAMM CONTAINER
       //PRODUCT ITEM CONTAINER
       .product-item-container{
         .product-item,

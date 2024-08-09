@@ -248,9 +248,11 @@ else
 				}
                 ?>
                 <div class="i_programm-catalog">
-	                <span class="i_but_ac i_open_compare j_open_compare">
-						Сравнение
-					</span>
+                    <div class="i_programm-compare-box">
+                        <span class="i_but_ac i_open_compare j_open_compare">
+                            Сравнить
+                        </span>
+                    </div>
                 <?
 				$intSectionID = $APPLICATION->IncludeComponent(
 					"bitrix:catalog.section",

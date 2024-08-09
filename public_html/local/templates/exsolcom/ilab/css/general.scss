@@ -789,6 +789,9 @@ p{
   }
   .bx_sitemap{
     width: 30%;
+    @media screen and (max-width: 1000px){
+      width: 21%;
+    }
     @media screen and (max-width: 760px){
       width: 100%
     }
@@ -823,9 +826,15 @@ p{
         background-position: center center;
         background-color: #ffffff;
         background-size: 50% 50%;
-        @media screen and (max-width: 480px){
+        @media screen and (max-width: 1000px){
+          left: -6px;
           width: 18px;
           height: 18px;
+        }
+        @media screen and (max-width: 480px){
+          left: 0px;
+          width: 15px;
+          height: 15px;
           transform: translate(50%, -50%);
         }
       }
@@ -860,12 +869,12 @@ p{
         }
         @media screen and (max-width: 760px){
           padding: 5px 0;
-          max-width: 225px;
+          max-width: 235px;
           //margin: 20px 10px 0 0;
-          flex-basis: 31%;
+          flex-basis: 32%;
         }
-        @media screen and (max-width: 480px){
-          max-width: 210px;
+        @media screen and (max-width: 530px){
+          max-width: 240px;
           //margin: 20px 10px 0 0;
           flex-basis: 48%;
           height: 42px;
@@ -887,10 +896,14 @@ p{
             border: 1px solid #d9d9d9;
             width: 20px;
             height: 20px;
-            @media screen and (max-width: 480px){
-              background-size: 10px;
+            @media screen and (max-width: 1000px){
               width: 18px;
               height: 18px;
+            }
+            @media screen and (max-width: 480px){
+              background-size: 10px;
+              width: 15px;
+              height: 15px;
             }
           }
           background-color: var(--color-circlesSecond);
@@ -931,7 +944,7 @@ p{
           position: absolute;
           top: -15px;
           bottom: -15px;
-          right: -15px;
+          right: -75px;
           left: -65px;
           background-color: transparent;
         }
@@ -939,9 +952,12 @@ p{
           line-height: unset;
           margin: 0;
           padding: 0px 15px 0px 60px;
+          @media screen and (max-width: 1000px){
+            padding: 0 15px 0 35px;
+          }
 
           @media screen and (max-width: 760px){
-            padding: 0px 10px 0px 50px;
+            padding: 0px 10px 0px 35px;
           }
           @media screen and (max-width: 480px){
             padding: 0px 10px 5px 35px;
