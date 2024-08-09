@@ -50,8 +50,6 @@ if ($item['DATE_ACTIVE_FROM']) {
 	$formattedDate = sprintf('%d %s %d', $day, $month, $year);
 }
 
-
-
 $arFilter = array(
 	'IBLOCK_ID' => 2,
 );

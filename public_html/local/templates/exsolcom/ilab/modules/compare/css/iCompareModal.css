@@ -164,7 +164,7 @@
 }
 
 .ilab_c_pinfo {
-  height: 275px;
+  height: 275px !important;
 }
 
 .ilab_c_ct_product {
@@ -191,7 +191,7 @@
   padding: 0 20px;
   box-sizing: border-box;
   /*DELETE*/
-  height: 200px;
+  height: 200px !important;
   flex-direction: column;
 }
 
@@ -318,7 +318,9 @@
 .ilab_c_prop_name,
 .ilab_c_prop_value,
 .ilab_c_prop_empty {
-  width: 260px;
+  width: 100%;
+  max-width: 260px;
+  min-width: 260px;
   padding: 10px 20px;
   box-sizing: border-box;
   display: table-cell;
