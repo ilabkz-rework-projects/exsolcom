@@ -142,7 +142,7 @@ html[data-theme=dark] .i_main .i_contacts .i_contacts-title .i_contacts-title-ic
   background-image: url("../img/svg/contacts-icon_b.svg");
 }
 html[data-theme=dark] .i_main .i_contacts .i_contacts-content .i_contacts-info .i_contacts-info-title .i_contacts-info-icon .i_contacts-info-pic {
-  background-image: url("../img/svg/logo-exsolcome-icon_w.svg");
+  background-image: url("../img/svg/logo-exsolcome-icon_w-rotate.svg");
 }
 html[data-theme=dark] .i_main .i_contacts .i_contacts-content .i_contacts-info .i_contacts-info-title .i_contacts-info-desc .i_contacts-info-item.address .i_contacts-info-item-icon {
   background-image: url("../img/svg/contacts-icon_b.svg");
