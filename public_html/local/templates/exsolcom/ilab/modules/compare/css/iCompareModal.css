@@ -38,10 +38,10 @@
 .ilab_c_pag_hor {
   position: absolute;
   width: 100%;
-  top: 275px;
+  top: 255px;
   left: 0;
   z-index: 1;
-  padding: 0 50px 0 290px;
+  padding: 0 70px 0 290px;
   box-sizing: border-box;
   height: 5px;
 }
@@ -94,7 +94,7 @@
   z-index: 5;
   padding: 305px 0 30px;
   box-sizing: border-box;
-  width: 5px;
+  width: 10px;
 }
 
 .ilab_c_pv_top {
@@ -113,21 +113,20 @@
 }
 
 .ilab_c_pv_scroll {
-  background-color: #e2e2e9;
+  background-color: #E7E7E7;
   height: inherit;
   border-radius: 10px;
 }
 
 .ilab_c_pv_scroll div {
-  background-color: white;
-  border: 1px solid #cdcdd3;
+  background-color: #ff161f;
+  border: 1px solid #e7e7e7;
   border-radius: 8px;
-  width: 16px;
-  left: -5px;
+  width: 10px;
+  left: 0px;
 }
 
 .ilab_c_pv_scroll div::after {
-  content: "";
   position: absolute;
   box-shadow: 0 2px 0 0 #cdcdd3 inset, 0 4px 0 0 #FFF inset, 0 6px 0 0 #cdcdd3 inset, 0 8px 0 0 #FFF inset, 0 10px 0 0 #cdcdd3 inset;
   width: 8px;
@@ -337,6 +336,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
+  overflow: hidden;
 }
 
 .ilab_c_property .swiper-slide {
@@ -358,16 +358,16 @@
 .ilab_c_prop_name,
 .ilab_c_prop_value,
 .ilab_c_prop_empty {
+  font-family: "Open Sans", sans-serif;
   width: 100%;
   max-width: 260px;
   min-width: 260px;
-  padding: 10px 20px;
+  padding: 15px 20px;
   box-sizing: border-box;
   display: table-cell;
 }
 
 .ilab_c_prop_value:before {
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -396,13 +396,21 @@
   width: 300px;
 }
 
-.ilab_c_nproperty .swiper-slide {
+.ilab_c_property .swiper-slide {
   height: auto;
   padding: 0;
 }
 
-.ilab_c_nproperty .swiper-slide:nth-child(odd) {
-  background-color: #F2F2F2;
+.ilab_c_property .swiper-slide:nth-child(odd) {
+  background-color: #F5F5F5;
+}
+
+.ilab_c_property .swiper-slide:nth-child(1) {
+  border-radius: 30px 30px 0 0;
+}
+
+.ilab_c_property .swiper-slide:nth-last-child(-n+1) {
+  border-radius: 0 0 30px 30px;
 }
 
 /*-------------------------------------------------- Compare mbuy */

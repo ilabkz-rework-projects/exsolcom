@@ -186,6 +186,9 @@ html[data-theme=dark] .i_main .i_programms .i_programms-title .i_programms-title
 html[data-theme=dark] .i_main .i_programms .programm-container .i_programm-catalog .i_programm-compare-box .i_but_ac:before {
   background-image: url("../img/svg/separate-icon_2_grey.svg");
 }
+html[data-theme=dark] .i_main .i_programms .programm-container .i_programm-catalog .i_programm-sort .i_programm-sort-value:before {
+  background-image: url("../img/svg/separate-icon_black.svg");
+}
 html[data-theme=dark] .i_main .i_programms .product-item-container .product-item:hover:before,
 html[data-theme=dark] .i_main .i_programms .product-item-container .programm-item:hover:before {
   transition: all 0.4s ease;

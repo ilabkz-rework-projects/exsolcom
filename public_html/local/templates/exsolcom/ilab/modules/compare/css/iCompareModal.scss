@@ -36,11 +36,11 @@
 .ilab_c_pag_hor {
 	position: absolute;
 	width: 100%;
-	top: 275px;
+	top: 255px;
 	left: 0;
 	z-index: 1;
 
-	padding: 0 50px 0 290px;
+	padding: 0 70px 0 290px;
 	box-sizing: border-box;
 
 	height: 5px;
@@ -92,7 +92,7 @@
 	padding: 305px 0 30px;
 	box-sizing: border-box;
 
-	width: 5px;
+	width: 10px;
 }
 .ilab_c_pv_top {
 	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MUNEQ0IwQzc3RTFDMTFFNjlGNTREMzMyQjlBMjM5NDMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MUNEQ0IwQzg3RTFDMTFFNjlGNTREMzMyQjlBMjM5NDMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxQ0RDQjBDNTdFMUMxMUU2OUY1NEQzMzJCOUEyMzk0MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxQ0RDQjBDNjdFMUMxMUU2OUY1NEQzMzJCOUEyMzk0MyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pv89UTYAAAMjSURBVHjavFZfSFNRGN/dIrBIRz1kkU/9M9RVLjBwsMApIkzE8EURlorMJvXSZA0JlrpN12Abqzd7s8cEn0QMGo7pyrm5B7EgZBYZQbGEEEawfmds63S8d/cutg78+F3u/c73O9+533fOx6XTadn/HkekGPX09Cjlcnm3QqHQga+CzwGVeN4HfwJvgpfBL30+X1LMH1co0q6urtNw9AgO74ArwDKwjDD9TPEB+Dn4sdvt/irkVy70obOzsxe0DdwFKiTuHLEzAe/MZnOv5Eg7Ojo4rNQOWEgEPNEUijTPWTgBq8PhSIv90xngQYlyxgIogDHB7W1vb+8roWBumK1Wax+vaFtbmxLkK8LZfhG23vHxcSVfpA+Bk1I8aLXaN7Ozs7/q6uriEkVPZf3/SaTW1lYlx3GfSVlQSSDjSySdThceGBi4jrlHMfen3+//sLW1pRJIpAzgO1NO4LMTExPJXKTdUsoCgms5wcyKOe746Ojo+fr6+k2J5dRNb69ObAb+ORFszAnmtwrCJpPpokThFlpUXcgSWb02ODh4gxWkxjGj0UiEYyKialq0WsgKh8VqVvCvmk6lUu9Z4eHh4UsQjhYQraZFK/ks9Hr96tDQUBMrGI1GAyMjIxcSiUSQFcYCLzc0NGwIiFbRovs8h30IDprYA2R9fT3g8Xi0yFw5MrF5d3f3kLDBYKhVqVQRodrOOfzCfIwhaW6yguFwOCNI59HU1FQzX8T9/f1XwB+Z93u0KLuqa5FIZIV+EQqFXnu9Xi3fpeF0Ookwa/8WVMPYRmjRZdaTzWbTxmKxAHkOBoNE8Fahe9nlcml2dnZWsoKB+fl5vgW+ok+kKtTbHt+JpNFoNrCtjRKvtrRard6Ix+NqgRPpDPLgR/4+RfFP48OY2DFY5H1Ki05PTk5a2APfAXwvUy/2DXAeumWWlpZIQ3WvTKL3EWWS9xJfXFycAz0pseCM3W6fE2vMSGvhKpGgM9uySGtB0Q324ef7AeU/JFISMKGMXhTVgi4sLJAtqQWeAQcSIyN2T8k8IUHRZpvp8G8jipZsh18DnChLh1+u8VuAAQAebg7h0tWZdQAAAABJRU5ErkJggg==');
@@ -107,19 +107,19 @@
 	display: none!important
 }
 .ilab_c_pv_scroll {
-	background-color: #e2e2e9;
+	background-color: #E7E7E7;
 	height: inherit;
 	border-radius: 10px;
 }
 .ilab_c_pv_scroll div {
-	background-color: white;
-	border: 1px solid #cdcdd3;
+	background-color: #ff161f;
+	border: 1px solid #e7e7e7;
 	border-radius: 8px;
-	width: 16px;
-	left: -5px;
+	width: 10px;
+	left: 0px;
 }
 .ilab_c_pv_scroll div::after {
-	content: '';
+	//content: '';
 	position: absolute;
 	box-shadow: 0 2px 0 0 #cdcdd3 inset, 0 4px 0 0 #FFF inset, 0 6px 0 0 #cdcdd3 inset, 0 8px 0 0 #FFF inset, 0 10px 0 0 #cdcdd3 inset;
 	width: 8px;
@@ -311,6 +311,7 @@
 	position: absolute;
 	left: 0;
 	bottom: 0;
+	overflow: hidden;
 }
 .ilab_c_property .swiper-slide {
 	height: auto;
@@ -328,15 +329,16 @@
 .ilab_c_prop_name,
 .ilab_c_prop_value,
 .ilab_c_prop_empty {
+	font-family: "Open Sans", sans-serif;
 	width: 100%;
 	max-width: 260px;
 	min-width: 260px;
-	padding: 10px 20px;
+	padding: 15px 20px;
 	box-sizing: border-box;
 	display: table-cell;
 }
 .ilab_c_prop_value:before {
-	content: '';
+	//content: '';
 	position: absolute;
 	top:0;left:0;
 	background-color: #e3e2e7;
@@ -363,11 +365,14 @@
 	left: 30px;
 	width: 300px;
 }
-.ilab_c_nproperty .swiper-slide {
+.ilab_c_property .swiper-slide {
 	height: auto;
 	padding: 0;
 }
-.ilab_c_nproperty .swiper-slide:nth-child(odd) { background-color: #F2F2F2 }
+.ilab_c_property .swiper-slide:nth-child(odd) { background-color: #F5F5F5; }
+.ilab_c_property .swiper-slide:nth-child(1) { border-radius: 30px 30px 0 0; }
+.ilab_c_property .swiper-slide:nth-last-child(-n + 1) { border-radius: 0 0 30px 30px; }
+
 
 
 /*-------------------------------------------------- Compare mbuy */

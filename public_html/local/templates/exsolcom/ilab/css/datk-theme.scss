@@ -326,6 +326,11 @@ html[data-theme='dark']{
               background-image: url("../img/svg/separate-icon_2_grey.svg");
             }
           }
+          .i_programm-sort{
+            .i_programm-sort-value:before{
+              background-image: url("../img/svg/separate-icon_black.svg");
+            }
+          }
         }
       }
       //!PROGRAMM CONTAINER

@@ -253,15 +253,18 @@ else
 //				echo $sortOrder;
 				?>
                 <div class="i_programm-catalog">
-                    <div class="i_programm-compare-box">
-                        <span class="i_but_ac i_open_compare j_open_compare">
-                            Сравнить
-                        </span>
+                    <div class="i_programm-sorting-group">
+                        <div class="i_programm-sort">
+                            <div class="i_programm-sort-title"><span>Сортировать </span></div>
+                            <div class="i_programm-sort-value <?=$sortOrder === 'asc' ? 'asc' : 'desc'?>"><a href="/programm-products?sort=<?=$sortOrder === 'asc' ? 'desc' : 'asc'?>"><span>по цене</span></a></div>
+                        </div>
+
+                        <div class="i_programm-compare-box">
+                            <span class="i_but_ac i_open_compare j_open_compare">
+                                Сравнить
+                            </span>
+                        </div>
                     </div>
-	                <div class="i_programm-sort">
-		                <div class="i_programm-sort-title"><span>Отсортировать по</span></div>
-		                <div class="i_programm-sort-value <?=$sortOrder === 'asc' ? 'asc' : 'desc'?>"><a href="/programm-products?sort=<?=$sortOrder === 'asc' ? 'desc' : 'asc'?>"><span>Цена</span></a></div>
-	                </div>
                 <?
 				$intSectionID = $APPLICATION->IncludeComponent(
 					"bitrix:catalog.section",
