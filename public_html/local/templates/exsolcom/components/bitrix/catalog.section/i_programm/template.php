@@ -751,7 +751,7 @@ if (!isset($arParams['HIDE_SECTION_DESCRIPTION']) || $arParams['HIDE_SECTION_DES
 	}else{
 		?>
 		<div class="i_programm-list-empty">
-			<span>Элемент отсутствует.</span>
+			<span>Элементы отсутствуют.</span>
 		</div>
 		<?}?>
 </div>
