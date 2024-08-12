@@ -923,6 +923,33 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			item.classList.toggle('visible');
 		});
 	});
+
+	document.querySelectorAll('.i_item_compare').forEach((item) => {
+		item.addEventListener('click', ()=>{
+			let btn = item.querySelector('.j_item_compare');
+			let dataID = btn.getAttribute('data-id');
+
+			let modal = item.querySelector('.i_success')
+
+			modal.classList.add('show')
+
+			document.querySelectorAll('.i_item_compare').forEach((subitem) => {
+				let subbtn = subitem.querySelector('.j_item_compare');
+				let subdataID = subbtn.getAttribute('data-id');
+				let submodal = subitem.querySelector('.i_success')
+
+				if(subdataID !== dataID){
+					submodal.classList.remove('show')
+				}
+			})
+
+
+			setTimeout(()=>{
+				modal.classList.remove('show')
+			},8000)
+		})
+	})
+
 });
 
 

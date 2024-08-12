@@ -522,11 +522,15 @@
             padding: 10px 25px;
             @media screen and (max-width: 1250px){
               padding: 10px 20px;
-              font-size: 14px;
+              font-size: 0.875rem;
+            }
+            @media screen and (max-width: 600px){
+              padding: 6px 12px;
+              font-size: 0.688rem;
             }
             @media screen and (max-width: 480px){
-              padding: 6px 12px;
-              font-size: 11px;
+              padding: 10px 20px;
+              font-size: 0.75rem;
             }
             &:hover{
               background-color: var(--bg-buttonHoverFirst);

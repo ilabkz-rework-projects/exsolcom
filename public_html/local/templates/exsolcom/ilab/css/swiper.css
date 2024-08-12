@@ -583,13 +583,19 @@
 @media screen and (max-width: 1250px) {
   .i_products .i_container .swiper-slide .swiper-detail .swiper-detail-btn button {
     padding: 10px 20px;
-    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .i_products .i_container .swiper-slide .swiper-detail .swiper-detail-btn button {
+    padding: 6px 12px;
+    font-size: 0.688rem;
   }
 }
 @media screen and (max-width: 480px) {
   .i_products .i_container .swiper-slide .swiper-detail .swiper-detail-btn button {
-    padding: 6px 12px;
-    font-size: 11px;
+    padding: 10px 20px;
+    font-size: 0.75rem;
   }
 }
 .i_products .i_container .swiper-slide .swiper-detail .swiper-detail-btn button:hover {

@@ -66,12 +66,17 @@ while($ob = $res->Fetch())
 			</div>
 		</div>
 		<div class="i_item_compare">
-			<div class="i_compare_succes j_compare_success idnone" data-id="<?=$e['ID']?>">
-				<div class="i_submodal_arrow"></div>
-				<div class="i_bs_close j_cs_close"></div>
-				<div class="j_me1"><?=GetMessage('COMPARE_ONE')?></div>
-				<div class="j_me2"><?=GetMessage('COMPARE_SUCCES')?></div>
-			</div>
+<!--			<div class="i_compare_succes j_compare_success idnone" data-id="--><?php //=$e['ID']?><!--">-->
+<!--				<div class="i_submodal_arrow"></div>-->
+<!--				<div class="i_bs_close j_cs_close"></div>-->
+<!--				<div class="j_me1">--><?php //=GetMessage('COMPARE_ONE')?><!--</div>-->
+<!--				<div class="j_me2">--><?php //=GetMessage('COMPARE_SUCCES')?><!--</div>-->
+<!--			</div>-->
+            <div class="i_compare_succes j_compare_success idnone" data-id="131954" style="display: block; opacity: 1;">
+                <div class="i_bs_close j_cs_close"></div>
+                <div class="j_me1" style="display: none;">Товар добавлен в <span class="i_comp_upper"> сравнение</span> что бы посмотреть список сравнение, добавьте хотя бы ещё один товар.</div>
+                <div class="j_me2" style="">Товар был добавлен в <span class="i_comp_upper">сравнение</span><div class="i_open_compare i_but_ac i_w100per j_open_compare">Сравнить</div></div>
+            </div>
 			<a class="i_compare_but j_item_compare" data-iblock_id="<?=9?>" data-id="<?=$item['ID']?>" data-change_text='{"txt_default":"Сравнить","txt_change":"Удалить"}'>
 				<span>Сравнить</span>
 			</a>
