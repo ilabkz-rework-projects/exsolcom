@@ -35,10 +35,17 @@ if( $arResult['ITEMS'] ):
 		$arResult['I_PRODUCT_ID'][] = $e['ID'];
 	}
 
+
+//	ИСКЛЮЧЕНИЯ
+
+$ipc = [
+	'I_CONTENT_LINK',
+];
+
 // -------------------------------------------------- PROPERTY
 	$propertyIterator = Iblock\PropertyTable::getList(Array(
 		'select'	=> array('ID', 'IBLOCK_ID', 'NAME', 'CODE', 'PROPERTY_TYPE'),
-		'filter'	=> array('=IBLOCK_ID'=>$arParams['IBLOCK_ID'], '=ACTIVE'=>'Y', '!=PROPERTY_TYPE'=>Iblock\PropertyTable::TYPE_FILE),//'=CODE'=>'I_!%'
+		'filter'	=> array('=IBLOCK_ID'=>$arParams['IBLOCK_ID'], '=ACTIVE'=>'Y', '!=PROPERTY_TYPE'=>Iblock\PropertyTable::TYPE_FILE, '!=CODE'=>$ipc),//'=CODE'=>'I_!%'
 		'order'		=> array('SORT'=>'ASC', 'NAME'=>'ASC')
 	));
 	while($ob = $propertyIterator->fetch())

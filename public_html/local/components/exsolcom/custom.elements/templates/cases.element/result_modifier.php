@@ -29,7 +29,6 @@ $arFilter = array(
 
 $dbRes = CIBlockElement::GetList(array(), $arFilter, false, false, array("*", "UF_*"));
 
-
 while($arRes = $dbRes->Fetch()) {
 	$arResult['ELEMENT'][$arRes['ID']] = $arRes;
 	$arResult['ELEMENT'][$arRes['ID']]['IMAGES'] = CFile::GetPath($arRes['PREVIEW_PICTURE']);

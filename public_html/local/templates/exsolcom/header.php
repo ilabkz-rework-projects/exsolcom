@@ -15,7 +15,7 @@ $main = CSite::InDir(SITE_DIR.'index.php');
 	$APPLICATION->ShowHead();
 	$APPLICATION->ShowPanel();
 	?>
-	<title><?$APPLICATION->ShowTitle()?></title>
+	<title><?$APPLICATION->ShowTitle('')?></title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
@@ -296,16 +296,16 @@ $main = CSite::InDir(SITE_DIR.'index.php');
                 </div>
                 <!--HEADER BOTTOM_BREADCRUMBS MAIN-->
                 <?$APPLICATION->IncludeComponent(
-                    "bitrix:breadcrumb",
-                    "i_breadcrumbs",
-                    array(
-                        "PATH" => "",
-                        "SITE_ID" => "en",
-                        "START_FROM" => "0",
-                        "COMPONENT_TEMPLATE" => "i_breadcrumbs"
-                    ),
-                    false
-                );?>
+	"bitrix:breadcrumb", 
+	"i_breadcrumbs", 
+	array(
+		"PATH" => "",
+		"SITE_ID" => "en",
+		"START_FROM" => "0",
+		"COMPONENT_TEMPLATE" => "i_breadcrumbs"
+	),
+	false
+);?>
             </div>
             <!--!HEADER BOTTOM_BREADCRUMBS-->
 		</div>
