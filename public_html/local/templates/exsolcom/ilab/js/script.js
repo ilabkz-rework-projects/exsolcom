@@ -933,6 +933,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	showElse?.addEventListener('click', () => {
 		programmList.forEach(item => {
 			item.classList.toggle('visible');
+			showElse.classList.add('idn');
 		});
 	});
 
