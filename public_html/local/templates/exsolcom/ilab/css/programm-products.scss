@@ -333,6 +333,35 @@
         }
       }
 
+      .i_programm-list-empty{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 70px 0;
+        @media screen and (max-width: 1000px){
+          padding: 60px 0;
+        }
+        @media screen and (max-width: 580px){
+          grid-column: 1/2 span;
+        }
+        @media screen and (max-width: 480px){
+          padding: 40px 0;
+        }
+        span{
+          background-color: var(--color-circlesHover);
+          padding: 12px 22px;
+          border-radius: 35px;
+          font-size: 1.125rem;
+          color: var(--color-black);
+          font-family: "Comfortaa", sans-serif;
+          @media screen and (max-width: 1000px){
+            font-size: 1rem;
+          }
+          @media screen and (max-width: 480px){
+            font-size: 0.875rem;
+          }
+        }
+      }
       @media screen and (max-width: 1270px){
         gap: 20px;
         .product-item-small-card{
