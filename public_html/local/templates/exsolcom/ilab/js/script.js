@@ -37,9 +37,9 @@ window.addEventListener('DOMContentLoaded', function () {
 				activeSlide.classList.add("swiper-slide-active");
 			},
 		},
-		breakpoints:{
-			360:{
-				slidesPerView:1,
+		breakpoints: {
+			360: {
+				slidesPerView: 1,
 				coverflowEffect: {
 					rotate: 0,
 					stretch: -10,
@@ -48,8 +48,8 @@ window.addEventListener('DOMContentLoaded', function () {
 					slideShadows: false
 				},
 			},
-			480:{
-				slidesPerView:2,
+			480: {
+				slidesPerView: 2,
 				coverflowEffect: {
 					rotate: 0,
 					stretch: -12,
@@ -58,8 +58,8 @@ window.addEventListener('DOMContentLoaded', function () {
 					slideShadows: false
 				},
 			},
-			760:{
-				slidesPerView:3,
+			760: {
+				slidesPerView: 3,
 				coverflowEffect: {
 					rotate: 0,
 					stretch: -14,
@@ -68,8 +68,8 @@ window.addEventListener('DOMContentLoaded', function () {
 					slideShadows: false
 				},
 			},
-			1000:{
-				slidesPerView:4,
+			1000: {
+				slidesPerView: 4,
 				coverflowEffect: {
 					rotate: 0,
 					stretch: -16,
@@ -78,7 +78,7 @@ window.addEventListener('DOMContentLoaded', function () {
 					slideShadows: false
 				},
 			},
-			1330:{
+			1330: {
 				slidesPerView: "auto",
 				coverflowEffect: {
 					rotate: 0,
@@ -313,8 +313,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	});
 
 
-
-
 	// Получаем данные для модальных окон
 	const servicesItems = document.querySelectorAll('.i_services-modal-item');
 	const projectsItems = document.querySelectorAll('.i_projects-element__item');
@@ -434,18 +432,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 					const img = data.IMAGE
 
-					if(!content){
+					if (!content) {
 						modalKp.querySelector('.i_modal-content').innerHTML = data.PREVIEW_TEXT;
-					}else{
+					} else {
 						modalKp.querySelector('.i_modal-content').innerHTML = content;
 					}
 
 					modalKp.querySelector('.i_modal-footer-price').classList.remove('idn')
 					modalKp.querySelector('.i_modal-img').innerHTML = `<img src="${img}" />`;
 
-					if(data.PRICE !== null){
+					if (data.PRICE !== null) {
 						modalKp.querySelector('.i_modal-footer-price').innerHTML = `<span>${data.PRICE} ₸<span class="text">(электронная версия)</span></span>`;
-					}else{
+					} else {
 						modalKp.querySelector('.i_modal-footer-price').innerHTML = `<span>Цена по запросу</span>`;
 					}
 
@@ -505,7 +503,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			modalKp.classList.remove('active')
 		})
 	})
-	
+
 	formKpCloseBtn.addEventListener('click', (event) => {
 		submitModal.classList.remove('active')
 		overlay.classList.remove('active')
@@ -549,6 +547,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			vacationBtn.classList.add('idn')
 			modalKpFooter.classList.remove('idn')
 			formVcModal.classList.remove('active')
+		}
+
+		console.log(event.target.closest('.i_header-burger'))
+
+		// if(!event.target.classList.contains('i_side-menu') || !event.target.closest('.i_side-menu')
+		// 	&& !event.target.classList.contains('i_header-burger') || !event.target.closest('.i_header-burger')){
+		// 	sideMenu.classList.remove('show')
+		// }
+
+		if(
+			(!event.target.classList.contains('i_header-burger') && !event.target.closest('.i_header-burger')
+			&&
+			((!event.target.classList.contains('.i_side-menu') && !event.target.closest('.i_side-menu'))))
+		){
+			sideMenu.classList.remove('show')
 		}
 	})
 
@@ -622,7 +635,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 					let content = data.CONTENT;
 					content = content !== false ? content.replace(/<\?[\s\S]*?\?>/g, '') : false;
 
-					if(content){
+					if (content) {
 						// Регулярное выражение для поиска <div class="i_modal-preview">...</div>
 						const modalPreviewRegex = /<div class="i_modal-preview">[\s\S]*?<\/div>/;
 						const modalPreviewContentRegex = /<span class="i_modal-preview-content">[\s\S]*?<\/span>/;
@@ -637,14 +650,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
 						let modalPreviewContentEnding = '';
 						let otherContent = '';
 
-						if(matchPreviewContent){
+						if (matchPreviewContent) {
 							// Совпадение найдено
 							modalPreviewContentContent = matchPreviewContent[0];
 							// Остальной контент
 							otherContent = content.replace(modalPreviewContentContent, '').trim();
 						}
 
-						if(matchPreviewEnding){
+						if (matchPreviewEnding) {
 							// Совпадение найдено
 							modalPreviewContentEnding = matchPreviewEnding[0];
 							// Остальной контент
@@ -656,7 +669,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 							modalPreviewContent = matchPreview[0];
 							// Остальной контент
 							otherContent = content.replace(modalPreviewContent, '').trim();
-						} else{
+						} else {
 							// Совпадение не найдено, все содержимое остается в otherContent
 							otherContent = content;
 						}
@@ -670,7 +683,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 						modal.querySelectorAll('.i_modal-content #form-kp-btn').forEach(item => {
-							item.addEventListener('click', ()=>{
+							item.addEventListener('click', () => {
 								modal.classList.remove('active')
 								modalKp.classList.remove('active')
 								submitModal.classList.remove('active')
@@ -685,7 +698,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 							})
 						})
 
-					}else{
+					} else {
 						modal.querySelector('.i_modal-content').innerHTML = data.PREVIEW_TEXT
 						modal.querySelector('.i_modal-header-content').innerHTML = data.NAME
 					}
@@ -695,7 +708,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		})
 	})
 
-	function openDetailModal(item, detailItem){
+	function openDetailModal(item, detailItem) {
 		item.addEventListener('click', () => {
 			fetch('/local/templates/exsolcom/ilab/ajax/getProjectElementModalContent.php', {
 				method: 'POST',
@@ -721,15 +734,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 					content = content !== false ? content.replace(/<\?[\s\S]*?\?>/g, '') : false;
 
-					if(!content){
+					if (!content) {
 						modalKp.querySelector('.i_modal-content').innerHTML = data.PREVIEW_TEXT;
-					}else{
+					} else {
 						modalKp.querySelector('.i_modal-content').innerHTML = content;
 					}
 
 					modalKp.querySelector('.i_modal-img').innerHTML = `<img src="${data.IMAGE}" alt="${data.NAME}">`
 
-					if(!detailItem){
+					if (!detailItem) {
 						footerKpBtn.classList.add('idn')
 						footerKpBtnSecond.classList.add('idn')
 						footerProgrammBtn.classList.remove('idn')
@@ -758,7 +771,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			// Получаем значение параметра programm_id
 			const programmId = params.get('programm_id');
 
-			if(programmId){
+			if (programmId) {
 				modal.classList.remove('active')
 				submitModal.classList.remove('active')
 				formKpModal.classList.remove('active')
@@ -785,15 +798,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 						const img = data.IMAGE
 
-						if(!content){
+						if (!content) {
 							modalKp.querySelector('.i_modal-content').innerHTML = data.PREVIEW_TEXT;
-						}else{
+						} else {
 							modalKp.querySelector('.i_modal-content').innerHTML = content;
 						}
 
-						if(data.PRICE){
+						if (data.PRICE) {
 							modalKp.querySelector('.i_modal-footer-price').classList.remove('idn')
-						}else{
+						} else {
 							modalKp.querySelector('.i_modal-footer-price').classList.add('idn')
 						}
 
@@ -846,20 +859,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 	//при изменении размера окна высота элементов .product-item будет автоматически подстраиваться под их ширину.
-    const programm = {
-        programmItems: document.querySelectorAll('.programm-item'),
-        resize: function (){
-            this.programmItems.forEach((product) => {
-                const width = product.getBoundingClientRect().width;
-                product.style.height = `${width}px`;
-            });
-        }
-    };
+	const programm = {
+		programmItems: document.querySelectorAll('.programm-item'),
+		resize: function () {
+			this.programmItems.forEach((product) => {
+				const width = product.getBoundingClientRect().width;
+				product.style.height = `${width}px`;
+			});
+		}
+	};
 
-    window.addEventListener('resize', () => programm.resize());
+	window.addEventListener('resize', () => programm.resize());
 
-    programm.resize();
-
+	programm.resize();
 
 
 	//находим динамическую кномпу развернуть список
@@ -911,87 +923,95 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		}
 	});
 
-	observer.observe(document.body, { childList: true, subtree: true });
+	observer.observe(document.body, {childList: true, subtree: true});
 
 	//Обьявляем переменные для раскрытия программных продуктов
 
 	const showElse = document.querySelector('.show-else');
 	const programmList = document.querySelectorAll('.product-item-list-col-3');
 
-	showElse?.addEventListener('click', () =>{
+	showElse?.addEventListener('click', () => {
 		programmList.forEach(item => {
 			item.classList.toggle('visible');
 		});
 	});
 
 	document.querySelectorAll('.i_item_compare').forEach((item) => {
-		item.addEventListener('click', ()=>{
+		item.addEventListener('click', () => {
 			let btn = item.querySelector('.j_item_compare');
 			let dataID = btn.getAttribute('data-id');
+			let modal = item.querySelector('.j_compare_success')
 
-			let modal = item.querySelector('.i_success')
+			if(!btn.classList.contains('i_item_compare_act') && modal.classList.contains('hd')){
+				modal.classList.remove('hd')
+			}else if(modal.classList.contains('hd') && btn.classList.contains('i_item_compare_act')){
+				modal.classList.add('hd')
+			}else{
+				modal.classList.add('hd')
+			}
 
-			modal.classList.add('show')
+
+
 
 			document.querySelectorAll('.i_item_compare').forEach((subitem) => {
 				let subbtn = subitem.querySelector('.j_item_compare');
 				let subdataID = subbtn.getAttribute('data-id');
-				let submodal = subitem.querySelector('.i_success')
+				let submodal = subitem.querySelector('.j_compare_success')
 
-				if(subdataID !== dataID){
-					submodal.classList.remove('show')
+				if (subdataID !== dataID) {
+					submodal.classList.add('hd')
 				}
 			})
 
-
-			setTimeout(()=>{
-				modal.classList.remove('show')
-			},8000)
+			setTimeout(() => {
+				modal.classList.add('hd')
+			}, 8000)
 		})
 	})
 
 });
 
 
-$(document).ready(function (){
+$(document).ready(function () {
 	// ---------------------------------------------------------------------------------------------------- [Compare]
-	if( $.fn.ilab )
-	{
+	if ($.fn.ilab) {
 		$.ilab('InputHidden', {
 			compare: {
-				input : true,
-				update_button : true,
-				button_class : '.j_item_compare',
-				change_class : 'i_item_compare_act',
-				change_text : { class : 'span' }
+				input: true,
+				update_button: true,
+				button_class: '.j_item_compare',
+				change_class: 'i_item_compare_act',
+				change_text: {class: 'span'}
 			},
-			onBefore : function( o, f ) {},
-			onAfter : function( o, f ) {}
+			onBefore: function (o, f) {
+			},
+			onAfter: function (o, f) {
+			}
 		});
-		$('body').on('click', '.j_item_compare', function(){
+		$('body').on('click', '.j_item_compare', function () {
 			$('.j_favorite_success').hide();
 			$(this).ilab('CompareToggle', {
-				loader_class : 'i_item_compare_load',
-				change_class : 'i_item_compare_act',
-				change_text : { class : 'span' },
-				remove_second : true,
-				button_class : '.j_item_compare',
-				onBefore : function( o, f ) {
+				loader_class: 'i_item_compare_load',
+				change_class: 'i_item_compare_act',
+				change_text: {class: 'span'},
+				remove_second: true,
+				button_class: '.j_item_compare',
+				onBefore: function (o, f) {
 				},
-				onAfter : function( o, f ) {}
+				onAfter: function (o, f) {
+				}
 			});
 			return false;
 		});
-		$('body').on('click', '.j_open_compare', function(){
+		$('body').on('click', '.j_open_compare', function () {
 			var c = $('.j_compare');
 
-			if( c.length )
+			if (c.length)
 				c.find('.j_compare_close').click();
-			else
-			{
+			else {
 				$.ilab('CompareModal', {
-					onAfter: function(){
-						if( typeof(i_buy_buttom)=='function' )
+					onAfter: function () {
+						if (typeof (i_buy_buttom) == 'function')
 							i_buy_buttom();
 					}
 				});

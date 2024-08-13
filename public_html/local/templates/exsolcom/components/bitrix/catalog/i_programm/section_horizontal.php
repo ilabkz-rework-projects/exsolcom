@@ -255,8 +255,15 @@ else
                 <div class="i_programm-catalog">
                     <div class="i_programm-sorting-group">
                         <div class="i_programm-sort">
-                            <div class="i_programm-sort-title"><span>Сортировать </span></div>
-                            <div class="i_programm-sort-value <?=$sortOrder === 'asc' ? 'asc' : 'desc'?>"><a href="/programm-products?sort=<?=$sortOrder === 'asc' ? 'desc' : 'asc'?>"><span>по цене</span></a></div>
+                            <div class="i_programm-sort-title"><span>Сортировать по цене: </span></div>
+	                        <div class="i_programm-sort-items">
+		                        <div class="i_programm-sort-item asc">
+			                        <a href="/programm-products?sort=desc"><span>Сначала дешевле </span></a>
+		                        </div>
+		                        <div class="i_programm-sort-item desc">
+			                        <a href="/programm-products?sort=asc"><span>Сначала дороже </span></a>
+		                        </div>
+	                        </div>
                         </div>
 
                         <div class="i_programm-compare-box">

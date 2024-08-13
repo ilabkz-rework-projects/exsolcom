@@ -922,7 +922,7 @@
 				_F._hide();
 				_F._cSSS_message(cs);
 
-				cs.fadeIn().delay(10000).fadeOut(400);
+				// cs.fadeIn().delay(10000).fadeOut(400);
 			} else
 				return false;
 		},
@@ -982,7 +982,7 @@
 		// Закрытие СПС окон
 		_hide : function ()
 		{
-			$('.j_compare_success, .j_compare_one').clearQueue().stop().fadeOut(400);// очистка очереди
+			// $('.j_compare_success, .j_compare_one').clearQueue().stop().fadeOut(400);// очистка очереди
 		},
 		// Закрытие модальных окон
 		_close : function () {
@@ -1270,7 +1270,7 @@
 		$('body')
 		// Закрытие окна succes покупки
 		.on('click', '.j_cs_close', function(){
-			$('.j_compare_success, .j_compare_one').stop().fadeOut(400);// FADEOUT(очистка очереди)
+			// $('.j_compare_success, .j_compare_one').stop().fadeOut(400);// FADEOUT(очистка очереди)
 		})
 // Close CompareModal
 		.on('click', '.j_compare_close', function(){

@@ -130,6 +130,7 @@
   right: -55px;
   left: -15px;
   position: absolute;
+  z-index: 20;
 }
 .programm-container .i_programm-catalog .i_programm-sorting-group .i_programm-sort .i_programm-sort-value a span {
   position: relative;
@@ -474,6 +475,20 @@
   border-radius: 30px;
   background-color: var(--color-Grey);
 }
+.programm-container .i_programm-catalog .product-item-container .programm-item .i_item_compare .i_compare_succes .j_me1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+}
+.programm-container .i_programm-catalog .product-item-container .programm-item .i_item_compare .i_compare_succes .j_me1 .i_comp_upper {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-textInfoblock);
+  text-transform: uppercase;
+}
 .programm-container .i_programm-catalog .product-item-container .programm-item .i_item_compare .i_compare_succes .j_me2 {
   display: flex;
   font-size: 0.875rem;
@@ -527,8 +542,9 @@
 .programm-container .i_programm-catalog .product-item-container .programm-item .i_item_compare .i_compare_but {
   position: relative;
 }
-.programm-container .i_programm-catalog .product-item-container .programm-item .i_item_compare span {
-  color: transparent;
+.programm-container .i_programm-catalog .product-item-container .programm-item .i_item_compare .i_compare_but span {
+  opacity: 0;
+  visibility: hidden;
 }
 .programm-container .i_programm-catalog .product-item-container .programm-item:hover {
   transition: all 0.4s ease;

@@ -121,6 +121,7 @@
               right: -55px;
               left: -15px;
               position: absolute;
+              z-index: 20;
             }
             span{
               position: relative;
@@ -473,6 +474,20 @@
               border-radius: 30px;
               background-color: var(--color-Grey);
             }
+            .j_me1{
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+              font-family: "Open Sans", sans-serif;
+              font-size: 0.875rem;
+              .i_comp_upper{
+                font-family: "Comfortaa", sans-serif;
+                font-size: 1rem;
+                font-weight: 600;
+                color: var(--color-textInfoblock);
+                text-transform: uppercase;
+              }
+            }
             .j_me2{
               display: flex;
               font-size: 0.875rem;
@@ -525,10 +540,10 @@
           }
           .i_compare_but{
             position: relative;
-          }
-          span{
-            color: transparent;
-
+            span{
+              opacity: 0;
+              visibility: hidden;
+            }
           }
         }
         &:hover{
