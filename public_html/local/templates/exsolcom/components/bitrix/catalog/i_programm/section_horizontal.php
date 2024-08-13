@@ -257,10 +257,10 @@ else
                         <div class="i_programm-sort">
                             <div class="i_programm-sort-title"><span>Сортировать по цене: </span></div>
 	                        <div class="i_programm-sort-items">
-		                        <div class="i_programm-sort-item asc">
+		                        <div class="i_programm-sort-item asc <?=$sortOrder === 'asc' ? 'active' : ''?>">
 			                        <a href="/programm-products?sort=asc"><span>Сначала дешевле </span></a>
 		                        </div>
-		                        <div class="i_programm-sort-item desc">
+		                        <div class="i_programm-sort-item desc <?=$sortOrder === 'desc' ? 'active' : ''?>">
 			                        <a href="/programm-products?sort=desc"><span>Сначала дороже </span></a>
 		                        </div>
 	                        </div>
