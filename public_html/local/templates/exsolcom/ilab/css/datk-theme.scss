@@ -327,11 +327,13 @@ html[data-theme='dark']{
             }
           }
           .i_programm-sort{
-            .i_programm-sort-value.asc:before{
-              background-image: url("../img/svg/separate-icons/icon-separate-up_b.svg");
-            }
-            .i_programm-sort-value.desc:before{
-              background-image: url("../img/svg/separate-icons/icon-separate-down_b.svg");
+            .i_programm-sort-items{
+              .i_programm-sort-item.asc:before{
+                background-image: url("../img/svg/separate-icon_black.svg");
+              }
+              .i_programm-sort-item.desc:before{
+                background-image: url("../img/svg/separate-icons/separate-icon_b_rotate.svg");
+              }
             }
           }
         }
