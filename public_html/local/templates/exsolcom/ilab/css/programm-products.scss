@@ -45,16 +45,41 @@
         gap: 50px;
         max-width: 695px;
         width: 100%;
+        overflow: hidden;
         @media screen and (max-width: 1330px){
-          max-width: 280px;
+          max-width: 567px;
           padding: 12px 25px;
-          gap: 40px;
+          gap: 20px;
         }
+        @media screen and (max-width: 1100px){
+          flex-direction: column;
+          align-items: start;
+          max-width: 360px;
+          padding: 12px 15px;
+          gap: 15px;
+          border-radius: 20px;
+        }
+        @media screen and (max-width: 1100px){
+          max-width: 360px;
+        }
+        @media screen and (max-width: 590px){
+          align-items: start;
+          max-width: 315px;
+        }
+        @media screen and (max-width: 390px){
+          max-width: 309px;
+          padding: 12px 10px;
+        }
+
         .i_programm-sort-title{
+          @media screen and (max-width: 1100px){
+            padding: 0 0 12px 0;
+          }
           span{
             font-size: 1rem;
             color: var(--color-White);
             cursor: text;
+            text-wrap: nowrap;
             @media screen and (max-width: 1330px){
               font-size: 0.875rem;
             }
@@ -63,6 +88,13 @@
           .i_programm-sort-items{
             display: flex;
             gap: 70px;
+            @media screen and (max-width: 1330px){
+              gap: 48px;
+            }
+            @media screen and (max-width: 390px){
+              gap: 45px;
+            }
+
 
             .i_programm-sort-item.asc:before{
               content: " ";
@@ -77,6 +109,11 @@
               top: 50%;
               right: -11%;
               transform: translate(50%, -60%);
+              @media screen and (max-width: 590px){
+                background-size: 9px;
+                width: 10px;
+                height: 15px;
+              }
             }
             .i_programm-sort-item.desc:before{
               content: " ";
@@ -91,13 +128,71 @@
               top: 50%;
               right: -11%;
               transform: translate(50%, -60%);
+              @media screen and (max-width: 590px){
+                background-size: 9px;
+                width: 10px;
+                height: 15px;
+              }
             }
             .i_programm-sort-item{
               position: relative;
+              &.active{
+                &:after{
+                  content: " ";
+                  background-color: var(--color-red);
+                  position: absolute;
+                  width: 208px;
+                  height: 50px;
+                  top: 50%;
+                  right: 50%;
+                  transform: translate(56%, -50%);
+                  @media screen and (max-width: 1330px){
+                    width: 184px;
+                    height: 40px;
+                    transform: translate(56%, -50%);
+                  }
+                  @media screen and (max-width: 1100px){
+                    width: 185px;
+                    height: 40px;
+                    transform: translate(55%, -50%);
+                  }
+                  @media screen and (max-width: 590px){
+                    width: 160px;
+                    height: 40px;
+                    transform: translate(54%, -50%);
+                  }
+                  @media screen and (max-width: 390px){
+                    width: 155px;
+                    height: 40px;
+                    transform: translate(55%, -50%);
+                  }
+
+                }
+              }
+
+              a:before{
+                position: absolute;
+                content: " ";
+                top: -15px;
+                bottom: -15px;
+                right: -36px;
+                left: -18px;
+                z-index: 10;
+              }
               a{
+                position: relative;
                 text-decoration: none;
                 span{
                   color: var(--color-White);
+                  text-wrap: nowrap;
+                  position: relative;
+                  z-index: 2;
+                  @media screen and (max-width: 1330px){
+                    font-size: 0.875rem;
+                  }
+                  @media screen and (max-width: 590px){
+                    font-size: 0.75rem;
+                  }
                 }
               }
             }
@@ -210,7 +305,7 @@
           height: 40px;
           font-size: 0.875rem;
         }
-        @media screen and (max-width: 480px){
+        @media screen and (max-width: 590px){
           display: none;
         }
       }
