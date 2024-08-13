@@ -964,9 +964,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				}
 			})
 
-			setTimeout(() => {
-				modal.classList.add('hd')
-			}, 8000)
+			// setTimeout(() => {
+			// 	modal.classList.add('hd')
+			// }, 8000)
 		})
 	})
 
