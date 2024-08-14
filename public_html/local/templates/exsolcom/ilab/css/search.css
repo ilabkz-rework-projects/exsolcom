@@ -60,6 +60,12 @@
     width: unset;
   }
 }
+.i_search .i_container .search-page .search-language-guess {
+  color: var(--color-black);
+}
+.i_search .i_container .search-page .search-language-guess a {
+  color: var(--color-red);
+}
 .i_search .i_container .search-page .i_search-content {
   padding: 70px 0;
 }

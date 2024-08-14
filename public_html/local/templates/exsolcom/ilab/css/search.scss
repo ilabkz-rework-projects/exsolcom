@@ -52,6 +52,12 @@
       }
     }
     .search-page{
+      .search-language-guess{
+        color: var(--color-black);
+        a{
+          color: var(--color-red);
+        }
+      }
       .i_search-content{
         padding: 70px 0;
         @media screen and (max-width: 1330px){

@@ -547,7 +547,7 @@ body.lock {
   transition: all 0.4s ease;
   background-color: var(--color-circlesHover);
   cursor: pointer;
-  background-image: url(../img/svg/lupa-icon_b.svg);
+  background-image: url("../img/svg/lupa-icon_r.svg");
 }
 .i_header .i_container .i_header-right .i_header-more .i_header-circles {
   width: 50px;

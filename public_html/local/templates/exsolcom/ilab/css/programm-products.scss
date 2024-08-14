@@ -348,6 +348,7 @@
           padding: 40px 0;
         }
         span{
+          cursor: text;
           background-color: var(--color-circlesHover);
           padding: 12px 22px;
           border-radius: 35px;
@@ -1080,6 +1081,7 @@
         font-size: 32px;
         font-weight: 400;
         color: var(--color-black);
+        cursor: text;
         @media screen and (max-width: 1330px){
           font-size: 28px;
         }

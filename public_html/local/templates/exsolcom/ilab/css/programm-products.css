@@ -385,6 +385,7 @@
   }
 }
 .programm-container .i_programm-catalog .catalog-section .i_programm-list-empty span {
+  cursor: text;
   background-color: var(--color-circlesHover);
   padding: 12px 22px;
   border-radius: 35px;
@@ -1164,6 +1165,7 @@
   font-size: 32px;
   font-weight: 400;
   color: var(--color-black);
+  cursor: text;
 }
 @media screen and (max-width: 1330px) {
   .i_programms .i_programms-title .i_programms-title-name span {
