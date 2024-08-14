@@ -747,9 +747,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 						footerKpBtnSecond.classList.add('idn')
 						footerProgrammBtn.classList.remove('idn')
 
+						console.log(data)
+
 						// навешиваем обработчик на кнопку для перехода на страницу с программным продуктом
 						footerProgrammBtn.addEventListener('click', () => {
-							window.location.href = `http://new.exsolcom.kz/programm-products/?programm_id=${data.PROGRAMM_LINK !== null ? data.PROGRAMM_LINK : ''}`
+							window.location.href = `http://new.exsolcom.kz/programm-products/?product=${data.PROGRAMM_LINK !== null ? data.PROGRAMM_LINK : ''}`
 						})
 					}
 				})
@@ -769,7 +771,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			const params = new URLSearchParams(url.search);
 
 			// Получаем значение параметра programm_id
-			const programmId = params.get('programm_id');
+			const programmId = params.get('product');
 
 			if (programmId) {
 				modal.classList.remove('active')
@@ -789,7 +791,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 					headers: {
 						'Content-Type': 'application/json'
 					},
-					body: JSON.stringify({id: programmId})
+					body: JSON.stringify({code: programmId})
 				})
 					.then(response => response.json())
 					.then(data => {

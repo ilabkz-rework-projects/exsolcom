@@ -22,7 +22,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			$arResult['NAME'] = $ob['NAME'];
 			$arResult['IMAGE'] = CFile::GetPath($ob['PREVIEW_PICTURE']);
 			$arResult['PREVIEW_TEXT'] = $ob['PREVIEW_TEXT'];
-			$arResult['PROGRAMM_LINK'] = $ob['PROPERTY_I_PROGRAMM_LINK_VALUE'];
+
+			$resProgramm = CIBlockElement::GetList([], ['IBLOCK_ID' => 9, 'ID' => $ob['PROPERTY_I_PROGRAMM_LINK_VALUE']], false, false, ['PROPERTY_I_CONTENT_LINK', 'ID', 'CODE' , 'NAME', 'PREVIEW_PICTURE', 'DETAIL_PICTURE', 'PREVIEW_TEXT', 'PROPERTY_I_PRICE']);
+
+			while($programmOb = $resProgramm->Fetch()){
+				$arResult['PROGRAMM_LINK'] = $programmOb['CODE'];
+			}
 		}
 	}
 

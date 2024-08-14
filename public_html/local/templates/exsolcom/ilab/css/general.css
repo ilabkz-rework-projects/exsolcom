@@ -31,11 +31,11 @@ button:hover svg {
   color: var(--color-red) !important;
 }
 
-span {
+main span {
   transition: all 0.4s ease;
   color: var(--color-black);
 }
-span:hover {
+main span:hover {
   cursor: pointer;
   color: var(--color-red);
 }
@@ -1710,6 +1710,10 @@ div.title-search-result {
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s ease;
+}
+
+.title-search-result {
+  display: none !important;
 }
 
 /*# sourceMappingURL=general.css.map */
