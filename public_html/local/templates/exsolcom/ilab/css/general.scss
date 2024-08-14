@@ -1757,7 +1757,35 @@ p{
 // !BLOG
 
 // TITLE SEARCH RESULT
+div.title-search-result{
+  outline: none;
+  border: none !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  left: 50% !important;
+  transform: translateX(-109%);
+  @media screen and (max-width: 1620px){
+    left: 0!important;
+    right: 50% !important;
+    transform: translateX(14%);
+  }
+  @media screen and (max-width: 1330px){
+    transform: translateX(13%);
+  }
+  @media screen and (max-width: 760px){
+    transform: translateX(13%);
+    width: 80% !important;
+  }
+
+}
 .title-search-result{
+  top: 57px;
+  left: 60px;
+  width: 645px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+
   //left: 237px !important;
 }
 // !TITLE SEARCH RESULT
