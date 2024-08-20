@@ -57,8 +57,12 @@
   justify-content: flex-start;
 }
 .i_about-us .i_about-company .i_about-company-first .i_about-company-title .i_about-company-title-name span {
+  cursor: text;
   font-size: 32px;
   font-weight: 400;
+}
+.i_about-us .i_about-company .i_about-company-first .i_about-company-title .i_about-company-title-name span:hover {
+  color: var(--color-black);
 }
 .i_about-us .i_about-company .i_about-company-first .i_about-company-title .i_about-company-title-name span .color-title-name-red {
   color: var(--color-red);
@@ -167,6 +171,10 @@
 .i_about-us .i_about-company .i_about-company-strategy .i_about-company-strategy-title .i_about-company-strategy-title-name span {
   font-size: 32px;
   font-weight: 400;
+  cursor: text;
+}
+.i_about-us .i_about-company .i_about-company-strategy .i_about-company-strategy-title .i_about-company-strategy-title-name span:hover {
+  color: var(--color-black);
 }
 @media screen and (max-width: 1330px) {
   .i_about-us .i_about-company .i_about-company-strategy .i_about-company-strategy-title .i_about-company-strategy-title-name span {
@@ -311,6 +319,10 @@
 .i_about-us .i_directorship .i_directorship-title .i_directorship-title-name span {
   font-size: 32px;
   font-weight: 400;
+  cursor: text;
+}
+.i_about-us .i_directorship .i_directorship-title .i_directorship-title-name span:hover {
+  color: var(--color-black);
 }
 @media screen and (max-width: 1330px) {
   .i_about-us .i_directorship .i_directorship-title .i_directorship-title-name span {
@@ -888,6 +900,10 @@
 .i_about-us .i_team .i_team-title .i_team-title-name span {
   font-size: 32px;
   font-weight: 400;
+  cursor: text;
+}
+.i_about-us .i_team .i_team-title .i_team-title-name span:hover {
+  color: var(--color-black);
 }
 @media screen and (max-width: 1330px) {
   .i_about-us .i_team .i_team-title .i_team-title-name span {
@@ -1098,6 +1114,10 @@
 .i_about-us .i_certificates .i_certificates-group-title .i_certificates-group-title-name span {
   font-size: 32px;
   font-weight: 400;
+  cursor: text;
+}
+.i_about-us .i_certificates .i_certificates-group-title .i_certificates-group-title-name span:hover {
+  color: var(--color-black);
 }
 @media screen and (max-width: 1330px) {
   .i_about-us .i_certificates .i_certificates-group-title .i_certificates-group-title-name span {
@@ -1354,6 +1374,10 @@
 .i_about-us .i_work-process .i_container .i_work-process-title .i_work-process-title-name span {
   font-size: 32px;
   font-weight: 400;
+  cursor: text;
+}
+.i_about-us .i_work-process .i_container .i_work-process-title .i_work-process-title-name span:hover {
+  color: var(--color-black);
 }
 @media screen and (max-width: 1330px) {
   .i_about-us .i_work-process .i_container .i_work-process-title .i_work-process-title-name span {
@@ -1754,6 +1778,10 @@
 .i_about-us .i_seo .i_seo-title .i_seo-title-name span {
   font-size: 32px;
   font-weight: 400;
+  cursor: text;
+}
+.i_about-us .i_seo .i_seo-title .i_seo-title-name span:hover {
+  color: var(--color-black);
 }
 @media screen and (max-width: 1330px) {
   .i_about-us .i_seo .i_seo-title .i_seo-title-name span {

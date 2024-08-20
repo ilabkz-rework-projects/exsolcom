@@ -15,6 +15,7 @@ html {
   --bg-seventh: #000000;
   --bg-check-box: #191A1A;
   --color-black: #000000;
+  --color-white-hover: #ffffff;
   --color-circles: #000000;
   --color-circlesHover: #f5f5f5;
   --color-circleIcon: #ffffff;
@@ -58,6 +59,7 @@ html[data-theme=dark] {
   --bg-seventh: #EFEFEF;
   --bg-check-box: #f9f9f9;
   --color-black: #ffffff;
+  --color-white-hover: #cdcdcd;
   --color-circles: #E1E1E1;
   --color-circlesHover: #1E1E1E;
   --color-circleIcon: #000000;

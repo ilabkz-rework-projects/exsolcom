@@ -1,3 +1,12 @@
+.i_cases {
+  margin: 50px 0;
+}
+.i_cases .i_container .i_projects-title .i_projects-title-name span {
+  cursor: text;
+}
+.i_cases .i_container .i_projects-title .i_projects-title-name span:hover {
+  color: var(--color-black);
+}
 .i_cases .i_container .i_cases-title {
   display: flex;
   align-items: center;
@@ -67,6 +76,11 @@
   max-width: 134px;
   width: 60%;
   height: 60%;
+}
+@media screen and (max-width: 640px) {
+  .i_cases .i_container .i_projects-section .i_projects-section__item .i_projects-section__item__img {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=cases.css.map */

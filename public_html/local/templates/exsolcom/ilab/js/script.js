@@ -874,6 +874,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	window.addEventListener('resize', () => programm.resize());
 
 	programm.resize();
+	//при изменении размера окна высота элементов .product-item будет автоматически подстраиваться под их ширину.
+	const projects = {
+		projectsItems: document.querySelectorAll('.i_projects-item'),
+		resize: function () {
+			this.projectsItems.forEach((project) => {
+				const width = project.getBoundingClientRect().width;
+				project.style.height = `${width}px`;
+			});
+		}
+	};
+
+	window.addEventListener('resize', () => projects.resize());
+
+	projects.resize();
 
 
 	//находим динамическую кномпу развернуть список

@@ -70,7 +70,6 @@
       justify-content: center;
       max-width: 745px;
       width: 48%;
-      height: max-content;
       border-radius: 30px;
       padding: 30px;
       background-color: var(--color-blockHv);
@@ -153,7 +152,9 @@
         //VACATION ITEM RIGHT NAME
         .i_vacantion-item-name{
           span{
+            text-wrap: wrap;
             font-size: 18px;
+            font-weight: 600;
             line-height: 22px;
             color: var(--color-textInfoblock);
           }
@@ -271,7 +272,9 @@
                 //VACATION ITEM RIGHT NAME
                 .i_vacantion-item-name{
                   span{
+                    text-wrap: wrap;
                     font-size: 16px;
+                    font-weight: 600;
                     line-height: 18px;
                     color: var(--color-textInfoblock);
                     @media screen and (max-width: 360px){

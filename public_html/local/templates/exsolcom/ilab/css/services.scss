@@ -1,3 +1,18 @@
+.i_services:before{
+  content: " ";
+  transition: all 0.4s ease;
+  background-image: url("/local/templates/exsolcom/ilab/css/../img/svg/bg-element-light_2.svg");
+  background-repeat: no-repeat;
+  background-position-x: 125%;
+  background-position-y: 15%;
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  right: -110px;
+  z-index: -1;
+  top: 60%;
+  transform: rotate(45deg);
+}
 .i_services{
   min-height: 42vh;
   .i_services-title{
@@ -56,6 +71,9 @@
     justify-content: space-between;
     gap: 20px;
     margin-top: 50px;
+    @media screen and (max-width: 980px){
+      gap: 15px;
+    }
     @media screen and (max-width: 480px){
       gap: 15px;
     }
@@ -74,14 +92,17 @@
     transition: all .4s ease;
     min-height: 470px;
     @media screen and (max-width: 1060px){
-      width: 48%;
-      min-height: 400px;
+      width: 31%;
     }
-    @media screen and (max-width: 540px){
-      width: 47%;
+    @media screen and (max-width: 750px){
+      width: 48%;
+      min-height: 340px;
     }
     @media screen and (max-width: 480px){
       padding: 15px;
+    }
+    @media screen and (max-width: 420px){
+      width: 47%;
     }
     @media screen and (max-width: 390px){
       padding: 5px;
@@ -131,11 +152,11 @@
       }
     }
     &:hover{
-      background-color: var(--bg-hover-cards);
+      background-color: var(--color-white-hover);
       box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
 
       .i_services-name{
-        a{
+        b{
           color: var(--color-red);
         }
       }

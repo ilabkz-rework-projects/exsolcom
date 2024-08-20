@@ -60,6 +60,10 @@
           display: flex;
           justify-content: flex-start;
           span{
+            cursor: text;
+            &:hover{
+              color: var(--color-black);
+            }
             .color-title-name-red{
               color: var(--color-red);
             }
@@ -164,6 +168,10 @@
           span{
             font-size: 32px;
             font-weight: 400;
+            cursor: text;
+            &:hover{
+              color: var(--color-black);
+            }
             @media screen and (max-width: 1330px){
               font-size: 28px;
             }
@@ -304,6 +312,10 @@
         span{
           font-size: 32px;
           font-weight: 400;
+          cursor: text;
+          &:hover{
+            color: var(--color-black);
+          }
           @media screen and (max-width: 1330px){
             font-size: 28px;
           }
@@ -925,6 +937,10 @@
         span{
           font-size: 32px;
           font-weight: 400;
+          cursor: text;
+          &:hover{
+            color: var(--color-black);
+          }
           @media screen and (max-width: 1330px){
             font-size: 28px;
           }
@@ -1219,6 +1235,10 @@
         span{
           font-size: 32px;
           font-weight: 400;
+          cursor: text;
+          &:hover{
+            color: var(--color-black);
+          }
           @media screen and (max-width: 1330px){
             font-size: 28px;
           }
@@ -1470,6 +1490,10 @@
           span{
             font-size: 32px;
             font-weight: 400;
+            cursor: text;
+            &:hover{
+              color: var(--color-black);
+            }
             @media screen and (max-width: 1330px){
               font-size: 28px;
             }
@@ -2027,6 +2051,10 @@
         span{
           font-size: 32px;
           font-weight: 400;
+          cursor: text;
+          &:hover{
+            color: var(--color-black);
+          }
           @media screen and (max-width: 1330px){
             font-size: 28px;
           }

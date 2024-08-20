@@ -59,18 +59,22 @@
 .i_projects-section{
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  //justify-content: flex-start;
   flex-wrap: wrap;
   margin-top: 80px;
   gap: 40px;
   @media screen and (max-width: 1593px){
     gap: 40px;
   }
-  @media screen and (max-width: 1230px){
-    gap: 30px;
+  @media screen and (max-width: 1330px){
+    gap: 20px;
+    justify-content: space-between;
   }
   @media screen and (max-width: 760px){
-    gap: 20px;
+    gap: 15px;
+  }
+  @media screen and (max-width: 560px){
+    gap: 10px;
   }
   @media screen and (max-width: 360px){
     gap: 16px;
@@ -78,48 +82,50 @@
   .i_projects-section__item{
     //width: calc(100%/6 - 30px);
     max-width: 220px;
-    width: 16vw;
-    height: 11vw;
-    min-height: 220px;
+    width: 14%;
+    //height: 11vw;
+    //min-height: 220px;
     @media screen and (max-width: 1593px) {
-      width: 14%;
+      //width: 14%;
     }
 
     @media screen and (max-width: 1460px){
-      width: 17%;
+      //width: 17%;
     }
 
     @media screen and (max-width: 1330px){
-      min-height: 214px;
+      //min-height: 214px;
+      width: 18%;
     }
     @media screen and (max-width: 1230px){
-      width: 22%;
+      //width: 22%;
     }
     @media screen and (max-width: 1000px){
-      min-height: 204px;
+      //min-height: 204px;
+      width: 22%;
     }
     @media screen and (max-width: 900px){
-      width: 30%;
-      min-height: 220px;
+      //width: 30%;
+      //min-height: 220px;
     }
-    @media screen and (max-width: 700px){
-
-      min-height: 193px;
+    @media screen and (max-width: 760px){
+      width: 30%;
+      //min-height: 193px;
     }
     @media screen and (max-width: 640px){
 
-      min-height: 160px;
+      //min-height: 160px;
     }
-    @media screen and (max-width: 575px){
-
-      min-height: 160px;
+    @media screen and (max-width: 560px){
+      width: 31%;
+      //min-height: 160px;
     }
-    @media screen and (max-width: 530px){
-      width: 46%;
-      min-height: 160px;
+    @media screen and (max-width: 480px){
+      width: 47%;
     }
     a{
-      width: 220px;
+      max-width: 220px;
+      width: 100%;
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -131,22 +137,22 @@
       font-size: 0.875rem;
       position: relative;
       @media screen and (max-width: 1330px){
-        width: 214px;
+        max-width: 214px;
       }
       @media screen and (max-width: 1000px){
-        width: 204px;
+        max-width: 204px;
       }
       @media screen and (max-width: 900px){
-        width: 220px;
+        max-width: 220px;
       }
       @media screen and (max-width: 700px){
-        width: 193px;
+        //max-width: 193px;
       }
       @media screen and (max-width: 640px){
-        width: 160px;
+        //max-width: 190px;
       }
       @media screen and (max-width: 575px){
-        width: 160px;
+        //max-width: 160px;
       }
       &:hover{
         background-color: var(--color-circlesThird);
@@ -179,11 +185,14 @@
     //PROJECTS SECTION ITEM NAME
     .i_projects-section__item__name{
       padding: 0 35px;
+      @media screen and (max-width: 640px){
+        padding: 0 35px 30px 35px;
+      }
       span{
         font-size: 12px;
         font-weight: 600;
-        @media screen and (max-width: 700px){
-          font-weight: 500;
+        @media screen and (max-width: 680px){
+          //font-weight: 500;
           font-size: 0.7em;
         }
       }
