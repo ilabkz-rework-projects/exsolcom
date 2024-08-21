@@ -72,6 +72,9 @@
     width: unset;
   }
 }
+.i_cases .i_container .i_projects-section {
+  margin-top: 30px;
+}
 .i_cases .i_container .i_projects-section .i_projects-section__item .i_projects-section__item__img {
   max-width: 134px;
   width: 60%;
