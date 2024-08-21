@@ -38,11 +38,11 @@ while($ob = $res->Fetch())
 }
 
 ?>
-	<div class="programm-item"  data-id="<?= $item['ID'] ?>" >
+	<div class="programm-item"  data-id="<?= $item['CODE'] ?>" >
 		<div class="product-item-img">
 			<img src="<?= $item['PREVIEW_PICTURE']['SRC'] ?>" alt="img">
 		</div>
-		<div class="product-item-title" id="modal-kp" data-id="<?= $item['ID'] ?>">
+		<div class="product-item-title" id="modal-kp" data-id="<?= $item['CODE'] ?>">
 			<span><?= $item['NAME'] ?></span>
 		</div>
 		<div class="product-item-detail">

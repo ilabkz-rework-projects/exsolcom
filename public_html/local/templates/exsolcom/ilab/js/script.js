@@ -402,53 +402,56 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		documentBody.classList.remove('lock')
 	})
 
-	modalKpBtn.forEach(item => {
-		item.addEventListener('click', () => {
-			modal.classList.remove('active')
-			submitModal.classList.remove('active')
-			formKpModal.classList.remove('active')
-			modalKp.classList.add('active')
-			overlay.classList.add('active')
-			footerKpBtn.classList.remove('idn')
-			footerKpBtnSecond.classList.remove('idn')
-			documentBody.classList.add('lock')
-			vacationBtn.classList.add('idn')
-			modalKpFooter.classList.remove('idn')
+	function openModalKp(item){
+		modal.classList.remove('active')
+		submitModal.classList.remove('active')
+		formKpModal.classList.remove('active')
+		modalKp.classList.add('active')
+		overlay.classList.add('active')
+		footerKpBtn.classList.remove('idn')
+		footerKpBtnSecond.classList.remove('idn')
+		documentBody.classList.add('lock')
+		vacationBtn.classList.add('idn')
+		modalKpFooter.classList.remove('idn')
 
-			modalKp.querySelector('.i_modal-content').innerHTML = '';
+		modalKp.querySelector('.i_modal-content').innerHTML = '';
 
-			// Добавляем контент на страницу
-			fetch('/local/templates/exsolcom/ilab/ajax/getModalKpContent.php', {
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify({id: item.getAttribute('data-id')})
-			})
-				.then(response => response.json())
-				.then(data => {
-					let content = data.CONTENT;
-					content = content !== false ? content.replace(/<\?[\s\S]*?\?>/g, '') : false;
-
-					const img = data.IMAGE
-
-					if (!content) {
-						modalKp.querySelector('.i_modal-content').innerHTML = data.PREVIEW_TEXT;
-					} else {
-						modalKp.querySelector('.i_modal-content').innerHTML = content;
-					}
-
-					modalKp.querySelector('.i_modal-footer-price').classList.remove('idn')
-					modalKp.querySelector('.i_modal-img').innerHTML = `<img src="${img}" />`;
-
-					if (data.PRICE !== null) {
-						modalKp.querySelector('.i_modal-footer-price').innerHTML = `<span>${data.PRICE} ₸<span class="text">(электронная версия)</span></span>`;
-					} else {
-						modalKp.querySelector('.i_modal-footer-price').innerHTML = `<span>Цена по запросу</span>`;
-					}
-
-				})
+		// Добавляем контент на страницу
+		fetch('/local/templates/exsolcom/ilab/ajax/getModalKpContent.php', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify({code: item.getAttribute('data-id')})
 		})
+			.then(response => response.json())
+			.then(data => {
+				let content = data.CONTENT;
+				content = content !== false ? content.replace(/<\?[\s\S]*?\?>/g, '') : false;
+
+				const img = data.IMAGE
+
+				if (!content) {
+					modalKp.querySelector('.i_modal-content').innerHTML = data.PREVIEW_TEXT;
+				} else {
+					modalKp.querySelector('.i_modal-content').innerHTML = content;
+				}
+
+				modalKp.querySelector('.i_modal-footer-price').classList.remove('idn')
+				modalKp.querySelector('.i_modal-img').innerHTML = `<img src="${img}" />`;
+
+				if (data.PRICE !== null) {
+					modalKp.querySelector('.i_modal-footer-price').innerHTML = `<span>${data.PRICE} ₸<span class="text">(электронная версия)</span></span>`;
+				} else {
+					modalKp.querySelector('.i_modal-footer-price').innerHTML = `<span>Цена по запросу</span>`;
+				}
+
+			})
+
+	}
+
+	modalKpBtn.forEach(item => {
+		item.addEventListener('click', ()=>{openModalKp(item)})
 	})
 
 
@@ -549,18 +552,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			formVcModal.classList.remove('active')
 		}
 
-		console.log(event.target.closest('.i_header-burger'))
-
 		// if(!event.target.classList.contains('i_side-menu') || !event.target.closest('.i_side-menu')
 		// 	&& !event.target.classList.contains('i_header-burger') || !event.target.closest('.i_header-burger')){
 		// 	sideMenu.classList.remove('show')
 		// }
 
-		if(
+		if (
 			(!event.target.classList.contains('i_header-burger') && !event.target.closest('.i_header-burger')
-			&&
-			((!event.target.classList.contains('.i_side-menu') && !event.target.closest('.i_side-menu'))))
-		){
+				&&
+				((!event.target.classList.contains('.i_side-menu') && !event.target.closest('.i_side-menu'))))
+		) {
 			sideMenu.classList.remove('show')
 		}
 	})
@@ -959,15 +960,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			let dataID = btn.getAttribute('data-id');
 			let modal = item.querySelector('.j_compare_success')
 
-			if(!btn.classList.contains('i_item_compare_act') && modal.classList.contains('hd')){
+			if (!btn.classList.contains('i_item_compare_act') && modal.classList.contains('hd')) {
 				modal.classList.remove('hd')
-			}else if(modal.classList.contains('hd') && btn.classList.contains('i_item_compare_act')){
+			} else if (modal.classList.contains('hd') && btn.classList.contains('i_item_compare_act')) {
 				modal.classList.add('hd')
-			}else{
+			} else {
 				modal.classList.add('hd')
 			}
-
-
 
 
 			document.querySelectorAll('.i_item_compare').forEach((subitem) => {
@@ -985,6 +984,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			// }, 8000)
 		})
 	})
+
+
+	let programmItems = document.querySelectorAll('.programm-item');
+
+	programmItems.forEach(item => {
+		item.addEventListener('click', ({ target }) => {
+			if (target.id !== 'form-kp-btn' &&
+				!target.classList.contains('i_compare_but') &&
+				!target.parentElement.classList.contains('i_compare_succes') &&
+				!target.classList.contains('i_open_compare')) {
+				openModalKp(item);
+			}
+		});
+	})
+
 
 });
 
