@@ -630,7 +630,8 @@ a{
     }
     @media screen and (max-width: 360px){
       gap: 12px;
-
+      padding-right: 20px;
+      justify-content: space-between;
     }
     .i_modal-footer-price{
       background-color: var(--color-red);

@@ -650,6 +650,8 @@ a {
 @media screen and (max-width: 360px) {
   .i_modal-kp .i_modal-footer {
     gap: 12px;
+    padding-right: 20px;
+    justify-content: space-between;
   }
 }
 .i_modal-kp .i_modal-footer .i_modal-footer-price {

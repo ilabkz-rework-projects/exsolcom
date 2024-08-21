@@ -149,7 +149,27 @@ body{
     margin: 0 16px;
   }
 }
+.i_header:before{
+  content: " ";
+  background-image: url("../img/svg/doth-vertical_downGrey.svg");
+  position: absolute;
+  bottom: -8px;
+  background-size: 8px;
+  height: 6px;
+  background-position-y: -10px;
+  width: calc(100% - 90px);
+  z-index: -3;
+  @media screen and (max-width: 1580px){
+    width: calc(100% - 90px);
+  }
+  @media screen and (max-width: 1330px){
+    width: calc(100% - 90px);
+  }
+  @media screen and (max-width: 760px){
+    width: calc(100% - 75px);
+  }
 
+}
 //HEADER/
 .i_header {
   position: relative;
@@ -301,7 +321,8 @@ body{
       .i_header-more {
         display: flex;
         gap: 10px;
-        .i_language-selector{
+
+        .i_language-selector {
           width: 50px;
           height: 50px;
           background-color: var(--color-circles);
@@ -312,7 +333,7 @@ body{
           transition: all .4s ease;
           position: relative;
           overflow: hidden;
-          @media screen and (max-width: 1330px){
+          @media screen and (max-width: 1330px) {
             width: 40px;
             height: 40px;
           }
@@ -324,7 +345,7 @@ body{
             font-weight: normal;
             font-style: normal;
             font-optical-sizing: auto;
-            @media screen and (max-width: 1330px){
+            @media screen and (max-width: 1330px) {
               font-size: 12px;
             }
           }
@@ -340,6 +361,7 @@ body{
               font-weight: normal;
             }
           }
+
           //!RU
           &.expanded {
             //position: absolute;
@@ -349,12 +371,14 @@ body{
             background-color: transparent;
             border: 0;
             overflow: unset;
-            .text-container{
+
+            .text-container {
               height: 150px;
-              @media screen and (max-width: 1330px){
+              @media screen and (max-width: 1330px) {
                 height: 120px;
               }
             }
+
             &:active {
               color: var(--color-black);
               background: var(--color-circlesHover);
@@ -367,12 +391,13 @@ body{
               }
             }
           }
+
           .text-container {
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
-            display:flex;
-            top:0;
+            display: flex;
+            top: 0;
             position: absolute;
             height: 50px;
             z-index: -1;
@@ -392,14 +417,16 @@ body{
             transition: color 0.3s ease;
             width: 48px;
             border-bottom: 1px solid #ffffff;
-            @media screen and (max-width: 1330px){
+            @media screen and (max-width: 1330px) {
               font-size: 12px;
               padding: 13px 0;
             }
+
             &:hover {
               color: var(--color-red);
             }
           }
+
           #selectedText {
             display: none;
           }
@@ -408,6 +435,7 @@ body{
             display: block;
           }
         }
+
         #myCircles {
           width: 50px;
           height: 50px;
@@ -419,6 +447,7 @@ body{
           transition: all .8s ease;
           position: relative;
           box-shadow: none;
+
           &:hover {
             color: var(--color-black);
             background: var(--color-circlesHover);
@@ -430,14 +459,17 @@ body{
               font-weight: normal;
             }
           }
-          .whatsapp-icon{
+
+          .whatsapp-icon {
             margin: 3px 0 0 0;
           }
-          @media screen and (max-width: 1330px){
+
+          @media screen and (max-width: 1330px) {
             width: 40px;
             height: 40px;
           }
-          .i_drop{
+
+          .i_drop {
             position: absolute;
             z-index: -1;
             overflow: hidden;
@@ -453,7 +485,7 @@ body{
             opacity: 0;
             visibility: hidden;
 
-            a{
+            a {
               color: var(--color-black);
               font-weight: 600;
               font-size: 16px;
@@ -462,23 +494,25 @@ body{
               position: relative;
               background-color: transparent;
               text-wrap: nowrap;
-              @media screen and (max-width: 1330px){
+              @media screen and (max-width: 1330px) {
                 font-size: 14px;
               }
-              @media screen and (max-width: 760px){
+              @media screen and (max-width: 760px) {
                 font-size: 13px;
               }
             }
           }
-          &.wide{
+
+          &.wide {
             //position: absolute;
             //width: 240px;
             transition: all .4s ease;
             background-color: var(--color-circlesHover);
             right: 26px;
           }
-          &.wide{
-            .close_hide_menu{
+
+          &.wide {
+            .close_hide_menu {
               background-image: url("../img/svg/close-iconLight.svg");
               background-repeat: no-repeat;
               background-position: center;
@@ -489,27 +523,28 @@ body{
               width: 23px;
               height: 100%;
               z-index: 1;
-              @media screen and (max-width: 1330px){
+              @media screen and (max-width: 1330px) {
                 right: -145%;
                 transform: translateX(50%);
                 background-size: 22px auto;
               }
             }
-            .j_drop{
+
+            .j_drop {
               width: 240px;
               opacity: 1;
               visibility: visible;
               z-index: 1;
               height: 105%;
-              @media screen and (max-width: 1330px){
+              @media screen and (max-width: 1330px) {
                 width: 195px;
               }
 
-              a{
+              a {
                 opacity: 1;
               }
 
-              svg{
+              svg {
                 margin: 0;
                 fill: var(--color-black);
                 position: absolute;
@@ -533,7 +568,7 @@ body{
           background-repeat: no-repeat;
           background-position: center;
           background-size: 55px;
-          @media screen and (max-width: 1330px){
+          @media screen and (max-width: 1330px) {
             min-width: 40px;
             width: 40px;
             min-height: 40px;
@@ -548,8 +583,48 @@ body{
             background-image: url("../img/svg/lupa-icon_r.svg");
           }
         }
-
+        #submit-btn:after{
+          content: " ";
+          background-color: var(--bg);
+          width: 320px;
+          height: 50px;
+          position: absolute;
+          top: 150%;
+          right: -210%;
+          transform: translate(50%, -50%);
+          z-index: -2;
+          @media screen and (max-width: 1580px){
+            content: none;
+          }
+        }
+        #submit-btn:before{
+          content: " ";
+          background-image: url("../img/svg/corner_30degree_500.png");
+          background-repeat: no-repeat;
+          position: absolute;
+          z-index: -1;
+          top: 52%;
+          right: 67%;
+          transform: translate(30%, 60%);
+          height: 40px;
+          width: 40px;
+          background-size: 40px;
+          @media screen and (max-width: 1330px){
+            top: 35%;
+            right: 77%;
+          }
+          @media screen and (max-width: 760px){
+            top: 10%;
+          }
+          @media screen and (max-width: 680px){
+            top: 36%;
+          }
+          @media screen and (max-width: 480px){
+            top: 39%;
+          }
+        }
         .i_header-circles {
+          position: relative;
           width: 50px;
           height: 50px;
           background-color: var(--color-circles);
@@ -2713,9 +2788,9 @@ body{
 
 //OUR STATUS
 .i_our-status{
-  padding-top: 70px;
+  padding: 70px 0;
   @media screen and (max-width: 1000px){
-    padding-top: 60px;
+    padding: 60px 0;
   }
   @media screen and (max-width: 478px){
     padding-bottom: 60px;
@@ -2968,12 +3043,23 @@ body{
 //!OUR STATUS
 
 //FOOTER
+.i_footer:before{
+  content: " ";
+  position: absolute;
+  top: -8px;
+  width: calc(100% - 1px);
+  background-image: url("/local/templates/exsolcom/ilab/css/../img/svg/doth-vertical_downGrey.svg");
+  height: 8px;
+  background-size: 8px;
+}
 .i_footer{
   display: flex;
   flex-wrap: nowrap;
-  margin-bottom: 60px;
-  margin-top: 60px;
+  padding: 60px 0;
   position: relative;
+  @media screen and (max-width: 1330px){
+    padding: 50px 0;
+  }
   .i_container{
     display: flex;
     gap: 90px;
@@ -3196,7 +3282,7 @@ body{
         gap: 14px;
         .i_header-menu{
           width: 105%;
-          gap: 17px;
+          gap: 6px;
           justify-content: flex-start;
           flex-wrap: wrap;
           .i_header-menu-item{
@@ -3928,8 +4014,6 @@ body{
   //!Main
   //Footer
   .i_footer{
-    margin-top: 50px;
-    margin-bottom: 50px;
     .i_container{
       .i_footer-right{
         width: 100%;
