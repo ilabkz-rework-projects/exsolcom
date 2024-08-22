@@ -344,7 +344,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 	sideMenuButton.forEach(item => {
 		item.addEventListener('click', () => {
-			sideMenu.classList.add('show');
+			sideMenu.classList.toggle('show');
 			circle.classList.remove('wide');
 			circle2.classList.remove('wide');
 			circle3.classList.remove('wide');
@@ -357,7 +357,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 	sideMenuButtonFooter.forEach(item => {
 		item.addEventListener('click', () => {
-			sideMenu.classList.add('show');
+			sideMenu.classList.toggle('show');
 		});
 	})
 
@@ -558,9 +558,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		// }
 
 		if (
-			(!event.target.classList.contains('i_header-burger') && !event.target.closest('.i_header-burger')
-				&&
-				((!event.target.classList.contains('.i_side-menu') && !event.target.closest('.i_side-menu'))))
+			(!event.target.classList.contains('i_header-burger') && !event.target.closest('.i_header-burger'))
+			&&
+			(!event.target.classList.contains('i_side-menu') && !event.target.closest('.i_side-menu'))
+			&&
+			(!event.target.classList.contains('i_footer-right-more-icon_2') && !event.target.closest('.i_footer-right-more-icon_2'))
+
 		) {
 			sideMenu.classList.remove('show')
 		}
