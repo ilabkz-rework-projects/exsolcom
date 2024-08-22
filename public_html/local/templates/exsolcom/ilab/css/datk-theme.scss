@@ -341,8 +341,24 @@ html[data-theme='dark']{
       //!PROGRAMM CONTAINER
       //PRODUCT ITEM CONTAINER
       .product-item-container{
-        .product-item,
-        .programm-item{
+        &:hover{
+          &:before{
+            transition: all 0.2s ease;
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 180%;
+            height: 180%;
+            background-image: url("../img/svg/hover-programm-products-b-night.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            z-index: -1;
+            border-radius: 50%;
+          }
+        }
+        .product-item{
           &:hover{
             &:before{
               transition: all .4s ease;
@@ -360,6 +376,7 @@ html[data-theme='dark']{
               border-radius: 50%;
             }
           }
+
         }
       }
       //!PRODUCT ITEM CONTAINER

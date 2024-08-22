@@ -52,13 +52,17 @@
       }
     }
     .search-page{
+      .notetext{
+        display: inline-block;
+        padding: 20px 0 70px 0;
+      }
       .search-language-guess{
         color: var(--color-black);
         a{
           color: var(--color-red);
         }
       }
-      .i_search-content{
+      .i_search-content_page{
         padding: 70px 0;
         @media screen and (max-width: 1330px){
           padding: 60px 0;
@@ -76,6 +80,7 @@
           padding-bottom: 50px;
         }
         p{
+          color: var(--color-black);
           font-family: "Open Sans", sans-serif;
           b{
             padding: 10px 0;
@@ -86,6 +91,7 @@
           padding: 20px 0;
           tbody{
             td{
+              color: var(--color-black);
               padding: 5px;
               font-family: "Open Sans", sans-serif;
             }
@@ -95,6 +101,7 @@
       form {
         width: 100%;
         display: flex;
+        gap: 5px;
         .i_search-input-l{
           min-height: 50px;
           display: flex;

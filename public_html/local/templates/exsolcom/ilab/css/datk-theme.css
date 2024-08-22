@@ -192,8 +192,22 @@ html[data-theme=dark] .i_main .i_programms .programm-container .i_programm-catal
 html[data-theme=dark] .i_main .i_programms .programm-container .i_programm-catalog .i_programm-sort .i_programm-sort-items .i_programm-sort-item.desc:before {
   background-image: url("../img/svg/separate-icons/separate-icon_b_rotate.svg");
 }
-html[data-theme=dark] .i_main .i_programms .product-item-container .product-item:hover:before,
-html[data-theme=dark] .i_main .i_programms .product-item-container .programm-item:hover:before {
+html[data-theme=dark] .i_main .i_programms .product-item-container:hover:before {
+  transition: all 0.2s ease;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180%;
+  height: 180%;
+  background-image: url("../img/svg/hover-programm-products-b-night.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+  border-radius: 50%;
+}
+html[data-theme=dark] .i_main .i_programms .product-item-container .product-item:hover:before {
   transition: all 0.4s ease;
   content: "";
   position: absolute;

@@ -108,7 +108,7 @@ endif;?>
 
 <?if($arResult["REQUEST"]["QUERY"] === false && $arResult["REQUEST"]["TAGS"] === false):?>
 <?elseif($arResult["ERROR_CODE"]!=0):?>
-	<div class="i_search-content">
+	<div class="i_search-content_page">
         <div class="i_search-fail">
             <p><?=GetMessage("SEARCH_ERROR")?></p>
             <?ShowError($arResult["ERROR_TEXT"]);?>

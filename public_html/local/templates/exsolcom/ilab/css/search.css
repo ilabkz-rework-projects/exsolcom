@@ -60,53 +60,60 @@
     width: unset;
   }
 }
+.i_search .i_container .search-page .notetext {
+  display: inline-block;
+  padding: 20px 0 70px 0;
+}
 .i_search .i_container .search-page .search-language-guess {
   color: var(--color-black);
 }
 .i_search .i_container .search-page .search-language-guess a {
   color: var(--color-red);
 }
-.i_search .i_container .search-page .i_search-content {
+.i_search .i_container .search-page .i_search-content_page {
   padding: 70px 0;
 }
 @media screen and (max-width: 1330px) {
-  .i_search .i_container .search-page .i_search-content {
+  .i_search .i_container .search-page .i_search-content_page {
     padding: 60px 0;
   }
 }
 @media screen and (max-width: 1000px) {
-  .i_search .i_container .search-page .i_search-content {
+  .i_search .i_container .search-page .i_search-content_page {
     padding: 50px 0;
   }
 }
 @media screen and (max-width: 480px) {
-  .i_search .i_container .search-page .i_search-content {
+  .i_search .i_container .search-page .i_search-content_page {
     padding: 40px 0;
   }
 }
-.i_search .i_container .search-page .i_search-content .i_search-fail {
+.i_search .i_container .search-page .i_search-content_page .i_search-fail {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding-bottom: 50px;
 }
-.i_search .i_container .search-page .i_search-content p {
+.i_search .i_container .search-page .i_search-content_page p {
+  color: var(--color-black);
   font-family: "Open Sans", sans-serif;
 }
-.i_search .i_container .search-page .i_search-content p b {
+.i_search .i_container .search-page .i_search-content_page p b {
   padding: 10px 0;
   font-family: "Comfortaa", sans-serif;
 }
-.i_search .i_container .search-page .i_search-content table {
+.i_search .i_container .search-page .i_search-content_page table {
   padding: 20px 0;
 }
-.i_search .i_container .search-page .i_search-content table tbody td {
+.i_search .i_container .search-page .i_search-content_page table tbody td {
+  color: var(--color-black);
   padding: 5px;
   font-family: "Open Sans", sans-serif;
 }
 .i_search .i_container .search-page form {
   width: 100%;
   display: flex;
+  gap: 5px;
 }
 .i_search .i_container .search-page form .i_search-input-l {
   min-height: 50px;
