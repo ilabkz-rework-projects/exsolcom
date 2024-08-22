@@ -14,9 +14,10 @@ if($arResult['ITEMS']){
 		$res = CIBlockElement::GetList([], ['IBLOCK_ID' => 9, 'ID' => $item['ID']], false, false, ['PROPERTY_I_PRICE']);
 		$price = 0;
 
+
 		while($ob = $res->Fetch())
 		{
-			$price = $ob['PROPERTY_I_PRICE_VALUE'] || 0;
+			$price = str_replace(' ', '', $ob['PROPERTY_I_PRICE_VALUE']);
 		}
 
 		$arResult['ITEMS'][$key]['PRICE'] = $price;
