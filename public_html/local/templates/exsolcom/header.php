@@ -20,6 +20,7 @@ $main = CSite::InDir(SITE_DIR.'index.php');
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="icon" type="image/x-icon" href="../../../favicon.ico"/>
 </head>
+<body>
 <header class="i_header">
 	<div class="i_container">
 		<!--HEADER LEFT-->
@@ -297,8 +298,8 @@ $main = CSite::InDir(SITE_DIR.'index.php');
                 </div>
                 <!--HEADER BOTTOM_BREADCRUMBS MAIN-->
                 <?$APPLICATION->IncludeComponent(
-	"bitrix:breadcrumb", 
-	"i_breadcrumbs", 
+	"bitrix:breadcrumb",
+	"i_breadcrumbs",
 	array(
 		"PATH" => "",
 		"SITE_ID" => "en",
