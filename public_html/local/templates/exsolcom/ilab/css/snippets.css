@@ -771,17 +771,19 @@
   flex-direction: column;
   gap: 30px;
 }
-.i_snippet.agreement-table .i_snippet-binary-table .i_snippet-table-points .i_snippet-table-points-container ul li {
+.i_snippet.agreement-table .i_snippet-binary-table .i_snippet-table-points .i_snippet-table-points-container ul ul {
+  padding-left: 25px;
+}
+.i_snippet.agreement-table .i_snippet-binary-table .i_snippet-table-points .i_snippet-table-points-container ul li::marker {
   color: var(--color-text-li);
 }
-.i_snippet.agreement-table .i_snippet-binary-table .i_snippet-table-points .i_snippet-table-points-container ul li span {
+.i_snippet.agreement-table .i_snippet-binary-table .i_snippet-table-points .i_snippet-table-points-container ul li {
   line-height: 22px;
   color: var(--color-textInfoblock);
   font-family: "Open Sans", sans-serif;
-  cursor: text !important;
 }
 @media screen and (max-width: 1330px) {
-  .i_snippet.agreement-table .i_snippet-binary-table .i_snippet-table-points .i_snippet-table-points-container ul li span {
+  .i_snippet.agreement-table .i_snippet-binary-table .i_snippet-table-points .i_snippet-table-points-container ul li {
     font-size: 15px;
   }
 }
@@ -1045,17 +1047,19 @@
   flex-direction: column;
   gap: 30px;
 }
-.i_snippet.container-composition .i_snippet.composition-block-third .i_snippet-binary-table-third .i_snippet-table-points .i_snippet-table-points-container ul li {
+.i_snippet.container-composition .i_snippet.composition-block-third .i_snippet-binary-table-third .i_snippet-table-points .i_snippet-table-points-container ul ul {
+  padding-left: 25px;
+}
+.i_snippet.container-composition .i_snippet.composition-block-third .i_snippet-binary-table-third .i_snippet-table-points .i_snippet-table-points-container ul li::marker {
   color: var(--color-text-li);
 }
-.i_snippet.container-composition .i_snippet.composition-block-third .i_snippet-binary-table-third .i_snippet-table-points .i_snippet-table-points-container ul li span {
+.i_snippet.container-composition .i_snippet.composition-block-third .i_snippet-binary-table-third .i_snippet-table-points .i_snippet-table-points-container ul li {
   line-height: 22px;
   color: var(--color-textInfoblock);
   font-family: "Open Sans", sans-serif;
-  cursor: text !important;
 }
 @media screen and (max-width: 1330px) {
-  .i_snippet.container-composition .i_snippet.composition-block-third .i_snippet-binary-table-third .i_snippet-table-points .i_snippet-table-points-container ul li span {
+  .i_snippet.container-composition .i_snippet.composition-block-third .i_snippet-binary-table-third .i_snippet-table-points .i_snippet-table-points-container ul li {
     font-size: 15px;
   }
 }
@@ -1222,17 +1226,19 @@
   flex-direction: column;
   gap: 30px;
 }
-.i_snippet.additional-services .i_snippet-blockB .i_snippet-table-points-container ul li {
+.i_snippet.additional-services .i_snippet-blockB .i_snippet-table-points-container ul ul {
+  padding-left: 25px;
+}
+.i_snippet.additional-services .i_snippet-blockB .i_snippet-table-points-container ul li::marker {
   color: var(--color-text-li);
 }
-.i_snippet.additional-services .i_snippet-blockB .i_snippet-table-points-container ul li span {
+.i_snippet.additional-services .i_snippet-blockB .i_snippet-table-points-container ul li {
   line-height: 22px;
   color: var(--color-textInfoblock);
   font-family: "Open Sans", sans-serif;
-  cursor: text !important;
 }
 @media screen and (max-width: 1330px) {
-  .i_snippet.additional-services .i_snippet-blockB .i_snippet-table-points-container ul li span {
+  .i_snippet.additional-services .i_snippet-blockB .i_snippet-table-points-container ul li {
     font-size: 15px;
   }
 }
@@ -1396,21 +1402,23 @@
   flex-direction: column;
   gap: 30px;
 }
-.i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet-table-points-container ul li {
+.i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet-table-points-container ul ul {
+  padding-left: 25px;
+}
+.i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet-table-points-container ul li::marker {
   color: var(--color-text-li);
 }
-.i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet-table-points-container ul li span {
+.i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet-table-points-container ul li {
   line-height: 22px;
   color: var(--color-textInfoblock);
   font-family: "Open Sans", sans-serif;
-  cursor: text !important;
 }
 @media screen and (max-width: 1330px) {
-  .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet-table-points-container ul li span {
+  .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet-table-points-container ul li {
     font-size: 15px;
   }
 }
-.i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet-table-points-container ul li span a {
+.i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet-table-points-container ul li a {
   font-family: "Comfortaa", sans-serif;
 }
 .i_snippet.important-info .i_snippet.binary-vertical-table .i_snippet-top .i_snippet-table-points-container ul li .text-weight.family {
@@ -1746,8 +1754,11 @@
 }
 .i_snippet.combine-table .i_snippet-top .i_snippet-container .i_snippet-title {
   padding: 0 0 30px 0;
-  text-align: left;
+  text-align: left !important;
   cursor: text !important;
+}
+.i_snippet.combine-table .i_snippet-top .i_snippet-container .i_snippet-title h3 {
+  text-align: left !important;
 }
 .i_snippet.combine-table .i_snippet-top .i_snippet-container .i_snippet-title h3 .color-red {
   cursor: text !important;
@@ -1780,8 +1791,15 @@
   flex-direction: column;
   gap: 5px;
 }
-.i_snippet.combine-table .i_snippet-top .i_snippet-container .i_snippet-table-points ul li {
+.i_snippet.combine-table .i_snippet-top .i_snippet-container .i_snippet-table-points ul ul {
+  padding-left: 25px;
+}
+.i_snippet.combine-table .i_snippet-top .i_snippet-container .i_snippet-table-points ul li::marker {
   color: var(--color-text-li);
+}
+.i_snippet.combine-table .i_snippet-top .i_snippet-container .i_snippet-table-points ul li {
+  color: var(--color-textInfoblock);
+  font-family: "Open Sans", sans-serif;
 }
 .i_snippet.combine-table .i_snippet-top .i_snippet-container .i_snippet-table-points ul li span {
   line-height: 22px;
@@ -1790,6 +1808,11 @@
   cursor: text;
 }
 .i_snippet.combine-table .i_snippet-top .i_snippet-container .i_snippet-table-points ul li span a {
+  cursor: text;
+  text-decoration: transparent;
+  font-family: "Comfortaa", sans-serif;
+}
+.i_snippet.combine-table .i_snippet-top .i_snippet-container .i_snippet-table-points ul li a {
   cursor: text;
   text-decoration: transparent;
   font-family: "Comfortaa", sans-serif;
@@ -1867,15 +1890,36 @@
 .i_snippet.list .i_snippet-points {
   width: 100%;
   height: max-content;
-  padding: 30px 30px 20px 30px;
+  padding: 10px 30px 10px 30px;
 }
 .i_snippet.list .i_snippet-points ul {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.i_snippet.list .i_snippet-points ul li {
+.i_snippet.list .i_snippet-points ul ul {
+  padding-left: 25px;
+}
+.i_snippet.list .i_snippet-points ul ul li::marker {
   color: var(--color-text-li);
+}
+.i_snippet.list .i_snippet-points ul ul li {
+  color: var(--color-textInfoblock);
+  line-height: 22px;
+  font-family: "Open Sans", sans-serif;
+  cursor: text;
+}
+.i_snippet.list .i_snippet-points ul ul li .text-weight.family {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 600;
+  cursor: text;
+}
+.i_snippet.list .i_snippet-points ul li::marker {
+  color: var(--color-text-li);
+}
+.i_snippet.list .i_snippet-points ul li {
+  color: var(--color-textInfoblock);
+  font-family: "Open Sans", sans-serif;
 }
 .i_snippet.list .i_snippet-points ul li span {
   line-height: 22px;
@@ -1971,6 +2015,9 @@
   flex-direction: column;
   gap: 10px;
 }
+.i_snippet.list-work .i_snippet-list ol ol {
+  padding-left: 25px;
+}
 .i_snippet.list-work .i_snippet-list ol li::before {
   content: counter(my-counter);
   counter-increment: my-counter;
@@ -1984,16 +2031,24 @@
   justify-content: center;
   position: absolute;
   left: 0;
-  top: 0;
+  top: -3px;
   margin-right: 0.5em;
 }
 .i_snippet.list-work .i_snippet-list ol li {
   position: relative;
   margin-bottom: 10px; /* Расстояние между элементами списка */
   padding-left: 35px; /* Отступ для номера */
+  line-height: normal;
+  font-family: "Open Sans", sans-serif;
+  color: var(--color-textInfoblock);
 }
 .i_snippet.list-work .i_snippet-list ol li a {
   color: var(--color-red);
+}
+@media screen and (max-width: 480px) {
+  .i_snippet.list-work .i_snippet-list ol li {
+    font-size: 0.875rem;
+  }
 }
 .i_snippet.list-work .i_snippet-list ol li span {
   line-height: normal;

@@ -678,10 +678,10 @@
 		<!--!OUR STATUS GROUP BLOCKS-->
 		<!--OUR STATUS GROUP BTN-->
 		<div class="i_our-status-group-btn">
-            <a href="https://consulting.1c.ru/partners/14482.html"><button>Посмотреть детально рейтинги компании на сайте 1C</button></a>
+            <a href="https://consulting.1c.ru/partners/14482.html" target="_blank"><button>Посмотреть детально рейтинги компании на сайте 1C</button></a>
 		</div>
 		<div class="i_our-status-group-btn_1">
-            <a href="https://consulting.1c.ru/partners/14482.html"><button>Все рейтинги компании на сайте 1C</button></a>
+            <a href="https://consulting.1c.ru/partners/14482.html" target="_blank"><button>Все рейтинги компании на сайте 1C</button></a>
 		</div>
 		<!--!OUR STATUS GROUP BTN-->
 	</div>

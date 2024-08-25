@@ -173,23 +173,26 @@ window.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', (event) => {
-	// Отвечает за переключение с светлой темы на темную и наоборот
-	const currentTheme = localStorage.getItem('theme') || 'light';
-	document.documentElement.setAttribute('data-theme', currentTheme);
+	'use strict';
+
+	const themeToggle = document.getElementById("theme-toggle");
+	const themeToggle2 = document.getElementById("theme-toggle-2");
 
 	function toggleTheme() {
 		let theme = document.documentElement.getAttribute('data-theme');
 		theme = (theme === 'light') ? 'dark' : 'light';
-		trans();
 		document.documentElement.setAttribute('data-theme', theme);
 		localStorage.setItem('theme', theme);
 	}
 
-	const themeToggle = document.getElementById("theme-toggle");
 	if (themeToggle) themeToggle.addEventListener("click", toggleTheme);
-
-	const themeToggle2 = document.getElementById("theme-toggle-2");
 	if (themeToggle2) themeToggle2.addEventListener("click", toggleTheme);
+
+	window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+		const newTheme = event.matches ? 'dark' : 'light';
+		document.documentElement.setAttribute('data-theme', newTheme);
+		localStorage.setItem('theme', newTheme);
+	});
 
 	const trans = () => {
 		document.documentElement.classList.add('transition');
@@ -359,11 +362,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		item.addEventListener('click', () => {
 			sideMenu.classList.toggle('show');
 		});
-	})
+	});
 
 	sideMenuClose.addEventListener('click', () => {
 		sideMenu.classList.remove('show');
-	})
+	});
 
 
 	// SUBMIT FORM

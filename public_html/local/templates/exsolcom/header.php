@@ -21,6 +21,20 @@ $main = CSite::InDir(SITE_DIR.'index.php');
     <link rel="icon" type="image/x-icon" href="../../../favicon.ico"/>
 </head>
 <body>
+<script>
+    // Определяем сохранённую тему или предпочитаемую тему пользователя
+    const theme = localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+    // Устанавливаем тему и отключаем переходы до загрузки страницы
+    document.documentElement.classList.add('no-transition');
+    document.documentElement.setAttribute('data-theme', theme);
+
+    // Включаем анимацию после загрузки страницы
+    window.addEventListener('DOMContentLoaded', () => {
+        document.documentElement.classList.remove('no-transition');
+    });
+</script>
 <header class="i_header">
 	<div class="i_container">
 		<!--HEADER LEFT-->
