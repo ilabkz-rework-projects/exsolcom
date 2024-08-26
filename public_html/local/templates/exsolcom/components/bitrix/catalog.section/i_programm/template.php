@@ -218,7 +218,7 @@ if (!isset($arParams['HIDE_SECTION_DESCRIPTION']) || $arParams['HIDE_SECTION_DES
                         <div class="col-xs-12 product-item-small-card">
                             <div class="row">
                                 <div class="col-xs-12 product-item-big-card">
-                                    <div class="row">
+                                    <div class="row"> 
                                         <div class="col-md-12">
                                             <?
                                             $item = reset($rowItems);
@@ -742,18 +742,17 @@ if (!isset($arParams['HIDE_SECTION_DESCRIPTION']) || $arParams['HIDE_SECTION_DES
     }
     ?>
 
-	<?if(count($arResult['ELEMENTS']) >= 1 && count($arResult['ELEMENTS']) > 6){?>
+	<?if(count($arResult['ELEMENTS']) > 6){?>
 	    <div class="i_programm_product-btn">
 	        <button class="show-else">Еще</button>
 	    </div>
-	<?}else if(count($arResult['ELEMENTS']) > 1 && count($arResult['ELEMENTS']) <= 3){
-
+	<?}else if(count($arResult['ELEMENTS']) > 1 && count($arResult['ELEMENTS']) <= 5){
 	}else{
 		?>
 		<div class="i_programm-list-empty">
 			<span>Элементы отсутствуют.</span>
 		</div>
-		<?}?>
+	<?}?>
 </div>
 <?$APPLICATION->IncludeFile('/local/templates/exsolcom/ilab/comp/i_software.php',Array(),Array('MODE'=>'html', 'NAME'=>'Главная', 'SHOW_BORDER'=>false));// Search?><br>
 <?

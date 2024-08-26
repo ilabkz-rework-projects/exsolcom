@@ -833,6 +833,72 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	getProgrammId();
 
 
+	function getDetailId(param, iblockID){
+		// Получаем текущий URL
+		const url = new URL(window.location.href);
+
+		// Проверяем, находимся ли мы на странице programm-products
+		if (url.pathname.includes(param)) {
+			// Создаем объект URLSearchParams
+			const params = new URLSearchParams(url.search);
+
+			// Получаем значение параметра programm_id
+			const ID = params.get(param);
+
+			if (ID) {
+				modal.classList.remove('active')
+				submitModal.classList.remove('active')
+				formKpModal.classList.remove('active')
+				modalKp.classList.add('active')
+				overlay.classList.add('active')
+				documentBody.classList.add('lock')
+				footerKpBtn.classList.remove('idn')
+				vacationBtn.classList.add('idn')
+				modalKpFooter.classList.add('idn')
+				modalKp.querySelector('.i_modal-content').innerHTML = '';
+				modalKp.classList.add('pad')
+
+				// Добавляем контент на страницу
+				fetch('/local/templates/exsolcom/ilab/ajax/getProjectElementModalContentWithCode.php', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify({code: ID, iblockId: iblockID})
+				})
+					.then(response => response.json())
+					.then(data => {
+						modalKp.querySelector('.i_modal-footer-price').classList.add('idn')
+						modalKp.querySelector('.i_modal-content').innerHTML = ''
+						modalKp.querySelector('.i_modal-img').innerHTML = ''
+
+						overlay.classList.add('active')
+						modalKp.classList.add('active')
+						documentBody.classList.add('lock')
+
+						let content = data.CONTENT;
+
+						content = content !== false ? content.replace(/<\?[\s\S]*?\?>/g, '') : false;
+
+						if (!content) {
+							modalKp.querySelector('.i_modal-content').innerHTML = data.PREVIEW_TEXT;
+						} else {
+							modalKp.querySelector('.i_modal-content').innerHTML = content;
+						}
+
+						modalKp.querySelector('.i_modal-img').innerHTML = `<img src="${data.IMAGE}" alt="${data.NAME}">`
+					})
+			}
+
+		} else {
+			return null;
+		}
+	}
+
+	getDetailId('news', 1)
+	getDetailId('blog', 2)
+
+
 	document.querySelectorAll('.i_modal-footer-hd').forEach(item => {
 		item.addEventListener('click', () => {
 			modalKpFooter.classList.add('idn');
