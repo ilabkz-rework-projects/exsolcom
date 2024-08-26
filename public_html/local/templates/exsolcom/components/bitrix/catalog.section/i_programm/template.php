@@ -742,11 +742,11 @@ if (!isset($arParams['HIDE_SECTION_DESCRIPTION']) || $arParams['HIDE_SECTION_DES
     }
     ?>
 
-	<?if(count($arResult['ELEMENTS']) > 6){?>
+	<?if(count($arResult['ELEMENTS']) >= 7){?>
 	    <div class="i_programm_product-btn">
 	        <button class="show-else">Еще</button>
 	    </div>
-	<?}else if(count($arResult['ELEMENTS']) > 1 && count($arResult['ELEMENTS']) <= 5){
+	<?}else if(count($arResult['ELEMENTS']) > 1 && count($arResult['ELEMENTS']) <= 6){
 	}else{
 		?>
 		<div class="i_programm-list-empty">

@@ -780,7 +780,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			// Получаем значение параметра programm_id
 			const programmId = params.get('product');
 
-			if (programmId) {
+
+
+			if (programmId && programmId !== 'undefined') {
 				modal.classList.remove('active')
 				submitModal.classList.remove('active')
 				formKpModal.classList.remove('active')
@@ -833,7 +835,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	getProgrammId();
 
 
-	function getDetailId(param, iblockID){
+	function getDetailId(param, iblockID, detailItem){
 		// Получаем текущий URL
 		const url = new URL(window.location.href);
 
@@ -887,6 +889,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
 						}
 
 						modalKp.querySelector('.i_modal-img').innerHTML = `<img src="${data.IMAGE}" alt="${data.NAME}">`
+
+						if (!detailItem) {
+							footerKpBtn.classList.add('idn')
+							footerKpBtnSecond.classList.add('idn')
+							footerProgrammBtn.classList.remove('idn')
+							modalKpFooter.classList.remove('idn')
+							modalKp.classList.remove('pad')
+
+
+							console.log(data)
+
+							// навешиваем обработчик на кнопку для перехода на страницу с программным продуктом
+							footerProgrammBtn.addEventListener('click', () => {
+								window.location.href = `http://new.exsolcom.kz/programm-products/?product=${data.PROGRAMM_LINK !== null ? data.PROGRAMM_LINK : ''}`
+							})
+						}
 					})
 			}
 
@@ -895,9 +913,125 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		}
 	}
 
-	getDetailId('news', 1)
-	getDetailId('blog', 2)
+	getDetailId('news', 1, true)
+	getDetailId('blog', 2, true)
+	getDetailId('projects', 5, false)
+	getDetailId('our-cases', 11, false)
 
+	function getServicesCode(){
+		// Получаем текущий URL
+		const url = new URL(window.location.href);
+
+		// Проверяем, находимся ли мы на странице programm-products
+		if (url.pathname.includes('services')) {
+			// Создаем объект URLSearchParams
+			const params = new URLSearchParams(url.search);
+
+			// Получаем значение параметра programm_id
+			const code = params.get('service');
+
+			if (code) {
+				fetch('/local/templates/exsolcom/ilab/ajax/getServicesModalContentWithCode.php', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify({code: code})
+				})
+					.then(response => response.json())
+					.then(data => {
+						modal.querySelector('.i_modal-header-content').innerHTML = '';
+						modal.querySelector('.i_modal-header-bottom').innerHTML = '';
+						modal.querySelector('.i_modal-header-bottom').innerHTML = '';
+						modal.querySelector('.i_modal-content').innerHTML = ''
+						modal.querySelector('.i_modal-img').innerHTML = ''
+
+						overlay.classList.add('active')
+						modal.classList.add('active')
+						vacationBtn.classList.add('idn')
+						documentBody.classList.add('lock')
+
+						let content = data.CONTENT;
+						content = content !== false ? content.replace(/<\?[\s\S]*?\?>/g, '') : false;
+
+						if (content) {
+							// Регулярное выражение для поиска <div class="i_modal-preview">...</div>
+							const modalPreviewRegex = /<div class="i_modal-preview">[\s\S]*?<\/div>/;
+							const modalPreviewContentRegex = /<span class="i_modal-preview-content">[\s\S]*?<\/span>/;
+							const modalPreviewEndingRegex = /<span class="i_modal-preview-ending">[\s\S]*?<\/span>/;
+							// Найти совпадение
+							const matchPreview = content.match(modalPreviewRegex);
+							const matchPreviewContent = content.match(modalPreviewContentRegex);
+							const matchPreviewEnding = content.match(modalPreviewEndingRegex);
+
+							let modalPreviewContent = '';
+							let modalPreviewContentContent = '';
+							let modalPreviewContentEnding = '';
+							let otherContent = '';
+
+							if (matchPreviewContent) {
+								// Совпадение найдено
+								modalPreviewContentContent = matchPreviewContent[0];
+								// Остальной контент
+								otherContent = content.replace(modalPreviewContentContent, '').trim();
+							}
+
+							if (matchPreviewEnding) {
+								// Совпадение найдено
+								modalPreviewContentEnding = matchPreviewEnding[0];
+								// Остальной контент
+								otherContent = content.replace(modalPreviewContentEnding, '').trim();
+							}
+
+							if (matchPreview) {
+								// Совпадение найдено
+								modalPreviewContent = matchPreview[0];
+								// Остальной контент
+								otherContent = content.replace(modalPreviewContent, '').trim();
+							} else {
+								// Совпадение не найдено, все содержимое остается в otherContent
+								otherContent = content;
+							}
+
+
+							modal.querySelector('.i_modal-header-content').innerHTML += modalPreviewContent;
+							modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentContent;
+							modal.querySelector('.i_modal-header-bottom').innerHTML += modalPreviewContentEnding;
+
+							modal.querySelector('.i_modal-content').innerHTML = otherContent
+
+
+							modal.querySelectorAll('.i_modal-content #form-kp-btn').forEach(item => {
+								item.addEventListener('click', () => {
+									modal.classList.remove('active')
+									modalKp.classList.remove('active')
+									submitModal.classList.remove('active')
+									formKpModal.classList.add('active')
+									overlay.classList.add('active')
+									sideMenu.classList.remove('show')
+									language.classList.remove('expanded');
+									circle.classList.remove('wide');
+									circle2.classList.remove('wide');
+									circle3.classList.remove('wide');
+									vacationBtn.classList.add('idn')
+								})
+							})
+
+						} else {
+							modal.querySelector('.i_modal-content').innerHTML = data.PREVIEW_TEXT
+							modal.querySelector('.i_modal-header-content').innerHTML = data.NAME
+						}
+
+						modal.querySelector('.i_modal-img').innerHTML = `<img src="${data.IMAGE}" alt="${data.NAME}">`
+					})
+			}
+
+		} else {
+			return null;
+		}
+	}
+
+	getServicesCode()
 
 	document.querySelectorAll('.i_modal-footer-hd').forEach(item => {
 		item.addEventListener('click', () => {
