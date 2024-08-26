@@ -535,6 +535,11 @@ a {
 .i_modal-kp .i_modal-box .i_modal-content .i_modal-preview .i_modal-preview-ending a {
   text-decoration: none;
   color: var(--color-red);
+  cursor: pointer;
+}
+.i_modal-kp .i_modal-box .i_modal-content .i_modal-preview .i_modal-preview-content a u,
+.i_modal-kp .i_modal-box .i_modal-content .i_modal-preview .i_modal-preview-ending a u {
+  cursor: pointer;
 }
 .i_modal-kp .i_modal-img {
   position: absolute;
@@ -916,7 +921,7 @@ p {
   border-radius: 30px;
   max-width: 340px;
   width: 100%;
-  height: 50px;
+  height: 70px;
 }
 @media screen and (max-width: 1290px) {
   .programm-container .bx_sitemap .bx_sitemap_ul li,
@@ -1020,7 +1025,7 @@ p {
 .i_programm-container .bx_sitemap .bx_sitemap_ul li .bx_sitemap_li_title {
   line-height: unset;
   margin: 0;
-  padding: 0px 15px 0px 60px;
+  padding: 10px 15px 10px 60px;
 }
 @media screen and (max-width: 1000px) {
   .programm-container .bx_sitemap .bx_sitemap_ul li .bx_sitemap_li_title,

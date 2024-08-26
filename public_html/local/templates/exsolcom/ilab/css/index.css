@@ -1575,6 +1575,7 @@ body.lock {
   }
 }
 .i_main .i_our-services .i_container .i_our-services-preview .i_our-services-block .i_our-services-desc p {
+  color: var(--color-textInfoblock);
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -2245,6 +2246,7 @@ body.lock {
   height: 42px;
   font-size: 21px;
   text-align: center;
+  color: var(--color-textInfoblock);
 }
 @media screen and (max-width: 1330px) {
   .i_infoblock .i_container .i_news .news-list .news-item-name b {

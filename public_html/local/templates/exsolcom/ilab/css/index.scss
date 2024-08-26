@@ -1780,6 +1780,7 @@ body{
               width: 90%;
             }
             p{
+              color: var(--color-textInfoblock);
               font-family: "Open Sans", sans-serif;
               font-size: 14px;
               font-weight: 600;
@@ -2452,6 +2453,7 @@ body{
             height: 42px;
             font-size: 21px;
             text-align: center;
+            color: var(--color-textInfoblock);
             @media screen and (max-width: 1330px){
               font-size: 18px;
               height: 42px;

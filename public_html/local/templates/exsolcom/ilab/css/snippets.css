@@ -29,6 +29,7 @@
   text-align: center;
   font-size: 24px;
   line-height: normal;
+  color: var(--color-textInfoblock);
 }
 .i_snippet .i_snippet-title h3 span {
   color: var(--color-textInfoblock);
@@ -1932,6 +1933,11 @@
   text-decoration: transparent;
   font-family: "Comfortaa", sans-serif;
 }
+.i_snippet.list .i_snippet-points ul li a {
+  cursor: pointer;
+  text-decoration: var(--color-red) underline;
+  font-family: "Comfortaa", sans-serif;
+}
 .i_snippet.list .i_snippet-points ul li .text-weight.family {
   font-family: "Comfortaa", sans-serif;
   font-weight: 600;
@@ -1947,6 +1953,9 @@
   .i_snippet.titlePicture {
     gap: 20px;
   }
+}
+.i_snippet.titlePicture .i_snippet-title {
+  color: #7C7C7C;
 }
 .i_snippet.titlePicture .i_snippet-title span {
   font-family: "Comfortaa", sans-serif;
@@ -2169,6 +2178,44 @@
   color: var(--color-black);
   font-family: "Open Sans", sans-serif;
   cursor: text;
+}
+
+.i_modal-content table {
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 0px;
+  border-radius: 25px;
+  border: 1px solid #999999;
+  overflow: hidden;
+}
+.i_modal-content table tbody {
+  border: 1px solid;
+}
+.i_modal-content table tbody tr td {
+  padding: 10px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: var(--color-textInfoblock);
+  line-height: normal;
+  text-wrap: wrap;
+}
+@media screen and (max-width: 1000px) {
+  .i_modal-content table tbody tr td {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_modal-content table tbody tr td {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_modal-content table tbody tr td {
+    padding: 5px;
+    font-size: 0.563rem;
+  }
+}
+.i_modal-content table tbody tr:nth-child(odd) {
+  background-color: var(--bg-fifth);
 }
 
 /*# sourceMappingURL=snippets.css.map */

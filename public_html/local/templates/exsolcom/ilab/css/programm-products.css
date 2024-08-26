@@ -875,6 +875,7 @@
   position: absolute;
   transform: translateY(0%);
   border-radius: 100%;
+  overflow: hidden;
 }
 .programm-container .i_programm-catalog .product-item-container .programm-item .product-item-img img {
   width: 100%;

@@ -526,6 +526,10 @@ a{
           a{
             text-decoration: none;
             color: var(--color-red);
+            cursor: pointer;
+            u{
+              cursor: pointer;
+            }
           }
         }
       }
@@ -858,7 +862,7 @@ p{
         border-radius: 30px;
         max-width: 340px;
         width: 100%;
-        height: 50px;
+        height: 70px;
         @media screen and (max-width: 1290px){
           height: unset;
           padding: 10px 0;
@@ -952,7 +956,7 @@ p{
         .bx_sitemap_li_title{
           line-height: unset;
           margin: 0;
-          padding: 0px 15px 0px 60px;
+          padding: 10px 15px 10px 60px;
           @media screen and (max-width: 1000px){
             padding: 0 15px 0 35px;
           }

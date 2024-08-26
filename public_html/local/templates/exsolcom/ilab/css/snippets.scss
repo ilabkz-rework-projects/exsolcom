@@ -44,6 +44,7 @@
       text-align: center;
       font-size: 24px;
       line-height: normal;
+      color: var(--color-textInfoblock);
       span{
         color: var(--color-textInfoblock);
         cursor: text !important;
@@ -2230,6 +2231,11 @@
             font-family: "Comfortaa", sans-serif;
           }
         }
+        a {
+          cursor: pointer;
+          text-decoration: var(--color-red) underline;
+          font-family: "Comfortaa", sans-serif;
+        }
 
         .text-weight.family {
           font-family: "Comfortaa", sans-serif;
@@ -2254,6 +2260,7 @@
     gap: 20px;
   }
   .i_snippet-title{
+    color: #7C7C7C;
     span{
       font-family: "Comfortaa", sans-serif;
       font-style: normal;
@@ -2503,4 +2510,42 @@
 }
 //!SEO EVENTS 2022 DESC
 //!SNIPPET NAME HEADLINE WITH LIST
+
+.i_modal-content{
+  table{
+    -webkit-border-horizontal-spacing: 0px;
+    -webkit-border-vertical-spacing: 0px;
+    border-radius: 25px;
+    border: 1px solid #999999;
+    overflow: hidden;
+    tbody{
+      border: 1px solid;
+      //border: transparent;
+      tr{
+        //border: transparent;
+        td{
+          padding: 10px;
+          text-align: center;
+          font-family: "Open Sans", sans-serif;
+          color: var(--color-textInfoblock);
+          line-height: normal;
+          text-wrap: wrap;
+          @media screen and (max-width: 1000px){
+            font-size: 0.875rem;
+          }
+          @media screen and (max-width: 760px){
+            font-size: 0.75rem;
+          }
+          @media screen and (max-width: 480px){
+            padding: 5px;
+            font-size: 0.563rem
+          }
+        }
+      }
+      tr:nth-child(odd){
+        background-color: var(--bg-fifth);
+      }
+    }
+  }
+}
 

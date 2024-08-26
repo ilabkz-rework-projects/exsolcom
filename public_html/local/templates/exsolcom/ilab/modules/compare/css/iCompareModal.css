@@ -365,6 +365,7 @@
   padding: 15px 20px;
   box-sizing: border-box;
   display: table-cell;
+  color: var(--color-textInfoblock);
 }
 
 .ilab_c_prop_value:before {

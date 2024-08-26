@@ -254,6 +254,9 @@
   text-align: center;
   line-height: 21px;
 }
+.i_personal .i_container .swiper.personal .swiper-slide .swiper-slide-block .swiper-slide-group .swiper-slide-desc p {
+  color: var(--color-textInfoblock);
+}
 .i_personal .i_container .swiper.personal .swiper-slide .swiper-slide-picture {
   width: 406px;
   height: 406px;
