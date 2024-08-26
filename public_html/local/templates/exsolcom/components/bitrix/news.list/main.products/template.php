@@ -25,7 +25,7 @@ $this->setFrameMode(true);
                     <div class="swiper-img">
                         <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/products-swiper.png'?>" alt="products-swiper">
                     </div>
-                    <div class="swiper-title" id="modal-kp" data-id="<?= $arItem['ID'] ?>">
+                    <div class="swiper-title" id="modal-kp" data-id="<?= $arItem['CODE'] ?>">
                         <span><?=$arItem['NAME']?></span>
                     </div>
                     <div class="swiper-detail">
