@@ -834,8 +834,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	// Вызов функции
 	getProgrammId();
 
-
-	function getDetailId(param, iblockID, detailItem){
+	function getDetailId(param, iblockID, detailItem, vacantion, partners){
 		// Получаем текущий URL
 		const url = new URL(window.location.href);
 
@@ -905,6 +904,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
 								window.location.href = `http://new.exsolcom.kz/programm-products/?product=${data.PROGRAMM_LINK !== null ? data.PROGRAMM_LINK : ''}`
 							})
 						}
+
+						if(vacantion){
+							vacationBtn.classList.remove('idn')
+							footerKpBtn.classList.add('idn')
+							footerKpBtnSecond.classList.add('idn')
+							footerProgrammBtn.classList.add('idn')
+							modalKpFooter.classList.remove('idn')
+							modalKp.classList.remove('pad')
+						}
+
+						if(partners){
+							modalKp.querySelector('#form-kp-btn').classList.remove('idn')
+							footerProgrammBtn.classList.add('idn')
+						}
 					})
 			}
 
@@ -917,6 +930,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	getDetailId('blog', 2, true)
 	getDetailId('projects', 5, false)
 	getDetailId('our-cases', 11, false)
+	getDetailId('vacantion', 8, false, true)
+	getDetailId('partners', 4, false, false, true)
+
 
 	function getServicesCode(){
 		// Получаем текущий URL
