@@ -55,15 +55,13 @@ $this->setFrameMode(true);
 		<?if($arParams["DISPLAY_NAME"]!="N" && $arItem["NAME"]):?>
 			<?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
 				<div class="news-item-name">
-					<b><?echo $arItem["NAME"]?></b>
+					<b><?echo $arItem['PROPERTIES']["I_NAME_".strtoupper(LANGUAGE_ID)]["VALUE"]?></b>
 				</div>
-			<?else:?>
-				<b><?echo $arItem["NAME"]?></b>
 			<?endif;?>
 		<?endif;?>
 		<?if($arParams["DISPLAY_PREVIEW_TEXT"]!="N" && $arItem["PREVIEW_TEXT"]):?>
 			<div class="i_news-preview">
-				<span><?echo $arItem["PREVIEW_TEXT"];?></span>
+				<span><?= LANGUAGE_ID === 'ru' ? $arItem["PREVIEW_TEXT"] : $arItem['PROPERTIES']['I_PREVIEW_TEXT_'.strtoupper(LANGUAGE_ID)]["VALUE"];?></span>
 			</div>
 		<?endif;?>
 		<?if($arParams["DISPLAY_PICTURE"]!="N" && is_array($arItem["PREVIEW_PICTURE"])):?>
@@ -74,16 +72,7 @@ $this->setFrameMode(true);
 			<?=GetMessage("IBLOCK_FIELD_".$code)?>:&nbsp;<?=$value;?>
 			</small>
 		<?endforeach;?>
-		<?foreach($arItem["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
-			<small>
-			<?=$arProperty["NAME"]?>:&nbsp;
-			<?if(is_array($arProperty["DISPLAY_VALUE"])):?>
-				<?=implode("&nbsp;/&nbsp;", $arProperty["DISPLAY_VALUE"]);?>
-			<?else:?>
-				<?=$arProperty["DISPLAY_VALUE"];?>
-			<?endif?>
-			</small>
-		<?endforeach;?>
+
 	</div>
 <?endforeach;?>
 <?if($arParams["DISPLAY_BOTTOM_PAGER"]):?>

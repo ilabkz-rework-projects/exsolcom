@@ -35,10 +35,12 @@ $this->setFrameMode(true);
 							<span><?=$arItem['NAME']?></span>
 						</div>
 						<div class="swiper-slide-title">
-							<p><?=$arItem['PROPERTIES']['I_ROLE']['VALUE']?></p>
+							<p><?=$arItem['PROPERTIES']['I_ROLE_'.strtoupper(LANGUAGE_ID)]['VALUE']?></p>
 						</div>
 						<div class="swiper-slide-desc">
-							<p><?=$arItem['PREVIEW_TEXT']?></p>
+							<p>
+								<?=LANGUAGE_ID === 'ru' ? $arItem['PREVIEW_TEXT'] : $arItem['PROPERTIES']['I_PREVIEW_TEXT_'.strtoupper(LANGUAGE_ID)]['VALUE']?>
+							</p>
 						</div>
 					</div>
 				</div>

@@ -26,11 +26,11 @@ $this->setFrameMode(true);
                         <img src="<?=SITE_TEMPLATE_PATH.'/ilab/img/main/products-swiper.png'?>" alt="products-swiper">
                     </div>
                     <div class="swiper-title" id="modal-kp" data-id="<?= $arItem['CODE'] ?>">
-                        <span><?=$arItem['NAME']?></span>
+                        <span><?=$arItem['PROPERTIES']['I_NAME_'.strtoupper(LANGUAGE_ID)]['VALUE']?></span>
                     </div>
                     <div class="swiper-detail">
                         <div class="swiper-detail-title">
-                            <span><?=$arItem['PREVIEW_TEXT']?></span>
+                            <span><?= LANGUAGE_ID === 'ru' ? $arItem['PREVIEW_TEXT'] : $arItem['PROPERTIES']['I_PREVIEW_TEXT_'.strtoupper(LANGUAGE_ID)]['VALUE']?></span>
                         </div>
                         <div class="swiper-detail-btn">
                             <button id="form-kp-btn">Запросить КП</button>
@@ -42,3 +42,4 @@ $this->setFrameMode(true);
 		<? endforeach; ?>
 	</div>
 </div>
+

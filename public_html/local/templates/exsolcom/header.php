@@ -3,6 +3,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
 CJSCore::Init(array('ajax', 'window'));
 
 $main = CSite::InDir(SITE_DIR.'index.php');
+$langMain = CSite::InDir(SITE_DIR.'/index.php');
 ?>
 
 <!DOCTYPE html>
@@ -237,11 +238,10 @@ $main = CSite::InDir(SITE_DIR.'index.php');
 	false
 );?>
 
-<?if(!$main){?>
+<?if(!$main && !$langMain){?>
 	<!--HEADER BOTTOM-->
 	<div class="i_header-bottom">
 		<div class="i_container">
-			<!--    СЮДА ПУНКТЫ И ХЛЕБНЫЕ КРОШКИ, КРОШКИ Я САМ ДОБАВЛЮ!!"!!!!!"№!"№!"№!"№!"№!"№!"№№!"!"№!"№!"№	-->
 			<!--HEADER BOTTOM_POINTS-->
 			<!--Группа Соц-сети и ДеньНочь-->
 			<div class="i_banner-group_social">

@@ -130,6 +130,7 @@
   width: 330px;
   border-radius: 100% 100% 35px 35px;
   flex-direction: column;
+  overflow: unset !important;
 }
 @media screen and (max-width: 1330px) {
   .i_personal .i_container .swiper.personal .swiper-slide {
