@@ -3,28 +3,28 @@
 		<div class="i_banner-circles_1">
 		</div>
 		<p>
-			 Оперативный переход с SAP на 1С
+            SAP-тан 1С-ке жедел көшу
 		</p>
 	</div>
 	<div class="i_banner-item">
 		<div class="i_banner-circles_2">
 		</div>
 		<p>
-			 Аутсорсинг разработчиков 1C
+            1С әзірлеушілерін аутсорсингке беру
 		</p>
 	</div>
 	<div class="i_banner-item">
 		<div class="i_banner-circles_3">
 		</div>
 		<p>
-			 Сопровождение 1С по SLA
+            1С жүйесін SLA бойынша қолдау
 		</p>
 	</div>
 	<div class="i_banner-item">
 		<div class="i_banner-circles_4">
 		</div>
 		<p>
-			 ERP,УХ,КА,УТ,УПП,БП,ЗУП
+			 ERP, УХ, КА, УТ, УПП, БП, ЗУП
 		</p>
 	</div>
 </div>

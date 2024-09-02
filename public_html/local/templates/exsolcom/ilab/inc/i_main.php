@@ -83,7 +83,7 @@
 			<!--!Логотип ExSol.com-->
 
 			<!--Заголовок-->
-			<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/main/i_main_banner_left.php',Array(),Array('MODE'=>'html', 'NAME'=>'Левая часть банера', 'SHOW_BORDER'=>true))?>
+			<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/main/'.LANGUAGE_ID.'/i_main_banner_left.php',Array(),Array('MODE'=>'html', 'NAME'=>'Левая часть банера', 'SHOW_BORDER'=>true))?>
 			<!--!Заголовок-->
 
 
@@ -165,7 +165,7 @@
 				</div>
 				<!--!Группа Соц-сети и ДеньНочь-->
 				<!--Группа Навыки-->
-				<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/main/i_main_banner_right.php',Array(),Array('MODE'=>'html', 'NAME'=>'Правая часть банера', 'SHOW_BORDER'=>true))?>
+				<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/main/'.LANGUAGE_ID.'/i_main_banner_right.php',Array(),Array('MODE'=>'html', 'NAME'=>'Правая часть банера', 'SHOW_BORDER'=>true))?>
 				<!--!Группа Навыки-->
 				<button class="i_banner-btn-apply" id="submit-btn">Оставить заявку</button> <!--Кнопка Оставить заявку-->
 			</div>
@@ -363,7 +363,7 @@
 	false
 );?>
         <!--!PERSONAL SWIPER PERSONAL-->
-		<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/main/i_main_personal_btn.php',Array(),Array('MODE'=>'html', 'NAME'=>'Презентация компании', 'SHOW_BORDER'=>true))?>
+		<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/main/'.LANGUAGE_ID.'/i_main_personal_btn.php',Array(),Array('MODE'=>'html', 'NAME'=>'Презентация компании', 'SHOW_BORDER'=>true))?>
 
 		<div class="pagination">
 			<div class="swiper-personal-button-prev">
@@ -509,7 +509,7 @@
 			</div>
 			<!--Иконка с 1С-->
 			<!--Текст с кнопкой-->
-			<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/main/i_main_software_text.php',Array(),Array('MODE'=>'html', 'NAME'=>'Линейка кормпоративных продуктов', 'SHOW_BORDER'=>true))?>
+			<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/main/'.LANGUAGE_ID.'/i_main_software_text.php',Array(),Array('MODE'=>'html', 'NAME'=>'Линейка кормпоративных продуктов', 'SHOW_BORDER'=>true))?>
 			<!--Текст с кнопкой-->
 		</div>
 	</div>

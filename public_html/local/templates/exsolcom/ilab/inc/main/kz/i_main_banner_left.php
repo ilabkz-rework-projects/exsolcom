@@ -2,6 +2,6 @@
 <span>1С</span>
 <p>:Франчайзинг</p>
 </div>
-<span>Продажа и внедрение 1С</span>
+<span>1С сату және енгізу</span>
 <br>
-<button class="i_banner-btn-apply" id="submit-btn">Оставить заявку</button>
+<button class="i_banner-btn-apply" id="submit-btn">Өтінім қалдыру</button>
