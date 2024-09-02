@@ -36,17 +36,17 @@ $this->setFrameMode(true);
 			<div class="i_team-personal-block-depiction-group">
 				<!--TEAM PERSONAL BLOCK DEPICTION GROUP NAME-->
 				<div class="block-depiction-group-name">
-					<span><?= $arItem['NAME'] ?></span>
+					<span><?= $arItem['PROPERTIES']['I_NAME_'.strtoupper(LANGUAGE_ID)]['VALUE']?></span>
 				</div>
 				<!--!TEAM PERSONAL BLOCK DEPICTION GROUP NAME-->
 				<!--TEAM PERSONAL BLOCK DEPICTION GROUP TITLE-->
 				<div class="block-depiction-group-title">
-					<p><?= $arItem['PROPERTIES']['I_ROLE']['VALUE'] ?></p>
+					<p><?= $arItem['PROPERTIES']['I_ROLE_'.strtoupper(LANGUAGE_ID)]['VALUE'] ?></p>
 				</div>
 				<!--!TEAM PERSONAL BLOCK DEPICTION GROUP TITLE-->
 				<!--TEAM PERSONAL BLOCK DEPICTION GROUP DESC-->
 				<div class="block-depiction-group-desc">
-					<p><?=$arItem['PREVIEW_TEXT']?></p>
+					<p><?=LANGUAGE_ID === 'ru' ? $arItem['PREVIEW_TEXT'] : $arItem['PROPERTIES']['I_PREVIEW_TEXT_'.strtoupper(LANGUAGE_ID)]['VALUE']?></p>
 				</div>
 				<!--!TEAM PERSONAL BLOCK DEPICTION GROUP DESC-->
 			</div>

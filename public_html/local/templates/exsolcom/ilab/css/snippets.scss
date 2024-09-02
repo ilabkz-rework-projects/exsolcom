@@ -2548,6 +2548,7 @@
           color: var(--color-textInfoblock);
           line-height: normal;
           text-wrap: wrap;
+          width: 50%;
           @media screen and (max-width: 1000px){
             font-size: 0.875rem;
           }

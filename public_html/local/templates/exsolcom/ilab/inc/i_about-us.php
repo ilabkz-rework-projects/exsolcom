@@ -21,7 +21,7 @@
 				</div>
 				<!--!ABOUT COMPANY TITLE-->
 				<!--ABOUT COMPANY DESC-->
-                <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/i_about_company_value.php',Array(),Array('MODE'=>'html', 'NAME'=>'Описание компании', 'SHOW_BORDER'=>true))?>
+                <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/'.LANGUAGE_ID.'/i_about_company_value.php',Array(),Array('MODE'=>'html', 'NAME'=>'Описание компании', 'SHOW_BORDER'=>true))?>
                 <!--!ABOUT COMPANY DESC-->
 			</div>
 			<!--!ABOUT COMPANY FIRST-->
@@ -44,10 +44,10 @@
 				</div>
 				<!--!ABOUT COMPANY STRATEGY TITLE-->
 				<!--ABOUT COMPANY STRATEGY DESC-->
-                <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/i_about_company-strategy.php',Array(),Array('MODE'=>'html', 'NAME'=>'Описание стратегии', 'SHOW_BORDER'=>true))?>
+                <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/'.LANGUAGE_ID.'/i_about_company-strategy.php',Array(),Array('MODE'=>'html', 'NAME'=>'Описание стратегии', 'SHOW_BORDER'=>true))?>
                 <!--!ABOUT COMPANY STRATEGY DESC-->
 				<!--ABOUT COMPANY STRATEGY BTN-->
-                <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/i_about_company-strategy-btn.php',Array(),Array('MODE'=>'html', 'NAME'=>'Описание стратегии', 'SHOW_BORDER'=>true))?>
+                <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/'.LANGUAGE_ID.'/i_about_company-strategy-btn.php',Array(),Array('MODE'=>'html', 'NAME'=>'Описание стратегии', 'SHOW_BORDER'=>true))?>
 				<!--!ABOUT COMPANY STRATEGY BTN-->
 			</div>
 			<!--!ABOUT COMPANY STRATEGY-->
@@ -78,10 +78,10 @@
 			<!--DIRECTORSHIP BASIC-->
 			<div class="i_directorship-basic">
 				<!--DIRECTORSHIP BASIC BLOCK 1-->
-                <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/i_about_directorship_basic_block.php',Array(),Array('MODE'=>'html', 'NAME'=>'Карточка руководителя', 'SHOW_BORDER'=>true))?>
+                <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/'.LANGUAGE_ID.'/i_about_directorship_basic_block.php',Array(),Array('MODE'=>'html', 'NAME'=>'Карточка руководителя', 'SHOW_BORDER'=>true))?>
                 <!--DIRECTORSHIP BASIC BLOCK 1-->
 				<!--DIRECTORSHIP BASIC BLOCK 2-->
-                <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/i_about_directorship_basic_block_second.php',Array(),Array('MODE'=>'html', 'NAME'=>'Карточка руководителя 2', 'SHOW_BORDER'=>true))?>
+                <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/'.LANGUAGE_ID.'/i_about_directorship_basic_block_second.php',Array(),Array('MODE'=>'html', 'NAME'=>'Карточка руководителя 2', 'SHOW_BORDER'=>true))?>
                 <!--!DIRECTORSHIP BASIC BLOCK 2-->
 			</div>
 			<!--!DIRECTORSHIP BASIC-->
@@ -286,7 +286,7 @@
 				</div>
 				<!--!CLOUD GROUP PICTURE-->
 				<!--CLOUD GROUP DESC-->
-                <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/i_about_company_cloud_group.php',Array(),Array('MODE'=>'html', 'NAME'=>'Описание облачнного сервиса', 'SHOW_BORDER'=>true))?>
+                <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/'.LANGUAGE_ID.'/i_about_company_cloud_group.php',Array(),Array('MODE'=>'html', 'NAME'=>'Описание облачнного сервиса', 'SHOW_BORDER'=>true))?>
                 <!--!CLOUD GROUP DESC-->
 			</div>
 			<!--!CLOUD GROUP-->
@@ -532,23 +532,23 @@
                 <!--WORK PROCESS BODY GROUP-->
                 <div class="i_work-process-body-group">
                     <!--WORK PROCESS BODY GROUP BLOCK-->
-                    <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/work_process_blocks/i_work_process_block_1.php',Array(),Array('MODE'=>'html', 'NAME'=>'Первый этап', 'SHOW_BORDER'=>true))?>
+                    <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/work_process_blocks/'.LANGUAGE_ID.'/i_work_process_block_1.php',Array(),Array('MODE'=>'html', 'NAME'=>'Первый этап', 'SHOW_BORDER'=>true))?>
                     <!--!WORK PROCESS BODY GROUP BLOCK-->
                     <!--WORK PROCESS BODY GROUP BLOCK-->
-                    <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/work_process_blocks/i_work_process_block_2.php',Array(),Array('MODE'=>'html', 'NAME'=>'Второй этап', 'SHOW_BORDER'=>true))?>
+                    <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/work_process_blocks/'.LANGUAGE_ID.'/i_work_process_block_2.php',Array(),Array('MODE'=>'html', 'NAME'=>'Второй этап', 'SHOW_BORDER'=>true))?>
                     <!--!WORK PROCESS BODY GROUP BLOCK-->
                     <!--WORK PROCESS BODY GROUP BLOCK-->
-                    <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/work_process_blocks/i_work_process_block_3.php',Array(),Array('MODE'=>'html', 'NAME'=>'Шестой этап', 'SHOW_BORDER'=>true))?>
+                    <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/work_process_blocks/'.LANGUAGE_ID.'/i_work_process_block_3.php',Array(),Array('MODE'=>'html', 'NAME'=>'Шестой этап', 'SHOW_BORDER'=>true))?>
                     <!--!WORK PROCESS BODY GROUP BLOCK-->
                     <!--WORK PROCESS BODY GROUP BLOCK-->
-                    <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/work_process_blocks/i_work_process_block_4.php',Array(),Array('MODE'=>'html', 'NAME'=>'Третий этап', 'SHOW_BORDER'=>true))?>
+                    <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/work_process_blocks/'.LANGUAGE_ID.'/i_work_process_block_4.php',Array(),Array('MODE'=>'html', 'NAME'=>'Третий этап', 'SHOW_BORDER'=>true))?>
 
                     <!--!WORK PROCESS BODY GROUP BLOCK-->
                     <!--WORK PROCESS BODY GROUP BLOCK-->
-                    <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/work_process_blocks/i_work_process_block_5.php',Array(),Array('MODE'=>'html', 'NAME'=>'Пятый этап', 'SHOW_BORDER'=>true))?>
+                    <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/work_process_blocks/'.LANGUAGE_ID.'/i_work_process_block_5.php',Array(),Array('MODE'=>'html', 'NAME'=>'Пятый этап', 'SHOW_BORDER'=>true))?>
                     <!--!WORK PROCESS BODY GROUP BLOCK-->
                     <!--WORK PROCESS BODY GROUP BLOCK-->
-                    <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/work_process_blocks/i_work_process_block_6.php',Array(),Array('MODE'=>'html', 'NAME'=>'Четвертый этап', 'SHOW_BORDER'=>true))?>
+                    <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/work_process_blocks/'.LANGUAGE_ID.'/i_work_process_block_6.php',Array(),Array('MODE'=>'html', 'NAME'=>'Четвертый этап', 'SHOW_BORDER'=>true))?>
 
                     <!--!WORK PROCESS BODY GROUP BLOCK-->
                 </div>
@@ -599,7 +599,7 @@
                         </div>
                         <!--!WORK PROCESS BODY GROUP ICON-->
                         <!--WORK PROCESS BODY GROUP BLOCK-->
-                        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/work_process_blocks/i_work_process_block_1.php',Array(),Array('MODE'=>'html', 'NAME'=>'Первый этап', 'SHOW_BORDER'=>true))?>
+                        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/work_process_blocks/'.LANGUAGE_ID.'/i_work_process_block_1.php',Array(),Array('MODE'=>'html', 'NAME'=>'Первый этап', 'SHOW_BORDER'=>true))?>
                         <!--!WORK PROCESS BODY GROUP BLOCK-->
                     </div>
                     <!--!WORK PROCESS BODY GROUP BLOCK CONTAINER-->
@@ -625,7 +625,7 @@
                         </div>
                         <!--!WORK PROCESS BODY GROUP ICON-->
                         <!--WORK PROCESS BODY GROUP BLOCK-->
-                        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/work_process_blocks/i_work_process_block_2.php',Array(),Array('MODE'=>'html', 'NAME'=>'Второй этап', 'SHOW_BORDER'=>true))?>
+                        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/work_process_blocks/'.LANGUAGE_ID.'/i_work_process_block_2.php',Array(),Array('MODE'=>'html', 'NAME'=>'Второй этап', 'SHOW_BORDER'=>true))?>
                         <!--!WORK PROCESS BODY GROUP BLOCK-->
                     </div>
                     <!--!WORK PROCESS BODY GROUP BLOCK CONTAINER-->
@@ -652,7 +652,7 @@
                         </div>
                         <!--!WORK PROCESS BODY GROUP ICON-->
                         <!--WORK PROCESS BODY GROUP BLOCK-->
-                        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/work_process_blocks/i_work_process_block_4.php',Array(),Array('MODE'=>'html', 'NAME'=>'Третий этап', 'SHOW_BORDER'=>true))?>
+                        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/work_process_blocks/'.LANGUAGE_ID.'/i_work_process_block_4.php',Array(),Array('MODE'=>'html', 'NAME'=>'Третий этап', 'SHOW_BORDER'=>true))?>
                         <!--!WORK PROCESS BODY GROUP BLOCK-->
                     </div>
                     <!--!WORK PROCESS BODY GROUP BLOCK CONTAINER-->
@@ -680,7 +680,7 @@
                         </div>
                         <!--!WORK PROCESS BODY GROUP ICON-->
                         <!--WORK PROCESS BODY GROUP BLOCK-->
-                        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/work_process_blocks/i_work_process_block_6.php',Array(),Array('MODE'=>'html', 'NAME'=>'Четвертый этап', 'SHOW_BORDER'=>true))?>
+                        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/work_process_blocks/'.LANGUAGE_ID.'/i_work_process_block_6.php',Array(),Array('MODE'=>'html', 'NAME'=>'Четвертый этап', 'SHOW_BORDER'=>true))?>
                         <!--!WORK PROCESS BODY GROUP BLOCK-->
                     </div>
                     <!--!WORK PROCESS BODY GROUP BLOCK CONTAINER-->
@@ -707,7 +707,7 @@
                         </div>
                         <!--!WORK PROCESS BODY GROUP ICON-->
                         <!--WORK PROCESS BODY GROUP BLOCK-->
-                        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/work_process_blocks/i_work_process_block_5.php',Array(),Array('MODE'=>'html', 'NAME'=>'Пятый этап', 'SHOW_BORDER'=>true))?>
+                        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/work_process_blocks/'.LANGUAGE_ID.'/i_work_process_block_5.php',Array(),Array('MODE'=>'html', 'NAME'=>'Пятый этап', 'SHOW_BORDER'=>true))?>
                         <!--!WORK PROCESS BODY GROUP BLOCK-->
                     </div>
                     <!--!WORK PROCESS BODY GROUP BLOCK CONTAINER-->
@@ -736,7 +736,7 @@
                         </div>
                         <!--!WORK PROCESS BODY GROUP ICON-->
                         <!--WORK PROCESS BODY GROUP BLOCK-->
-                        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/work_process_blocks/i_work_process_block_3.php',Array(),Array('MODE'=>'html', 'NAME'=>'Шестой этап', 'SHOW_BORDER'=>true))?>
+                        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/about/work_process_blocks/'.LANGUAGE_ID.'/i_work_process_block_3.php',Array(),Array('MODE'=>'html', 'NAME'=>'Шестой этап', 'SHOW_BORDER'=>true))?>
                         <!--!WORK PROCESS BODY GROUP BLOCK-->
                     </div>
                     <!--!WORK PROCESS BODY GROUP BLOCK CONTAINER-->

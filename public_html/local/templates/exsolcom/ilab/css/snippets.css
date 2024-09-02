@@ -2202,6 +2202,7 @@
   color: var(--color-textInfoblock);
   line-height: normal;
   text-wrap: wrap;
+  width: 50%;
 }
 @media screen and (max-width: 1000px) {
   .i_modal-content table tbody tr td {

@@ -37,7 +37,7 @@ $this->setFrameMode(true);
 				<img src="<?=$arItem['PREVIEW_PICTURE']['SRC']?>" alt="picture-9-Technical-Director">
 			</div>
 			<div class="i_our-status-group-blocks-item-name">
-				<span><?=$arItem['PROPERTIES']['I_NAME_'.strtoupper(LANGUAGE_ID)]?></span>
+				<span><?=$arItem['PROPERTIES']['I_NAME_'.strtoupper(LANGUAGE_ID)]['VALUE']?></span>
 			</div>
 		</div>
 	<?endforeach;?>

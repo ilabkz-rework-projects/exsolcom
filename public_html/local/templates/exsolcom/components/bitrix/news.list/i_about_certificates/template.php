@@ -49,7 +49,7 @@ $this->setFrameMode(true);
         <!--!CERTIFICATES GROUP BLOCKS ITEM ICON-->
         <!--CERTIFICATES GROUP BLOCKS ITEM NAME-->
         <div class="i_certificates-group-blocks-item-name">
-            <span><?= $arItem['NAME'] ?></span>
+            <span><?= $arItem['PROPERTIES']['I_NAME_'.strtoupper(LANGUAGE_ID)]['VALUE'] ?></span>
         </div>
         <!--!CERTIFICATES GROUP BLOCKS ITEM NAME-->
 	</div>
