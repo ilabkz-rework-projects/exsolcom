@@ -91,7 +91,7 @@ $langMain = CSite::InDir(SITE_DIR.'/index.php');
 			<?}?>
 
 			<!--HEADER MENU-->
-			<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/header_menu.php',Array(),Array('MODE'=>'html', 'NAME'=>'Вверхнее меню', 'SHOW_BORDER'=>false))// Menu?>
+			<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/header_menu.php',Array(),Array('MODE'=>'html', 'NAME'=>'Вверхнее меню', 'SHOW_BORDER'=>false))// Menu?>
 			<!--!HEADER MENU-->
 
 		</div>

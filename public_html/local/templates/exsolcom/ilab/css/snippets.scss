@@ -2070,6 +2070,7 @@
             color: var(--color-text-li);
           }
           li{
+            line-height: 22px;
             color: var(--color-textInfoblock);
             font-family: "Open Sans", sans-serif;
             span {
@@ -2189,12 +2190,11 @@
   .i_snippet-points {
     width: 100%;
     height: max-content;
-    padding: 10px 30px 10px 30px;
+    padding: 5px 30px 10px 30px;
 
     ul {
       display: flex;
       flex-direction: column;
-      gap: 5px;
       ul{
         padding-left: 25px;
         li::marker {
@@ -2219,20 +2219,21 @@
       li{
         color: var(--color-textInfoblock);
         font-family: "Open Sans", sans-serif;
+        line-height: 22px;
         span {
           line-height: 22px;
           color: var(--color-textInfoblock);
           font-family: "Open Sans", sans-serif;
-          cursor: text;
+          //cursor: text;
 
           a {
-            cursor: text;
+            cursor: pointer;
             text-decoration: transparent;
             font-family: "Comfortaa", sans-serif;
           }
         }
         a {
-          cursor: pointer;
+          cursor: pointer !important;
           text-decoration: var(--color-red) underline;
           font-family: "Comfortaa", sans-serif;
         }
@@ -2322,14 +2323,16 @@
 //SNIPPET LIST_WORK
 .i_snippet.list-work{
   .i_snippet-list{
-    padding: 20px 0;
+    padding: 20px 0 0 0;
     ol{
       list-style-type: none;
       counter-reset: my-counter;
       padding-left: 0;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      //gap: 10px;
+      font-family: "Open Sans", sans-serif;
+      line-height: normal;
       ol{
         padding-left: 25px;
       }
@@ -2425,6 +2428,10 @@
     //SEO EVENTS 2022 DESC HEADLINE
     .i_seo-events-2022-desc-headline,
     .i_seo-events-2022-desc-headline-lostWords{
+      line-height: normal;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--color-textInfoblock);
       span{
         line-height: normal;
         font-size: 18px;
@@ -2441,25 +2448,27 @@
     .i_seo-events-2022-desc-depiction{
       padding: 0 0 0 20px;
       ul{
-        li:before{
-          content: " ";
-          width: 5px;
-          height: 5px;
-          border-radius: 50%;
-          background-color: var(--color-text-li);
-          color: black;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          position: absolute;
-          left: -15px;
-          top: 8px;
-          margin-right: 0.5em;
-          z-index: 1;
+        //li:before{
+        //  content: " ";
+        //  width: 5px;
+        //  height: 5px;
+        //  border-radius: 50%;
+        //  background-color: var(--color-text-li);
+        //  color: black;
+        //  display: flex;
+        //  align-items: center;
+        //  justify-content: center;
+        //  position: absolute;
+        //  left: -15px;
+        //  top: 8px;
+        //  margin-right: 0.5em;
+        //  z-index: 1;
+        //}
+        li::marker{
+          color: var(--color-text-li);
         }
+
         li{
-          position: relative;
-          list-style-type: none;
           color: var(--color-textInfoblock);
           line-height: 20px;
           font-family: "Open Sans", sans-serif;
@@ -2478,6 +2487,10 @@
   //SEO EVENTS 2022 DESC HEADLINE
   .i_seo-events-2022-desc-headline,
   .i_seo-events-2022-desc-headline-lostWords{
+    line-height: normal;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-textInfoblock);
     span{
       line-height: normal;
       font-size: 18px;
@@ -2494,9 +2507,14 @@
   .i_seo-events-2022-desc-depiction{
     padding: 0 0 0 20px;
     ul{
-      li{
+      li::marker{
         color: var(--color-text-li);
+      }
+      li{
         line-height: 20px;
+        font-family: "Open Sans", sans-serif;
+        color: var(--color-black) ;
+        font-size: 15px;
         span{
           font-size: 15px;
           color: var(--color-black) ;
@@ -2545,6 +2563,19 @@
       tr:nth-child(odd){
         background-color: var(--bg-fifth);
       }
+    }
+  }
+}
+
+.i_snippet.frame{
+  .i_snippet-frame{
+    background-color: var(--bg-fifth);
+    border-radius: 30px;
+    margin: 30px 0;
+    padding: 30px;
+    text-align: center;
+    .i_snippet-desc{
+      font-family: "Open Sans", sans-serif;
     }
   }
 }

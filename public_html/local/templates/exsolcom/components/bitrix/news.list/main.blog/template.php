@@ -79,15 +79,13 @@ $this->setFrameMode(true);
 				<div class="blog-name">
 					<? if ($arParams["DISPLAY_NAME"] != "N" && $arItem["NAME"]):?>
 						<? if (!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
-							<b><? echo $arItem["NAME"] ?></b>
-						<? else:?>
-							<b><? echo $arItem["NAME"] ?></b>
+							<b><? echo $arItem['PROPERTIES']["I_NAME_".strtoupper(LANGUAGE_ID)]['VALUE']?></b>
 						<? endif; ?>
 					<? endif; ?>
 				</div>
 				<? if ($arParams["DISPLAY_PREVIEW_TEXT"] != "N" && $arItem["PREVIEW_TEXT"]):?>
 					<div class="i_blog-preview">
-						<span><? echo $arItem["PREVIEW_TEXT"]; ?></span>
+						<span><? echo LANGUAGE_ID === 'ru' ? $arItem['PREVIEW_TEXT'] : $arItem["PROPERTIES"]['I_PREVIEW_TEXT_'.strtoupper(LANGUAGE_ID)]['VALUE']; ?></span>
 					</div>
 				<? endif; ?>
 				<? if ($arParams["DISPLAY_PICTURE"] != "N" && is_array($arItem["PREVIEW_PICTURE"])):?>
@@ -108,3 +106,4 @@ $this->setFrameMode(true);
 		<?= $arResult["NAV_STRING"] ?>
 	<? endif; ?>
 </div>
+

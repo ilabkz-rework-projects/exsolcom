@@ -72,6 +72,8 @@
   flex-wrap: wrap;
   gap: 40px;
   padding: 70px 0;
+  position: relative;
+  z-index: 1;
 }
 .i_services .i_vacantion-list .i_vacantion-item {
   display: flex;

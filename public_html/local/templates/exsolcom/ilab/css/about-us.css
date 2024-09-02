@@ -1826,6 +1826,10 @@
     padding: 50px 0 50px 0;
   }
 }
+.i_about-us .i_seo .i_seo-dates #bx_incl_area_5_9 {
+  display: flex;
+  gap: 20px;
+}
 .i_about-us .i_seo .i_seo-dates .i_seo-dates-switch {
   min-width: 96px;
   width: 0%;
@@ -1965,8 +1969,11 @@
 .i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-desc .i_seo-events-2022-desc-group .i_seo-events-2022-desc-depiction {
   padding: 0 0 0 20px;
 }
-.i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-desc .i_seo-events-2022-desc-group .i_seo-events-2022-desc-depiction ul li {
+.i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-desc .i_seo-events-2022-desc-group .i_seo-events-2022-desc-depiction ul li::marker {
   color: var(--color-text-li);
+}
+.i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-desc .i_seo-events-2022-desc-group .i_seo-events-2022-desc-depiction ul li {
+  color: var(--color-black);
   line-height: 20px;
 }
 .i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-desc .i_seo-events-2022-desc-group .i_seo-events-2022-desc-depiction ul li span {
@@ -1989,13 +1996,16 @@
 .i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-desc .i_seo-events-2022-desc-depiction {
   padding: 0 0 0 20px;
 }
-.i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-desc .i_seo-events-2022-desc-depiction ul li {
+.i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-desc .i_seo-events-2022-desc-depiction ul li::marker {
   color: var(--color-text-li);
+}
+.i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-desc .i_seo-events-2022-desc-depiction ul li {
   line-height: 20px;
+  color: var(--color-black);
 }
 .i_about-us .i_seo .i_seo-events .i_seo-events-2022 .i_seo-events-2022-desc .i_seo-events-2022-desc-depiction ul li span {
-  font-size: 15px;
   color: var(--color-black);
+  font-size: 15px;
   font-family: "Open Sans", sans-serif;
   cursor: text;
 }
@@ -2050,25 +2060,11 @@
 .i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-group .i_seo-events-2022-desc-depiction {
   padding: 0 0 0 20px;
 }
-.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-group .i_seo-events-2022-desc-depiction ul li:before {
-  content: " ";
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: var(--color-text-li);
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: -16px;
-  top: 5px;
-  margin-right: 0.5em;
-  z-index: 1;
+.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-group .i_seo-events-2022-desc-depiction ul li::marker {
+  color: var(--color-text-li);
 }
 .i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-group .i_seo-events-2022-desc-depiction ul li {
   position: relative;
-  list-style-type: none;
   color: var(--color-black);
   line-height: 20px;
 }
@@ -2098,8 +2094,11 @@
 .i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-depiction {
   padding: 0 0 0 20px;
 }
-.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-depiction ul li {
+.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-depiction ul li::marker {
   color: var(--color-text-li);
+}
+.i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-depiction ul li {
+  color: var(--color-black);
   line-height: 20px;
 }
 .i_about-us .i_seo-events-2022-desc .i_seo-events-2022-desc-depiction ul li span {

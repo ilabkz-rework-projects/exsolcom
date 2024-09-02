@@ -465,6 +465,17 @@ a {
 .i_modal-content {
   padding-top: 10px;
 }
+.i_modal-content a {
+  text-decoration: none;
+  color: var(--color-red);
+  cursor: pointer !important;
+}
+.i_modal-content a span {
+  cursor: pointer !important;
+}
+.i_modal-content a u {
+  cursor: pointer;
+}
 
 .i_modal-kp {
   background-color: var(--bg-block);

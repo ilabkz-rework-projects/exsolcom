@@ -3081,6 +3081,7 @@ body{
   flex-wrap: nowrap;
   padding: 60px 0;
   position: relative;
+  z-index: 5;
   @media screen and (max-width: 1330px){
     padding: 50px 0;
   }
@@ -4038,6 +4039,8 @@ body{
   //!Main
   //Footer
   .i_footer{
+    position: relative;
+    z-index: 5;
     .i_container{
       .i_footer-right{
         width: 100%;

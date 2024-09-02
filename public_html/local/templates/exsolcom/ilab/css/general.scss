@@ -456,6 +456,17 @@ a{
 
 .i_modal-content{
   padding-top: 10px;
+  a{
+    text-decoration: none;
+    color: var(--color-red);
+    cursor: pointer!important;
+    span{
+      cursor: pointer !important;
+    }
+    u{
+      cursor: pointer;
+    }
+  }
 }
 
 //MODAL KP

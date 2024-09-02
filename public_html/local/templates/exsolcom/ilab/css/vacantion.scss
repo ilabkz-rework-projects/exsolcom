@@ -63,6 +63,8 @@
     flex-wrap: wrap;
     gap: 40px;
     padding: 70px 0;
+    position: relative;
+    z-index: 1;
     //VACATION ITEM
     .i_vacantion-item{
       display: flex;
@@ -304,6 +306,7 @@
           }
         }
         //!VACATION ITEM TOP
+
 
         //VACATION ITEM RIGHT SECOND
         .i_vacantion-item-right.second{

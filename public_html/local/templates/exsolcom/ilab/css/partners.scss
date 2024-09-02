@@ -5,6 +5,8 @@
     align-items: center;
     justify-content: flex-start;
     gap: 20px;
+    position: relative;
+    z-index: 2;
 
     .i_partners-title-icon {
       width: 50px;
@@ -69,6 +71,8 @@
     flex-wrap: wrap;
     gap: 40px;
     margin-top: 70px;
+    position: relative;
+    z-index: 1;
     @media screen and (max-width: 1330px){
       gap: 30px;
     }

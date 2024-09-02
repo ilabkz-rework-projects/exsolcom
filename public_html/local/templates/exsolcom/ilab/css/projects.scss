@@ -3,6 +3,8 @@
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
+  position: relative;
+  z-index: 2;
   .i_projects-title-icon{
     min-width: 50px;
     width: 50px;
@@ -63,6 +65,8 @@
   flex-wrap: wrap;
   margin-top: 80px;
   gap: 40px;
+  position: relative;
+  z-index: 1;
   @media screen and (max-width: 1593px){
     gap: 40px;
   }
@@ -218,6 +222,8 @@
   flex-wrap: wrap;
   margin-top: 70px;
   gap: 30px;
+  position: relative;
+  z-index: 1;
   @media screen and (max-width: 1330px){
     margin-top: 60px;
   }
@@ -266,6 +272,9 @@
     @media screen and (max-width: 375px){
       width: calc(50% - 10px);
       padding: 15px 12px;
+    }
+    &:hover{
+      background-color: var(--bg-fifth);
     }
     .i_projects-element__item__img{
       max-width: 233px;
