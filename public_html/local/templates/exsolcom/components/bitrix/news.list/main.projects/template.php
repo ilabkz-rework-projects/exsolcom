@@ -28,7 +28,7 @@ $this->setFrameMode(true);
 							<img src="<?=$arItem['IMAGES']?>" alt="<?=$arItem['NAME']?>">
 						</div>
 						<div class="swiper-slide-title">
-							<span><?=$arItem['NAME']?></span>
+							<span><?=$arItem['UF_SECTION_NAME_'.strtoupper(LANGUAGE_ID)]?></span>
 						</div>
 					</div>
 					<!--!PERSONAL SWIPER SLIDE BLOCK-->
