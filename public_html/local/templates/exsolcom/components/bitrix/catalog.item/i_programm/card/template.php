@@ -79,7 +79,7 @@ while($ob = $res->Fetch())
 	</div>
 
 
-<?php/*
+<?/*
 echo '<pre>';
 print_r($arResult['ELEMENT'][$item['ID']]);
 echo '</pre>';
