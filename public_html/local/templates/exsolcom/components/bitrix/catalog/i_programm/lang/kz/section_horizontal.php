@@ -255,20 +255,20 @@ else
                 <div class="i_programm-catalog">
                     <div class="i_programm-sorting-group">
                         <div class="i_programm-sort">
-                            <div class="i_programm-sort-title">&nbsp;&nbsp;<span>Бағасы бойынша реттеу: </span></div>
+                            <div class="i_programm-sort-title"><span>Сортировать по цене: </span></div>
 	                        <div class="i_programm-sort-items">
 		                        <div class="i_programm-sort-item asc <?=$sortOrder === 'asc' ? 'active' : ''?>">
-			                        <a href="/programm-products?sort=asc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Арзанырақ</span></a>
+			                        <a href="/programm-products?sort=asc"><span>Сначала дешевле </span></a>
 		                        </div>
 		                        <div class="i_programm-sort-item desc <?=$sortOrder === 'desc' ? 'active' : ''?>">
-			                        <a href="/programm-products?sort=desc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Қымбатырақ </span></a>
+			                        <a href="/programm-products?sort=desc"><span>Сначала дороже </span></a>
 		                        </div>
 	                        </div>
                         </div>
 
                         <div class="i_programm-compare-box">
                             <span class="i_but_ac i_open_compare j_open_compare">
-                                Салыстыру
+                                Сравнить
                             </span>
                         </div>
                     </div>

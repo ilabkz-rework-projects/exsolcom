@@ -47,7 +47,7 @@ while($ob = $res->Fetch())
 		</div>
 		<div class="product-item-detail">
 			<div class="product-item-detail-title">
-				<span><?= $item['PREVIEW_TEXT'] ?></span>
+				<span><?=LANGUAGE_ID === 'ru' ? $item['PREVIEW_TEXT'] : $item['PROPERTIES']['I_PREVIEW_TEXT_'.strtoupper(LANGUAGE_ID)]['VALUE'] ?></span>
 			</div>
 			<div class="product-item-detail-price">
 				<?if($price){?>

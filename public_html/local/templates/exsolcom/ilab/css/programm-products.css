@@ -334,7 +334,7 @@
 }
 @media screen and (max-width: 1330px) {
   .programm-container .i_programm-catalog .i_programm-sorting-group .i_but_ac {
-    max-width: 150px;
+    max-width: 160px;
     height: 40px;
     font-size: 0.875rem;
   }
