@@ -1,2 +1,4 @@
 <?
-$MESS["CT_GIFTS_SECTION_LIST_BLOCK_TITLE_DEFAULT"] = "Подарки к товарам этого раздела";
+$MESS["I_PRICE_SORT"] = "Казахская версия";
+$MESS["I_PRICE_SORT_ASC"] = "Казахская версия";
+$MESS["I_PRICE_SORT_DESC"] = "Казахская версия";

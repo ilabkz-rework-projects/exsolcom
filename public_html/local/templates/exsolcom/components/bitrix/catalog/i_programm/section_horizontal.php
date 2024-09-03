@@ -255,7 +255,8 @@ else
                 <div class="i_programm-catalog">
                     <div class="i_programm-sorting-group">
                         <div class="i_programm-sort">
-                            <div class="i_programm-sort-title">&nbsp;&nbsp;<span>Бағасы бойынша реттеу: </span></div>
+<!--                            <div class="i_programm-sort-title">&nbsp;&nbsp;<span>Бағасы бойынша реттеу: </span></div>-->
+                            <div class="i_programm-sort-title"><span><?=\Bitrix\Main\Localization\Loc::getMessage('I_PRICE_SORT')?></span></div>
 	                        <div class="i_programm-sort-items">
 		                        <div class="i_programm-sort-item asc <?=$sortOrder === 'asc' ? 'active' : ''?>">
 			                        <a href="/programm-products?sort=asc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Арзанырақ</span></a>

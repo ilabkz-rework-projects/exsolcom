@@ -28,12 +28,13 @@ use \Bitrix\Main\Localization\Loc;
 <?php
 
 
-$res = CIBlockElement::GetList([], ['IBLOCK_ID' => 9, 'ID' => $item['ID']], false, false, ['PROPERTY_I_PRICE']);
-$arResult = [];
+$res = CIBlockElement::GetProperty(9, $item['ID'], array(), array());
 $price = 0;
 
 while($ob = $res->Fetch())
 {
+	$arResult['ELEMENT'][$item['ID']]['PROPERTY'][$ob['CODE']] = $ob['VALUE'];
+
 	$price = $ob['PROPERTY_I_PRICE_VALUE'];
 }
 
@@ -43,11 +44,11 @@ while($ob = $res->Fetch())
 			<img src="<?= $item['PREVIEW_PICTURE']['SRC'] ?>" alt="img">
 		</div>
 		<div class="product-item-title" id="modal-kp" data-id="<?= $item['CODE'] ?>">
-			<span><?= $item['NAME'] ?></span>
+			<span><?=$arResult['ELEMENT'][$item['ID']]['PROPERTY']['I_NAME_'.strtoupper(LANGUAGE_ID)]?></span>
 		</div>
 		<div class="product-item-detail">
 			<div class="product-item-detail-title">
-				<span><?=LANGUAGE_ID === 'ru' ? $item['PREVIEW_TEXT'] : $item['PROPERTIES']['I_PREVIEW_TEXT_'.strtoupper(LANGUAGE_ID)]['VALUE'] ?></span>
+				<span><?=LANGUAGE_ID === 'ru' ? $item['PREVIEW_TEXT'] : $arResult['ELEMENT'][$item['ID']]['PROPERTY']['I_PREVIEW_TEXT_'.strtoupper(LANGUAGE_ID)] ?></span>
 			</div>
 			<div class="product-item-detail-price">
 				<?if($price){?>
@@ -62,7 +63,7 @@ while($ob = $res->Fetch())
 
 			</div>
 			<div class="product-item-btn">
-				<button id="form-kp-btn">Запросить КП</button>
+				<button id="form-kp-btn"><?=\Bitrix\Main\Localization\Loc::getMessage('I_REQUEST_KP')?></button>
 			</div>
 		</div>
 		<div class="i_item_compare">
@@ -78,8 +79,8 @@ while($ob = $res->Fetch())
 	</div>
 
 
-<?php
-//echo '<pre>';
-//print_r($arResult['ELEMENT'][$item['ID']]);
-//echo '</pre>';
-?>
+<?php/*
+echo '<pre>';
+print_r($arResult['ELEMENT'][$item['ID']]);
+echo '</pre>';
+*/?>
