@@ -82,8 +82,3 @@ $this->setFrameMode(true);
 </div>
 
 
-<?
-echo '<pre>';
-print_r($arItem);
-echo '</pre>';
-?>

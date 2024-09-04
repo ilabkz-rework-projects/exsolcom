@@ -29,13 +29,13 @@ $this->setFrameMode(true);
 		</div>
 		<div class="i_vacantion-item-right">
 			<div class="i_vacantion-item-role">
-				<span><?=$arItem['PROPERTIES']['I_ROLE']['VALUE']?></span>
+				<span><?=$arItem['PROPERTIES']['I_ROLE_'.strtoupper(LANGUAGE_ID)]['VALUE']?></span>
 			</div>
 			<div class="i_vacantion-item-name">
-				<span><?=$arItem['NAME']?></span>
+				<span><?=$arItem['PROPERTIES']['I_NAME_'.strtoupper(LANGUAGE_ID)]['VALUE']?></span>
 			</div>
 			<div class="i_vacantion-item-title">
-				<span><?=$arItem['PREVIEW_TEXT']?></span>
+				<span><?echo LANGUAGE_ID === 'ru' ? $arItem['PREVIEW_TEXT'] : $arItem['PROPERTIES']['I_PREVIEW_TEXT_'.strtoupper(LANGUAGE_ID)]['VALUE']?></span>
 			</div>
 		</div>
 
@@ -49,16 +49,16 @@ $this->setFrameMode(true);
             </div>
             <div class="i_vacantion-item-right">
                 <div class="i_vacantion-item-role">
-                    <span><?=$arItem['PROPERTIES']['I_ROLE']['VALUE']?></span>
+                    <span><?=$arItem['PROPERTIES']['I_ROLE_'.strtoupper(LANGUAGE_ID)]['VALUE']?></span>
                 </div>
                 <div class="i_vacantion-item-name">
-                    <span><?=$arItem['NAME']?></span>
+                    <span><?=$arItem['PROPERTIES']['I_NAME_'.strtoupper(LANGUAGE_ID)]['VALUE']?></span>
                 </div>
             </div>
         </div>
         <div class="i_vacantion-item-right second">
             <div class="i_vacantion-item-title">
-                <span><?=$arItem['PREVIEW_TEXT']?></span>
+                <span><?echo LANGUAGE_ID === 'ru' ? $arItem['PREVIEW_TEXT'] : $arItem['PROPERTIES']['I_PREVIEW_TEXT_'.strtoupper(LANGUAGE_ID)]['VALUE']?></span>
             </div>
         </div>
 	</div>
@@ -73,8 +73,4 @@ $this->setFrameMode(true);
 
 </div>
 
-<?php
-//echo '<pre>';
-//print_r($arResult["ITEMS"]);
-//echo '</pre>';
-?>
+
