@@ -187,8 +187,8 @@
 				</svg>
 			</div>
 			<!--Группа иконка-->
-            <a href="/services"><span>Наши услуги для вас</span></a>
-		</div>
+            <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/main/'.LANGUAGE_ID.'/i_name_services.php',Array(),Array('MODE'=>'html', 'NAME'=>'Заголовок Услуг на главной странице', 'SHOW_BORDER'=>true))?>
+        </div>
 		<!--!Группа заголовок-->
 		<!--Группа анонсы-->
 		<?$APPLICATION->IncludeComponent(

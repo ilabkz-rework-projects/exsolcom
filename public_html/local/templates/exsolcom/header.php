@@ -124,7 +124,7 @@ $langMain = CSite::InDir(SITE_DIR.'/index.php');
 			</div>
 			<!--!HEADER LOGO-->
 			<!--HEADER BLOG-->
-            <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/blog_btn.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопга Блог', 'SHOW_BORDER'=>false))// blog_btn?>
+            <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/blog_btn.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопга Блог', 'SHOW_BORDER'=>true))// blog_btn?>
             <!--!HEADER BLOG-->
 			<!--HEADER BLOG ICON-->
             <a href="/blog">
