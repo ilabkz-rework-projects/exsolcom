@@ -10,7 +10,7 @@ if($arResult):?>
 						<img src="<?=$element['IMAGES']?>" alt="<?=$element['NAME']?>">
 					</div>
 					<div class="i_projects-section__item__name">
-						<span><?=$element['NAME']?></span>
+						<span><?=$element['UF_SECTION_NAME_'.strtoupper(LANGUAGE_ID)]?></span>
 					</div>
 				</a>
 			</div>

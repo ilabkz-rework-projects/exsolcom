@@ -54,15 +54,15 @@ $this->setFrameMode(true);
 		<?if($arParams["DISPLAY_NAME"]!="N" && $arItem["NAME"]):?>
 			<div class="i_services-name">
 				<?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
-					<b><?echo $arItem["NAME"]?></b><br />
-				<?else:?>
-					<b><?echo $arItem["NAME"]?></b><br />
+					<b><?echo $arItem['PROPERTIES']["I_NAME_".strtoupper(LANGUAGE_ID)]['VALUE']?></b><br />
+                <?else:?>
+                    <b><?echo $arItem["NAME"]?></b>
 				<?endif;?>
 			</div>
 		<?endif;?>
 		<?if($arParams["DISPLAY_PREVIEW_TEXT"]!="N" && $arItem["PREVIEW_TEXT"]):?>
 			<div class="i_services-preview-text">
-				<span><?echo $arItem["PREVIEW_TEXT"];?></span>
+				<span><?echo LANGUAGE_ID === 'ru' ? $arItem["PREVIEW_TEXT"] : $arItem['PROPERTIES']['I_PREVIEW_TEXT_'.strtoupper(LANGUAGE_ID)]['VALUE'];?></span>
 			</div>
 		<?endif;?>
 		<?if($arParams["DISPLAY_PICTURE"]!="N" && is_array($arItem["PREVIEW_PICTURE"])):?>
@@ -90,3 +90,10 @@ $this->setFrameMode(true);
 <!--	<br />--><?php //=$arResult["NAV_STRING"]?>
 <?endif;?>
 </div>
+
+
+<?
+echo '<pre>';
+print_r($arItem);
+echo '</pre>';
+?>
