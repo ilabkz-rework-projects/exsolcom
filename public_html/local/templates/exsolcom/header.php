@@ -48,12 +48,12 @@ $langMain = CSite::InDir(SITE_DIR.'/index.php');
 			</button>
 			<!--!HEADER BURGER-->
 
-			<?if(!$main){?>
+			<?if(!$main && !$langMain){?>
 				<!--	ЗДЕСЬ ДОБАВЛЯЕШЬ ИКОНКУ	       -->
 				<!--HEADER LOGO-->
 				<div class="i_header-logo">
 					<!--HEADER LOGO ICON FIRST-->
-					<a href="/">
+					<a href="<?=SITE_DIR?>">
 						<div class="i_header-logo-icon-first">
                             <svg width="40" height="41" viewBox="0 0 40 41" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M32.761 18.9474L40 18.9474C40 8.56275 31.6186 0.123324 21.2083 0.0049658L21.1264 7.23508C27.5764 7.31227 32.761 12.5355 32.761 18.9474Z" fill="#FF161F"/>
@@ -124,12 +124,8 @@ $langMain = CSite::InDir(SITE_DIR.'/index.php');
 			</div>
 			<!--!HEADER LOGO-->
 			<!--HEADER BLOG-->
-            <a href="/blog">
-                <span class="i_header-blog">
-			        <button>Блог</button>
-                </span>
-            </a>
-			<!--!HEADER BLOG-->
+            <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/blog_btn.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопга Блог', 'SHOW_BORDER'=>false))// blog_btn?>
+            <!--!HEADER BLOG-->
 			<!--HEADER BLOG ICON-->
             <a href="/blog">
                 <button class="i_header-blog-icon">

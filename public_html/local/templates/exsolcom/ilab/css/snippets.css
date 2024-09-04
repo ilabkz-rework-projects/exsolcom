@@ -1994,6 +1994,7 @@
   display: flex;
   gap: 20px;
   padding: 15px 70px;
+  justify-content: center;
 }
 @media screen and (max-width: 1000px) {
   .i_snippet.picture {
@@ -2007,8 +2008,35 @@
     gap: 5px;
   }
 }
-.i_snippet.picture img {
-  object-fit: contain;
+.i_snippet.picture .i_snippet-first-picture {
+  width: 50%;
+}
+.i_snippet.picture .i_snippet-first-picture img {
+  width: 100%;
+  height: 100%;
+}
+
+.i_snippet.picture {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.i_snippet.picture .i_snippet-second-picture {
+  display: flex;
+  gap: 20px;
+  width: 23%;
+  flex-basis: 31%;
+}
+@media screen and (max-width: 630px) {
+  .i_snippet.picture .i_snippet-second-picture {
+    flex-basis: 47%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_snippet.picture .i_snippet-second-picture {
+    flex-basis: 100%;
+  }
+}
+.i_snippet.picture .i_snippet-second-picture img {
   width: 100%;
   height: 100%;
 }
