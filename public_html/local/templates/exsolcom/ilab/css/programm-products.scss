@@ -46,6 +46,7 @@
         max-width: 695px;
         width: 100%;
         overflow: hidden;
+        justify-content: space-between;
         @media screen and (max-width: 1330px){
           max-width: 567px;
           padding: 12px 25px;
@@ -126,7 +127,7 @@
               z-index: 10;
               background-repeat: no-repeat;
               top: 50%;
-              right: -11%;
+              right: 0%;
               transform: translate(50%, -60%);
               @media screen and (max-width: 590px){
                 background-size: 9px;
@@ -136,6 +137,7 @@
             }
             .i_programm-sort-item{
               position: relative;
+              padding-right: 10px;
               &.active{
                 &:after{
                   content: " ";
