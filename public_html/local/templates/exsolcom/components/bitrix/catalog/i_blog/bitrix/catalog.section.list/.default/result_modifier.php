@@ -49,7 +49,7 @@ if (0 < $arResult['SECTIONS_COUNT'])
 {
 	$boolPicture = false;
 	$boolDescr = false;
-	$arSelect = array('ID');
+	$arSelect = array('ID', 'UF_*');
 	$arMap = array();
 	if ('LINE' == $arParams['VIEW_MODE'] || 'TILE' == $arParams['VIEW_MODE'])
 	{
@@ -95,5 +95,18 @@ if (0 < $arResult['SECTIONS_COUNT'])
 			}
 		}
 	}
+
+    foreach ($arResult['SECTIONS'] as $key => $arSection)
+    {
+        $arMap[$arSection['ID']] = $key;
+    }
+
+    $sectionUF = CIBlockSection::GetList(array(), array('IBLOCK_ID' => 2), false, array('ID', 'UF_*'));
+    while ($arSection = $sectionUF->GetNext()){
+        $key = $arMap[$arSection['ID']];
+        $arResult['SECTIONS'][$key]['SECTION_TITLE_RU'] = $arSection['UF_SECTION_NAME_RU'];
+        $arResult['SECTIONS'][$key]['SECTION_TITLE_KZ'] = $arSection['UF_SECTION_NAME_KZ'];
+        $arResult['SECTIONS'][$key]['SECTION_TITLE_EN'] = $arSection['UF_SECTION_NAME_EN'];
+    }
 }
 ?>

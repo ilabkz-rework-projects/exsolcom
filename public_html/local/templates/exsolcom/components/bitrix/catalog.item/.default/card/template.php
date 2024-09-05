@@ -54,10 +54,31 @@ $arFilter = array(
 	'IBLOCK_ID' => 2,
 );
 
-$dbRes = \CIBlockSection::GetList(array(), $arFilter, false, array("*")); // UF_* для выбора всех пользовательских свойств);
+$dbRes = \CIBlockSection::GetList(array(), $arFilter, false, array("*", "UF_*")); // UF_* для выбора всех пользовательских свойств);
 
 while ($arRes = $dbRes->GetNext()) {
 	$arResult['ELEMENT'][$arRes['ID']] = $arRes;
+}
+
+unset($arRes, $dbRes);
+
+$arSelectProp = [
+    'ID',
+    'PROPERTY_I_PREVIEW_TEXT_KZ',
+    'PROPERTY_I_PREVIEW_TEXT_EN',
+    'PROPERTY_I_NAME_RU',
+    'PROPERTY_I_NAME_KZ',
+    'PROPERTY_I_NAME_EN'
+];
+
+$itemProperty = \CIBlockElement::GetList([], ['IBLOCK_ID' => 2, 'ID' => $item['ID']], false, false, $arSelectProp);
+
+while ($arProp = $itemProperty->GetNext()) {
+    $arResult['I_PROPS'][$arProp['ID']]['I_PREVIEW_TEXT_KZ'] = $arProp['PROPERTY_I_PREVIEW_TEXT_KZ_VALUE'];
+    $arResult['I_PROPS'][$arProp['ID']]['I_PREVIEW_TEXT_EN'] = $arProp['PROPERTY_I_PREVIEW_TEXT_EN_VALUE'];
+    $arResult['I_PROPS'][$arProp['ID']]['I_NAME_RU']         = $arProp['PROPERTY_I_NAME_RU_VALUE'];
+    $arResult['I_PROPS'][$arProp['ID']]['I_NAME_KZ']         = $arProp['PROPERTY_I_NAME_KZ_VALUE'];
+    $arResult['I_PROPS'][$arProp['ID']]['I_NAME_EN']         = $arProp['PROPERTY_I_NAME_EN_VALUE'];
 }
 
 ?>
@@ -76,16 +97,16 @@ while ($arRes = $dbRes->GetNext()) {
 					</div>
 				<? } ?>
 				<div class="product-item-topic" topic-value="<?= $item['PROPERTIES']['I_TOPIC_NAME']['VALUE'] ?>">
-					<span><?= $arResult['ELEMENT'][$item['IBLOCK_SECTION_ID']]['NAME'] ?></span>
+					<span><?= $arResult['ELEMENT'][$item['IBLOCK_SECTION_ID']]['UF_SECTION_NAME_'.strtoupper(LANGUAGE_ID)] ?></span>
 				</div>
 			</div>
 			<div class="product-item-content">
 				<div class="product-item-name">
-					<span><?= $item['NAME'] ?></span>
+					<span><?= $arResult['I_PROPS'][$item['ID']]['I_NAME_'.strtoupper(LANGUAGE_ID)] ?></span>
 				</div>
 				<div class="product-item-title">
-					<span><?= $item['PREVIEW_TEXT'] ?></span>
-				</div>
+                    <span><?=LANGUAGE_ID === 'ru' ? $item['PREVIEW_TEXT'] : $arResult['I_PROPS'][$item['ID']]['I_PREVIEW_TEXT_'.strtoupper(LANGUAGE_ID)]?></span>
+                </div>
 			</div>
 		</div>
 	</div>
@@ -104,8 +125,8 @@ while ($arRes = $dbRes->GetNext()) {
                     </div>
                 <? } ?>
 				<div class="i_vacantion-item-topic">
-					<span><?= $arResult['ELEMENT'][$item['IBLOCK_SECTION_ID']]['NAME'] ?></span>
-				</div>
+                    <span><?= $arResult['ELEMENT'][$item['IBLOCK_SECTION_ID']]['UF_SECTION_NAME_'.strtoupper(LANGUAGE_ID)] ?></span>
+                </div>
 				<div class="i_vacantion-item-name">
 					<span><?=$item['NAME']?></span>
 				</div>
@@ -113,7 +134,7 @@ while ($arRes = $dbRes->GetNext()) {
 		</div>
 		<div class="i_vacantion-item-right second">
 			<div class="i_vacantion-item-title">
-				<span><?=$item['PREVIEW_TEXT']?></span>
+				<span><?=LANGUAGE_ID === 'ru' ? $item['PREVIEW_TEXT'] : $arResult['I_PROPS'][$item['ID']]['I_PREVIEW_TEXT_'.strtoupper(LANGUAGE_ID)]?></span>
 			</div>
 		</div>
 	</div>
@@ -121,6 +142,6 @@ while ($arRes = $dbRes->GetNext()) {
 
 <?php
 //echo '<pre>';
-//print_r($item);
+//print_r($arResult['ELEMENT']);
 //echo '</pre>';
 ?>
