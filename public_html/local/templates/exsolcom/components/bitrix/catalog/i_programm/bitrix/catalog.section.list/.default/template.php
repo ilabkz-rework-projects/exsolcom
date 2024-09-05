@@ -199,7 +199,7 @@ if (0 < $arResult["SECTIONS_COUNT"])
 				if ($arParams["COUNT_ELEMENTS"] && $arSection['ELEMENT_CNT'] !== null)
 ?><li  id="<?=$this->GetEditAreaId($arSection['ID']);?>" class="<?=$arParams['CURRENT_SECTION_ID'] === $arSection['ID'] ? 'menu-all-articles' : ''?>"><h2 class="bx_sitemap_li_title"><a href="<? echo $arSection["SECTION_PAGE_URL"]; ?>"><? echo $arSection["SECTION_TITLE_".strtoupper(LANGUAGE_ID)];?><?
                 {
-					?> <span>(<? echo $arSection["ELEMENT_CNT"]; ?>)</span><?
+					?> <span><? echo $arSection["ELEMENT_CNT"]; ?></span><?
 				}
 				?></a></h2><?
 
@@ -226,7 +226,7 @@ if (0 < $arResult["SECTIONS_COUNT"])
 ?></div>
 
 <?
-echo '<pre>';
-print_r($arResult);
-echo '</pre>';
+//echo '<pre>';
+//print_r($arResult);
+//echo '</pre>';
 ?>

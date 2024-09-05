@@ -97,21 +97,20 @@ if (0 < $arResult['SECTIONS_COUNT'])
 		}
 	}
 
-    foreach ($arSection['SECTIONS'] as $key => $arSection)
+    foreach ($arResult['SECTIONS'] as $key => $arSection)
     {
         $arMap[$arSection['ID']] = $key;
     }
 
     $sectionUF = CIBlockSection::GetList(array(), array('IBLOCK_ID' => 9), false, array('ID', 'UF_*'));
     while ($arSection = $sectionUF->GetNext()){
-        $arResult['SECTIONS'][$arSection['ID']]['SECTION_TITLE_RU'] = $arSection['UF_SECTION_NAME_RU'];
-        $arResult['SECTIONS'][$arSection['ID']]['SECTION_TITLE_KZ'] = $arSection['UF_SECTION_NAME_KZ'];
-        $arResult['SECTIONS'][$arSection['ID']]['SECTION_TITLE_EN'] = $arSection['UF_SECTION_NAME_EN'];
-    }
+	    $key = $arMap[$arSection['ID']];
 
-    echo '<pre>';
-    print_r($arResult['SECTIONS']);
-    echo '</pre>';
+
+        $arResult['SECTIONS'][$key]['SECTION_TITLE_RU'] = $arSection['UF_SECTION_NAME_RU'];
+        $arResult['SECTIONS'][$key]['SECTION_TITLE_KZ'] = $arSection['UF_SECTION_NAME_KZ'];
+        $arResult['SECTIONS'][$key]['SECTION_TITLE_EN'] = $arSection['UF_SECTION_NAME_EN'];
+    }
 }
 
 ?>
