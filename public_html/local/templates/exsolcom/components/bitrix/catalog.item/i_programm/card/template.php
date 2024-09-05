@@ -53,11 +53,11 @@ while($ob = $res->Fetch())
 			<div class="product-item-detail-price">
 				<?if($price){?>
 					<span><span class="color-red"><?= $price ?></span> ₸
-						<span class="text"> (электронная версия)</span>
+						<span class="text"><?=\Bitrix\Main\Localization\Loc::getMessage('I_TEXT_VERSION')?></span>
 						<span class="text2"> (эл. версия)</span>
 					</span>
 				<?}else{?>
-					<span><span class="color-red">Цена по запросу</span>
+					<span><span class="color-red"><?=\Bitrix\Main\Localization\Loc::getMessage('I_TEXT_PRICE')?></span>
                 </span>
 				<?}?>
 
@@ -69,11 +69,11 @@ while($ob = $res->Fetch())
 		<div class="i_item_compare">
             <div class="i_compare_succes j_compare_success hd" data-id="131954">
                 <div class="i_bs_close j_cs_close"></div>
-                <div class="j_me1" style="display: none;">Товар добавлен в <span class="i_comp_upper"> сравнение</span> что бы посмотреть список сравнение, добавьте хотя бы ещё один товар.</div>
-                <div class="j_me2" style="">Товар добавлен в <span class="i_comp_upper">сравнение</span><div class="i_open_compare i_but_ac i_w100per j_open_compare">Сравнить</div></div>
+                <div class="j_me1" style="display: none;"><?=\Bitrix\Main\Localization\Loc::getMessage('I_TEXT_ADD')?><span class="i_comp_upper"><?=\Bitrix\Main\Localization\Loc::getMessage('I_TEXT_COMPARE')?></span> <?=\Bitrix\Main\Localization\Loc::getMessage('I_TEXT_TO')?></div>
+                <div class="j_me2" style=""><?=\Bitrix\Main\Localization\Loc::getMessage('I_TEXT_ADD')?><span class="i_comp_upper"><?=\Bitrix\Main\Localization\Loc::getMessage('I_TEXT_COMPARE')?></span><?=\Bitrix\Main\Localization\Loc::getMessage('I_TEXT_COMPARE_SEC')?><div class="i_open_compare i_but_ac i_w100per j_open_compare"><?=\Bitrix\Main\Localization\Loc::getMessage('I_BTN_COMPARE')?></div></div>
             </div>
 			<a class="i_compare_but j_item_compare" data-iblock_id="<?=9?>" data-id="<?=$item['ID']?>" data-change_text='{"txt_default":"Сравнить","txt_change":"Удалить"}'>
-				<span>Сравнить</span>
+				<span><?=\Bitrix\Main\Localization\Loc::getMessage('I_BTN_COMPARE')?></span>
 			</a>
 		</div>
 	</div>

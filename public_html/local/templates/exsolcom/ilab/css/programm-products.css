@@ -206,6 +206,7 @@
 .programm-container .i_programm-catalog .i_programm-sorting-group .i_programm-sort .i_programm-sort-items .i_programm-sort-item a {
   position: relative;
   text-decoration: none;
+  display: inline-block;
 }
 .programm-container .i_programm-catalog .i_programm-sorting-group .i_programm-sort .i_programm-sort-items .i_programm-sort-item a span {
   color: var(--color-White);
@@ -707,6 +708,7 @@
   gap: 20px;
   font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
+  color: var(--color-textInfoblock);
 }
 @media screen and (max-width: 1480px) {
   .programm-container .i_programm-catalog .product-item-container .programm-item .i_item_compare .i_compare_succes .j_me1 {
@@ -734,6 +736,7 @@
   font-family: "Open Sans", sans-serif;
   text-wrap: nowrap;
   align-items: center;
+  color: var(--color-textInfoblock);
 }
 @media screen and (max-width: 1480px) {
   .programm-container .i_programm-catalog .product-item-container .programm-item .i_item_compare .i_compare_succes .j_me2 {

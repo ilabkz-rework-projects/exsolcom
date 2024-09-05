@@ -269,6 +269,7 @@
 
 .ilab_c_i_price .i_item_price {
   margin-bottom: 0 !important;
+  color: var(--color-textInfoblock);
 }
 
 .ilab_c_i_price .i_item_price .i_pr_min .i_price {
