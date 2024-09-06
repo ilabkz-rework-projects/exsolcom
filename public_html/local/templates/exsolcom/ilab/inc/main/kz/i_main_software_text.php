@@ -6,6 +6,6 @@
 		</p>
 	</div>
 	<div class="i_software-btn">
-		<button id="form-kp-btn">Запросить прайс лист и КП</button>
+		<button id="form-kp-btn">Баға тізімі мен коммерциялық ұсыныс сұрау</button>
 	</div>
 </div>

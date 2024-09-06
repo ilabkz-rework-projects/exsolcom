@@ -74,9 +74,5 @@
 	),
 	false
 );?>
-    <div class="i_news-btn">
-	    <a href="/news">
-		    <button>Все новости</button>
-	    </a>
-    </div>
+    <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_btn_news.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка все новости', 'SHOW_BORDER'=>true))?>
 </div>

@@ -238,8 +238,10 @@
 		"PARENT_SECTION_CODE" => "",
 		"PREVIEW_TRUNCATE_LEN" => "",
 		"PROPERTY_CODE" => array(
-			0 => "",
-			1 => "",
+			0 => "I_NAME_EN",
+			1 => "I_NAME_KZ",
+			2 => "I_NAME_RU",
+			3 => "",
 		),
 		"SET_BROWSER_TITLE" => "Y",
 		"SET_LAST_MODIFIED" => "N",
@@ -732,12 +734,8 @@
             </div>
             <!--!WORK PROCESS BODY-->
 			<!--WORK PROCESS BNT-->
-			<div class="i_work-process-btn">
-				<button id="form-kp-btn">
-					Запросить коммерческое предложение
-				</button>
-			</div>
-			<!--!WORK PROCESS BTN-->
+            <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_btn_kp_about_company.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка Запросить кп', 'SHOW_BORDER'=>true))// Blog?>
+            <!--!WORK PROCESS BTN-->
 		</div>
 	</div>
 	<!--!WORK PROCESS-->

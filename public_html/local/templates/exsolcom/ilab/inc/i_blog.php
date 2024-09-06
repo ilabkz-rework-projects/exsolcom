@@ -78,11 +78,7 @@
 	),
 	false
 );?>
-    <div class="i_blog-btn">
-        <a href="/blog">
-            <button>Все статьи</button>
-        </a>
-    </div>
+    <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_btn_blog.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка все статьи', 'SHOW_BORDER'=>true))?>
 </div>
 
 

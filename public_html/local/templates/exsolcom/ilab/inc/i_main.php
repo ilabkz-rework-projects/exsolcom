@@ -264,10 +264,8 @@
 
 		<!--!Группа анонсы-->
 		<!--Кнопка Запросить коммерческое предложение-->
-		<div class="i_our-services-btn-request">
-			<button id="form-kp-btn">Запросить коммерческое предложение</button>
-		</div>
-		<!--!Кнопка Запросить комерческое предложение-->
+        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_btn_kp.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка Запросить КП', 'SHOW_BORDER'=>true))?>
+        <!--!Кнопка Запросить комерческое предложение-->
 	</div>
 </div>
 <!-- MAIN OUR SERVICES -->
@@ -458,12 +456,8 @@
 	),
 	false
 );?>
-		<div class="i_products-btn">
-			<a href="/programm-products">
-				<button>Перейти в каталог</button>
-			</a>
-		</div>
-		<div class="pagination">
+        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_btn_catalog.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка перейти в каталог', 'SHOW_BORDER'=>true))?>
+        <div class="pagination">
 			<div class="swiper-products-button-prev">
 				<svg class="prev-icon" width="11" height="18" viewBox="0 0 11 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 					<path fill-rule="evenodd" clip-rule="evenodd" d="M8.5048 1.0064L1.30819 8.20301C1.234 8.2772 1.1704 8.37259 1.12801 8.47858C1.03262 8.52098 0.937229 8.58457 0.852438 8.65876C0.481479 9.02972 0.481479 9.63385 0.852438 10.0048L8.94995 18.1023C9.32091 18.4733 9.92504 18.4733 10.296 18.1023C10.667 17.7314 10.667 17.1272 10.296 16.7563L2.87682 9.33709L9.85085 2.36305C10.2324 2.00269 10.243 1.39856 9.88265 1.017C9.52229 0.635443 8.91815 0.624844 8.5366 0.985204C8.526 0.985204 8.5154 0.995803 8.5048 1.0064Z" />
@@ -589,12 +583,8 @@
 				"STRICT_SECTION_CHECK" => "N"
 			)
 		);?>
-		<div class="i_projects-btn">
-            <a href="projects/">
-			    <button>Все проекты</button>
-            </a>
-		</div>
-		<div class="pagination">
+        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_btn_projects.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка все проекты', 'SHOW_BORDER'=>true))// Blog?>
+        <div class="pagination">
 			<div class="swiper-projects-button-prev">
 				<svg class="prev-icon" width="11" height="18" viewBox="0 0 11 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 					<path fill-rule="evenodd" clip-rule="evenodd" d="M8.5048 1.0064L1.30819 8.20301C1.234 8.2772 1.1704 8.37259 1.12801 8.47858C1.03262 8.52098 0.937229 8.58457 0.852438 8.65876C0.481479 9.02972 0.481479 9.63385 0.852438 10.0048L8.94995 18.1023C9.32091 18.4733 9.92504 18.4733 10.296 18.1023C10.667 17.7314 10.667 17.1272 10.296 16.7563L2.87682 9.33709L9.85085 2.36305C10.2324 2.00269 10.243 1.39856 9.88265 1.017C9.52229 0.635443 8.91815 0.624844 8.5366 0.985204C8.526 0.985204 8.5154 0.995803 8.5048 1.0064Z" />
@@ -688,13 +678,9 @@
 		);?>
 		<!--!OUR STATUS GROUP BLOCKS-->
 		<!--OUR STATUS GROUP BTN-->
-		<div class="i_our-status-group-btn">
-            <a href="https://consulting.1c.ru/partners/14482.html" target="_blank"><button>Посмотреть детально рейтинги компании на сайте 1C</button></a>
-		</div>
-		<div class="i_our-status-group-btn_1">
-            <a href="https://consulting.1c.ru/partners/14482.html" target="_blank"><button>Все рейтинги компании на сайте 1C</button></a>
-		</div>
-		<!--!OUR STATUS GROUP BTN-->
+        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_btn_1c.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка посмотреть рейтинги', 'SHOW_BORDER'=>true))// Blog?>
+        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_btn_1c_2.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка посмотреть рейтинги для адаптива', 'SHOW_BORDER'=>true))// Blog?>
+        <!--!OUR STATUS GROUP BTN-->
 	</div>
 </div>
 <!--!OUR STATUS-->
