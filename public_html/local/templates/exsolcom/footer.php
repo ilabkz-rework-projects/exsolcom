@@ -300,6 +300,8 @@
     </div>
 </footer>
 
+<div class="go-top"></div>
+
 <div class="i_overlay"></div>
 <div class="i_modal">
 	<div class="i_container">

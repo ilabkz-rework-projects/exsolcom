@@ -521,6 +521,7 @@
   display: flex;
   flex-direction: column;
   gap: 35px;
+  color: var(----color-textInfoblock);
 }
 @media screen and (max-width: 1278px) {
   .i_about-us .i_directorship .i_directorship-basic .i_directorship-basic-block .i_directorship-basic-block-desc .i_directorship-basic-block-desc-top .i_directorship-block-desc-top-depiction {
@@ -529,7 +530,7 @@
 }
 .i_about-us .i_directorship .i_directorship-basic .i_directorship-basic-block .i_directorship-basic-block-desc .i_directorship-basic-block-desc-top .i_directorship-block-desc-top-depiction .i_directorship-desc-top-depiction-name {
   font-size: 16px;
-  color: var(----color-textInfoblock);
+  color: black !important;
   cursor: text;
   font-weight: 600;
 }
@@ -537,9 +538,10 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  color: black !important;
 }
 .i_about-us .i_directorship .i_directorship-basic .i_directorship-basic-block .i_directorship-basic-block-desc .i_directorship-basic-block-desc-top .i_directorship-block-desc-top-depiction .i_directorship-desc-top-depiction-specification span {
-  color: var(----color-textInfoblock);
+  color: black !important;
   font-size: 15px;
   cursor: text;
   font-family: "Open Sans", sans-serif;
@@ -780,7 +782,7 @@
 }
 .i_about-us .i_directorship .i_directorship-basic .i_directorship-basic-block_second .i_directorship-basic-block-desc_second .i_directorship-basic-block-desc-top_second .i_directorship-block-desc-top-depiction .i_directorship-desc-top-depiction-name {
   font-size: 16px;
-  color: var(----color-textInfoblock);
+  color: black !important;
   cursor: text;
   font-weight: 600;
 }
@@ -790,7 +792,7 @@
   gap: 10px;
 }
 .i_about-us .i_directorship .i_directorship-basic .i_directorship-basic-block_second .i_directorship-basic-block-desc_second .i_directorship-basic-block-desc-top_second .i_directorship-block-desc-top-depiction .i_directorship-desc-top-depiction-specification span {
-  color: var(----color-textInfoblock);
+  color: black !important;
   font-size: 15px;
   cursor: text;
   font-family: "Open Sans", sans-serif;
@@ -1061,6 +1063,7 @@
   text-align: center;
   line-height: 21px;
   cursor: text;
+  color: var(--color-textInfoblock);
 }
 @media screen and (max-width: 1510px) {
   .i_about-us .i_team .i_team-personal .i_team-personal-block .i_team-personal-block-depiction .i_team-personal-block-depiction-group .block-depiction-group-desc {

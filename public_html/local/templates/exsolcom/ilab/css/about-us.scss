@@ -517,12 +517,13 @@
               display: flex;
               flex-direction: column;
               gap: 35px;
+              color: var(----color-textInfoblock);
               @media screen and (max-width: 1278px){
                 gap: 25px;
               }
               .i_directorship-desc-top-depiction-name{
                 font-size: 16px;
-                color: var(----color-textInfoblock);
+                color: black!important;
                 cursor: text;
                 font-weight: 600;
               }
@@ -530,8 +531,9 @@
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
+                color: black !important;
                 span{
-                  color: var(----color-textInfoblock);
+                  color: black !important;
                   font-size: 15px;
                   cursor: text;
                   font-family: "Open Sans", sans-serif;
@@ -792,7 +794,7 @@
               }
               .i_directorship-desc-top-depiction-name{
                 font-size: 16px;
-                color: var(----color-textInfoblock);
+                color: black !important;
                 cursor: text;
                 font-weight: 600;
               }
@@ -801,7 +803,7 @@
                 flex-direction: column;
                 gap: 10px;
                 span{
-                  color: var(----color-textInfoblock);
+                  color: black !important;
                   font-size: 15px;
                   cursor: text;
                   font-family: "Open Sans", sans-serif;
@@ -1175,6 +1177,7 @@
               text-align: center;
               line-height: 21px;
               cursor: text;
+              color: var(--color-textInfoblock);
               @media screen and (max-width: 1510px){
                 line-height: 18px;
               }

@@ -5925,7 +5925,35 @@ body{
 
 //!HEADER MEDIA ADAPTIVE 360
 
+//GO TO
+.go-top{
+  position: fixed;
+  background-image: url("../img/svg/up_arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position-y: 16px;
+  background-position-x: 11px;
+  right: 25px;
+  bottom: 40px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  background-color: var(--color-red);
+  z-index: 1000;
+  opacity: 0.5;
+  display: none;
+  &:hover{
+    opacity: 1;
+    transition: all .4s ease;
+  }
+}
 
+.go-top-show{
+  display: block;
+}
+//!GO TO
 
 
 
