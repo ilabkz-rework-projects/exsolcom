@@ -1,10 +1,6 @@
 <div class="i_about-company-desc">
-            <span>
-                TOO *<span class="color-company-desc">ExSolCom</span>ЖШС нарықта 17 жылдан астам уақыт бойы жұмыс істейді. Соңғы 15 жылда біз 880-ден астам 1С франчайзи компанияларының арасында Қазақстан корпоративтік нарығында жетекші орындарды иеленіп келеміз. Компанияның негізгі қызмет түрі – 1С фирмасының бағдарламалық өнімдерін корпоративтік нарықта сату, енгізу және қолдау.            </span>
-    <span>
-                Біздің <span class="color-company-desc">клиенттеріміз </span>Қазақстанның мемлекеттік және коммерциялық секторларындағы орта және ірі бизнес кәсіпорындары болып табылады. Біз 200-ден астам жобаны енгіздік және автоматтандырылған жүйелердің 20 000-нан астам жұмыс орнын автоматтандырдық.            </span>
-    <span>
-                <span class="color-company-desc">Компаниямыздың миссиясы</span> – клиенттерімізге бизнесте максималды табысқа жетуге мүмкіндік беру үшін біздің ең тиімді IT шешімдерімізді, өнімдерімізді және қызметтерімізді пайдалану.            </span>
-    <span>
-                Біздің <span class="color-company-desc">құндылықтарымыз:</span> біз кәсібилікті, ашықтықты, жеделдікті, сапаны, адалдықты және өзара сыйластықты бағалаймыз. Бұл біздің жұмысымыздағы және клиенттерімізбен өзара тиімді бизнес қатынастарымыздағы басты қағидалар."            </span>
+    <span>LLP *<span class="color-company-desc">ExSolCom</span>* has been on the market for over 17 years. For the past 15 years, we have held leading positions in the corporate market of Kazakhstan among more than 880 1C franchise companies. The company's main activities are the sale, implementation, and support of 1C software products in the corporate market of Kazakhstan.</span>
+    <span>Our <span class="color-company-desc">clients </span>include medium and large businesses from both the public and commercial sectors of Kazakhstan's economy. We have implemented over 200 projects and automated more than 20,000 user workstations in automated systems.</span>
+    <span>Our<span class="color-company-desc"> company's mission</span> is to enable our clients to achieve maximum success in their business through the use of our optimal IT solutions, products, and services.</span>
+    <span>Our <span class="color-company-desc">values:</span> We value professionalism, openness, promptness, quality, honesty, and mutual respect among colleagues and our clients in mutually beneficial business relationships within business automation projects.</span>
 </div>

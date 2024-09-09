@@ -1,5 +1,5 @@
 <div class="i_projects-btn">
     <a href="projects/">
-        <button>Все проекты</button>
+        <button>All projects</button>
     </a>
 </div>

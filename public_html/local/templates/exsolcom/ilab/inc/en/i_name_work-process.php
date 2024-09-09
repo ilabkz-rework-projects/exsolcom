@@ -1,3 +1,3 @@
 <div class="i_work-process-title-name">
-    <span>КАК МЫ РАБОТАЕМ</span>
+    <span>HOW WE WORK</span>
 </div>

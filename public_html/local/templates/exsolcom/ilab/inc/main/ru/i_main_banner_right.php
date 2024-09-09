@@ -3,28 +3,32 @@
 		<div class="i_banner-circles_1">
 		</div>
 		<p>
-			 Оперативный переход с SAP на 1С
+			 Внедрение ERP и корпоративных <br>
+решений «1С»
 		</p>
 	</div>
 	<div class="i_banner-item">
 		<div class="i_banner-circles_2">
 		</div>
 		<p>
-			 Аутсорсинг разработчиков 1C
+			 Внедрение зарплатных и 1С HR, <br>
+CPM, ЭДО проектов
 		</p>
 	</div>
 	<div class="i_banner-item">
 		<div class="i_banner-circles_3">
 		</div>
 		<p>
-			 Сопровождение 1С по SLA
+			 Внедрение отраслевых и спец <br>
+решений «1С»
 		</p>
 	</div>
 	<div class="i_banner-item">
 		<div class="i_banner-circles_4">
 		</div>
 		<p>
-			 ERP,УХ,КА,УТ,УПП,БП,ЗУП
+			 Продажа ПО «1С» и корпоративное <br>
+			 сопровождение клиентов «1С»
 		</p>
 	</div>
 </div>

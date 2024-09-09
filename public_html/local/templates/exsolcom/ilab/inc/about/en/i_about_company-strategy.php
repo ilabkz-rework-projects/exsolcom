@@ -1,5 +1,5 @@
 <div class="i_about-company-strategy-desc">
                 <span>
-                    Компания өз қызметінде кәсібилікке, жеке көзқарасқа бағытталады, тәжірибені және заманауи технологияларды пайдаланып, кәсіпорындарды автоматтандыру мәселелерін тиімді шешуге тырысады.
+                    In its activities, the company focuses on professionalism, a personalized approach, and uses experience and modern technologies to effectively solve issues in the field of enterprise automation.
                 </span>
 </div>

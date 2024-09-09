@@ -1,1 +1,1 @@
-<a href="/services"><span>Наши услуги для вас</span></a>
+<a href="/services"><span>Our services for you</span></a>

@@ -1,11 +1,13 @@
 <div class="i_software-group-textBtn">
 	<div class="i_software-group-text">
-		<span class="i_software-headline">Қазақстанға арналған корпоративтік өнімдер желісі</span>
+		<span class="i_software-headline">Corporate Product Line for Kazakhstan</span>
 		<p class="i_software-desc">
-            Қаржыны басқару және есеп жүргізу міндеттерін шешуге арналған, жекелеген кәсіпорындар үшін де, топтарға (холдингтер, конгломераттар, компаниялар тобы) біріктірілген кәсіпорындар үшін де қолайлы.
+            Designed to address financial management and accounting tasks for both standalone companies and companies united in groups (holdings, conglomerates, groups of companies).
 		</p>
 	</div>
 	<div class="i_software-btn">
-		<button id="form-kp-btn">Баға тізімі мен коммерциялық ұсыныс сұрау</button>
+		<button id="form-kp-btn">Request a Price List<br>
+            and Commercial Offer</button>
+
 	</div>
 </div>

@@ -3,28 +3,32 @@
 		<div class="i_banner-circles_1">
 		</div>
 		<p>
-            SAP-тан 1С-ке жедел көшу
+            Implementation of 1C ERP<br>
+            and Corporate Solutions
 		</p>
 	</div>
 	<div class="i_banner-item">
 		<div class="i_banner-circles_2">
 		</div>
 		<p>
-            1С әзірлеушілерін аутсорсингке беру
+            Implementation of 1C Payroll<br>
+            and HR, CPM, EDI Projects
 		</p>
 	</div>
 	<div class="i_banner-item">
 		<div class="i_banner-circles_3">
 		</div>
 		<p>
-            1С жүйесін SLA бойынша қолдау
+            Implementation of 1C Industry-Specific<br>
+            and Specialized Solutions
 		</p>
 	</div>
 	<div class="i_banner-item">
 		<div class="i_banner-circles_4">
 		</div>
 		<p>
-			 ERP, УХ, КА, УТ, УПП, БП, ЗУП
+            Sales of 1C Software<br>
+            and Corporate Support for 1C Clients
 		</p>
 	</div>
 </div>

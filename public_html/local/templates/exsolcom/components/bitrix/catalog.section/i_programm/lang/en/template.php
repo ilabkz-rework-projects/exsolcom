@@ -25,3 +25,5 @@ $MESS["CT_BCS_TPL_MESS_BTN_COMPARE"] = "Compare";
 $MESS["CT_BCS_TPL_MESS_BTN_DETAIL"] = "More";
 $MESS["CT_BCS_TPL_MESS_BTN_SUBSCRIBE"] = "Notify when back in stock";
 $MESS["CT_BCS_TPL_MESS_PRODUCT_NOT_AVAILABLE"] = "not available from stock";
+$MESS["I_MORE"] = "More";
+$MESS["I_ELEMENT_NOT"] = "Elements are missing.";

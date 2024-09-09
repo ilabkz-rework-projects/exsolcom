@@ -1,3 +1,3 @@
 <div class="i_directorship-title-name">
-    <span>НАШЕ РУКОВОДСТВО</span>
+    <span>OUR MANAGEMENT</span>
 </div>

@@ -744,13 +744,13 @@ if (!isset($arParams['HIDE_SECTION_DESCRIPTION']) || $arParams['HIDE_SECTION_DES
 
 	<?if(count($arResult['ELEMENTS']) >= 7){?>
 	    <div class="i_programm_product-btn">
-	        <button class="show-else">Еще</button>
+	        <button class="show-else"><?=\Bitrix\Main\Localization\Loc::getMessage('I_MORE')?></button>
 	    </div>
 	<?}else if(count($arResult['ELEMENTS']) > 1 && count($arResult['ELEMENTS']) <= 6){
 	}else{
 		?>
 		<div class="i_programm-list-empty">
-			<span>Элементы отсутствуют.</span>
+			<span><?=\Bitrix\Main\Localization\Loc::getMessage('I_ELEMENT_NOT')?></span>
 		</div>
 	<?}?>
 </div>

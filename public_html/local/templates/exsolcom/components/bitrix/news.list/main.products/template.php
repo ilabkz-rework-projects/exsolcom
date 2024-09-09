@@ -33,7 +33,7 @@ $this->setFrameMode(true);
                             <span><?= LANGUAGE_ID === 'ru' ? $arItem['PREVIEW_TEXT'] : $arItem['PROPERTIES']['I_PREVIEW_TEXT_'.strtoupper(LANGUAGE_ID)]['VALUE']?></span>
                         </div>
                         <div class="swiper-detail-btn">
-                            <button id="form-kp-btn">Запросить КП</button>
+                            <button id="form-kp-btn"><?=\Bitrix\Main\Localization\Loc::getMessage('I_BTN_KP')?></button>
                         </div>
                     </div>
                 </div>

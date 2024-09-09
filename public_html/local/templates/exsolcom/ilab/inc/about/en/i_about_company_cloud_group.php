@@ -5,19 +5,19 @@
     </div>
 
         <div class="i_cloud-group-desc-depiction">
-        <span class="i_cloud-depiction-weight">Интернет арқылы әлемнің кез келген нүктесінен 1С бағдарламаларымен жұмыс істеуге арналған бұлттық сервис</span>
+        <span class="i_cloud-depiction-weight">Cloud service for working with 1C programs from anywhere in the world via the Internet</span>
         <span>
-                            Бұл сервис 1С фирмасының бағдарламаларын компьютерге орнатпай-ақ, интернетке қосылған кез келген жерден қолдануға мүмкіндік береді. Бұл бизнесті басқаруда ерекше икемділік береді, деректермен нақты уақыт режимінде жұмыс істеуге мүмкіндік береді, қай жерде болсаңыз да.
+                            This cloud service allows you to work with 1C software without installing it on your computer, from any location with internet access. It brings unique flexibility to business management, allowing real-time data access no matter where you are.
         </span>
         <span>
-                            Сонымен қатар, сервис ақпараттық жүйелерді басқаруды жеңілдететін деректер базасын әкімшілендірудің түрлі функцияларын ұсынады.
+                            Additionally, the service offers various database administration features, which simplify the management of enterprise information systems.
         </span>
     </div>
 
         <div class="i_cloud-group-desc-btn">
         <a href="https://exsolcom-1cfresh.kz/">
             <button>
-                Толығырақ
+                Learn more
             </button>
         </a>
     </div>

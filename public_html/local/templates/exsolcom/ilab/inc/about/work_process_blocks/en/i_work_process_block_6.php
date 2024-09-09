@@ -1,9 +1,9 @@
 <div class="i_work-process-body-group-block">
 
-    <span class="i_work-process-body-group-block-color">Сервистерді баптау</span>
+    <span class="i_work-process-body-group-block-color">Service Configuration</span>
 
     <span>
-                            Ұйымда қолданылатын ақпараттық жүйелерден деректерді алу, оларды өңдеу, талдау және басшылық панелінде көрсету мақсатында интеграциялық сервистерді баптау
+        Configuring integration services to retrieve data from the organization's information systems, process and analyze it, and display it on the management dashboard
     </span>
 
 
