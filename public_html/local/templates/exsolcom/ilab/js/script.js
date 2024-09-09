@@ -215,6 +215,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		option.addEventListener('click', (event) => {
 			event.stopPropagation();
 			selectedText.textContent = option.textContent;
+			const locationToRedirect = option.getAttribute('data-value').toLowerCase()
+
+			if(locationToRedirect !== 'ru'){
+				window.location.href = `https://new.exsolcom.kz/${locationToRedirect}/`
+			}else{
+				window.location.href = `https://new.exsolcom.kz/`
+			}
 			language.classList.remove('expanded');
 		});
 	});
