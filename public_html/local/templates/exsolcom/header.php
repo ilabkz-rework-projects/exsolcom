@@ -146,11 +146,14 @@ $langMain = CSite::InDir(SITE_DIR.'/index.php');
 			<!--HEADER MORE-->
 			<div class="i_header-more">
 				<button id="language" class="i_language-selector">
-					<span id="selectedText">RU</span>
+					<span id="selectedText"><?=strtoupper(LANGUAGE_ID)?></span>
+					<?
+						$sites = ['RU' => ['RU', 'KZ', 'EN'], 'KZ' => ['KZ', 'RU', 'EN'], 'EN' => ['EN', 'RU', 'KZ'],]
+					?>
 					<div class="text-container">
-						<div class="text-option" data-value="RU">RU</div>
-						<div class="text-option" data-value="KZ">KZ</div>
-						<div class="text-option" data-value="EN">EN</div>
+						<? foreach ($sites[strtoupper(LANGUAGE_ID)] as $site) {?>
+							<div class="text-option" data-value="<?=$site?>"><?=$site?></div>
+						<?}?>
 					</div>
 				</button>
 				<button class="i_search-wrapper">
