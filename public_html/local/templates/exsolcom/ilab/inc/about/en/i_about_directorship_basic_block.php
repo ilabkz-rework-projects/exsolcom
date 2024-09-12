@@ -22,7 +22,7 @@ Mastyaev <span
 
 
             <div class="i_directorship-block-desc-top-depiction">
-                <span class="i_directorship-desc-top-depiction-name">Директор</span>
+                <span class="i_directorship-desc-top-depiction-name">Director</span>
                 <div class="i_directorship-desc-top-depiction-specification">
                     <span>Director</span>
                     <span>Higher economic education. Over 15 years of experience as a consultant and project manager</span>

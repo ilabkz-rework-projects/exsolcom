@@ -28,3 +28,5 @@ if($arResult):?>
 <?/*if($USER->isAdmin()):?>
 	<pre><?print_r($arResult)?></pre>
 <?endif*/?>
+
+

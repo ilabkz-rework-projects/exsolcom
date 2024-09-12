@@ -2499,6 +2499,7 @@ body.lock {
   }
 }
 .i_infoblock .i_blog .blog-list .blog-item .blog-name {
+  color: var(--color-textInfoblock);
   text-decoration: none;
 }
 .i_infoblock .i_blog .blog-list .blog-item .blog-name b {

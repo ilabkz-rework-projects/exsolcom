@@ -381,6 +381,7 @@
   background-position-y: 0;
 }
 .i_snippet.multi-table .i_snippet-multi-table-items .i_snippet-multi-table-item .i_snippet-table-title {
+  color: var(--color-textInfoblock);
   padding: 0 0 40px 0;
   width: max-content;
 }

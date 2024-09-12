@@ -14,7 +14,7 @@ if($arResult):?>
 						<span><?=$element['NAME']?></span>
 					</div>
 					<div class="i_projects-element__item__text">
-						<span><?=$element['PREVIEW_TEXT']?></span>
+						<span><?echo LANGUAGE_ID === 'ru' ? $element['PREVIEW_TEXT'] : $element['I_PREVIEW_TEXT_'.strtoupper(LANGUAGE_ID)]['VALUE']?></span>
 					</div>
 				</div>
 			</div>
@@ -28,3 +28,9 @@ if($arResult):?>
 <?/*if($USER->isAdmin()):?>
 	<pre><?print_r($arResult)?></pre>
 <?endif*/?>
+
+<?
+echo '<pre>';
+print_r($arResult);
+echo '</pre>';
+?>

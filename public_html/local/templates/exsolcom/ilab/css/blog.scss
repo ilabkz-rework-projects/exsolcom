@@ -556,7 +556,8 @@
               // !PRODUCT ITEM DATE
               // PRODUCT ITEM TOPIC
               .product-item-topic{
-                width: 50%;
+                width: 70%;
+                padding: 12px;
                 min-width: 186px;
                 background-color: var(--color-bg-sticker);
                 height: 20px;
@@ -565,6 +566,9 @@
                 align-items: center;
                 border-radius: 30px;
                 font-size: 12px;
+                @media screen and (max-width: 1480px) {
+                  padding: 17px;
+                }
                 span{
                   color: var(--color-WhiteWhite);
                 }
@@ -697,6 +701,7 @@
                     //VACATION ITEM RIGHT ROLE
                     .i_vacantion-item-topic{
                       width: 100%;
+                      padding: 17px;
                       max-width: 200px;
                       min-width: 186px;
                       background-color: var(--color-bg-sticker);

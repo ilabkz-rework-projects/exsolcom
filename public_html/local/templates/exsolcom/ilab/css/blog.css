@@ -496,7 +496,8 @@
   color: #7c7c7c;
 }
 .i_blog-page .i_container .catalog-section .product-item-container .product-item .product-item-right .product-item-top .product-item-topic {
-  width: 50%;
+  width: 70%;
+  padding: 12px;
   min-width: 186px;
   background-color: var(--color-bg-sticker);
   height: 20px;
@@ -505,6 +506,11 @@
   align-items: center;
   border-radius: 30px;
   font-size: 12px;
+}
+@media screen and (max-width: 1480px) {
+  .i_blog-page .i_container .catalog-section .product-item-container .product-item .product-item-right .product-item-top .product-item-topic {
+    padding: 17px;
+  }
 }
 .i_blog-page .i_container .catalog-section .product-item-container .product-item .product-item-right .product-item-top .product-item-topic span {
   color: var(--color-WhiteWhite);
@@ -620,6 +626,7 @@
   }
   .i_blog-page .i_container .catalog-section .product-item-container .i_vacantion-item.second .i_vacation-item-top .i_vacantion-item-right .i_vacantion-item-topic {
     width: 100%;
+    padding: 17px;
     max-width: 200px;
     min-width: 186px;
     background-color: var(--color-bg-sticker);
