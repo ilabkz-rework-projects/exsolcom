@@ -26,7 +26,8 @@ $arFilter = array(
 	'IBLOCK_SECTION_ID' => $currentSectionId
 );
 
-$dbRes = CIBlockElement::GetList(array(), $arFilter, false, false, array("*", "UF_*"));
+$dbRes = CIBlockElement::GetList(array(), $arFilter, false, false,
+	array("*", "UF_*", 'PROPERTY_I_PREVIEW_TEXT_EN', 'PROPERTY_I_PREVIEW_TEXT_KZ', 'PROPERTY_I_NAME_RU', 'PROPERTY_I_NAME_KZ', 'PROPERTY_I_NAME_EN'));
 
 
 while($arRes = $dbRes->Fetch()) {
