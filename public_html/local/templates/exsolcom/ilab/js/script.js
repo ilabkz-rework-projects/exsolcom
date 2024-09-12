@@ -343,7 +343,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	const vacationBtn = modalKp.querySelector('.i_modal-footer-btn #form-reply-btn')
 	const footerProgrammBtn = modalKp.querySelector('.i_modal-footer-btn #form-programm-btn')
 	const modalKpFooter = modalKp.querySelector('.i_modal-footer')
-
+	const languageID = document.querySelector('.i_language-id').value;
 
 	//SIDE MENU
 
@@ -426,13 +426,34 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 		modalKp.querySelector('.i_modal-content').innerHTML = '';
 
+		let langMessage1 = ''
+		let langMessage2 = ''
+
+		switch (languageID) {
+			case "ru" :
+				langMessage1 = '(электронная версия)'
+				langMessage2 = 'Цена по запросу'
+				break;
+			case "kz" :
+				langMessage1 = '(электрондық нұсқа)'
+				langMessage2 = 'Сұрау бойынша баға'
+				break;
+			case "en" :
+				langMessage1 = '(electronic version)'
+				langMessage2 = 'Price on request'
+				break;
+			default:
+				langMessage1 = '(электронная версия)'
+				langMessage2 = 'Цена по запросу'
+		}
+
 		// Добавляем контент на страницу
 		fetch('/local/templates/exsolcom/ilab/ajax/getModalKpContent.php', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
 			},
-			body: JSON.stringify({code: item.getAttribute('data-id')})
+			body: JSON.stringify({code: item.getAttribute('data-id'), language: languageID})
 		})
 			.then(response => response.json())
 			.then(data => {
@@ -451,9 +472,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				modalKp.querySelector('.i_modal-img').innerHTML = `<img src="${img}" />`;
 
 				if (data.PRICE !== null) {
-					modalKp.querySelector('.i_modal-footer-price').innerHTML = `<span>${data.PRICE} ₸<span class="text">(электронная версия)</span></span>`;
+					modalKp.querySelector('.i_modal-footer-price').innerHTML = `<span>${data.PRICE} ₸<span class="text">${langMessage1}</span></span>`;
 				} else {
-					modalKp.querySelector('.i_modal-footer-price').innerHTML = `<span>Цена по запросу</span>`;
+					modalKp.querySelector('.i_modal-footer-price').innerHTML = `<span>${langMessage2}</span>`;
 				}
 
 			})
@@ -613,7 +634,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				headers: {
 					'Content-Type': 'application/json'
 				},
-				body: JSON.stringify({id: item.getAttribute('data-id')})
+				body: JSON.stringify({id: item.getAttribute('data-id'), language: languageID})
 			})
 				.then(response => response.json())
 				.then(data => {
@@ -631,7 +652,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				headers: {
 					'Content-Type': 'application/json'
 				},
-				body: JSON.stringify({id: item.getAttribute('data-id')})
+				body: JSON.stringify({id: item.getAttribute('data-id'), language: languageID})
 			})
 				.then(response => response.json())
 				.then(data => {
@@ -731,7 +752,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				},
 				body: JSON.stringify({
 					id: detailItem ? item.getAttribute('data-id') : item.getAttribute('id'),
-					iblockId: item.getAttribute('data_iblock_id')
+					iblockId: item.getAttribute('data_iblock_id'),
+					language: languageID
 				})
 			})
 				.then(response => response.json())
@@ -787,7 +809,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			// Получаем значение параметра programm_id
 			const programmId = params.get('product');
 
+			let langMessage1 = ''
+			let langMessage2 = ''
 
+			switch (languageID) {
+				case "ru" :
+					langMessage1 = '(электронная версия)'
+					break;
+				case "kz" :
+					langMessage1 = '(электрондық нұсқа)'
+					break;
+				case "en" :
+					langMessage1 = '(electronic version)'
+					break;
+				default:
+					langMessage1 = '(электронная версия)'
+			}
 
 			if (programmId && programmId !== 'undefined') {
 				modal.classList.remove('active')
@@ -807,7 +844,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 					headers: {
 						'Content-Type': 'application/json'
 					},
-					body: JSON.stringify({code: programmId})
+					body: JSON.stringify({code: programmId, language: languageID})
 				})
 					.then(response => response.json())
 					.then(data => {
@@ -829,7 +866,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 						}
 
 						modalKp.querySelector('.i_modal-img').innerHTML = `<img src="${img}" />`;
-						modalKp.querySelector('.i_modal-footer-price').innerHTML = `<span>${data.PRICE} ₸<span class="text">(электронная версия)</span></span>`;
+						modalKp.querySelector('.i_modal-footer-price').innerHTML = `<span>${data.PRICE} ₸<span class="text">${langMessage1}</span></span>`;
 					})
 			}
 
@@ -872,7 +909,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 					headers: {
 						'Content-Type': 'application/json'
 					},
-					body: JSON.stringify({code: ID, iblockId: iblockID})
+					body: JSON.stringify({code: ID, iblockId: iblockID, language: languageID})
 				})
 					.then(response => response.json())
 					.then(data => {
@@ -903,8 +940,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 							modalKpFooter.classList.remove('idn')
 							modalKp.classList.remove('pad')
 
-
-							console.log(data)
 
 							// навешиваем обработчик на кнопку для перехода на страницу с программным продуктом
 							footerProgrammBtn.addEventListener('click', () => {
@@ -959,7 +994,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 					headers: {
 						'Content-Type': 'application/json'
 					},
-					body: JSON.stringify({code: code})
+					body: JSON.stringify({code: code, language: languageID})
 				})
 					.then(response => response.json())
 					.then(data => {

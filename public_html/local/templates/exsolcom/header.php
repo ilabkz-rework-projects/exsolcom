@@ -4,6 +4,12 @@ CJSCore::Init(array('ajax', 'window'));
 
 $main = CSite::InDir(SITE_DIR.'index.php');
 $langMain = CSite::InDir(SITE_DIR.'/index.php');
+$langMess = [
+	'ru' => 'Главная',
+	'en' => 'Main',
+	'kz' => 'Басты бет'
+];
+
 ?>
 
 <!DOCTYPE html>
@@ -306,7 +312,7 @@ $langMain = CSite::InDir(SITE_DIR.'/index.php');
                 <!--HEADER BOTTOM_BREADCRUMBS MAIN-->
                 <div class="i_breadcrumbs-main">
                     <div class="i_breadcrumbs-item">
-                        <a href="/" class="i_breadcrumbs-link">Главная</a>
+                        <a href="<?=LANGUAGE_ID === 'ru' ? '/' : '/'.LANGUAGE_ID.'/'?>" class="i_breadcrumbs-link"><?=$langMess[LANGUAGE_ID]?></a>
                     </div>
                 </div>
                 <!--HEADER BOTTOM_BREADCRUMBS MAIN-->

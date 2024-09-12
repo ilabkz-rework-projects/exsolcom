@@ -409,4 +409,7 @@
 	</div>
 </div>
 
+
+<input type="hidden" class="i_language-id" value="<?=LANGUAGE_ID?>">
+
 </body>
