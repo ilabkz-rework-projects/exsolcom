@@ -122,12 +122,8 @@
                         <!--!FOOTER RIGHT MENU BURGER-->
                         <div class="i_footer-right-hope">
                             <!--FOOTER RIGHT ICON-->
-		                        <a href="/blog">
-			                        <button class="i_footer-right-more-blog">
-			                          Блог
-			                        </button>
-		                        </a>
-	                        <!--FOOTER RIGHT ICON-->
+                            <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_btn_blog_2.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка Блог', 'SHOW_BORDER'=>true))?>
+                            <!--FOOTER RIGHT ICON-->
                             <!--FOOTER RIGHT BLOG-->
                             <div class="i_footer-right-icons">
                                 <button id="myCircles3" class="i_footer-right-more-icon">
@@ -321,10 +317,8 @@
 
 		</div>
 		<div class="i_modal-footer">
-			<div class="i_modal-footer-btn">
-				<button id="form-kp-btn">Запросить коммерческое предложение</button>
-			</div>
-		</div>
+            <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_modal_footer_zp.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка Запросить КП в Footer', 'SHOW_BORDER'=>true))?>
+        </div>
 	</div>
 </div>
 
@@ -333,10 +327,8 @@
 		<div class="i_submit-close">
 <!--			<img src="--><?php //=SITE_TEMPLATE_PATH.'/ilab/img/svg/closeModal-dark.svg'?><!--" alt="x">-->
 		</div>
-		<div class="i_submit-header">
-			<span>ОСТАВИТЬ ЗАЯВКУ</span>
-		</div>
-		<div class="i_submit-content">
+        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_submit_header.php',Array(),Array('MODE'=>'html', 'NAME'=>'Оставить заявку', 'SHOW_BORDER'=>true))?>
+        <div class="i_submit-content">
 			<script data-b24-form="inline/15/xm0t3f" data-skip-moving="true">
 				(function(w,d,u){
 					var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
@@ -352,10 +344,8 @@
 		<div class="i_submit-close">
 <!--			<img src="--><?php //=SITE_TEMPLATE_PATH.'/ilab/img/svg/closeModal-dark.svg'?><!--" alt="x">-->
 		</div>
-		<div class="i_submit-header">
-			<span>Запросить коммерческое предложение</span>
-		</div>
-		<div class="i_submit-content">
+        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_submit_header_modal.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка Запросить КП в modal', 'SHOW_BORDER'=>true))?>
+        <div class="i_submit-content">
 			<script id="bx24_form_inline" data-skip-moving="true">
 				(function(w,d,u,b){w['Bitrix24FormObject']=b;w[b] = w[b] || function(){arguments[0].ref=u;
 					(w[b].forms=w[b].forms||[]).push(arguments[0])};
@@ -384,11 +374,11 @@
 		<div class="i_modal-footer">
 			<div class="i_modal-footer-price idn"></div>
 			<div class="i_modal-footer-btn">
-				<button id="form-kp-btn">Запросить коммерческое предложение</button>
-				<button id="form-kp-btnSecond" >Запросить КП</button>
-				<button id="form-programm-btn" class="idn">Перейти к программному продукту</button>
-                <button class="idn" id="form-reply-btn">Откликнуться на вакансию</button>
-			</div>
+				<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_form_kp_btn_1.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка перейти к кп', 'SHOW_BORDER'=>true))?>
+                <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_form_kp_btn_2.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка перейти к кп', 'SHOW_BORDER'=>true))?>
+                <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_form_projects_btn.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка перейти к пп', 'SHOW_BORDER'=>true))?>
+                <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_form_reply_btn.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка Откликнуться на вакансию', 'SHOW_BORDER'=>true))?>
+            </div>
 		</div>
 	</div>
 </div>

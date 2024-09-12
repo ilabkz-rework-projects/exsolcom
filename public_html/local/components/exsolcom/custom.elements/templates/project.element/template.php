@@ -11,10 +11,10 @@ if($arResult):?>
 				</div>
 				<div class="i_projects-element__content">
 					<div class="i_projects-element__item__name">
-						<span><?=$element['NAME']?></span>
+						<span><?echo $element['PROPERTY_I_NAME_'.strtoupper(LANGUAGE_ID).'_VALUE']?></span>
 					</div>
 					<div class="i_projects-element__item__text">
-						<span><?echo LANGUAGE_ID === 'ru' ? $element['PREVIEW_TEXT'] : $element['I_PREVIEW_TEXT_'.strtoupper(LANGUAGE_ID)]['VALUE']?></span>
+						<span><?echo LANGUAGE_ID === 'ru' ? $element['PREVIEW_TEXT'] : $element['PROPERTY_I_PREVIEW_TEXT_'.strtoupper(LANGUAGE_ID).'_VALUE']?></span>
 					</div>
 				</div>
 			</div>
@@ -29,8 +29,3 @@ if($arResult):?>
 	<pre><?print_r($arResult)?></pre>
 <?endif*/?>
 
-<?
-echo '<pre>';
-print_r($arResult);
-echo '</pre>';
-?>
