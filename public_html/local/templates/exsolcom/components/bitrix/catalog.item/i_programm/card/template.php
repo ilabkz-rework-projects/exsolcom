@@ -34,9 +34,9 @@ $price = 0;
 while($ob = $res->Fetch())
 {
 	$arResult['ELEMENT'][$item['ID']]['PROPERTY'][$ob['CODE']] = $ob['VALUE'];
-
-	$price = $ob['PROPERTY_I_PRICE_VALUE'];
 }
+
+$price = $arResult['ELEMENT'][$item['ID']]['PROPERTY']['I_PRICE'];
 
 ?>
 	<div class="programm-item"  data-id="<?= $item['CODE'] ?>" >
