@@ -791,21 +791,22 @@ body.lock {
   text-decoration: none;
   position: relative;
 }
-.i_header-bottom .i_container .i_breadcrumbs .i_breadcrumbs-main .i_breadcrumbs-item a:after {
+.i_header-bottom .i_container .i_breadcrumbs .bx-breadcrumb {
+  display: flex;
+}
+.i_header-bottom .i_container .i_breadcrumbs .bx-breadcrumb .bx-breadcrumb-item:nth-child(1):after {
   content: " ";
   position: absolute;
   width: 7px;
   height: 7px;
-  transform: translate(600%, -50%);
+  transform: translate(-70%, -50%);
   top: 50%;
-  left: 50%;
+  left: -16%;
   border-radius: 50%;
   background-color: #C6C6C8;
 }
-.i_header-bottom .i_container .i_breadcrumbs .bx-breadcrumb {
-  display: flex;
-}
 .i_header-bottom .i_container .i_breadcrumbs .bx-breadcrumb .bx-breadcrumb-item {
+  position: relative;
   padding: 0 30px 0 0;
 }
 .i_header-bottom .i_container .i_breadcrumbs .bx-breadcrumb .bx-breadcrumb-item i:before {
