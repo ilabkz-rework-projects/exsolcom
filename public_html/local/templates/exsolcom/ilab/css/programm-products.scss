@@ -89,8 +89,11 @@
           .i_programm-sort-items{
             display: flex;
             gap: 70px;
+
             @media screen and (max-width: 1330px){
-              gap: 48px;
+              gap: 0;
+              justify-content: space-between;
+              width: 92%;
             }
             @media screen and (max-width: 390px){
               gap: 45px;

@@ -40,6 +40,15 @@ if( $arResult['ITEMS'] ):
 
 $ipc = [
 	'I_CONTENT_LINK',
+	'I_CONTENT_LINK_EN',
+	'I_CONTENT_LINK_KZ',
+	'I_PREVIEW_TEXT_RU',
+	'I_PREVIEW_TEXT_KZ',
+	'I_PREVIEW_TEXT_EN',
+	'I_NAME_KZ',
+	'I_NAME_RU',
+	'I_NAME_EN'
+
 ];
 
 // -------------------------------------------------- PROPERTY

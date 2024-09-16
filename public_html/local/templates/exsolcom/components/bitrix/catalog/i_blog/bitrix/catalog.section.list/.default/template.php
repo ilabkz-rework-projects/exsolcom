@@ -67,7 +67,7 @@ if (0 < $arResult["SECTIONS_COUNT"])
 <ul class="<? echo $arCurView['LIST']; ?>">
 	<li id="" class="<?=!$arParams['CURRENT_SECTION_ID'] ? 'menu-all-articles' : ''?>"  title="">
         <h2 class="bx_sitemap_li_title">
-            <a href="/blog/"><?=\Bitrix\Main\Localization\Loc::getMessage('I_ALL_BLOG')?></h2>
+            <a href=<?= LANGUAGE_ID === 'ru' ? "/blog/" : '/'.LANGUAGE_ID."/blog/"?>><?=\Bitrix\Main\Localization\Loc::getMessage('I_ALL_BLOG')?></h2>
         <ul class="i_blog-dropdown-menu">
             <?
             switch ($arParams['VIEW_MODE'])
@@ -200,10 +200,10 @@ if (0 < $arResult["SECTIONS_COUNT"])
 
             echo (!$boolFirst ? "\n" : ''),str_repeat("\t", $arSection['RELATIVE_DEPTH_LEVEL']);
 
-            ?><li id="<?=$this->GetEditAreaId($arSection['ID']);?>" class="<?=$arParams['CURRENT_SECTION_ID'] === $arSection['CODE'] ? 'menu-all-articles' : ''?>"><h2 class="bx_sitemap_li_title"><a href="<? echo $arSection["SECTION_PAGE_URL"]; ?>"><? echo $arSection["SECTION_TITLE_".strtoupper(LANGUAGE_ID)];?><?
+            ?><li id="<?=$this->GetEditAreaId($arSection['ID']);?>" class="<?=$arParams['CURRENT_SECTION_ID'] === $arSection['CODE'] ? 'menu-all-articles' : ''?>"><h2 class="bx_sitemap_li_title"><a href=<? echo LANGUAGE_ID === 'ru' ? $arSection["SECTION_PAGE_URL"] : '/'.LANGUAGE_ID.$arSection["SECTION_PAGE_URL"]; ?>><? echo $arSection["SECTION_TITLE_".strtoupper(LANGUAGE_ID)];?><?
                         if ($arParams["COUNT_ELEMENTS"] && $arSection['ELEMENT_CNT'] !== null)
                         {
-                            ?> <span>(<? echo $arSection["ELEMENT_CNT"]; ?>)</span><?
+                            ?> <span><? echo $arSection["ELEMENT_CNT"]; ?></span><?
                         }
                         ?></a></h2><?
 
@@ -226,7 +226,7 @@ if (0 < $arResult["SECTIONS_COUNT"])
         </ul>
         <button class="i_blog-menu">
             <h2 class="bx_sitemap_li_title second">
-                <a href="/blog/"><?=\Bitrix\Main\Localization\Loc::getMessage('I_ALL_BLOG')?></h2>
+                <a href=<?= LANGUAGE_ID === 'ru' ? "/blog/" : '/'.LANGUAGE_ID."/blog/"?>><?=\Bitrix\Main\Localization\Loc::getMessage('I_ALL_BLOG')?></h2>
         </button>
     </li>
 <?
@@ -360,10 +360,10 @@ if (0 < $arResult["SECTIONS_COUNT"])
 
 				echo (!$boolFirst ? "\n" : ''),str_repeat("\t", $arSection['RELATIVE_DEPTH_LEVEL']);
 
-				?><li id="<?=$this->GetEditAreaId($arSection['ID']);?>" class="<?=$arParams['CURRENT_SECTION_ID'] === $arSection['CODE'] ? 'menu-all-articles' : ''?>"><h2 class="bx_sitemap_li_title"><a href="<? echo $arSection["SECTION_PAGE_URL"]; ?>"><? echo $arSection["SECTION_TITLE_".strtoupper(LANGUAGE_ID)];?><?
 				if ($arParams["COUNT_ELEMENTS"] && $arSection['ELEMENT_CNT'] !== null)
-				{
-					?> <span>(<? echo $arSection["ELEMENT_CNT"]; ?>)</span><?
+?><li id="<?=$this->GetEditAreaId($arSection['ID']);?>" class="<?=$arParams['CURRENT_SECTION_ID'] === $arSection['CODE'] ? 'menu-all-articles' : ''?>"><h2 class="bx_sitemap_li_title"><a href="<? echo LANGUAGE_ID === 'ru'? $arSection["SECTION_PAGE_URL"] : '/'.LANGUAGE_ID.$arSection["SECTION_PAGE_URL"]; ?>"><? echo $arSection["SECTION_TITLE_".strtoupper(LANGUAGE_ID)];?><?
+                {
+					?> <span><? echo $arSection["ELEMENT_CNT"]; ?></span><?
 				}
 				?></a></h2><?
 

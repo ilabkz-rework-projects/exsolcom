@@ -104,7 +104,9 @@
 }
 @media screen and (max-width: 1330px) {
   .programm-container .i_programm-catalog .i_programm-sorting-group .i_programm-sort .i_programm-sort-items {
-    gap: 48px;
+    gap: 0;
+    justify-content: space-between;
+    width: 92%;
   }
 }
 @media screen and (max-width: 390px) {

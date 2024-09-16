@@ -259,10 +259,10 @@ else
                             <div class="i_programm-sort-title"><span><?=\Bitrix\Main\Localization\Loc::getMessage('I_PRICE_SORT')?></span></div>
 	                        <div class="i_programm-sort-items">
 		                        <div class="i_programm-sort-item asc <?=$sortOrder === 'asc' ? 'active' : ''?>">
-			                        <a href="/programm-products?sort=asc"><span><?=\Bitrix\Main\Localization\Loc::getMessage('I_PRICE_SORT_ASC')?></span></a>
+			                        <a href=<?= LANGUAGE_ID === 'ru' ? "/programm-products?sort=asc" : '/'.LANGUAGE_ID."/programm-products?sort=asc"?>><span><?=\Bitrix\Main\Localization\Loc::getMessage('I_PRICE_SORT_ASC')?></span></a>
 		                        </div>
 		                        <div class="i_programm-sort-item desc <?=$sortOrder === 'desc' ? 'active' : ''?>">
-			                        <a href="/programm-products?sort=desc"><span><?=\Bitrix\Main\Localization\Loc::getMessage('I_PRICE_SORT_DESC')?></span></a>
+			                        <a href=<?= LANGUAGE_ID === 'ru' ? "/programm-products?sort=desc" : '/'.LANGUAGE_ID."/programm-products?sort=desc"?>><span><?=\Bitrix\Main\Localization\Loc::getMessage('I_PRICE_SORT_DESC')?></span></a>
 		                        </div>
 	                        </div>
                         </div>

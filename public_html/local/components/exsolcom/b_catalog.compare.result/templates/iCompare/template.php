@@ -273,7 +273,6 @@ if ($arResult['ITEMS']):?>
 					<? if ($arResult['I_PRO']):
 						foreach ($arResult['I_PRO'] as $nameProp => $arProp):?>
 							<div class="swiper-slide">
-
 								<div class="ilab_c_prop_name"><?= $nameProp ?></div>
 								<? foreach ($arProp as $pk => $pv):?>
 									<div class="ilab_c_prop_value j_prop_value" data-id="<?= $pk ?>"><?
