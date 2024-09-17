@@ -102,7 +102,7 @@ if (0 < $arResult['SECTIONS_COUNT'])
         $arMap[$arSection['ID']] = $key;
     }
 
-    $sectionUF = CIBlockSection::GetList(array(), array('IBLOCK_ID' => 9), false, array('ID', 'UF_*'));
+    $sectionUF = CIBlockSection::GetList(array(), array('IBLOCK_ID' => 9, 'ACTIVE' => 'Y'), false, array('ID', 'UF_*'));
     while ($arSection = $sectionUF->GetNext()){
 	    $key = $arMap[$arSection['ID']];
 
@@ -112,5 +112,10 @@ if (0 < $arResult['SECTIONS_COUNT'])
         $arResult['SECTIONS'][$key]['SECTION_TITLE_EN'] = $arSection['UF_SECTION_NAME_EN'];
     }
 }
+
+
+//echo '<pre>';
+//print_r($arResult['SECTIONS']);
+//echo '</pre>';
 
 ?>

@@ -200,7 +200,7 @@ if (0 < $arResult["SECTIONS_COUNT"])
 
             echo (!$boolFirst ? "\n" : ''),str_repeat("\t", $arSection['RELATIVE_DEPTH_LEVEL']);
 
-            ?><li id="<?=$this->GetEditAreaId($arSection['ID']);?>" class="<?=$arParams['CURRENT_SECTION_ID'] === $arSection['CODE'] ? 'menu-all-articles' : ''?>"><h2 class="bx_sitemap_li_title"><a href=<? echo LANGUAGE_ID === 'ru' ? $arSection["SECTION_PAGE_URL"] : '/'.LANGUAGE_ID.$arSection["SECTION_PAGE_URL"]; ?>><? echo $arSection["SECTION_TITLE_".strtoupper(LANGUAGE_ID)];?><?
+            ?><li id="<?=$this->GetEditAreaId($arSection['ID']);?>" class="<?=$arParams['CURRENT_SECTION_ID'] === $arSection['CODE'] ? 'menu-all-articles' : ''?>"><h2 class="bx_sitemap_li_title"><a href=<?=$arSection["SECTION_PAGE_URL"]?>><? echo $arSection["SECTION_TITLE_".strtoupper(LANGUAGE_ID)];?><?
                         if ($arParams["COUNT_ELEMENTS"] && $arSection['ELEMENT_CNT'] !== null)
                         {
                             ?> <span><? echo $arSection["ELEMENT_CNT"]; ?></span><?
@@ -361,7 +361,7 @@ if (0 < $arResult["SECTIONS_COUNT"])
 				echo (!$boolFirst ? "\n" : ''),str_repeat("\t", $arSection['RELATIVE_DEPTH_LEVEL']);
 
 				if ($arParams["COUNT_ELEMENTS"] && $arSection['ELEMENT_CNT'] !== null)
-?><li id="<?=$this->GetEditAreaId($arSection['ID']);?>" class="<?=$arParams['CURRENT_SECTION_ID'] === $arSection['CODE'] ? 'menu-all-articles' : ''?>"><h2 class="bx_sitemap_li_title"><a href="<? echo LANGUAGE_ID === 'ru'? $arSection["SECTION_PAGE_URL"] : '/'.LANGUAGE_ID.$arSection["SECTION_PAGE_URL"]; ?>"><? echo $arSection["SECTION_TITLE_".strtoupper(LANGUAGE_ID)];?><?
+?><li id="<?=$this->GetEditAreaId($arSection['ID']);?>" class="<?=$arParams['CURRENT_SECTION_ID'] === $arSection['CODE'] ? 'menu-all-articles' : ''?>"><h2 class="bx_sitemap_li_title"><a href="<?= $arSection["SECTION_PAGE_URL"]  ?>"><? echo $arSection["SECTION_TITLE_".strtoupper(LANGUAGE_ID)];?><?
                 {
 					?> <span><? echo $arSection["ELEMENT_CNT"]; ?></span><?
 				}
