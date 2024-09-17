@@ -66,7 +66,7 @@ if (0 < $arResult["SECTIONS_COUNT"])
 {
 ?>
 <ul class="<? echo $arCurView['LIST']; ?>">
-	<li class="<?=!$arParams['CURRENT_SECTION_ID'] ? 'menu-all-articles' : ''?>"><h2 class="bx_sitemap_li_title"><a href="/programm-products/"><?=\Bitrix\Main\Localization\Loc::getMessage('I_ALL_PRODUCTS')?></a></h2></li>
+	<li class="<?=!$arParams['CURRENT_SECTION_ID'] ? 'menu-all-articles' : ''?>"><h2 class="bx_sitemap_li_title"><a href=<?= LANGUAGE_ID === 'ru' ? "/programm-products/" : '/'.LANGUAGE_ID."/programm-products/"?>><?=\Bitrix\Main\Localization\Loc::getMessage('I_ALL_PRODUCTS')?></a></h2></li>
 <?
 	switch ($arParams['VIEW_MODE'])
 	{

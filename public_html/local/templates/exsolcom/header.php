@@ -153,14 +153,19 @@ $langMess = [
 			<div class="i_header-more">
 				<button id="language" class="i_language-selector">
 					<span id="selectedText"><?=strtoupper(LANGUAGE_ID)?></span>
-					<?
-						$sites = ['RU' => ['RU', 'KZ', 'EN'], 'KZ' => ['KZ', 'RU', 'EN'], 'EN' => ['EN', 'RU', 'KZ'],]
-					?>
-					<div class="text-container">
-						<? foreach ($sites[strtoupper(LANGUAGE_ID)] as $site) {?>
-							<div class="text-option" data-value="<?=$site?>"><?=$site?></div>
-						<?}?>
-					</div>
+                    <?
+                    $sites = ['RU' => ['RU', 'KZ', 'EN'], 'KZ' => ['KZ', 'RU', 'EN'], 'EN' => ['EN', 'RU', 'KZ'],]
+                    ?>
+                    <div class="text-container">
+                        <? foreach ($sites[strtoupper(LANGUAGE_ID)] as $site) {?>
+                            <div class="text-option" data-value="<?=$site?>"><?=$site?></div>
+                        <?}?>
+                    </div>
+                    <?
+                    echo '<pre>';
+                    print_r($_SERVER['REQUEST_URI']);
+                    echo '</pre>';
+                    ?>
 				</button>
 				<button class="i_search-wrapper">
 <!--					<svg class="lupa-icon" width="18" height="18" viewBox="0 0 173 173" fill="currentColor" xmlns="http://www.w3.org/2000/svg">-->
