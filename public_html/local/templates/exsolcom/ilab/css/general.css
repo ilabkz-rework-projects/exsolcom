@@ -847,6 +847,8 @@ p {
 .programm-container .bx_sitemap,
 .i_programm-container .bx_sitemap {
   width: 30%;
+  position: relative;
+  z-index: 2;
 }
 @media screen and (max-width: 1000px) {
   .programm-container .bx_sitemap,

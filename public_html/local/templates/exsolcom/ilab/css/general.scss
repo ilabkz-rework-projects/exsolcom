@@ -805,6 +805,8 @@ p{
   }
   .bx_sitemap{
     width: 30%;
+    position: relative;
+    z-index: 2;
     @media screen and (max-width: 1000px){
       width: 21%;
     }
@@ -1431,6 +1433,7 @@ p{
         flex-direction: column;
         gap: 30px;
         padding: 70px 0 70px 0;
+
         @media screen and (max-width: 1270px){
           gap: 0px;
           .product-item-small-card{

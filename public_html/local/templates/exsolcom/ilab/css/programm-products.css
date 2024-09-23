@@ -34,6 +34,8 @@
   display: flex;
   justify-content: space-between;
   padding: 0 0 50px 0;
+  position: relative;
+  z-index: 2;
 }
 .programm-container .i_programm-catalog .i_programm-sorting-group .i_programm-sort {
   position: relative;
@@ -82,6 +84,9 @@
     padding: 12px 10px;
   }
 }
+.programm-container .i_programm-catalog .i_programm-sorting-group .i_programm-sort .i_programm-sort-title {
+  width: 52%;
+}
 @media screen and (max-width: 1100px) {
   .programm-container .i_programm-catalog .i_programm-sorting-group .i_programm-sort .i_programm-sort-title {
     padding: 0 0 12px 0;
@@ -101,12 +106,12 @@
 .programm-container .i_programm-catalog .i_programm-sorting-group .i_programm-sort .i_programm-sort-items {
   display: flex;
   gap: 70px;
+  width: 100%;
 }
 @media screen and (max-width: 1330px) {
   .programm-container .i_programm-catalog .i_programm-sorting-group .i_programm-sort .i_programm-sort-items {
-    gap: 0;
+    gap: 45px;
     justify-content: space-between;
-    width: 92%;
   }
 }
 @media screen and (max-width: 390px) {
@@ -158,7 +163,7 @@
 }
 .programm-container .i_programm-catalog .i_programm-sorting-group .i_programm-sort .i_programm-sort-items .i_programm-sort-item {
   position: relative;
-  padding-right: 10px;
+  width: 50%;
 }
 .programm-container .i_programm-catalog .i_programm-sorting-group .i_programm-sort .i_programm-sort-items .i_programm-sort-item.active:after {
   content: " ";
@@ -195,7 +200,7 @@
   .programm-container .i_programm-catalog .i_programm-sorting-group .i_programm-sort .i_programm-sort-items .i_programm-sort-item.active:after {
     width: 155px;
     height: 40px;
-    transform: translate(55%, -50%);
+    transform: translate(53%, -50%);
   }
 }
 .programm-container .i_programm-catalog .i_programm-sorting-group .i_programm-sort .i_programm-sort-items .i_programm-sort-item a:before {
@@ -355,6 +360,7 @@
   align-items: flex-start;
   gap: 30px;
   position: relative;
+  z-index: 1;
 }
 .programm-container .i_programm-catalog .catalog-section .product-item-list-col-3:nth-child(n+3) {
   visibility: hidden;
@@ -561,9 +567,6 @@
   .programm-container .i_programm-catalog .i_software .i_container .i_software-corporate .i_software-group-textBtn .i_software-group-text span {
     font-size: 1rem;
   }
-}
-.programm-container .i_programm-catalog .i_software .i_container .i_software-corporate .i_software-group-textBtn .i_software-btn:hover {
-  background-color: var(--bg-buttonHoverSecond);
 }
 .programm-container .i_programm-catalog .product-item-container {
   width: 100%;

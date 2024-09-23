@@ -600,6 +600,10 @@
   color: var(--color-textInfoblock);
 }
 
+.i_snippet-desc {
+  color: var(--color-textInfoblock);
+}
+
 .i_snippet.desc-depiction .i_snippet-desc {
   padding: 0 0 0 0;
   font-family: "Open Sans", sans-serif;
