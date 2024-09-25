@@ -1251,6 +1251,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				}
 			})
 
+			checkActiveCompare()
+
 			// document.querySelectorAll('.i_item_compare').forEach((item) => {
 			// 	item.addEventListener('click', () => {
 			// 		let btn = item.querySelector('.j_item_compare');
@@ -1274,11 +1276,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			// };
 
 
-			// setTimeout(() => {
-			// 	modal.classList.add('hd')
-			// }, 8000)
+			setTimeout(() => {
+				modal.classList.add('hd')
+			}, 8000)
 		})
 	})
+
+	const checkActiveCompare = () => {
+		setTimeout(()=>{
+			const itemCompareAct = document.querySelectorAll('.i_item_compare_act')
+			document.querySelector('#compare-button .count').textContent = `${itemCompareAct.length}`
+		}, 100)
+	}
+
+	checkActiveCompare()
 
 
 	let programmItems = document.querySelectorAll('.programm-item');
