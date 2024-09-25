@@ -211,16 +211,24 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		titleSearch2.classList.remove('active');
 	});
 
+	function getBasePath(url) {
+		const match = url.match(/\/(about-us|contacts|programm-products|projects|services|partners|vacantion|blog|news|search)\/?/);
+		return match ? match[0] : '/';
+	}
+
 	textOptions.forEach(option => {
 		option.addEventListener('click', (event) => {
+			const requestURI = document.querySelector('.i_header-more .i_url').textContent
+			const formattedURI = getBasePath(requestURI)
+			console.log(formattedURI)
 			event.stopPropagation();
 			selectedText.textContent = option.textContent;
 			const locationToRedirect = option.getAttribute('data-value').toLowerCase()
 
 			if(locationToRedirect !== 'ru'){
-				window.location.href = `https://new.exsolcom.kz/${locationToRedirect}/`
+				window.location.href = `https://new.exsolcom.kz/${locationToRedirect}${formattedURI}`
 			}else{
-				window.location.href = `https://new.exsolcom.kz/`
+				window.location.href = `https://new.exsolcom.kz${formattedURI}`
 			}
 			language.classList.remove('expanded');
 		});
@@ -1242,6 +1250,29 @@ document.addEventListener('DOMContentLoaded', (event) => {
 					submodal.classList.add('hd')
 				}
 			})
+
+			// document.querySelectorAll('.i_item_compare').forEach((item) => {
+			// 	item.addEventListener('click', () => {
+			// 		let btn = item.querySelector('.j_item_compare');
+			// 		let modal = item.querySelector('.j_compare_success');
+			//
+			// 		// Переключаем активное состояние кнопки
+			// 		btn.classList.toggle('i_item_compare_act');
+			// 		modal.classList.toggle('hd');
+			//
+			// 		// Обновляем количество выбранных программных продуктов
+			// 		updateCompareButton();
+			// 	});
+			// });
+			//
+			// const updateCompareButton = () => {
+			// 	const selectedCount = [...document.querySelectorAll('.i_item_compare .j_item_compare.i_item_compare_act')].length;
+			// 	const compareButton = document.getElementById('compare-button');
+			//
+			// 	// Обновляем текст кнопки
+			// 	compareButton.textContent = `Сравнить (${selectedCount})`;
+			// };
+
 
 			// setTimeout(() => {
 			// 	modal.classList.add('hd')

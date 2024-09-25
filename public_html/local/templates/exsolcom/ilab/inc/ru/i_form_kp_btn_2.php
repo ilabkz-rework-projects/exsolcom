@@ -1,1 +1,1 @@
-<button id="form-kp-btnSecond" >Запросить КП</button>
+Запросить КП

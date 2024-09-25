@@ -1,1 +1,1 @@
-<button id="form-programm-btn" class="idn">Перейти к программному продукту</button>
+Перейти к программному продукту

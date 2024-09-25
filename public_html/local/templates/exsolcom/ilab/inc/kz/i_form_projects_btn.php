@@ -1,1 +1,1 @@
-<button id="form-programm-btn" class="idn">Бағдарламалық өнімге өту</button>
+Бағдарламалық өнімге өту

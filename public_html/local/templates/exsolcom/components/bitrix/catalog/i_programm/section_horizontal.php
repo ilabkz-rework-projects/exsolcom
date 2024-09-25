@@ -268,7 +268,7 @@ else
                         </div>
 
                         <div class="i_programm-compare-box">
-                            <span class="i_but_ac i_open_compare j_open_compare">
+                            <span id="compare-button" class="i_but_ac i_open_compare j_open_compare">
                                 <?=\Bitrix\Main\Localization\Loc::getMessage('I_PRICE_SORT_SORT')?>
                             </span>
                         </div>

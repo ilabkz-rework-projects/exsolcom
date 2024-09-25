@@ -354,7 +354,7 @@
 					var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 				})(window,document,'https://exsolcom.bitrix24.kz/bitrix/js/crm/form_loader.js','b24form');
 
-				b24form({"id":"8","lang":"ru","sec":"ij6veh","type":"inline","node": document.getElementById('kp_container')});
+				b24form({"id":"8","lang":"<?=LANGUAGE_ID?>","sec":"ij6veh","type":"inline","node": document.getElementById('kp_container')});
 			</script>
 		</div>
 	</div>
@@ -374,10 +374,10 @@
 		<div class="i_modal-footer">
 			<div class="i_modal-footer-price idn"></div>
 			<div class="i_modal-footer-btn">
-				<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_form_kp_btn_1.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка перейти к кп', 'SHOW_BORDER'=>true))?>
-                <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_form_kp_btn_2.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка перейти к кп', 'SHOW_BORDER'=>true))?>
-                <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_form_projects_btn.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка перейти к пп', 'SHOW_BORDER'=>true))?>
-                <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_form_reply_btn.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка Откликнуться на вакансию', 'SHOW_BORDER'=>true))?>
+                <button id="form-kp-btn"><?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_form_kp_btn_1.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка перейти к кп', 'SHOW_BORDER'=>true))?></button>
+                <button id="form-kp-btnSecond" ><?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_form_kp_btn_2.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка перейти к кп', 'SHOW_BORDER'=>true))?></button>
+                <button id="form-programm-btn" class="idn"><?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_form_projects_btn.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка перейти к пп', 'SHOW_BORDER'=>true))?></button>
+                <button class="idn" id="form-reply-btn"><?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_form_reply_btn.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка Откликнуться на вакансию', 'SHOW_BORDER'=>true))?></button>
             </div>
 		</div>
 	</div>
