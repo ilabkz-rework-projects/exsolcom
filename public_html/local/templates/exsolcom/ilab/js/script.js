@@ -1253,28 +1253,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 			checkActiveCompare()
 
-			// document.querySelectorAll('.i_item_compare').forEach((item) => {
-			// 	item.addEventListener('click', () => {
-			// 		let btn = item.querySelector('.j_item_compare');
-			// 		let modal = item.querySelector('.j_compare_success');
-			//
-			// 		// Переключаем активное состояние кнопки
-			// 		btn.classList.toggle('i_item_compare_act');
-			// 		modal.classList.toggle('hd');
-			//
-			// 		// Обновляем количество выбранных программных продуктов
-			// 		updateCompareButton();
-			// 	});
-			// });
-			//
-			// const updateCompareButton = () => {
-			// 	const selectedCount = [...document.querySelectorAll('.i_item_compare .j_item_compare.i_item_compare_act')].length;
-			// 	const compareButton = document.getElementById('compare-button');
-			//
-			// 	// Обновляем текст кнопки
-			// 	compareButton.textContent = `Сравнить (${selectedCount})`;
-			// };
-
 
 			setTimeout(() => {
 				modal.classList.add('hd')

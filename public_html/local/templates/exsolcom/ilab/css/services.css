@@ -101,7 +101,7 @@
 .i_services .i_services-item {
   width: 32%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   align-items: center;
   text-align: center;
   gap: 20px;
@@ -110,7 +110,16 @@
   border-radius: 30px;
   cursor: pointer;
   transition: all 0.4s ease;
-  min-height: 470px;
+  min-height: 290px;
+}
+@media screen and (max-width: 1180px) {
+  .i_services .i_services-item {
+    min-height: 390px;
+    flex-direction: column-reverse;
+    gap: 0;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 @media screen and (max-width: 1060px) {
   .i_services .i_services-item {
@@ -135,13 +144,18 @@
 }
 @media screen and (max-width: 390px) {
   .i_services .i_services-item {
-    padding: 5px;
+    padding: 20px 5px;
   }
 }
 .i_services .i_services-item .i_services-img {
   max-width: 365px;
   width: 100%;
   height: auto;
+}
+@media screen and (max-width: 1180px) {
+  .i_services .i_services-item .i_services-img {
+    width: 70%;
+  }
 }
 .i_services .i_services-item .i_services-img img {
   width: 100%;
@@ -153,7 +167,13 @@
   gap: 20px;
   width: 90%;
 }
+@media screen and (max-width: 1180px) {
+  .i_services .i_services-item .i_services-content {
+    gap: 15px;
+  }
+}
 .i_services .i_services-item .i_services-content .i_services-name {
+  text-align: start;
   font-size: 1.125rem;
   color: var(--color-textInfoblock);
 }
@@ -175,6 +195,7 @@
 .i_services .i_services-item .i_services-content .i_services-preview-text {
   font-size: 14px;
   line-height: 1.5;
+  text-align: start;
 }
 @media screen and (max-width: 540px) {
   .i_services .i_services-item .i_services-content .i_services-preview-text {
