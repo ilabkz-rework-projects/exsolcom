@@ -28,13 +28,13 @@ use \Bitrix\Main\Localization\Loc;
 <?php
 //Добавляю дату
 if ($item['DATE_ACTIVE_FROM']) {
-// Исходная дата
+	// Исходная дата
 	$originalDate = $item['DATE_ACTIVE_FROM'];
 
-// Создаем объект DateTime из строки
+	// Создаем объект DateTime из строки
 	$date = DateTime::createFromFormat(LANGUAGE_ID === 'en' ? 'm/d/Y h:i:s A' : 'd.m.Y H:i:s', $originalDate);
 
-// Массив с названиями месяцев
+	// Массив с названиями месяцев
 	$months = null;
 
 	if(LANGUAGE_ID === 'en') {

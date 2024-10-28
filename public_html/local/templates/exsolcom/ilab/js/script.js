@@ -626,6 +626,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	// HISTORY
 	const iSeoTabs = document.querySelectorAll('.i_seo-dates-switch')
 	const iSeoDates = document.querySelectorAll('.i_seo-dates')
+	const iSeoBlock = document.querySelector('.i_seo-events')
 
 	iSeoTabs.forEach(item => {
 		item.addEventListener('click', () => {
@@ -647,10 +648,28 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				.then(response => response.json())
 				.then(data => {
 					const content = data.CONTENT;
-					document.querySelector('.i_seo-events').innerHTML = content;
+					iSeoBlock.innerHTML = content;
 				})
 		})
 	})
+
+	function initHistoryContent(){
+		fetch('/local/templates/exsolcom/ilab/ajax/getHistoryContent.php', {
+			method: 'POST',
+			headers:{
+				'Content-Type': 'application/json'
+			},
+			body:JSON.stringify({id: 56, language: languageID})
+		}).then(response => response.json())
+			.then(data => {
+				const content = data.CONTENT
+				iSeoBlock.innerHTML = content
+			})
+	}
+
+	initHistoryContent()
+
+
 
 	// Модалка для услуг
 	servicesItems.forEach(item => {
@@ -795,7 +814,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 						// навешиваем обработчик на кнопку для перехода на страницу с программным продуктом
 						footerProgrammBtn.addEventListener('click', () => {
-							window.location.href = `http://new.exsolcom.kz/programm-products/?product=${data.PROGRAMM_LINK !== null ? data.PROGRAMM_LINK : ''}`
+							let link = ''
+
+							if(languageID === 'ru'){
+								link = `http://new.exsolcom.kz/programm-products/?product=${data.PROGRAMM_LINK !== null ? data.PROGRAMM_LINK : ''}`
+							}else{
+								link = `http://new.exsolcom.kz/${languageID}/programm-products/?product=${data.PROGRAMM_LINK !== null ? data.PROGRAMM_LINK : ''}`
+							}
+							window.location.href = link
 						})
 					}
 				})
@@ -951,7 +977,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 							// навешиваем обработчик на кнопку для перехода на страницу с программным продуктом
 							footerProgrammBtn.addEventListener('click', () => {
-								window.location.href = `http://new.exsolcom.kz/programm-products/?product=${data.PROGRAMM_LINK !== null ? data.PROGRAMM_LINK : ''}`
+								let link = '';
+
+								if(languageID === 'ru'){
+									link = `http://new.exsolcom.kz/programm-products/?product=${data.PROGRAMM_LINK !== null ? data.PROGRAMM_LINK : ''}`
+								}else{
+									link = `http://new.exsolcom.kz/${languageID}/programm-products/?product=${data.PROGRAMM_LINK !== null ? data.PROGRAMM_LINK : ''}`
+								}
+								window.location.href = link
 							})
 						}
 

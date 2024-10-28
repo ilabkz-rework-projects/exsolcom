@@ -12,6 +12,7 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
+
 <div class="blog-list">
 	<?
 	$dbRes = \CIBlockSection::GetList(array(), ['IBLOCK_ID' => $arParams['IBLOCK_ID']], false, array("*")); // UF_* для выбора всех пользовательских свойств);
@@ -26,6 +27,50 @@ $this->setFrameMode(true);
 	<?
 	$counter = 0;
 	foreach ($arResult["ITEMS"] as $arItem):?>
+
+		<?
+		if ($arItem['ACTIVE_FROM']) {
+			// Исходная дата
+			$originalDate = $arItem['ACTIVE_FROM'];
+
+			// Создаем объект DateTime из строки
+			$date = DateTime::createFromFormat(LANGUAGE_ID === 'en' ? 'm/d/Y h:i:s A' : 'd.m.Y H:i:s', $originalDate);
+
+			// Массив с названиями месяцев
+			$months = null;
+
+			if(LANGUAGE_ID === 'en') {
+				$months = [
+					1 => 'january', 2 => 'february', 3 => 'march', 4 => 'april',
+					5 => 'may', 6 => 'june', 7 => 'july', 8 => 'august',
+					9 => 'september', 10 => 'october', 11 => 'november', 12 => 'december'
+				];
+			} else if (LANGUAGE_ID === 'ru') {
+				$months = [
+					1 => 'января', 2 => 'февраля', 3 => 'марта', 4 => 'апреля',
+					5 => 'мая', 6 => 'июня', 7 => 'июля', 8 => 'августа',
+					9 => 'сентября', 10 => 'октября', 11 => 'ноября', 12 => 'декабря'
+				];
+
+			}else{
+				$months = [
+					1 => 'қаңтар', 2 => 'ақпан', 3 => 'наурыз', 4 => 'сәуір',
+					5 => 'мамыр', 6 => 'маусым', 7 => 'шілде', 8 => 'тамыз',
+					9 => 'қыркүйек', 10 => 'қазан', 11 => 'қараша', 12 => 'желтоқсан'
+				];
+			}
+
+
+			// Получаем день, месяц и год
+			$day = $date->format('d');
+			$month = $months[(int)$date->format('m')];
+			$year = $date->format('Y');
+
+			// Формируем строку
+			$formattedDate = sprintf('%d %s %d', $day, $month, $year);
+		}
+		?>
+
 		<? if ($counter === 3) : break; endif;
 		$counter++;
 		$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
@@ -62,7 +107,7 @@ $this->setFrameMode(true);
 			<div class="blog-item-info">
 				<? if ($arParams["DISPLAY_DATE"] != "N" && $arItem["DISPLAY_ACTIVE_FROM"]):?>
 					<div class="blog-item-info-top">
-						<div class="blog-date-time"><span><? echo $arItem["DISPLAY_ACTIVE_FROM"] ?></span></div>
+						<div class="blog-date-time"><span><?=$formattedDate?></span></div>
 						<!-- BLOG STICKER-->
 						<div class="i_sticker">
 							<? if (is_array($arProperty["DISPLAY_VALUE"])):?>
