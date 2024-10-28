@@ -4,7 +4,7 @@
 	<div class="i_side-menu">
 		<div class="i_side-menu-container">
 			<div class="i_side-menu-title">
-				<span>Меню сайта</span>
+				<span><?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/components/bitrix/menu/ilab.s_nav/lang/'.LANGUAGE_ID.'/name_menu.php',Array(),Array('MODE'=>'html', 'NAME'=>'Название меню', 'SHOW_BORDER'=>true))?></span>
 			</div>
 
 			<div class="i_side-menu-close">

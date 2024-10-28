@@ -1,5 +1,5 @@
 <div class="i_projects-btn">
-    <a href="projects/">
+    <a href="/kz/projects/">
         <button>Барлық жобалар</button>
     </a>
 </div>

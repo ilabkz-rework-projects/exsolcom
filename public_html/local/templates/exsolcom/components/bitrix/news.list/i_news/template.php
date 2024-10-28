@@ -17,6 +17,48 @@ $this->setFrameMode(true);
 	<?=$arResult["NAV_STRING"]?>
 <?endif;?>
 <?foreach($arResult["ITEMS"] as $arItem):?>
+    <?
+    if ($arItem['ACTIVE_FROM']) {
+        // Исходная дата
+        $originalDate = $arItem['ACTIVE_FROM'];
+
+        // Создаем объект DateTime из строки
+        $date = DateTime::createFromFormat(LANGUAGE_ID === 'en' ? 'm/d/Y h:i:s A' : 'd.m.Y H:i:s', $originalDate);
+
+        // Массив с названиями месяцев
+        $months = null;
+
+        if(LANGUAGE_ID === 'en') {
+            $months = [
+                1 => 'january', 2 => 'february', 3 => 'march', 4 => 'april',
+                5 => 'may', 6 => 'june', 7 => 'july', 8 => 'august',
+                9 => 'september', 10 => 'october', 11 => 'november', 12 => 'december'
+            ];
+        } else if (LANGUAGE_ID === 'ru') {
+            $months = [
+                1 => 'января', 2 => 'февраля', 3 => 'марта', 4 => 'апреля',
+                5 => 'мая', 6 => 'июня', 7 => 'июля', 8 => 'августа',
+                9 => 'сентября', 10 => 'октября', 11 => 'ноября', 12 => 'декабря'
+            ];
+
+        }else{
+            $months = [
+                1 => 'қаңтар', 2 => 'ақпан', 3 => 'наурыз', 4 => 'сәуір',
+                5 => 'мамыр', 6 => 'маусым', 7 => 'шілде', 8 => 'тамыз',
+                9 => 'қыркүйек', 10 => 'қазан', 11 => 'қараша', 12 => 'желтоқсан'
+            ];
+        }
+
+
+        // Получаем день, месяц и год
+        $day = $date->format('d');
+        $month = $months[(int)$date->format('m')];
+        $year = $date->format('Y');
+
+        // Формируем строку
+        $formattedDate = sprintf('%d %s %d', $day, $month, $year);
+    }
+    ?>
 	<?
 	$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
 	$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
@@ -50,7 +92,7 @@ $this->setFrameMode(true);
 			</div>
 		<?endif?>
 		<?if($arParams["DISPLAY_DATE"]!="N" && $arItem["DISPLAY_ACTIVE_FROM"]):?>
-			<div class="news-date-time"><span><?echo $arItem["DISPLAY_ACTIVE_FROM"]?></span></div>
+			<div class="news-date-time"><span><?echo $formattedDate ?></span></div>
 		<?endif?>
 		<?if($arParams["DISPLAY_NAME"]!="N" && $arItem["NAME"]):?>
 			<?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>

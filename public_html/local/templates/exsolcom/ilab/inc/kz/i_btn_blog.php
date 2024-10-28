@@ -1,5 +1,5 @@
 <div class="i_blog-btn">
-    <a href="/blog">
+    <a href="/kz/blog">
         <button>Барлық мақалалар</button>
     </a>
 </div>

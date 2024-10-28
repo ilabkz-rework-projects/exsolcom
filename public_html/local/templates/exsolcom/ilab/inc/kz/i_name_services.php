@@ -1,1 +1,1 @@
-<a href="/services"><span>Бізден сізге арналған қызметтер</span></a>
+<a href="/kz/services"><span>Бізден сізге арналған қызметтер</span></a>

@@ -1,3 +1,3 @@
 <div class="i_news-title-name">
-    <a href="/news"><span>OUR NEWS</span></a>
+    <a href="/en/news"><span>OUR NEWS</span></a>
 </div>

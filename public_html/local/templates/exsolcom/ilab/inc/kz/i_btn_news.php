@@ -1,5 +1,5 @@
 <div class="i_news-btn">
-    <a href="/news">
+    <a href="/kz/news">
         <button>Барлық жаңалықтар</button>
     </a>
 </div>

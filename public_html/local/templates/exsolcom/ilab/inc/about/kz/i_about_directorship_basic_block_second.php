@@ -21,7 +21,7 @@
             </div>
 
             <div class="i_directorship-block-desc-top-depiction">
-                <span class="i_directorship-desc-top-depiction-name">Технический директор</span>
+                <span class="i_directorship-desc-top-depiction-name">Техникалық директор</span>
                 <div class="i_directorship-desc-top-depiction-specification">
                     <span>Жоғары экономикалық және техникалық білім</span>
                     <span>Бағдарламашы-әзірлеуші ретінде 20 жылдан астам тәжірибе</span>

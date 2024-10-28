@@ -1,5 +1,5 @@
 <div class="i_projects-title-name">
-    <a href="projects/">
+    <a href="/kz/projects/">
         <span>БІЗДІҢ ЖОБАЛАРЫМЫЗ</span>
     </a>
 </div>
