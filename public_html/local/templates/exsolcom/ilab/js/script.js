@@ -766,6 +766,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
 					}
 
 					modal.querySelector('.i_modal-img').innerHTML = `<img src="${data.IMAGE}" alt="${data.NAME}">`
+
+					const url = new URL(window.location.href);
+					url.searchParams.set('service', data.CODE); // Добавляем параметр "param" со значением "value"
+
+					// Обновляем URL в адресной строке без перезагрузки страницы
+					history.pushState(null, '', url.toString());
+
+					console.log(data)
 				})
 		})
 	})
@@ -810,7 +818,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 						footerKpBtnSecond.classList.add('idn')
 						footerProgrammBtn.classList.remove('idn')
 
-						console.log(data)
+						const url = new URL(window.location.href);
+						url.searchParams.set('projects', data.CODE); // Добавляем параметр "param" со значением "value"
+
+						// Обновляем URL в адресной строке без перезагрузки страницы
+						history.pushState(null, '', url.toString());
+
 
 						// навешиваем обработчик на кнопку для перехода на страницу с программным продуктом
 						footerProgrammBtn.addEventListener('click', () => {
@@ -1122,6 +1135,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 						}
 
 						modal.querySelector('.i_modal-img').innerHTML = `<img src="${data.IMAGE}" alt="${data.NAME}">`
+
+						// Обновляем URL в адресной строке без перезагрузки страницы
+						history.pushState(null, '', url.toString());
 					})
 			}
 
