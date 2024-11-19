@@ -2957,4 +2957,384 @@
   font-family: "Open Sans", sans-serif;
 }
 
+.i_snippet.binary-vertical-table {
+  margin: 60px 0 0 0;
+}
+.i_snippet.binary-vertical-table .i_snippet-top.border-bottom {
+  border-bottom: 5px dotted #666666;
+  border-radius: 30px 30px 0 0;
+  padding: 0 0 50px 0;
+}
+.i_snippet.binary-vertical-table .i_snippet-top {
+  background-color: var(--bg-fifth);
+  max-width: 1270px;
+  height: 100%;
+  border-radius: 0 0 30px 30px;
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_snippet-title {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 0 0;
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_snippet-title h3 {
+  text-align: center;
+  line-height: 25px;
+  padding: 0 40px;
+  font-size: 24px;
+}
+@media screen and (max-width: 1330px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_snippet-title h3 {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_snippet-title h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_snippet-title h3 {
+    font-size: 18px;
+  }
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_snippet-table-points-container {
+  width: 100%;
+  height: max-content;
+  padding: 50px 50px 0 50px;
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_snippet-table-points-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_snippet-table-points-container ul ul {
+  padding-left: 25px;
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_snippet-table-points-container ul li::marker {
+  color: var(--color-text-li);
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_snippet-table-points-container ul li {
+  line-height: 22px;
+  color: var(--color-textInfoblock);
+  font-family: "Open Sans", sans-serif;
+}
+@media screen and (max-width: 1330px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_snippet-table-points-container ul li {
+    font-size: 15px;
+  }
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_snippet-table-points-container ul li a {
+  font-family: "Comfortaa", sans-serif;
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_snippet-table-points-container ul li .text-weight.family {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 600;
+  cursor: text;
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block:before {
+  content: none;
+  border: 20px solid transparent;
+  border-bottom: 20px solid var(--bg-block);
+  position: absolute;
+  top: -39px;
+  right: 85%;
+  transform: translateX(50%);
+}
+@media screen and (max-width: 360px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block:before {
+    right: 65%;
+  }
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block {
+  padding: 40px;
+  margin: 40px;
+  background-color: var(--bg-block);
+  border-radius: 30px;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+}
+@media screen and (max-width: 760px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block {
+    padding: 30px;
+    margin: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block {
+    padding: 20px;
+    margin: 20px;
+  }
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block .i_snippet-picture {
+  max-width: 100px;
+  min-width: 100px;
+  height: 100%;
+}
+@media screen and (max-width: 760px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block .i_snippet-picture {
+    min-width: 80px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block .i_snippet-picture {
+    min-width: 50px;
+  }
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block .i_snippet-picture img {
+  width: 100%;
+  height: 100%;
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block .i_snippet-group-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block .i_snippet-group-text .i_snippet-group-text-title span {
+  font-size: 18px;
+  color: var(--color-textInfoblock);
+  cursor: text;
+}
+@media screen and (max-width: 480px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block .i_snippet-group-text .i_snippet-group-text-title span {
+    font-size: 16px;
+  }
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block .i_snippet-group-text .i_snippet-group-text-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 18px;
+  color: var(--color-textInfoblock);
+  cursor: text;
+}
+@media screen and (max-width: 1330px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block .i_snippet-group-text .i_snippet-group-text-desc {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block .i_snippet-group-text .i_snippet-group-text-desc {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block .i_snippet-group-text .i_snippet-group-text-desc {
+    font-size: 13px;
+  }
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_snippet.composition-block .i_snippet-group-text .i_snippet-group-text-desc span {
+  color: var(--color-textInfoblock);
+  cursor: text;
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_snippet-multi-table-btn {
+  padding: 0 0 50px 0;
+}
+@media screen and (max-width: 480px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_snippet-multi-table-btn {
+    display: none;
+  }
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_snippet-multi-table-btn button:hover {
+  background-color: var(--bg-buttonHoverSecond);
+}
+@media screen and (max-width: 760px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_snippet-multi-table-btn button {
+    padding: 12px 18px;
+  }
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_snippet-title.contact {
+  padding: 0 0 30px 0;
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  padding: 0 0 30px 0;
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2 {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-circles);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2 .whatsapp-icon {
+  margin: 4px 0 0 0;
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2:hover {
+  background-color: var(--color-circlesHover);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2:hover svg {
+  margin: 4px 0 0 0;
+  color: var(--color-red);
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2 .i_drop {
+  display: none;
+}
+@media screen and (max-width: 1330px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2 {
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-circles);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s ease;
+    position: relative;
+    box-shadow: none;
+  }
+  .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2:hover {
+    color: var(--color-black);
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2:hover span {
+    color: var(--color-red);
+    font-weight: normal;
+  }
+  .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2 .whatsapp-icon {
+    margin: 3px 0 0 0;
+  }
+}
+@media screen and (max-width: 1330px) and (max-width: 1330px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2 {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2 .i_drop {
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    width: 50px;
+    transition: all 0.4s ease;
+    height: 100%;
+    border-radius: 50px;
+    background-color: var(--color-circlesHover);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2 .i_drop a {
+    color: var(--color-black);
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    outline: none;
+    position: relative;
+    background-color: transparent;
+    text-wrap: nowrap;
+  }
+}
+@media screen and (max-width: 1330px) and (max-width: 1330px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2 .i_drop a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2.wide {
+    transition: all 0.4s ease;
+    background-color: var(--color-circlesHover);
+  }
+  .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2.wide .close_hide_menu2 {
+    background-image: url("../img/svg/close-iconLight.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px auto;
+    position: absolute;
+    margin: 0;
+    right: -80px;
+    width: 23px;
+    height: 100%;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 1330px) and (max-width: 1330px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2.wide .close_hide_menu2 {
+    right: -145%;
+    transform: translateX(50%);
+    background-size: 22px auto;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2.wide .j_drop {
+    width: 240px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+    height: 105%;
+  }
+}
+@media screen and (max-width: 1330px) and (max-width: 1330px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2.wide .j_drop {
+    width: 195px;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2.wide .j_drop a {
+    opacity: 1;
+  }
+  .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item #myCircles2.wide .j_drop svg {
+    margin: 0;
+    fill: var(--color-black);
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item .i_footer-left-icons-item-circles {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-circles);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  background-image: url("../img/svg/whatsapp-icon_w.svg");
+  background-repeat: no-repeat;
+  background-size: 55px;
+  background-position-x: 65%;
+  background-position-y: 50%;
+}
+@media screen and (max-width: 1330px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item .i_footer-left-icons-item-circles {
+    background-size: 48px;
+  }
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item .i_footer-left-icons-item-circles:hover {
+  background-color: var(--color-circlesHover);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  background-image: url(../img/svg/whatsapp-icon_r.svg);
+  background-repeat: no-repeat;
+  background-size: 55px;
+  background-position-x: 65%;
+  background-position-y: 50%;
+}
+@media screen and (max-width: 1330px) {
+  .i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item .i_footer-left-icons-item-circles:hover {
+    background-size: 48px;
+  }
+}
+.i_snippet.binary-vertical-table .i_snippet-top .i_footer-left-icons-item .i_footer-left-icons-number {
+  text-decoration: none;
+  color: var(--color-textInfoblock);
+  font-weight: 600;
+}
+
 /*# sourceMappingURL=snippets.css.map */
