@@ -972,18 +972,19 @@
 
       &:nth-child(2) {
         position: relative;
+        border-left: 5px dotted #666666;
         //border-left: 5px dotted #666666;
-        &:before {
-          content: " ";
-          position: absolute;
-          background-image: url("../img/svg/doth-vertical_downGrey.svg");
-          background-position-y: -5px;
-          background-size: 12px;
-          height: calc(100% - 0px);
-          width: 8px;
-          right: 620px;
-          top: 0;
-        }
+        //&:before {
+        //  content: " ";
+        //  position: absolute;
+        //  background-image: url("../img/svg/doth-vertical_downGrey.svg");
+        //  background-position-y: -5px;
+        //  background-size: 12px;
+        //  height: calc(100% - 0px);
+        //  width: 8px;
+        //  right: 620px;
+        //  top: 0;
+        //}
 
         @media screen and (max-width: 590px) {
           border-left: none;
