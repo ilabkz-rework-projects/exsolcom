@@ -1737,4 +1737,59 @@ div.title-search-result {
   display: none !important;
 }
 
+.i_container-more {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-height: 20px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+.i_container-more .i_container-more-head {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  width: max-content;
+  cursor: pointer;
+}
+.i_container-more .i_container-more-head:hover .i_container-more-head-title {
+  color: var(--color-red);
+}
+.i_container-more .i_container-more-head .i_container-more-head-title {
+  color: var(--color-black);
+  transition: all 0.4s ease;
+}
+.i_container-more .i_container-more-head .i_container-more-head-arrow {
+  position: absolute;
+  right: -20px;
+  bottom: 5px;
+  background: none;
+  border-bottom: 2px solid #cf0000;
+  border-left-color: #cf0000;
+  border-radius: 2px;
+  border-right: 2px solid #cf0000;
+  border-top-color: #cf0000;
+  content: "";
+  display: block;
+  height: 10px;
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 10px;
+  z-index: 2;
+  transition: all 0.4s ease;
+}
+.i_container-more .i_container-more-body {
+  position: relative;
+  z-index: 1;
+}
+.i_container-more.active .i_container-more-head .i_container-more-head-arrow {
+  bottom: 2px;
+  -webkit-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
 /*# sourceMappingURL=general.css.map */

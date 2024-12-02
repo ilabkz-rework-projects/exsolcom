@@ -1413,32 +1413,45 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 
+	function activeContentMore() {
+		const contentMore = document.querySelectorAll('.i_container-more');
 
-	const observer = new MutationObserver((mutationsList) => {
-		mutationsList.forEach((mutation) => {
-			if (mutation.type === 'childList') {
-				mutation.addedNodes.forEach((node) => {
-					if (node.nodeType === 1) {
-						const arrow = node.querySelector('.arrow') || (node.classList.contains('arrow') ? node : null);
-						if (arrow && !arrow.hasAttribute('data-click-bound')) {
-							arrow.setAttribute('data-click-bound', 'true');
-							arrow.addEventListener('click', () => {
-								console.log('Arrow clicked');
-								const moreOffElement = document.querySelector('.moreoff');
-								const arrow = node.querySelector('.arrow');
-								if (moreOffElement) {
-									moreOffElement.classList.toggle('more');
-									console.log('Class "more" added to .moreoff');
-								} else {
-									console.warn('Element .moreoff not found');
-								}
-								if (arrow) {
-									arrow.classList.toggle('more');
-									console.log('Class "more" added to .arrow');
-								} else {
-									console.warn('Element .arrow not found');
-								}
-							});
+		contentMore.forEach(item => {
+			if (!item.dataset.listenerAdded) { // Проверяем, добавлен ли обработчик
+				item.addEventListener('click', () => {
+					item.classList.toggle('active');
+					if(item.classList.contains('active')){
+						const contentBlock = item.querySelector('.i_container-more-body')
+						const contentBlockHeight = contentBlock.clientHeight + 2;
+
+						item.style.maxHeight = `${contentBlockHeight + 16 + 30}px`
+					}else{
+						item.style.maxHeight = '20px'
+					}
+				});
+				item.dataset.listenerAdded = "true"; // Отмечаем, что обработчик добавлен
+			}
+		});
+	}
+
+	// Запускаем для уже существующих элементов
+	activeContentMore();
+
+	// Создаем MutationObserver
+	const observer = new MutationObserver(mutations => {
+		mutations.forEach(mutation => {
+			if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+				mutation.addedNodes.forEach(node => {
+					if (node.nodeType === Node.ELEMENT_NODE) { // Убедимся, что это элемент
+						if (node.classList.contains('i_container-more')) {
+							// Если добавленный элемент — это i_container-more
+							activeContentMore();
+						} else {
+							// Если элемент может содержать i_container-more внутри
+							const nestedItems = node.querySelectorAll('.i_container-more');
+							if (nestedItems.length > 0) {
+								activeContentMore();
+							}
 						}
 					}
 				});
@@ -1446,622 +1459,626 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	});
 
-	observer.observe(document.body, { childList: true, subtree: true });
-
-	const observers = new MutationObserver((mutationsList) => {
-		mutationsList.forEach((mutation) => {
-			if (mutation.type === 'childList') {
-				mutation.addedNodes.forEach((node) => {
-					if (node.nodeType === 1) {
-						const arrows = node.querySelector('.arrows') || (node.classList.contains('arrows') ? node : null);
-						if (arrows && !arrows.hasAttribute('data-click-bound')) {
-							arrows.setAttribute('data-click-bound', 'true');
-							arrows.addEventListener('click', () => {
-								console.log('Arrow clicked');
-								const moreOffElement = document.querySelector('.moreoffs');
-								const arrows = node.querySelector('.arrows');
-								if (moreOffElement) {
-									moreOffElement.classList.toggle('more');
-									console.log('Class "more" added to .moreoffs');
-								} else {
-									console.warn('Element .moreoffs not found');
-								}
-								if (arrows) {
-									arrows.classList.toggle('more');
-									console.log('Class "more" added to .arrows');
-								} else {
-									console.warn('Element .arrows not found');
-								}
-							});
-						}
-					}
-				});
-			}
-		});
+	// Наблюдаем за изменениями в `body`
+	observer.observe(document.body, {
+		childList: true, // Слежение за добавлением и удалением дочерних узлов
+		subtree: true    // Включение наблюдения за всем поддеревом
 	});
 
-	observers.observe(document.body, { childList: true, subtree: true });
-
-	const observerss = new MutationObserver((mutationsList) => {
-		mutationsList.forEach((mutation) => {
-			if (mutation.type === 'childList') {
-				mutation.addedNodes.forEach((node) => {
-					if (node.nodeType === 1) {
-						const arrowss = node.querySelector('.arrowss') || (node.classList.contains('arrowss') ? node : null);
-						if (arrowss && !arrowss.hasAttribute('data-click-bound')) {
-							arrowss.setAttribute('data-click-bound', 'true');
-							arrowss.addEventListener('click', () => {
-								console.log('Arrow clicked');
-								const moreOffElement = document.querySelector('.moreoffss');
-								const arrowss = node.querySelector('.arrowss');
-								if (moreOffElement) {
-									moreOffElement.classList.toggle('more');
-									console.log('Class "more" added to .moreoffss');
-								} else {
-									console.warn('Element .moreoffss not found');
-								}
-								if (arrowss) {
-									arrowss.classList.toggle('more');
-									console.log('Class "more" added to .arrowss');
-								} else {
-									console.warn('Element .arrowss not found');
-								}
-							});
-						}
-					}
-				});
-			}
-		});
-	});
-
-
-
-
-	observerss.observe(document.body, { childList: true, subtree: true });
-
-	const observerssd = new MutationObserver((mutationsList) => {
-		mutationsList.forEach((mutation) => {
-			if (mutation.type === 'childList') {
-				mutation.addedNodes.forEach((node) => {
-					if (node.nodeType === 1) {
-						const arrowsss = node.querySelector('.arrowsss') || (node.classList.contains('arrowsss') ? node : null);
-						if (arrowsss && !arrowsss.hasAttribute('data-click-bound')) {
-							arrowsss.setAttribute('data-click-bound', 'true');
-							arrowsss.addEventListener('click', () => {
-								console.log('Arrow clicked');
-								const moreOffElement = document.querySelector('.moreoffsss');
-								const arrowsss = node.querySelector('.arrowsss');
-								if (moreOffElement) {
-									moreOffElement.classList.toggle('more');
-									console.log('Class "more" added to .moreoffsss');
-								} else {
-									console.warn('Element .moreoffsss not found');
-								}
-								if (arrowsss) {
-									arrowsss.classList.toggle('more');
-									console.log('Class "more" added to .arrowsss');
-								} else {
-									console.warn('Element .arrowsss not found');
-								}
-							});
-						}
-					}
-				});
-			}
-		});
-	});
-
-	observerssd.observe(document.body, { childList: true, subtree: true });
-
-	const observerssdd = new MutationObserver((mutationsList) => {
-		mutationsList.forEach((mutation) => {
-			if (mutation.type === 'childList') {
-				mutation.addedNodes.forEach((node) => {
-					if (node.nodeType === 1) {
-						const arrowssss = node.querySelector('.arrowssss') || (node.classList.contains('arrowssss') ? node : null);
-						if (arrowssss && !arrowssss.hasAttribute('data-click-bound')) {
-							arrowssss.setAttribute('data-click-bound', 'true');
-							arrowssss.addEventListener('click', () => {
-								console.log('Arrow clicked');
-								const moreOffElement = document.querySelector('.moreofssss');
-								const arrowssss = node.querySelector('.arrowssss');
-								if (moreOffElement) {
-									moreOffElement.classList.toggle('more');
-									console.log('Class "more" added to .moreofssss');
-								} else {
-									console.warn('Element .moreofssss not found');
-								}
-								if (arrowssss) {
-									arrowssss.classList.toggle('more');
-									console.log('Class "more" added to .arrowssss');
-								} else {
-									console.warn('Element .arrowssss not found');
-								}
-							});
-						}
-					}
-				});
-			}
-		});
-	});
-
-	observerssdd.observe(document.body, { childList: true, subtree: true });
-
-	const observerssddd = new MutationObserver((mutationsList) => {
-		mutationsList.forEach((mutation) => {
-			if (mutation.type === 'childList') {
-				mutation.addedNodes.forEach((node) => {
-					if (node.nodeType === 1) {
-						const arrowsssss = node.querySelector('.arrowsssss') || (node.classList.contains('arrowsssss') ? node : null);
-						if (arrowsssss && !arrowsssss.hasAttribute('data-click-bound')) {
-							arrowsssss.setAttribute('data-click-bound', 'true');
-							arrowsssss.addEventListener('click', () => {
-								console.log('Arrow clicked');
-								const moreOffElement = document.querySelector('.moreoffsssss');
-								const arrowsssss = node.querySelector('.arrowsssss');
-								if (moreOffElement) {
-									moreOffElement.classList.toggle('more');
-									console.log('Class "more" added to .moreoffsssss');
-								} else {
-									console.warn('Element .moreoffsssss not found');
-								}
-								if (arrowsssss) {
-									arrowsssss.classList.toggle('more');
-									console.log('Class "more" added to .arrowsssss');
-								} else {
-									console.warn('Element .arrowsssss not found');
-								}
-							});
-						}
-					}
-				});
-			}
-		});
-	});
-
-	observerssddd.observe(document.body, { childList: true, subtree: true });
-
-	const observerssdddc = new MutationObserver((mutationsList) => {
-		mutationsList.forEach((mutation) => {
-			if (mutation.type === 'childList') {
-				mutation.addedNodes.forEach((node) => {
-					if (node.nodeType === 1) {
-						const class1 = node.querySelector('.class1') || (node.classList.contains('class1') ? node : null);
-						if (class1 && !class1.hasAttribute('data-click-bound')) {
-							class1.setAttribute('data-click-bound', 'true');
-							class1.addEventListener('click', () => {
-								console.log('Arrow clicked');
-								const moreOffElement = document.querySelector('.class11');
-								const class1 = node.querySelector('.class1');
-								if (moreOffElement) {
-									moreOffElement.classList.toggle('more');
-									console.log('Class "more" added to .class11');
-								} else {
-									console.warn('Element .class11 not found');
-								}
-								if (class1) {
-									class1.classList.toggle('more');
-									console.log('Class "more" added to .class1');
-								} else {
-									console.warn('Element .class1 not found');
-								}
-							});
-						}
-					}
-				});
-			}
-		});
-	});
-
-	observerssdddc.observe(document.body, { childList: true, subtree: true });
-
-	const observerssdddcd = new MutationObserver((mutationsList) => {
-		mutationsList.forEach((mutation) => {
-			if (mutation.type === 'childList') {
-				mutation.addedNodes.forEach((node) => {
-					if (node.nodeType === 1) {
-						const class2 = node.querySelector('.class2') || (node.classList.contains('class2') ? node : null);
-						if (class2 && !class2.hasAttribute('data-click-bound')) {
-							class2.setAttribute('data-click-bound', 'true');
-							class2.addEventListener('click', () => {
-								console.log('Arrow clicked');
-								const moreOffElement = document.querySelector('.class22');
-								const class2 = node.querySelector('.class2');
-								if (moreOffElement) {
-									moreOffElement.classList.toggle('more');
-									console.log('Class "more" added to .class22');
-								} else {
-									console.warn('Element .class22 not found');
-								}
-								if (class2) {
-									class2.classList.toggle('more');
-									console.log('Class "more" added to .class2');
-								} else {
-									console.warn('Element .class2 not found');
-								}
-							});
-						}
-					}
-				});
-			}
-		});
-	});
-
-	observerssdddcd.observe(document.body, { childList: true, subtree: true });
-
-	const observerssdddcds = new MutationObserver((mutationsList) => {
-		mutationsList.forEach((mutation) => {
-			if (mutation.type === 'childList') {
-				mutation.addedNodes.forEach((node) => {
-					if (node.nodeType === 1) {
-						const class3 = node.querySelector('.class3') || (node.classList.contains('class3') ? node : null);
-						if (class3 && !class3.hasAttribute('data-click-bound')) {
-							class3.setAttribute('data-click-bound', 'true');
-							class3.addEventListener('click', () => {
-								console.log('Arrow clicked');
-								const moreOffElement = document.querySelector('.class33');
-								const class3 = node.querySelector('.class3');
-								if (moreOffElement) {
-									moreOffElement.classList.toggle('more');
-									console.log('Class "more" added to .class33');
-								} else {
-									console.warn('Element .class33 not found');
-								}
-								if (class3) {
-									class3.classList.toggle('more');
-									console.log('Class "more" added to .class3');
-								} else {
-									console.warn('Element .class3 not found');
-								}
-							});
-						}
-					}
-				});
-			}
-		});
-	});
-
-	observerssdddcds.observe(document.body, { childList: true, subtree: true });
-
-	const observerssdddcdss = new MutationObserver((mutationsList) => {
-		mutationsList.forEach((mutation) => {
-			if (mutation.type === 'childList') {
-				mutation.addedNodes.forEach((node) => {
-					if (node.nodeType === 1) {
-						const class4 = node.querySelector('.class4') || (node.classList.contains('class4') ? node : null);
-						if (class4 && !class4.hasAttribute('data-click-bound')) {
-							class4.setAttribute('data-click-bound', 'true');
-							class4.addEventListener('click', () => {
-								console.log('Arrow clicked');
-								const moreOffElement = document.querySelector('.class44');
-								const class4 = node.querySelector('.class4');
-								if (moreOffElement) {
-									moreOffElement.classList.toggle('more');
-									console.log('Class "more" added to .class44');
-								} else {
-									console.warn('Element .class44 not found');
-								}
-								if (class4) {
-									class4.classList.toggle('more');
-									console.log('Class "more" added to .class4');
-								} else {
-									console.warn('Element .class4 not found');
-								}
-							});
-						}
-					}
-				});
-			}
-		});
-	});
-
-	observerssdddcdss.observe(document.body, { childList: true, subtree: true });
-
-	const observerssdddcdsssFF = new MutationObserver((mutationsList) => {
-		mutationsList.forEach((mutation) => {
-			if (mutation.type === 'childList') {
-				mutation.addedNodes.forEach((node) => {
-					if (node.nodeType === 1) {
-						const class5 = node.querySelector('.class5') || (node.classList.contains('class5') ? node : null);
-						if (class5 && !class5.hasAttribute('data-click-bound')) {
-							class5.setAttribute('data-click-bound', 'true');
-							class5.addEventListener('click', () => {
-								console.log('Arrow clicked');
-								const moreOffElement = document.querySelector('.class55');
-								const class5 = node.querySelector('.class5');
-								if (moreOffElement) {
-									moreOffElement.classList.toggle('more');
-									console.log('Class "more" added to .class55');
-								} else {
-									console.warn('Element .class55 not found');
-								}
-								if (class5) {
-									class5.classList.toggle('more');
-									console.log('Class "more" added to .class5');
-								} else {
-									console.warn('Element .class5 not found');
-								}
-							});
-						}
-					}
-				});
-			}
-		});
-	});
-
-	observerssdddcdsssFF.observe(document.body, { childList: true, subtree: true });
-
-	const observerssdddcdssso = new MutationObserver((mutationsList) => {
-		mutationsList.forEach((mutation) => {
-			if (mutation.type === 'childList') {
-				mutation.addedNodes.forEach((node) => {
-					if (node.nodeType === 1) {
-						const class6 = node.querySelector('.class6') || (node.classList.contains('class6') ? node : null);
-						if (class6 && !class6.hasAttribute('data-click-bound')) {
-							class6.setAttribute('data-click-bound', 'true');
-							class6.addEventListener('click', () => {
-								console.log('Arrow clicked');
-								const moreOffElement = document.querySelector('.class66');
-								const class6 = node.querySelector('.class6');
-								if (moreOffElement) {
-									moreOffElement.classList.toggle('more');
-									console.log('Class "more" added to .class66');
-								} else {
-									console.warn('Element .class66 not found');
-								}
-								if (class6) {
-									class6.classList.toggle('more');
-									console.log('Class "more" added to .class6');
-								} else {
-									console.warn('Element .class6 not found');
-								}
-							});
-						}
-					}
-				});
-			}
-		});
-	});
-
-	observerssdddcdssso.observe(document.body, { childList: true, subtree: true });
-
-	const observerssdddcdsssqq = new MutationObserver((mutationsList) => {
-		mutationsList.forEach((mutation) => {
-			if (mutation.type === 'childList') {
-				mutation.addedNodes.forEach((node) => {
-					if (node.nodeType === 1) {
-						const class7 = node.querySelector('.class7') || (node.classList.contains('class7') ? node : null);
-						if (class7 && !class7.hasAttribute('data-click-bound')) {
-							class7.setAttribute('data-click-bound', 'true');
-							class7.addEventListener('click', () => {
-								console.log('Arrow clicked');
-								const moreOffElement = document.querySelector('.class77');
-								const class5 = node.querySelector('.class7');
-								if (moreOffElement) {
-									moreOffElement.classList.toggle('more');
-									console.log('Class "more" added to .class77');
-								} else {
-									console.warn('Element .class77 not found');
-								}
-								if (class7) {
-									class7.classList.toggle('more');
-									console.log('Class "more" added to .class7');
-								} else {
-									console.warn('Element .class7 not found');
-								}
-							});
-						}
-					}
-				});
-			}
-		});
-	});
-
-	observerssdddcdsssqq.observe(document.body, { childList: true, subtree: true });
-
-	const observerssdddcdsssdd = new MutationObserver((mutationsList) => {
-		mutationsList.forEach((mutation) => {
-			if (mutation.type === 'childList') {
-				mutation.addedNodes.forEach((node) => {
-					if (node.nodeType === 1) {
-						const class8 = node.querySelector('.class8') || (node.classList.contains('class8') ? node : null);
-						if (class8 && !class8.hasAttribute('data-click-bound')) {
-							class8.setAttribute('data-click-bound', 'true');
-							class8.addEventListener('click', () => {
-								console.log('Arrow clicked');
-								const moreOffElement = document.querySelector('.class88');
-								const class8 = node.querySelector('.class8');
-								if (moreOffElement) {
-									moreOffElement.classList.toggle('more');
-									console.log('Class "more" added to .class88');
-								} else {
-									console.warn('Element .class88 not found');
-								}
-								if (class8) {
-									class8.classList.toggle('more');
-									console.log('Class "more" added to .class8');
-								} else {
-									console.warn('Element .class8 not found');
-								}
-							});
-						}
-					}
-				});
-			}
-		});
-	});
-
-	observerssdddcdsssdd.observe(document.body, { childList: true, subtree: true });
-
-	const observerssdddcdsssd = new MutationObserver((mutationsList) => {
-		mutationsList.forEach((mutation) => {
-			if (mutation.type === 'childList') {
-				mutation.addedNodes.forEach((node) => {
-					if (node.nodeType === 1) {
-						const class9 = node.querySelector('.class9') || (node.classList.contains('class9') ? node : null);
-						if (class9 && !class9.hasAttribute('data-click-bound')) {
-							class9.setAttribute('data-click-bound', 'true');
-							class9.addEventListener('click', () => {
-								console.log('Arrow clicked');
-								const moreOffElement = document.querySelector('.class99');
-								const class9 = node.querySelector('.class9');
-								if (moreOffElement) {
-									moreOffElement.classList.toggle('more');
-									console.log('Class "more" added to .class99');
-								} else {
-									console.warn('Element .class99 not found');
-								}
-								if (class9) {
-									class9.classList.toggle('more');
-									console.log('Class "more" added to .class9');
-								} else {
-									console.warn('Element .class9 not found');
-								}
-							});
-						}
-					}
-				});
-			}
-		});
-	});
-
-	observerssdddcdsssd.observe(document.body, { childList: true, subtree: true });
-
-	const observerssdddcdsssc = new MutationObserver((mutationsList) => {
-		mutationsList.forEach((mutation) => {
-			if (mutation.type === 'childList') {
-				mutation.addedNodes.forEach((node) => {
-					if (node.nodeType === 1) {
-						const class10 = node.querySelector('.class10') || (node.classList.contains('class10') ? node : null);
-						if (class10 && !class10.hasAttribute('data-click-bound')) {
-							class10.setAttribute('data-click-bound', 'true');
-							class10.addEventListener('click', () => {
-								console.log('Arrow clicked');
-								const moreOffElement = document.querySelector('.class1010');
-								const class10 = node.querySelector('.class10');
-								if (moreOffElement) {
-									moreOffElement.classList.toggle('more');
-									console.log('Class "more" added to .class1010');
-								} else {
-									console.warn('Element .class1010 not found');
-								}
-								if (class10) {
-									class10.classList.toggle('more');
-									console.log('Class "more" added to .class10');
-								} else {
-									console.warn('Element .class10 not found');
-								}
-							});
-						}
-					}
-				});
-			}
-		});
-	});
-
-	observerssdddcdsssc.observe(document.body, { childList: true, subtree: true });
-
-	const observerssdddcdssscxx = new MutationObserver((mutationsList) => {
-		mutationsList.forEach((mutation) => {
-			if (mutation.type === 'childList') {
-				mutation.addedNodes.forEach((node) => {
-					if (node.nodeType === 1) {
-						const class13 = node.querySelector('.class13') || (node.classList.contains('class13') ? node : null);
-						if (class13 && !class13.hasAttribute('data-click-bound')) {
-							class13.setAttribute('data-click-bound', 'true');
-							class13.addEventListener('click', () => {
-								console.log('Arrow clicked');
-								const moreOffElement = document.querySelector('.class1313');
-								const class13 = node.querySelector('.class13');
-								if (moreOffElement) {
-									moreOffElement.classList.toggle('more');
-									console.log('Class "more" added to .class1313');
-								} else {
-									console.warn('Element .class1313 not found');
-								}
-								if (class13) {
-									class13.classList.toggle('more');
-									console.log('Class "more" added to .class13');
-								} else {
-									console.warn('Element .class13 not found');
-								}
-							});
-						}
-					}
-				});
-			}
-		});
-	});
-
-	observerssdddcdssscxx.observe(document.body, { childList: true, subtree: true });
-
-	const observerssdddcdssscss = new MutationObserver((mutationsList) => {
-		mutationsList.forEach((mutation) => {
-			if (mutation.type === 'childList') {
-				mutation.addedNodes.forEach((node) => {
-					if (node.nodeType === 1) {
-						const class12 = node.querySelector('.class12') || (node.classList.contains('class12') ? node : null);
-						if (class12 && !class12.hasAttribute('data-click-bound')) {
-							class12.setAttribute('data-click-bound', 'true');
-							class12.addEventListener('click', () => {
-								console.log('Arrow clicked');
-								const moreOffElement = document.querySelector('.class1212');
-								const class12 = node.querySelector('.class12');
-								if (moreOffElement) {
-									moreOffElement.classList.toggle('more');
-									console.log('Class "more" added to .class1212');
-								} else {
-									console.warn('Element .class1212 not found');
-								}
-								if (class12) {
-									class12.classList.toggle('more');
-									console.log('Class "more" added to .class12');
-								} else {
-									console.warn('Element .class12 not found');
-								}
-							});
-						}
-					}
-				});
-			}
-		});
-	});
-
-	observerssdddcdssscss.observe(document.body, { childList: true, subtree: true });
-
-	const observerssdddcdssscdd = new MutationObserver((mutationsList) => {
-		mutationsList.forEach((mutation) => {
-			if (mutation.type === 'childList') {
-				mutation.addedNodes.forEach((node) => {
-					if (node.nodeType === 1) {
-						const class111 = node.querySelector('.class111') || (node.classList.contains('class111') ? node : null);
-						if (class111 && !class111.hasAttribute('data-click-bound')) {
-							class111.setAttribute('data-click-bound', 'true');
-							class111.addEventListener('click', () => {
-								console.log('Arrow clicked');
-								const moreOffElement = document.querySelector('.class1111');
-								const class111 = node.querySelector('.class111');
-								if (moreOffElement) {
-									moreOffElement.classList.toggle('more');
-									console.log('Class "more" added to .class1111');
-								} else {
-									console.warn('Element .class1111 not found');
-								}
-								if (class111) {
-									class111.classList.toggle('more');
-									console.log('Class "more" added to .class111');
-								} else {
-									console.warn('Element .class111 not found');
-								}
-							});
-						}
-					}
-				});
-			}
-		});
-	});
-
-	observerssdddcdssscdd.observe(document.body, { childList: true, subtree: true });
+	// const observers = new MutationObserver((mutationsList) => {
+	// 	mutationsList.forEach((mutation) => {
+	// 		if (mutation.type === 'childList') {
+	// 			mutation.addedNodes.forEach((node) => {
+	// 				if (node.nodeType === 1) {
+	// 					const arrows = node.querySelector('.arrows') || (node.classList.contains('arrows') ? node : null);
+	// 					if (arrows && !arrows.hasAttribute('data-click-bound')) {
+	// 						arrows.setAttribute('data-click-bound', 'true');
+	// 						arrows.addEventListener('click', () => {
+	// 							console.log('Arrow clicked');
+	// 							const moreOffElement = document.querySelector('.moreoffs');
+	// 							const arrows = node.querySelector('.arrows');
+	// 							if (moreOffElement) {
+	// 								moreOffElement.classList.toggle('more');
+	// 								console.log('Class "more" added to .moreoffs');
+	// 							} else {
+	// 								console.warn('Element .moreoffs not found');
+	// 							}
+	// 							if (arrows) {
+	// 								arrows.classList.toggle('more');
+	// 								console.log('Class "more" added to .arrows');
+	// 							} else {
+	// 								console.warn('Element .arrows not found');
+	// 							}
+	// 						});
+	// 					}
+	// 				}
+	// 			});
+	// 		}
+	// 	});
+	// });
+	//
+	// observers.observe(document.body, { childList: true, subtree: true });
+	//
+	// const observerss = new MutationObserver((mutationsList) => {
+	// 	mutationsList.forEach((mutation) => {
+	// 		if (mutation.type === 'childList') {
+	// 			mutation.addedNodes.forEach((node) => {
+	// 				if (node.nodeType === 1) {
+	// 					const arrowss = node.querySelector('.arrowss') || (node.classList.contains('arrowss') ? node : null);
+	// 					if (arrowss && !arrowss.hasAttribute('data-click-bound')) {
+	// 						arrowss.setAttribute('data-click-bound', 'true');
+	// 						arrowss.addEventListener('click', () => {
+	// 							console.log('Arrow clicked');
+	// 							const moreOffElement = document.querySelector('.moreoffss');
+	// 							const arrowss = node.querySelector('.arrowss');
+	// 							if (moreOffElement) {
+	// 								moreOffElement.classList.toggle('more');
+	// 								console.log('Class "more" added to .moreoffss');
+	// 							} else {
+	// 								console.warn('Element .moreoffss not found');
+	// 							}
+	// 							if (arrowss) {
+	// 								arrowss.classList.toggle('more');
+	// 								console.log('Class "more" added to .arrowss');
+	// 							} else {
+	// 								console.warn('Element .arrowss not found');
+	// 							}
+	// 						});
+	// 					}
+	// 				}
+	// 			});
+	// 		}
+	// 	});
+	// });
+	//
+	//
+	//
+	//
+	// observerss.observe(document.body, { childList: true, subtree: true });
+	//
+	// const observerssd = new MutationObserver((mutationsList) => {
+	// 	mutationsList.forEach((mutation) => {
+	// 		if (mutation.type === 'childList') {
+	// 			mutation.addedNodes.forEach((node) => {
+	// 				if (node.nodeType === 1) {
+	// 					const arrowsss = node.querySelector('.arrowsss') || (node.classList.contains('arrowsss') ? node : null);
+	// 					if (arrowsss && !arrowsss.hasAttribute('data-click-bound')) {
+	// 						arrowsss.setAttribute('data-click-bound', 'true');
+	// 						arrowsss.addEventListener('click', () => {
+	// 							console.log('Arrow clicked');
+	// 							const moreOffElement = document.querySelector('.moreoffsss');
+	// 							const arrowsss = node.querySelector('.arrowsss');
+	// 							if (moreOffElement) {
+	// 								moreOffElement.classList.toggle('more');
+	// 								console.log('Class "more" added to .moreoffsss');
+	// 							} else {
+	// 								console.warn('Element .moreoffsss not found');
+	// 							}
+	// 							if (arrowsss) {
+	// 								arrowsss.classList.toggle('more');
+	// 								console.log('Class "more" added to .arrowsss');
+	// 							} else {
+	// 								console.warn('Element .arrowsss not found');
+	// 							}
+	// 						});
+	// 					}
+	// 				}
+	// 			});
+	// 		}
+	// 	});
+	// });
+	//
+	// observerssd.observe(document.body, { childList: true, subtree: true });
+	//
+	// const observerssdd = new MutationObserver((mutationsList) => {
+	// 	mutationsList.forEach((mutation) => {
+	// 		if (mutation.type === 'childList') {
+	// 			mutation.addedNodes.forEach((node) => {
+	// 				if (node.nodeType === 1) {
+	// 					const arrowssss = node.querySelector('.arrowssss') || (node.classList.contains('arrowssss') ? node : null);
+	// 					if (arrowssss && !arrowssss.hasAttribute('data-click-bound')) {
+	// 						arrowssss.setAttribute('data-click-bound', 'true');
+	// 						arrowssss.addEventListener('click', () => {
+	// 							console.log('Arrow clicked');
+	// 							const moreOffElement = document.querySelector('.moreofssss');
+	// 							const arrowssss = node.querySelector('.arrowssss');
+	// 							if (moreOffElement) {
+	// 								moreOffElement.classList.toggle('more');
+	// 								console.log('Class "more" added to .moreofssss');
+	// 							} else {
+	// 								console.warn('Element .moreofssss not found');
+	// 							}
+	// 							if (arrowssss) {
+	// 								arrowssss.classList.toggle('more');
+	// 								console.log('Class "more" added to .arrowssss');
+	// 							} else {
+	// 								console.warn('Element .arrowssss not found');
+	// 							}
+	// 						});
+	// 					}
+	// 				}
+	// 			});
+	// 		}
+	// 	});
+	// });
+	//
+	// observerssdd.observe(document.body, { childList: true, subtree: true });
+	//
+	// const observerssddd = new MutationObserver((mutationsList) => {
+	// 	mutationsList.forEach((mutation) => {
+	// 		if (mutation.type === 'childList') {
+	// 			mutation.addedNodes.forEach((node) => {
+	// 				if (node.nodeType === 1) {
+	// 					const arrowsssss = node.querySelector('.arrowsssss') || (node.classList.contains('arrowsssss') ? node : null);
+	// 					if (arrowsssss && !arrowsssss.hasAttribute('data-click-bound')) {
+	// 						arrowsssss.setAttribute('data-click-bound', 'true');
+	// 						arrowsssss.addEventListener('click', () => {
+	// 							console.log('Arrow clicked');
+	// 							const moreOffElement = document.querySelector('.moreoffsssss');
+	// 							const arrowsssss = node.querySelector('.arrowsssss');
+	// 							if (moreOffElement) {
+	// 								moreOffElement.classList.toggle('more');
+	// 								console.log('Class "more" added to .moreoffsssss');
+	// 							} else {
+	// 								console.warn('Element .moreoffsssss not found');
+	// 							}
+	// 							if (arrowsssss) {
+	// 								arrowsssss.classList.toggle('more');
+	// 								console.log('Class "more" added to .arrowsssss');
+	// 							} else {
+	// 								console.warn('Element .arrowsssss not found');
+	// 							}
+	// 						});
+	// 					}
+	// 				}
+	// 			});
+	// 		}
+	// 	});
+	// });
+	//
+	// observerssddd.observe(document.body, { childList: true, subtree: true });
+	//
+	// const observerssdddc = new MutationObserver((mutationsList) => {
+	// 	mutationsList.forEach((mutation) => {
+	// 		if (mutation.type === 'childList') {
+	// 			mutation.addedNodes.forEach((node) => {
+	// 				if (node.nodeType === 1) {
+	// 					const class1 = node.querySelector('.class1') || (node.classList.contains('class1') ? node : null);
+	// 					if (class1 && !class1.hasAttribute('data-click-bound')) {
+	// 						class1.setAttribute('data-click-bound', 'true');
+	// 						class1.addEventListener('click', () => {
+	// 							console.log('Arrow clicked');
+	// 							const moreOffElement = document.querySelector('.class11');
+	// 							const class1 = node.querySelector('.class1');
+	// 							if (moreOffElement) {
+	// 								moreOffElement.classList.toggle('more');
+	// 								console.log('Class "more" added to .class11');
+	// 							} else {
+	// 								console.warn('Element .class11 not found');
+	// 							}
+	// 							if (class1) {
+	// 								class1.classList.toggle('more');
+	// 								console.log('Class "more" added to .class1');
+	// 							} else {
+	// 								console.warn('Element .class1 not found');
+	// 							}
+	// 						});
+	// 					}
+	// 				}
+	// 			});
+	// 		}
+	// 	});
+	// });
+	//
+	// observerssdddc.observe(document.body, { childList: true, subtree: true });
+	//
+	// const observerssdddcd = new MutationObserver((mutationsList) => {
+	// 	mutationsList.forEach((mutation) => {
+	// 		if (mutation.type === 'childList') {
+	// 			mutation.addedNodes.forEach((node) => {
+	// 				if (node.nodeType === 1) {
+	// 					const class2 = node.querySelector('.class2') || (node.classList.contains('class2') ? node : null);
+	// 					if (class2 && !class2.hasAttribute('data-click-bound')) {
+	// 						class2.setAttribute('data-click-bound', 'true');
+	// 						class2.addEventListener('click', () => {
+	// 							console.log('Arrow clicked');
+	// 							const moreOffElement = document.querySelector('.class22');
+	// 							const class2 = node.querySelector('.class2');
+	// 							if (moreOffElement) {
+	// 								moreOffElement.classList.toggle('more');
+	// 								console.log('Class "more" added to .class22');
+	// 							} else {
+	// 								console.warn('Element .class22 not found');
+	// 							}
+	// 							if (class2) {
+	// 								class2.classList.toggle('more');
+	// 								console.log('Class "more" added to .class2');
+	// 							} else {
+	// 								console.warn('Element .class2 not found');
+	// 							}
+	// 						});
+	// 					}
+	// 				}
+	// 			});
+	// 		}
+	// 	});
+	// });
+	//
+	// observerssdddcd.observe(document.body, { childList: true, subtree: true });
+	//
+	// const observerssdddcds = new MutationObserver((mutationsList) => {
+	// 	mutationsList.forEach((mutation) => {
+	// 		if (mutation.type === 'childList') {
+	// 			mutation.addedNodes.forEach((node) => {
+	// 				if (node.nodeType === 1) {
+	// 					const class3 = node.querySelector('.class3') || (node.classList.contains('class3') ? node : null);
+	// 					if (class3 && !class3.hasAttribute('data-click-bound')) {
+	// 						class3.setAttribute('data-click-bound', 'true');
+	// 						class3.addEventListener('click', () => {
+	// 							console.log('Arrow clicked');
+	// 							const moreOffElement = document.querySelector('.class33');
+	// 							const class3 = node.querySelector('.class3');
+	// 							if (moreOffElement) {
+	// 								moreOffElement.classList.toggle('more');
+	// 								console.log('Class "more" added to .class33');
+	// 							} else {
+	// 								console.warn('Element .class33 not found');
+	// 							}
+	// 							if (class3) {
+	// 								class3.classList.toggle('more');
+	// 								console.log('Class "more" added to .class3');
+	// 							} else {
+	// 								console.warn('Element .class3 not found');
+	// 							}
+	// 						});
+	// 					}
+	// 				}
+	// 			});
+	// 		}
+	// 	});
+	// });
+	//
+	// observerssdddcds.observe(document.body, { childList: true, subtree: true });
+	//
+	// const observerssdddcdss = new MutationObserver((mutationsList) => {
+	// 	mutationsList.forEach((mutation) => {
+	// 		if (mutation.type === 'childList') {
+	// 			mutation.addedNodes.forEach((node) => {
+	// 				if (node.nodeType === 1) {
+	// 					const class4 = node.querySelector('.class4') || (node.classList.contains('class4') ? node : null);
+	// 					if (class4 && !class4.hasAttribute('data-click-bound')) {
+	// 						class4.setAttribute('data-click-bound', 'true');
+	// 						class4.addEventListener('click', () => {
+	// 							console.log('Arrow clicked');
+	// 							const moreOffElement = document.querySelector('.class44');
+	// 							const class4 = node.querySelector('.class4');
+	// 							if (moreOffElement) {
+	// 								moreOffElement.classList.toggle('more');
+	// 								console.log('Class "more" added to .class44');
+	// 							} else {
+	// 								console.warn('Element .class44 not found');
+	// 							}
+	// 							if (class4) {
+	// 								class4.classList.toggle('more');
+	// 								console.log('Class "more" added to .class4');
+	// 							} else {
+	// 								console.warn('Element .class4 not found');
+	// 							}
+	// 						});
+	// 					}
+	// 				}
+	// 			});
+	// 		}
+	// 	});
+	// });
+	//
+	// observerssdddcdss.observe(document.body, { childList: true, subtree: true });
+	//
+	// const observerssdddcdsssFF = new MutationObserver((mutationsList) => {
+	// 	mutationsList.forEach((mutation) => {
+	// 		if (mutation.type === 'childList') {
+	// 			mutation.addedNodes.forEach((node) => {
+	// 				if (node.nodeType === 1) {
+	// 					const class5 = node.querySelector('.class5') || (node.classList.contains('class5') ? node : null);
+	// 					if (class5 && !class5.hasAttribute('data-click-bound')) {
+	// 						class5.setAttribute('data-click-bound', 'true');
+	// 						class5.addEventListener('click', () => {
+	// 							console.log('Arrow clicked');
+	// 							const moreOffElement = document.querySelector('.class55');
+	// 							const class5 = node.querySelector('.class5');
+	// 							if (moreOffElement) {
+	// 								moreOffElement.classList.toggle('more');
+	// 								console.log('Class "more" added to .class55');
+	// 							} else {
+	// 								console.warn('Element .class55 not found');
+	// 							}
+	// 							if (class5) {
+	// 								class5.classList.toggle('more');
+	// 								console.log('Class "more" added to .class5');
+	// 							} else {
+	// 								console.warn('Element .class5 not found');
+	// 							}
+	// 						});
+	// 					}
+	// 				}
+	// 			});
+	// 		}
+	// 	});
+	// });
+	//
+	// observerssdddcdsssFF.observe(document.body, { childList: true, subtree: true });
+	//
+	// const observerssdddcdssso = new MutationObserver((mutationsList) => {
+	// 	mutationsList.forEach((mutation) => {
+	// 		if (mutation.type === 'childList') {
+	// 			mutation.addedNodes.forEach((node) => {
+	// 				if (node.nodeType === 1) {
+	// 					const class6 = node.querySelector('.class6') || (node.classList.contains('class6') ? node : null);
+	// 					if (class6 && !class6.hasAttribute('data-click-bound')) {
+	// 						class6.setAttribute('data-click-bound', 'true');
+	// 						class6.addEventListener('click', () => {
+	// 							console.log('Arrow clicked');
+	// 							const moreOffElement = document.querySelector('.class66');
+	// 							const class6 = node.querySelector('.class6');
+	// 							if (moreOffElement) {
+	// 								moreOffElement.classList.toggle('more');
+	// 								console.log('Class "more" added to .class66');
+	// 							} else {
+	// 								console.warn('Element .class66 not found');
+	// 							}
+	// 							if (class6) {
+	// 								class6.classList.toggle('more');
+	// 								console.log('Class "more" added to .class6');
+	// 							} else {
+	// 								console.warn('Element .class6 not found');
+	// 							}
+	// 						});
+	// 					}
+	// 				}
+	// 			});
+	// 		}
+	// 	});
+	// });
+	//
+	// observerssdddcdssso.observe(document.body, { childList: true, subtree: true });
+	//
+	// const observerssdddcdsssqq = new MutationObserver((mutationsList) => {
+	// 	mutationsList.forEach((mutation) => {
+	// 		if (mutation.type === 'childList') {
+	// 			mutation.addedNodes.forEach((node) => {
+	// 				if (node.nodeType === 1) {
+	// 					const class7 = node.querySelector('.class7') || (node.classList.contains('class7') ? node : null);
+	// 					if (class7 && !class7.hasAttribute('data-click-bound')) {
+	// 						class7.setAttribute('data-click-bound', 'true');
+	// 						class7.addEventListener('click', () => {
+	// 							console.log('Arrow clicked');
+	// 							const moreOffElement = document.querySelector('.class77');
+	// 							const class5 = node.querySelector('.class7');
+	// 							if (moreOffElement) {
+	// 								moreOffElement.classList.toggle('more');
+	// 								console.log('Class "more" added to .class77');
+	// 							} else {
+	// 								console.warn('Element .class77 not found');
+	// 							}
+	// 							if (class7) {
+	// 								class7.classList.toggle('more');
+	// 								console.log('Class "more" added to .class7');
+	// 							} else {
+	// 								console.warn('Element .class7 not found');
+	// 							}
+	// 						});
+	// 					}
+	// 				}
+	// 			});
+	// 		}
+	// 	});
+	// });
+	//
+	// observerssdddcdsssqq.observe(document.body, { childList: true, subtree: true });
+	//
+	// const observerssdddcdsssdd = new MutationObserver((mutationsList) => {
+	// 	mutationsList.forEach((mutation) => {
+	// 		if (mutation.type === 'childList') {
+	// 			mutation.addedNodes.forEach((node) => {
+	// 				if (node.nodeType === 1) {
+	// 					const class8 = node.querySelector('.class8') || (node.classList.contains('class8') ? node : null);
+	// 					if (class8 && !class8.hasAttribute('data-click-bound')) {
+	// 						class8.setAttribute('data-click-bound', 'true');
+	// 						class8.addEventListener('click', () => {
+	// 							console.log('Arrow clicked');
+	// 							const moreOffElement = document.querySelector('.class88');
+	// 							const class8 = node.querySelector('.class8');
+	// 							if (moreOffElement) {
+	// 								moreOffElement.classList.toggle('more');
+	// 								console.log('Class "more" added to .class88');
+	// 							} else {
+	// 								console.warn('Element .class88 not found');
+	// 							}
+	// 							if (class8) {
+	// 								class8.classList.toggle('more');
+	// 								console.log('Class "more" added to .class8');
+	// 							} else {
+	// 								console.warn('Element .class8 not found');
+	// 							}
+	// 						});
+	// 					}
+	// 				}
+	// 			});
+	// 		}
+	// 	});
+	// });
+	//
+	// observerssdddcdsssdd.observe(document.body, { childList: true, subtree: true });
+	//
+	// const observerssdddcdsssd = new MutationObserver((mutationsList) => {
+	// 	mutationsList.forEach((mutation) => {
+	// 		if (mutation.type === 'childList') {
+	// 			mutation.addedNodes.forEach((node) => {
+	// 				if (node.nodeType === 1) {
+	// 					const class9 = node.querySelector('.class9') || (node.classList.contains('class9') ? node : null);
+	// 					if (class9 && !class9.hasAttribute('data-click-bound')) {
+	// 						class9.setAttribute('data-click-bound', 'true');
+	// 						class9.addEventListener('click', () => {
+	// 							console.log('Arrow clicked');
+	// 							const moreOffElement = document.querySelector('.class99');
+	// 							const class9 = node.querySelector('.class9');
+	// 							if (moreOffElement) {
+	// 								moreOffElement.classList.toggle('more');
+	// 								console.log('Class "more" added to .class99');
+	// 							} else {
+	// 								console.warn('Element .class99 not found');
+	// 							}
+	// 							if (class9) {
+	// 								class9.classList.toggle('more');
+	// 								console.log('Class "more" added to .class9');
+	// 							} else {
+	// 								console.warn('Element .class9 not found');
+	// 							}
+	// 						});
+	// 					}
+	// 				}
+	// 			});
+	// 		}
+	// 	});
+	// });
+	//
+	// observerssdddcdsssd.observe(document.body, { childList: true, subtree: true });
+	//
+	// const observerssdddcdsssc = new MutationObserver((mutationsList) => {
+	// 	mutationsList.forEach((mutation) => {
+	// 		if (mutation.type === 'childList') {
+	// 			mutation.addedNodes.forEach((node) => {
+	// 				if (node.nodeType === 1) {
+	// 					const class10 = node.querySelector('.class10') || (node.classList.contains('class10') ? node : null);
+	// 					if (class10 && !class10.hasAttribute('data-click-bound')) {
+	// 						class10.setAttribute('data-click-bound', 'true');
+	// 						class10.addEventListener('click', () => {
+	// 							console.log('Arrow clicked');
+	// 							const moreOffElement = document.querySelector('.class1010');
+	// 							const class10 = node.querySelector('.class10');
+	// 							if (moreOffElement) {
+	// 								moreOffElement.classList.toggle('more');
+	// 								console.log('Class "more" added to .class1010');
+	// 							} else {
+	// 								console.warn('Element .class1010 not found');
+	// 							}
+	// 							if (class10) {
+	// 								class10.classList.toggle('more');
+	// 								console.log('Class "more" added to .class10');
+	// 							} else {
+	// 								console.warn('Element .class10 not found');
+	// 							}
+	// 						});
+	// 					}
+	// 				}
+	// 			});
+	// 		}
+	// 	});
+	// });
+	//
+	// observerssdddcdsssc.observe(document.body, { childList: true, subtree: true });
+	//
+	// const observerssdddcdssscxx = new MutationObserver((mutationsList) => {
+	// 	mutationsList.forEach((mutation) => {
+	// 		if (mutation.type === 'childList') {
+	// 			mutation.addedNodes.forEach((node) => {
+	// 				if (node.nodeType === 1) {
+	// 					const class13 = node.querySelector('.class13') || (node.classList.contains('class13') ? node : null);
+	// 					if (class13 && !class13.hasAttribute('data-click-bound')) {
+	// 						class13.setAttribute('data-click-bound', 'true');
+	// 						class13.addEventListener('click', () => {
+	// 							console.log('Arrow clicked');
+	// 							const moreOffElement = document.querySelector('.class1313');
+	// 							const class13 = node.querySelector('.class13');
+	// 							if (moreOffElement) {
+	// 								moreOffElement.classList.toggle('more');
+	// 								console.log('Class "more" added to .class1313');
+	// 							} else {
+	// 								console.warn('Element .class1313 not found');
+	// 							}
+	// 							if (class13) {
+	// 								class13.classList.toggle('more');
+	// 								console.log('Class "more" added to .class13');
+	// 							} else {
+	// 								console.warn('Element .class13 not found');
+	// 							}
+	// 						});
+	// 					}
+	// 				}
+	// 			});
+	// 		}
+	// 	});
+	// });
+	//
+	// observerssdddcdssscxx.observe(document.body, { childList: true, subtree: true });
+	//
+	// const observerssdddcdssscss = new MutationObserver((mutationsList) => {
+	// 	mutationsList.forEach((mutation) => {
+	// 		if (mutation.type === 'childList') {
+	// 			mutation.addedNodes.forEach((node) => {
+	// 				if (node.nodeType === 1) {
+	// 					const class12 = node.querySelector('.class12') || (node.classList.contains('class12') ? node : null);
+	// 					if (class12 && !class12.hasAttribute('data-click-bound')) {
+	// 						class12.setAttribute('data-click-bound', 'true');
+	// 						class12.addEventListener('click', () => {
+	// 							console.log('Arrow clicked');
+	// 							const moreOffElement = document.querySelector('.class1212');
+	// 							const class12 = node.querySelector('.class12');
+	// 							if (moreOffElement) {
+	// 								moreOffElement.classList.toggle('more');
+	// 								console.log('Class "more" added to .class1212');
+	// 							} else {
+	// 								console.warn('Element .class1212 not found');
+	// 							}
+	// 							if (class12) {
+	// 								class12.classList.toggle('more');
+	// 								console.log('Class "more" added to .class12');
+	// 							} else {
+	// 								console.warn('Element .class12 not found');
+	// 							}
+	// 						});
+	// 					}
+	// 				}
+	// 			});
+	// 		}
+	// 	});
+	// });
+	//
+	// observerssdddcdssscss.observe(document.body, { childList: true, subtree: true });
+	//
+	// const observerssdddcdssscdd = new MutationObserver((mutationsList) => {
+	// 	mutationsList.forEach((mutation) => {
+	// 		if (mutation.type === 'childList') {
+	// 			mutation.addedNodes.forEach((node) => {
+	// 				if (node.nodeType === 1) {
+	// 					const class111 = node.querySelector('.class111') || (node.classList.contains('class111') ? node : null);
+	// 					if (class111 && !class111.hasAttribute('data-click-bound')) {
+	// 						class111.setAttribute('data-click-bound', 'true');
+	// 						class111.addEventListener('click', () => {
+	// 							console.log('Arrow clicked');
+	// 							const moreOffElement = document.querySelector('.class1111');
+	// 							const class111 = node.querySelector('.class111');
+	// 							if (moreOffElement) {
+	// 								moreOffElement.classList.toggle('more');
+	// 								console.log('Class "more" added to .class1111');
+	// 							} else {
+	// 								console.warn('Element .class1111 not found');
+	// 							}
+	// 							if (class111) {
+	// 								class111.classList.toggle('more');
+	// 								console.log('Class "more" added to .class111');
+	// 							} else {
+	// 								console.warn('Element .class111 not found');
+	// 							}
+	// 						});
+	// 					}
+	// 				}
+	// 			});
+	// 		}
+	// 	});
+	// });
+	//
+	// observerssdddcdssscdd.observe(document.body, { childList: true, subtree: true });
 });
 
 
