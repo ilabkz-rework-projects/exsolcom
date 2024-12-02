@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$getData = json_decode($json, true);
 
 	$res = CIBlockElement::GetList([], ['IBLOCK_ID' => 3], false, false,
-		['PROPERTY_I_CONTENT_LINK', 'PROPERTY_I_CONTENT_LINK_KZ', 'PROPERTY_I_CONTENT_LINK_EN', 'ID', 'NAME', 'PREVIEW_PICTURE', 'DETAIL_PICTURE', 'PREVIEW_TEXT']
+		['PROPERTY_I_CONTENT_LINK', 'PROPERTY_I_CONTENT_LINK_KZ', 'PROPERTY_I_CONTENT_LINK_EN', 'CODE', 'ID', 'NAME', 'PREVIEW_PICTURE', 'DETAIL_PICTURE', 'PREVIEW_TEXT']
 	);
 	$arResult = [];
 
@@ -32,6 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			$arResult['NAME'] = $ob['NAME'];
 			$arResult['IMAGE'] = CFile::GetPath($ob['PREVIEW_PICTURE']);
 			$arResult['PREVIEW_TEXT'] = $ob['PREVIEW_TEXT'];
+			$arResult['CODE'] = $ob['CODE'];
 		}
 	}
 
