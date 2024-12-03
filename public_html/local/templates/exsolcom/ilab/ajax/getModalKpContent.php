@@ -34,6 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			$arResult['NAME'] = $ob['NAME'];
 			$arResult['IMAGE'] = CFile::GetPath($ob['PREVIEW_PICTURE']);
 			$arResult['PREVIEW_TEXT'] = $ob['PREVIEW_TEXT'];
+			$arResult['CODE'] = $ob['CODE'];
 		}
 	}
 
