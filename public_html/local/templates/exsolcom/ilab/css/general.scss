@@ -359,6 +359,7 @@ a{
   display: flex;
   flex-direction: column;
   gap: 20px;
+  font-family: 'Open Sans' !important;
   @media screen and (max-width: 840px){
     gap: 15px;
     .i_modal-preview-content,

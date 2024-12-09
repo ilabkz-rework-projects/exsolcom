@@ -11,12 +11,6 @@
   transform-style: preserve-3d;
   z-index: 1;
 }
-.group-gradus .cards__inner:hover {
-  transform: rotateY(180deg);
-}
-.group-gradus .cards__inner:hover .second:hover {
-  z-index: 2 !important;
-}
 .group-gradus .gradus {
   display: flex;
   flex-direction: column;
@@ -28,6 +22,17 @@
   box-sizing: border-box;
   background-color: transparent;
   perspective: 1000px;
+}
+.group-gradus .gradus:hover .cards__inner {
+  transform: rotateY(180deg);
+}
+.group-gradus .gradus:hover .second {
+  opacity: 1;
+  visibility: visible;
+}
+.group-gradus .gradus:hover .first {
+  opacity: 0;
+  visibility: hidden;
 }
 .group-gradus .gradus:hover {
   z-index: 2;
@@ -45,10 +50,12 @@
   padding: 35px;
   top: 0px;
   gap: 20px;
-  transition: 1s;
   z-index: 1;
   font: inherit;
   vertical-align: baseline;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.4s ease;
 }
 .group-gradus .gradus .first span {
   color: black;
@@ -71,11 +78,13 @@
   width: 100%;
   left: 0;
   top: 0;
-  transition: 1s;
   font: inherit;
   vertical-align: baseline;
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
 }
 .group-gradus .gradus .second span {
   color: black;
