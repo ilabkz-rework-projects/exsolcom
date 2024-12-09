@@ -30,7 +30,7 @@ if ($arParams["SHOW_INPUT"] !== "N"):?>
 		<form action="<? echo $arResult["FORM_ACTION"] ?>">
 			<div class="i_search-close"></div>
 			<input id="<? echo $INPUT_ID ?>" type="text" name="q" value="" size="40" maxlength="50" autocomplete="off"
-			       placeholder='<?=\Bitrix\Main\Localization\Loc::getMessage('SEARCH_KZ')?>'/>
+			       placeholder='<?=Loc::getMessage('SEARCH')?>'/>
 			<input name="s" type="submit" value="" class="i_search-submit"/>
 		</form>
 	</div>
