@@ -12,6 +12,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
 
 $arFilter = array(
 	'IBLOCK_ID' => 5,
+	'ACTIVE' => 'Y',
 );
 
 $dbRes = \CIBlockSection::GetList(array(), $arFilter, false, array("*", "UF_*")); // UF_* для выбора всех пользовательских свойств);

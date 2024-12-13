@@ -523,6 +523,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	const formVcModal = document.querySelector('.i_form-vc')
 	const formVcCloseBtn = formVcModal.querySelector('.i_form-vc-close')
 
+	// Функция для удаления параметров из ссылки
+	function deleteParamsFromUrl(){
+		// Получаем текущий URL
+		const currentUrl = new URL(window.location.href);
+		// Удаляем все параметры
+		currentUrl.search = '';
+		// Обновляем URL без перезагрузки страницы
+		history.replaceState(null, '', currentUrl.href);
+	}
+
 
 	formKp.forEach(item => {
 		item.addEventListener('click', () => {
@@ -559,6 +569,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		documentBody.classList.remove('lock')
 		vacationBtn.classList.add('idn')
 		modalKpFooter.classList.remove('idn')
+
+		deleteParamsFromUrl()
 	})
 
 
@@ -578,6 +590,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			vacationBtn.classList.add('idn')
 			modalKpFooter.classList.remove('idn')
 			formVcModal.classList.remove('active')
+
+			deleteParamsFromUrl()
 		}
 	})
 
@@ -595,6 +609,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			vacationBtn.classList.add('idn')
 			modalKpFooter.classList.remove('idn')
 			formVcModal.classList.remove('active')
+
+			deleteParamsFromUrl()
 		}
 
 		// if(!event.target.classList.contains('i_side-menu') || !event.target.closest('.i_side-menu')
@@ -619,6 +635,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		modal.classList.remove('active')
 		documentBody.classList.remove('lock')
 		modalKpFooter.classList.remove('idn')
+
+		deleteParamsFromUrl()
 	})
 
 	// I_BLOG DROPDOWN

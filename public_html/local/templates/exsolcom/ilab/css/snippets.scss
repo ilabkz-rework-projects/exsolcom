@@ -21,6 +21,14 @@
     background-color: transparent;
     perspective: 1000px;
 
+    @media screen and (max-width: 1230px){
+      width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (max-width: 780px){
+      width: 100%;
+    }
+
     &:hover{
       .cards__inner{
         transform: rotateY(180deg);
@@ -47,10 +55,10 @@
       position: absolute;
       width: 101%;
       height: 101%;
-      left: 0px;
+      left: 0;
       background-color: #e1e1e1;
       padding: 35px;
-      top: 0px;
+      top: 0;
       gap: 20px;
       z-index: 1;
       font: inherit;
@@ -75,7 +83,7 @@
       height: 345px;
       border: 1.5px solid #d71e1e;
       box-sizing: border-box;
-      padding: 50px 27px 30px 36px;
+      padding: 25px;
       position: absolute;
       background-color: #e1e1e1;
       width: 100%;
@@ -91,20 +99,18 @@
 
       span{
         color: black;
-        padding-top: 90px;
+        padding-top: 15px;
         line-height: normal;
-        font-size: 19px;
+        font-size: clamp(15px, 90%, 19px);
       }
+
       .second-head {
         display: flex;
         align-items: center;
-        padding-top: 35px;
+        padding-top: 15px;
         box-sizing: border-box;
-        position: absolute;
         width: 100%;
-        height: 100%;
-        left: 35px;
-        top: -110px;
+        height: max-content;
         vertical-align: baseline;
         gap: 15px;
         transition: 1s;
@@ -124,9 +130,13 @@
   }
 }
 
+iframe{
+  width: 100% !important;
+  height: 100% !important;
+}
+
 ////SNIPPET TITLE BEFORE
 
-//.i_snippet.title:before{
 //  content: " ";
 //  position: absolute;
 //  bottom: 0;
@@ -895,7 +905,7 @@
   border-radius: 25px;
   background: #f9f7f3;
   padding: 20px;
-  flex-basis: 48%;
+  flex-basis: 46%;
   width: 50%;
   gap: 30px;
   @media screen and (max-width: 1445px){
@@ -1360,12 +1370,41 @@
 
 }
 
+table{
+  width: 100% !important;
+  display: block;
+  td{
+    width: 0% !important;
+    img{
+      min-width: 35px;
+    }
+  }
+  tr{
+    @media screen and (max-width: 936px){
+      th:nth-child(2){
+        display: none;
+      }
+      th:nth-child(3){
+        display: none;
+      }
+      th:nth-child(4){
+        display: none;
+      }
+    }
+  }
+}
+
+h1,
+h2{
+  line-height: normal;
+}
+
 strong{
   display: flex;
-  width: 430px;
+  width: 100% !important;
   overflow: hidden;
   border: 2px solid #cf0000;
-  border-radius: 30px;
+
   align-content: center;
   align-items: center;
   justify-content: center;
@@ -1374,6 +1413,9 @@ strong{
   margin: 20px 0;
   @media screen and (max-width: 576px){
     width: 100%;
+  }
+  @media screen and (max-width: 454px){
+    width: 70%;
   }
   h4{
     font-size: 16px;

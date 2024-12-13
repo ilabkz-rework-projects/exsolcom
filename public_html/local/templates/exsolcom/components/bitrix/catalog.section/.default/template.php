@@ -123,9 +123,7 @@ if ($showTopPager)
 {
 	?>
 	<div data-pagination-num="<?=$navParams['NavNum']?>">
-		<!-- pagination-container -->
-<!--		--><?php //=$arResult['NAV_STRING']?>
-		<!-- pagination-container -->
+
 	</div>
 	<?
 }
@@ -701,9 +699,7 @@ if ($showBottomPager)
 {
 	?>
 	<div data-pagination-num="<?=$navParams['NavNum']?>">
-		<!-- pagination-container -->
-<!--		--><?php //=$arResult['NAV_STRING']?>
-		<!-- pagination-container -->
+
 	</div>
 	<?
 }
