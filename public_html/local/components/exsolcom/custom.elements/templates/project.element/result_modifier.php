@@ -15,7 +15,7 @@ $parsedUrl = parse_url($requestUri, PHP_URL_PATH);
 $code = basename($parsedUrl);
 $currentSectionId = 0;
 
-$arSection = \CIBlockSection::GetList(array(), array('CODE' => $code, 'IBLOCK_ID' => 5));
+$arSection = \CIBlockSection::GetList(array(), array('CODE' => $code, 'IBLOCK_ID' => 5, 'ACTIVE' => 'Y'));
 
 while($arSec = $arSection->GetNext()) {
 	$currentSectionId = $arSec['ID'];
@@ -23,7 +23,8 @@ while($arSec = $arSection->GetNext()) {
 
 $arFilter = array(
 	'IBLOCK_ID' => 5,
-	'IBLOCK_SECTION_ID' => $currentSectionId
+	'IBLOCK_SECTION_ID' => $currentSectionId,
+	'ACTIVE' => 'Y',
 );
 
 $dbRes = CIBlockElement::GetList(array(), $arFilter, false, false,

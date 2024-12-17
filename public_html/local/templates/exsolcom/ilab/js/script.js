@@ -853,7 +853,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 						// Обновляем URL в адресной строке без перезагрузки страницы
 						history.pushState(null, '', url.toString());
 
-
 						// навешиваем обработчик на кнопку для перехода на страницу с программным продуктом
 						footerProgrammBtn.addEventListener('click', () => {
 							let link = ''
@@ -865,6 +864,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 							}
 							window.location.href = link
 						})
+					}else{
+						const url = new URL(window.location.href);
+						url.searchParams.set(item.getAttribute('data_modal_name'), data.CODE); // Добавляем параметр "param" со значением "value"
+
+						// Обновляем URL в адресной строке без перезагрузки страницы
+						history.pushState(null, '', url.toString());
 					}
 				})
 		})
@@ -1056,7 +1061,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	getDetailId('projects', 5, false)
 	getDetailId('our-cases', 11, false)
 	getDetailId('vacantion', 8, false, true)
-	getDetailId('partners', 4, false, false, true)
+	getDetailId('partner', 4, false, false, true)
 
 
 	function getServicesCode(){

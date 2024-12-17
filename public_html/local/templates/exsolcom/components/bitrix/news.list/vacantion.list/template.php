@@ -21,7 +21,7 @@ $this->setFrameMode(true);
 	$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
 	$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 	?>
-	<div class="i_vacantion-item i_detail-modal-item" id="<?=$this->GetEditAreaId($arItem['ID']);?>" data-id="<?=$arItem['ID']?>" data_iblock_id="<?=$arParams['IBLOCK_ID']?>">
+	<div class="i_vacantion-item i_detail-modal-item" id="<?=$this->GetEditAreaId($arItem['ID']);?>" data-id="<?=$arItem['ID']?>" data_iblock_id="<?=$arParams['IBLOCK_ID']?>" data_modal_name="vacantion">
 		<div class="i_vacantion-item-left">
 			<div class="i_vacantion-img">
 				<img src="<?=$arItem['PREVIEW_PICTURE']['SRC']?>" alt="img">
