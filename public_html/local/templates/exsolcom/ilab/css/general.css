@@ -31,6 +31,10 @@ button:hover svg {
   color: var(--color-red) !important;
 }
 
+* {
+  font-family: "Comfortaa", sans-serif !important;
+}
+
 main span {
   transition: all 0.4s ease;
   color: var(--color-black);
@@ -1759,8 +1763,8 @@ div.title-search-result {
   color: var(--color-red);
 }
 .i_container-more .i_container-more-head .i_container-more-head-title {
-  color: var(--color-black);
   transition: all 0.4s ease;
+  color: black;
 }
 .i_container-more .i_container-more-head .i_container-more-head-arrow {
   position: absolute;
@@ -1791,6 +1795,13 @@ div.title-search-result {
   -webkit-transform: rotate(225deg);
   -o-transform: rotate(225deg);
   transform: rotate(225deg);
+}
+
+@media screen and (max-width: 606px) {
+  .figma {
+    width: 100% !important;
+    padding: 10px 0;
+  }
 }
 
 /*# sourceMappingURL=general.css.map */
