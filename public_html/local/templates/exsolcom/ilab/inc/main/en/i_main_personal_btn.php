@@ -1,5 +1,5 @@
 <div class="i_personal-btn">
-	<a href="https://drive.google.com/uc?export=download&id=1wI4qaYHD-5QR3mqtzv7iRFkrj_-40xll" target="_blank" download>
+	<a href="../ilab/О_компании_Excolcom_2023_НОВАЯ (1) (9).pdf" target="_blank" download>
 		<button>
             Download the Company Presentation
 		</button>

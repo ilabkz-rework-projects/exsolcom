@@ -552,7 +552,7 @@ body.lock {
   margin: 0;
   fill: var(--color-black);
   position: absolute;
-  left: 15px;
+  left: 0;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -1247,7 +1247,6 @@ body.lock {
 .i_main .i_banner .i_container .i_banner-right {
   display: flex;
   flex-direction: column;
-  gap: 110px;
 }
 .i_main .i_banner .i_container .i_banner-right .i_banner-skills {
   display: flex;
@@ -1258,6 +1257,18 @@ body.lock {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_5 {
+  background-size: 24px !important;
+  background-position-x: 52% !important;
+  background-position-y: 59% !important;
+}
+@media screen and (max-width: 1330px) {
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_5 {
+    width: 40px !important;
+    height: 40px !important;
+    background-size: 18px !important;
+  }
 }
 .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item:hover {
   background-color: var(--color-circlesSecond);
@@ -1277,10 +1288,24 @@ body.lock {
 .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_4 {
   background-image: url("../img/svg/group-banner-icons/banner-icon_4_b.svg");
 }
+.i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_5 {
+  background-image: url("../img/svg/group-banner-icons/banner-icon_5_b.svg");
+}
+.i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_5 {
+  background-size: 24px !important;
+  background-position-x: 52% !important;
+  background-position-y: 59% !important;
+}
+@media screen and (max-width: 1330px) {
+  .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_5 {
+    background-size: 18px !important;
+  }
+}
 .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_1,
 .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_2,
 .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_3,
-.i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_4 {
+.i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_4,
+.i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_5 {
   width: 50px;
   height: 50px;
   background-color: var(--color-circlesSecond);
@@ -1304,10 +1329,14 @@ body.lock {
 .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_4 {
   background-image: url("../img/svg/group-banner-icons/banner-icon_4_w.svg");
 }
+.i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_5 {
+  background-image: url("../img/svg/group-banner-icons/banner-icon_5_w.svg");
+}
 .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_1,
 .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_2,
 .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_3,
-.i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_4 {
+.i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_4,
+.i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_5 {
   width: 50px;
   height: 50px;
   background-color: var(--color-red);
@@ -1323,7 +1352,8 @@ body.lock {
 .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_1 svg,
 .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_2 svg,
 .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_3 svg,
-.i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_4 svg {
+.i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_4 svg,
+.i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_5 svg {
   color: var(--color-nochangeSecondIcon);
 }
 .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item p {
@@ -2973,8 +3003,12 @@ body.lock {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
 }
 .i_footer .i_container .i_footer-left .i_footer-left-icons .i_footer-left-icons-item #myCircles2:hover svg {
+  width: 45px;
   margin: 2px 0 0 0;
   color: var(--color-red);
+}
+.i_footer .i_container .i_footer-left .i_footer-left-icons .i_footer-left-icons-item #myCircles2 svg {
+  width: 45px;
 }
 .i_footer .i_container .i_footer-left .i_footer-left-icons .i_footer-left-icons-item #myCircles2 .i_drop {
   display: none;
@@ -3092,7 +3126,7 @@ body.lock {
     margin: 0;
     fill: var(--color-black);
     position: absolute;
-    left: 15px;
+    left: 0px;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -3481,8 +3515,8 @@ body.lock {
     font-size: 12px;
   }
   .i_header .i_container .i_header-right .i_header-more .i_header-circles .whatsapp-icon {
-    width: 14px;
-    height: 14px;
+    width: 45px;
+    height: 45px;
   }
   .i_header .i_container .i_header-right .i_header-more .i_header-circles .email-icon {
     width: 14px;
@@ -3560,16 +3594,6 @@ body.lock {
   }
 }
 @media screen and (max-width: 1330px) {
-  .i_main .i_banner .i_container .i_banner-right {
-    gap: 112px;
-  }
-}
-@media screen and (max-width: 1330px) and (max-width: 1200px) {
-  .i_main .i_banner .i_container .i_banner-right {
-    gap: 80px;
-  }
-}
-@media screen and (max-width: 1330px) {
   .i_main .i_banner .i_container .i_banner-right .i_banner-group_social {
     gap: 30px;
   }
@@ -3635,6 +3659,8 @@ body.lock {
   .i_main .i_banner .i_container .i_banner-right .i_banner-skills .i_banner-item p {
     font-size: 14px;
   }
+}
+@media screen and (max-width: 1330px) {
   .i_main .i_our-services .i_container .i_our-services-headline span {
     font-size: 28px;
   }
@@ -3831,8 +3857,8 @@ body.lock {
     height: 16px;
   }
   .i_header .i_container .i_header-right .i_header-more .i_header-circles .whatsapp-icon {
-    width: 14px;
-    height: 14px;
+    width: 45px;
+    height: 45px;
   }
   .i_header .i_container .i_header-right .i_header-more .i_header-circles .email-icon {
     width: 14px;
@@ -3907,7 +3933,6 @@ body.lock {
   .i_main .i_banner .i_container .i_banner-container .i_banner-right {
     position: relative;
     left: 63%;
-    gap: 70px;
   }
 }
 @media screen and (max-width: 1100px) and (max-width: 680px) {
@@ -3920,7 +3945,6 @@ body.lock {
   .i_main .i_banner .i_container .i_banner-container .i_banner-right {
     left: 50%;
     transform: translateX(-50%);
-    gap: 60px;
     width: 100%;
   }
 }
@@ -4108,6 +4132,8 @@ body.lock {
     font-weight: normal;
   }
   .i_footer .i_container .i_footer-right .i_footer-right-groupMore .i_footer-right-moreGroup .i_footer-right-more #myCircles3 .whatsapp-icon {
+    width: 45px;
+    height: 45px;
     margin: 3px 0 0 0;
   }
 }
@@ -4240,7 +4266,7 @@ body.lock {
     margin: 0;
     fill: var(--color-black);
     position: absolute;
-    left: 15px;
+    left: 0;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -4321,8 +4347,8 @@ body.lock {
     height: 16px;
   }
   .i_header .i_container .i_header-right .i_header-more .i_header-circles .whatsapp-icon {
-    width: 14px;
-    height: 14px;
+    width: 45px;
+    height: 45px;
   }
   .i_header .i_container .i_header-right .i_header-more .i_header-circles .email-icon {
     width: 14px;
@@ -4416,7 +4442,6 @@ body.lock {
   .i_main .i_banner .i_container .i_banner-right {
     position: relative;
     left: 50%;
-    gap: 60px;
   }
   .i_main .i_banner .i_container .i_banner-right .i_banner-group_social {
     margin-top: 20px;
@@ -4714,8 +4739,8 @@ body.lock {
     height: 16px;
   }
   .i_header .i_container .i_header-right .i_header-more .i_header-circles .whatsapp-icon {
-    width: 14px;
-    height: 14px;
+    width: 45px;
+    height: 45px;
   }
   .i_header .i_container .i_header-right .i_header-more .i_header-circles .email-icon {
     width: 14px;
@@ -4853,7 +4878,6 @@ body.lock {
     display: flex;
     align-items: center;
     position: relative;
-    gap: 60px;
     left: unset;
   }
   .i_main .i_banner .i_container .i_banner-right .i_banner-group_social {
@@ -5002,8 +5026,8 @@ body.lock {
     height: 16px;
   }
   .i_header .i_container .i_header-right .i_header-more .i_header-circles .whatsapp-icon {
-    width: 14px;
-    height: 14px;
+    width: 45px;
+    height: 45px;
   }
   .i_header .i_container .i_header-right .i_header-more .i_header-circles .email-icon {
     width: 14px;
@@ -5124,7 +5148,6 @@ body.lock {
   }
   .i_main .i_banner .i_container .i_banner-right {
     position: relative;
-    gap: 60px;
     left: unset;
   }
   .i_main .i_banner .i_container .i_banner-right .i_banner-group_social {

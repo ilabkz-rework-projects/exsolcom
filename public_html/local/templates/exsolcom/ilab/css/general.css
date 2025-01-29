@@ -1803,5 +1803,13 @@ div.title-search-result {
     padding: 10px 0;
   }
 }
+@media screen and (max-width: 518px) {
+  .gift-snip {
+    flex-wrap: wrap;
+  }
+  .gift-snip img {
+    width: 48% !important;
+  }
+}
 
 /*# sourceMappingURL=general.css.map */

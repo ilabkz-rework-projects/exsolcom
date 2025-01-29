@@ -570,7 +570,7 @@ body{
                 margin: 0;
                 fill: var(--color-black);
                 position: absolute;
-                left: 15px;
+                left: 0;
                 top: 50%;
                 transform: translateY(-50%);
               }
@@ -1473,7 +1473,6 @@ body{
       .i_banner-right {
         display: flex;
         flex-direction: column;
-        gap: 110px;
         //MAIN SKILLS
         .i_banner-skills {
           display: flex;
@@ -1492,6 +1491,16 @@ body{
             display: flex;
             align-items: center;
             gap: 20px;
+            .i_banner-circles_5{
+              background-size: 24px !important;
+              background-position-x: 52% !important;
+              background-position-y: 59% !important;
+              @media screen and (max-width: 1330px){
+                width: 40px !important;
+                height: 40px !important;
+                background-size: 18px !important;
+              }
+            }
             &:hover {
               background-color: var(--color-circlesSecond);
               border-radius: 50px;
@@ -1509,11 +1518,23 @@ body{
               .i_banner-circles_4{
                 background-image: url("../img/svg/group-banner-icons/banner-icon_4_b.svg");
               }
+              .i_banner-circles_5{
+                background-image: url("../img/svg/group-banner-icons/banner-icon_5_b.svg");
+              }
 
+              .i_banner-circles_5{
+                background-size: 24px !important;
+                background-position-x: 52% !important;
+                background-position-y: 59% !important;
+                @media screen and (max-width: 1330px){
+                  background-size: 18px !important;
+                }
+              }
               .i_banner-circles_1,
               .i_banner-circles_2,
               .i_banner-circles_3,
-              .i_banner-circles_4{
+              .i_banner-circles_4,
+              .i_banner-circles_5{
                 width: 50px;
                 height: 50px;
                 background-color: var(--color-circlesSecond);
@@ -1522,6 +1543,7 @@ body{
                 background-position-x: 65%;
                 background-position-y: 50%;
               }
+
               p {
                 color: var(--color-red);
               }
@@ -1538,11 +1560,15 @@ body{
             .i_banner-circles_4{
               background-image: url("../img/svg/group-banner-icons/banner-icon_4_w.svg");
             }
+            .i_banner-circles_5{
+              background-image: url("../img/svg/group-banner-icons/banner-icon_5_w.svg");
+            }
 
             .i_banner-circles_1,
             .i_banner-circles_2,
             .i_banner-circles_3,
-            .i_banner-circles_4{
+            .i_banner-circles_4,
+            .i_banner-circles_5{
               width: 50px;
               height: 50px;
               background-color: var(--color-red);
@@ -3150,11 +3176,15 @@ body{
               background-color: var(--color-circlesHover);
               box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
               svg{
+                width: 45px;
                 margin: 2px 0 0 0;
                 color: var(--color-red);
               }
             }
 
+            svg{
+              width: 45px;
+            }
             .i_drop{
               display: none;
             }
@@ -3261,7 +3291,7 @@ body{
                     margin: 0;
                     fill: var(--color-black);
                     position: absolute;
-                    left: 15px;
+                    left: 0px;
                     top: 50%;
                     transform: translateY(-50%);
                   }
@@ -3839,8 +3869,8 @@ body{
             //  height: 16px;
             //}
             .whatsapp-icon{
-              width: 14px;
-              height: 14px;
+              width: 45px;
+              height: 45px;
             }
             .email-icon{
               width: 14px;
@@ -3934,9 +3964,9 @@ body{
         //!Левая часть баннера
         //Правая часть баннера
         .i_banner-right{
-          gap: 112px;
+
           @media screen and (max-width: 1200px){
-            gap: 80px;
+
           }
           //Группа Соц-сетей и ДеньНочь
           .i_banner-group_social{
@@ -4253,8 +4283,8 @@ body{
               height: 16px;
             }
             .whatsapp-icon{
-              width: 14px;
-              height: 14px;
+              width: 45px;
+              height: 45px;
             }
             .email-icon{
               width: 14px;
@@ -4348,11 +4378,11 @@ body{
               left: 50%;
               transform: translateX(-50%);
             }
-            gap: 70px;
+
             @media screen and (max-width: 480px){
               left: 50%;
               transform: translateX(-50%);
-              gap: 60px;
+
               width: 100%;
             }
             @media screen and (max-width: 360px){
@@ -4578,6 +4608,8 @@ body{
                   }
                 }
                 .whatsapp-icon{
+                  width: 45px;
+                  height: 45px;
                   margin: 3px 0 0 0;
                 }
                 @media screen and (max-width: 1330px){
@@ -4702,7 +4734,7 @@ body{
                       margin: 0;
                       fill: var(--color-black);
                       position: absolute;
-                      left: 15px;
+                      left: 0;
                       top: 50%;
                       transform: translateY(-50%);
                       @media screen and (max-width: 760px){
@@ -4814,8 +4846,8 @@ body{
               height: 16px;
             }
             .whatsapp-icon{
-              width: 14px;
-              height: 14px;
+              width: 45px;
+              height: 45px;
             }
             .email-icon{
               width: 14px;
@@ -4917,7 +4949,7 @@ body{
         .i_banner-right{
           position: relative;
           left: 50%;
-          gap: 60px;
+
           //Группа Соц-сетей и ДеньНочь
           .i_banner-group_social{
             margin-top: 20px;
@@ -5254,8 +5286,8 @@ body{
               height: 16px;
             }
             .whatsapp-icon{
-              width: 14px;
-              height: 14px;
+              width: 45px;
+              height: 45px;
             }
             .email-icon{
               width: 14px;
@@ -5430,7 +5462,7 @@ body{
           display: flex;
           align-items: center;
           position: relative;
-          gap: 60px;
+
           left: unset;
           //Группа Соц-сетей и ДеньНочь NONE
           .i_banner-group_social{
@@ -5625,8 +5657,8 @@ body{
               height: 16px;
             }
             .whatsapp-icon{
-              width: 14px;
-              height: 14px;
+              width: 45px;
+              height: 45px;
             }
             .email-icon{
               width: 14px;
@@ -5788,7 +5820,7 @@ body{
         //Правая часть баннера
         .i_banner-right{
           position: relative;
-          gap: 60px;
+
           left: unset;
           //Группа Соц-сетей и ДеньНочь NONE
           .i_banner-group_social {

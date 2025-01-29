@@ -100,7 +100,8 @@
 					</p>
 				</div>
 			</div>
-			 <!--!Группа Навыки--> <button class="i_banner-btn-apply" id="submit-btn">Оставить заявку</button> <!--Кнопка Оставить заявку-->
+			 <!--!Группа Навыки--> <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/main/'.LANGUAGE_ID.'/i_banner-btn-apply.php',Array(),Array('MODE'=>'html', 'NAME'=>'Левая часть банера', 'SHOW_BORDER'=>true))?>
+            <!--Кнопка Оставить заявку-->
 		</div>
 		 <!--Правая часть баннера-->
 	</div>

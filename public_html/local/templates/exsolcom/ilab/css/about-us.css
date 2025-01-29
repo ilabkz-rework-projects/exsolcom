@@ -1208,6 +1208,8 @@
   font-size: 15px;
   color: var(--color-nochangeThirdIcon);
   cursor: text;
+  display: block;
+  width: 93%;
 }
 @media screen and (max-width: 760px) {
   .i_about-us .i_certificates .i_certificates-group-blocks .i_certificates-group-blocks-item .i_certificates-group-blocks-item-name span {
@@ -2019,7 +2021,7 @@
   text-align: center;
 }
 .i_about-us .i_seo-events-2022-title span {
-  font-size: 24px !important;
+  font-size: 18px !important;
   color: var(--color-black);
   font-weight: 600;
   text-align: center;

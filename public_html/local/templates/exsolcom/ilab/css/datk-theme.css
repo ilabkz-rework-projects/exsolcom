@@ -258,6 +258,18 @@ html[data-theme=dark] .i_main .i_services .i_services-title .i_services-title-ic
     background-size: 40px;
   }
 }
+html[data-theme=dark] .i_main .i_banner-circles_5 {
+  background-size: 24px !important;
+  background-position-x: 52% !important;
+  background-position-y: 59% !important;
+}
+@media screen and (max-width: 1330px) {
+  html[data-theme=dark] .i_main .i_banner-circles_5 {
+    width: 40px !important;
+    height: 40px !important;
+    background-size: 18px !important;
+  }
+}
 html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_1 {
   background-image: url("../img/svg/group-banner-icons/banner-icon_1_w.svg");
 }
@@ -269,6 +281,19 @@ html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_b
 }
 html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_4 {
   background-image: url("../img/svg/group-banner-icons/banner-icon_4_w.svg");
+}
+html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_5 {
+  background-image: url("../img/svg/group-banner-icons/banner-icon_5_w.svg");
+}
+html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_5 {
+  background-size: 24px !important;
+  background-position-x: 52% !important;
+  background-position-y: 59% !important;
+}
+@media screen and (max-width: 1330px) {
+  html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_5 {
+    background-size: 18px !important;
+  }
 }
 html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_1,
 html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_2,
@@ -284,7 +309,8 @@ html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_b
   html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_1,
   html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_2,
   html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_3,
-  html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_4 {
+  html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_4,
+  html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item:hover .i_banner-circles_5 {
     width: 40px;
     height: 40px;
     background-color: var(--color-circlesSecond);
@@ -295,7 +321,8 @@ html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_b
   html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_1,
   html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_2,
   html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_3,
-  html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_4 {
+  html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_4,
+  html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_5 {
     background-color: var(--color-red);
     border-radius: 25px;
     display: flex;
@@ -309,7 +336,8 @@ html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_b
   html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_1 svg,
   html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_2 svg,
   html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_3 svg,
-  html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_4 svg {
+  html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_4 svg,
+  html[data-theme=dark] .i_main .i_banner .i_banner-container .i_banner-right .i_banner-skills .i_banner-item .i_banner-circles_5 svg {
     color: var(--color-nochangeSecondIcon);
   }
 }

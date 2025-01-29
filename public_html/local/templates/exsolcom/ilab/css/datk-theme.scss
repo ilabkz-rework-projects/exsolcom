@@ -431,6 +431,16 @@ html[data-theme='dark']{
         }
       }
     }
+    .i_banner-circles_5{
+      background-size: 24px !important;
+      background-position-x: 52% !important;
+      background-position-y: 59% !important;
+      @media screen and (max-width: 1330px){
+        width: 40px !important;
+        height: 40px !important;
+        background-size: 18px !important;
+      }
+    }
     //!SERVICES
     //BANNER
     .i_banner{
@@ -451,7 +461,18 @@ html[data-theme='dark']{
                 .i_banner-circles_4{
                   background-image: url("../img/svg/group-banner-icons/banner-icon_4_w.svg");
                 }
+                .i_banner-circles_5{
+                  background-image: url("../img/svg/group-banner-icons/banner-icon_5_w.svg");
+                }
 
+                .i_banner-circles_5{
+                  background-size: 24px !important;
+                  background-position-x: 52% !important;
+                  background-position-y: 59% !important;
+                  @media screen and (max-width: 1330px){
+                    background-size: 18px !important;
+                  }
+                }
                 .i_banner-circles_1,
                 .i_banner-circles_2,
                 .i_banner-circles_3,
@@ -462,11 +483,13 @@ html[data-theme='dark']{
                   background-position-x: 65%;
                   background-position-y: 50%;
                 }
+
                 @media screen and (max-width: 1330px){
                   .i_banner-circles_1,
                   .i_banner-circles_2,
                   .i_banner-circles_3,
-                  .i_banner-circles_4{
+                  .i_banner-circles_4,
+                  .i_banner-circles_5{
                     width: 40px;
                     height: 40px;
                     background-color: var(--color-circlesSecond);
@@ -478,7 +501,8 @@ html[data-theme='dark']{
                 .i_banner-circles_1,
                 .i_banner-circles_2,
                 .i_banner-circles_3,
-                .i_banner-circles_4{
+                .i_banner-circles_4,
+                .i_banner-circles_5{
                   background-color: var(--color-red);
                   border-radius: 25px;
                   display: flex;
