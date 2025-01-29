@@ -1,3 +1,13 @@
+<?
+	if ($_SESSION['CURRENT_SECTION_NAME']) {
+		$sectionName = $_SESSION['CURRENT_SECTION_NAME'];
+		unset($_SESSION['CURRENT_SECTION_NAME']);
+	} else {
+		$sectionName = 'Corporate Product Line for Kazakhstan';
+	}
+?>
+
+
 <div class="i_software-group-textBtn">
 	<div class="i_software-group-text">
 		<span class="i_software-headline">Corporate Product Line for Kazakhstan</span>
