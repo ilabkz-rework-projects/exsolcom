@@ -1,16 +1,17 @@
-<?
-	if ($_SESSION['CURRENT_SECTION_NAME']) {
-		$sectionName = $_SESSION['CURRENT_SECTION_NAME'];
-		unset($_SESSION['CURRENT_SECTION_NAME']);
-	} else {
-		$sectionName = 'Corporate Product Line for Kazakhstan';
-	}
+<?php
+
+$resProgramm = CIBlockSection::GetList([], ['IBLOCK_ID' => $arParams['IBLOCK_ID'], 'ID' => $arParams['SECTION_ID'], 'ACTIVE' => 'Y'], false, ['ID', 'CODE', 'NAME', 'UF_SECTION_NAME_RU', 'UF_SECTION_NAME_KZ', 'UF_SECTION_NAME_EN']);
+
+while($programmOb = $resProgramm->Fetch()) {
+	$sectionName = $programmOb['UF_SECTION_NAME_'.strtoupper(LANGUAGE_ID)];
+}
+
 ?>
 
 
 <div class="i_software-group-textBtn">
 	<div class="i_software-group-text">
-		<span class="i_software-headline">Corporate Product Line for Kazakhstan</span>
+		<span class="i_software-headline"><?=$sectionName ? $sectionName : 'Corporate Product Line for Kazakhstan'?></span>
 		<p class="i_software-desc">
             Designed to address financial management and accounting tasks for both standalone companies and companies united in groups (holdings, conglomerates, groups of companies).
 		</p>

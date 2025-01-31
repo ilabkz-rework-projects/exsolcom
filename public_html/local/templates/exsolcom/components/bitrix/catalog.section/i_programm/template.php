@@ -752,7 +752,8 @@ if (!isset($arParams['HIDE_SECTION_DESCRIPTION']) || $arParams['HIDE_SECTION_DES
 		</div>
 	<?}?>
 </div>
-<?$APPLICATION->IncludeFile('/local/templates/exsolcom/ilab/comp/i_software.php',Array(),Array('MODE'=>'html', 'NAME'=>'Главная', 'SHOW_BORDER'=>false));// Search?><br>
+
+<?$APPLICATION->IncludeFile('/local/templates/exsolcom/ilab/comp/i_software.php',Array('SECTION_ID' => $arParams['SECTION_ID'], 'IBLOCK_ID' => $arParams['IBLOCK_ID']),Array('MODE'=>'html', 'NAME'=>'Главная', 'SHOW_BORDER'=>false));// Search?><br>
 <?
 if ($showLazyLoad)
 {
