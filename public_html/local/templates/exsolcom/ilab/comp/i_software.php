@@ -19,7 +19,7 @@
 			</div>
 			<!--Иконка с 1С-->
 			<!--Текст с кнопкой-->
-            <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/main/'.LANGUAGE_ID.'/i_main_software_text.php',Array(),Array('MODE'=>'html', 'NAME'=>'Линейка кормпоративных продуктов', 'SHOW_BORDER'=>true))?>
+            <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/main/'.LANGUAGE_ID.'/i_main_software_text.php',Array('SECTION_ID' => $arParams['SECTION_ID'], 'IBLOCK_ID' => $arParams['IBLOCK_ID']),Array('MODE'=>'html', 'NAME'=>'Линейка кормпоративных продуктов', 'SHOW_BORDER'=>true))?>
             <!--Текст с кнопкой-->
 		</div>
 	</div>

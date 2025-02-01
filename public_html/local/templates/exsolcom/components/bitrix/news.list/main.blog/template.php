@@ -39,7 +39,7 @@ $this->setFrameMode(true);
 			// Массив с названиями месяцев
 			$months = null;
 
-			if(LANGUAGE_ID === 'en') {
+			if (LANGUAGE_ID === 'en') {
 				$months = [
 					1 => 'january', 2 => 'february', 3 => 'march', 4 => 'april',
 					5 => 'may', 6 => 'june', 7 => 'july', 8 => 'august',
@@ -52,7 +52,7 @@ $this->setFrameMode(true);
 					9 => 'сентября', 10 => 'октября', 11 => 'ноября', 12 => 'декабря'
 				];
 
-			}else{
+			} else {
 				$months = [
 					1 => 'қаңтар', 2 => 'ақпан', 3 => 'наурыз', 4 => 'сәуір',
 					5 => 'мамыр', 6 => 'маусым', 7 => 'шілде', 8 => 'тамыз',
@@ -71,26 +71,39 @@ $this->setFrameMode(true);
 		}
 		?>
 
+		<?
+			$arFilter = array(
+				'IBLOCK_ID' => 2,
+			);
+
+			$dbRes = \CIBlockSection::GetList(array(), $arFilter, false, array("*", "UF_*")); // UF_* для выбора всех пользовательских свойств);
+
+			while ($arRes = $dbRes->GetNext()) {
+				$arResult['ELEMENT'][$arRes['ID']] = $arRes;
+			}
+		?>
+
 		<? if ($counter === 3) : break; endif;
 		$counter++;
 		$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
 		$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 		?>
-		<div class="blog-item i_detail-modal-item i_modal-footer-hd" id="<?= $this->GetEditAreaId($arItem['ID']); ?>" data-id="<?=$arItem['ID']?>" data_iblock_id="<?=$arParams['IBLOCK_ID']?>">
-			<? if ($arParams["DISPLAY_PICTURE"] != "N" && is_array($arItem["PREVIEW_PICTURE"])):?>
+		<div class="blog-item i_detail-modal-item i_modal-footer-hd" id="<?= $this->GetEditAreaId($arItem['ID']); ?>"
+		     data-id="<?= $arItem['ID'] ?>" data_iblock_id="<?= $arParams['IBLOCK_ID'] ?>">
+			<? if ($arParams["DISPLAY_PICTURE"] != "N" && is_array($arItem["PREVIEW_PICTURE"])): ?>
 				<div class="blog-item-img">
-					<? if (!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
+					<? if (!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])): ?>
 						<img
-							class="preview_picture"
-							border="0"
-							src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>"
-							width="<?= $arItem["PREVIEW_PICTURE"]["WIDTH"] ?>"
-							height="<?= $arItem["PREVIEW_PICTURE"]["HEIGHT"] ?>"
-							alt="<?= $arItem["PREVIEW_PICTURE"]["ALT"] ?>"
-							title="<?= $arItem["PREVIEW_PICTURE"]["TITLE"] ?>"
-							style="float:left"
-							/>
-					<? else:?>
+								class="preview_picture"
+								border="0"
+								src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>"
+								width="<?= $arItem["PREVIEW_PICTURE"]["WIDTH"] ?>"
+								height="<?= $arItem["PREVIEW_PICTURE"]["HEIGHT"] ?>"
+								alt="<?= $arItem["PREVIEW_PICTURE"]["ALT"] ?>"
+								title="<?= $arItem["PREVIEW_PICTURE"]["TITLE"] ?>"
+								style="float:left"
+						/>
+					<? else: ?>
 						<img
 								class="preview_picture"
 								border="0"
@@ -105,38 +118,38 @@ $this->setFrameMode(true);
 				</div>
 			<? endif ?>
 			<div class="blog-item-info">
-				<? if ($arParams["DISPLAY_DATE"] != "N" && $arItem["DISPLAY_ACTIVE_FROM"]):?>
+				<? if ($arParams["DISPLAY_DATE"] != "N" && $arItem["DISPLAY_ACTIVE_FROM"]): ?>
 					<div class="blog-item-info-top">
-						<div class="blog-date-time"><span><?=$formattedDate?></span></div>
+						<div class="blog-date-time"><span><?= $formattedDate ?></span></div>
 						<!-- BLOG STICKER-->
 						<div class="i_sticker">
-							<? if (is_array($arProperty["DISPLAY_VALUE"])):?>
+							<? if (is_array($arProperty["DISPLAY_VALUE"])): ?>
 								<?= implode("&nbsp;/&nbsp;", $arProperty["DISPLAY_VALUE"]); ?>
-							<? else:?>
-								<?= $arResult['SECTIONS'][$arItem['IBLOCK_SECTION_ID']]['NAME'] ?>
+							<? else: ?>
+								<?= $arResult['ELEMENT'][$arItem['IBLOCK_SECTION_ID']]['UF_SECTION_NAME_'.strtoupper(LANGUAGE_ID)] ?>
 							<? endif ?>
 						</div>
 						<!-- BLOG STICKER-->
 					</div>
 				<? endif ?>
-				<? foreach ($arItem["DISPLAY_PROPERTIES"] as $pid => $arProperty):?>
+				<? foreach ($arItem["DISPLAY_PROPERTIES"] as $pid => $arProperty): ?>
 				<? endforeach; ?>
 				<div class="blog-name">
-					<? if ($arParams["DISPLAY_NAME"] != "N" && $arItem["NAME"]):?>
-						<? if (!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
-							<b><? echo $arItem['PROPERTIES']["I_NAME_".strtoupper(LANGUAGE_ID)]['VALUE']?></b>
+					<? if ($arParams["DISPLAY_NAME"] != "N" && $arItem["NAME"]): ?>
+						<? if (!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])): ?>
+							<b><? echo $arItem['PROPERTIES']["I_NAME_" . strtoupper(LANGUAGE_ID)]['VALUE'] ?></b>
 						<? endif; ?>
 					<? endif; ?>
 				</div>
-				<? if ($arParams["DISPLAY_PREVIEW_TEXT"] != "N" && $arItem["PREVIEW_TEXT"]):?>
+				<? if ($arParams["DISPLAY_PREVIEW_TEXT"] != "N" && $arItem["PREVIEW_TEXT"]): ?>
 					<div class="i_blog-preview">
-						<span><? echo LANGUAGE_ID === 'ru' ? $arItem['PREVIEW_TEXT'] : $arItem["PROPERTIES"]['I_PREVIEW_TEXT_'.strtoupper(LANGUAGE_ID)]['VALUE']; ?></span>
+						<span><? echo LANGUAGE_ID === 'ru' ? $arItem['PREVIEW_TEXT'] : $arItem["PROPERTIES"]['I_PREVIEW_TEXT_' . strtoupper(LANGUAGE_ID)]['VALUE']; ?></span>
 					</div>
 				<? endif; ?>
-				<? if ($arParams["DISPLAY_PICTURE"] != "N" && is_array($arItem["PREVIEW_PICTURE"])):?>
+				<? if ($arParams["DISPLAY_PICTURE"] != "N" && is_array($arItem["PREVIEW_PICTURE"])): ?>
 					<div style="clear:both"></div>
 				<? endif ?>
-				<? foreach ($arItem["FIELDS"] as $code => $value):?>
+				<? foreach ($arItem["FIELDS"] as $code => $value): ?>
 					<small>
 						<?= GetMessage("IBLOCK_FIELD_" . $code) ?>:&nbsp;<?= $value; ?>
 					</small>
