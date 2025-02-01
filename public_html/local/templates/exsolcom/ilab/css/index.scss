@@ -881,6 +881,7 @@ body{
     }
     //HEADER BOTTOM_BREADCRUMBS
     .i_breadcrumbs{
+      align-items: flex-start;
       display: flex;
       //align-items: center;
       gap: 35px;
@@ -934,12 +935,14 @@ body{
         .bx-breadcrumb-item{
           position: relative;
           padding: 0 30px 0 0;
+          display: flex;
+          align-items: flex-start;
           i:before{
             content: " ";
             position: absolute;
             width: 7px;
             height: 7px;
-            transform: translate(-260%, -120%);
+            transform: translate(-260%, 50%);
             top: 0;
             left: 50%;
             border-radius: 50%;
