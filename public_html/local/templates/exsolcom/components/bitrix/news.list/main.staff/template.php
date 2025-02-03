@@ -32,7 +32,7 @@ $this->setFrameMode(true);
 				<div class="swiper-slide-block">
 					<div class="swiper-slide-group">
 						<div class="swiper-slide-name">
-							<span><?=$arItem['NAME']?></span>
+							<span><?=$arItem['PROPERTIES']['I_NAME_'.strtoupper(LANGUAGE_ID)]['VALUE']?></span>
 						</div>
 						<div class="swiper-slide-title">
 							<p><?=$arItem['PROPERTIES']['I_ROLE_'.strtoupper(LANGUAGE_ID)]['VALUE']?></p>

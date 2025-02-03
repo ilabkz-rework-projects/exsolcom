@@ -1,6 +1,10 @@
 <?php
 
-$resProgramm = CIBlockSection::GetList([], ['IBLOCK_ID' => $arParams['IBLOCK_ID'], 'ID' => $arParams['SECTION_ID'], 'ACTIVE' => 'Y'], false, ['ID', 'CODE', 'NAME', 'UF_SECTION_NAME_RU', 'UF_SECTION_NAME_KZ', 'UF_SECTION_NAME_EN']);
+use Bitrix\Main\Loader;
+
+Loader::includeModule('iblock');
+
+$resProgramm = \CIBlockSection::GetList([], ['IBLOCK_ID' => $arParams['IBLOCK_ID'], 'ID' => $arParams['SECTION_ID'], 'ACTIVE' => 'Y'], false, ['ID', 'CODE', 'NAME', 'UF_SECTION_NAME_RU', 'UF_SECTION_NAME_KZ', 'UF_SECTION_NAME_EN']);
 
 while($programmOb = $resProgramm->Fetch()) {
 	$sectionName = $programmOb['UF_SECTION_NAME_'.strtoupper(LANGUAGE_ID)];
@@ -22,3 +26,4 @@ while($programmOb = $resProgramm->Fetch()) {
 
 	</div>
 </div>
+
