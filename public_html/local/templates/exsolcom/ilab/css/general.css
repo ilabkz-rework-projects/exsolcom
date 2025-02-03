@@ -1615,12 +1615,17 @@ p {
     max-width: 200px;
     min-width: 186px;
     background-color: var(--color-bg-sticker);
-    height: 20px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 590px) and (max-width: 590px) and (max-width: 590px) and (max-width: 600px) {
+  .i_blog-page .i_container .bx_sitemap .catalog-section .product-item-container .i_vacantion-item.second .i_vacation-item-top .i_vacantion-item-right .i_vacantion-item-topic {
+    height: 50px !important;
   }
 }
 @media screen and (max-width: 590px) and (max-width: 590px) and (max-width: 590px) and (max-width: 360px) {
