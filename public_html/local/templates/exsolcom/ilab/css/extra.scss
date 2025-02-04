@@ -167,7 +167,7 @@
               border-radius: 50px;
               background-color: #f1f1f1;
               //SUBMIT CONTENT FORM CONTROL CONTAINER BEFORE
-              .b24-form-control-container:before {
+              .b24-form-control-container:has(input[autocomplete]):before {
                 content: "\002A";
                 color: red;
                 font-size: 30px;
