@@ -2407,7 +2407,7 @@ body.lock {
   background-color: var(--color-blockHv);
   border-radius: 30px;
   display: flex;
-  padding: 20px 20px;
+  padding: 10px 20px;
   gap: 20px;
 }
 @media screen and (max-width: 1330px) {
@@ -2434,7 +2434,7 @@ body.lock {
     display: grid;
     grid-template-columns: 94px 200px;
     grid-auto-rows: 100px 40px;
-    grid-gap: 20px 10px;
+    grid-gap: 32px 10px;
     padding: 18px 13px;
   }
 }
@@ -2475,7 +2475,7 @@ body.lock {
   display: flex;
   justify-content: space-between;
   width: 69%;
-  gap: 7px;
+  gap: 4px;
   height: 100%;
   flex-direction: column;
 }
@@ -2492,7 +2492,8 @@ body.lock {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 20px;
+  gap: 6px;
+  flex-direction: column-reverse;
 }
 @media screen and (max-width: 480px) {
   .i_infoblock .i_blog .blog-list .blog-item .blog-item-info .blog-item-info-top {
@@ -2519,10 +2520,10 @@ body.lock {
   }
 }
 .i_infoblock .i_blog .blog-list .blog-item .blog-item-info .blog-item-info-top .i_sticker {
-  width: 50%;
+  width: 100%;
   min-width: 186px;
   background-color: var(--color-bg-sticker);
-  height: 20px;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2536,7 +2537,7 @@ body.lock {
   .i_infoblock .i_blog .blog-list .blog-item .blog-item-info .blog-item-info-top .i_sticker {
     height: 30px;
     min-width: 110px;
-    width: 70%;
+    width: 100%;
   }
 }
 .i_infoblock .i_blog .blog-list .blog-item .blog-name {
@@ -3885,6 +3886,7 @@ body.lock {
   .i_main .i_banner .i_container .i_banner-left .i_banner-logo {
     position: relative;
     right: -20%;
+    opacity: 0;
   }
 }
 @media screen and (max-width: 1100px) and (max-width: 680px) {

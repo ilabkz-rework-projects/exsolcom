@@ -54,7 +54,6 @@ $langMess = [
 			</button>
 			<!--!HEADER BURGER-->
 
-			<?if(!$main && !$langMain){?>
 				<!--	ЗДЕСЬ ДОБАВЛЯЕШЬ ИКОНКУ	       -->
 				<!--HEADER LOGO-->
 				<div class="i_header-logo">
@@ -94,7 +93,6 @@ $langMess = [
 					<!--!HEADER LOGO ICON-->
 				</div>
 				<!--!HEADER LOGO-->
-			<?}?>
 
 			<!--HEADER MENU-->
 			<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/main/'.LANGUAGE_ID.'/header_menu.php',Array(),Array('MODE'=>'html', 'NAME'=>'Вверхнее меню', 'SHOW_BORDER'=>false))// Menu?>
