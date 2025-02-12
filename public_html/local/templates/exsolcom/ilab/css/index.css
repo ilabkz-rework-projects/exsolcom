@@ -3886,6 +3886,7 @@ body.lock {
   .i_main .i_banner .i_container .i_banner-left .i_banner-logo {
     position: relative;
     right: -20%;
+    opacity: 0;
   }
 }
 @media screen and (max-width: 1100px) and (max-width: 680px) {
