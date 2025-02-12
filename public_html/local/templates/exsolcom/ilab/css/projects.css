@@ -312,6 +312,7 @@
   display: flex;
   flex-direction: column;
   gap: 35px;
+  align-items: center;
 }
 .i_projects-element .i_projects-element__item .i_projects-element__content .i_projects-element__item__name span {
   color: var(--color-textInfoblock);
@@ -320,7 +321,14 @@
 @media screen and (max-width: 375px) {
   .i_projects-element .i_projects-element__item .i_projects-element__content .i_projects-element__item__name span {
     font-size: 0.813rem;
+    width: 100%;
+    display: flex;
+    text-wrap: wrap;
   }
+}
+.i_projects-element .i_projects-element__item .i_projects-element__content .i_projects-element__item__text {
+  width: 125px;
+  display: flex;
 }
 .i_projects-element .i_projects-element__item .i_projects-element__content .i_projects-element__item__text span {
   color: var(--color-text-li);
