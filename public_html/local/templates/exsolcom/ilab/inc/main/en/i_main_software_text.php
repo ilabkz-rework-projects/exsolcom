@@ -15,7 +15,8 @@ while($programmOb = $resProgramm->Fetch()) {
 
 <div class="i_software-group-textBtn">
 	<div class="i_software-group-text">
-		<span class="i_software-headline"><?=$sectionName ? $sectionName : 'Corporate Product Line for Kazakhstan'?></span>
+		<span class="i_software-headline"><?=$sectionName ? $sectionName : '"1C" company\'s software product line for Kazakhstan'?></span>
+
 		<p class="i_software-desc">
             Designed to address financial management and accounting tasks for both standalone companies and companies united in groups (holdings, conglomerates, groups of companies).
 		</p>
