@@ -226,9 +226,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			const locationToRedirect = option.getAttribute('data-value').toLowerCase()
 
 			if(locationToRedirect !== 'ru'){
-				window.location.href = `https://new.exsolcom.kz/${locationToRedirect}${formattedURI}`
+				window.location.href = `https://exsolcom.kz/${locationToRedirect}${formattedURI}`
 			}else{
-				window.location.href = `https://new.exsolcom.kz${formattedURI}`
+				window.location.href = `https://exsolcom.kz${formattedURI}`
 			}
 			language.classList.remove('expanded');
 		});
@@ -858,9 +858,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 							let link = ''
 
 							if(languageID === 'ru'){
-								link = `http://new.exsolcom.kz/programm-products/?product=${data.PROGRAMM_LINK !== null ? data.PROGRAMM_LINK : ''}`
+								link = `http://exsolcom.kz/programm-products/?product=${data.PROGRAMM_LINK !== null ? data.PROGRAMM_LINK : ''}`
 							}else{
-								link = `http://new.exsolcom.kz/${languageID}/programm-products/?product=${data.PROGRAMM_LINK !== null ? data.PROGRAMM_LINK : ''}`
+								link = `http://exsolcom.kz/${languageID}/programm-products/?product=${data.PROGRAMM_LINK !== null ? data.PROGRAMM_LINK : ''}`
 							}
 							window.location.href = link
 						})
@@ -1027,9 +1027,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 								let link = '';
 
 								if(languageID === 'ru'){
-									link = `http://new.exsolcom.kz/programm-products/?product=${data.PROGRAMM_LINK !== null ? data.PROGRAMM_LINK : ''}`
+									link = `http://exsolcom.kz/programm-products/?product=${data.PROGRAMM_LINK !== null ? data.PROGRAMM_LINK : ''}`
 								}else{
-									link = `http://new.exsolcom.kz/${languageID}/programm-products/?product=${data.PROGRAMM_LINK !== null ? data.PROGRAMM_LINK : ''}`
+									link = `http://exsolcom.kz/${languageID}/programm-products/?product=${data.PROGRAMM_LINK !== null ? data.PROGRAMM_LINK : ''}`
 								}
 								window.location.href = link
 							})
