@@ -149,7 +149,7 @@ $langMess = [
 
 			<!--HEADER MORE-->
 			<div class="i_header-more">
-				<button id="language" class="i_language-selector">
+				<button id="language" class="i_language-selector <?=!$USER->isAdmin() ? 'disabled' : ''?>">
 					<span id="selectedText"><?=strtoupper(LANGUAGE_ID)?></span>
 					<?
 					$sites = ['RU' => ['RU', 'KZ', 'EN'], 'KZ' => ['KZ', 'RU', 'EN'], 'EN' => ['EN', 'RU', 'KZ'],]
