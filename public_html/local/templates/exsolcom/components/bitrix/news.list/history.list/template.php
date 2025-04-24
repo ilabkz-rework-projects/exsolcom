@@ -20,7 +20,7 @@ $this->setFrameMode(true);
 	$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
 	$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 	?>
-	<div class="i_seo-dates-switch <?=$arItem['ID'] === '56' ? 'check' : ''?>" data-id="<?=$arItem['ID']?>" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
+	<div class="i_seo-dates-switch" data-id="<?=$arItem['ID']?>" id="<?=$this->GetEditAreaId($arItem['ID']);?>" data-code="<?=$arItem['CODE']?>">
 		<span><?=$arItem['NAME']?></span>
 	</div>
 

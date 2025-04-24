@@ -667,28 +667,52 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				headers: {
 					'Content-Type': 'application/json'
 				},
-				body: JSON.stringify({id: item.getAttribute('data-id'), language: languageID})
+				body: JSON.stringify({id: item.getAttribute('data-code'), language: languageID})
 			})
 				.then(response => response.json())
 				.then(data => {
 					const content = data.CONTENT;
 					iSeoBlock.innerHTML = content;
+
+					const url = new URL(window.location.href);
+					url.searchParams.set('year', data.CODE); // Добавляем параметр "param" со значением "value"
+					history.pushState(null, '', url.toString());
 				})
 		})
 	})
 
 	function initHistoryContent(){
+
+		const params = new URLSearchParams(window.location.search);
+		let year  = params.get("year")
+
 		fetch('/local/templates/exsolcom/ilab/ajax/getHistoryContent.php', {
 			method: 'POST',
 			headers:{
 				'Content-Type': 'application/json'
 			},
-			body:JSON.stringify({id: 56, language: languageID})
+			body:JSON.stringify({id: year, language: languageID})
 		})
 			.then(response => response.json())
 			.then(data => {
+
 				const content = data.CONTENT;
 				iSeoBlock.innerHTML = content;
+
+				if(data.status === false){
+					year = 2025
+				}
+
+				const currentYear = document.querySelector(`div[data-code="${year}"]`);
+
+				if(currentYear){
+					currentYear.scrollIntoView({
+						behavior: "smooth",
+						block: "center"
+					});
+
+					currentYear.classList.add('check')
+				}
 
 				initObservers();
 			});
@@ -697,7 +721,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 	initHistoryContent()
-
 
 
 	// Модалка для услуг
@@ -801,8 +824,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 					// Обновляем URL в адресной строке без перезагрузки страницы
 					history.pushState(null, '', url.toString());
-
-					console.log(data)
 				})
 		})
 	})
@@ -945,6 +966,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 						} else {
 							modalKp.querySelector('.i_modal-footer-price').classList.add('idn')
 						}
+
 
 						modalKp.querySelector('.i_modal-img').innerHTML = `<img src="${img}" />`;
 						modalKp.querySelector('.i_modal-footer-price').innerHTML = `<span>${data.PRICE} ₸<span class="text">${langMessage1}</span></span>`;
@@ -1346,7 +1368,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	const checkActiveCompare = () => {
 		setTimeout(()=>{
 			const itemCompareAct = document.querySelectorAll('.i_item_compare_act')
-			document.querySelector('#compare-button .count').textContent = `${itemCompareAct.length}`
+			if(document.querySelector('#compare-button .count')){
+				document.querySelector('#compare-button .count').textContent = `${itemCompareAct.length}`
+			}
 		}, 100)
 	}
 
@@ -1492,6 +1516,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	observer.observe(document.body, {
 		childList: true, // Слежение за добавлением и удалением дочерних узлов
 		subtree: true    // Включение наблюдения за всем поддеревом
+	});
+
+	document.querySelectorAll('.b24-form-state-text p').forEach(el => {
+		el.textContent = 'Благодарим за обращение , мы с Вами вскоре свяжемся !';
 	});
 
 });

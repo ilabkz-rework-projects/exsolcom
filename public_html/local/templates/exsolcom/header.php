@@ -149,7 +149,7 @@ $langMess = [
 
 			<!--HEADER MORE-->
 			<div class="i_header-more">
-				<button id="language" class="i_language-selector <?=!$USER->isAdmin() ? 'disabled' : ''?>">
+				<button id="language" class="i_language-selector">
 					<span id="selectedText"><?=strtoupper(LANGUAGE_ID)?></span>
 					<?
 					$sites = ['RU' => ['RU', 'KZ', 'EN'], 'KZ' => ['KZ', 'RU', 'EN'], 'EN' => ['EN', 'RU', 'KZ'],]
@@ -266,7 +266,7 @@ $langMess = [
 					</ul>
 					<ul class="i_banner-social_item">
 						<li class="i_banner-facebook">
-							<a href="https://www.facebook.com/%D0%A2%D0%9E%D0%9E-ExSolCom-213651508647363/" target="_blank" class="i_banner-social_link" aria-label="ссылка на фейсбук">
+							<a href="https://www.facebook.com/profile.php?id=61550846310514&locale=ru_RU" target="_blank" class="i_banner-social_link" aria-label="ссылка на фейсбук">
 								<svg class="facebook-icon" width="10" height="20" viewBox="0 0 11 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 									<path fill-rule="evenodd" clip-rule="evenodd" d="M6.79415 5.8587V6.98155H10.4L9.68724 10.5391H6.79415V20.9004H3.31407V10.5391H0.400024V6.98155H3.31407V5.66971C3.31407 1.97877 5.54678 0.900391 7.63273 0.900391C9.37277 0.900391 10.2323 1.02268 10.2323 1.02268V4.22446H8.356C7.67466 4.22446 6.79415 4.36899 6.79415 5.8587Z" />
 								</svg>
@@ -293,7 +293,7 @@ $langMess = [
 					</ul>
 					<ul class="i_banner-social_item">
 						<li class="i_banner-linkedin">
-							<a href="https://www.linkedin.com/company/exsolcom/" target="_blank" class="i_banner-social_link" aria-label="ссылка на линкедин">
+							<a href="https://www.linkedin.com/company/тоо-exsolcom-kz/?viewAsMember=true" target="_blank" class="i_banner-social_link" aria-label="ссылка на линкедин">
 								<svg class="linkedin-icon" width="20" height="20" viewBox="0 0 21 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 									<path fill-rule="evenodd" clip-rule="evenodd" d="M12.0095 20.5895C12.0308 20.5043 12.0521 20.4085 12.0627 20.3234C12.0627 18.1094 12.0308 15.8955 12.0521 13.6815C12.0627 13.1387 12.1477 12.5958 12.3178 12.0849C12.6367 11.0844 13.4977 10.6267 14.7946 10.6799C15.6556 10.7119 16.3253 11.276 16.5698 12.1807C16.6548 12.4575 16.6973 12.7449 16.708 13.0322C16.7186 15.2781 16.7186 17.524 16.7186 19.7699V20.6001H20.8749C20.8749 19.9082 20.8749 19.2377 20.8749 18.5777C20.8749 16.1829 20.928 13.7773 20.8323 11.3824C20.7686 9.59424 20.0138 8.07216 18.3024 7.32708C16.6017 6.59265 14.869 6.60329 13.2851 7.72091C12.828 8.04022 12.456 8.46598 12.0095 8.87045V7.2845H8.06586V20.5895H12.0095ZM1.30526 20.5788H5.44028V7.27386H1.30526V20.5788ZM3.35683 0.600098C2.09187 0.621386 0.933212 1.50483 0.890693 3.10143C0.848173 4.42128 2.03872 5.57083 3.35683 5.58147C4.68556 5.58147 5.84422 4.39999 5.83359 3.05885C5.8017 1.69642 4.70682 0.610742 3.35683 0.600098Z" />
 								</svg>
