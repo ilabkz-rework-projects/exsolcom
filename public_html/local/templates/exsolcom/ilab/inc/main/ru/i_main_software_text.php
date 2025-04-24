@@ -14,7 +14,7 @@ while($programmOb = $resProgramm->Fetch()) {
 
 <div class="i_software-group-textBtn">
 	<div class="i_software-group-text">
-		<span class="i_software-headline"><?=$sectionName ? $sectionName : 'Линейка корпоративных продуктов для Казахстана'?></span>
+		<span class="i_software-headline"><?=$sectionName ? $sectionName : 'Линейка программных продуктов фирмы "1С" для Казахстана'?></span>
 		<p class="i_software-desc">
 			Предназначена для решения задач управления финансами и ведения учета, как обособленных предприятий, так и предприятий, объединенных в группы (холдинги, конгломераты, группы компаний).
 		</p>

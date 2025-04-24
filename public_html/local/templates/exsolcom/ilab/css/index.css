@@ -402,6 +402,9 @@ body.lock {
   color: var(--color-red);
   font-weight: normal;
 }
+.i_header .i_container .i_header-right .i_header-more .i_language-selector.disabled {
+  pointer-events: none;
+}
 .i_header .i_container .i_header-right .i_header-more .i_language-selector .text-container {
   flex-direction: column;
   align-items: center;
@@ -666,7 +669,7 @@ body.lock {
   content: " ";
   position: absolute;
   width: 120%;
-  top: -195%;
+  top: -130%;
   height: 130px;
   z-index: -1;
   background-color: var(--color-White);
@@ -5276,7 +5279,7 @@ body.lock {
   background-position-y: 16px;
   background-position-x: 11px;
   right: 25px;
-  bottom: 40px;
+  bottom: 270px;
   width: 56px;
   height: 56px;
   border-radius: 50%;
