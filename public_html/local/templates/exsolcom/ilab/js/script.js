@@ -706,11 +706,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				const currentYear = document.querySelector(`div[data-code="${year}"]`);
 
 				if(currentYear){
-					currentYear.scrollIntoView({
-						behavior: "smooth",
-						block: "center"
-					});
-
+					if(params.get("year") !== null){
+						currentYear.scrollIntoView({
+							behavior: "smooth",
+							block: "center"
+						});
+					}
 					currentYear.classList.add('check')
 				}
 
