@@ -4,6 +4,8 @@ CJSCore::Init(array('ajax', 'window'));
 
 $main = CSite::InDir(SITE_DIR.'index.php');
 $langMain = CSite::InDir(SITE_DIR.'/index.php');
+$_SESSION['I_LANGUAGE_ID'] = LANGUAGE_ID;
+
 $langMess = [
 	'ru' => 'Главная',
 	'en' => 'Main',

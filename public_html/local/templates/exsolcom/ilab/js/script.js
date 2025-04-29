@@ -682,40 +682,43 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	})
 
 	function initHistoryContent(){
+		if(iSeoBlock){
+			const params = new URLSearchParams(window.location.search);
+			let year  = params.get("year")
 
-		const params = new URLSearchParams(window.location.search);
-		let year  = params.get("year")
+			fetch('/local/templates/exsolcom/ilab/ajax/getHistoryContent.php', {
+				method: 'POST',
+				headers:{
+					'Content-Type': 'application/json'
+				},
+				body:JSON.stringify({id: year, language: languageID})
+			})
+				.then(response => response.json())
+				.then(data => {
 
-		fetch('/local/templates/exsolcom/ilab/ajax/getHistoryContent.php', {
-			method: 'POST',
-			headers:{
-				'Content-Type': 'application/json'
-			},
-			body:JSON.stringify({id: year, language: languageID})
-		})
-			.then(response => response.json())
-			.then(data => {
+					const content = data.CONTENT;
+					iSeoBlock.innerHTML = content;
 
-				const content = data.CONTENT;
-				iSeoBlock.innerHTML = content;
+					if(data.status === false){
+						year = 2025
+					}
 
-				if(data.status === false){
-					year = 2025
-				}
+					const currentYear = document.querySelector(`div[data-code="${year}"]`);
 
-				const currentYear = document.querySelector(`div[data-code="${year}"]`);
+					if(currentYear){
+						if(params.get("year") !== null){
+							currentYear.scrollIntoView({
+								behavior: "smooth",
+								block: "center"
+							});
+						}
+						currentYear.classList.add('check')
+					}
 
-				if(currentYear){
-					currentYear.scrollIntoView({
-						behavior: "smooth",
-						block: "center"
-					});
+					initObservers();
+				});
+		}
 
-					currentYear.classList.add('check')
-				}
-
-				initObservers();
-			});
 	}
 
 
