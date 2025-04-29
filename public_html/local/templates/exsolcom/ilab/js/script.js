@@ -656,7 +656,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		item.addEventListener('click', () => {
 			iSeoTabs.forEach(tab => tab.classList.remove('check'));
 			item.classList.add('check');
+			// iSeoBlock.scrollIntoView({
+			// 	behavior: 'smooth',
+			// 	block: 'start'
+			// });
 		});
+
 	});
 
 	iSeoTabs.forEach(item => {
