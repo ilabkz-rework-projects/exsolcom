@@ -45,10 +45,19 @@ for($index = 0; $index < $itemSize; $index++)
 			<div class="bx-breadcrumb-item">
 				'.$arrow.'
 				<span>'.$title.'</span>
+				
+				
 			</div>';
 	}
 }
 
 $strReturn .= '<div style="clear:both"></div></div>';
 
+
+
 return $strReturn;
+
+
+
+
+
