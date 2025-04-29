@@ -3,7 +3,7 @@
 	---------- version: 0.0.1 Beta (Aug 2016)
 	---------- @requires jQuery v2.1.3
 	----------
-	---------- Copyright 2016 iLab - info@ilab.kz
+	---------- Copyright.php 2016 iLab - info@ilab.kz
 	$.ilab() = function | Вызов - $.ilab();
 	$.fn.ilab() = function | Вызов - $('selector').ilab();
 !*/

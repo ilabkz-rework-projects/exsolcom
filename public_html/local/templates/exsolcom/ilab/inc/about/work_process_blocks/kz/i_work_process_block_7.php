@@ -1,9 +1,4 @@
-<div class="i_work-process-body-group-block">
-
-    <span class="i_work-process-body-group-block-color">Настройка сервисов</span>
-
-    <span>
-                            Настройка интеграционных сервисов с целью получения данных из используемых в организации информационных систем, их обработки, анализа и отображения на панели руководителя
-                        </span>
-
+<div class="i_work-process-body-group-block cla3">
+    <span class="i_work-process-body-group-block-color">Сынақ пайдалану</span> <span>Жаңа ААЖ-ды тестілеу және сценарийлік тестілеу нәтижелері бойынша түзету шараларын жүргізу (30-дан 60 күнтізбелік күнге дейін).</span>
 </div>
+<br>

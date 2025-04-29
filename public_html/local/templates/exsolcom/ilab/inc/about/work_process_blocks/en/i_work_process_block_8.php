@@ -1,9 +1,5 @@
 <div class="i_work-process-body-group-block">
-
-    <span class="i_work-process-body-group-block-color">Настройка сервисов</span>
-
-    <span>
-                            Настройка интеграционных сервисов с целью получения данных из используемых в организации информационных систем, их обработки, анализа и отображения на панели руководителя
-                        </span>
-
+    <span class="i_work-process-body-group-block-color">Industrial Operation</span> <span>
+	Industrial operation (monitoring user activity until they achieve full autonomy). Support contract for the new AIS.</span>
 </div>
+<br>

@@ -1,9 +1,4 @@
 <div class="i_work-process-body-group-block">
-
-    <span class="i_work-process-body-group-block-color">Настройка сервисов</span>
-
-    <span>
-                            Настройка интеграционных сервисов с целью получения данных из используемых в организации информационных систем, их обработки, анализа и отображения на панели руководителя
-                        </span>
-
+    <span class="i_work-process-body-group-block-color">Test Operation</span> <span>Testing the new AIS and performing corrective actions based on scenario testing results (from 30 to 60 calendar days).</span>
 </div>
+<br>

@@ -54,7 +54,7 @@ $price = $arResult['ELEMENT'][$item['ID']]['PROPERTY']['I_PRICE'];
 				<?if($price){?>
 					<span><span class="color-red"><?= $price ?></span> ₸
 						<span class="text"><?=\Bitrix\Main\Localization\Loc::getMessage('I_TEXT_VERSION')?></span>
-						<span class="text2"> (эл. версия)</span>
+						<span class="text2"><?=\Bitrix\Main\Localization\Loc::getMessage('I_TEXT_VERSION_SEC')?></span>
 					</span>
 				<?}else{?>
 					<span><span class="color-red"><?=\Bitrix\Main\Localization\Loc::getMessage('I_TEXT_PRICE')?></span>
@@ -79,8 +79,8 @@ $price = $arResult['ELEMENT'][$item['ID']]['PROPERTY']['I_PRICE'];
 	</div>
 
 
-<?/*
-echo '<pre>';
+<?
+/*echo '<pre>';
 print_r($arResult['ELEMENT'][$item['ID']]);
-echo '</pre>';
-*/?>
+echo '</pre>';*/
+?>

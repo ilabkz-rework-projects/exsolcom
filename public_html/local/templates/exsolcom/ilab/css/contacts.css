@@ -83,12 +83,12 @@
 @media screen and (max-width: 1000px) {
   .i_contacts .i_contacts-content .i_contacts-map {
     max-width: 625px;
-    width: 66%;
+    width: 130%;
   }
 }
 @media screen and (max-width: 750px) {
   .i_contacts .i_contacts-content .i_contacts-map {
-    max-width: 480px;
+    max-width: 703px;
   }
 }
 .i_contacts .i_contacts-content .i_contacts-info {

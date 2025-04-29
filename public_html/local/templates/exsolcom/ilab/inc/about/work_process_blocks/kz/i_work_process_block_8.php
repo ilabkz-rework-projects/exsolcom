@@ -1,9 +1,5 @@
-<div class="i_work-process-body-group-block">
-
-    <span class="i_work-process-body-group-block-color">Настройка сервисов</span>
-
-    <span>
-                            Настройка интеграционных сервисов с целью получения данных из используемых в организации информационных систем, их обработки, анализа и отображения на панели руководителя
-                        </span>
-
+<div class="i_work-process-body-group-block cla4">
+    <span class="i_work-process-body-group-block-color">Өндірістік пайдалану</span> <span>
+	Өндірістік пайдалану (пайдаланушылардың дербес жұмысқа толық көшуіне дейінгі бақылау). Жаңа ААЖ-ды қолдау бойынша келісімшарт.</span>
 </div>
+<br>

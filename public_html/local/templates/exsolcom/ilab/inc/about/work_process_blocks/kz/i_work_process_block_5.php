@@ -1,9 +1,4 @@
-<div class="i_work-process-body-group-block">
-
-    <span class="i_work-process-body-group-block-color">Қызметкерлерді оқыту</span>
-
-    <span>
-                            Жаңа құралды пайдалану үшін қызметкерлерді дайындау: жұмыс істеудің негізгі принциптерін оқыту, рөлдер бойынша нұсқаулықтар дайындау
-    </span>
-
+<div class="i_work-process-body-group-block cla">
+    <span class="i_work-process-body-group-block-color">Деректерді тасымалдау</span> <span>
+	Деректерді (анықтамалықтар және айналымсыз бастапқы сальдо) жаңа ААЖ-ға тасымалдау. Тапсырыс берушімен «Деректерді тасымалдау хаттамасы» құжатына қол қойылады.</span>
 </div>
