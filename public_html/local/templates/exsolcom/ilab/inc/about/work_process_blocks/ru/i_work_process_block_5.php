@@ -1,4 +1,4 @@
 <div class="i_work-process-body-group-block">
- <span class="i_work-process-body-group-block-color">Обучение сотрудников</span> <span>
-	Подготовка сотрудников к использованию нового инструмента: обучение основным принципам работы, подготовка инструкций по ролям </span>
+ <span class="i_work-process-body-group-block-color">Перенос данных</span> <span>
+	Перенос данных (справочников и входящее сальдо без оборотов) в новую АИС. С заказчиком подписывается - Протокол переноса данных</span>
 </div>

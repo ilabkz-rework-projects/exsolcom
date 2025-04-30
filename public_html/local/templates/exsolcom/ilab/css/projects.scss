@@ -290,18 +290,26 @@
       display: flex;
       flex-direction: column;
       gap: 35px;
+      align-items: center;
       .i_projects-element__item__name span{
         color: var(--color-textInfoblock);
         font-size: 0.875rem;
         @media screen and (max-width: 375px){
           font-size: 0.813rem;
+          width: 100%;
+          display: flex;
+          text-wrap: wrap;
         }
       }
-      .i_projects-element__item__text span{
-        color: var(--color-text-li);
-        font-size: 0.813rem;
-        @media screen and (max-width: 375px){
-          font-size: 0.75rem;
+      .i_projects-element__item__text{
+        width: 125px;
+        display: flex;
+        span{
+          color: var(--color-text-li);
+          font-size: 0.813rem;
+          @media screen and (max-width: 375px){
+            font-size: 0.75rem;
+          }
         }
       }
     }

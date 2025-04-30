@@ -776,6 +776,7 @@ body.lock {
   justify-content: space-between;
   align-items: flex-end;
   flex-flow: row-reverse;
+  height: 80px;
 }
 @media screen and (max-width: 680px) {
   .i_header-bottom .i_container {

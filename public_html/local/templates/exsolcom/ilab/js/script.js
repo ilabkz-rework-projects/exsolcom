@@ -499,6 +499,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		item.addEventListener('click', ()=>{openModalKp(item)})
 	})
 
+	const modalKpList = document.querySelectorAll('.i_modal-kp .i_container');
+	const modalSerList = document.querySelectorAll('.i_modal .i_container');
 
 	modalKpCloseBtn.addEventListener('click', (event) => {
 		submitModal.classList.remove('active')
@@ -513,6 +515,58 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		modalKpFooter.classList.remove('idn')
 	})
 
+	projectsItems.forEach((itemModal) => {
+		itemModal.addEventListener('click', () => {
+			modalKpList.forEach((modal) => {
+				modal.scrollTop = 0;
+			});
+
+			console.log(123);
+		});
+	});
+
+
+	const serviceModal = document.querySelectorAll('.i_services-item')
+	const vacationModal = document.querySelectorAll('.i_vacantion-item')
+	const mainServiceModal = document.querySelectorAll('.i_our-services-block')
+	const blogModal = document.querySelectorAll('.product-item')
+	const newsModal = document.querySelectorAll('.news-page-item')
+
+	serviceModal.forEach((itemSer) => {
+		itemSer.addEventListener('click', () => {
+			modalSerList.forEach((modal) => {
+				modal.scrollTop = 0;
+			});
+		})
+	});
+	vacationModal.forEach((itemVAc) => {
+		itemVAc.addEventListener('click', () => {
+			modalKpList.forEach((modal) => {
+				modal.scrollTop = 0;
+			});
+		})
+	});
+	mainServiceModal.forEach((itemVAc) => {
+		itemVAc.addEventListener('click', () => {
+			modalSerList.forEach((modal) => {
+				modal.scrollTop = 0;
+			});
+		})
+	});
+	blogModal.forEach((itemVAc) => {
+		itemVAc.addEventListener('click', () => {
+			modalKpList.forEach((modal) => {
+				modal.scrollTop = 0;
+			});
+		})
+	});
+	newsModal.forEach((itemVAc) => {
+		itemVAc.addEventListener('click', () => {
+			modalKpList.forEach((modal) => {
+				modal.scrollTop = 0;
+			});
+		})
+	});
 	// FORM KP
 
 	const formKp = document.querySelectorAll('#form-kp-btn')
@@ -656,7 +710,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		item.addEventListener('click', () => {
 			iSeoTabs.forEach(tab => tab.classList.remove('check'));
 			item.classList.add('check');
+			// iSeoBlock.scrollIntoView({
+			// 	behavior: 'smooth',
+			// 	block: 'start'
+			// });
 		});
+
 	});
 
 	iSeoTabs.forEach(item => {

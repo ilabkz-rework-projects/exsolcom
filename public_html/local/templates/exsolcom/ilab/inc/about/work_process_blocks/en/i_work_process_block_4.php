@@ -1,9 +1,5 @@
 <div class="i_work-process-body-group-block">
-
-    <span class="i_work-process-body-group-block-color">Functionality Enhancement</span>
-
-    <span>
-        Enhancing the system's functionality to implement the unique features of your business. This stage can be carried out upon agreement between the parties after stages 2 or 4
-    </span>
-
+    <span class="i_work-process-body-group-block-color">Functionality Improvement</span> <span>
+	Customization (development) of functionality based on the requirements described in the "Technical Specification" document, development of data transfer mechanisms. Configuration of the new AIS. Transfer of necessary data in the required volume for system testing.</span>
 </div>
+<br>

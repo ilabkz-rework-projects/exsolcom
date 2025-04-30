@@ -554,7 +554,7 @@ html[data-theme=dark] .i_main .i_about-us .i_work-process .i_work-process-body .
     width: 45%;
   }
 }
-@media screen and (max-width: 877px) {
+@media screen and (max-width: 1250px) {
   html[data-theme=dark] .i_main .i_about-us .i_work-process .i_work-process-body .i_work-process-body-infographic-night {
     display: none;
   }

@@ -1,6 +1,4 @@
 <div class="i_work-process-body-group-block">
-    <span class="i_work-process-body-group-block-color">Analysis, Survey Report</span>
-    <span>
-        Analysis of existing processes, development of optimization recommendations, and preparation for the information system
-    </span>
+    <span class="i_work-process-body-group-block-color">Pre-Project Survey</span><span>Pre-project survey – results in a Pre-Project Survey Report titled "As-Is".</span>
 </div>
+<br>
