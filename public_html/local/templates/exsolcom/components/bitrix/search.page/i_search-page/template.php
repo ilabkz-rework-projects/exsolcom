@@ -196,7 +196,7 @@
 								LANGUAGE_ID === 'ru' ? $arItem["TITLE_FORMATED"] : $arElements[$arItem['ITEM_ID']]['PROPERTY_I_NAME_' . strtoupper(LANGUAGE_ID) . '_VALUE']
 							?></a>
 						<p><?=
-							LANGUAGE_ID === 'ru' ? $arItem["BODY_FORMATED"] : $arElements[$arItem['ITEM_ID']]['PROPERTY_I_PREVIEW_TEXT_' . strtoupper(LANGUAGE_ID) . '_VALUE']
+								LANGUAGE_ID === 'ru' ? $arItem["BODY_FORMATED"] : $arElements[$arItem['ITEM_ID']]['PROPERTY_I_PREVIEW_TEXT_' . strtoupper(LANGUAGE_ID) . '_VALUE']
 							?>
 						</p>
 					</div>

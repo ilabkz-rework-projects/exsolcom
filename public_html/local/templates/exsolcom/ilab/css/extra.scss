@@ -131,6 +131,9 @@
           display: flex;
           justify-content: center;
           padding: 40px 70px 40px 40px;
+          &.b24-form-padding-side{
+            display: none;
+          }
           //border-bottom: 5px dotted #666666;
           position: relative;
           @media screen and (max-width: 480px){

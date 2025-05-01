@@ -177,6 +177,11 @@
   padding: 40px 70px 40px 40px;
   position: relative;
 }
+.i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-header.b24-form-padding-side,
+.i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-header.b24-form-padding-side,
+.i_form-vc .i_submit-content .b24-form .b24-form-wrapper .b24-form-header.b24-form-padding-side {
+  display: none;
+}
 @media screen and (max-width: 480px) {
   .i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-header,
   .i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-header,

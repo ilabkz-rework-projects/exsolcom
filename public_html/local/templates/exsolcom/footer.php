@@ -352,15 +352,8 @@
 <!--			<img src="--><?php //=SITE_TEMPLATE_PATH.'/ilab/img/svg/closeModal-dark.svg'?><!--" alt="x">-->
 		</div>
         <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_submit_header.php',Array(),Array('MODE'=>'html', 'NAME'=>'Оставить заявку', 'SHOW_BORDER'=>true))?>
-        <div class="i_submit-content">
-			<script data-b24-form="inline/15/xm0t3f" data-skip-moving="true">
-				(function(w,d,u){
-					var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
-					var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-				})(window,document,'https://cdn-ru.bitrix24.kz/b5265933/crm/form/loader_15.js');
-			</script>
-		</div>
-	</div>
+        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/submit_footer.php',Array(),Array('MODE'=>'html', 'NAME'=>'Оставить заявку форма', 'SHOW_BORDER'=>true))?>
+    </div>
 </div>
 
 <div class="i_form-kp">
@@ -369,19 +362,8 @@
 <!--			<img src="--><?php //=SITE_TEMPLATE_PATH.'/ilab/img/svg/closeModal-dark.svg'?><!--" alt="x">-->
 		</div>
         <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/i_submit_header_modal.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка Запросить КП в modal', 'SHOW_BORDER'=>true))?>
-        <div class="i_submit-content">
-			<script id="bx24_form_inline" data-skip-moving="true">
-				(function(w,d,u,b){w['Bitrix24FormObject']=b;w[b] = w[b] || function(){arguments[0].ref=u;
-					(w[b].forms=w[b].forms||[]).push(arguments[0])};
-					if(w[b]['forms']) return;
-					var s=d.createElement('script');s.async=1;s.src=u+'?'+(1*new Date());
-					var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-				})(window,document,'https://exsolcom.bitrix24.kz/bitrix/js/crm/form_loader.js','b24form');
-
-				b24form({"id":"8","lang":"<?=LANGUAGE_ID?>","sec":"ij6veh","type":"inline","node": document.getElementById('kp_container')});
-			</script>
-		</div>
-	</div>
+        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/kp_modal.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка Запросить КП в modal', 'SHOW_BORDER'=>true))?>
+    </div>
 </div>
 
 <div class="i_modal-kp">
@@ -412,15 +394,9 @@
 		<div class="i_form-vc-close">
 			<!--			<img src="--><?php //=SITE_TEMPLATE_PATH.'/ilab/img/svg/closeModal-dark.svg'?><!--" alt="x">-->
 		</div>
-		<div class="i_submit-content">
-			<script data-b24-form="inline/33/2gt4m1" data-skip-moving="true">
-				(function(w,d,u){
-					var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
-					var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-				})(window,document,'https://cdn-ru.bitrix24.kz/b5265933/crm/form/loader_33.js');
-			</script>
-		</div>
-	</div>
+        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/vacation_header.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка Запросить КП в modal', 'SHOW_BORDER'=>true))?>
+        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/ilab/inc/'.LANGUAGE_ID.'/vacastion_form.php',Array(),Array('MODE'=>'html', 'NAME'=>'Кнопка Запросить КП в modal', 'SHOW_BORDER'=>true))?>
+    </div>
 </div>
 
 
