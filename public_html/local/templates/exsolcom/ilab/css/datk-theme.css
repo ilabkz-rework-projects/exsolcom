@@ -375,6 +375,26 @@ html[data-theme=dark] .i_main .i_cases .i_projects-title .i_projects-title-icon 
 html[data-theme=dark] .i_main .i_cases .i_projects-section .i_projects-section__item a:hover:before {
   background-image: url("../img/svg/slider-hover-products-dark.svg");
 }
+html[data-theme=dark] .i_main .i_reviews .i_reviews-title .i_reviews-title-icon {
+  background-image: url("../img/svg/our-cases_b.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 65%;
+  background-position-y: 50%;
+}
+html[data-theme=dark] .i_main .i_reviews .i_projects-title .i_projects-title-icon {
+  background-image: url("../img/svg/projects-icon_b.svg");
+}
+@media screen and (max-width: 760px) {
+  html[data-theme=dark] .i_main .i_reviews .i_projects-title .i_projects-title-icon {
+    width: 40px;
+    height: 40px;
+    background-size: 36px;
+  }
+}
+html[data-theme=dark] .i_main .i_reviews .i_projects-section .i_projects-section__item a:hover:before {
+  background-image: url("../img/svg/slider-hover-products-dark.svg");
+}
 html[data-theme=dark] .i_main .i_blog:before,
 html[data-theme=dark] .i_main .i_blog-page:before {
   transition: all 0.4s ease;

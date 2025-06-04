@@ -581,6 +581,46 @@ html[data-theme='dark']{
     }
     //!CASES
 
+    //REVIEWS
+    .i_reviews{
+      //REVIEWS TITLE
+      .i_reviews-title{
+        .i_reviews-title-icon{
+          background-image: url("../img/svg/our-cases_b.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-position-x: 65%;
+          background-position-y: 50%;
+        }
+      }
+      //REVIEWS TITLE
+      .i_projects-title {
+        .i_projects-title-icon {
+          background-image: url("../img/svg/projects-icon_b.svg");
+          @media screen and (max-width: 760px) {
+            width: 40px;
+            height: 40px;
+            background-size: 36px;
+          }
+        }
+      }
+      //REVIEWS PROJECTS TITLE
+      .i_projects-section{
+        .i_projects-section__item{
+          a{
+            &:hover {
+
+              &:before {
+                background-image: url("../img/svg/slider-hover-products-dark.svg");
+              }
+            }
+          }
+        }
+      }
+      //!REVIEWS PROJECTS TITLE
+    }
+    //!REVIEWS
+
     //BLOG
     .i_blog,
     .i_blog-page{
