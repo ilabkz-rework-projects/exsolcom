@@ -268,7 +268,7 @@ $langMess = [
 					</ul>
 					<ul class="i_banner-social_item">
 						<li class="i_banner-facebook">
-							<a href="https://www.facebook.com/profile.php?id=61550846310514&locale=ru_RU" target="_blank" class="i_banner-social_link" aria-label="ссылка на фейсбук">
+							<a href="https://www.facebook.com/profile.php?id=61550846310514&mibextid=avESrC" target="_blank" class="i_banner-social_link" aria-label="ссылка на фейсбук">
 								<svg class="facebook-icon" width="10" height="20" viewBox="0 0 11 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 									<path fill-rule="evenodd" clip-rule="evenodd" d="M6.79415 5.8587V6.98155H10.4L9.68724 10.5391H6.79415V20.9004H3.31407V10.5391H0.400024V6.98155H3.31407V5.66971C3.31407 1.97877 5.54678 0.900391 7.63273 0.900391C9.37277 0.900391 10.2323 1.02268 10.2323 1.02268V4.22446H8.356C7.67466 4.22446 6.79415 4.36899 6.79415 5.8587Z" />
 								</svg>
@@ -286,7 +286,7 @@ $langMess = [
 					</ul>
 					<ul class="i_banner-social_item">
 						<li class="i_banner-telegram">
-							<a href="https://web.telegram.org/a/#6851120527" target="_blank" class="i_banner-social_link" aria-label="ссылка на телеграм">
+							<a href="https://t.me/exsolcom" target="_blank" class="i_banner-social_link" aria-label="ссылка на телеграм">
 								<svg class="telegram-icon" width="25" height="21" viewBox="0 0 25 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 									<path fill-rule="evenodd" clip-rule="evenodd" d="M24.2418 2.0807L19.6583 20.2244C19.5309 20.6851 19.0323 20.9573 18.5654 20.8317C18.4593 20.8003 18.3638 20.7584 18.279 20.6956L12.5283 16.3716L10.5231 18.3504C10.2684 18.7901 9.70609 18.9576 9.26047 18.7063C9.11193 18.6226 8.98461 18.497 8.89973 18.3504L6.00321 12.634C5.97138 12.6026 5.93955 12.5607 5.90772 12.5293L1.15444 10.9589C0.814922 10.9484 0.507233 10.739 0.390523 10.4145C0.231374 9.95381 0.475403 9.45127 0.942242 9.29422C0.995292 9.27328 1.03773 9.26281 1.09078 9.25235L23.202 0.918581C23.637 0.751068 24.1251 0.97093 24.2948 1.40018C24.3691 1.63051 24.3585 1.87131 24.2418 2.0807ZM9.63182 16.0576L10.4806 13.9951C10.5337 13.8694 10.6079 13.7647 10.714 13.6705C10.7247 13.6496 10.7353 13.6391 10.7459 13.6181L13.7697 9.58737L7.78568 12.3932L9.63182 16.0576ZM6.57615 10.9798C6.6292 11.0008 6.67164 11.0217 6.72469 11.0426L15.9023 6.75012C16.3373 6.51979 16.8784 6.67684 17.1119 7.11656C17.271 7.39923 17.2498 7.7552 17.0694 8.02741L12.4222 14.2044L18.3108 18.6226L22.2365 3.07531L3.73267 10.048L6.57615 10.9798Z" />
 								</svg>
@@ -295,7 +295,7 @@ $langMess = [
 					</ul>
 					<ul class="i_banner-social_item">
 						<li class="i_banner-linkedin">
-							<a href="https://www.linkedin.com/company/тоо-exsolcom-kz/?viewAsMember=true" target="_blank" class="i_banner-social_link" aria-label="ссылка на линкедин">
+							<a href="https://www.linkedin.com/company/тоо-exsolcom-kz/posts/?feedView=all&viewAsMember=true" target="_blank" class="i_banner-social_link" aria-label="ссылка на линкедин">
 								<svg class="linkedin-icon" width="20" height="20" viewBox="0 0 21 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 									<path fill-rule="evenodd" clip-rule="evenodd" d="M12.0095 20.5895C12.0308 20.5043 12.0521 20.4085 12.0627 20.3234C12.0627 18.1094 12.0308 15.8955 12.0521 13.6815C12.0627 13.1387 12.1477 12.5958 12.3178 12.0849C12.6367 11.0844 13.4977 10.6267 14.7946 10.6799C15.6556 10.7119 16.3253 11.276 16.5698 12.1807C16.6548 12.4575 16.6973 12.7449 16.708 13.0322C16.7186 15.2781 16.7186 17.524 16.7186 19.7699V20.6001H20.8749C20.8749 19.9082 20.8749 19.2377 20.8749 18.5777C20.8749 16.1829 20.928 13.7773 20.8323 11.3824C20.7686 9.59424 20.0138 8.07216 18.3024 7.32708C16.6017 6.59265 14.869 6.60329 13.2851 7.72091C12.828 8.04022 12.456 8.46598 12.0095 8.87045V7.2845H8.06586V20.5895H12.0095ZM1.30526 20.5788H5.44028V7.27386H1.30526V20.5788ZM3.35683 0.600098C2.09187 0.621386 0.933212 1.50483 0.890693 3.10143C0.848173 4.42128 2.03872 5.57083 3.35683 5.58147C4.68556 5.58147 5.84422 4.39999 5.83359 3.05885C5.8017 1.69642 4.70682 0.610742 3.35683 0.600098Z" />
 								</svg>

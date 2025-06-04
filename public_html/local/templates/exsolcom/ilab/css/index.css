@@ -776,7 +776,6 @@ body.lock {
   justify-content: space-between;
   align-items: flex-end;
   flex-flow: row-reverse;
-  height: 80px;
 }
 @media screen and (max-width: 680px) {
   .i_header-bottom .i_container {
@@ -787,7 +786,7 @@ body.lock {
   align-items: flex-start;
   display: flex;
   gap: 35px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Comfortaa", sans-serif;
   font-size: 14px;
   margin: 50px 0 0 0;
 }
@@ -1162,7 +1161,7 @@ body.lock {
   width: 50px;
   height: 50px;
   min-width: 50px;
-  background-color: var(--color-circles);
+  background-color: var(--color-circles) !important;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1172,7 +1171,7 @@ body.lock {
   color: var(--color-circleIcon);
 }
 .i_header-burger:active {
-  background-color: var(--color-circlesHover);
+  background-color: var(--color-circlesHover) !important;
 }
 .i_header-burger:active svg {
   color: var(--color-black);
@@ -2828,6 +2827,9 @@ body.lock {
   top: -28%;
   left: -125px;
   transform: translate(50%);
+}
+.i_our-status .i_container .i_our-status-group-blocks .i_our-status-group-blocks-item .i_our-status-group-blocks-item-icon img {
+  width: 100%;
 }
 @media screen and (max-width: 1000px) {
   .i_our-status .i_container .i_our-status-group-blocks .i_our-status-group-blocks-item .i_our-status-group-blocks-item-icon {
@@ -5287,7 +5289,7 @@ body.lock {
   border: 2px solid white;
   cursor: pointer;
   background-color: var(--color-red);
-  z-index: 1000;
+  z-index: 50;
   opacity: 0.5;
   display: none;
 }

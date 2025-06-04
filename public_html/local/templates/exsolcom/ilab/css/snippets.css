@@ -1261,24 +1261,30 @@
   cursor: pointer !important;
 }
 
-table {
+.i_modal table,
+.i_modal-kp table {
   width: 100% !important;
   display: block;
 }
-table td {
+.i_modal table td,
+.i_modal-kp table td {
   width: 0% !important;
 }
-table td img {
+.i_modal table td img,
+.i_modal-kp table td img {
   min-width: 35px;
 }
 @media screen and (max-width: 936px) {
-  table tr th:nth-child(2) {
+  .i_modal table tr th:nth-child(2),
+  .i_modal-kp table tr th:nth-child(2) {
     display: none;
   }
-  table tr th:nth-child(3) {
+  .i_modal table tr th:nth-child(3),
+  .i_modal-kp table tr th:nth-child(3) {
     display: none;
   }
-  table tr th:nth-child(4) {
+  .i_modal table tr th:nth-child(4),
+  .i_modal-kp table tr th:nth-child(4) {
     display: none;
   }
 }
@@ -3463,7 +3469,8 @@ strong img {
   cursor: text;
 }
 
-img {
+.i_modal img,
+.i_modal-kp img {
   width: 70%;
   object-fit: contain;
 }

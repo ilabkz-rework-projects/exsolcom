@@ -11,6 +11,7 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 ?>
+
 <div class="search-page">
 	<form action="" method="get">
 		<? if ($arParams["USE_SUGGEST"] === "Y"):
@@ -34,7 +35,7 @@
 		); ?>
 		<? else: ?>
 			<input class="i_search-input-l" type="text" name="q" value="<?= $arResult["REQUEST"]["QUERY"] ?>" size="40"
-			       placeholder="Поисковое слово"/>
+			       placeholder="<?= GetMessage("PLACE_HOLDER") ?>"/>
 		<? endif; ?>
 		<? if ($arParams["SHOW_WHERE"]): ?>
 			&nbsp;<select class="i_search-select" name="where">
@@ -145,7 +146,18 @@
 		</div>
 	<? elseif (count($arResult["SEARCH"]) > 0): ?>
 		<div class="i_search-content">
-			<? if ($arParams["DISPLAY_TOP_PAGER"] != "N") echo $arResult["NAV_STRING"] ?>
+			<? if ($arParams["DISPLAY_TOP_PAGER"] != "N") {
+                $navString = $arResult["NAV_STRING"];
+
+                if (LANGUAGE_ID == "en") {
+                    $navString = str_replace("Результаты поиска", "Search results", $navString);
+                } elseif (LANGUAGE_ID == "kz") {
+                    $navString = str_replace("Результаты поиска", "Іздеу нәтижелері", $navString);
+                }
+
+                echo $navString;
+            }?>
+
 			<div class="i_search-content-separate">
 				<p>
 					<? if ($arResult["REQUEST"]["HOW"] == "d"): ?>

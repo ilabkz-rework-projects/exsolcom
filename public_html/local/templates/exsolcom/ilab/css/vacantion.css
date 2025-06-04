@@ -132,6 +132,8 @@
   max-width: 290px;
   width: 100%;
   height: auto;
+  border-radius: 15px;
+  overflow: hidden;
 }
 .i_services .i_vacantion-list .i_vacantion-item .i_vacantion-item-left .i_vacantion-img img {
   width: 100%;

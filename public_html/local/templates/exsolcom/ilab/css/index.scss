@@ -889,7 +889,7 @@ body{
       display: flex;
       //align-items: center;
       gap: 35px;
-      font-family: "Open Sans", sans-serif;
+      font-family: "Comfortaa", sans-serif;
       font-size: 14px;
       margin: 50px 0 0 0;
       //HEADER BOTTOM_BREADCRUMBS MAIN
@@ -1369,7 +1369,7 @@ body{
   width: 50px;
   height: 50px;
   min-width: 50px;
-  background-color: var(--color-circles);
+  background-color: var(--color-circles) !important;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1378,7 +1378,7 @@ body{
     color: var(--color-circleIcon);
   }
   &:active{
-    background-color: var(--color-circlesHover);
+    background-color: var(--color-circlesHover) !important !important;
     svg{
       color: var(--color-black);
     }
@@ -3010,6 +3010,9 @@ body{
         //OUR STATUS GROUP BLOCKS ITEM BG ICON
         //OUR STATUS GROUP BLOCKS ITEM ICON
         .i_our-status-group-blocks-item-icon{
+          img{
+            width: 100%;
+          }
           @media screen and (max-width: 1000px){
             width: 160px;
             height: 80px;
@@ -5996,7 +5999,7 @@ body{
   border: 2px solid white;
   cursor: pointer;
   background-color: var(--color-red);
-  z-index: 1000;
+  z-index: 50;
   opacity: 0.5;
   display: none;
   &:hover{

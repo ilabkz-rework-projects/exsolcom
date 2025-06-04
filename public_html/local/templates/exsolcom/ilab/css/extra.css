@@ -251,11 +251,12 @@
 .i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container input,
 .i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container input,
 .i_form-vc .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container input {
-  color: #919191;
+  outline: none;
+  color: #000000;
   background-color: #f1f1f1;
   border-radius: 30px;
-  border: 1px solid rgb(233, 233, 233);
   padding: 17px 20px 0;
+  --b24-primary-color: none;
 }
 .i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container .b24-form-control,
 .i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container .b24-form-control,
@@ -269,9 +270,10 @@
 .i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container .b24-form-control-label,
 .i_form-vc .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container .b24-form-control-label {
   font-family: "Comfortaa", sans-serif;
-  color: #4e4e4e;
+  color: #000000;
   font-size: 15px;
   padding-left: 20px;
+  opacity: 1;
 }
 .i_submit .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container .b24-form-control-label .b24-form-control-required,
 .i_form-kp .i_submit-content .b24-form .b24-form-wrapper .b24-form-content form .b24-form-field .b24-form-control-container .b24-form-control-label .b24-form-control-required,

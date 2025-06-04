@@ -1,36 +1,49 @@
-button {
-  border-radius: 50px;
-  background-color: var(--color-red);
-  color: var(--color-buttonText);
-  font-size: 16px;
-  font-weight: 500;
-  border: 0;
-  cursor: pointer;
-  transition: all .4s ease;
-  outline-style: none;
-  @media screen and (max-width: 1330px){
-    font-size: 14px;
+.i_modal,
+.i_modal-kp,
+.i_submit,
+.i_form-kp,
+.i_header,
+.i_footer,
+.i_main{
+  button{
+    border-radius: 50px;
+    background-color: var(--color-red);
+    color: var(--color-buttonText);
+    font-size: 16px;
+    font-weight: 500;
+    border: 0;
+    cursor: pointer;
+    transition: all .4s ease;
+    outline-style: none;
+    @media screen and (max-width: 1330px){
+      font-size: 14px;
+    }
+
+    &:hover {
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+      color: var(--color-red);
+      background-color: var(--bg-buttonHover) !important;
+      a{
+        color: var(--color-red) !important;
+      }
+      svg{
+        color: var(--color-red) !important;
+      }
+    }
   }
 
-  &:hover {
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
-    color: var(--color-red);
-    background-color: var(--bg-buttonHover);
-    a{
-      color: var(--color-red) !important;
-    }
-    svg{
-      color: var(--color-red) !important;
-    }
+  *{
+    font-family: "Comfortaa", sans-serif !important;
   }
+
 }
+
 .color-red{
   color: var(--color-red) !important;
 }
 
-*{
-  font-family: "Comfortaa", sans-serif !important;
-}
+
+
 
 main span {
   transition: all .4s ease;
@@ -145,7 +158,7 @@ a{
   }
 }
 
-*{
+*:not(#bx-panel):not(#bx-panel *):not(.bx-core-popup-menu):not(.bx-core-popup-menu *):not(.bx-core-window):not(.bx-core-window *){
   &::-webkit-scrollbar {
     background-color: #e7e7e7; /* Цвет бегунка */
     border-radius: 30px; /* Округление бегунка */
@@ -556,6 +569,8 @@ a{
     position: absolute;
     left: 5%;
     max-width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
     @media screen and (max-width: 1740px){
       max-width: 280px;
     }
@@ -1917,10 +1932,15 @@ div.title-search-result{
   }
 }
 
-b{
-  line-height: normal;
-}
 
-span{
-  line-height: normal;
-}
+b
+  {
+    line-height: normal;
+  }
+
+
+span
+  {
+    line-height: normal;
+  }
+
