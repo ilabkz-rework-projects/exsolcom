@@ -56,12 +56,13 @@ html[data-theme='dark']{
       }
       li:nth-child(2){
         .menu-img{
-          background-image: url("../img/svg/our-cases_b.svg");
+          background-image: url("../img/svg/projects-icon_b.svg");
         }
       }
       li:nth-child(3){
         .menu-img{
-          background-image: url("../img/svg/projects-icon_b.svg");
+          background-size: 26px;
+          background-image: url("../img/svg/menu/reviewB.svg");
 
         }
       }
@@ -586,17 +587,17 @@ html[data-theme='dark']{
       //REVIEWS TITLE
       .i_reviews-title{
         .i_reviews-title-icon{
-          background-image: url("../img/svg/our-cases_b.svg");
+          background-image: url("../img/svg/menu/reviewB.svg");
           background-repeat: no-repeat;
           background-position: center;
-          background-position-x: 65%;
+          background-position-x: 53%;
           background-position-y: 50%;
         }
       }
       //REVIEWS TITLE
       .i_projects-title {
         .i_projects-title-icon {
-          background-image: url("../img/svg/projects-icon_b.svg");
+          background-image: url("../img/svg/menu/reviewB.svg");
           @media screen and (max-width: 760px) {
             width: 40px;
             height: 40px;

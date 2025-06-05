@@ -9,7 +9,7 @@ $_SESSION['I_LANGUAGE_ID'] = LANGUAGE_ID;
 $langMess = [
 	'ru' => 'Главная',
 	'en' => 'Main',
-	'kz' => 'Басты бет'
+	'kz' => 'Басты'
 ];
 
 ?>

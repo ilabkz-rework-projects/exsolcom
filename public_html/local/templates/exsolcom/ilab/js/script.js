@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	});
 
 	function getBasePath(url) {
-		const match = url.match(/\/(about-us|contacts|programm-products|projects|services|partners|vacantion|blog|news|search)\/?/);
+		const match = url.match(/\/(about-us|contacts|programm-products|projects|services|partners|vacantion|blog|news|search|reviews)\/?/);
 		return match ? match[0] : '/';
 	}
 
@@ -1392,6 +1392,30 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			showElse.classList.add('idn');
 		});
 	});
+
+	//Обьявляем переменные для раскрытия Отзывов
+
+	const showElseR = document.querySelector('.show-else');
+	const itemsReview = document.querySelector('.reviews-list')
+	const itemReview = document.querySelectorAll('.reviews-item')
+
+	if(itemReview.length > 9){
+		for(let i = 9; i < itemReview.length; i++){
+			itemReview[i].classList.add('idn');
+		}
+	}
+
+	//При нажатии на кнопку с классом show-else + 3 items удаляем класс idn
+	//также проверяем если у item не остается idn то присваиваем кнопке showElseR display none
+	showElseR?.addEventListener('click', () => {
+		const hiddenItems = itemsReview.querySelectorAll('.reviews-item.idn');
+		for (let i = 0; i < Math.min(3, hiddenItems.length); i++) {
+			hiddenItems[i].classList.remove('idn');
+		}
+		if (itemsReview.querySelectorAll('.reviews-item.idn').length === 0) {
+			showElseR.style.display = 'none';
+		}
+	})
 
 	document.querySelectorAll('.i_item_compare').forEach((item) => {
 		item.addEventListener('click', () => {

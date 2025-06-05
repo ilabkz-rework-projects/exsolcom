@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
-  padding: 50px 0 50px 0;
+  padding: 0 0 50px 0;
 }
 .i_reviews .i_container .i_reviews-title .i_reviews-title-icon {
   width: 50px;
@@ -22,11 +22,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../img/svg/our-cases_w.svg");
+  background-image: url("../img/svg/menu/reviewW.svg");
   background-repeat: no-repeat;
-  background-position-x: 65%;
+  background-position-x: 53%;
   background-position-y: 50%;
-  background-size: 50px;
+  background-size: 30px;
 }
 .i_reviews .i_container .i_reviews-title .i_reviews-title-icon svg {
   color: var(--color-circleIcon);
@@ -35,7 +35,7 @@
   .i_reviews .i_container .i_reviews-title .i_reviews-title-icon {
     width: 40px;
     height: 40px;
-    background-size: 40px;
+    background-size: 26px;
   }
 }
 .i_reviews .i_container .i_reviews-title .i_reviews-title-name {
@@ -104,13 +104,15 @@
   flex-basis: 31.5%;
   padding: 20px;
   background-color: var(--bg-block);
-  box-shadow: 0px 0px 25px -1px rgba(0, 0, 0, 0.11);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.11);
   border-radius: 30px;
   max-width: 485px;
-  max-height: 356px;
+  max-height: 377px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 20px;
+  transition: all 0.4s ease;
 }
 @media screen and (max-width: 1524px) {
   .i_reviews .i_container .reviews-list .reviews-item {
@@ -128,9 +130,10 @@
   }
 }
 .i_reviews .i_container .reviews-list .reviews-item:hover {
+  background-color: var(--bg-hover-review);
   cursor: pointer;
   transition: all 0.4s ease;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 25px rgba(168, 168, 168, 0.45);
 }
 .i_reviews .i_container .reviews-list .reviews-item .i_reviews_first {
   display: flex;
@@ -170,6 +173,16 @@
 .i_reviews .i_container .reviews-list .reviews-item .i_reviews_first .i_reviews_title .i_reviews_company:hover {
   color: var(--color-textInfoblock);
 }
+@media screen and (max-width: 760px) {
+  .i_reviews .i_container .reviews-list .reviews-item .i_reviews_first .i_reviews_title .i_reviews_company {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_reviews .i_container .reviews-list .reviews-item .i_reviews_first .i_reviews_title .i_reviews_company {
+    font-size: 13px;
+  }
+}
 .i_reviews .i_container .reviews-list .reviews-item .i_reviews_first .i_reviews_title .i_reviews_name_rule {
   color: var(--color-textInfoblock);
   font-size: 14px;
@@ -177,13 +190,65 @@
 .i_reviews .i_container .reviews-list .reviews-item .i_reviews_first .i_reviews_title .i_reviews_name_rule:hover {
   color: var(--color-textInfoblock);
 }
+@media screen and (max-width: 760px) {
+  .i_reviews .i_container .reviews-list .reviews-item .i_reviews_first .i_reviews_title .i_reviews_name_rule {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_reviews .i_container .reviews-list .reviews-item .i_reviews_first .i_reviews_title .i_reviews_name_rule {
+    font-size: 12px;
+  }
+}
+.i_reviews .i_container .reviews-list .reviews-item .i_reviews_first .i_reviews_img {
+  max-width: 160px;
+}
+@media screen and (max-width: 760px) {
+  .i_reviews .i_container .reviews-list .reviews-item .i_reviews_first .i_reviews_img {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .i_reviews .i_container .reviews-list .reviews-item .i_reviews_first .i_reviews_img {
+    display: block;
+  }
+}
+.i_reviews .i_container .reviews-list .reviews-item .i_reviews_first .i_reviews_img a {
+  width: 100%;
+  display: block;
+}
+.i_reviews .i_container .reviews-list .reviews-item .i_reviews_first .i_reviews_img a img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 .i_reviews .i_container .reviews-list .reviews-item .i_reviews_video {
   max-height: 250px;
   height: 30vh;
+  min-height: 250px;
 }
 .i_reviews .i_container .reviews-list .reviews-item .i_reviews_video iframe {
   width: 100%;
   height: 100%;
+}
+.i_reviews .i_container .i_review_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 580px) {
+  .i_reviews .i_container .i_review_btn {
+    display: grid;
+    grid-column: 1/2 span;
+  }
+}
+.i_reviews .i_container .i_review_btn button {
+  padding: 16px 48px;
+}
+@media screen and (max-width: 580px) {
+  .i_reviews .i_container .i_review_btn button {
+    padding: 12px 35px;
+  }
 }
 
 /*# sourceMappingURL=reviews.css.map */

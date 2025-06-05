@@ -67,3 +67,7 @@ $this->setFrameMode(true);
 	<br /><?=$arResult["NAV_STRING"]?>
 <?endif;?>
 </div>
+
+<div class="i_review_btn">
+    <button class="show-else"><?=\Bitrix\Main\Localization\Loc::getMessage('I_MORE')?></button>
+</div>

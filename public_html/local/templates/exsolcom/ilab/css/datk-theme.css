@@ -43,10 +43,11 @@ html[data-theme=dark] .i_side-menu .left-menu li:nth-child(1) .menu-img {
   background-image: url("../img/svg/programm-products_b.svg");
 }
 html[data-theme=dark] .i_side-menu .left-menu li:nth-child(2) .menu-img {
-  background-image: url("../img/svg/our-cases_b.svg");
+  background-image: url("../img/svg/projects-icon_b.svg");
 }
 html[data-theme=dark] .i_side-menu .left-menu li:nth-child(3) .menu-img {
-  background-image: url("../img/svg/projects-icon_b.svg");
+  background-size: 26px;
+  background-image: url("../img/svg/menu/reviewB.svg");
 }
 html[data-theme=dark] .i_side-menu .left-menu li:nth-child(4) .menu-img {
   background-image: url("../img/svg/our-services-b.svg");
@@ -376,14 +377,14 @@ html[data-theme=dark] .i_main .i_cases .i_projects-section .i_projects-section__
   background-image: url("../img/svg/slider-hover-products-dark.svg");
 }
 html[data-theme=dark] .i_main .i_reviews .i_reviews-title .i_reviews-title-icon {
-  background-image: url("../img/svg/our-cases_b.svg");
+  background-image: url("../img/svg/menu/reviewB.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-position-x: 65%;
+  background-position-x: 53%;
   background-position-y: 50%;
 }
 html[data-theme=dark] .i_main .i_reviews .i_projects-title .i_projects-title-icon {
-  background-image: url("../img/svg/projects-icon_b.svg");
+  background-image: url("../img/svg/menu/reviewB.svg");
 }
 @media screen and (max-width: 760px) {
   html[data-theme=dark] .i_main .i_reviews .i_projects-title .i_projects-title-icon {
