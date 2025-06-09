@@ -19,7 +19,7 @@ $this->setFrameMode(true);
 		$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 		?>
 
-		<div class="i_our-status-group-blocks-item" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
+		<a href="<?= $arItem['PROPERTIES']['I_LINK_STATUS']['VALUE']?>" target="_blank" class="i_our-status-group-blocks-item <?=$arItem['PROPERTIES']['I_LINK_STATUS']['VALUE'] ? 'i_hover_status' : '' ?>" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
 			<div class="i_our-status-group-blocks-item-bgIcon">
 				<svg width="147" height="147" viewBox="0 0 147 147" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 					<g clip-path="url(#clip0_504_76)">
@@ -39,9 +39,11 @@ $this->setFrameMode(true);
 			<div class="i_our-status-group-blocks-item-name">
 				<span><?=$arItem['PROPERTIES']['I_NAME_'.strtoupper(LANGUAGE_ID)]['~VALUE']['TEXT']?></span>
 			</div>
-		</div>
+		</a>
 	<?endforeach;?>
 </div>
+
+
 
 
 

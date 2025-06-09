@@ -2780,6 +2780,18 @@ body.lock {
   transition: all 0.4s ease;
   gap: 20px;
   overflow: hidden;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  cursor: default !important;
+}
+.i_our-status .i_container .i_our-status-group-blocks .i_our-status-group-blocks-item.i_hover_status:hover {
+  background-color: var(--color-white-hover);
+  cursor: pointer !important;
+  transition: all 0.4s ease;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+.i_our-status .i_container .i_our-status-group-blocks .i_our-status-group-blocks-item.i_hover_status:hover .i_our-status-group-blocks-item-name span {
+  color: var(--color-red);
 }
 .i_our-status .i_container .i_our-status-group-blocks .i_our-status-group-blocks-item span {
   color: var(--color-nochangeThirdIcon);
