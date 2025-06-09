@@ -1169,6 +1169,18 @@
   justify-content: flex-start;
   gap: 40px;
   padding: 20px 35px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  cursor: default !important;
+}
+.i_about-us .i_certificates .i_certificates-group-blocks .i_certificates-group-blocks-item.i_hover_status:hover {
+  background-color: var(--bg-hover-review);
+  cursor: pointer !important;
+  transition: all 0.4s ease;
+  box-shadow: 0px 0px 25px rgba(168, 168, 168, 0.45);
+}
+.i_about-us .i_certificates .i_certificates-group-blocks .i_certificates-group-blocks-item.i_hover_status:hover .i_certificates-group-blocks-item-name span {
+  color: var(--color-red);
 }
 @media screen and (max-width: 760px) {
   .i_about-us .i_certificates .i_certificates-group-blocks .i_certificates-group-blocks-item {
@@ -1213,9 +1225,9 @@
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   color: var(--color-nochangeThirdIcon);
-  cursor: text;
   display: block;
-  width: 93%;
+  cursor: default;
+  width: 100%;
 }
 @media screen and (max-width: 760px) {
   .i_about-us .i_certificates .i_certificates-group-blocks .i_certificates-group-blocks-item .i_certificates-group-blocks-item-name span {

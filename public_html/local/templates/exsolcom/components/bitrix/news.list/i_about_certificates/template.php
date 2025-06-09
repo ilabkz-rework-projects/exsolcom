@@ -21,7 +21,7 @@ $this->setFrameMode(true);
 	$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
 	$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 	?>
-	<div class="i_certificates-group-blocks-item" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
+    <a href="<?= $arItem['PROPERTIES']['I_LINK_STATUS']['VALUE']?>" target="_blank" class="i_certificates-group-blocks-item <?=$arItem['PROPERTIES']['I_LINK_STATUS']['VALUE'] ? 'i_hover_status' : '' ?>" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
         <!--CERTIFICATES GROUP BLOCKS ITEM BG ICON-->
         <div class="i_certificates-group-blocks-item-bg_Icon">
             <svg width="147" height="147" viewBox="0 0 147 147" fill="currentColor"
@@ -52,7 +52,7 @@ $this->setFrameMode(true);
             <span style="line-height: normal"><?= $arItem['PROPERTIES']['I_NAME_'.strtoupper(LANGUAGE_ID)]['~VALUE']['TEXT'] ?></span>
         </div>
         <!--!CERTIFICATES GROUP BLOCKS ITEM NAME-->
-	</div>
+    </a>
 <?endforeach;?>
 <?if($arParams["DISPLAY_BOTTOM_PAGER"]):?>
 	<?=$arResult["NAV_STRING"]?>
