@@ -2231,6 +2231,7 @@ body.lock {
 .i_infoblock .i_container .i_news .news-list .news-item .news-item-img {
   max-width: 290px;
   width: 110%;
+  height: 50%;
   object-fit: contain;
   min-width: 125px;
   min-height: 50%;

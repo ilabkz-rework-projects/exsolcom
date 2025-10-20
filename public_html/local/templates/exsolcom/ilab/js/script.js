@@ -913,7 +913,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 					modalKp.classList.add('active')
 					documentBody.classList.add('lock')
 
-					let content = data.CONTENT;
+					let content = data.  ;
 
 					content = content !== false ? content.replace(/<\?[\s\S]*?\?>/g, '') : false;
 

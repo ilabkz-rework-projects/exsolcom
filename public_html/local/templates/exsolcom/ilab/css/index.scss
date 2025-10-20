@@ -2470,7 +2470,7 @@ body{
           .news-item-img{
             max-width: 290px;
             width: 110%;
-            //height: 58%;
+            height: calc(100% - 50%);
             object-fit: contain;
             min-width: 125px;
             min-height: calc(100% - 50%);
