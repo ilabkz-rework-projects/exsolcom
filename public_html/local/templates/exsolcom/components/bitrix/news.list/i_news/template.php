@@ -63,9 +63,18 @@ $this->setFrameMode(true);
 	$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
 	$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 	?>
-	<div class="news-item i_detail-modal-item i_modal-footer-hd" id="<?=$this->GetEditAreaId($arItem['ID']);?>" data-id="<?=$arItem['ID']?>" data_iblock_id="<?=$arParams['IBLOCK_ID']?>">
+	<?php
+	$prop = $arItem['PROPERTIES']['I_YOUTUBE_LINK']['~VALUE'];
+	$video = is_array($prop) ? $prop['TEXT'] : $prop;
+	?>
+	<div class="news-item i_detail-modal-item i_modal-footer-hd" id="<?=$this->GetEditAreaId($arItem['ID']);?>"
+         data-id="<?=$arItem['ID']?>"
+         data_iblock_id="<?=$arParams['IBLOCK_ID']?>"
+    >
 		<?if($arParams["DISPLAY_PICTURE"]!="N" && is_array($arItem["PREVIEW_PICTURE"])):?>
-			<div class="news-item-img">
+			<div class="news-item-img"
+                 data-video="<?=!empty($video) ? htmlspecialchars($video) : ''?>"
+            >
 				<?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
 					<img
 						class="preview_picture"
@@ -121,3 +130,11 @@ $this->setFrameMode(true);
 	<?=$arResult["NAV_STRING"]?>
 <?endif;?>
 </div>
+
+<div id="videoModal" class="video-modal" style="display:none;">
+    <div class="video-modal-content">
+        <span class="video-modal-close">&times;</span>
+        <iframe width="100%" height="500" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+

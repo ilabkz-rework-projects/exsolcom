@@ -89,3 +89,9 @@ $this->setFrameMode(true);
 		<?=$arResult["NAV_STRING"]?>
 	<?endif;?>
 </div>
+
+<?
+echo '<pre>';
+print_r(self::$arDebug);
+echo '</pre>';
+?>

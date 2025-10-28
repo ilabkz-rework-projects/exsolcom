@@ -2357,7 +2357,7 @@ body.lock {
   gap: 70px;
   width: 47%;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 @media screen and (max-width: 1000px) {
   .i_infoblock .i_blog {

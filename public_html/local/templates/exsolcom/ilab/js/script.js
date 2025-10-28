@@ -1,5 +1,63 @@
 window.addEventListener('DOMContentLoaded', function () {
 
+	// --- ЖЁСТКИЙ ПЕРЕХВАТ КЛИКА ПО .news-item-img (capture) ---
+	(function() {
+		// флаг — если true, openModalKp должен игнорировать вызов
+		window.__suppressModalKp = false;
+
+		document.addEventListener('click', function captureHandler(e) {
+			const imgWrap = e.target.closest('.news-item-img');
+			if (!imgWrap) return; // не по картинке — не мешаем
+
+			// если нашли картинку — предотвращаем дальнейшую обработку
+			// и ставим флаг, который потом проверит openModalKp
+			try {
+				e.preventDefault();
+			} catch (err) {}
+			try {
+				e.stopImmediatePropagation();
+			} catch (err) {}
+			try {
+				e.stopPropagation();
+			} catch (err) {}
+
+			// выставляем флаг (на короткое время)
+			window.__suppressModalKp = true;
+			setTimeout(() => { window.__suppressModalKp = false; }, 300); // 300ms — достаточно
+
+			// Открываем видео-модалку (централизованно)
+			const videoRaw = imgWrap.getAttribute('data-video') || '';
+			let videoUrl = videoRaw.trim();
+			const m = videoUrl.match(/src=["']([^"']+)["']/i);
+			if (m && m[1]) videoUrl = m[1].trim();
+			videoUrl = videoUrl.replace(/^src=["']?|["']?$/g, '').trim();
+			videoUrl = videoUrl.replace(/(?:https?:\/\/)?(?:www\.)?youtube\.com\/watch\?v=/i, 'https://www.youtube.com/embed/');
+			videoUrl = videoUrl.replace(/(?:https?:\/\/)?youtu\.be\//i, 'https://www.youtube.com/embed/');
+
+			if (!videoUrl) {
+				console.log('news-item-img clicked — но видео не найдено');
+				return;
+			}
+
+			// Закрываем modalKp если открыт
+			document.querySelectorAll('.i_modal-kp.active').forEach(mo => mo.classList.remove('active'));
+			if (typeof overlay !== 'undefined' && overlay) overlay.classList.remove('active');
+			if (typeof documentBody !== 'undefined' && documentBody) documentBody.classList.remove('lock');
+
+			// Открываем видео-модалку
+			const videoModal = document.getElementById('videoModal');
+			if (!videoModal) { console.warn('videoModal not found'); return; }
+			const iframe = videoModal.querySelector('iframe');
+			if (!iframe) { console.warn('iframe not found'); return; }
+			iframe.src = videoUrl;
+			videoModal.style.display = 'flex';
+			document.body.classList.add('lock');
+
+			console.log('▶ video opened (capture):', videoUrl);
+
+		}, true); // <-- слушаем в capture-фазе
+	})();
+
 	BX.addCustomEvent('OnEditorInitedBefore', function (toolbar) {
 		var _this = this;
 
@@ -420,84 +478,92 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		documentBody.classList.remove('lock')
 	})
 
-	function openModalKp(item){
-		modal.classList.remove('active')
-		submitModal.classList.remove('active')
-		formKpModal.classList.remove('active')
-		modalKp.classList.add('active')
-		overlay.classList.add('active')
-		footerKpBtn.classList.remove('idn')
-		footerKpBtnSecond.classList.remove('idn')
-		documentBody.classList.add('lock')
-		vacationBtn.classList.add('idn')
-		modalKpFooter.classList.remove('idn')
+// ------------------------
+// Функция открытия modalKp
+// ------------------------
+	function openModalKp(item) {
+
+		if (window.__suppressModalKp) {
+			console.log('openModalKp suppressed by capture (click was on news-item-img)');
+			return;
+		}
+
+		document.querySelectorAll('.i_modal-kp.active').forEach(m => m.classList.remove('active'));
+
+		modal.classList.remove('active');
+		submitModal.classList.remove('active');
+		formKpModal.classList.remove('active');
+		modalKp.classList.add('active');
+		overlay.classList.add('active');
+		footerKpBtn.classList.remove('idn');
+		footerKpBtnSecond.classList.remove('idn');
+		documentBody.classList.add('lock');
+		vacationBtn.classList.add('idn');
+		modalKpFooter.classList.remove('idn');
 
 		modalKp.querySelector('.i_modal-content').innerHTML = '';
 
-		let langMessage1 = ''
-		let langMessage2 = ''
+		let langMessage1 = '';
+		let langMessage2 = '';
 
 		switch (languageID) {
-			case "ru" :
-				langMessage1 = '(электронная версия)'
-				langMessage2 = 'Цена по запросу'
+			case 'ru':
+				langMessage1 = '(электронная версия)';
+				langMessage2 = 'Цена по запросу';
 				break;
-			case "kz" :
-				langMessage1 = '(электрондық нұсқа)'
-				langMessage2 = 'Сұрау бойынша баға'
+			case 'kz':
+				langMessage1 = '(электрондық нұсқа)';
+				langMessage2 = 'Сұрау бойынша баға';
 				break;
-			case "en" :
-				langMessage1 = '(electronic version)'
-				langMessage2 = 'Price on request'
+			case 'en':
+				langMessage1 = '(electronic version)';
+				langMessage2 = 'Price on request';
 				break;
 			default:
-				langMessage1 = '(электронная версия)'
-				langMessage2 = 'Цена по запросу'
+				langMessage1 = '(электронная версия)';
+				langMessage2 = 'Цена по запросу';
 		}
 
-		// Добавляем контент на страницу
 		fetch('/local/templates/exsolcom/ilab/ajax/getModalKpContent.php', {
 			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json'
-			},
-			body: JSON.stringify({code: item.getAttribute('data-id'), language: languageID})
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify({
+				code: item.getAttribute('data-id'),
+				language: languageID
+			})
 		})
-			.then(response => response.json())
+			.then(res => res.json())
 			.then(data => {
 				let content = data.CONTENT;
 				content = content !== false ? content.replace(/<\?[\s\S]*?\?>/g, '') : false;
 
-				const img = data.IMAGE
+				const img = data.IMAGE;
+				const contentEl = modalKp.querySelector('.i_modal-content');
+				const priceEl = modalKp.querySelector('.i_modal-footer-price');
 
-				if (!content) {
-					modalKp.querySelector('.i_modal-content').innerHTML = data.PREVIEW_TEXT;
-				} else {
-					modalKp.querySelector('.i_modal-content').innerHTML = content;
-				}
-
-				modalKp.querySelector('.i_modal-footer-price').classList.remove('idn')
+				contentEl.innerHTML = content || data.PREVIEW_TEXT;
+				priceEl.classList.remove('idn');
 				modalKp.querySelector('.i_modal-img').innerHTML = `<img src="${img}" />`;
 
 				if (data.PRICE !== null) {
-					modalKp.querySelector('.i_modal-footer-price').innerHTML = `<span>${data.PRICE} ₸<span class="text">${langMessage1}</span></span>`;
+					priceEl.innerHTML = `<span>${data.PRICE} ₸<span class="text">${langMessage1}</span></span>`;
 				} else {
-					modalKp.querySelector('.i_modal-footer-price').innerHTML = `<span>${langMessage2}</span>`;
+					priceEl.innerHTML = `<span>${langMessage2}</span>`;
 				}
 
 				const url = new URL(window.location.href);
-				url.searchParams.set('product', data.CODE); // Добавляем параметр "param" со значением "value"
-
-				// Обновляем URL в адресной строке без перезагрузки страницы
+				url.searchParams.set('product', data.CODE);
 				history.pushState(null, '', url.toString());
-
-			})
-
+			});
 	}
 
-	modalKpBtn.forEach(item => {
-		item.addEventListener('click', ()=>{openModalKp(item)})
-	})
+// Отдельная привязка для кнопок modalKpBtn
+	modalKpBtn.forEach(btn => {
+		btn.addEventListener('click', e => {
+			e.stopPropagation();
+			openModalKp(btn);
+		});
+	});
 
 	const modalKpList = document.querySelectorAll('.i_modal-kp .i_container');
 	const modalSerList = document.querySelectorAll('.i_modal .i_container');
@@ -560,12 +626,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			});
 		})
 	});
-	newsModal.forEach((itemVAc) => {
-		itemVAc.addEventListener('click', () => {
-			modalKpList.forEach((modal) => {
-				modal.scrollTop = 0;
-			});
-		})
+	newsModal.forEach(itemVAc => {
+		itemVAc.addEventListener('click', e => {
+			openModalKp(itemVAc, e); // ← передаём event для проверки
+			modalKpList.forEach(modal => (modal.scrollTop = 0));
+		});
 	});
 	// FORM KP
 
@@ -913,7 +978,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 					modalKp.classList.add('active')
 					documentBody.classList.add('lock')
 
-					let content = data.  ;
+					let content = data.CONTENT;
 
 					content = content !== false ? content.replace(/<\?[\s\S]*?\?>/g, '') : false;
 
@@ -1405,8 +1470,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		}
 	}
 
-	//При нажатии на кнопку с классом show-else + 3 items удаляем класс idn
-	//также проверяем если у item не остается idn то присваиваем кнопке showElseR display none
 	showElseR?.addEventListener('click', () => {
 		const hiddenItems = itemsReview.querySelectorAll('.reviews-item.idn');
 		for (let i = 0; i < Math.min(3, hiddenItems.length); i++) {
@@ -1608,6 +1671,77 @@ document.addEventListener('DOMContentLoaded', () => {
 		el.textContent = 'Благодарим за обращение , мы с Вами вскоре свяжемся !';
 	});
 
+
+
 });
+
+document.addEventListener('click', function(e) {
+	const item = e.target.closest('.news-item-img');
+	if (!item) return;
+
+	let video = item.getAttribute('data-video');
+	if (!video) return;
+
+	// Если внутри строки есть iframe, вытащим src из него
+	const iframeMatch = video.match(/src="([^"]+)"/);
+	if (iframeMatch && iframeMatch[1]) {
+		video = iframeMatch[1]; // берём только ссылку
+	}
+
+	// Если строка содержит src="src=", отфильтруем мусор
+	video = video.replace(/^src=["']?|["']?$/g, '').trim();
+
+	const modal = document.getElementById('videoModal');
+	const iframe = modal.querySelector('iframe');
+
+	iframe.src = video;
+	modal.style.display = 'flex';
+});
+
+document.addEventListener('click', function(e) {
+	const img = e.target.closest('.news-item-img');
+	if (!img) return;
+
+	const item = img.closest('.news-item');
+	if (!item) return;
+
+	const video = item.dataset.video;
+	console.log('Видео из data-video:', video);
+
+	if (video && video.trim() !== '') {
+		const modal = document.getElementById('videoModal');
+		const iframe = modal.querySelector('iframe');
+
+		let videoUrl = video.trim();
+
+		// Если это iframe, извлекаем src
+		const iframeMatch = video.match(/src=["']([^"']+)["']/);
+		if (iframeMatch && iframeMatch[1]) {
+			videoUrl = iframeMatch[1];
+		}
+
+		// Если это короткая ссылка YouTube
+		if (videoUrl.includes('youtube.com/watch?v=')) {
+			const id = new URL(videoUrl).searchParams.get('v');
+			videoUrl = 'https://www.youtube.com/embed/' + id;
+		}
+
+		iframe.src = videoUrl;
+		modal.style.display = 'flex';
+	} else {
+		console.warn('Видео не найдено для:', item);
+	}
+});
+
+document.addEventListener('click', function(e) {
+	if (e.target.matches('.video-modal-close') || e.target.id === 'videoModal') {
+		const modal = document.getElementById('videoModal');
+		const iframe = modal.querySelector('iframe');
+		iframe.src = '';
+		modal.style.display = 'none';
+	}
+});
+
+
 
 

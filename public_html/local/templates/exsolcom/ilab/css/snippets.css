@@ -3205,6 +3205,7 @@ strong img {
 .i_snippet.picture .i_snippet-second-picture img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 
 .i_snippet.list-work .i_snippet-list {
