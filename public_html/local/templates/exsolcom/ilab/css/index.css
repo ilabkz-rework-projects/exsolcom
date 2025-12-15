@@ -2163,7 +2163,7 @@ body.lock {
   background-color: var(--color-blockHv);
   border-radius: 30px;
   padding: 40px 36px;
-  justify-content: flex-start;
+  justify-content: space-between;
   overflow: hidden;
 }
 @media screen and (max-width: 1920px) {

@@ -36,7 +36,14 @@ while($ob = $res->Fetch())
 	$arResult['ELEMENT'][$item['ID']]['PROPERTY'][$ob['CODE']] = $ob['VALUE'];
 }
 
-$price = $arResult['ELEMENT'][$item['ID']]['PROPERTY']['I_PRICE'];
+$lang = LANGUAGE_ID; // ru / en / kz
+
+// выбираем нужное свойство в зависимости от языка
+$priceKey = 'I_PRICE';
+if ($lang == 'en') $priceKey = 'I_PRICE_EN';
+if ($lang == 'kz') $priceKey = 'I_PRICE_KZ';
+
+$price = $arResult['ELEMENT'][$item['ID']]['PROPERTY'][$priceKey];
 
 ?>
 	<div class="programm-item"  data-id="<?= $item['CODE'] ?>" >
