@@ -159,10 +159,12 @@
   border-radius: 15px;
   overflow: hidden;
   min-height: 50%;
-  height: 60%;
+  aspect-ratio: 4/4;
+  height: 50%;
 }
 .i_news-page .i_container .news-page-list .news-page-item .news-item-img img {
   width: 100%;
+  max-height: 280px;
   height: 100%;
   object-fit: cover;
 }

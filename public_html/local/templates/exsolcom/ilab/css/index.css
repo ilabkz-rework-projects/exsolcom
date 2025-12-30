@@ -885,9 +885,11 @@ body.lock {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
   width: 86%;
   margin: 0;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 .i_header-menu li {
   list-style-type: none;

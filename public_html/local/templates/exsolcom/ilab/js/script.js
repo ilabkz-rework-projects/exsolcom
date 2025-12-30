@@ -529,7 +529,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({
 				code: item.getAttribute('data-id'),
-				language: languageID
+				language: languageID,
+				iblock_id: item.getAttribute('data-iblock-id') || 9
 			})
 		})
 			.then(res => res.json())
