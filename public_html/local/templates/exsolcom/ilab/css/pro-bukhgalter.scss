@@ -5,3 +5,11 @@ body:has(.i_pro_bukhgalter){
 		}
 	}
 }
+body:has(.i_news_1){
+	.i_modal-kp{
+		.i_modal-footer{
+			display: none;
+		}
+	}
+}
+

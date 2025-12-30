@@ -65,15 +65,15 @@ $this->setFrameMode(true);
 			<?endif?>
 			<?if($arParams["DISPLAY_NAME"]!="N" && $arItem["NAME"]):?>
 				<?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
-					<span><?echo $arItem["NAME"]?></span>
+					<span><?echo $arItem['PROPERTIES']["I_NAME_".strtoupper(LANGUAGE_ID)]["VALUE"]?></span>
 				<?else:?>
-					<span><?echo $arItem["NAME"]?></span>
+					<span><?echo $arItem['PROPERTIES']["I_NAME_".strtoupper(LANGUAGE_ID)]["VALUE"]?></span>
 				<?endif;?>
 			<?endif;?>
 			<?if($arParams["DISPLAY_PREVIEW_TEXT"]!="N" && $arItem["PREVIEW_TEXT"]):?>
-				<div class="i_news-preview">
-					<span><?echo $arItem["PREVIEW_TEXT"];?></span>
-				</div>
+                <div class="i_news-preview">
+                    <span><?= LANGUAGE_ID === 'ru' ? $arItem["PREVIEW_TEXT"] : $arItem['PROPERTIES']['I_PREVIEW_TEXT_'.strtoupper(LANGUAGE_ID)]["VALUE"];?></span>
+                </div>
 			<?endif;?>
 		</div>
 	<?endforeach;?>

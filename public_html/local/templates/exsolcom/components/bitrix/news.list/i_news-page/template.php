@@ -38,7 +38,7 @@ $this->setFrameMode(true);
                 $videoLink = $matches[1];
             }
 		?>
-		<div class="news-page-item" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
+		<div class="news-page-item" id="<?=$this->GetEditAreaId($arItem['ID']);?>" data-id="<?=$arItem['CODE']?>" data-iblock-id="<?=$arItem['IBLOCK_ID']?>">
 			<?if($arParams["DISPLAY_PICTURE"]!="N" && is_array($arItem["PREVIEW_PICTURE"])):?>
 				<div class="news-item-img" data-video='<?=$videoLink?>'>
 					<?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
