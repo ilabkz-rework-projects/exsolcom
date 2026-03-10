@@ -199,6 +199,11 @@
             }
             .bx_sitemap_li_title{
               padding: 0;
+              @media screen and (max-width: 400px){
+                padding: 0 0px 0 40px;
+                text-align: start;
+                width: 100%;
+              }
               a{
                 font-size: 16px;
               }
@@ -207,14 +212,24 @@
             // OPEN_DROPDOWN_BLOG
             &.i_blog-open-dropdown{
               .i_blog-dropdown-menu {
-                transform: translateY(140px);
+                transform: translateY(255px);
                 opacity: 1;
                 visibility: visible;
               }
               .i_blog-menu{
                 &:after{
                   transform: rotate(225deg);
-                  top: 15px;
+                  top: 18px;
+                }
+                .bx_sitemap_li_title.second{
+                  padding: unset !important;
+                  a{
+                    text-align: center;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    padding: unset !important;
+                  }
                 }
               }
             }
@@ -228,7 +243,7 @@
               position: absolute;
               top: -10%;
               right: 50%;
-              transform: translate(50%, -50%);
+              transform: translate(50%, 8%);
             }
             // !BLOG_DROPDOWN_MENU ARROW BEFORE
             // BLOG_DROPDOWN_MENU
@@ -257,6 +272,7 @@
                 height: 40px;
                 align-items: center;
                 margin: 0;
+                justify-content: flex-start;
                 &:before{
                   content: ' ';
                   background-image: url("../img/svg/blog-icon-2_b.svg") !important;
@@ -340,6 +356,9 @@
             line-height: unset;
             margin: 0;
             padding: 20px 30px 20px 50px;
+            @media screen and (max-width: 1330px) and (min-width: 614px){
+              padding: 25px 30px 20px 50px;
+            }
             a{
               color: var(--color-White);
             }
@@ -390,6 +409,9 @@
             line-height: unset;
             margin: 0;
             padding: 20px 30px 20px 50px;
+            @media screen and (max-width: 1330px) and (min-width: 614px){
+              padding: 25px 30px 20px 50px;
+            }
             a{
               text-decoration: none;
               font-size: 20px;
