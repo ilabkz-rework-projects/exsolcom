@@ -2029,4 +2029,13 @@ span
   font-weight: 100;
   line-height: 1;
 }
-
+.i_seo-dates{
+  > div{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    .i_seo-dates-switch{
+      height: 60px !important;
+    }
+  }
+}
