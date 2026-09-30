@@ -4835,7 +4835,7 @@ body.lock {
     position: relative;
     width: 88%;
     left: unset;
-    top: 50%;
+    top: 10px;
     right: 45%;
     transform: translateX(50%);
   }
@@ -4928,7 +4928,9 @@ body.lock {
     margin-right: 3px;
   }
   .i_main .i_banner .i_container .i_banner-left .i_banner-logo {
-    width: unset;
+    display: block;
+    width: 216px;
+    opacity: 1;
   }
   .i_main .i_banner .i_container .i_banner-left .i_banner-logo svg {
     width: 216px;

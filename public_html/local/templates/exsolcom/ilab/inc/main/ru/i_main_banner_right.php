@@ -1,4 +1,4 @@
-<div class="i_snippet base-title" style=" justify-content: center; padding: 110px 0 30px 0 !important;">
+<div class="i_snippet base-title" style=" justify-content: center; padding: 110px 0 30px 0;">
 	<div class="i_snippet-title">
 		<h2 style="font-weight: 400; font-size: 18px; text-align: center; color:var(--color-black);">НАША СПЕЦИФИКАЦИЯ</h2>
 	</div>
