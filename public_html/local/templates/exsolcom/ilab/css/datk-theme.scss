@@ -961,7 +961,7 @@ html[data-theme='dark']{
         position: relative;
         width: 88%;
         left: unset;
-        top: 50%;
+        top: 0px;
         right: 45%;
         transform: translateX(50%);
       }
@@ -970,7 +970,7 @@ html[data-theme='dark']{
         width: 318px;
         height: 318px;
         left: unset;
-        top: 50%;
+        top: 10px;
         right: 50%;
         transform: translateX(50%);
       }
